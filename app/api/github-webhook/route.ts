@@ -78,26 +78,30 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // Check if the push includes changes to the newsletters directory
+    // Check if the push includes changes to the newsletters directory OR ICS calendar files
     const commits = payload.commits || [];
-    const hasNewsletterChanges = commits.some((commit: { added?: string[]; modified?: string[]; removed?: string[] }) => {
+    const hasRelevantChanges = commits.some((commit: { added?: string[]; modified?: string[]; removed?: string[] }) => {
       const files = [
         ...(commit.added || []),
         ...(commit.modified || []),
         ...(commit.removed || [])
       ];
-      return files.some((file: string) => file.startsWith('content/newsletters/'));
+      return files.some((file: string) => 
+        file.startsWith('content/newsletters/') || 
+        file.endsWith('.ics') ||
+        file.startsWith('public/') && file.endsWith('.ics')
+      );
     });
 
-    if (!hasNewsletterChanges) {
-      console.log('ℹ️ [GitHub Webhook] No newsletter changes detected, skipping deployment');
+    if (!hasRelevantChanges) {
+      console.log('ℹ️ [GitHub Webhook] No newsletter or calendar changes detected, skipping deployment');
       return NextResponse.json({ 
-        message: 'No newsletter changes detected',
+        message: 'No newsletter or calendar changes detected',
         commits: commits.length 
       });
     }
 
-    console.log('📰 [GitHub Webhook] Newsletter changes detected!');
+    console.log('📰 [GitHub Webhook] Newsletter or calendar changes detected!');
     console.log(`📝 [GitHub Webhook] Commits: ${commits.length}`);
     
     // Trigger Vercel deployment
