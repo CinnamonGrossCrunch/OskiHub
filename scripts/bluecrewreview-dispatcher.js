@@ -19,7 +19,7 @@
 // ⚠️ REPLACE WITH YOUR VALUES before pasting into Google Apps Script!
 const GITHUB_TOKEN = 'YOUR_GITHUB_PAT_HERE'; // Replace with your GitHub Personal Access Token
 const REPO_OWNER = 'CinnamonGrossCrunch';
-const REPO_NAME = 'vibeshift.me';
+const REPO_NAME = 'OskiHub';
 const EVENT_TYPE = 'newsletter_received';
 
 // ✅ CONFIGURED: Blue Crew Review newsletter filter (case-insensitive)

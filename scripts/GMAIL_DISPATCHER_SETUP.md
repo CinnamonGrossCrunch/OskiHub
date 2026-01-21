@@ -16,7 +16,7 @@ For details on HTML cleaning, see: [HTML_CLEANING_SUMMARY.md](./HTML_CLEANING_SU
 
 ### Step 1: Add GitHub Secret
 
-1. Go to: https://github.com/CinnamonGrossCrunch/vibeshift.me/settings/secrets/actions
+1. Go to: https://github.com/CinnamonGrossCrunch/OskiHub/settings/secrets/actions
 2. Click **"New repository secret"**
 3. Name: `GMAIL_DISPATCH_TOKEN`
 4. Value: `YOUR_GITHUB_PAT` (paste your actual GitHub Personal Access Token)
@@ -48,7 +48,7 @@ For details on HTML cleaning, see: [HTML_CLEANING_SUMMARY.md](./HTML_CLEANING_SU
 3. Authorize the script when prompted
 4. Check the **"Execution log"** (View → Logs)
 5. You should see: `✅ Test successful!`
-6. Verify at: https://github.com/CinnamonGrossCrunch/vibeshift.me/actions
+6. Verify at: https://github.com/CinnamonGrossCrunch/OskiHub/actions
 
 ### Step 4: Test Gmail Search
 
@@ -82,7 +82,7 @@ For details on HTML cleaning, see: [HTML_CLEANING_SUMMARY.md](./HTML_CLEANING_SU
 ### Test 2: Real Newsletter Test
 1. Send yourself an email with the subject matching your search query
 2. Wait 5-10 minutes (based on your trigger interval)
-3. Check: https://github.com/CinnamonGrossCrunch/vibeshift.me/actions
+3. Check: https://github.com/CinnamonGrossCrunch/OskiHub/actions
 4. Check: `content/newsletters/` folder in your repo
 
 ### Test 3: Check Gmail Search
@@ -91,7 +91,7 @@ Use `testGmailSearch()` function to verify your search query finds the right ema
 ## 📊 Monitoring
 
 **GitHub Actions:**
-- https://github.com/CinnamonGrossCrunch/vibeshift.me/actions/workflows/newsletter-dispatch.yml
+- https://github.com/CinnamonGrossCrunch/OskiHub/actions/workflows/newsletter-dispatch.yml
 
 **Google Apps Script Executions:**
 1. In Apps Script editor → Click **"Executions"** (left sidebar)
@@ -107,7 +107,7 @@ Use `testGmailSearch()` function to verify your search query finds the right ema
 
 ### GitHub Action failing?
 - Verify secret `GMAIL_DISPATCH_TOKEN` is set correctly
-- Check action logs at: https://github.com/CinnamonGrossCrunch/vibeshift.me/actions
+- Check action logs at: https://github.com/CinnamonGrossCrunch/OskiHub/actions
 
 ### Duplicate newsletters?
 - The script marks emails as read after processing

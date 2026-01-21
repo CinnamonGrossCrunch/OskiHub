@@ -10,7 +10,7 @@
 // ============================================================================
 const GITHUB_TOKEN = 'YOUR_GITHUB_PAT_HERE'; // Replace with your actual GitHub PAT
 const REPO_OWNER = 'CinnamonGrossCrunch';
-const REPO_NAME = 'vibeshift.me';
+const REPO_NAME = 'OskiHub';
 const EVENT_TYPE = 'newsletter_received';
 
 // ✅ Specific to EW Wire

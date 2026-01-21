@@ -39,7 +39,7 @@ Save this secret - you'll need it for both GitHub and Vercel.
 
 ### Step 3: Configure GitHub Webhook
 
-1. Go to your GitHub repository: https://github.com/CinnamonGrossCrunch/vibeshift.me
+1. Go to your GitHub repository: https://github.com/CinnamonGrossCrunch/OskiHub
 2. Navigate to **Settings** → **Webhooks** → **Add webhook**
 3. Configure the webhook:
 
@@ -180,7 +180,7 @@ Successful newsletter sync:
     "ref": "refs/heads/main",
     "commits": 1,
     "pusher": "YourGitHubUsername",
-    "repository": "CinnamonGrossCrunch/vibeshift.me"
+    "repository": "CinnamonGrossCrunch/OskiHub"
   }
 }
 ```
