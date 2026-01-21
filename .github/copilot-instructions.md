@@ -3,6 +3,21 @@
 > UC Berkeley EWMBA Dashboard (Next.js 15 + TypeScript + Tailwind)
 > Production: www.oski.app | Vercel-hosted
 
+## Repository & Deployment Stack
+
+```
+VS Code (Local Development)
+    ↓
+GitHub Repository: https://github.com/CinnamonGrossCrunch/OskiHub
+    ↓
+Vercel Project: https://vercel.com/matt-gross-projects-2589e68e/oskihub
+(Project ID: prj_4PcZTaos2UlHV9bXLGlQEXlUINVC)
+    ↓
+Production URL: https://www.oski.app
+```
+
+**Note:** The previous repository (vibeshift.me) is deprecated. All code changes should be pushed to the OskiHub repository.
+
 ## Project Overview
 
 OSKI Hub aggregates EWMBA program data into a single dashboard:
@@ -168,6 +183,14 @@ curl -H "Authorization: Bearer $CRON_SECRET" http://localhost:3000/api/cron/refr
 
 ## Deployment
 
+- **GitHub Repo**: https://github.com/CinnamonGrossCrunch/OskiHub
+- **Vercel Project**: https://vercel.com/matt-gross-projects-2589e68e/oskihub
+- **Vercel Project ID**: `prj_4PcZTaos2UlHV9bXLGlQEXlUINVC`
 - Auto-deploys on push to `main` via Vercel
 - GitHub Action `warm-cache.yml` warms cache post-deploy
 - Static cache (`public/cache/`) committed to repo as fallback
+
+```bash
+# Push changes to production
+git push origin main
+```
