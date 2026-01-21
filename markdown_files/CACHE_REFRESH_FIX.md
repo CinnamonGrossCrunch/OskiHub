@@ -139,7 +139,7 @@ X-Response-Time: 8234ms
 ## 🚀 How to Use
 
 ### Option 1: Admin UI (Recommended)
-1. Go to `https://vibeshift.me/admin/cache-refresh`
+1. Go to `https://oski.app/admin/cache-refresh`
 2. Click "🔄 Refresh Cache Now" button
 3. Wait 8-20 seconds for processing
 4. Refresh dashboard to see latest data

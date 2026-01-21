@@ -20,7 +20,7 @@ curl https://newsletter-widget-sage.vercel.app/api/cron/refresh-newsletter \
 ### 🤖 Option 2: Automatic via GitHub Actions (Best)
 
 **Setup:**
-1. Go to: https://github.com/CinnamonGrossCrunch/vibeshift.me/settings/secrets/actions
+1. Go to: https://github.com/CinnamonGrossCrunch/OskiHub/settings/secrets/actions
 2. Add secrets:
    - `PRODUCTION_URL` = `https://newsletter-widget-sage.vercel.app`
    - `CRON_SECRET` = `your-cron-secret`

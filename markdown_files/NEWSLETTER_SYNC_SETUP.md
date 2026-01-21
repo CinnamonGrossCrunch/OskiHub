@@ -14,7 +14,7 @@ The "Sync Newsletters from GitHub" button triggers a Vercel redeployment, which:
 ### 1. Create a Vercel Deploy Hook
 
 1. Go to your Vercel Dashboard: https://vercel.com/dashboard
-2. Select your project (vibeshift.me / oski.app)
+2. Select your project (OskiHub / oski.app)
 3. Go to **Settings** → **Git** → **Deploy Hooks**
 4. Click **Create Hook**
    - **Hook Name**: "Newsletter Sync" (or any name you prefer)

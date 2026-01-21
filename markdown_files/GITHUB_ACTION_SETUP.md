@@ -7,7 +7,7 @@ You need to add 2 secrets to your GitHub repository:
 ### 1. Go to GitHub Secrets Page
 Open this URL in your browser:
 ```
-https://github.com/CinnamonGrossCrunch/vibeshift.me/settings/secrets/actions
+https://github.com/CinnamonGrossCrunch/OskiHub/settings/secrets/actions
 ```
 
 ### 2. Click "New repository secret"
@@ -31,7 +31,7 @@ Click "Add secret"
 ## ✅ Step 2: Test the Action (Optional)
 
 ### Manual Test:
-1. Go to: https://github.com/CinnamonGrossCrunch/vibeshift.me/actions
+1. Go to: https://github.com/CinnamonGrossCrunch/OskiHub/actions
 2. Click on "Warm Cache After Deployment" workflow
 3. Click "Run workflow" button (dropdown)
 4. Leave URL empty (uses production URL)
@@ -72,7 +72,7 @@ https://newsletter-widget-sage.vercel.app
 
 View action runs:
 ```
-https://github.com/CinnamonGrossCrunch/vibeshift.me/actions/workflows/warm-cache.yml
+https://github.com/CinnamonGrossCrunch/OskiHub/actions/workflows/warm-cache.yml
 ```
 
 ---

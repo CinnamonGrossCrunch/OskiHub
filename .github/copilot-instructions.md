@@ -16,8 +16,6 @@ Vercel Project: https://vercel.com/matt-gross-projects-2589e68e/oskihub
 Production URL: https://www.oski.app
 ```
 
-**Note:** The previous repository (vibeshift.me) is deprecated. All code changes should be pushed to the OskiHub repository.
-
 ## Project Overview
 
 OSKI Hub aggregates EWMBA program data into a single dashboard:

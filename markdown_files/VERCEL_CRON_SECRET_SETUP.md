@@ -3,7 +3,7 @@
 ## Quick Setup Instructions
 
 ### 1. Open Vercel Dashboard
-Go to: https://vercel.com/matt-gross-projects-2589e68e/vibeshift.me/settings/environment-variables
+Go to: https://vercel.com/matt-gross-projects-2589e68e/oskihub/settings/environment-variables
 
 ### 2. Add Environment Variable
 
@@ -45,7 +45,7 @@ Once added, your two cron jobs will activate:
 ## How to Verify It's Working
 
 ### Option 1: Check Vercel Logs
-1. Go to: https://vercel.com/matt-gross-projects-2589e68e/vibeshift.me/logs
+1. Go to: https://vercel.com/matt-gross-projects-2589e68e/oskihub/logs
 2. Filter by "Cron"
 3. Look for successful executions at scheduled times
 

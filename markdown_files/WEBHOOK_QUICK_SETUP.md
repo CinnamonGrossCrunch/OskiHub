@@ -31,7 +31,7 @@ Run this in PowerShell:
 
 ### 3. Configure GitHub Webhook (5 minutes)
 
-1. Go to: https://github.com/CinnamonGrossCrunch/vibeshift.me/settings/hooks
+1. Go to: https://github.com/CinnamonGrossCrunch/OskiHub/settings/hooks
 2. Click **Add webhook**
 3. Fill in:
    - **Payload URL**: `https://oski.app/api/github-webhook`
