@@ -266,9 +266,14 @@ export default function MonthGrid({
 
           // Check the source filename to determine course type
           if (event.source) {
-            // EWMBA 201 (Microeconomics) - Dark Green
+            // EWMBA 201A (Microeconomics) - Dark Green
             if (event.source.includes('201a_micro')) {
               return `${glassBase} bg-green-800/35 border-green-700/40 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 201B (Macroeconomics) - Emerald Green (distinct from Micro)
+            if (event.source.includes('201b_macro')) {
+              return `${glassBase} bg-emerald-700/50 border-emerald-600/50 text-white ${hoverGold}`;
             }
 
             // EWMBA 202 (Financial Accounting) - Teal/Cyan

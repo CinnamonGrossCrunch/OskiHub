@@ -1,0 +1,122 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Gemini//EWMBA 201B Gold Cohort//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EWMBA 201B Macro (Gold Cohort)
+X-WR-CALDESC:Spring 2026 Schedule for Cohort 2
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week1
+DTSTART:20260108T180000
+DTEND:20260108T213000
+SUMMARY:Class 1: Intro: Output, Inflation & Interest Rates
+DESCRIPTION:Topic: Output, Inflation and Interest Rates\nReadings: See Syllabus\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-1
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week2
+DTSTART:20260115T180000
+DTEND:20260115T213000
+SUMMARY:Class 2: Money and Central Banks
+DESCRIPTION:Topic: Money and Central Banks\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-2
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week3
+DTSTART:20260122T180000
+DTEND:20260122T213000
+SUMMARY:Class 3: Long-Term Growth
+DESCRIPTION:Topic: Long-Term Growth\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week4
+DTSTART:20260129T180000
+DTEND:20260129T213000
+SUMMARY:Class 4: Labor Markets
+DESCRIPTION:Topic: Labor Markets\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-4
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week5
+DTSTART:20260205T180000
+DTEND:20260205T213000
+SUMMARY:Class 5: Business Cycles I & MIDTERM EXAM
+DESCRIPTION:IN-CLASS MIDTERM EXAM (Half Class)\nTopic: Business Cycles I: Measurement and Indicators\nNote: Midterm covers material up to Week 4.\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-5
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week6
+DTSTART:20260212T180000
+DTEND:20260212T213000
+SUMMARY:Class 6: Business Cycles II
+DESCRIPTION:Topic: Business Cycles II: Fiscal and Monetary Policy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-6
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-6
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week7
+DTSTART:20260219T180000
+DTEND:20260219T213000
+SUMMARY:Class 7: The Open Economy
+DESCRIPTION:Topic: The Open Economy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-7
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-7
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week8
+DTSTART:20260226T180000
+DTEND:20260226T213000
+SUMMARY:Class 8: Debt Sustainability
+DESCRIPTION:Topic: Debt Sustainability\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-8
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-8
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week9
+DTSTART:20260305T180000
+DTEND:20260305T213000
+SUMMARY:Class 9: Climate Change & Debates
+DESCRIPTION:Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-9
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-9
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-gold-week10-final
+DTSTART:20260312T180000
+DTEND:20260312T213000
+SUMMARY:Class 10: Final Exam
+DESCRIPTION:Final Exam (In-class).\nTime: 6:00pm - 9:30pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-10
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-10
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-gold-assign-topic
+DTSTART:20260130T170000
+DTEND:20260130T170000
+SUMMARY:Group and Topic Selection Due
+DESCRIPTION:Deadline to submit group and topic preferences.\nSee Syllabus for form link.
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-gold-assign-slides
+DTSTART:20260305T170000
+DTEND:20260305T170000
+SUMMARY:Presentation/Debate Slides Due
+DESCRIPTION:Submit slides using the form provided in Syllabus.
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-gold-assign-report
+DTSTART:20260307T180000
+DTEND:20260307T180000
+SUMMARY:Group Report Due
+DESCRIPTION:Submit Group Report via bCourses.
+END:VEVENT
+END:VCALENDAR

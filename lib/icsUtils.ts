@@ -51,6 +51,7 @@ export type CohortEvents = {
 const COHORT_FILES = {
   blue: [
     // Spring 2026 courses
+    'ewmba201b_macro_blue_spring2026.ics',
     'ewmba202_accounting_blue_spring2026.ics',
     // Fall 2025 courses (archive)
     'ewmba201a_micro_blue_fall2025.ics',
@@ -61,6 +62,7 @@ const COHORT_FILES = {
   ],
   gold: [
     // Spring 2026 courses
+    'ewmba201b_macro_gold_spring2026.ics',
     'ewmba202_accounting_gold_spring2026.ics',
     // Fall 2025 courses (archive)
     'ewmba201a_micro_gold_fall2025.ics',
