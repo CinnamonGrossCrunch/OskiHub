@@ -16,7 +16,7 @@
 // ============================================================================
 // CONFIGURATION
 // ============================================================================
-// ⚠️ IMPORTANT: Replace with your actual GitHub token in Google Apps Script
+// ⚠️ IMPORTANT: Replace YOUR_GITHUB_TOKEN_HERE with your actual token in Google Apps Script
 // Do NOT commit real tokens to Git!
 const GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN_HERE';
 const REPO_OWNER = 'CinnamonGrossCrunch';
