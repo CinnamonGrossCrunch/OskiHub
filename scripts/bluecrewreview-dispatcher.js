@@ -94,12 +94,18 @@ function cleanNewsletterHTML(rawHTML) {
   cleaned = cleaned.replace(/\s*class=["']\s*["']/gi, '');
   
   // Remove specific verbose style properties that don't affect display much
-  // Keep colors, fonts, but remove things like font-variant-numeric, etc.
   cleaned = cleaned.replace(/font-variant-[^;:]+:[^;]+;?/gi, '');
   cleaned = cleaned.replace(/vertical-align:\s*baseline;?/gi, '');
   cleaned = cleaned.replace(/-webkit-[^;:]+:[^;]+;?/gi, '');
   cleaned = cleaned.replace(/-moz-[^;:]+:[^;]+;?/gi, '');
   cleaned = cleaned.replace(/-ms-[^;:]+:[^;]+;?/gi, '');
+  
+  // ========== STRIP TEXT COLORS (so our dark theme can apply) ==========
+  // Remove color properties from inline styles (except background-color)
+  // This allows our wrapper's color:#E2E8F0 to take effect
+  cleaned = cleaned.replace(/([;"\s])color:\s*rgb\([^)]+\);?/gi, '$1');
+  cleaned = cleaned.replace(/([;"\s])color:\s*#[0-9a-fA-F]{3,6};?/gi, '$1');
+  cleaned = cleaned.replace(/([;"\s])color:\s*[a-z]+;?/gi, '$1');
   
   // ========== Balance divs ==========
   const openDivs = (cleaned.match(/<div/gi) || []).length;
