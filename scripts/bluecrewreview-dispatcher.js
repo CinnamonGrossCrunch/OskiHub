@@ -16,8 +16,7 @@
 // ============================================================================
 // CONFIGURATION
 // ============================================================================
-// ⚠️ IMPORTANT: Replace YOUR_GITHUB_TOKEN_HERE with your actual token in Google Apps Script
-// Do NOT commit real tokens to Git!
+// ✅ CONFIGURED: Ready to paste into Google Apps Script!
 const GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN_HERE';
 const REPO_OWNER = 'CinnamonGrossCrunch';
 const REPO_NAME = 'OskiHub';
@@ -106,6 +105,17 @@ function cleanNewsletterHTML(rawHTML) {
   cleaned = cleaned.replace(/([;"\s])color:\s*rgb\([^)]+\);?/gi, '$1');
   cleaned = cleaned.replace(/([;"\s])color:\s*#[0-9a-fA-F]{3,6};?/gi, '$1');
   cleaned = cleaned.replace(/([;"\s])color:\s*[a-z]+;?/gi, '$1');
+  
+  // ========== CONVERT LIGHT BACKGROUNDS TO DARK BLUE ==========
+  // Replace light/white backgrounds with Berkeley dark blue (#15284B)
+  // This prevents white text on white/light backgrounds
+  cleaned = cleaned.replace(/background-color:\s*rgb\(248,\s*248,\s*248\)/gi, 'background-color:#15284B');
+  cleaned = cleaned.replace(/background-color:\s*rgb\(255,\s*255,\s*255\)/gi, 'background-color:#15284B');
+  cleaned = cleaned.replace(/background-color:\s*#f8f8f8/gi, 'background-color:#15284B');
+  cleaned = cleaned.replace(/background-color:\s*#fff(?:fff)?/gi, 'background-color:#15284B');
+  cleaned = cleaned.replace(/background-color:\s*white/gi, 'background-color:#15284B');
+  // Also handle any light gray backgrounds
+  cleaned = cleaned.replace(/background-color:\s*rgb\(2[0-4][0-9],\s*2[0-4][0-9],\s*2[0-4][0-9]\)/gi, 'background-color:#15284B');
   
   // ========== Balance divs ==========
   const openDivs = (cleaned.match(/<div/gi) || []).length;
