@@ -16,8 +16,9 @@
 // ============================================================================
 // CONFIGURATION
 // ============================================================================
-// ⚠️ REPLACE WITH YOUR VALUES before pasting into Google Apps Script!
-const GITHUB_TOKEN = 'YOUR_GITHUB_PAT_HERE'; // Replace with your GitHub Personal Access Token
+// ⚠️ IMPORTANT: Replace with your actual GitHub token in Google Apps Script
+// Do NOT commit real tokens to Git!
+const GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN_HERE';
 const REPO_OWNER = 'CinnamonGrossCrunch';
 const REPO_NAME = 'OskiHub';
 const EVENT_TYPE = 'newsletter_received';
@@ -53,28 +54,59 @@ function checkNewsletters() {
 }
 
 // ============================================================================
-// CLEAN HTML CONTENT
+// CLEAN AND COMPRESS HTML CONTENT
 // ============================================================================
 function cleanNewsletterHTML(rawHTML) {
   let cleaned = rawHTML;
   
-  // Remove Gmail wrapper divs (gmail_quote, gmail_quote_container)
+  // ========== Remove Gmail cruft ==========
+  // Remove Gmail wrapper divs
   cleaned = cleaned.replace(/<div class="gmail_quote[^"]*"[^>]*>/gi, '');
-  
-  // Remove Gmail attributes section (Subject: ... To: ...)
   cleaned = cleaned.replace(/<div[^>]*class="gmail_attr"[^>]*>[\s\S]*?<\/div>/gi, '');
   
-  // Remove broken inline images (cid: references won't work outside Gmail)
-  cleaned = cleaned.replace(/<img[^>]*src="cid:[^"]*"[^>]*>/gi, '');
+  // ========== Remove images (biggest size culprit) ==========
+  // Remove ALL base64 embedded images (these are HUGE)
+  cleaned = cleaned.replace(/<img[^>]*src=["']data:image[^"']*["'][^>]*>/gi, '[image]');
   
-  // Remove extra closing divs that are now orphaned
-  // This is a simple cleanup - counts opening/closing divs and balances them
+  // Remove cid: images (broken outside Gmail anyway)
+  cleaned = cleaned.replace(/<img[^>]*src=["']cid:[^"']*["'][^>]*>/gi, '');
+  
+  // Remove tracking pixels (1x1 or very small images)
+  cleaned = cleaned.replace(/<img[^>]*(?:width|height)=["']?[01](?:px)?["']?[^>]*>/gi, '');
+  
+  // Keep external URL images but simplify them
+  // Replace complex img tags with simplified versions
+  cleaned = cleaned.replace(/<img([^>]*?)src=["'](https?:\/\/[^"']+)["']([^>]*)>/gi, '<img src="$2">');
+  
+  // ========== Remove scripts and tracking ==========
+  cleaned = cleaned.replace(/<script[\s\S]*?<\/script>/gi, '');
+  cleaned = cleaned.replace(/<noscript[\s\S]*?<\/noscript>/gi, '');
+  cleaned = cleaned.replace(/<!--[\s\S]*?-->/g, '');
+  
+  // ========== Compress whitespace ==========
+  cleaned = cleaned.replace(/>\s+</g, '><');
+  cleaned = cleaned.replace(/[\n\r\t]+/g, ' ');
+  cleaned = cleaned.replace(/\s{2,}/g, ' ');
+  
+  // ========== Simplify styles (keep structure, remove bloat) ==========
+  // Remove empty attributes
+  cleaned = cleaned.replace(/\s*style=["']\s*["']/gi, '');
+  cleaned = cleaned.replace(/\s*class=["']\s*["']/gi, '');
+  
+  // Remove specific verbose style properties that don't affect display much
+  // Keep colors, fonts, but remove things like font-variant-numeric, etc.
+  cleaned = cleaned.replace(/font-variant-[^;:]+:[^;]+;?/gi, '');
+  cleaned = cleaned.replace(/vertical-align:\s*baseline;?/gi, '');
+  cleaned = cleaned.replace(/-webkit-[^;:]+:[^;]+;?/gi, '');
+  cleaned = cleaned.replace(/-moz-[^;:]+:[^;]+;?/gi, '');
+  cleaned = cleaned.replace(/-ms-[^;:]+:[^;]+;?/gi, '');
+  
+  // ========== Balance divs ==========
   const openDivs = (cleaned.match(/<div/gi) || []).length;
   const closeDivs = (cleaned.match(/<\/div>/gi) || []).length;
   const extraClosing = closeDivs - openDivs;
   
   if (extraClosing > 0) {
-    // Remove extra closing divs from the end
     for (let i = 0; i < extraClosing; i++) {
       cleaned = cleaned.replace(/<\/div>(?![\s\S]*<\/div>)/, '');
     }
@@ -84,12 +116,45 @@ function cleanNewsletterHTML(rawHTML) {
 }
 
 // ============================================================================
+// APPLY DARK THEME STYLING
+// ============================================================================
+function applyDarkThemeStyling(html) {
+  let styled = html;
+  
+  // Style all links: light blue color (#60A5FA = Tailwind blue-400)
+  // Add style to existing <a> tags, or replace existing color
+  styled = styled.replace(/<a\s+/gi, '<a style="color:#60A5FA;text-decoration:underline;" ');
+  
+  // Remove any conflicting link colors that were in the original
+  styled = styled.replace(/(<a[^>]*style="[^"]*)(color:[^;]+;?)([^"]*")/gi, '$1color:#60A5FA;$3');
+  
+  // Wrap entire content with dark theme container
+  // - White text (#E2E8F0 = Tailwind slate-200)
+  // - Dark blue background for highlights will be handled by existing bgcolor attributes
+  const wrapper = `<div style="color:#E2E8F0;font-family:system-ui,-apple-system,sans-serif;">${styled}</div>`;
+  
+  return wrapper;
+}
+
+// ============================================================================
 // PROCESS INDIVIDUAL NEWSLETTER
 // ============================================================================
 function processNewsletter(msg) {
   const subject = msg.getSubject();
   const rawBody = msg.getBody(); // HTML content
-  const body = cleanNewsletterHTML(rawBody); // Clean it up
+  
+  console.log(`📏 Original HTML size: ${rawBody.length} characters`);
+  
+  let body = cleanNewsletterHTML(rawBody); // Clean and compress
+  
+  console.log(`📏 After cleaning: ${body.length} characters`);
+  
+  // Apply dark theme styling (white text, light blue links)
+  body = applyDarkThemeStyling(body);
+  
+  console.log(`📏 Final size with styling: ${body.length} characters`);
+  console.log(`📉 Size reduction: ${Math.round((1 - body.length/rawBody.length) * 100)}%`);
+  
   const date = Utilities.formatDate(msg.getDate(), 'GMT', 'yyyy-MM-dd');
   
   // Create URL-safe slug from subject
