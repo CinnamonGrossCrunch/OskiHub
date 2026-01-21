@@ -6,6 +6,8 @@
 [![Next.js 15.5](https://img.shields.io/badge/Next.js-15.5-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
+> **Latest Update:** January 21, 2026 - OskiHub deployment pipeline verified ✅
+
 ---
 
 ## 🔗 Links
