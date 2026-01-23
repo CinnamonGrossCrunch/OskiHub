@@ -29,7 +29,7 @@ UID:ewmba201b-sp26-gold-week3
 DTSTART:20260122T180000
 DTEND:20260122T213000
 SUMMARY:Class 3: Long-Term Growth
-DESCRIPTION:Topic: Long-Term Growth\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3
+DESCRIPTION:Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nPre-Class Materials (Required):\n• China Real Estate Slowdown (Rogoff): https://www.project-syndicate.org/commentary/china-diminishing-returns-real-estate-housing-slowdown-by-kenneth-rogoff-2022-10\n• Video: https://www.youtube.com/watch?v=jDOk54tEb3c\n• Allocation of Talent & US Growth: https://bfi.uchicago.edu/insight/research-summary/the-allocation-of-talent-and-us-economic-growth/\n• FT Article: https://www.ft.com/content/b44458cc-03fd-46a1-b003-b7a097419e66\n\nOptional Readings:\n• Why AI Isn't Boosting Economy: https://www.chicagobooth.edu/review/podcast/why-ai-isnt-boosting-economy\n• FT: https://www.ft.com/content/e63cbe88-6d46-4119-9067-e10a926c61c2\n• Racial Discrimination in Mortgage Lending: https://www-economist-com.libproxy.berkeley.edu/united-states/2022/11/24/racial-discrimination-in-mortgage-lending-has-declined-sharply-in-america\n• Contract Labour in India: https://cepr.org/voxeu/columns/contract-labour-and-firm-growth-india\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-3
 END:VEVENT
 BEGIN:VEVENT
@@ -92,8 +92,8 @@ UID:ewmba201b-sp26-gold-week10-final
 DTSTART:20260312T180000
 DTEND:20260312T213000
 SUMMARY:Class 10: Final Exam
-DESCRIPTION:Final Exam (In-class).\nTime: 6:00pm - 9:30pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-10
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-10
+DESCRIPTION:Final Exam (In-class).\nTime: 6:00pm - 9:30pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -110,6 +110,7 @@ DTSTART:20260305T170000
 DTEND:20260305T170000
 SUMMARY:Presentation/Debate Slides Due
 DESCRIPTION:Submit slides using the form provided in Syllabus.
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/assignments
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -118,5 +119,6 @@ DTSTART:20260307T180000
 DTEND:20260307T180000
 SUMMARY:Group Report Due
 DESCRIPTION:Submit Group Report via bCourses.
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/assignments
 END:VEVENT
 END:VCALENDAR

@@ -48,6 +48,16 @@ const CACHE_TTL = 28800;
  * Get cached data from KV (primary) or static JSON (fallback)
  */
 export async function getCachedData<T>(key: string): Promise<{ data: T; source: 'kv' | 'static' } | null> {
+  // Skip cache in development mode ONLY for cohort calendar data (for real-time ICS updates)
+  // Keep caching for newsletter/AI content to avoid expensive reprocessing
+  const skipCacheInDev = process.env.NODE_ENV === 'development' && 
+                         (key === CACHE_KEYS.COHORT_EVENTS || key === CACHE_KEYS.DASHBOARD_DATA);
+  
+  if (skipCacheInDev) {
+    console.log(`🔧 [Cache] DEV MODE: Skipping cache for calendar data: ${key}`);
+    return null;
+  }
+  
   // Try KV first (instantaneous)
   if (kv) {
     try {

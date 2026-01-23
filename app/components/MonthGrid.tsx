@@ -271,9 +271,9 @@ export default function MonthGrid({
               return `${glassBase} bg-green-800/35 border-green-700/40 text-white ${hoverGold}`;
             }
 
-            // EWMBA 201B (Macroeconomics) - Emerald Green (distinct from Micro)
+            // EWMBA 201B (Macroeconomics) - Dark Blue (distinct from Micro)
             if (event.source.includes('201b_macro')) {
-              return `${glassBase} bg-emerald-700/50 border-emerald-600/50 text-white ${hoverGold}`;
+              return `${glassBase} bg-blue-900/60 border-blue-700/50 text-white ${hoverGold}`;
             }
 
             // EWMBA 202 (Financial Accounting) - Teal/Cyan

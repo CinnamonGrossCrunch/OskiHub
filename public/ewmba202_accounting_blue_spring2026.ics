@@ -101,9 +101,9 @@ UID:ewmba202-sp26-blue-week10-final
 DTSTART:20260309T180000
 DTEND:20260309T210000
 SUMMARY:EWMBA 202: Final Exam
-DESCRIPTION:Final Exam (In-class, Closed book with 1 note sheet).\nTime: 6:00pm - 9:00pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-10
+DESCRIPTION:Final Exam (In-class, Closed book with 1 note sheet).\nTime: 6:00pm - 9:00pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-10
+URL:https://bcourses.berkeley.edu/courses/1549713
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260112T032600Z
@@ -139,15 +139,6 @@ DTEND:20260203T183000
 SUMMARY:EWMBA 202: J Prep Case Due
 DESCRIPTION:Team Project - Submit one report per team.\nInclude team number and member names on title page.\nCase available in Study.Net folder.\nMust answer six questions from the linked document.\n\nQuestions: https://bcourses.berkeley.edu/courses/1549713/files/93609990
 URL:https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=02&year=2026#assignment_9029316
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T220900Z
-UID:ewmba201b-sp26-group-report
-DTSTART:20260307T180000
-DTEND:20260307T180100
-SUMMARY:EWMBA 201B: Group Report Due
-DESCRIPTION:Group Report submission for EWMBA 201B.\nSubmit after groups are formed and topic is assigned.
-URL:https://bcourses.berkeley.edu/calendar?include_contexts=course_1549648&month=03&year=2026#assignment_9013181
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20250825T235700Z
