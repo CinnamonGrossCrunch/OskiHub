@@ -88,6 +88,7 @@ export interface UnifiedDashboardData {
     launch?: CalendarEvent[];
     calBears?: CalendarEvent[];
     campusGroups?: CalendarEvent[];
+    academicCalendar?: CalendarEvent[];
   };
   
   // Processing metadata
@@ -270,7 +271,8 @@ export async function GET(request: Request) {
             original: [],
             launch: [],
             calBears: [],
-            campusGroups: []
+            campusGroups: [],
+            academicCalendar: []
           };
         }
         
@@ -417,7 +419,8 @@ export async function GET(request: Request) {
           original: [],
           launch: [],
           calBears: [],
-          campusGroups: []
+          campusGroups: [],
+          academicCalendar: []
         },
         processingInfo: {
           totalTime,

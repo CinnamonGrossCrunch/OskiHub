@@ -6,7 +6,7 @@
 [![Next.js 15.5](https://img.shields.io/badge/Next.js-15.5-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
-> **Latest Update:** January 21, 2026 - OskiHub deployment pipeline verified ✅
+> **Latest Update:** January 2026 - Gmail newsletter pipeline + cache optimization
 
 ---
 
@@ -17,117 +17,72 @@
 | **Production** | https://www.oski.app |
 | **GitHub Repo** | https://github.com/CinnamonGrossCrunch/OskiHub |
 | **Vercel Dashboard** | https://vercel.com/matt-gross-projects-2589e68e/oskihub |
-| **Vercel Project ID** | `prj_4PcZTaos2UlHV9bXLGlQEXlUINVC` |
 
 ---
 
-## 🎯 The Story
+## 🎯 What It Does
 
-OskiHub started with a simple frustration: **checking multiple calendars, newsletters, and websites just to figure out what's happening this week at Haas.**
+OskiHub aggregates everything an EWMBA student needs:
 
-As an EWMBA student, you're juggling:
-- 📅 **6+ calendar feeds** (Microeconomics, Leading People, Data & Decisions, Marketing, Teams@Haas, bCourses)
-- 📰 **Weekly newsletters** from the program office
-- 🎓 **Campus events** (UC Launch, club fairs, guest speakers)
-- 🏈 **Cal Bears home games** (because Go Bears!)
-- 📚 **Resource links** scattered across Slack, email, and bookmarks
-
-**The old way:** Open 8 tabs, cross-reference dates, manually compile what matters this week.
-
-**The OskiHub way:** Open one URL. See everything. Get AI-powered weekly insights. Go live your life.
-
----
-
-## ✨ Features
-
-### 📊 Unified Dashboard
-- **Cohort-aware calendar** - Automatically shows Blue or Gold cohort events
-- **My Week AI Summary** - GPT-4o analyzes your upcoming week and highlights what matters
-- **Smart event filtering** - Only shows events within your current week window
-- **Newsletter integration** - Scrapes and parses weekly Bear Necessities newsletter
-
-### 🗓️ Intelligent Calendar
-- **Multi-source aggregation** - Combines 10+ ICS feeds into one view
-- **Rich event details** - Shows class readings, assignment descriptions, due dates
-- **Month grid view** - Visual calendar with event density heatmap
-- **Campus Groups** - Discover EWMBA club events and networking opportunities
-
-### 🔗 Quick Resources
-- Direct links to bCourses, Slack, Zoom, Canvas, Gradescope
-- One-click access to Haas services (IT, Career, Wellness)
-- Berkeley essentials (Library, Gym, Parking, WiFi)
-
-### 🤖 AI-Powered Insights
-- Analyzes your week's workload and suggests priorities
-- Identifies potential scheduling conflicts
-- Highlights time-sensitive deadlines
+| Feature | Description |
+|---------|-------------|
+| **Unified Calendar** | Combines 10+ ICS feeds (courses, Teams@Haas, Cal Bears, UC Launch) |
+| **Newsletter Integration** | Scrapes Bear Necessities + auto-ingests Blue Crew Review & EW Wire from Gmail |
+| **My Week AI Summary** | GPT-4o analyzes your week and highlights priorities |
+| **Cohort Switching** | Toggle between Blue/Gold cohort schedules |
+| **Quick Resources** | Direct links to bCourses, Slack, Zoom, Gradescope |
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Framework**: Next.js 15.5 (App Router)
-- **Language**: TypeScript 5.0
-- **Styling**: Tailwind CSS
-- **AI**: OpenAI GPT-4o-mini
-- **Cache**: Upstash Redis KV + Static JSON fallback
-- **Hosting**: Vercel (Edge Functions)
-- **Email**: Resend (notifications)
+| Layer | Technology |
+|-------|------------|
+| Framework | Next.js 15.5 (App Router) |
+| Language | TypeScript 5.0 |
+| Styling | Tailwind CSS 4 |
+| AI | OpenAI GPT-4o-mini |
+| Cache | Upstash Redis KV + Static JSON fallback |
+| Hosting | Vercel (Serverless Functions) |
+| Email | Resend |
 
 ---
 
-## 🛠️ Development
-
-### Prerequisites
-- Node.js 22+
-- npm
-
-### Getting Started
+## 🛠️ Quick Start
 
 ```bash
-# Clone the repository
 git clone https://github.com/CinnamonGrossCrunch/OskiHub.git
 cd OskiHub
-
-# Install dependencies
 npm install
-
-# Create .env.local with required variables
-cp .env.example .env.local
-
-# Run development server
+cp .env.example .env.local  # Then fill in required vars
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the dashboard.
+Open [http://localhost:3000](http://localhost:3000)
 
-### Environment Variables
+### Required Environment Variables
 
-| Variable | Required | Purpose |
-|----------|----------|---------|
-| `OPENAI_API_KEY` | Yes | AI processing |
-| `CRON_SECRET` | Yes | Cron job auth |
-| `UPSTASH_REDIS_REST_URL` | Yes | KV cache |
-| `UPSTASH_REDIS_REST_TOKEN` | Yes | KV cache |
-| `RESEND_API_KEY` | No | Email notifications |
-| `NOTIFICATION_EMAIL` | No | Alert recipient |
+| Variable | Purpose |
+|----------|---------|
+| `OPENAI_API_KEY` | AI newsletter processing |
+| `CRON_SECRET` | Cron job authentication |
+| `UPSTASH_REDIS_REST_URL` | KV cache URL |
+| `UPSTASH_REDIS_REST_TOKEN` | KV cache token |
+| `GITHUB_WEBHOOK_SECRET` | Webhook signature validation |
+| `VERCEL_DEPLOY_HOOK_URL` | Trigger Vercel redeploy |
+
+See [`markdown_files/ENV_SETUP.md`](markdown_files/ENV_SETUP.md) for detailed setup instructions.
 
 ---
 
 ## 📦 Deployment
 
-Deployment is automatic via Vercel on push to `main`:
+Push to `main` → Vercel auto-deploys → `warm-cache.yml` pre-warms cache
 
 ```bash
-# Push changes to production
-git push origin main
+npm run build        # Verify build passes
+git push origin main # Auto-deploys to production
 ```
-
-The deployment pipeline:
-1. Push to `main` branch
-2. Vercel auto-builds and deploys
-3. GitHub Action warms the cache post-deploy
-4. Live at www.oski.app
 
 ---
 
@@ -136,20 +91,39 @@ The deployment pipeline:
 ```
 newsletter-widget/
 ├── app/
-│   ├── api/              # API routes (unified-dashboard, cron, calendar)
-│   ├── components/       # React components
-│   └── page.tsx          # Main page (server component)
+│   ├── api/
+│   │   ├── unified-dashboard/   # Main data endpoint
+│   │   ├── cron/                # Vercel cron handlers
+│   │   ├── gmail-newsletters/   # Gmail-sourced newsletters
+│   │   └── github-webhook/      # GitHub push → Vercel redeploy
+│   ├── components/              # React components
+│   └── page.tsx                 # Entry point
 ├── lib/
-│   ├── cache.ts          # Hybrid KV + static cache
-│   ├── scrape.ts         # Newsletter scraper
-│   ├── icsUtils.ts       # ICS calendar parser
-│   ├── openai-organizer.ts # Newsletter AI
-│   └── my-week-analyzer.ts # Weekly summary AI
-├── public/
-│   ├── cache/            # Static cache JSON
-│   └── *.ics             # Course calendars
-└── vercel.json           # Cron schedules, function config
+│   ├── cache.ts                 # Hybrid KV + static cache
+│   ├── scrape.ts                # Mailchimp newsletter scraper
+│   ├── aiClient.ts              # OpenAI with model fallback
+│   ├── icsUtils.ts              # ICS calendar parser
+│   ├── date-utils.ts            # Berkeley timezone handling
+│   └── my-week-analyzer.ts      # AI weekly summary
+├── content/newsletters/         # Gmail-ingested newsletters
+├── public/*.ics                 # Course calendars
+├── scripts/                     # Google Apps Scripts (reference)
+└── markdown_files/              # Setup guides & documentation
 ```
+
+---
+
+## 📚 Documentation
+
+| Guide | Description |
+|-------|-------------|
+| [`.github/copilot-instructions.md`](.github/copilot-instructions.md) | **AI coding agent instructions** - architecture, patterns, debugging |
+| [`markdown_files/ENV_SETUP.md`](markdown_files/ENV_SETUP.md) | Environment variable configuration |
+| [`markdown_files/CACHE_SETUP_GUIDE.md`](markdown_files/CACHE_SETUP_GUIDE.md) | Upstash Redis setup |
+| [`markdown_files/GITHUB_WEBHOOK_SETUP.md`](markdown_files/GITHUB_WEBHOOK_SETUP.md) | GitHub webhook configuration |
+| [`markdown_files/ICS_CALENDAR_GUIDE.md`](markdown_files/ICS_CALENDAR_GUIDE.md) | Adding/troubleshooting calendars |
+| [`markdown_files/NEWSLETTER_SYNC_SETUP.md`](markdown_files/NEWSLETTER_SYNC_SETUP.md) | Gmail newsletter pipeline |
+| [`scripts/GMAIL_DISPATCHER_SETUP.md`](scripts/GMAIL_DISPATCHER_SETUP.md) | Google Apps Script setup |
 
 ---
 

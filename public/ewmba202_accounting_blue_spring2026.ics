@@ -1,151 +1,216 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//OSKI Hub//EWMBA 202 Blue Cohort//EN
+PRODID:-//Berkeley Haas//EWMBA 202 Financial Accounting//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:EWMBA 202 Financial Accounting (Blue)
-X-WR-CALDESC:Spring 2026 Schedule - Instructor: Sunil Dutta
+X-WR-CALNAME:EWMBA 202 Financial Accounting (Blue Cohort)
+X-WR-CALDESC:Spring 2026 Schedule - Blue Cohort (Mondays)
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week1
+UID:ewmba202-sp26-week1-blue
 DTSTART:20260105T180000
 DTEND:20260105T213000
-SUMMARY:Class 1: Introduction to Financial Statements
-DESCRIPTION:Instructor: Sunil Dutta\nTopic: Balance sheet and income statement\nReadings: 1.1 – 1.17, 2.1 – 2.15\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-1
+SUMMARY:Week 1: Financial Statements I (Blue Cohort)
+DESCRIPTION:Topic: Introduction to Financial Statements - Balance Sheet and Income Statement\n\nObjectives:\n• Understand balance sheets and income statements\n\nPre-Class Materials:\n• Textbook: 1.1-1.7 and 2.1-2.15\n• Article 1 on Study.net\n\nInstructor: Prof. Sunil Dutta (dutta@haas.berkeley.edu)\nGSI: Jingyi Zhuang (jingyizhuang@berkeley.edu)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-1\nSyllabus: https://bcourses.berkeley.edu/courses/1549713/assignments/syllabus
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-1
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-1
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week2
+UID:ewmba202-sp26-week1-ta
+DTSTART:20260111T130000
+DTEND:20260111T143000
+SUMMARY:TA Session - Week 1
+DESCRIPTION:GSI: Jingyi Zhuang\nTopic: Week 1 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.\nAttendance is optional but strongly recommended.
+URL;VALUE=URI:https://berkeley.zoom.us/j/95769266069
+LOCATION:Zoom
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-week2-blue
 DTSTART:20260112T180000
 DTEND:20260112T213000
-SUMMARY:Class 2: Balance Sheet & Income Statement (Contd)
-DESCRIPTION:Instructor: Sunil Dutta\nTopic: Balance sheet and income statement continued\nReadings: 3.1 – 3.15\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-2
+SUMMARY:Week 2: Financial Statements II (Blue Cohort)
+DESCRIPTION:Topic: Financial Statements II - Cash Flow Statement\n\nObjectives:\n• Define the components of a cash flow statement\n• Describe various financial statements\n\nPre-Class Materials:\n• Textbook: 3.1-3.15\n• Article 2: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_newspapers_2050846931\n• Article 3: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3251373353\n\nAssignment: Prepare Homework 1 for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-2
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-2
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-2
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week3
+UID:ewmba202-sp26-week2-ta
+DTSTART:20260118T130000
+DTEND:20260118T143000
+SUMMARY:TA Session - Week 2
+DESCRIPTION:GSI: Jingyi Zhuang\nTopic: Week 2 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.
+URL;VALUE=URI:https://berkeley.zoom.us/j/95769266069
+LOCATION:Zoom
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-week3-joint-blue
 DTSTART:20260120T180000
 DTEND:20260120T213000
-SUMMARY:Class 3: Statement of Cash Flow (JOINT CLASS)
-DESCRIPTION:Note: Joint class on Tuesday due to MLK Holiday.\nInstructor: Sunil Dutta\nTopic: Working capital and cash conversion cycle\nReadings: 11.1 – 11.8\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3
-LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-3
+SUMMARY:Week 3: Statement of Cash Flows & Working Capital (JOINT CLASS)
+DESCRIPTION:Topic: Analyzing Cash Flows\, Working Capital & Cash Conversion Cycle\n\nNote: JOINT CLASS for both Blue and Gold cohorts (MLK Holiday Monday)\n\nObjectives:\n• Define working capital and the cash conversion cycle\n\nPre-Class Materials:\n• Textbook: 11.1-11.8 and 6.16-6.17\n• Hernandez Case\n• Article 4 on Study.net\n\nAssignments:\n• Homework 1 DUE\n• Take Online Quiz 1 (Jan 23-25)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-3
+LOCATION:Chou Hall N100
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week4
+UID:ewmba202-sp26-hw1-due-blue
+DTSTART:20260120T180000
+DTEND:20260120T180000
+SUMMARY:DEADLINE: Homework 1 Due
+DESCRIPTION:Homework 1 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-quiz1-window-blue
+DTSTART:20260123T000000
+DTEND:20260125T235900
+SUMMARY:Quiz 1 Window (Take anytime Jan 23-25)
+DESCRIPTION:Online Quiz 1 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/quizzes
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-week4-blue
 DTSTART:20260126T180000
 DTEND:20260126T213000
-SUMMARY:Class 4: Financial Statement Analysis
-DESCRIPTION:Instructor: Sunil Dutta\nTopic: Non-GAAP reporting\nReadings: 4.1 – 4.14, 5.3 – 5.6, 5.22 – 5.33\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4
+SUMMARY:Week 4: Financial Statement Analysis & Non-GAAP (Blue Cohort)
+DESCRIPTION:Topic: Financial Statement Analysis and Non-GAAP Reporting\n\nObjectives:\n• Analyze cash conversion cycle\n• Analyze financial statements\n• Describe non-GAAP reporting\n\nPre-Class Materials:\n• Textbook: 4.1-4.14\, 6.16-6.17\, 5.3-5.6\, 5.22-5.33\n• Article 5: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3272286273\n\nAssignments:\n• Homework 2 DUE (Tuesday 1/27)\n• Prepare J Prep Case report for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-4
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-4
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week5
+UID:ewmba202-sp26-hw2-due-blue
+DTSTART:20260127T183000
+DTEND:20260127T183000
+SUMMARY:DEADLINE: Homework 2 Due
+DESCRIPTION:Homework 2 must be submitted on bCourses before 6:30 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-week5-blue
 DTSTART:20260202T180000
 DTEND:20260202T213000
-SUMMARY:Class 5: ESG Reporting & Assets
-DESCRIPTION:Instructor: Sunil Dutta\nTopic: ESG, Accounts receivables, Inventories\nReadings: 5.17 – 5.21, 6.1 – 6.11\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5
+SUMMARY:Week 5: ESG Reporting\, Accounts Receivables & Inventories (Blue Cohort)
+DESCRIPTION:Topic: ESG Reporting\, Accounts Receivables & Inventories\n\nObjectives:\n• Describe ESG reporting\n• Describe the process for accounts receivables\n• Describe the financial accounting of inventories\n\nPre-Class Materials:\n• Textbook: 5.17-5.21 and 6.1-6.11\n• Article 6: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2938264461\n• Article 7: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2906681028\n• Climate Reporting Case\n\nAssignments:\n• J Prep Case report DUE (Tuesday 2/3)\n• Take Online Quiz 2 (Feb 6-8)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-5
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-5
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week6
+UID:ewmba202-sp26-jprep-due-blue
+DTSTART:20260203T180000
+DTEND:20260203T180000
+SUMMARY:DEADLINE: J Prep Case Report Due
+DESCRIPTION:J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-quiz2-window-blue
+DTSTART:20260206T000000
+DTEND:20260208T235900
+SUMMARY:Quiz 2 Window (Take anytime Feb 6-8)
+DESCRIPTION:Online Quiz 2 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/quizzes
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-week6-blue
 DTSTART:20260209T180000
 DTEND:20260209T213000
-SUMMARY:Class 6: PPE and Intangible Assets
-DESCRIPTION:Instructor: Sunil Dutta\nTopic: Property, plant, and equipment\nReadings: 6.17 – 6.32\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-6
+SUMMARY:Week 6: Property\, Plant\, Equipment & Intangible Assets (Blue Cohort)
+DESCRIPTION:Topic: PPE and Intangible Assets\n\nObjectives:\n• Describe financial accounting of property\, plant\, and equipment\n• Describe financial accounting of intangible assets\n\nPre-Class Materials:\n• Textbook: 6.17-6.32\n• Article 8: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2681293657\n• Article 9: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3258248699\n\nAssignment: Prepare Homework 3 for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-6
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-6
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-6
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week7
+UID:ewmba202-sp26-week7-joint-blue
 DTSTART:20260217T180000
 DTEND:20260217T213000
-SUMMARY:Class 7: Liabilities (JOINT CLASS)
-DESCRIPTION:Note: Joint class on Tuesday due to Presidents Day Holiday.\nInstructor: Sunil Dutta\nTopic: Current and long-term liabilities\nReadings: 7.1 – 7.24\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-7
+SUMMARY:Week 7: Current & Long-term Liabilities (JOINT CLASS)
+DESCRIPTION:Topic: Current and Long-term Liabilities\n\nNote: JOINT CLASS for both Blue and Gold cohorts (Presidents Day Monday)\n\nObjectives:\n• Describe the financial accounting of current and long-term liabilities\n\nPre-Class Materials:\n• Textbook: 7.1-7.24\n• Article 10: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_miscellaneous_1458495366\n• Article 11: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_gale_onefilemisc_PPTH_A856123681\n\nAssignments:\n• Homework 3 DUE\n• Take Online Quiz 3 (Feb 20-22)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-7
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-7
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-7
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week8
+UID:ewmba202-sp26-hw3-due-blue
+DTSTART:20260217T180000
+DTEND:20260217T180000
+SUMMARY:DEADLINE: Homework 3 Due
+DESCRIPTION:Homework 3 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-quiz3-window-blue
+DTSTART:20260220T000000
+DTEND:20260222T235900
+SUMMARY:Quiz 3 Window (Take anytime Feb 20-22)
+DESCRIPTION:Online Quiz 3 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/quizzes
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-topic-selection-due-blue
+DTSTART:20260221T235900
+DTEND:20260221T235900
+SUMMARY:DEADLINE: Presentation Topic Selection Due
+DESCRIPTION:Email your chosen group presentation topic by Feb 21.\n\nTopics may be drawn from current business press\, professional experience\, or accounting issues such as revenue recognition\, valuation\, frauds\, ESG reporting\, industry-specific rules\, or financial statement analysis.
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-week8-blue
 DTSTART:20260223T180000
 DTEND:20260223T213000
-SUMMARY:Class 8: Shareholders' Equity
-DESCRIPTION:Instructor: Sunil Dutta\nTopic: Intercorporate investments\nReadings: 8.1 – 8.12, 8.17 – 8.18, 9.1 – 9.12\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-8
+SUMMARY:Week 8: Shareholders Equity & Intercorporate Investments (Blue Cohort)
+DESCRIPTION:Topic: Shareholders' Equity & Intercorporate Investments\n\nObjectives:\n• Define shareholders' equity\n• Define intercorporate investments\n\nPre-Class Materials:\n• Textbook: 8.1-8.12\, 8.17-8.18\, and 9.1-9.12\n• Article 12: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3261449417\n• Article 13: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3270556767\n\nAssignment: Prepare Group presentations for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-8
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-8
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-8
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week9
+UID:ewmba202-sp26-week9-blue
 DTSTART:20260302T180000
 DTEND:20260302T213000
-SUMMARY:Class 9: Review and Presentations
-DESCRIPTION:Instructor: Sunil Dutta\nTopic: Group Presentations and Review\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-9
+SUMMARY:Week 9: Review & Group Presentations (Blue Cohort)
+DESCRIPTION:Topic: Course Review and Catch-up\n\nObjectives:\n• Comprehensive understanding of major concepts of financial accounting\n\nPre-Class Materials: None\n\nAssignments:\n• Homework 4 DUE (Tuesday 3/3)\n• Group Presentations (10 minutes each)\n\nNote: Teams will be paired to form seven larger groups. Slides must be emailed by 4:00 pm on presentation day.\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-9
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-9
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713/pages/week-9
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-blue-week10-final
+UID:ewmba202-sp26-hw4-due-blue
+DTSTART:20260303T180000
+DTEND:20260303T180000
+SUMMARY:DEADLINE: Homework 4 Due
+DESCRIPTION:Homework 4 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-presentation-slides-due-blue
+DTSTART:20260302T160000
+DTEND:20260302T160000
+SUMMARY:DEADLINE: Group Presentation Slides Due
+DESCRIPTION:One member must email the slide deck by 4:00 pm on the presentation day.\n\nPresentation Format:\n• 10 minutes per group\n• Teams paired to form seven larger groups\n• Evaluation is at the group level
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba202-sp26-final-blue
 DTSTART:20260309T180000
 DTEND:20260309T210000
-SUMMARY:EWMBA 202: Final Exam
-DESCRIPTION:Final Exam (In-class, Closed book with 1 note sheet).\nTime: 6:00pm - 9:00pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713
+SUMMARY:FINAL EXAM (Blue Cohort)
+DESCRIPTION:In-Class Final Exam\n\nTime: 6:00 pm - 9:00 pm\n\nExam Details:\n• Closed book\n• One 8.5x11 sheet of notes allowed (double-sided)\n• Calculator permitted\n• Comprehensive exam covering all course material\n\nGrading: Best of (25% Midterm + 30% Final) OR (55% Final)\n\nNote: If you do better on the final\, your midterm grade will be replaced.\n\nCourse Resources:\n• Study.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\n• Syllabus: https://bcourses.berkeley.edu/courses/1549713/assignments/syllabus\n• Media Library (Panopto): https://bcourses.berkeley.edu/courses/1549713/external_tools/93389\n• LearningClues AI: https://bcourses.berkeley.edu/courses/1549713/external_tools/101295\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-10
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-10
 LOCATION:Chou Hall N370
-URL:https://bcourses.berkeley.edu/courses/1549713
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260112T032600Z
-UID:ewmba202-sp26-hw1
-DTSTART:20260120T182959
-DTEND:20260120T183000
-SUMMARY:EWMBA 202: Homework 1 Due
-DESCRIPTION:Homework 1 Due\n\nSubmission: https://bcourses.berkeley.edu/courses/1549713/files/93576354
-URL:https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9017380
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260113T223400Z
-UID:ewmba202-sp26-quiz1
-DTSTART;VALUE=DATE:20260125
-SUMMARY:EWMBA 202: Quiz 1
-DESCRIPTION:Quiz 1 - Online\n\nCourse: EWMBA 202 Financial Accounting
-URL:https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9024625
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260116T172400Z
-UID:ewmba202-sp26-hw2
-DTSTART:20260127T182959
-DTEND:20260127T183000
-SUMMARY:EWMBA 202: Homework 2 Due
-DESCRIPTION:Homework 2 Due\nIncludes Nordstrom Data analysis\n\nSubmission: https://bcourses.berkeley.edu/courses/1549713/files/93623153
-URL:https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9029319
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260119T000000Z
-UID:ewmba202-sp26-jprep-case
-DTSTART:20260203T182959
-DTEND:20260203T183000
-SUMMARY:EWMBA 202: J Prep Case Due
-DESCRIPTION:Team Project - Submit one report per team.\nInclude team number and member names on title page.\nCase available in Study.Net folder.\nMust answer six questions from the linked document.\n\nQuestions: https://bcourses.berkeley.edu/courses/1549713/files/93609990
-URL:https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=02&year=2026#assignment_9029316
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20250825T235700Z
-UID:teams-haas-debrief-blue
-DTSTART;VALUE=DATE:20260206
-SUMMARY:Teams@Haas: Team Debrief Due (Blue)
-DESCRIPTION:Self-facilitated Team Debrief Workshop.\n\nSubmit: Photo of Team Journey Map + reflection paragraph.\n\nPrompt options:\n1. How did your team develop and what actions supported this?\n2. What led to a team low point and how did you pivot?\n3. Benefits/challenges of diverse team and leadership development?\n\nDebrief Kit:\n- Video overview\n- Deck for process\n- Supplies in MBA lounge or use Zoom whiteboard
-URL:https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=02&year=2026#assignment_8930028
 END:VEVENT
 END:VCALENDAR

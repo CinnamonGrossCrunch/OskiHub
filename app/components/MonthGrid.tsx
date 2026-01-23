@@ -1,7 +1,7 @@
 'use client';
 
-import { useMemo, useEffect } from 'react';
-import { startOfMonth, endOfMonth, startOfWeek, endOfWeek, eachDayOfInterval, isSameMonth, isSameDay, format } from 'date-fns';
+import { useMemo, useEffect, useState } from 'react';
+import { startOfMonth, endOfMonth, startOfWeek, endOfWeek, eachDayOfInterval, isSameMonth, isSameDay, format, addDays, differenceInDays, isWithinInterval, startOfDay, endOfDay } from 'date-fns';
 import Image from 'next/image';
 import type { CalendarEvent } from '@/lib/icsUtils';
 import { hasGreekTheaterEventOnDate, getGreekTheaterEventsForDate, greekTheaterToCalendarEvent } from '@/lib/greekTheater';
@@ -31,7 +31,10 @@ type Props = {
   campusGroupsEvents?: CalendarEvent[];
   showNewsletter?: boolean;
   newsletterEvents?: NewsletterCalendarEvent[];
+  showAcademicCalendar?: boolean;
+  academicCalendarEvents?: CalendarEvent[];
   glowingDate?: string | null; // Date string (YYYY-MM-DD) that should have violet glow effect
+  onMultiEventClick?: (events: CalendarEvent[], date: Date) => void; // Handler for expand button with multiple events
 };
 
 export default function MonthGrid({ 
@@ -47,8 +50,14 @@ export default function MonthGrid({
   campusGroupsEvents = [],
   showNewsletter = false,
   newsletterEvents = [],
-  glowingDate = null
+  showAcademicCalendar = true,
+  academicCalendarEvents = [],
+  glowingDate = null,
+  onMultiEventClick
 }: Props) {
+  // State for tracking hovered date cell
+  const [hoveredDate, setHoveredDate] = useState<string | null>(null);
+  
   // Remove the internal state since month is controlled by parent
   // const [currentMonth, setCurrentMonth] = useState(new Date(2025, 7, 1));
 
@@ -67,6 +76,68 @@ export default function MonthGrid({
     const end = endOfWeek(endOfMonth(currentMonth), { weekStartsOn: 0 });
     return eachDayOfInterval({ start, end });
   }, [currentMonth]);
+
+  // Helper to check if an event spans multiple days
+  // Note: ICS DTEND is exclusive, so we subtract 1 day to get the actual last day
+  const isMultiDayEvent = (event: CalendarEvent): boolean => {
+    if (!event.end) return false;
+    const start = startOfDay(new Date(event.start));
+    // DTEND is exclusive in ICS format - subtract 1 day to get actual end
+    const end = startOfDay(addDays(new Date(event.end), -1));
+    return differenceInDays(end, start) >= 1;
+  };
+
+  // Get the actual end date (DTEND - 1 day since ICS DTEND is exclusive)
+  const getActualEndDate = (event: CalendarEvent): Date => {
+    if (!event.end) return new Date(event.start);
+    return startOfDay(addDays(new Date(event.end), -1));
+  };
+
+  // Get multi-day spanning events that appear on a specific day
+  const getSpanningEventsForDay = (day: Date, allEvents: CalendarEvent[]): { event: CalendarEvent; isStart: boolean; isEnd: boolean; spanInWeek: number; dayPositionInWeek: number }[] => {
+    const dayStart = startOfDay(day);
+    const dayOfWeek = day.getDay(); // 0 = Sunday, 6 = Saturday
+    
+    return allEvents
+      .filter(event => {
+        if (!isMultiDayEvent(event)) return false;
+        const eventStart = startOfDay(new Date(event.start));
+        const eventEnd = getActualEndDate(event);
+        // Check if this day falls within the event's span
+        return isWithinInterval(dayStart, { start: eventStart, end: eventEnd });
+      })
+      .map(event => {
+        const eventStart = startOfDay(new Date(event.start));
+        const eventEnd = getActualEndDate(event);
+        const isStart = isSameDay(dayStart, eventStart);
+        const isEnd = isSameDay(dayStart, eventEnd);
+        
+        // Calculate how many days this event spans within the current week row
+        const weekStart = addDays(dayStart, -dayOfWeek);
+        const weekEnd = addDays(weekStart, 6);
+        
+        const effectiveStart = eventStart < weekStart ? weekStart : eventStart;
+        const effectiveEnd = eventEnd > weekEnd ? weekEnd : eventEnd;
+        const spanInWeek = differenceInDays(effectiveEnd, effectiveStart) + 1;
+        
+        // Position in the week (0-6)
+        const dayPositionInWeek = dayOfWeek;
+        
+        return { event, isStart, isEnd, spanInWeek, dayPositionInWeek };
+      });
+  };
+
+  // Handler for expand button click
+  const handleExpandClick = (e: React.MouseEvent, allDayEvents: CalendarEvent[], day: Date) => {
+    e.stopPropagation();
+    if (allDayEvents.length === 1) {
+      // Single event - open normal modal
+      onEventClick(allDayEvents[0]);
+    } else if (allDayEvents.length > 1 && onMultiEventClick) {
+      // Multiple events - open multi-event grid modal
+      onMultiEventClick(allDayEvents, day);
+    }
+  };
 
   return (
     <div>
@@ -99,6 +170,28 @@ export default function MonthGrid({
         const dayCampusGroupsEvents = showCampusGroups ? campusGroupsEvents.filter((ev) =>
           isSameDay(new Date(ev.start), day)
         ) : [];
+        
+        // Add Academic Calendar events for this day if they should be shown
+        // IMPORTANT: Exclude multi-day events - they appear ONLY as spanning bars, not as regular events
+        const dayAcademicCalendarEvents = showAcademicCalendar ? academicCalendarEvents.filter((ev) =>
+          isSameDay(new Date(ev.start), day) && !isMultiDayEvent(ev)
+        ) : [];
+        
+        // Get multi-day academic calendar events that START on this day (for showing start of bar)
+        const startingMultiDayAcademicEvents = showAcademicCalendar ? academicCalendarEvents.filter((ev) =>
+          isSameDay(new Date(ev.start), day) && isMultiDayEvent(ev)
+        ) : [];
+        
+        // Get multi-day academic calendar events that span this day (but don't start on this day)
+        // Note: We use getActualEndDate to account for exclusive DTEND in ICS format
+        const spanningAcademicEvents = showAcademicCalendar ? academicCalendarEvents.filter((ev) => {
+          if (!ev.end) return false;
+          const eventStart = startOfDay(new Date(ev.start));
+          const eventEnd = getActualEndDate(ev);
+          const dayStart = startOfDay(day);
+          // Event spans this day but doesn't start on this day
+          return dayStart > eventStart && dayStart <= eventEnd;
+        }) : [];
         
         // Add Newsletter events for this day if they should be shown
         const dayNewsletterEvents = showNewsletter ? newsletterEvents.filter((ev) =>
@@ -156,19 +249,23 @@ export default function MonthGrid({
           processedNewsletterEvents = [combinedEvent];
         }
         
-        // Combine regular events with launch events, Campus Groups events, and Newsletter events
+        // Combine regular events with launch events, Campus Groups events, Academic Calendar, and Newsletter events
         // NOTE: Cal Bears events are EXCLUDED - they only appear as logo icon in header (like Greek Theater)
         const allDayEvents: (CalendarEvent | NewsletterCalendarEvent)[] = [
           ...dayEvents, 
           ...dayLaunchEvents, 
-          ...dayCampusGroupsEvents, 
+          ...dayCampusGroupsEvents,
+          ...dayAcademicCalendarEvents,
           ...processedNewsletterEvents
         ];
         const isToday = isSameDay(day, new Date());
         const hasGreekEvent = hasGreekTheaterEventOnDate(day);
         const hasCalBearsEvent = showCalBears && dayCalBearsEvents.length > 0;
         const hasCampusGroupsEvent = showCampusGroups && dayCampusGroupsEvents.length > 0;
+        const hasAcademicCalendarEvent = showAcademicCalendar && dayAcademicCalendarEvents.length > 0;
         const hasNewsletterEvent = showNewsletter && dayNewsletterEvents.length > 0;
+        const hasSpanningEvent = spanningAcademicEvents.length > 0;
+        const hasStartingMultiDayEvent = startingMultiDayAcademicEvents.length > 0;
 
         // Debug log for days with newsletter events
         if (hasNewsletterEvent) {
@@ -242,6 +339,11 @@ export default function MonthGrid({
         const getCourseColor = (event: CalendarEvent) => {
           const hoverGold = 'hover:border-[#FDB515]'; // Berkeley Gold
           const glassBase = 'backdrop-blur-sm bg-clip-padding saturate-50 shadow-sm';
+
+          // Check for Haas Academic Calendar events - Amber/Gold styling
+          if (event.source && event.source.includes('haas_academic_calendar')) {
+            return `${glassBase} bg-amber-600/50 border-amber-500/50 text-white ${hoverGold}`;
+          }
 
           // Check for UC Launch events FIRST - Orange styling
           if (event.source && event.source.includes('uc_launch_events')) {
@@ -354,17 +456,33 @@ export default function MonthGrid({
         // Check if this day should have the violet glow effect
         const dayString = format(day, 'yyyy-MM-dd'); // Convert to YYYY-MM-DD format
         const shouldGlow = glowingDate === dayString;
+        const isHovered = hoveredDate === dayString;
+        const hasEvents = allDayEvents.length > 0;
         
 
         return (
             <div
               key={day.toISOString()}
-              className={`h-28 lg:h-32 p-0 flex flex-col sm:overflow-hidden ${
+              className={`relative h-28 lg:h-32 p-0 flex flex-col sm:overflow-hidden ${
                 isSameMonth(day, currentMonth) ? 'bg-slate-600/10' : 'bg-transparent opacity-40'
               } ${isToday ? 'rounded-md border-1 border-yellow-300 ring-1 ring-yellow-300/60 shadow-[0_0_30px_rgba(253,181,21,0.3)]' : ''} ${
                 shouldGlow ? 'newsletter-cell-glow' : ''
               }`}
+              onMouseEnter={() => setHoveredDate(dayString)}
+              onMouseLeave={() => setHoveredDate(null)}
             >
+              {/* Expand button - appears on hover when there are events */}
+              {hasEvents && isHovered && (
+                <button
+                  className="absolute top-0.5 right-0.5 z-50 w-5 h-5 bg-slate-800/90 hover:bg-[#003262] rounded-md flex items-center justify-center transition-all duration-200 border border-slate-600/50 hover:border-[#FDB515] shadow-lg"
+                  onClick={(e) => handleExpandClick(e, allDayEvents, day)}
+                  title={allDayEvents.length === 1 ? 'View event details' : `View all ${allDayEvents.length} events`}
+                >
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                  </svg>
+                </button>
+              )}
               <div className={`text-xs  mb-0 lg:mb-1 flex-shrink-0 flex items-center gap-1 ${
                 isToday ? 'translate-x-[2px] text-yellow-500 font-black ' : 'text-white font-light'
               }`}>
@@ -420,6 +538,24 @@ export default function MonthGrid({
                   </svg>
                 </div>
                 )}
+                {hasAcademicCalendarEvent && (
+                <div 
+                  className="flex-shrink-0 cursor-pointer opacity-80 hover:opacity-100 transition-all duration-200 bg-amber-600 rounded-md flex items-center justify-center relative border border-transparent hover:border-white w-4 h-4 md:w-auto md:h-auto md:px-1.5 md:py-0"
+                  title={`Academic Calendar: ${dayAcademicCalendarEvents.map(e => e.title).join(', ')}`}
+                  onClick={(e) => {
+                  e.stopPropagation();
+                  if (dayAcademicCalendarEvents.length > 0) {
+                    onEventClick(dayAcademicCalendarEvents[0]);
+                  }
+                  }}
+                >
+                  {/* Calendar icon for mobile, text for larger screens */}
+                  <svg className="w-3 h-3 text-white md:hidden" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
+                  </svg>
+                  <span className="hidden md:inline text-[10px] text-white font-medium leading-tight">📅</span>
+                </div>
+                )}
                 {hasNewsletterEvent && (
                 <div 
                   className="flex-shrink-0 cursor-pointer opacity-80 hover:opacity-100 transition-all duration-200 bg-purple-600 rounded-md flex items-center justify-center relative newsletter-icon-pulse border border-transparent hover:border-white w-4 h-4 md:w-auto md:h-auto md:px-1.5 md:py-0"
@@ -469,9 +605,17 @@ export default function MonthGrid({
                   const isOtherNonCohortEvent = !isNewsletterEvent && ev.source && 
                     (ev.source.includes('uc_launch_events') || 
                      ev.source.includes('campus_groups') || 
-                     ev.source.includes('cal_bears_home'));
+                     ev.source.includes('cal_bears_home') ||
+                     ev.source.includes('haas_academic_calendar'));
                   
-                  // Check if this is a non-cohort event (UC Launch, Campus Groups, Newsletter, Cal Bears)
+                  // Check if this is an academic calendar event
+                  const isAcademicCalendarEvent = ev.source && ev.source.includes('haas_academic_calendar');
+                  
+                  // Check if this event is a multi-day event
+                  const isMultiDayAcademicEvent = isAcademicCalendarEvent && isMultiDayEvent(ev);
+                  const eventSpanDays = isMultiDayAcademicEvent && ev.end ? differenceInDays(startOfDay(new Date(ev.end)), startOfDay(new Date(ev.start))) + 1 : 0;
+                  
+                  // Check if this is a non-cohort event (UC Launch, Campus Groups, Newsletter, Cal Bears, Academic Calendar)
                   const isNonCohortEvent = isNewsletterEvent || isOtherNonCohortEvent;
                   
                   // Height: cohort events get calculated proportional height, non-cohort get fixed 20px
@@ -501,8 +645,31 @@ export default function MonthGrid({
                       </div>
                     );
                   } else if (isOtherNonCohortEvent) {
-                    // Other non-cohort events (UC Launch, Campus Groups, Cal Bears) - same clamping as newsletter
+                    // Other non-cohort events (UC Launch, Campus Groups, Cal Bears, Academic Calendar)
                     const courseColor = getCourseColor(ev);
+                    
+                    // For multi-day academic events, show special styling
+                    if (isMultiDayAcademicEvent) {
+                      return (
+                        <div
+                          key={ev.uid ?? ev.title + ev.start}
+                          className={`text-[10px] px-0.5 rounded-sm border cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1`}
+                          title={`${ev.title} (${eventSpanDays} days)`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onEventClick(ev);
+                          }}
+                          style={{
+                            height: eventHeight
+                          }}
+                        >
+                          <span className="truncate">{ev.title}</span>
+                          <span className="flex-shrink-0 text-[8px] bg-amber-700/60 px-1 rounded hidden md:inline">
+                            {eventSpanDays}d
+                          </span>
+                        </div>
+                      );
+                    }
                     
                     return (
                       <div
@@ -551,6 +718,75 @@ export default function MonthGrid({
                 <div className="flex-1" />
                 )}
               </div>
+              
+              {/* Multi-day event bar START (first day of multi-day event) */}
+              {hasStartingMultiDayEvent && (
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
+                  {startingMultiDayAcademicEvents.slice(0, 1).map((ev, idx) => {
+                    const eventStart = startOfDay(new Date(ev.start));
+                    const eventEnd = getActualEndDate(ev);
+                    const totalDays = differenceInDays(eventEnd, eventStart) + 1;
+                    const isAlsoLastDay = isSameDay(eventStart, eventEnd); // Single day event that spans midnight
+                    
+                    return (
+                      <div
+                        key={`start-${ev.uid || ev.title}-${idx}`}
+                        className={`h-full bg-amber-500/80 cursor-pointer hover:bg-amber-600 transition-colors flex items-center justify-between px-1 border-l border-white/50 ${isAlsoLastDay ? 'border-r' : ''}`}
+                        title={`${ev.title} (Day 1 of ${totalDays})`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onEventClick(ev);
+                        }}
+                      >
+                        <span className="text-[8px] text-white font-medium truncate">
+                          {ev.title}
+                        </span>
+                        <span className="text-[7px] text-white/90 font-medium flex-shrink-0 ml-0.5">
+                          1/{totalDays}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+              
+              {/* Multi-day spanning event bar (continuation days) */}
+              {hasSpanningEvent && !hasStartingMultiDayEvent && (
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
+                  {spanningAcademicEvents.slice(0, 1).map((ev, idx) => {
+                    const eventStart = startOfDay(new Date(ev.start));
+                    const eventEnd = getActualEndDate(ev);
+                    const totalDays = differenceInDays(eventEnd, eventStart) + 1;
+                    const currentDayNumber = differenceInDays(startOfDay(day), eventStart) + 1;
+                    const isLastDay = isSameDay(day, eventEnd);
+                    const dayOfWeek = day.getDay();
+                    const isFirstOfWeek = dayOfWeek === 0;
+                    
+                    return (
+                      <div
+                        key={`span-${ev.uid || ev.title}-${idx}`}
+                        className={`h-full bg-amber-500/70 cursor-pointer hover:bg-amber-500/90 transition-colors flex items-center justify-between px-1 border-l border-white/50 ${
+                          isLastDay ? 'border-r' : ''
+                        }`}
+                        title={`${ev.title} (Day ${currentDayNumber} of ${totalDays})`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onEventClick(ev);
+                        }}
+                      >
+                        {isFirstOfWeek && (
+                          <span className="text-[8px] text-white font-medium truncate">
+                            {ev.title}
+                          </span>
+                        )}
+                        <span className="text-[7px] text-white/90 font-medium flex-shrink-0 ml-auto">
+                          {currentDayNumber}/{totalDays}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
         );
       })}

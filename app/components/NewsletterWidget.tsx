@@ -919,17 +919,21 @@ export default function NewsletterWidget({ data }: { data: Payload }) {
             <div className="flex items-center space-x-1 mb-0">
               <h2 className="text-lg font-semibold urbanist-black whitespace-nowrap truncate">
                 <span style={{ color: 'white' }}>Bear</span>
-                <span className="" style={{ color: 'var(--berkeley-gold)' }}>Necessities {getNewsletterDate()} </span>
+                <span className="" style={{ color: 'var(--berkeley-gold)' }}>Necessities</span>
               </h2>
             </div>
             
             {data.title && (
               <p className="text-gray-400 text-xs urbanist-medium mb-0">
                So A Bear Can Rest at Ease
-               
               </p>
             )}
-              {data.sourceUrl && (
+            {getNewsletterDate() && (
+              <p className="text-gray-500 text-xs urbanist-regular mb-0">
+                Released {getNewsletterDate()}
+              </p>
+            )}
+            {data.sourceUrl && (
               <a
                 className="text-gray-800 dark:text-gray-600 text-xs urbanist-regular transition-colors inline-block mb-0  select-text"
                 onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'var(--berkeley-gold)'}

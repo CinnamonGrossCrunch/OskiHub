@@ -10,9 +10,20 @@ DTSTAMP:20260101T000000Z
 UID:ewmba201b-sp26-blue-week1
 DTSTART:20260107T180000
 DTEND:20260107T213000
-SUMMARY:Class 1: Intro: Output, Inflation & Interest Rates
-DESCRIPTION:Topic: Output, Inflation and Interest Rates\nReadings: See Syllabus\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-1
+SUMMARY:Class 1: Introduction - Output, Inflation and Interest Rates
+DESCRIPTION:Topic: Introduction - Output\, Inflation and Interest Rates\n\nObjectives:\n• Understand how we measure the economy's performance and key measures like inflation\, real output and real interest rates\n• Define what determines the real interest rates\n• Understand the costs and benefits of inflation and deflation\n\nRequired Readings:\n• The Economist - Why companies get inflation wrong\n• WSJ - Inflation Eased to 2.7% in Report Distorted by Government Shutdown\n• The Economist - Trump's interest-rate crusade will be self-defeating\n• The Economist - Lessons from Turkey on the evils of high inflation\n• FT - China's consumer prices fall as deflationary pressures persist\n\nTextbook: Mankiw Ch 2.1\, 2.2\, 4.1\, 6.3\, 6.5\n\nGSI Section: Sunday Jan 11\, 7-8:30pm on Zoom\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-1
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-1
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week1-gsi
+DTSTART:20260111T190000
+DTEND:20260111T203000
+SUMMARY:GSI Section - Week 1
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 1 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -20,8 +31,19 @@ UID:ewmba201b-sp26-blue-week2
 DTSTART:20260114T180000
 DTEND:20260114T213000
 SUMMARY:Class 2: Money and Central Banks
-DESCRIPTION:Topic: Money and Central Banks\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-2
+DESCRIPTION:Topic: Money and Central Banks\n\nObjectives:\n• Understand the long-run causes of inflation and hyperinflation\n• Identify the role of money in the economy\n• Understand the macroeconomic implications of cryptocurrencies and stablecoins\n• Distinguish the tools of modern Central Banks and how they affect interest rates\n\nRequired Readings:\n• The Economist - Spot the difference\n• The Economist - A Nobel laureate on why stablecoins may be nothing of the sort\n• WSJ - The Fed's $6.6 Trillion Test: When to End Its Portfolio Runoff\n• WSJ - The Bank of Japan Raised Rates. Here's Why You Should Care.\n\nTextbook: Mankiw Ch 5.1\, 5.2\, 20\n\nAssignments: Problem Set 1 (optional\, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-2
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-2
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week2-gsi
+DTSTART:20260118T190000
+DTEND:20260118T203000
+SUMMARY:GSI Section - Week 2
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 2 material review and Problem Set 1\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -29,8 +51,19 @@ UID:ewmba201b-sp26-blue-week3
 DTSTART:20260121T180000
 DTEND:20260121T213000
 SUMMARY:Class 3: Long-Term Growth
-DESCRIPTION:Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nPre-Class Materials (Required):\n• China Real Estate Slowdown (Rogoff): https://www.project-syndicate.org/commentary/china-diminishing-returns-real-estate-housing-slowdown-by-kenneth-rogoff-2022-10\n• Video: https://www.youtube.com/watch?v=jDOk54tEb3c\n• Allocation of Talent & US Growth: https://bfi.uchicago.edu/insight/research-summary/the-allocation-of-talent-and-us-economic-growth/\n• FT Article: https://www.ft.com/content/b44458cc-03fd-46a1-b003-b7a097419e66\n\nOptional Readings:\n• Why AI Isn't Boosting Economy: https://www.chicagobooth.edu/review/podcast/why-ai-isnt-boosting-economy\n• FT: https://www.ft.com/content/e63cbe88-6d46-4119-9067-e10a926c61c2\n• Racial Discrimination in Mortgage Lending: https://www-economist-com.libproxy.berkeley.edu/united-states/2022/11/24/racial-discrimination-in-mortgage-lending-has-declined-sharply-in-america\n• Contract Labour in India: https://cepr.org/voxeu/columns/contract-labour-and-firm-growth-india\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3
+DESCRIPTION:Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nRequired Readings:\n• Project Syndicate - China's Diminishing Returns\n• IGC Video Resource Misallocation and Productivity Growth\n• BFI - The Allocation of Talent and US Economic Growth\n• FT - China's innovation paradox\n\nTextbook: Mankiw Ch 9\, 10.1\, 10.2\, 11\n\nAssignments: Problem Set 2 (optional\, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-3
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week3-gsi
+DTSTART:20260125T190000
+DTEND:20260125T203000
+SUMMARY:GSI Section - Week 3
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 3 material review and Problem Set 2\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -38,17 +71,48 @@ UID:ewmba201b-sp26-blue-week4
 DTSTART:20260128T180000
 DTEND:20260128T213000
 SUMMARY:Class 4: Labor Markets
-DESCRIPTION:Topic: Labor Markets\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4
+DESCRIPTION:Topic: Labor Markets\n\nNote: Week 4 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-4
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week4-gsi
+DTSTART:20260201T190000
+DTEND:20260201T203000
+SUMMARY:GSI Section - Week 4
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 4 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-assign-topic
+DTSTART:20260130T170000
+DTEND:20260130T170000
+SUMMARY:DEADLINE: Group and Topic Selection Due
+DESCRIPTION:DEADLINE: Friday Jan 30 @ 5pm\n\nForm groups of 5 students and rank debate topic preferences.\nYes/No position will be assigned by instructor.\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform\n\nNote: Groups will be assigned if you don't form one.
+URL;VALUE=URI:https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba201b-sp26-blue-week5
 DTSTART:20260204T180000
 DTEND:20260204T213000
-SUMMARY:Class 5: Business Cycles I & MIDTERM EXAM
-DESCRIPTION:IN-CLASS MIDTERM EXAM (Half Class)\nTopic: Business Cycles I: Measurement and Indicators\nNote: Midterm covers material up to Week 4.\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5
+SUMMARY:Class 5: Business Cycles I & MIDTERM EXAM (Half Class)
+DESCRIPTION:IN-CLASS MIDTERM EXAM (First Half of Class)\nTopic: Business Cycles I - Measurement and Indicators\n\nMIDTERM DETAILS:\n• Covers material from Weeks 1-4 (Labor Markets)\n• Exam Format: Multiple choice + box for reasoning\n• Allowed: One-page notes (one-side) and calculator\n• Practice exams: Midterms 2022-2025 available on bCourses\n\nObjectives:\n• Identify recessions and booms\n• Indicators of booms and recessions\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-5
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week5-gsi
+DTSTART:20260208T190000
+DTEND:20260208T203000
+SUMMARY:GSI Section - Week 5
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 5 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -56,8 +120,19 @@ UID:ewmba201b-sp26-blue-week6
 DTSTART:20260211T180000
 DTEND:20260211T213000
 SUMMARY:Class 6: Business Cycles II
-DESCRIPTION:Topic: Business Cycles II: Fiscal and Monetary Policy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-6
+DESCRIPTION:Topic: Business Cycles II - Fiscal and Monetary Policy\n\nNote: Week 6 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-6
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-6
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week6-gsi
+DTSTART:20260215T190000
+DTEND:20260215T203000
+SUMMARY:GSI Section - Week 6
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 6 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -65,8 +140,19 @@ UID:ewmba201b-sp26-blue-week7
 DTSTART:20260218T180000
 DTEND:20260218T213000
 SUMMARY:Class 7: The Open Economy
-DESCRIPTION:Topic: The Open Economy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-7
+DESCRIPTION:Topic: The Open Economy\n\nNote: Week 7 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-7
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-7
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week7-gsi
+DTSTART:20260222T190000
+DTEND:20260222T203000
+SUMMARY:GSI Section - Week 7
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 7 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -74,17 +160,57 @@ UID:ewmba201b-sp26-blue-week8
 DTSTART:20260225T180000
 DTEND:20260225T213000
 SUMMARY:Class 8: Debt Sustainability
-DESCRIPTION:Topic: Debt Sustainability\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-8
+DESCRIPTION:Topic: Debt Sustainability\n\nNote: Week 8 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-8
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-8
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week8-gsi
+DTSTART:20260301T190000
+DTEND:20260301T203000
+SUMMARY:GSI Section - Week 8
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 8 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-assign-slides
+DTSTART:20260304T170000
+DTEND:20260304T170000
+SUMMARY:DEADLINE: Presentation/Debate Slides Due
+DESCRIPTION:DEADLINE: Wednesday Mar 4 @ 5pm\n\nSubmit slides using form (if using slides for your debate presentation).\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform
+URL;VALUE=URI:https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba201b-sp26-blue-week9
 DTSTART:20260304T180000
 DTEND:20260304T213000
-SUMMARY:Class 9: Climate Change & Debates
-DESCRIPTION:Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-9
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/pages/week-9
+SUMMARY:Class 9: Climate Change & Group Presentations/Debate
+DESCRIPTION:Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nNote: 2 members per group present\nEach debate: ~20 minutes (5 min per side + 10 min discussion)\nClass vote on most convincing arguments (does not affect grade)\n\nDebate Topics:\n• Will the "One Big Beautiful Bill" be inflationary or disinflationary?\n• Should Argentina fully float the peso?\n• Should countries impose a tax on AI/robots?\n• Should the US cut tariffs applied to imports from China?\n• Should the Fed lower interest rates more aggressively?\n• Should the ECB incorporate climate change into its monetary policy decisions?\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648
+LOCATION:Berkeley Haas
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-assign-report
+DTSTART:20260307T180000
+DTEND:20260307T180000
+SUMMARY:DEADLINE: Group Report Due
+DESCRIPTION:DEADLINE: Saturday Mar 7 @ 6pm\n\nSubmit Group Report via bCourses.\n\nSubmission: https://bcourses.berkeley.edu/courses/1549648/assignments
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/assignments
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba201b-sp26-blue-week9-gsi
+DTSTART:20260308T190000
+DTEND:20260308T203000
+SUMMARY:GSI Section - Week 9
+DESCRIPTION:GSI: Patrik Raty\nTopic: Week 9 material review and final exam prep\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto
+URL;VALUE=URI:https://berkeley.zoom.us/j/6988413081
+LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -92,33 +218,8 @@ UID:ewmba201b-sp26-blue-week10-final
 DTSTART:20260311T180000
 DTEND:20260311T213000
 SUMMARY:Class 10: Final Exam
-DESCRIPTION:Final Exam (In-class).\nTime: 6:00pm - 9:30pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648
+DESCRIPTION:Final Exam (In-class)\n\nTime: 6:00pm - 9:30pm\nExam Format: Multiple choice + box for reasoning (same as midterm)\nAllowed: One-page notes (one-side) and calculator\n\nGrading: Best of (25% midterm + 30% final) OR (55% final)\n\nNote: Students with elective conflicts should take as scheduled - affected elective faculty notified for leniency\nContact: Olivia Coffman (ocoffman@berkeley.edu) with questions\n\nBackup Option: Honorlock proctoring available for exceptional circumstances\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba201b-assign-topic
-DTSTART:20260130T170000
-DTEND:20260130T170000
-SUMMARY:Group and Topic Selection Due
-DESCRIPTION:Deadline to submit group and topic preferences.\nSee Syllabus for form link.
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba201b-assign-slides
-DTSTART:20260304T170000
-DTEND:20260304T170000
-SUMMARY:Presentation/Debate Slides Due
-DESCRIPTION:Submit slides using the form provided in Syllabus.
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/assignments
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba201b-assign-report
-DTSTART:20260307T180000
-DTEND:20260307T180000
-SUMMARY:Group Report Due
-DESCRIPTION:Submit Group Report via bCourses.
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/assignments
+LOCATION:Berkeley Haas
 END:VEVENT
 END:VCALENDAR

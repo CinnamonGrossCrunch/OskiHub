@@ -1,50 +1,21 @@
 {
   "newsletterData": {
-    "sourceUrl": "http://eepurl.com/jwQIks",
-    "title": "[EWMBA] Bear Necessities 1-15-26",
+    "sourceUrl": "http://eepurl.com/jxAlUU",
+    "title": "[EWMBA] Bear Necessities 1-22-26",
     "sections": [
       {
         "sectionTitle": "This Week",
         "items": [
           {
-            "title": "Class of 2027 - Biz Comm Weekend Logistics",
-            "html": "<h4>Class of 2027 - Biz Comm Weekend Logistics</h4><p>Friday Jan 16 - Sunday Jan 18</p><ul><li>Review the <a href=\"https://docs.google.com/spreadsheets/d/1AssqzeT8w0QKF0nAsztMYTjU-gU_ZDWhPeB6srIAOUA/edit?gid=1003030058#gid=1003030058\" target=\"_blank\" rel=\"noopener noreferrer\">Biz Comm 2026 Event Schedule</a> carefully.<ul><li>Event check in begins at 8am PT</li><li>Plan to be in class for the full day as there will not be an opportunity to take outside meetings.</li></ul></li><li>Please complete the Biz Comm 2026 Event Liability Waiver prior to check-in.</li><li>Important items to bring for Biz Comm 2026 include:<ul><li>UC Berkeley Cal1 Card</li><li>Valid government ID (e.g., driver's license, passport)</li><li>Laptop or iPad with access to campus internet (eduroam or Cal Visitor)</li></ul></li><li>Review the <a href=\"https://haas.berkeley.edu/ewmba/academics/biz_comm-2026/email-archive/\" target=\"_blank\" rel=\"noopener noreferrer\">Biz Comm 2026 Email Archive</a>.</li><li>If you require accommodation for effective communication (ASL interpreting/CART captioning, alternative media formats, etc.) or need information in order to fully participate for the weekend, please contact <a href=\"mailto:robert-cortes@berkeley.edu\" target=\"_blank\" rel=\"noopener noreferrer\">Robby Cortes</a>.</li></ul>"
-          },
-          {
-            "title": "Upcoming Program Office Hours",
-            "html": "<h4>Upcoming Program Office Hours</h4><ul><li>Thursday, Jan 15 - Program Office will be closed at 6PM.<ul><li>Due to preparation for Biz Comm, there will not be late night hours or snacks from 7:30PM to 8PM</li></ul></li><li>Friday, Jan 16: Program Office staff will be at Biz Comm; please expect a delayed response.</li><li>Monday, Jan 19: Closed for MLK Jr. Holiday.</li></ul>"
-          },
-          {
-            "title": "MLK Day of Service",
-            "html": "<h4>MLK Day of Service</h4><p>Monday, January 19th, 9:30AM - 11:30AM, <a href=\"https://www.google.com/maps/place/1605+Ohio+Ave,+Richmond,+CA+94804/@37.9310162,-122.3567564,1002m/data=!3m2!1e3!4b1!4m6!3m5!1s0x80857809911bdf25:0xf9da584f3c23369!8m2!3d37.931012!4d-122.3541761!16s%2Fg%2F11pv802blx?entry=ttu&amp;g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" rel=\"noopener noreferrer\">UNITY Park / Richmond Greenway Trail</a>, Richmond, CA</p><ul><li>In celebration of Dr. Martin Luther King Jr. Day, all members of the Haas community are invited for a day of community service and celebration.<ul><li>Martin Luther King Jr. Day honors Dr. King's life, legacy, and aspiration of a beloved community marked by racial unity, justice for the betterment of all, and going beyond yourself</li></ul><a href=\"https://portal.goldenvolunteer.com/opportunities/SZSHIB179L\" target=\"_blank\" rel=\"noopener noreferrer\">Registration for MLK Day of Service 2026</a> is now open.</li><li>If you have further questions, please contact <a href=\"mailto:katrinakoski@berkeley.edu\" target=\"_blank\" rel=\"noopener noreferrer\">Katrina Koski</a>, Dir of Inclusion & Belonging.</li></ul>"
-          },
-          {
-            "title": "Class of 2026 & 2027",
-            "html": "<h4>Class of 2026 & 2027</h4><p>Spring 2026 Add/Drop Reminders</p><ul><li>Add/Drop Round 3: Tuesday, Jan 20, 12 noon PST - Monday, Jan 26, 12 noon PST.</li><li>Add/Drop Round 4: Monday, Jan 26, 4PM PST - Thursday, Jan 29, 12 noon PST.</li><li>Full-Time Course Sign Up opens Tuesday Jan 20, 12 noon PT and closes Thursday Jan 29, 12 noon PT.<ul><li>Please refer to the <a href=\"https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/\" target=\"_blank\" rel=\"noopener noreferrer\">Registration Timeline</a> as well for Add/Drop Round Dates</li></ul></li></ul>",
+            "title": "Class of 2026 & 2027: Spring 2026 Add/Drop Reminders",
+            "html": "<h4>Class of 2026 & 2027: Spring 2026 Add/Drop Reminders</h4><p>Add/Drop Round 3 ends on Thu, 1/29 @ 12PM (noon) PST. Results for Round 3 will be available on 1/29 @ 1pm PT on <a href=\"https://olr.haas.berkeley.edu/\" target=\"_blank\" rel=\"noopener noreferrer\">OLR</a>.</p><p>Add/Drop Round 4 opens on Thu, 1/29 at 4PM PST. This is the last chance to add classes.</p><p>Drop Only Round: Thurs, Jan 29, 4PM PST - Mon, Feb 2, 11:59PM PST.</p><p>Full-Time Course Sign Up closes Thursday Jan 29, 12 noon PST.</p><ul><li>Please refer to the <a href=\"https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/\" target=\"_blank\" rel=\"noopener noreferrer\">Registration Timeline</a> as well for Add/Drop Round Dates</li></ul></p>",
             "timeSensitive": {
               "dates": [
-                "2026-01-20",
-                "2026-01-26",
                 "2026-01-29"
               ],
-              "eventType": "reminder",
+              "eventType": "deadline",
               "priority": "medium"
             }
-          },
-          {
-            "title": "Class of 2028",
-            "html": "<h4>Class of 2028</h4><p>Combined Cohort Day Jan 20</p><ul><li>The Blue & Gold Combined Financial Accounting Lecture will be held in N100.</li><li>Nexus and Lux will have a combined cohort for Macroeconomics.</li></ul>",
-            "timeSensitive": {
-              "dates": [
-                "2026-01-20"
-              ],
-              "eventType": "event",
-              "priority": "medium"
-            }
-          },
-          {
-            "title": "Course Start Dates",
-            "html": "<h4>Course Start Dates</h4><ul><li>Flex core courses will start on Jan 20</li><li>Elective courses will begin on Jan 20</li><li>Saturday core courses will start on Jan 24</li><li>Please check the <a href=\"https://docs.google.com/spreadsheets/d/1gifGXNUlxZ0w-Nd1mtMKrv4rrsvDqKxjsYnrjE0b2sk/edit?gid=2115339531#gid=2115339531\" target=\"_blank\" rel=\"noopener noreferrer\">Academic Calendar</a>, as well as your course descriptions for more details</li></ul>"
           }
         ]
       },
@@ -52,38 +23,39 @@
         "sectionTitle": "Announcements",
         "items": [
           {
-            "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href=\"https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/\" target=\"_blank\" rel=\"noopener noreferrer\">Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President & CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul>",
+            "title": "Haas Reception with Nexus students in the Class of 2028",
+            "html": "<h4>Haas Reception with Nexus students in the Class of 2028</h4><p><br />Saturday, Feb 21, 2026</p><ul><li>All Class of 2028 students and Flex students in the Class of 2027 received an email invitation.</li><li>RSVP using the emailed link by Thursday, Feb 5 at 11:59PM PST</li><li>Note: Students enrolled in Nexus Leadership Communications completed the RSVP process in the pre-course survey and do not need an additional RSVP.</li><li>If you didn’t receive an email and wish to attend, please contact the <a href=\"mailto:ewmba_office@haas.berkeley.edu\" target=\"_blank\" rel=\"noopener noreferrer\">Program Office</a>.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-05"
-              ],
-              "eventType": "event",
-              "priority": "medium"
-            }
-          },
-          {
-            "title": "Berkeley StEP Spring 2026 Application Now Open",
-            "html": "<h4>Berkeley StEP Spring 2026 Application Now Open</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST</p><ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks & up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform\" target=\"_blank\" rel=\"noopener noreferrer\">Berkeley StEP Spring 2026</a> is now available.</li></ul>",
-            "timeSensitive": {
-              "dates": [
-                "2026-02-07"
               ],
               "eventType": "deadline",
               "priority": "medium"
             }
           },
           {
-            "title": "Berkeley StEP Spring 2026 Virtual Info Sessions",
-            "html": "<h4>Berkeley StEP Spring 2026 Virtual Info Sessions</h4><ul><li>Sign up for a virtual info session to learn more about StEP program and application process.</li><li>The dates and respective signup links are as follows:<ul><li><a href=\"https://luma.com/6je5a2d3\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Monday, Jan 19, 2PM - 3PM PST</a></li><li><a href=\"https://luma.com/yvn8vyzr\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Wednesday, Jan 21, 2PM - 3PM PST</a></li><li><a href=\"https://luma.com/36heumvj\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Monday, Jan 26, 12PM - 1PM PST</a></li><li><a href=\"https://luma.com/x25ga7hv\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Thursday, Jan 29, 4PM - 5PM PST</a></li></ul></li></ul>",
+            "title": "Ladle & Leaf Now Open",
+            "html": "<h4>Ladle & Leaf Now Open</h4><ul><li>Ladle &amp; Leaf is now open in the Café Think space.<ul><li>Ladle &amp; Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area  </li></ul></li><li>Ladle &amp; Leaf is open Monday's to Thursday's from 8AM to 8:15 PM PST, and on Friday's from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></li><li>Students are highly encouraged to visit Ladle &amp; Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses. </li></ul>"
+          },
+          {
+            "title": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+            "html": "<h4>Class of 2027 - Biz Comm Post Event Survey Reminder</h4><p>Survey closes Sunday, Jan 25 at 11:59PM PT</p><ul><li>Students who attended Biz Comm 2026 should have received an email with the subject line,\"[EWMBA] Biz Comm Feedback Requested\".   <ul><li>The email contains a link to the Biz Comm 2026 Post Event Feedback Survey</li></ul></li><li>The Program Office greatly appreciates constructive feedback to help us refine future events &amp; courses!</li></ul>",
             "timeSensitive": {
               "dates": [
-                "2026-01-19",
-                "2026-01-21",
-                "2026-01-26",
-                "2026-01-29"
+                "2026-01-25"
               ],
-              "eventType": "event",
+              "eventType": "reminder",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
+            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p><br />Lottery Closes Friday, Feb 6 at 11:59 PM PST</p><ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform\" target=\"_blank\" rel=\"noopener noreferrer\">Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href=\"https://www.climatecap.org/mba-summit\" target=\"_blank\" rel=\"noopener noreferrer\">learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage. </li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-06"
+              ],
+              "eventType": "deadline",
               "priority": "medium"
             }
           }
@@ -93,27 +65,118 @@
         "sectionTitle": "Important Reminders",
         "items": [
           {
-            "title": "Haas SHARE@Haas Food Recovery Program: Join the Community Listserv",
-            "html": "<h4>Haas SHARE@Haas Food Recovery Program: Join the Community Listserv</h4><ul><li>Haas has launched the <a href=\"https://docs.google.com/presentation/d/1MAPvXcDuin0oPGQgUTrVmDxHA10UcPUlSPJK1Hp4aEU/edit?slide=id.g36f81e24ed9_0_0#slide=id.g36f81e24ed9_0_0\" target=\"_blank\" rel=\"noopener noreferrer\">SHARE@Haas</a> (Sustainable, Holistic, Accessible, Recoverable & Equitable) program, an initiative deeply committed to sustainability, zero waste, and addressing food insecurity within our community.<ul><li>Due to the many events that Haas hosts, it is common to have excess food that is yummy and nutritious</li></ul></li><li>In addition to our regular food donations to the <a href=\"https://berkeley.us7.list-manage.com/track/click?u=af08d0494e1eb953ae69deb12&amp;id=3555e1a726&amp;e=c7870003a9\" rel=\"noopener nofollow noreferrer\" target=\"_blank\">Dorothy Day House</a>, we have created an <a href=\"mailto:haasfoodrecovery@lists.berkeley.edu\" target=\"_blank\" rel=\"noopener noreferrer\">anonymous mailing list</a> that is open to all members of the Haas community.<ul><li>By opting into the list, emails will be sent to you whenever there is excess food available and where to access it free of charge for as long as supplies last</li><li>To be added to the mailing list, please sign up for the for listserv via the <a href=\"https://berkeley.us7.list-manage.com/track/click?u=af08d0494e1eb953ae69deb12&amp;id=4557840e14&amp;e=c7870003a9\" rel=\"noopener nofollow noreferrer\" target=\"_blank\">Haas Food Recovery Listserv Opt-in Google Form</a>.</li></ul></li><li>The SHARE@Haas Space is located in Cheit C128.<ul><li>Please bring your CAL ID Card to access the room</li><li>There is also a <a href=\"https://drive.google.com/file/d/1P4vm6fxyNX9YFRBMIxMuxQ-pPb0j-4-v/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Wonderfil Station</a>; please check out the video for more information</li></ul></li><li>Please reach out to <a href=\"mailto:dannerdm@haas.berkeley.edu\" target=\"_blank\" rel=\"noopener noreferrer\">Danner Doud Martin</a> should any questions or suggestions arise</li><li>For more comprehensive food and other basic needs resources, please contact the <a href=\"https://basicneeds.berkeley.edu/home\" target=\"_blank\" rel=\"noopener noreferrer\">Basic Needs Center</a></li></ul>"
+            "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
+            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href=\"https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/\" target=\"_blank\" rel=\"noopener noreferrer\">Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President &amp; CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event. </li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-05"
+              ],
+              "eventType": "event",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "Berkeley StEP Spring 2026 Application and Virtual Info Sessions Now Available",
+            "html": "<h4>Berkeley StEP Spring 2026 Application and Virtual Info Sessions Now Available</h4><ul><li>Deadline to apply is Feb 7, 2026 at 11:50PM PST</li><li>StEP was developed by former students to create the next generation of UC Berkeley startups. </li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks &amp; up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform\" target=\"_blank\" rel=\"noopener noreferrer\">Berkeley StEP Spring 2026</a> is now available. </li><li>Sign up for a virtual info session to learn more about StEP program and application process.</li><li>The dates and respective signup links are as follows: <ul><li><a href=\"https://luma.com/36heumvj\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Monday, Jan 26, 12PM - 1PM PST</a></li><li><a href=\"https://luma.com/x25ga7hv\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Thursday, Jan 29, 4PM - 5PM PST</a></li></ul></li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-07"
+              ],
+              "eventType": "deadline",
+              "priority": "medium"
+            }
           }
         ]
       },
       {
-        "sectionTitle": "PO Tips and Tidbits",
+        "sectionTitle": "Saturday Scoop",
+        "items": [
+          {
+            "title": "Classes Start Saturday Jan 24",
+            "html": "<h4>Classes Start Saturday Jan 24</h4><ul><li>Looking forward to a great spring!</li><li>Review your classroom locations here in the <a href=\"https://docs.google.com/spreadsheets/d/1gifGXNUlxZ0w-Nd1mtMKrv4rrsvDqKxjsYnrjE0b2sk/edit?gid=2115339531#gid=2115339531\" target=\"_blank\" rel=\"noopener noreferrer\">Spring 2026 Comprehensive Calendar</a> here. (Locations subject to change! Please check again the first day of class.)</li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-01-24"
+              ],
+              "eventType": "event",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "Program Office Staff",
+            "html": "<h4>Program Office Staff</h4><ul><li>This week's Program Office staff is Hannah Fischer and Christine Lee, our Student Assistant. Drop by S440 and say hello!</li></ul>"
+          },
+          {
+            "title": "Parking & Transportation - Minor Advisory",
+            "html": "<h4>Parking & Transportation - Minor Advisory</h4><ul><li>Berkeley Law Lot and Underhill, etc should be available. Please take note of any posted signs at lot entrances or specific spots.</li><li>Bowles Lot might be closed or have reserved spaces for a Rugby game.</li></ul>"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Career Corner",
+        "items": [
+          {
+            "title": "Resume Workshop",
+            "html": "<h4>Resume Workshop</h4><p>Tuesday, Jan 27; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101327010\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>This workshop is going to walk you through how a recruiter or hiring manager might evaluate a resume, and along the way highlight how you might alter your resume to help them help you.</li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-01-27"
+              ],
+              "eventType": "event",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "Transferable Skills",
+            "html": "<h4>Transferable Skills</h4><p>Wednesday, Jan 28; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101328482\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>\"Transferable Skills\" is a term you'll hear frequently, especially if you are changing roles and/or industries.</li><li>This workshop will help you describe your accomplishments in a way that your new audience can easily understand.<ul><li>This workshop is especially relevant for pivoters</li></ul></li><li>Through lectures, individual &amp; small group learning activities, and Q&amp;A's, you will learn: <ul><li>A way to explicitly talk about your transferable skills</li><li>How to elevate your skills-based stories by making them applicable to another role, organization, or industry</li><li>Make your past relevant and valuable to your future</li></ul></li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-01-28"
+              ],
+              "eventType": "event",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "Product Management Resumes",
+            "html": "<h4>Product Management Resumes</h4><p>Wednesday, Feb 4; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101327012\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>Come learn how a Product recruiter or hiring manager would evaluate a resume, and some tips and tricks on how to frame your work and gear your resume towards a product mindset.</li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-04"
+              ],
+              "eventType": "event",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "Your Intro Story for Career Conversations",
+            "html": "<h4>Your Intro Story for Career Conversations</h4><p>Thursday, Feb 5; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101328483\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>In this workshop, you will identify elements that make a great introduction that helps others engage you in a conversation.<ul><li>This is useful for networking events such as conferences and company events.</li></ul></li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-05"
+              ],
+              "eventType": "event",
+              "priority": "medium"
+            }
+          }
+        ]
+      },
+      {
+        "sectionTitle": "PO Tips & Tidbits",
         "items": [
           {
             "title": "Planning Ahead for Spring 2026 Fees",
-            "html": "<h4>Planning Ahead for Spring 2026 Fees</h4><p>How to Calculate the Spring 2026 Fees</p><ul><li>The all inclusive per unit fee for 2025-2026 is $3,972. Multiply that by the number of units you will be taking to calculate your total tuition.</li><li>Spring 2026 tuition will be due Friday, Jan 16. At least 20% is due at that time to avoid late fees.</li><li>Enrollment in the Fee Payment Plan is per semester, not per year. Students must enroll in the plan again for Spring 2026.</li></ul><p>Setting up your Direct Deposit Account</p><ul><li>A Direct Deposit Electronic Funds Transfer Account is the easiest way to get refunds or other payments.</li><li>Go to CalCentral > My Finances > Financial Resources > Billing & Payments > Direct Deposit. Complete the steps to set up your account.</li></ul><p>1098-T Form</p><ul><li>Students will receive notification that their 1098-T form is read by the end of Jan 2026. More information here on the <a href=\"https://studentbilling.berkeley.edu/irs-form-1098-t-tax-form-information/accessing-your-1098-t-form-online\" target=\"_blank\" rel=\"noopener noreferrer\">Student Billing website</a>.</li></ul>"
+            "html": "<h4>Planning Ahead for Spring 2026 Fees</h4><p>How to Calculate the Spring 2026 Fees</p><ul><li>The all inclusive per unit fee for 2025-2026 is $3,972. Multiply that by the number of units you will be taking to calculate your total tuition.</li><li>Enrollment in the Fee Payment Plan is per semester, not per year. Students must enroll in the plan again for Spring 2026.</li></ul><p>Setting up your Direct Deposit Account</p><ul><li>A Direct Deposit Electronic Funds Transfer Account is the easiest way to get refunds or other payments.</li><li>Go to CalCentral &gt; My Finances &gt; Financial Resources &gt; Billing &amp; Payments &gt; Direct Deposit. Complete the steps to set up your account.</li></ul><p>1098-T Form</p><ul><li>Students will receive notification that their 1098-T form is read by the end of Jan 2026. More information here on the <a href=\"https://studentbilling.berkeley.edu/irs-form-1098-t-tax-form-information/accessing-your-1098-t-form-online\" target=\"_blank\" rel=\"noopener noreferrer\">Student Billing website</a>.</li></ul>"
           }
         ]
       }
     ],
     "aiDebugInfo": {
-      "reasoning": "The JSON structure preserves all content from the newsletter while adhering to the specified formatting rules.",
+      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as per instructions, organizing the newsletter into sections and items with titles and HTML content.",
       "sectionDecisions": [],
       "edgeCasesHandled": [],
-      "totalSections": 4,
-      "processingTime": 82258
+      "totalSections": 6,
+      "processingTime": 42020
     },
     "aiMeta": {}
   },
@@ -122,26 +185,43 @@
     "weekEnd": "2026-01-26",
     "blueEvents": [
       {
-        "date": "2026-01-20",
-        "time": "6:00 PM",
-        "title": "Class 3: Statement of Cash Flow (JOINT CLASS)",
+        "date": "2026-01-18",
+        "time": "1:00 PM",
+        "title": "TA Session - Week 2",
         "type": "class",
         "priority": "medium",
-        "description": "Joint class on working capital and cash conversion cycle. Readings: 11.1 – 11.8.",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
-        "sourceType": "calendar"
+        "description": "GSI: Jingyi Zhuang\nTopic: Week 2 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/95769266069"
+      },
+      {
+        "date": "2026-01-18",
+        "time": "7:00 PM",
+        "title": "GSI Section - Week 2",
+        "type": "other",
+        "priority": "medium",
+        "description": "GSI: Patrik Raty\nTopic: Week 2 material review and Problem Set 1\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081"
       },
       {
         "date": "2026-01-20",
-        "time": "6:29 PM",
-        "title": "EWMBA 202: Homework 1 Due",
+        "time": "6:00 PM",
+        "title": "Week 3: Statement of Cash Flows & Working Capital (JOINT CLASS)",
         "type": "assignment",
         "priority": "high",
-        "description": "Homework 1 is due.",
-        "location": "No location",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/files/93576354",
-        "sourceType": "calendar"
+        "description": "Topic: Analyzing Cash Flows, Working Capital & Cash Conversion Cycle\n\nNote: JOINT CLASS for both Blue and Gold cohorts (MLK Holiday Monday)\n\nObjectives:\n• Define working capital and the cash conversion cycle\n\nPre-Class Materials:\n• Textbook: 11.1-11.8 and 6.16-6.17\n• Hernandez Case\n• Article 4 on Study.net\n\nAssignments:\n• Homework 1 DUE\n• Take Online Quiz 1 (Jan 23-25)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "location": "Chou Hall N100",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3"
+      },
+      {
+        "date": "2026-01-20",
+        "time": "6:00 PM",
+        "title": "DEADLINE: Homework 1 Due",
+        "type": "assignment",
+        "priority": "high",
+        "description": "Homework 1 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
       },
       {
         "date": "2026-01-21",
@@ -149,56 +229,97 @@
         "title": "Class 3: Long-Term Growth",
         "type": "class",
         "priority": "medium",
-        "description": "Discussion on long-term growth, capital accumulation, and innovation policy. Pre-class materials required.",
-        "location": "No location",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
-        "sourceType": "calendar"
+        "description": "Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nRequired Readings:\n• Project Syndicate - China's Diminishing Returns\n• IGC Video Resource Misallocation and Productivity Growth\n• BFI - The Allocation of Talent and US Economic Growth\n• FT - China's innovation paradox\n\nTextbook: Mankiw Ch 9, 10.1, 10.2, 11\n\nAssignments: Problem Set 2 (optional, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
+        "location": "Berkeley Haas",
+        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-3"
+      },
+      {
+        "date": "2026-01-23",
+        "time": "12:00 AM",
+        "title": "Quiz 1 Window (Take anytime Jan 23-25)",
+        "type": "exam",
+        "priority": "high",
+        "description": "Online Quiz 1 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes"
       },
       {
         "date": "2026-01-25",
-        "time": "12:00 AM",
-        "title": "EWMBA 202: Quiz 1",
-        "type": "exam",
-        "priority": "high",
-        "description": "Quiz 1 - Online.",
-        "location": "No location",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9024625",
-        "sourceType": "calendar"
+        "time": "7:00 PM",
+        "title": "GSI Section - Week 3",
+        "type": "other",
+        "priority": "medium",
+        "description": "GSI: Patrik Raty\nTopic: Week 3 material review and Problem Set 2\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081"
       },
       {
-        "date": "2026-01-20",
-        "time": "12:00 PM",
-        "title": "Spring 2026 Add/Drop Reminders",
-        "type": "administrative",
+        "date": "2026-01-25",
+        "title": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+        "type": "newsletter",
         "priority": "medium",
-        "description": "Add/Drop Round 3 starts today at 12 noon PST.",
-        "location": "No location",
-        "url": "No URL available",
-        "sourceType": "calendar"
+        "description": " Class of 2027 - Biz Comm Post Event Survey Reminder  Survey closes Sunday, Jan 25 at 11:59PM PT   Students who attended Biz Comm 2026 should have received an email with the subject line,\"[EWMBA] Biz ",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
+          "itemTitle": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+          "itemIndex": 2
+        }
+      },
+      {
+        "date": "2026-01-24",
+        "title": "Classes Start Saturday Jan 24",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Classes Start Saturday Jan 24   Looking forward to a great spring!  Review your classroom locations here in the  Spring 2026 Comprehensive Calendar  here. (Locations subject to change! Please check a",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Saturday Scoop",
+          "sectionIndex": 3,
+          "itemTitle": "Classes Start Saturday Jan 24",
+          "itemIndex": 0
+        }
       }
     ],
     "goldEvents": [
       {
-        "date": "2026-01-20",
-        "time": "6:00 PM",
-        "title": "Class 3: Statement of Cash Flow (JOINT CLASS)",
+        "date": "2026-01-18",
+        "time": "1:00 PM",
+        "title": "TA Session - Week 2",
         "type": "class",
         "priority": "medium",
-        "description": "Joint class on working capital and cash conversion cycle. Readings: 11.1 – 11.8.",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
-        "sourceType": "calendar"
+        "description": "GSI: Jingyi Zhuang\nTopic: Week 2 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/95769266069"
+      },
+      {
+        "date": "2026-01-18",
+        "time": "7:00 PM",
+        "title": "GSI Section - Week 2",
+        "type": "other",
+        "priority": "medium",
+        "description": "GSI: Patrik Raty\nTopic: Week 2 material review and Problem Set 1\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081"
       },
       {
         "date": "2026-01-20",
-        "time": "6:29 PM",
-        "title": "EWMBA 202: Homework 1 Due",
+        "time": "6:00 PM",
+        "title": "Week 3: Statement of Cash Flows & Working Capital (JOINT CLASS)",
         "type": "assignment",
         "priority": "high",
-        "description": "Homework 1 is due.",
-        "location": "No location",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/files/93576354",
-        "sourceType": "calendar"
+        "description": "Topic: Analyzing Cash Flows, Working Capital & Cash Conversion Cycle\n\nNote: JOINT CLASS for both Blue and Gold cohorts (MLK Holiday Monday)\n\nObjectives:\n• Define working capital and the cash conversion cycle\n\nPre-Class Materials:\n• Textbook: 11.1-11.8 and 6.16-6.17\n• Hernandez Case\n• Article 4 on Study.net\n\nAssignments:\n• Homework 1 DUE\n• Take Online Quiz 1 (Jan 23-25)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "location": "Chou Hall N100",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3"
+      },
+      {
+        "date": "2026-01-20",
+        "time": "6:00 PM",
+        "title": "DEADLINE: Homework 1 Due",
+        "type": "assignment",
+        "priority": "high",
+        "description": "Homework 1 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
       },
       {
         "date": "2026-01-22",
@@ -206,62 +327,64 @@
         "title": "Class 3: Long-Term Growth",
         "type": "class",
         "priority": "medium",
-        "description": "Discussion on long-term growth, capital accumulation, and innovation policy. Pre-class materials required.",
-        "location": "No location",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
-        "sourceType": "calendar"
+        "description": "Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nRequired Readings:\n• Project Syndicate - China's Diminishing Returns\n• IGC Video Resource Misallocation and Productivity Growth\n• BFI - The Allocation of Talent and US Economic Growth\n• FT - China's innovation paradox\n\nTextbook: Mankiw Ch 9, 10.1, 10.2, 11\n\nAssignments: Problem Set 2 (optional, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
+        "location": "Berkeley Haas",
+        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-3"
+      },
+      {
+        "date": "2026-01-23",
+        "time": "12:00 AM",
+        "title": "Quiz 1 Window (Take anytime Jan 23-25)",
+        "type": "exam",
+        "priority": "high",
+        "description": "Online Quiz 1 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes"
       },
       {
         "date": "2026-01-25",
-        "time": "12:00 AM",
-        "title": "EWMBA 202: Quiz 1",
-        "type": "exam",
-        "priority": "high",
-        "description": "Quiz 1 - Online.",
-        "location": "No location",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9024625",
-        "sourceType": "calendar"
+        "time": "7:00 PM",
+        "title": "GSI Section - Week 3",
+        "type": "other",
+        "priority": "medium",
+        "description": "GSI: Patrik Raty\nTopic: Week 3 material review and Problem Set 2\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081"
       },
       {
-        "date": "2026-01-20",
-        "time": "12:00 PM",
-        "title": "Spring 2026 Add/Drop Reminders",
-        "type": "administrative",
+        "date": "2026-01-25",
+        "title": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+        "type": "newsletter",
         "priority": "medium",
-        "description": "Add/Drop Round 3 opens today at noon and closes on Jan 26.",
-        "location": "No location",
-        "url": "No URL",
-        "sourceType": "calendar"
+        "description": " Class of 2027 - Biz Comm Post Event Survey Reminder  Survey closes Sunday, Jan 25 at 11:59PM PT   Students who attended Biz Comm 2026 should have received an email with the subject line,\"[EWMBA] Biz ",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
+          "itemTitle": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+          "itemIndex": 2
+        }
+      },
+      {
+        "date": "2026-01-24",
+        "title": "Classes Start Saturday Jan 24",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Classes Start Saturday Jan 24   Looking forward to a great spring!  Review your classroom locations here in the  Spring 2026 Comprehensive Calendar  here. (Locations subject to change! Please check a",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Saturday Scoop",
+          "sectionIndex": 3,
+          "itemTitle": "Classes Start Saturday Jan 24",
+          "itemIndex": 0
+        }
       }
     ],
-    "blueSummary": "This week’s a doozy! Get ready for a joint class on cash flow, homework due, and a quiz that'll test your financial prowess. Don't forget those add/drop deadlines—let's ace this week!",
-    "goldSummary": "Get ready for a busy week, Gold cohort! Cash flows, long-term growth, and a quiz are on the agenda. Don't forget that homework's due and add/drop opens—let's crush it!",
-    "processingTime": 28388
+    "blueSummary": "[DEV MODE] Blue cohort: 9 events this week.",
+    "goldSummary": "[DEV MODE] Gold cohort: 9 events this week.",
+    "processingTime": 30
   },
   "cohortEvents": {
     "blue": [
-      {
-        "uid": "a488a90d-996d-4037-bda2-e020d673b56a@vibeshift.me",
-        "title": "Leading People – Class 8 – “Culture Eats Strategy for Breakfast” (Part Two) (Blue)",
-        "start": "2025-09-25T01:00:00.000Z",
-        "end": "2025-09-25T04:30:00.000Z",
-        "location": "Chou Hall Room N470",
-        "description": "Course: EWMBA 205 – Leading People\nInstructor: Rebecca Portnoy",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba205_blue_fallA2025_v2.ics"
-      },
-      {
-        "uid": "event-assignment-override-324599",
-        "title": "Teams@Haas Check-In  Workshop #1 (Executive Coach) (EWMBA Blue) [Teams@Haas 2025]",
-        "start": "2025-09-25T02:30:00.000Z",
-        "end": "2025-09-25T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=09&year=2025#assignment_8930023",
-        "description": "A critical component of effective teamwork is reflexivity (Schippers et al., 2003).  Reflexivity is a group's ability to collectively reflect upon team objectives, strategies, and processes and to adapt them accordingly. This is our primary goal for the Teams@Haas Team Check-in Workshop. \n\nYour teams will have the opportunity to engage in this practice during the Teams@Haas Team Check-In facilitated by a Teams@Haas Executive Coaching Team.  The goal of these workshops is to provide you and your team with a new set of tools and to also support you in facilitating a conversation for your team to step back and reflect on what is working well and where you might make adaptations for improved effectiveness.\n\nPrior to the Team Check-In Workshop, please:\n\n* Check Your Team's Workshop Time (no Berkeley time) & Location\n\n* Review your Team Collaborative Plan \n\n* Watch: [HIT Team Check-In Plenary Video] (https://bcourses.berkeley.edu/courses/1535656/pages/video-team-check-in)\n\nParticipation Grade: Attendance for this session is part of your Leading People participation grade.",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "teams@Haas.ics"
-      },
       {
         "uid": "87eaeae2-8f1a-40e8-b981-b6342c53e237@vibeshift.me",
         "title": "Final Exam (in-class)",
@@ -604,36 +727,61 @@
         "source": "Marketing-Blue-Final.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week1",
-        "title": "Class 1: Introduction to Financial Statements",
+        "uid": "ewmba202-sp26-week1-blue",
+        "title": "Week 1: Financial Statements I (Blue Cohort)",
         "start": "2026-01-06T02:00:00.000Z",
         "end": "2026-01-06T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-1",
-        "description": "Instructor: Sunil Dutta\nTopic: Balance sheet and income statement\nReadings: 1.1 – 1.17, 2.1 – 2.15\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-1",
+        "description": "Topic: Introduction to Financial Statements - Balance Sheet and Income Statement\n\nObjectives:\n• Understand balance sheets and income statements\n\nPre-Class Materials:\n• Textbook: 1.1-1.7 and 2.1-2.15\n• Article 1 on Study.net\n\nInstructor: Prof. Sunil Dutta (dutta@haas.berkeley.edu)\nGSI: Jingyi Zhuang (jingyizhuang@berkeley.edu)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-1\nSyllabus: https://bcourses.berkeley.edu/courses/1549713/assignments/syllabus",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-blue-week1",
-        "title": "Class 1: Intro: Output, Inflation & Interest Rates",
+        "title": "Class 1: Introduction - Output, Inflation and Interest Rates",
         "start": "2026-01-08T02:00:00.000Z",
         "end": "2026-01-08T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-1",
-        "description": "Topic: Output, Inflation and Interest Rates\nReadings: See Syllabus\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-1",
+        "description": "Topic: Introduction - Output, Inflation and Interest Rates\n\nObjectives:\n• Understand how we measure the economy's performance and key measures like inflation, real output and real interest rates\n• Define what determines the real interest rates\n• Understand the costs and benefits of inflation and deflation\n\nRequired Readings:\n• The Economist - Why companies get inflation wrong\n• WSJ - Inflation Eased to 2.7% in Report Distorted by Government Shutdown\n• The Economist - Trump's interest-rate crusade will be self-defeating\n• The Economist - Lessons from Turkey on the evils of high inflation\n• FT - China's consumer prices fall as deflationary pressures persist\n\nTextbook: Mankiw Ch 2.1, 2.2, 4.1, 6.3, 6.5\n\nGSI Section: Sunday Jan 11, 7-8:30pm on Zoom\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-1",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week2",
-        "title": "Class 2: Balance Sheet & Income Statement (Contd)",
+        "uid": "ewmba202-sp26-week1-ta",
+        "title": "TA Session - Week 1",
+        "start": "2026-01-11T21:00:00.000Z",
+        "end": "2026-01-11T22:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/95769266069",
+        "description": "GSI: Jingyi Zhuang\nTopic: Week 1 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.\nAttendance is optional but strongly recommended.",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba201b-sp26-blue-week1-gsi",
+        "title": "GSI Section - Week 1",
+        "start": "2026-01-12T03:00:00.000Z",
+        "end": "2026-01-12T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 1 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week2-blue",
+        "title": "Week 2: Financial Statements II (Blue Cohort)",
         "start": "2026-01-13T02:00:00.000Z",
         "end": "2026-01-13T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-2",
-        "description": "Instructor: Sunil Dutta\nTopic: Balance sheet and income statement continued\nReadings: 3.1 – 3.15\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-2",
+        "description": "Topic: Financial Statements II - Cash Flow Statement\n\nObjectives:\n• Define the components of a cash flow statement\n• Describe various financial statements\n\nPre-Class Materials:\n• Textbook: 3.1-3.15\n• Article 2: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_newspapers_2050846931\n• Article 3: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3251373353\n\nAssignment: Prepare Homework 1 for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-2",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
@@ -643,31 +791,56 @@
         "title": "Class 2: Money and Central Banks",
         "start": "2026-01-15T02:00:00.000Z",
         "end": "2026-01-15T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-2",
-        "description": "Topic: Money and Central Banks\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-2",
+        "description": "Topic: Money and Central Banks\n\nObjectives:\n• Understand the long-run causes of inflation and hyperinflation\n• Identify the role of money in the economy\n• Understand the macroeconomic implications of cryptocurrencies and stablecoins\n• Distinguish the tools of modern Central Banks and how they affect interest rates\n\nRequired Readings:\n• The Economist - Spot the difference\n• The Economist - A Nobel laureate on why stablecoins may be nothing of the sort\n• WSJ - The Fed's $6.6 Trillion Test: When to End Its Portfolio Runoff\n• WSJ - The Bank of Japan Raised Rates. Here's Why You Should Care.\n\nTextbook: Mankiw Ch 5.1, 5.2, 20\n\nAssignments: Problem Set 1 (optional, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-2",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week3",
-        "title": "Class 3: Statement of Cash Flow (JOINT CLASS)",
-        "start": "2026-01-21T02:00:00.000Z",
-        "end": "2026-01-21T05:30:00.000Z",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
-        "description": "Note: Joint class on Tuesday due to MLK Holiday.\nInstructor: Sunil Dutta\nTopic: Working capital and cash conversion cycle\nReadings: 11.1 – 11.8\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "uid": "ewmba202-sp26-week2-ta",
+        "title": "TA Session - Week 2",
+        "start": "2026-01-18T21:00:00.000Z",
+        "end": "2026-01-18T22:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/95769266069",
+        "description": "GSI: Jingyi Zhuang\nTopic: Week 2 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-hw1",
-        "title": "EWMBA 202: Homework 1 Due",
-        "start": "2026-01-21T02:29:59.000Z",
-        "end": "2026-01-21T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9017380",
-        "description": "Homework 1 Due\n\nSubmission: https://bcourses.berkeley.edu/courses/1549713/files/93576354",
+        "uid": "ewmba201b-sp26-blue-week2-gsi",
+        "title": "GSI Section - Week 2",
+        "start": "2026-01-19T03:00:00.000Z",
+        "end": "2026-01-19T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 2 material review and Problem Set 1\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week3-joint-blue",
+        "title": "Week 3: Statement of Cash Flows & Working Capital (JOINT CLASS)",
+        "start": "2026-01-21T02:00:00.000Z",
+        "end": "2026-01-21T05:30:00.000Z",
+        "location": "Chou Hall N100",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "description": "Topic: Analyzing Cash Flows, Working Capital & Cash Conversion Cycle\n\nNote: JOINT CLASS for both Blue and Gold cohorts (MLK Holiday Monday)\n\nObjectives:\n• Define working capital and the cash conversion cycle\n\nPre-Class Materials:\n• Textbook: 11.1-11.8 and 6.16-6.17\n• Hernandez Case\n• Article 4 on Study.net\n\nAssignments:\n• Homework 1 DUE\n• Take Online Quiz 1 (Jan 23-25)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw1-due-blue",
+        "title": "DEADLINE: Homework 1 Due",
+        "start": "2026-01-21T02:00:00.000Z",
+        "end": "2026-01-21T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 1 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
@@ -677,42 +850,55 @@
         "title": "Class 3: Long-Term Growth",
         "start": "2026-01-22T02:00:00.000Z",
         "end": "2026-01-22T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
-        "description": "Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nPre-Class Materials (Required):\n• China Real Estate Slowdown (Rogoff): https://www.project-syndicate.org/commentary/china-diminishing-returns-real-estate-housing-slowdown-by-kenneth-rogoff-2022-10\n• Video: https://www.youtube.com/watch?v=jDOk54tEb3c\n• Allocation of Talent & US Growth: https://bfi.uchicago.edu/insight/research-summary/the-allocation-of-talent-and-us-economic-growth/\n• FT Article: https://www.ft.com/content/b44458cc-03fd-46a1-b003-b7a097419e66\n\nOptional Readings:\n• Why AI Isn't Boosting Economy: https://www.chicagobooth.edu/review/podcast/why-ai-isnt-boosting-economy\n• FT: https://www.ft.com/content/e63cbe88-6d46-4119-9067-e10a926c61c2\n• Racial Discrimination in Mortgage Lending: https://www-economist-com.libproxy.berkeley.edu/united-states/2022/11/24/racial-discrimination-in-mortgage-lending-has-declined-sharply-in-america\n• Contract Labour in India: https://cepr.org/voxeu/columns/contract-labour-and-firm-growth-india\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
+        "description": "Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nRequired Readings:\n• Project Syndicate - China's Diminishing Returns\n• IGC Video Resource Misallocation and Productivity Growth\n• BFI - The Allocation of Talent and US Economic Growth\n• FT - China's innovation paradox\n\nTextbook: Mankiw Ch 9, 10.1, 10.2, 11\n\nAssignments: Problem Set 2 (optional, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-quiz1",
-        "title": "EWMBA 202: Quiz 1",
-        "start": "2026-01-25T08:00:00.000Z",
-        "end": "2026-01-26T08:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9024625",
-        "description": "Quiz 1 - Online\n\nCourse: EWMBA 202 Financial Accounting",
-        "allDay": true,
-        "cohort": "blue",
-        "source": "ewmba202_accounting_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba202-sp26-blue-week4",
-        "title": "Class 4: Financial Statement Analysis",
-        "start": "2026-01-27T02:00:00.000Z",
-        "end": "2026-01-27T05:30:00.000Z",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
-        "description": "Instructor: Sunil Dutta\nTopic: Non-GAAP reporting\nReadings: 4.1 – 4.14, 5.3 – 5.6, 5.22 – 5.33\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
+        "uid": "ewmba202-sp26-quiz1-window-blue",
+        "title": "Quiz 1 Window (Take anytime Jan 23-25)",
+        "start": "2026-01-23T08:00:00.000Z",
+        "end": "2026-01-26T07:59:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "description": "Online Quiz 1 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-hw2",
-        "title": "EWMBA 202: Homework 2 Due",
-        "start": "2026-01-28T02:29:59.000Z",
+        "uid": "ewmba201b-sp26-blue-week3-gsi",
+        "title": "GSI Section - Week 3",
+        "start": "2026-01-26T03:00:00.000Z",
+        "end": "2026-01-26T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 3 material review and Problem Set 2\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week4-blue",
+        "title": "Week 4: Financial Statement Analysis & Non-GAAP (Blue Cohort)",
+        "start": "2026-01-27T02:00:00.000Z",
+        "end": "2026-01-27T05:30:00.000Z",
+        "location": "Chou Hall N370",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
+        "description": "Topic: Financial Statement Analysis and Non-GAAP Reporting\n\nObjectives:\n• Analyze cash conversion cycle\n• Analyze financial statements\n• Describe non-GAAP reporting\n\nPre-Class Materials:\n• Textbook: 4.1-4.14, 6.16-6.17, 5.3-5.6, 5.22-5.33\n• Article 5: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3272286273\n\nAssignments:\n• Homework 2 DUE (Tuesday 1/27)\n• Prepare J Prep Case report for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw2-due-blue",
+        "title": "DEADLINE: Homework 2 Due",
+        "start": "2026-01-28T02:30:00.000Z",
         "end": "2026-01-28T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9029319",
-        "description": "Homework 2 Due\nIncludes Nordstrom Data analysis\n\nSubmission: https://bcourses.berkeley.edu/courses/1549713/files/93623153",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 2 must be submitted on bCourses before 6:30 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
@@ -722,64 +908,79 @@
         "title": "Class 4: Labor Markets",
         "start": "2026-01-29T02:00:00.000Z",
         "end": "2026-01-29T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
-        "description": "Topic: Labor Markets\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
+        "description": "Topic: Labor Markets\n\nNote: Week 4 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
         "uid": "ewmba201b-assign-topic",
-        "title": "Group and Topic Selection Due",
+        "title": "DEADLINE: Group and Topic Selection Due",
         "start": "2026-01-31T01:00:00.000Z",
         "end": "2026-01-31T01:00:00.000Z",
-        "description": "Deadline to submit group and topic preferences.\nSee Syllabus for form link.",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform",
+        "description": "DEADLINE: Friday Jan 30 @ 5pm\n\nForm groups of 5 students and rank debate topic preferences.\nYes/No position will be assigned by instructor.\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform\n\nNote: Groups will be assigned if you don't form one.",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week5",
-        "title": "Class 5: ESG Reporting & Assets",
+        "uid": "ewmba201b-sp26-blue-week4-gsi",
+        "title": "GSI Section - Week 4",
+        "start": "2026-02-02T03:00:00.000Z",
+        "end": "2026-02-02T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 4 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week5-blue",
+        "title": "Week 5: ESG Reporting, Accounts Receivables & Inventories (Blue Cohort)",
         "start": "2026-02-03T02:00:00.000Z",
         "end": "2026-02-03T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
-        "description": "Instructor: Sunil Dutta\nTopic: ESG, Accounts receivables, Inventories\nReadings: 5.17 – 5.21, 6.1 – 6.11\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
+        "description": "Topic: ESG Reporting, Accounts Receivables & Inventories\n\nObjectives:\n• Describe ESG reporting\n• Describe the process for accounts receivables\n• Describe the financial accounting of inventories\n\nPre-Class Materials:\n• Textbook: 5.17-5.21 and 6.1-6.11\n• Article 6: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2938264461\n• Article 7: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2906681028\n• Climate Reporting Case\n\nAssignments:\n• J Prep Case report DUE (Tuesday 2/3)\n• Take Online Quiz 2 (Feb 6-8)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-jprep-case",
-        "title": "EWMBA 202: J Prep Case Due",
-        "start": "2026-02-04T02:29:59.000Z",
-        "end": "2026-02-04T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=02&year=2026#assignment_9029316",
-        "description": "Team Project - Submit one report per team.\nInclude team number and member names on title page.\nCase available in Study.Net folder.\nMust answer six questions from the linked document.\n\nQuestions: https://bcourses.berkeley.edu/courses/1549713/files/93609990",
+        "uid": "ewmba202-sp26-jprep-due-blue",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "start": "2026-02-04T02:00:00.000Z",
+        "end": "2026-02-04T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-blue-week5",
-        "title": "Class 5: Business Cycles I & MIDTERM EXAM",
+        "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
         "start": "2026-02-05T02:00:00.000Z",
         "end": "2026-02-05T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
-        "description": "IN-CLASS MIDTERM EXAM (Half Class)\nTopic: Business Cycles I: Measurement and Indicators\nNote: Midterm covers material up to Week 4.\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
+        "description": "IN-CLASS MIDTERM EXAM (First Half of Class)\nTopic: Business Cycles I - Measurement and Indicators\n\nMIDTERM DETAILS:\n• Covers material from Weeks 1-4 (Labor Markets)\n• Exam Format: Multiple choice + box for reasoning\n• Allowed: One-page notes (one-side) and calculator\n• Practice exams: Midterms 2022-2025 available on bCourses\n\nObjectives:\n• Identify recessions and booms\n• Indicators of booms and recessions\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "teams-haas-debrief-blue",
-        "title": "Teams@Haas: Team Debrief Due (Blue)",
+        "uid": "ewmba202-sp26-quiz2-window-blue",
+        "title": "Quiz 2 Window (Take anytime Feb 6-8)",
         "start": "2026-02-06T08:00:00.000Z",
-        "end": "2026-02-07T08:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=02&year=2026#assignment_8930028",
-        "description": "Self-facilitated Team Debrief Workshop.\n\nSubmit: Photo of Team Journey Map + reflection paragraph.\n\nPrompt options:\n1. How did your team develop and what actions supported this?\n2. What led to a team low point and how did you pivot?\n3. Benefits/challenges of diverse team and leadership development?\n\nDebrief Kit:\n- Video overview\n- Deck for process\n- Supplies in MBA lounge or use Zoom whiteboard",
-        "allDay": true,
+        "end": "2026-02-09T07:59:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "description": "Online Quiz 2 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
@@ -795,13 +996,25 @@
         "source": "teams@Haas.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week6",
-        "title": "Class 6: PPE and Intangible Assets",
+        "uid": "ewmba201b-sp26-blue-week5-gsi",
+        "title": "GSI Section - Week 5",
+        "start": "2026-02-09T03:00:00.000Z",
+        "end": "2026-02-09T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 5 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week6-blue",
+        "title": "Week 6: Property, Plant, Equipment & Intangible Assets (Blue Cohort)",
         "start": "2026-02-10T02:00:00.000Z",
         "end": "2026-02-10T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-6",
-        "description": "Instructor: Sunil Dutta\nTopic: Property, plant, and equipment\nReadings: 6.17 – 6.32\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-6",
+        "description": "Topic: PPE and Intangible Assets\n\nObjectives:\n• Describe financial accounting of property, plant, and equipment\n• Describe financial accounting of intangible assets\n\nPre-Class Materials:\n• Textbook: 6.17-6.32\n• Article 8: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2681293657\n• Article 9: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3258248699\n\nAssignment: Prepare Homework 3 for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-6",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
@@ -811,20 +1024,44 @@
         "title": "Class 6: Business Cycles II",
         "start": "2026-02-12T02:00:00.000Z",
         "end": "2026-02-12T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-6",
-        "description": "Topic: Business Cycles II: Fiscal and Monetary Policy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-6",
+        "description": "Topic: Business Cycles II - Fiscal and Monetary Policy\n\nNote: Week 6 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-6",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week7",
-        "title": "Class 7: Liabilities (JOINT CLASS)",
+        "uid": "ewmba201b-sp26-blue-week6-gsi",
+        "title": "GSI Section - Week 6",
+        "start": "2026-02-16T03:00:00.000Z",
+        "end": "2026-02-16T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 6 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week7-joint-blue",
+        "title": "Week 7: Current & Long-term Liabilities (JOINT CLASS)",
         "start": "2026-02-18T02:00:00.000Z",
         "end": "2026-02-18T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-7",
-        "description": "Note: Joint class on Tuesday due to Presidents Day Holiday.\nInstructor: Sunil Dutta\nTopic: Current and long-term liabilities\nReadings: 7.1 – 7.24\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-7",
+        "description": "Topic: Current and Long-term Liabilities\n\nNote: JOINT CLASS for both Blue and Gold cohorts (Presidents Day Monday)\n\nObjectives:\n• Describe the financial accounting of current and long-term liabilities\n\nPre-Class Materials:\n• Textbook: 7.1-7.24\n• Article 10: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_miscellaneous_1458495366\n• Article 11: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_gale_onefilemisc_PPTH_A856123681\n\nAssignments:\n• Homework 3 DUE\n• Take Online Quiz 3 (Feb 20-22)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-7",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw3-due-blue",
+        "title": "DEADLINE: Homework 3 Due",
+        "start": "2026-02-18T02:00:00.000Z",
+        "end": "2026-02-18T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 3 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
@@ -834,20 +1071,54 @@
         "title": "Class 7: The Open Economy",
         "start": "2026-02-19T02:00:00.000Z",
         "end": "2026-02-19T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-7",
-        "description": "Topic: The Open Economy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-7",
+        "description": "Topic: The Open Economy\n\nNote: Week 7 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-7",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week8",
-        "title": "Class 8: Shareholders' Equity",
+        "uid": "ewmba202-sp26-quiz3-window-blue",
+        "title": "Quiz 3 Window (Take anytime Feb 20-22)",
+        "start": "2026-02-20T08:00:00.000Z",
+        "end": "2026-02-23T07:59:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "description": "Online Quiz 3 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-topic-selection-due-blue",
+        "title": "DEADLINE: Presentation Topic Selection Due",
+        "start": "2026-02-22T07:59:00.000Z",
+        "end": "2026-02-22T07:59:00.000Z",
+        "description": "Email your chosen group presentation topic by Feb 21.\n\nTopics may be drawn from current business press, professional experience, or accounting issues such as revenue recognition, valuation, frauds, ESG reporting, industry-specific rules, or financial statement analysis.",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba201b-sp26-blue-week7-gsi",
+        "title": "GSI Section - Week 7",
+        "start": "2026-02-23T03:00:00.000Z",
+        "end": "2026-02-23T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 7 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week8-blue",
+        "title": "Week 8: Shareholders Equity & Intercorporate Investments (Blue Cohort)",
         "start": "2026-02-24T02:00:00.000Z",
         "end": "2026-02-24T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-8",
-        "description": "Instructor: Sunil Dutta\nTopic: Intercorporate investments\nReadings: 8.1 – 8.12, 8.17 – 8.18, 9.1 – 9.12\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-8",
+        "description": "Topic: Shareholders' Equity & Intercorporate Investments\n\nObjectives:\n• Define shareholders' equity\n• Define intercorporate investments\n\nPre-Class Materials:\n• Textbook: 8.1-8.12, 8.17-8.18, and 9.1-9.12\n• Article 12: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3261449417\n• Article 13: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3270556767\n\nAssignment: Prepare Group presentations for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-8",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
@@ -857,65 +1128,112 @@
         "title": "Class 8: Debt Sustainability",
         "start": "2026-02-26T02:00:00.000Z",
         "end": "2026-02-26T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-8",
-        "description": "Topic: Debt Sustainability\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-8",
+        "description": "Topic: Debt Sustainability\n\nNote: Week 8 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-8",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week9",
-        "title": "Class 9: Review and Presentations",
+        "uid": "ewmba201b-sp26-blue-week8-gsi",
+        "title": "GSI Section - Week 8",
+        "start": "2026-03-02T03:00:00.000Z",
+        "end": "2026-03-02T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 8 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-presentation-slides-due-blue",
+        "title": "DEADLINE: Group Presentation Slides Due",
+        "start": "2026-03-03T00:00:00.000Z",
+        "end": "2026-03-03T00:00:00.000Z",
+        "description": "One member must email the slide deck by 4:00 pm on the presentation day.\n\nPresentation Format:\n• 10 minutes per group\n• Teams paired to form seven larger groups\n• Evaluation is at the group level",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week9-blue",
+        "title": "Week 9: Review & Group Presentations (Blue Cohort)",
         "start": "2026-03-03T02:00:00.000Z",
         "end": "2026-03-03T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-9",
-        "description": "Instructor: Sunil Dutta\nTopic: Group Presentations and Review\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-9",
+        "description": "Topic: Course Review and Catch-up\n\nObjectives:\n• Comprehensive understanding of major concepts of financial accounting\n\nPre-Class Materials: None\n\nAssignments:\n• Homework 4 DUE (Tuesday 3/3)\n• Group Presentations (10 minutes each)\n\nNote: Teams will be paired to form seven larger groups. Slides must be emailed by 4:00 pm on presentation day.\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-9",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw4-due-blue",
+        "title": "DEADLINE: Homework 4 Due",
+        "start": "2026-03-04T02:00:00.000Z",
+        "end": "2026-03-04T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 4 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
         "uid": "ewmba201b-assign-slides",
-        "title": "Presentation/Debate Slides Due",
+        "title": "DEADLINE: Presentation/Debate Slides Due",
         "start": "2026-03-05T01:00:00.000Z",
         "end": "2026-03-05T01:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/assignments",
-        "description": "Submit slides using the form provided in Syllabus.",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform",
+        "description": "DEADLINE: Wednesday Mar 4 @ 5pm\n\nSubmit slides using form (if using slides for your debate presentation).\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-blue-week9",
-        "title": "Class 9: Climate Change & Debates",
+        "title": "Class 9: Climate Change & Group Presentations/Debate",
         "start": "2026-03-05T02:00:00.000Z",
         "end": "2026-03-05T05:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-9",
-        "description": "Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-9",
+        "location": "Berkeley Haas",
+        "url": "https://bcourses.berkeley.edu/courses/1549648",
+        "description": "Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nNote: 2 members per group present\nEach debate: ~20 minutes (5 min per side + 10 min discussion)\nClass vote on most convincing arguments (does not affect grade)\n\nDebate Topics:\n• Will the \"One Big Beautiful Bill\" be inflationary or disinflationary?\n• Should Argentina fully float the peso?\n• Should countries impose a tax on AI/robots?\n• Should the US cut tariffs applied to imports from China?\n• Should the Fed lower interest rates more aggressively?\n• Should the ECB incorporate climate change into its monetary policy decisions?\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
         "uid": "ewmba201b-assign-report",
-        "title": "Group Report Due",
+        "title": "DEADLINE: Group Report Due",
         "start": "2026-03-08T02:00:00.000Z",
         "end": "2026-03-08T02:00:00.000Z",
         "url": "https://bcourses.berkeley.edu/courses/1549648/assignments",
-        "description": "Submit Group Report via bCourses.",
+        "description": "DEADLINE: Saturday Mar 7 @ 6pm\n\nSubmit Group Report via bCourses.\n\nSubmission: https://bcourses.berkeley.edu/courses/1549648/assignments",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-blue-week10-final",
-        "title": "EWMBA 202: Final Exam",
+        "uid": "ewmba201b-sp26-blue-week9-gsi",
+        "title": "GSI Section - Week 9",
+        "start": "2026-03-09T02:00:00.000Z",
+        "end": "2026-03-09T03:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 9 material review and final exam prep\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba201b_macro_blue_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-final-blue",
+        "title": "FINAL EXAM (Blue Cohort)",
         "start": "2026-03-10T01:00:00.000Z",
         "end": "2026-03-10T04:00:00.000Z",
         "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713",
-        "description": "Final Exam (In-class, Closed book with 1 note sheet).\nTime: 6:00pm - 9:00pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-10",
+        "description": "In-Class Final Exam\n\nTime: 6:00 pm - 9:00 pm\n\nExam Details:\n• Closed book\n• One 8.5x11 sheet of notes allowed (double-sided)\n• Calculator permitted\n• Comprehensive exam covering all course material\n\nGrading: Best of (25% Midterm + 30% Final) OR (55% Final)\n\nNote: If you do better on the final, your midterm grade will be replaced.\n\nCourse Resources:\n• Study.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\n• Syllabus: https://bcourses.berkeley.edu/courses/1549713/assignments/syllabus\n• Media Library (Panopto): https://bcourses.berkeley.edu/courses/1549713/external_tools/93389\n• LearningClues AI: https://bcourses.berkeley.edu/courses/1549713/external_tools/101295\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-10",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba202_accounting_blue_spring2026.ics"
@@ -925,35 +1243,15 @@
         "title": "Class 10: Final Exam",
         "start": "2026-03-12T01:00:00.000Z",
         "end": "2026-03-12T04:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648",
-        "description": "Final Exam (In-class).\nTime: 6:00pm - 9:30pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648",
+        "description": "Final Exam (In-class)\n\nTime: 6:00pm - 9:30pm\nExam Format: Multiple choice + box for reasoning (same as midterm)\nAllowed: One-page notes (one-side) and calculator\n\nGrading: Best of (25% midterm + 30% final) OR (55% final)\n\nNote: Students with elective conflicts should take as scheduled - affected elective faculty notified for leniency\nContact: Olivia Coffman (ocoffman@berkeley.edu) with questions\n\nBackup Option: Honorlock proctoring available for exceptional circumstances\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba201b_macro_blue_spring2026.ics"
       }
     ],
     "gold": [
-      {
-        "uid": "fd7a0360-9ec7-446b-86ee-5b871d343f74@vibeshift.me",
-        "title": "Microeconomics – Week 9: Asymmetric Information & Review of Course Themes",
-        "start": "2025-09-24T01:00:00.000Z",
-        "end": "2025-09-24T04:30:00.000Z",
-        "description": "EWMBA 201A Microeconomics — Synchronous lecture (6:00–9:30 PM P",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba201a_micro_gold_fall2025.ics"
-      },
-      {
-        "uid": "event-assignment-override-324599",
-        "title": "Teams@Haas Check-In  Workshop #1 (Executive Coach) (EWMBA Blue) [Teams@Haas 2025]",
-        "start": "2025-09-25T02:30:00.000Z",
-        "end": "2025-09-25T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=09&year=2025#assignment_8930023",
-        "description": "A critical component of effective teamwork is reflexivity (Schippers et al., 2003).  Reflexivity is a group's ability to collectively reflect upon team objectives, strategies, and processes and to adapt them accordingly. This is our primary goal for the Teams@Haas Team Check-in Workshop. \n\nYour teams will have the opportunity to engage in this practice during the Teams@Haas Team Check-In facilitated by a Teams@Haas Executive Coaching Team.  The goal of these workshops is to provide you and your team with a new set of tools and to also support you in facilitating a conversation for your team to step back and reflect on what is working well and where you might make adaptations for improved effectiveness.\n\nPrior to the Team Check-In Workshop, please:\n\n* Check Your Team's Workshop Time (no Berkeley time) & Location\n\n* Review your Team Collaborative Plan \n\n* Watch: [HIT Team Check-In Plenary Video] (https://bcourses.berkeley.edu/courses/1535656/pages/video-team-check-in)\n\nParticipation Grade: Attendance for this session is part of your Leading People participation grade.",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "teams@Haas.ics"
-      },
       {
         "uid": "1261b171-6005-4485-975b-fd364a0e24df@vibeshift.me",
         "title": "Leading People – Class 8 – “Culture Eats Strategy for Breakfast” (Part Two) (Gold)",
@@ -1307,36 +1605,61 @@
         "source": "Marketing-Gold-Final.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week1",
-        "title": "Class 1: Introduction to Financial Statements",
+        "uid": "ewmba202-sp26-week1-gold",
+        "title": "Week 1: Financial Statements I (Gold Cohort)",
         "start": "2026-01-07T02:00:00.000Z",
         "end": "2026-01-07T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-1",
-        "description": "Instructor: Sunil Dutta\nTopic: Balance sheet and income statement\nReadings: 1.1 – 1.17, 2.1 – 2.15\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-1",
+        "description": "Topic: Introduction to Financial Statements - Balance Sheet and Income Statement\n\nObjectives:\n• Understand balance sheets and income statements\n\nPre-Class Materials:\n• Textbook: 1.1-1.7 and 2.1-2.15\n• Article 1 on Study.net\n\nInstructor: Prof. Sunil Dutta (dutta@haas.berkeley.edu)\nGSI: Jingyi Zhuang (jingyizhuang@berkeley.edu)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-1\nSyllabus: https://bcourses.berkeley.edu/courses/1549713/assignments/syllabus",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-gold-week1",
-        "title": "Class 1: Intro: Output, Inflation & Interest Rates",
+        "title": "Class 1: Introduction - Output, Inflation and Interest Rates",
         "start": "2026-01-09T02:00:00.000Z",
         "end": "2026-01-09T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-1",
-        "description": "Topic: Output, Inflation and Interest Rates\nReadings: See Syllabus\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-1",
+        "description": "Topic: Introduction - Output, Inflation and Interest Rates\n\nObjectives:\n• Understand how we measure the economy's performance and key measures like inflation, real output and real interest rates\n• Define what determines the real interest rates\n• Understand the costs and benefits of inflation and deflation\n\nRequired Readings:\n• The Economist - Why companies get inflation wrong\n• WSJ - Inflation Eased to 2.7% in Report Distorted by Government Shutdown\n• The Economist - Trump's interest-rate crusade will be self-defeating\n• The Economist - Lessons from Turkey on the evils of high inflation\n• FT - China's consumer prices fall as deflationary pressures persist\n\nTextbook: Mankiw Ch 2.1, 2.2, 4.1, 6.3, 6.5\n\nGSI Section: Sunday Jan 11, 7-8:30pm on Zoom\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-1",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week2",
-        "title": "Class 2: Balance Sheet & Income Statement (Contd)",
+        "uid": "ewmba202-sp26-week1-ta-gold",
+        "title": "TA Session - Week 1",
+        "start": "2026-01-11T21:00:00.000Z",
+        "end": "2026-01-11T22:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/95769266069",
+        "description": "GSI: Jingyi Zhuang\nTopic: Week 1 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.\nAttendance is optional but strongly recommended.",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba201b-sp26-gold-week1-gsi",
+        "title": "GSI Section - Week 1",
+        "start": "2026-01-12T03:00:00.000Z",
+        "end": "2026-01-12T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 1 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week2-gold",
+        "title": "Week 2: Financial Statements II (Gold Cohort)",
         "start": "2026-01-14T02:00:00.000Z",
         "end": "2026-01-14T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-2",
-        "description": "Instructor: Sunil Dutta\nTopic: Balance sheet and income statement continued\nReadings: 3.1 – 3.15\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-2",
+        "description": "Topic: Financial Statements II - Cash Flow Statement\n\nObjectives:\n• Define the components of a cash flow statement\n• Describe various financial statements\n\nPre-Class Materials:\n• Textbook: 3.1-3.15\n• Article 2: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_newspapers_2050846931\n• Article 3: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3251373353\n\nAssignment: Prepare Homework 1 for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-2",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
@@ -1346,31 +1669,56 @@
         "title": "Class 2: Money and Central Banks",
         "start": "2026-01-16T02:00:00.000Z",
         "end": "2026-01-16T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-2",
-        "description": "Topic: Money and Central Banks\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-2",
+        "description": "Topic: Money and Central Banks\n\nObjectives:\n• Understand the long-run causes of inflation and hyperinflation\n• Identify the role of money in the economy\n• Understand the macroeconomic implications of cryptocurrencies and stablecoins\n• Distinguish the tools of modern Central Banks and how they affect interest rates\n\nRequired Readings:\n• The Economist - Spot the difference\n• The Economist - A Nobel laureate on why stablecoins may be nothing of the sort\n• WSJ - The Fed's $6.6 Trillion Test: When to End Its Portfolio Runoff\n• WSJ - The Bank of Japan Raised Rates. Here's Why You Should Care.\n\nTextbook: Mankiw Ch 5.1, 5.2, 20\n\nAssignments: Problem Set 1 (optional, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-2",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week3",
-        "title": "Class 3: Statement of Cash Flow (JOINT CLASS)",
-        "start": "2026-01-21T02:00:00.000Z",
-        "end": "2026-01-21T05:30:00.000Z",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
-        "description": "Note: Joint class on Tuesday due to MLK Holiday.\nInstructor: Sunil Dutta\nTopic: Working capital and cash conversion cycle\nReadings: 11.1 – 11.8\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "uid": "ewmba202-sp26-week2-ta-gold",
+        "title": "TA Session - Week 2",
+        "start": "2026-01-18T21:00:00.000Z",
+        "end": "2026-01-18T22:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/95769266069",
+        "description": "GSI: Jingyi Zhuang\nTopic: Week 2 material review\n\nZoom: https://berkeley.zoom.us/j/95769266069\n\nSessions are recorded and posted on Panopto.",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-hw1",
-        "title": "EWMBA 202: Homework 1 Due",
-        "start": "2026-01-21T02:29:59.000Z",
-        "end": "2026-01-21T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9017380",
-        "description": "Homework 1 Due\n\nSubmission: https://bcourses.berkeley.edu/courses/1549713/files/93576354",
+        "uid": "ewmba201b-sp26-gold-week2-gsi",
+        "title": "GSI Section - Week 2",
+        "start": "2026-01-19T03:00:00.000Z",
+        "end": "2026-01-19T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 2 material review and Problem Set 1\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week3-joint-gold",
+        "title": "Week 3: Statement of Cash Flows & Working Capital (JOINT CLASS)",
+        "start": "2026-01-21T02:00:00.000Z",
+        "end": "2026-01-21T05:30:00.000Z",
+        "location": "Chou Hall N100",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "description": "Topic: Analyzing Cash Flows, Working Capital & Cash Conversion Cycle\n\nNote: JOINT CLASS for both Blue and Gold cohorts (MLK Holiday Monday)\n\nObjectives:\n• Define working capital and the cash conversion cycle\n\nPre-Class Materials:\n• Textbook: 11.1-11.8 and 6.16-6.17\n• Hernandez Case\n• Article 4 on Study.net\n\nAssignments:\n• Homework 1 DUE\n• Take Online Quiz 1 (Jan 23-25)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-3",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw1-due-gold",
+        "title": "DEADLINE: Homework 1 Due",
+        "start": "2026-01-21T02:00:00.000Z",
+        "end": "2026-01-21T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 1 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
@@ -1380,42 +1728,55 @@
         "title": "Class 3: Long-Term Growth",
         "start": "2026-01-23T02:00:00.000Z",
         "end": "2026-01-23T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
-        "description": "Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nPre-Class Materials (Required):\n• China Real Estate Slowdown (Rogoff): https://www.project-syndicate.org/commentary/china-diminishing-returns-real-estate-housing-slowdown-by-kenneth-rogoff-2022-10\n• Video: https://www.youtube.com/watch?v=jDOk54tEb3c\n• Allocation of Talent & US Growth: https://bfi.uchicago.edu/insight/research-summary/the-allocation-of-talent-and-us-economic-growth/\n• FT Article: https://www.ft.com/content/b44458cc-03fd-46a1-b003-b7a097419e66\n\nOptional Readings:\n• Why AI Isn't Boosting Economy: https://www.chicagobooth.edu/review/podcast/why-ai-isnt-boosting-economy\n• FT: https://www.ft.com/content/e63cbe88-6d46-4119-9067-e10a926c61c2\n• Racial Discrimination in Mortgage Lending: https://www-economist-com.libproxy.berkeley.edu/united-states/2022/11/24/racial-discrimination-in-mortgage-lending-has-declined-sharply-in-america\n• Contract Labour in India: https://cepr.org/voxeu/columns/contract-labour-and-firm-growth-india\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
+        "description": "Topic: Long-Term Growth\n\nObjectives:\n• How to decompose sources of growth\n• Capital accumulation and total factor productivity\n• Misallocation and productivity\n• Innovation policy\n\nRequired Readings:\n• Project Syndicate - China's Diminishing Returns\n• IGC Video Resource Misallocation and Productivity Growth\n• BFI - The Allocation of Talent and US Economic Growth\n• FT - China's innovation paradox\n\nTextbook: Mankiw Ch 9, 10.1, 10.2, 11\n\nAssignments: Problem Set 2 (optional, strongly recommended)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-3",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-quiz1",
-        "title": "EWMBA 202: Quiz 1",
-        "start": "2026-01-25T08:00:00.000Z",
-        "end": "2026-01-26T08:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9024625",
-        "description": "Quiz 1 - Online\n\nCourse: EWMBA 202 Financial Accounting",
-        "allDay": true,
-        "cohort": "gold",
-        "source": "ewmba202_accounting_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba202-sp26-gold-week4",
-        "title": "Class 4: Financial Statement Analysis",
-        "start": "2026-01-28T02:00:00.000Z",
-        "end": "2026-01-28T05:30:00.000Z",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
-        "description": "Instructor: Sunil Dutta\nTopic: Non-GAAP reporting\nReadings: 4.1 – 4.14, 5.3 – 5.6, 5.22 – 5.33\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
+        "uid": "ewmba202-sp26-quiz1-window-gold",
+        "title": "Quiz 1 Window (Take anytime Jan 23-25)",
+        "start": "2026-01-23T08:00:00.000Z",
+        "end": "2026-01-26T07:59:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "description": "Online Quiz 1 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-hw2",
-        "title": "EWMBA 202: Homework 2 Due",
-        "start": "2026-01-28T02:29:59.000Z",
+        "uid": "ewmba201b-sp26-gold-week3-gsi",
+        "title": "GSI Section - Week 3",
+        "start": "2026-01-26T03:00:00.000Z",
+        "end": "2026-01-26T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 3 material review and Problem Set 2\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week4-gold",
+        "title": "Week 4: Financial Statement Analysis & Non-GAAP (Gold Cohort)",
+        "start": "2026-01-28T02:00:00.000Z",
+        "end": "2026-01-28T05:30:00.000Z",
+        "location": "Chou Hall N370",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
+        "description": "Topic: Financial Statement Analysis and Non-GAAP Reporting\n\nObjectives:\n• Analyze cash conversion cycle\n• Analyze financial statements\n• Describe non-GAAP reporting\n\nPre-Class Materials:\n• Textbook: 4.1-4.14, 6.16-6.17, 5.3-5.6, 5.22-5.33\n• Article 5: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3272286273\n\nAssignments:\n• Homework 2 DUE\n• Prepare J Prep Case report for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw2-due-gold",
+        "title": "DEADLINE: Homework 2 Due",
+        "start": "2026-01-28T02:30:00.000Z",
         "end": "2026-01-28T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=01&year=2026#assignment_9029319",
-        "description": "Homework 2 Due\nIncludes Nordstrom Data analysis\n\nSubmission: https://bcourses.berkeley.edu/courses/1549713/files/93623153",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 2 must be submitted on bCourses before 6:30 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
@@ -1425,64 +1786,79 @@
         "title": "Class 4: Labor Markets",
         "start": "2026-01-30T02:00:00.000Z",
         "end": "2026-01-30T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
-        "description": "Topic: Labor Markets\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
+        "description": "Topic: Labor Markets\n\nNote: Week 4 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
         "uid": "ewmba201b-gold-assign-topic",
-        "title": "Group and Topic Selection Due",
+        "title": "DEADLINE: Group and Topic Selection Due",
         "start": "2026-01-31T01:00:00.000Z",
         "end": "2026-01-31T01:00:00.000Z",
-        "description": "Deadline to submit group and topic preferences.\nSee Syllabus for form link.",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform",
+        "description": "DEADLINE: Friday Jan 30 @ 5pm\n\nForm groups of 5 students and rank debate topic preferences.\nYes/No position will be assigned by instructor.\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform\n\nNote: Groups will be assigned if you don't form one.",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week5",
-        "title": "Class 5: ESG Reporting & Assets",
+        "uid": "ewmba201b-sp26-gold-week4-gsi",
+        "title": "GSI Section - Week 4",
+        "start": "2026-02-02T03:00:00.000Z",
+        "end": "2026-02-02T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 4 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week5-gold",
+        "title": "Week 5: ESG Reporting, Accounts Receivables & Inventories (Gold Cohort)",
         "start": "2026-02-04T02:00:00.000Z",
         "end": "2026-02-04T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
-        "description": "Instructor: Sunil Dutta\nTopic: ESG, Accounts receivables, Inventories\nReadings: 5.17 – 5.21, 6.1 – 6.11\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
+        "description": "Topic: ESG Reporting, Accounts Receivables & Inventories\n\nObjectives:\n• Describe ESG reporting\n• Describe the process for accounts receivables\n• Describe the financial accounting of inventories\n\nPre-Class Materials:\n• Textbook: 5.17-5.21 and 6.1-6.11\n• Article 6: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2938264461\n• Article 7: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2906681028\n• Climate Reporting Case\n\nAssignments:\n• J Prep Case report DUE\n• Take Online Quiz 2 (Feb 6-8)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-jprep-case",
-        "title": "EWMBA 202: J Prep Case Due",
-        "start": "2026-02-04T02:29:59.000Z",
-        "end": "2026-02-04T02:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1549713&month=02&year=2026#assignment_9029316",
-        "description": "Team Project - Submit one report per team.\nInclude team number and member names on title page.\nCase available in Study.Net folder.\nMust answer six questions from the linked document.\n\nQuestions: https://bcourses.berkeley.edu/courses/1549713/files/93609990",
+        "uid": "ewmba202-sp26-jprep-due-gold",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "start": "2026-02-04T02:00:00.000Z",
+        "end": "2026-02-04T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-gold-week5",
-        "title": "Class 5: Business Cycles I & MIDTERM EXAM",
+        "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
         "start": "2026-02-06T02:00:00.000Z",
         "end": "2026-02-06T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
-        "description": "IN-CLASS MIDTERM EXAM (Half Class)\nTopic: Business Cycles I: Measurement and Indicators\nNote: Midterm covers material up to Week 4.\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
+        "description": "IN-CLASS MIDTERM EXAM (First Half of Class)\nTopic: Business Cycles I - Measurement and Indicators\n\nMIDTERM DETAILS:\n• Covers material from Weeks 1-4 (Labor Markets)\n• Exam Format: Multiple choice + box for reasoning\n• Allowed: One-page notes (one-side) and calculator\n• Practice exams: Midterms 2022-2025 available on bCourses\n\nObjectives:\n• Identify recessions and booms\n• Indicators of booms and recessions\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "teams-haas-debrief-gold",
-        "title": "Teams@Haas: Team Debrief Due (Gold)",
+        "uid": "ewmba202-sp26-quiz2-window-gold",
+        "title": "Quiz 2 Window (Take anytime Feb 6-8)",
         "start": "2026-02-06T08:00:00.000Z",
-        "end": "2026-02-07T08:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=02&year=2026#assignment_8930028",
-        "description": "Self-facilitated Team Debrief Workshop.\n\nSubmit: Photo of Team Journey Map + reflection paragraph.\n\nPrompt options:\n1. How did your team develop and what actions supported this?\n2. What led to a team low point and how did you pivot?\n3. Benefits/challenges of diverse team and leadership development?\n\nDebrief Kit:\n- Video overview\n- Deck for process\n- Supplies in MBA lounge or use Zoom whiteboard",
-        "allDay": true,
+        "end": "2026-02-09T07:59:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "description": "Online Quiz 2 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
@@ -1498,13 +1874,25 @@
         "source": "teams@Haas.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week6",
-        "title": "Class 6: PPE and Intangible Assets",
+        "uid": "ewmba201b-sp26-gold-week5-gsi",
+        "title": "GSI Section - Week 5",
+        "start": "2026-02-09T03:00:00.000Z",
+        "end": "2026-02-09T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 5 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week6-gold",
+        "title": "Week 6: Property, Plant, Equipment & Intangible Assets (Gold Cohort)",
         "start": "2026-02-11T02:00:00.000Z",
         "end": "2026-02-11T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-6",
-        "description": "Instructor: Sunil Dutta\nTopic: Property, plant, and equipment\nReadings: 6.17 – 6.32\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-6",
+        "description": "Topic: PPE and Intangible Assets\n\nObjectives:\n• Describe financial accounting of property, plant, and equipment\n• Describe financial accounting of intangible assets\n\nPre-Class Materials:\n• Textbook: 6.17-6.32\n• Article 8: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2681293657\n• Article 9: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3258248699\n\nAssignment: Prepare Homework 3 for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-6",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
@@ -1514,20 +1902,44 @@
         "title": "Class 6: Business Cycles II",
         "start": "2026-02-13T02:00:00.000Z",
         "end": "2026-02-13T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-6",
-        "description": "Topic: Business Cycles II: Fiscal and Monetary Policy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-6",
+        "description": "Topic: Business Cycles II - Fiscal and Monetary Policy\n\nNote: Week 6 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-6",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week7",
-        "title": "Class 7: Liabilities (JOINT CLASS)",
+        "uid": "ewmba201b-sp26-gold-week6-gsi",
+        "title": "GSI Section - Week 6",
+        "start": "2026-02-16T03:00:00.000Z",
+        "end": "2026-02-16T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 6 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week7-joint-gold",
+        "title": "Week 7: Current & Long-term Liabilities (JOINT CLASS)",
         "start": "2026-02-18T02:00:00.000Z",
         "end": "2026-02-18T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-7",
-        "description": "Note: Joint class on Tuesday due to Presidents Day Holiday.\nInstructor: Sunil Dutta\nTopic: Current and long-term liabilities\nReadings: 7.1 – 7.24\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-7",
+        "description": "Topic: Current and Long-term Liabilities\n\nNote: JOINT CLASS for both Blue and Gold cohorts (Presidents Day Monday)\n\nObjectives:\n• Describe the financial accounting of current and long-term liabilities\n\nPre-Class Materials:\n• Textbook: 7.1-7.24\n• Article 10: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_miscellaneous_1458495366\n• Article 11: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_gale_onefilemisc_PPTH_A856123681\n\nAssignments:\n• Homework 3 DUE\n• Take Online Quiz 3 (Feb 20-22)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-7",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw3-due-gold",
+        "title": "DEADLINE: Homework 3 Due",
+        "start": "2026-02-18T02:00:00.000Z",
+        "end": "2026-02-18T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 3 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
@@ -1537,20 +1949,54 @@
         "title": "Class 7: The Open Economy",
         "start": "2026-02-20T02:00:00.000Z",
         "end": "2026-02-20T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-7",
-        "description": "Topic: The Open Economy\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-7",
+        "description": "Topic: The Open Economy\n\nNote: Week 7 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-7",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week8",
-        "title": "Class 8: Shareholders' Equity",
+        "uid": "ewmba202-sp26-quiz3-window-gold",
+        "title": "Quiz 3 Window (Take anytime Feb 20-22)",
+        "start": "2026-02-20T08:00:00.000Z",
+        "end": "2026-02-23T07:59:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "description": "Online Quiz 3 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-topic-selection-due-gold",
+        "title": "DEADLINE: Presentation Topic Selection Due",
+        "start": "2026-02-22T07:59:00.000Z",
+        "end": "2026-02-22T07:59:00.000Z",
+        "description": "Email your chosen group presentation topic by Feb 21.\n\nTopics may be drawn from current business press, professional experience, or accounting issues such as revenue recognition, valuation, frauds, ESG reporting, industry-specific rules, or financial statement analysis.",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba201b-sp26-gold-week7-gsi",
+        "title": "GSI Section - Week 7",
+        "start": "2026-02-23T03:00:00.000Z",
+        "end": "2026-02-23T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 7 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week8-gold",
+        "title": "Week 8: Shareholders Equity & Intercorporate Investments (Gold Cohort)",
         "start": "2026-02-25T02:00:00.000Z",
         "end": "2026-02-25T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-8",
-        "description": "Instructor: Sunil Dutta\nTopic: Intercorporate investments\nReadings: 8.1 – 8.12, 8.17 – 8.18, 9.1 – 9.12\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-8",
+        "description": "Topic: Shareholders' Equity & Intercorporate Investments\n\nObjectives:\n• Define shareholders' equity\n• Define intercorporate investments\n\nPre-Class Materials:\n• Textbook: 8.1-8.12, 8.17-8.18, and 9.1-9.12\n• Article 12: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3261449417\n• Article 13: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3270556767\n\nAssignment: Prepare Group presentations for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-8",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
@@ -1560,65 +2006,112 @@
         "title": "Class 8: Debt Sustainability",
         "start": "2026-02-27T02:00:00.000Z",
         "end": "2026-02-27T05:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-8",
-        "description": "Topic: Debt Sustainability\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-8",
+        "description": "Topic: Debt Sustainability\n\nNote: Week 8 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-8",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week9",
-        "title": "Class 9: Review and Presentations",
+        "uid": "ewmba201b-sp26-gold-week8-gsi",
+        "title": "GSI Section - Week 8",
+        "start": "2026-03-02T03:00:00.000Z",
+        "end": "2026-03-02T04:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 8 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-presentation-slides-due-gold",
+        "title": "DEADLINE: Group Presentation Slides Due",
+        "start": "2026-03-04T00:00:00.000Z",
+        "end": "2026-03-04T00:00:00.000Z",
+        "description": "One member must email the slide deck by 4:00 pm on the presentation day.\n\nPresentation Format:\n• 10 minutes per group\n• Teams paired to form seven larger groups\n• Evaluation is at the group level",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-week9-gold",
+        "title": "Week 9: Review & Group Presentations (Gold Cohort)",
         "start": "2026-03-04T02:00:00.000Z",
         "end": "2026-03-04T05:30:00.000Z",
         "location": "Chou Hall N370",
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-9",
-        "description": "Instructor: Sunil Dutta\nTopic: Group Presentations and Review\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-9",
+        "description": "Topic: Course Review and Catch-up\n\nObjectives:\n• Comprehensive understanding of major concepts of financial accounting\n\nPre-Class Materials: None\n\nAssignments:\n• Homework 4 DUE\n• Group Presentations (10 minutes each)\n\nNote: Teams will be paired to form seven larger groups. Slides must be emailed by 4:00 pm on presentation day.\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-9",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-hw4-due-gold",
+        "title": "DEADLINE: Homework 4 Due",
+        "start": "2026-03-04T02:00:00.000Z",
+        "end": "2026-03-04T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "Homework 4 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
         "uid": "ewmba201b-gold-assign-slides",
-        "title": "Presentation/Debate Slides Due",
+        "title": "DEADLINE: Presentation/Debate Slides Due",
         "start": "2026-03-06T01:00:00.000Z",
         "end": "2026-03-06T01:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/assignments",
-        "description": "Submit slides using the form provided in Syllabus.",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform",
+        "description": "DEADLINE: Thursday Mar 5 @ 5pm\n\nSubmit slides using form (if using slides for your debate presentation).\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-gold-week9",
-        "title": "Class 9: Climate Change & Debates",
+        "title": "Class 9: Climate Change & Group Presentations/Debate",
         "start": "2026-03-06T02:00:00.000Z",
         "end": "2026-03-06T05:30:00.000Z",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-9",
-        "description": "Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-9",
+        "location": "Berkeley Haas",
+        "url": "https://bcourses.berkeley.edu/courses/1549648",
+        "description": "Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nNote: 2 members per group present\nEach debate: ~20 minutes (5 min per side + 10 min discussion)\nClass vote on most convincing arguments (does not affect grade)\n\nDebate Topics:\n• Will the \"One Big Beautiful Bill\" be inflationary or disinflationary?\n• Should Argentina fully float the peso?\n• Should countries impose a tax on AI/robots?\n• Should the US cut tariffs applied to imports from China?\n• Should the Fed lower interest rates more aggressively?\n• Should the ECB incorporate climate change into its monetary policy decisions?\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
         "uid": "ewmba201b-gold-assign-report",
-        "title": "Group Report Due",
+        "title": "DEADLINE: Group Report Due",
         "start": "2026-03-08T02:00:00.000Z",
         "end": "2026-03-08T02:00:00.000Z",
         "url": "https://bcourses.berkeley.edu/courses/1549648/assignments",
-        "description": "Submit Group Report via bCourses.",
+        "description": "DEADLINE: Saturday Mar 7 @ 6pm\n\nSubmit Group Report via bCourses.\n\nSubmission: https://bcourses.berkeley.edu/courses/1549648/assignments",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-gold-week10-final",
-        "title": "EWMBA 202: Final Exam",
+        "uid": "ewmba201b-sp26-gold-week9-gsi",
+        "title": "GSI Section - Week 9",
+        "start": "2026-03-09T02:00:00.000Z",
+        "end": "2026-03-09T03:30:00.000Z",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081",
+        "description": "GSI: Patrik Raty\nTopic: Week 9 material review and final exam prep\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba201b_macro_gold_spring2026.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-final-gold",
+        "title": "FINAL EXAM (Gold Cohort)",
         "start": "2026-03-11T01:00:00.000Z",
         "end": "2026-03-11T04:00:00.000Z",
         "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713",
-        "description": "Final Exam (In-class, Closed book with 1 note sheet).\nTime: 6:00pm - 9:00pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-10",
+        "description": "In-Class Final Exam\n\nTime: 6:00 pm - 9:00 pm\n\nExam Details:\n• Closed book\n• One 8.5x11 sheet of notes allowed (double-sided)\n• Calculator permitted\n• Comprehensive exam covering all course material\n\nGrading: Best of (25% Midterm + 30% Final) OR (55% Final)\n\nNote: If you do better on the final, your midterm grade will be replaced.\n\nCourse Resources:\n• Study.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\n• Syllabus: https://bcourses.berkeley.edu/courses/1549713/assignments/syllabus\n• Media Library (Panopto): https://bcourses.berkeley.edu/courses/1549713/external_tools/93389\n• LearningClues AI: https://bcourses.berkeley.edu/courses/1549713/external_tools/101295\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-10",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba202_accounting_gold_spring2026.ics"
@@ -1628,25 +2121,15 @@
         "title": "Class 10: Final Exam",
         "start": "2026-03-13T01:00:00.000Z",
         "end": "2026-03-13T04:30:00.000Z",
+        "location": "Berkeley Haas",
         "url": "https://bcourses.berkeley.edu/courses/1549648",
-        "description": "Final Exam (In-class).\nTime: 6:00pm - 9:30pm\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648",
+        "description": "Final Exam (In-class)\n\nTime: 6:00pm - 9:30pm\nExam Format: Multiple choice + box for reasoning (same as midterm)\nAllowed: One-page notes (one-side) and calculator\n\nGrading: Best of (25% midterm + 30% final) OR (55% final)\n\nNote: Students with elective conflicts should take as scheduled - affected elective faculty notified for leniency\nContact: Olivia Coffman (ocoffman@berkeley.edu) with questions\n\nBackup Option: Honorlock proctoring available for exceptional circumstances\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba201b_macro_gold_spring2026.ics"
       }
     ],
     "original": [
-      {
-        "uid": "event-assignment-override-324387",
-        "title": "Class 8 - Group Facilitators Iggy's Case Memo (EWMBA 205 LEC 01A (In Person)) [EWMBA 205-LEC-01A & 02A FA25]",
-        "start": "2025-09-25T01:00:00.000Z",
-        "end": "2025-09-25T01:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1545386&month=09&year=2025#assignment_8916932",
-        "description": "Case: Iggy's Bread of the World\n\nYou are a board member/trusted advisor making recommendations to the Ivanovics regarding both McRae's proposal and the problems unfolding that the Ivanovics need to deal with to continue to be successful. Your recommendation (including points 1-3 below) should be in the form of a memo to Iggy + Ludmilla.  It should be one page maximum (single-spaced, 12-point font, Times New Roman, and 1-inch margins).\n\nAs a facilitator, you’ll use the preparation of this memo to help kick off and guide your group’s discussion. You won’t need to present your memo in full, but it should give you a clear point of view and framing to engage your teammates. Please remember: if you haven’t done the readings or submitted your memo, you won’t be equipped to lead your group and you’ll be letting your team down.\n\nIggy + Ludmilla want to see the following in your memo:\n\n1. A clear and succinct understanding of the key challenges they face in the situation. Your support of the challenges should include case facts/observations.\n\n2. The pros/cons of various alternatives available for addressing the challenges.\n\n3. A strong rationale for your recommended action, based upon (1) and (2) above. Not only should your recommendation be supported based upon the facts of the case and your expert knowledge (the “why”), but also your recommendation should include the “who, what, when, and how”.\n\nTo support your thinking, reflect on these questions:\n\n*\n\nWhat values have the Ivanovics instilled in Iggy’s culture, and how have they used direct, indirect, and symbolic influence to shape it?\n\n*\n\nWhat’s at stake in their current conflict with McRae? What’s driving the breakdown?\n\n*\n\nWhat’s your assessment of McRae’s role? Could the situation be repaired, or should they move on? If so, what’s next?\n\nSubmission Details:\n\n* Due: On bCourses by 6:00 PM on the day of class\n\n*\n\nFormat: Type directly into the submission box\n\n*\n\nGrading: You will receive a grade out of 5 points based on the quality and effort demonstrated in your memo. See rubric posted below.\n\nGood luck and have fun baking up a plan! 🥖",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "calendar.ics"
-      },
       {
         "uid": "event-assignment-8909109",
         "title": "Team Assignment: Corporate Memo (Final Submission) [EWMBA 201A-LEC-01A & 02A FA25]",
@@ -2059,13 +2542,129 @@
           "MBAA"
         ]
       }
+    ],
+    "academicCalendar": [
+      {
+        "uid": "haas-spring2026-first-day@oskihub",
+        "title": "📚 First Day of Spring Semester",
+        "start": "2026-01-05T08:00:00.000Z",
+        "end": "2026-01-06T08:00:00.000Z",
+        "description": "Spring 2026 semester begins! Welcome back, Bears!",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "ACADEMIC"
+        ]
+      },
+      {
+        "uid": "haas-spring2026-mlk@oskihub",
+        "title": "🎉 Martin Luther King Jr. Day (No Classes)",
+        "start": "2026-01-19T08:00:00.000Z",
+        "end": "2026-01-20T08:00:00.000Z",
+        "description": "Campus closed in observance of Martin Luther King Jr. Day. No classes scheduled.",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "HOLIDAY"
+        ]
+      },
+      {
+        "uid": "haas-spring2026-presidents-day@oskihub",
+        "title": "🎉 Presidents Day (No Classes)",
+        "start": "2026-02-16T08:00:00.000Z",
+        "end": "2026-02-17T08:00:00.000Z",
+        "description": "Campus closed in observance of Presidents Day. No classes scheduled.",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "HOLIDAY"
+        ]
+      },
+      {
+        "uid": "haas-spring2026-last-day@oskihub",
+        "title": "📖 Last Day of Classes",
+        "start": "2026-03-06T08:00:00.000Z",
+        "end": "2026-03-07T08:00:00.000Z",
+        "description": "Final day of regular instruction for Spring 2026 semester.",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "ACADEMIC"
+        ]
+      },
+      {
+        "uid": "haas-spring2026-reading-day@oskihub",
+        "title": "📖 Reading/Review Period",
+        "start": "2026-03-07T08:00:00.000Z",
+        "end": "2026-03-09T07:00:00.000Z",
+        "description": "Reading and review period before final exams. No classes scheduled.",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "ACADEMIC"
+        ]
+      },
+      {
+        "uid": "haas-spring2026-finals-week@oskihub",
+        "title": "📝 Finals Week",
+        "start": "2026-03-09T07:00:00.000Z",
+        "end": "2026-03-13T07:00:00.000Z",
+        "description": "Final examinations period for Spring 2026 semester. Check your course schedules for specific exam dates and times.",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "ACADEMIC",
+          "FINALS"
+        ]
+      },
+      {
+        "uid": "haas-spring2026-spring-break-start@oskihub",
+        "title": "🌴 Spring Break",
+        "start": "2026-03-23T07:00:00.000Z",
+        "end": "2026-03-28T07:00:00.000Z",
+        "description": "Spring Break - No classes. Enjoy your break!",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "BREAK"
+        ]
+      },
+      {
+        "uid": "haas-spring2026-commencement@oskihub",
+        "title": "🎓 Haas Commencement",
+        "start": "2026-05-15T07:00:00.000Z",
+        "end": "2026-05-16T07:00:00.000Z",
+        "description": "Haas School of Business Commencement Ceremony. Congratulations, graduates!",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "ACADEMIC",
+          "CEREMONY"
+        ]
+      }
     ]
   },
   "processingInfo": {
-    "totalTime": 118285,
-    "newsletterTime": 89895,
-    "calendarTime": 498,
-    "myWeekTime": 28388,
-    "timestamp": "2026-01-21T13:18:33.527Z"
+    "totalTime": 56606,
+    "newsletterTime": 56576,
+    "calendarTime": 426,
+    "myWeekTime": 30,
+    "timestamp": "2026-01-23T11:04:10.297Z"
   }
 }

@@ -449,23 +449,39 @@ export async function analyzeCohortMyWeekWithAI(
     safeLog('📙 Gold cohort calendar events:', goldCalendarEvents.length);
     safeLog('📰 Newsletter events found:', newsletterEvents.length);
     
-    // Generate analysis for Blue cohort
-    const blueAnalysis = await generateCohortSpecificAnalysis(
-      blueCalendarEvents, 
-      newsletterEvents, 
-      'Blue', 
-      weekStart, 
-      weekEnd
-    );
+    // Skip AI summaries in dev mode (summaries are currently disabled in MyWeekWidget UI)
+    // This saves ~32 seconds of AI processing time during development
+    const skipAISummariesInDev = process.env.NODE_ENV === 'development';
     
-    // Generate analysis for Gold cohort  
-    const goldAnalysis = await generateCohortSpecificAnalysis(
-      goldCalendarEvents, 
-      newsletterEvents, 
-      'Gold', 
-      weekStart, 
-      weekEnd
-    );
+    let blueAnalysis: { events: WeeklyEvent[]; summary: string };
+    let goldAnalysis: { events: WeeklyEvent[]; summary: string };
+    
+    if (skipAISummariesInDev) {
+      safeLog('🔧 DEV MODE: Skipping AI summary generation (disabled in UI anyway)');
+      
+      // Generate basic event lists without AI
+      blueAnalysis = await generateBasicAnalysis(blueCalendarEvents, newsletterEvents, 'Blue', weekStart, weekEnd);
+      goldAnalysis = await generateBasicAnalysis(goldCalendarEvents, newsletterEvents, 'Gold', weekStart, weekEnd);
+    } else {
+      // PRODUCTION: Generate AI summaries in parallel for both cohorts
+      safeLog('🚀 Running Blue + Gold AI analysis in parallel...');
+      [blueAnalysis, goldAnalysis] = await Promise.all([
+        generateCohortSpecificAnalysis(
+          blueCalendarEvents, 
+          newsletterEvents, 
+          'Blue', 
+          weekStart, 
+          weekEnd
+        ),
+        generateCohortSpecificAnalysis(
+          goldCalendarEvents, 
+          newsletterEvents, 
+          'Gold', 
+          weekStart, 
+          weekEnd
+        )
+      ]);
+    }
 
     const result: CohortMyWeekAnalysis = {
       weekStart: weekStart.toISOString().split('T')[0],
@@ -551,6 +567,56 @@ export async function analyzeCohortMyWeekWithAI(
     
     return fallbackResult;
   }
+}
+
+// Helper function for dev mode - skip AI, just organize events without summaries
+async function generateBasicAnalysis(
+  calendarEvents: CohortEvent[],
+  newsletterEvents: ProcessedNewsletterEvent[],
+  cohortName: string,
+  weekStart: Date,
+  weekEnd: Date
+): Promise<{ events: WeeklyEvent[]; summary: string }> {
+  
+  const events: WeeklyEvent[] = calendarEvents.map(event => {
+    const eventDate = parseICSDate(event.start);
+    const originalEventDate = new Date(event.start);
+    const { type, priority } = categorizeEvent(
+      event.summary || event.title || 'Calendar Event',
+      event.description
+    );
+    
+    return {
+      date: `${eventDate.getFullYear()}-${String(eventDate.getMonth() + 1).padStart(2, '0')}-${String(eventDate.getDate()).padStart(2, '0')}`,
+      time: originalEventDate.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true }),
+      title: event.summary || event.title || 'Calendar Event',
+      type,
+      priority,
+      description: event.description || undefined,
+      location: event.location || undefined,
+      url: event.url || undefined
+    };
+  });
+  
+  // Add newsletter events
+  newsletterEvents.forEach(item => {
+    item.relevantDates.forEach(dateStr => {
+      events.push({
+        date: dateStr,
+        title: item.title,
+        type: 'newsletter',
+        priority: item.priority as WeeklyEvent['priority'] || 'low',
+        description: item.html?.replace(/<[^>]*>/g, ' ').substring(0, 200) || undefined,
+        sourceType: 'newsletter',
+        newsletterSource: item.sourceMetadata
+      });
+    });
+  });
+  
+  return {
+    events,
+    summary: `[DEV MODE] ${cohortName} cohort: ${events.length} events this week.`
+  };
 }
 
 // Helper function to generate cohort-specific analysis

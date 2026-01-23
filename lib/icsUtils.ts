@@ -45,6 +45,7 @@ export type CohortEvents = {
   launch: CalendarEvent[]; // UC Launch Accelerator events
   calBears: CalendarEvent[]; // Cal Bears home events
   campusGroups: CalendarEvent[]; // Campus Groups events
+  academicCalendar: CalendarEvent[]; // Haas Academic Calendar (holidays, breaks, finals)
 };
 
 // File mappings for each cohort
@@ -571,6 +572,23 @@ async function fetchCampusGroupsEvents(): Promise<CalendarEvent[]> {
 }
 
 /**
+ * Fetch and parse events from the Haas Academic Calendar ICS file
+ */
+async function fetchHaasAcademicCalendar(): Promise<CalendarEvent[]> {
+  safeLog('Fetching Haas Academic Calendar events');
+
+  try {
+    const icsText = await fetchIcsData('haas_academic_calendar_spring2026.ics');
+    const events = parseIcsToEvents(icsText, 'blue', 'haas_academic_calendar_spring2026.ics');
+    safeLog(`Successfully parsed ${events.length} events from Haas Academic Calendar`);
+    return events;
+  } catch (error) {
+    safeError('Error fetching Haas Academic Calendar events:', error);
+    return [];
+  }
+}
+
+/**
  * Main function to fetch events for both cohorts plus original calendar
  */
 export async function getCohortEvents(
@@ -580,8 +598,8 @@ export async function getCohortEvents(
   safeLog('Fetching events for both cohorts, original calendar, and UC Launch...');
 
   try {
-    // Fetch both cohorts, original calendar, UC Launch events, Cal Bears events, and Campus Groups events in parallel
-    const [blueEvents, goldEvents, originalEvents, launchEvents, calBearsEvents, campusGroupsEvents] = await Promise.all([
+    // Fetch both cohorts, original calendar, UC Launch events, Cal Bears events, Campus Groups events, and Academic Calendar in parallel
+    const [blueEvents, goldEvents, originalEvents, launchEvents, calBearsEvents, campusGroupsEvents, academicCalendarEvents] = await Promise.all([
       fetchCohortEvents('blue'),
       fetchCohortEvents('gold'),
       fetchOriginalCalendarEvents().catch(() => {
@@ -599,8 +617,18 @@ export async function getCohortEvents(
       fetchCampusGroupsEvents().catch(() => {
         safeWarn('Could not load Campus Groups events, continuing without them');
         return [];
+      }),
+      fetchHaasAcademicCalendar().catch((err) => {
+        safeWarn('Could not load Haas Academic Calendar, continuing without them:', err);
+        return [];
       })
     ]);
+
+    // Debug: Log raw academic calendar events
+    safeLog(`📅 [DEBUG] Raw academicCalendarEvents: ${academicCalendarEvents.length} events`);
+    if (academicCalendarEvents.length > 0) {
+      safeLog(`📅 [DEBUG] First academic event: ${JSON.stringify(academicCalendarEvents[0])}`);
+    }
 
     // Helper to inject ALL future Teams@Haas events (next 1 year) regardless of horizon
     const injectTeams = (filtered: CalendarEvent[], all: CalendarEvent[]): CalendarEvent[] => {
@@ -646,8 +674,11 @@ export async function getCohortEvents(
     
     // Filter and limit Campus Groups events with extended date range (6 months ahead)
     const filteredCampusGroups = filterEventsByDateRange(campusGroupsEvents, daysAhead * 6, limit);
+    
+    // Filter and limit Academic Calendar events with extended date range (6 months ahead)
+    const filteredAcademicCalendar = filterEventsByDateRange(academicCalendarEvents, daysAhead * 6, limit);
 
-    safeLog(`Filtered events - Blue: ${filteredBlue.length}, Gold: ${filteredGold.length}, Original: ${filteredOriginal.length}, Launch: ${filteredLaunch.length}, Cal Bears: ${filteredCalBears.length}, Campus Groups: ${filteredCampusGroups.length}`);
+    safeLog(`Filtered events - Blue: ${filteredBlue.length}, Gold: ${filteredGold.length}, Original: ${filteredOriginal.length}, Launch: ${filteredLaunch.length}, Cal Bears: ${filteredCalBears.length}, Campus Groups: ${filteredCampusGroups.length}, Academic Calendar: ${filteredAcademicCalendar.length}`);
 
     return {
       blue: filteredBlue,
@@ -655,7 +686,8 @@ export async function getCohortEvents(
       original: filteredOriginal,
       launch: filteredLaunch,
       calBears: filteredCalBears,
-      campusGroups: filteredCampusGroups
+      campusGroups: filteredCampusGroups,
+      academicCalendar: filteredAcademicCalendar
     };
   } catch (error) {
     safeError('Error fetching cohort events:', error);

@@ -45,10 +45,15 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   const [showUCLaunch, setShowUCLaunch] = useState(false);
   const [showCalBears, setShowCalBears] = useState(true); // Default ON
   const [showCampusGroups, setShowCampusGroups] = useState(false);
+  const [showAcademicCalendar, setShowAcademicCalendar] = useState(true); // Default ON
   const [showNewsletter, setShowNewsletter] = useState(true); // Default ON
   const [newsletterEvents, setNewsletterEvents] = useState<NewsletterCalendarEvent[]>([]);
   const [showEventDropdown, setShowEventDropdown] = useState(false);
   const [glowingDate, setGlowingDate] = useState<string | null>(null); // Track which date should glow (ISO string)
+  // Multi-event modal state
+  const [multiEventModalOpen, setMultiEventModalOpen] = useState(false);
+  const [multiEventModalEvents, setMultiEventModalEvents] = useState<CalendarEvent[]>([]);
+  const [multiEventModalDate, setMultiEventModalDate] = useState<Date | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Load cohort preference from localStorage on mount (only if not externally controlled)
@@ -69,6 +74,11 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     const savedShowCalBears = localStorage.getItem('calendar-show-calbears');
     if (savedShowCalBears !== null) {
       setShowCalBears(savedShowCalBears === 'true');
+    }
+    
+    const savedShowAcademicCalendar = localStorage.getItem('calendar-show-academic');
+    if (savedShowAcademicCalendar !== null) {
+      setShowAcademicCalendar(savedShowAcademicCalendar === 'true');
     }
   }, [externalSelectedCohort]);
 
@@ -299,6 +309,11 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   useEffect(() => {
     localStorage.setItem('calendar-show-calbears', String(showCalBears));
   }, [showCalBears]);
+
+  // Save Academic Calendar toggle preference to localStorage
+  useEffect(() => {
+    localStorage.setItem('calendar-show-academic', String(showAcademicCalendar));
+  }, [showAcademicCalendar]);
 
   // Handle clicking outside dropdown to close it
   useEffect(() => {
@@ -610,6 +625,27 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     }, 7000);
   };
 
+  // Handle multi-event expand click from MonthGrid
+  const handleMultiEventClick = (events: CalendarEvent[], date: Date) => {
+    console.log(`📅 [CohortCalendarTabs] Multi-event expand clicked for ${date.toDateString()}:`, events.length, 'events');
+    setMultiEventModalEvents(events);
+    setMultiEventModalDate(date);
+    setMultiEventModalOpen(true);
+  };
+
+  // Handle selecting an event from multi-event modal
+  const handleSelectFromMultiEventModal = (event: CalendarEvent) => {
+    setMultiEventModalOpen(false);
+    handleEventClick(event);
+  };
+
+  // Close multi-event modal
+  const handleCloseMultiEventModal = () => {
+    setMultiEventModalOpen(false);
+    setMultiEventModalEvents([]);
+    setMultiEventModalDate(null);
+  };
+
   // Get current cohort events
   const currentEvents = cohortEvents[selectedCohort] || [];
 
@@ -858,6 +894,35 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     </div>
                   </div>
                 </label>
+
+                {/* Haas Academic Calendar Toggle */}
+                <label className="flex items-center justify-between px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-7 flex items-center justify-center bg-amber-600 rounded-lg">
+                      <svg className="w-6 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
+                      </svg>
+                    </div>
+                    <span className="text-sm pr-2 font-medium">Academic</span>
+                  </div>
+                  <div className="relative">
+                    <input
+                      type="checkbox"
+                      checked={showAcademicCalendar}
+                      onChange={(e) => setShowAcademicCalendar(e.target.checked)}
+                      className="sr-only"
+                      aria-label="Toggle Academic Calendar events"
+                    />
+                    <div className={`w-10 h-6 rounded-full transition-colors duration-200 ${
+                      showAcademicCalendar ? 'bg-amber-500' : 'bg-slate-300 dark:bg-slate-600'
+                    }`}>
+                      <div className={`translate-y-1 w-4 h-4 bg-white rounded-full shadow transform transition-transform duration-200 mt-1 ${
+                        showAcademicCalendar ? 'translate-x-5' : 'translate-x-1'
+                      }`} />
+                    </div>
+                  </div>
+                </label>
+
               {/* COMING SOON*/}
                 <label className="flex items-center justify-center text-center px-5 py-1 hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer">
                   <div className="flex items-center gap-3">
@@ -890,9 +955,12 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
             calBearsEvents={cohortEvents.calBears || []}
             showCampusGroups={showCampusGroups}
             campusGroupsEvents={cohortEvents.campusGroups || []}
+            showAcademicCalendar={showAcademicCalendar}
+            academicCalendarEvents={cohortEvents.academicCalendar || []}
             showNewsletter={showNewsletter}
             newsletterEvents={newsletterEvents}
             glowingDate={glowingDate}
+            onMultiEventClick={handleMultiEventClick}
           />
         </div>
       </div>
@@ -908,6 +976,96 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
         hasPrevious={currentEventIndex > 0}
         onTriggerGlow={handleTriggerGlow}
       />
+
+      {/* Multi-Event Grid Modal */}
+      {multiEventModalOpen && multiEventModalDate && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+          <div className="backdrop-blur-3xl bg-slate-900/80 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-hidden flex flex-col border border-slate-700/50">
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-700/50">
+              <div>
+                <h2 className="text-lg font-semibold text-white">
+                  Events on {format(multiEventModalDate, 'EEEE, MMMM d, yyyy')}
+                </h2>
+                <p className="text-sm text-slate-400 mt-0.5">
+                  {multiEventModalEvents.length} events • Click to view details
+                </p>
+              </div>
+              <button
+                onClick={handleCloseMultiEventModal}
+                className="p-2 rounded-lg hover:bg-slate-700 transition-colors"
+                aria-label="Close"
+              >
+                <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Event Grid */}
+            <div className="px-6 py-4 overflow-y-auto flex-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {multiEventModalEvents.map((event, index) => {
+                  // Determine event color based on source
+                  const getEventColor = () => {
+                    if (event.source?.includes('newsletter')) return 'bg-purple-600/30 border-purple-500/50 hover:bg-purple-600/50';
+                    if (event.source?.includes('uc_launch')) return 'bg-orange-600/30 border-orange-500/50 hover:bg-orange-600/50';
+                    if (event.source?.includes('campus_groups')) return 'bg-blue-600/30 border-blue-500/50 hover:bg-blue-600/50';
+                    if (event.source?.includes('cal_bears')) return 'bg-blue-800/30 border-yellow-500/50 hover:bg-blue-800/50';
+                    if (event.source?.includes('haas_academic')) return 'bg-amber-600/30 border-amber-500/50 hover:bg-amber-600/50';
+                    if (event.source?.includes('201a_micro')) return 'bg-green-800/30 border-green-700/50 hover:bg-green-800/50';
+                    if (event.source?.includes('201b_macro')) return 'bg-blue-900/30 border-blue-700/50 hover:bg-blue-900/50';
+                    if (event.source?.includes('202_')) return 'bg-teal-700/30 border-teal-600/50 hover:bg-teal-700/50';
+                    if (event.source?.includes('205_')) return 'bg-red-800/30 border-red-700/50 hover:bg-red-800/50';
+                    if (event.source?.includes('206_')) return 'bg-sky-700/30 border-sky-600/50 hover:bg-sky-700/50';
+                    return 'bg-slate-700/30 border-slate-600/50 hover:bg-slate-700/50';
+                  };
+
+                  // Get event type label
+                  const getEventType = () => {
+                    if (event.source?.includes('newsletter')) return '📰 Newsletter';
+                    if (event.source?.includes('uc_launch')) return '🚀 UC Launch';
+                    if (event.source?.includes('campus_groups')) return '👥 Campus Groups';
+                    if (event.source?.includes('cal_bears')) return '🐻 Cal Bears';
+                    if (event.source?.includes('haas_academic')) return '📅 Academic';
+                    return '📚 Course';
+                  };
+
+                  return (
+                    <button
+                      key={event.uid || `${event.title}-${index}`}
+                      onClick={() => handleSelectFromMultiEventModal(event)}
+                      className={`text-left p-4 rounded-xl border ${getEventColor()} transition-all duration-200 cursor-pointer hover:scale-[1.02] hover:shadow-lg`}
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs text-slate-400 mb-1">{getEventType()}</div>
+                          <h3 className="text-sm font-medium text-white truncate">{event.title}</h3>
+                          {event.description && (
+                            <p className="text-xs text-slate-400 mt-1 line-clamp-2">
+                              {event.description.substring(0, 100)}
+                              {event.description.length > 100 ? '...' : ''}
+                            </p>
+                          )}
+                          {event.start && !event.allDay && (
+                            <p className="text-xs text-slate-500 mt-2">
+                              {format(new Date(event.start), 'h:mm a')}
+                              {event.end && ` - ${format(new Date(event.end), 'h:mm a')}`}
+                            </p>
+                          )}
+                        </div>
+                        <svg className="w-4 h-4 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

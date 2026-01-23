@@ -1,0 +1,79 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//Haas Academic Calendar Spring 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Haas Academic Calendar Spring 2026
+X-WR-TIMEZONE:America/Los_Angeles
+
+BEGIN:VEVENT
+UID:haas-spring2026-first-day@oskihub
+DTSTART;VALUE=DATE:20260105
+DTEND;VALUE=DATE:20260106
+SUMMARY:First Day of Spring Semester
+DESCRIPTION:Spring 2026 semester begins! Welcome back, Bears!
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:haas-spring2026-mlk@oskihub
+DTSTART;VALUE=DATE:20260119
+DTEND;VALUE=DATE:20260120
+SUMMARY:Martin Luther King Jr. Day (No Classes)
+DESCRIPTION:Campus closed in observance of Martin Luther King Jr. Day. No classes scheduled.
+CATEGORIES:HOLIDAY
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:haas-spring2026-presidents-day@oskihub
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260217
+SUMMARY:Presidents Day (No Classes)
+DESCRIPTION:Campus closed in observance of Presidents Day. No classes scheduled.
+CATEGORIES:HOLIDAY
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:haas-spring2026-spring-break-start@oskihub
+DTSTART;VALUE=DATE:20260323
+DTEND;VALUE=DATE:20260328
+SUMMARY:Spring Break
+DESCRIPTION:Spring Break - No classes. Enjoy your break!
+CATEGORIES:BREAK
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:haas-spring2026-last-day@oskihub
+DTSTART;VALUE=DATE:20260306
+DTEND;VALUE=DATE:20260307
+SUMMARY:Last Day of Classes
+DESCRIPTION:Final day of regular instruction for Spring 2026 semester.
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:haas-spring2026-finals-week@oskihub
+DTSTART;VALUE=DATE:20260309
+DTEND;VALUE=DATE:20260313
+SUMMARY:Finals Week
+DESCRIPTION:Final examinations period for Spring 2026 semester. Check your course schedules for specific exam dates and times.
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:haas-spring2026-commencement@oskihub
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+SUMMARY:Haas Commencement
+DESCRIPTION:Haas School of Business Commencement Ceremony. Congratulations, graduates!
+CATEGORIES:ACADEMIC,CEREMONY
+STATUS:CONFIRMED
+END:VEVENT
+
+END:VCALENDAR
