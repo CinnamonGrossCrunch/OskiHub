@@ -273,6 +273,14 @@ if (event.source.includes('202_accounting')) {
 | 212 Entrepreneurship | Fuchsia | `bg-fuchsia-800/50 border-fuchsia-700/50` |
 | Teams@Haas | Violet | `bg-violet-800/40 border-violet-900/40` |
 
+**For new courses not listed above:**
+- Choose a distinct color not already used
+- Use format: `bg-[color]-[700-900]/[35-60] border-[color]-[600-800]/[40-50]`
+- Available unused colors: lime, cyan, yellow, pink, stone, zinc, neutral, gray, warmGray
+- Maintain consistent opacity (35-60 for background, 40-50 for border)
+- Add to MonthGrid.tsx getCourseColor() function
+- Update this table with the new color assignment
+
 #### Step 4: Commit & Deploy
 ```bash
 git add public/[filename].ics lib/icsUtils.ts app/components/MonthGrid.tsx
