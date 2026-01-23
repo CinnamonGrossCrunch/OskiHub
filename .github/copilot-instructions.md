@@ -255,11 +255,23 @@ if (event.source.includes('202_accounting')) {
 // Add new course with unique color
 ```
 
-**Available Colors:**
-- Micro: `bg-green-800/35 border-green-700/40`
-- Macro: `bg-blue-900/60 border-blue-700/50`
-- Accounting: `bg-teal-700/50 border-teal-600/50`
-- Data & Decisions: `bg-sky-700/50 border-sky-600/50`
+**Course Color Palette:**
+| Course | Color | Tailwind Classes |
+|--------|-------|------------------|
+| 201A Microeconomics | Forest Green | `bg-green-800/35 border-green-700/40` |
+| 201B Macroeconomics | Navy Blue | `bg-blue-900/60 border-blue-700/50` |
+| 202 Financial Accounting | Teal | `bg-teal-700/50 border-teal-600/50` |
+| 203 Financial Management | Amber | `bg-amber-700/50 border-amber-600/50` |
+| 204 Operations & Analytics | Slate | `bg-slate-700/50 border-slate-600/50` |
+| 205 Leading People | Crimson | `bg-red-800/35 border-red-700/40` |
+| 206 Data & Decisions | Sky Blue | `bg-sky-700/50 border-sky-600/50` |
+| 207 Corporate Finance | Indigo | `bg-indigo-800/50 border-indigo-700/50` |
+| 208 Marketing | Orange | `bg-orange-600/50 border-orange-500/50` |
+| 209 Strategic Management | Purple | `bg-purple-800/50 border-purple-700/50` |
+| 210 Ethics | Rose | `bg-rose-700/50 border-rose-600/50` |
+| 211 Negotiations | Emerald | `bg-emerald-700/50 border-emerald-600/50` |
+| 212 Entrepreneurship | Fuchsia | `bg-fuchsia-800/50 border-fuchsia-700/50` |
+| Teams@Haas | Violet | `bg-violet-800/40 border-violet-900/40` |
 
 #### Step 4: Commit & Deploy
 ```bash

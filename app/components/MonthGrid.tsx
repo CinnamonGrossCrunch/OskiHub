@@ -266,34 +266,69 @@ export default function MonthGrid({
 
           // Check the source filename to determine course type
           if (event.source) {
-            // EWMBA 201A (Microeconomics) - Dark Green
+            // EWMBA 201A (Microeconomics) - Forest Green
             if (event.source.includes('201a_micro')) {
               return `${glassBase} bg-green-800/35 border-green-700/40 text-white ${hoverGold}`;
             }
 
-            // EWMBA 201B (Macroeconomics) - Dark Blue (distinct from Micro)
+            // EWMBA 201B (Macroeconomics) - Navy Blue
             if (event.source.includes('201b_macro')) {
               return `${glassBase} bg-blue-900/60 border-blue-700/50 text-white ${hoverGold}`;
             }
 
-            // EWMBA 202 (Financial Accounting) - Teal/Cyan
+            // EWMBA 202 (Financial Accounting) - Teal
             if (event.source.includes('202_accounting') || event.source.includes('ewmba202_accounting')) {
               return `${glassBase} bg-teal-700/50 border-teal-600/50 text-white ${hoverGold}`;
             }
 
-            // EWMBA 206 (Data & Decisions) - Dark Blue
-            if (event.source.includes('DataDecisions')) {
-              return `${glassBase} bg-blue-800/35 border-blue-700/40 text-white ${hoverGold}`;
+            // EWMBA 203 (Financial Management) - Amber
+            if (event.source.includes('203_') || event.source.includes('financial_management')) {
+              return `${glassBase} bg-amber-700/50 border-amber-600/50 text-white ${hoverGold}`;
             }
 
-            // EWMBA 205 (Leading People) - Dark Red
+            // EWMBA 204 (Operations & Data Analytics) - Slate
+            if (event.source.includes('204_') || event.source.includes('operations')) {
+              return `${glassBase} bg-slate-700/50 border-slate-600/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 205 (Leading People) - Crimson
             if (event.source.includes('205_') || event.source.includes('leadingpeople')) {
               return `${glassBase} bg-red-800/35 border-red-700/40 text-white ${hoverGold}`;
             }
 
-            // EWMBA 208 (Marketing) - Pastel Orange
-            if (event.source.includes('Marketing')) {
-              return `${glassBase} bg-orange-500/60 border-orange-300/50 text-white ${hoverGold}`;
+            // EWMBA 206 (Data & Decisions) - Sky Blue
+            if (event.source.includes('206_') || event.source.includes('DataDecisions')) {
+              return `${glassBase} bg-sky-700/50 border-sky-600/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 207 (Corporate Finance) - Indigo
+            if (event.source.includes('207_') || event.source.includes('corporate_finance')) {
+              return `${glassBase} bg-indigo-800/50 border-indigo-700/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 208 (Marketing) - Orange
+            if (event.source.includes('208_') || event.source.includes('Marketing')) {
+              return `${glassBase} bg-orange-600/50 border-orange-500/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 209 (Strategic Management) - Purple
+            if (event.source.includes('209_') || event.source.includes('strategic')) {
+              return `${glassBase} bg-purple-800/50 border-purple-700/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 210 (Ethics) - Rose
+            if (event.source.includes('210_') || event.source.includes('ethics')) {
+              return `${glassBase} bg-rose-700/50 border-rose-600/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 211 (Negotiations) - Emerald
+            if (event.source.includes('211_') || event.source.includes('negotiations')) {
+              return `${glassBase} bg-emerald-700/50 border-emerald-600/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 212 (Entrepreneurship) - Fuchsia
+            if (event.source.includes('212_') || event.source.includes('entrepreneurship')) {
+              return `${glassBase} bg-fuchsia-800/50 border-fuchsia-700/50 text-white ${hoverGold}`;
             }
           }
           
