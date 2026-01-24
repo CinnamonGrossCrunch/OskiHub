@@ -230,7 +230,6 @@ export default function AnimatedLogo({
           autoPlay
           muted
           playsInline
-          // @ts-expect-error - webkit-playsinline is needed for older iOS
           webkit-playsinline=""
           loop={loop}
           preload={isiOSDevice ? "metadata" : "auto"}
