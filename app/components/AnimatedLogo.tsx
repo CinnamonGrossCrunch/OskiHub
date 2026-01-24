@@ -56,19 +56,61 @@ export default function AnimatedLogo({
     const video = videoRef.current;
     if (!video || hasPlayed) return;
 
+    let hasStartedPlaying = false;
+
+    // Attempt to play the video
+    const attemptPlay = () => {
+      if (hasStartedPlaying) return;
+      
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            hasStartedPlaying = true;
+            setIsVideoReady(true);
+            console.log('Video started playing successfully');
+          })
+          .catch((error) => {
+            console.log('Autoplay prevented:', error);
+            // On iOS, if autoplay fails, show the static image
+            if (isiOSDevice) {
+              setShowVideo(false);
+              setStaticOpacity(1);
+            }
+          });
+      }
+    };
+
     // Wait for video to be ready before playing
     const handleCanPlay = () => {
       setIsVideoReady(true);
-      video.play().catch((error) => {
-        console.log('Autoplay prevented:', error);
-        setShowVideo(false);
-        // iOS fallback: show static image if autoplay fails
-        setStaticOpacity(1);
-      });
+      attemptPlay();
+    };
+
+    // Also try on loadeddata (fires earlier than canplay on some browsers)
+    const handleLoadedData = () => {
+      if (isiOSDevice) {
+        // iOS: try to play as soon as we have data
+        attemptPlay();
+      }
+    };
+
+    // iOS: Also try on loadedmetadata
+    const handleLoadedMetadata = () => {
+      if (isiOSDevice && video.readyState >= 1) {
+        // Give iOS a moment then try to play
+        setTimeout(attemptPlay, 100);
+      }
     };
 
     // Start fading out 0.3s before video ends
     const handleTimeUpdate = () => {
+      // Mark as playing once we get timeupdate events
+      if (video.currentTime > 0 && !hasStartedPlaying) {
+        hasStartedPlaying = true;
+        setIsVideoReady(true);
+      }
+      
       if (video.duration && video.currentTime >= video.duration - 0.3) {
         const remainingTime = video.duration - video.currentTime;
         const opacity = remainingTime / 0.3; // Fade from 1 to 0 over 0.3s
@@ -80,26 +122,33 @@ export default function AnimatedLogo({
     // If video is already loaded, play immediately
     if (video.readyState >= 3) {
       handleCanPlay();
-    } else {
-      video.addEventListener('canplay', handleCanPlay);
+    } else if (video.readyState >= 1) {
+      // Has metadata, try to play
+      attemptPlay();
     }
-
+    
+    video.addEventListener('canplay', handleCanPlay);
+    video.addEventListener('loadeddata', handleLoadedData);
+    video.addEventListener('loadedmetadata', handleLoadedMetadata);
     video.addEventListener('timeupdate', handleTimeUpdate);
 
-    // iOS-specific: Fallback timeout - if video doesn't become ready in 2s, show static image
+    // iOS-specific: Fallback timeout - if video doesn't start playing in 3s, show static image
+    // Increased from 2s to give more time for video to load on mobile networks
     let iosTimeout: NodeJS.Timeout | null = null;
     if (isiOSDevice) {
       iosTimeout = setTimeout(() => {
-        if (!isVideoReady) {
-          console.log('iOS fallback: Video not ready after 2s, showing static image');
+        if (!hasStartedPlaying && !isVideoReady) {
+          console.log('iOS fallback: Video not playing after 3s, showing static image');
           setStaticOpacity(1);
           setVideoOpacity(0);
         }
-      }, 2000);
+      }, 3000);
     }
 
     return () => {
       video.removeEventListener('canplay', handleCanPlay);
+      video.removeEventListener('loadeddata', handleLoadedData);
+      video.removeEventListener('loadedmetadata', handleLoadedMetadata);
       video.removeEventListener('timeupdate', handleTimeUpdate);
       if (iosTimeout) clearTimeout(iosTimeout);
     };
@@ -181,10 +230,13 @@ export default function AnimatedLogo({
           autoPlay
           muted
           playsInline
+          // @ts-expect-error - webkit-playsinline is needed for older iOS
+          webkit-playsinline=""
           loop={loop}
-          preload="auto"
+          preload={isiOSDevice ? "metadata" : "auto"}
           onEnded={handleVideoEnd}
           onError={handleVideoError}
+          onPlaying={() => setIsVideoReady(true)}
           aria-label={alt}
         />
       )}
