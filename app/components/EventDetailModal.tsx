@@ -258,6 +258,16 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
     };
   }, [event, onClose, hasNext, hasPrevious, onNext, onPrevious]);
 
+  // Auto-focus and scroll modal into view when opened
+  useEffect(() => {
+    if (event && modalRef.current) {
+      // Scroll modal into view (centered) with smooth animation
+      modalRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Focus the modal for accessibility
+      modalRef.current.focus();
+    }
+  }, [event]);
+
   // Close modal when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -406,42 +416,24 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
     );
   };
 
+  // Unified modal height for all event types
+  const eventModalHeight = 'max-h-[70vh] md:max-h-[80vh]';
+
   return (
     <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 [&>div]:relative [&>div]:shadow-[0_0_0_1px_rgba(139,92,246,0.3),0_0_18px_4px_rgba(139,92,246,0.25)] [&>div]:transition-shadow ${
       isGmailNewsletter ? 'p-4 py-20' : 'p-4'
     }`}>
       <div
         ref={modalRef}
-        className={`backdrop-blur-3xl rounded-2xl shadow-2xl max-w-3xl md:max-w-xl w-200 overflow-hidden flex flex-col ${
+        tabIndex={-1}
+        className={`backdrop-blur-3xl rounded-2xl shadow-2xl max-w-3xl md:max-w-xl w-200 overflow-hidden flex flex-col outline-none ${eventModalHeight} ${
           isGmailNewsletter 
-            ? 'bg-gradient-to-br from-violet-950/20 to-slate-950/20 max-h-[80vh]' 
-            : 'bg-slate-900/60 max-h-220'
+            ? 'bg-gradient-to-br from-violet-950/20 to-slate-950/20' 
+            : 'bg-slate-900/60'
         }`}
       >
-        {/* Header */}
-        <div className="flex items-start justify-between px-6 py-4 flex-shrink-0">
-          {/* Hide title and date entirely for Gmail newsletters */}
-          {!isGmailNewsletter && (
-            <div className="flex-1 pr-4">
-              <h2 className={`text-xl font-semibold leading-tight ${
-                isGmailNewsletter ? 'text-slate-900' : 'text-white'
-              }`}>
-                {getCleanTitle()}
-              </h2>
-              {/* Hide date for Gmail newsletters since it's redundant (newsletter has date inside) */}
-              {!isGmailNewsletter && (
-                <p className={`text-sm mt-1 ${
-                  isGmailNewsletter ? 'text-slate-700' : 'text-slate-200'
-                }`}>
-                  {formatDateTime()}
-                </p>
-              )}
-              {/* Show indicator when displaying rich content from original calendar */}
-             
-            </div>
-          )}
-          
-          {/* Navigation Buttons */}
+        {/* Navigation and Close Buttons - Top Row */}
+        <div className="flex items-center justify-end px-6 pt-4 pb-2 flex-shrink-0">
           <div className="flex items-center gap-2">
             {/* Previous Button */}
             <button
@@ -504,6 +496,18 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
             </button>
           </div>
         </div>
+
+        {/* Header - Title and Date */}
+        {!isGmailNewsletter && (
+          <div className="px-6 pb-4 flex-shrink-0">
+            <h2 className="text-xl font-semibold leading-tight text-white">
+              {getCleanTitle()}
+            </h2>
+            <p className="text-sm mt-1 text-slate-200">
+              {formatDateTime()}
+            </p>
+          </div>
+        )}
 
         {/* Content */}
         <div className="px-6 overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-slate-600 scrollbar-track-transparent hover:scrollbar-thumb-slate-500"
