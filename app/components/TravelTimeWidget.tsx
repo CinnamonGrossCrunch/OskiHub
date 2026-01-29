@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 
 interface TravelTimeData {
   driving: {
@@ -21,30 +21,49 @@ export default function TravelTimeWidget() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [locationDenied, setLocationDenied] = useState(false);
-  const [debugInfo, setDebugInfo] = useState<string>('init');
+  const [debugInfo, setDebugInfo] = useState<string>(''); // For iOS debugging without Mac
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const fetchTravelTime = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
       setLocationDenied(false);
-      setDebugInfo('getting location...');
+      setDebugInfo('Starting geolocation request...');
       
       // Get user's current location
       if (!navigator.geolocation) {
-        setDebugInfo('no geolocation API');
+        setDebugInfo('Geolocation not supported');
         throw new Error('Geolocation not supported');
       }
 
+      // Clear any existing timeout
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+
+      // iOS WebKit bug: sometimes neither callback fires
+      // Set a manual fallback timeout longer than the geolocation timeout
+      timeoutRef.current = setTimeout(() => {
+        console.warn('⏰ TravelTime: Fallback timeout triggered - no response from geolocation API');
+        setDebugInfo('Timeout: Browser never responded');
+        setError('Location request timed out');
+        setLoading(false);
+      }, 15000); // 15 second fallback
+
+      setDebugInfo('Calling getCurrentPosition...');
+
       navigator.geolocation.getCurrentPosition(
         async (position) => {
-          const { latitude, longitude } = position.coords;
-          console.log('📍 Got location:', { latitude, longitude });
-          setDebugInfo(`loc: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`);
+          // Clear the fallback timeout - we got a response
+          if (timeoutRef.current) clearTimeout(timeoutRef.current);
           
-          // Call our API route with user's location
+          const { latitude, longitude } = position.coords;
+          console.log('📍 TravelTime: Got location:', latitude, longitude);
+          setDebugInfo(`Got location: ${latitude.toFixed(4)}, ${longitude.toFixed(4)}`);
+          
           try {
-            setDebugInfo('fetching API...');
+            // Call our API route with user's location
             const response = await fetch('/api/travel-time', {
               method: 'POST',
               headers: {
@@ -55,57 +74,84 @@ export default function TravelTimeWidget() {
               })
             });
             
-            console.log('🚗 Travel time API status:', response.status);
-            setDebugInfo(`API status: ${response.status}`);
-            
             if (!response.ok) {
-              const errorText = await response.text();
-              console.error('🚗 Travel time API failed:', errorText);
+              setDebugInfo(`API error: ${response.status}`);
               throw new Error('Failed to fetch travel time');
             }
-          
+            
             const data = await response.json();
             
-            console.log('🚗 Travel time API response:', JSON.stringify(data, null, 2));
-            
             if (data.error) {
-              console.error('🚗 Travel time API error:', data.error);
+              setDebugInfo(`API returned error: ${data.error}`);
               throw new Error(data.error);
             }
             
+            console.log('✅ TravelTime: API success');
+            setDebugInfo('Success!');
             setTravelTime(data);
-            setDebugInfo(`done: d=${data.driving?.duration || 'null'}, t=${data.transit?.duration || 'null'}`);
-            setLoading(false);
           } catch (fetchErr) {
-            console.error('🚗 Fetch error in callback:', fetchErr);
-            setDebugInfo(`fetch err: ${fetchErr}`);
-            setError('Failed to get travel time');
-            setLoading(false);
+            console.error('❌ TravelTime API error:', fetchErr);
+            setDebugInfo(`Fetch error: ${fetchErr}`);
+            setError('Unable to load travel time');
           }
+          
+          setLoading(false);
         },
-        (error) => {
-          console.error('📍 Geolocation error:', error.code, error.message);
-          setDebugInfo(`geo err: ${error.code} ${error.message}`);
-          setLocationDenied(true);
-          setError('Location access denied');
+        (geoError) => {
+          // Clear the fallback timeout - we got a response (even if error)
+          if (timeoutRef.current) clearTimeout(timeoutRef.current);
+          
+          console.error('❌ TravelTime geolocation error:', geoError.code, geoError.message);
+          setDebugInfo(`Geo error ${geoError.code}: ${geoError.message}`);
+          
+          // Handle specific error codes
+          switch (geoError.code) {
+            case 1: // PERMISSION_DENIED
+              setLocationDenied(true);
+              setError('Location access denied');
+              break;
+            case 2: // POSITION_UNAVAILABLE
+              setError('Location unavailable');
+              break;
+            case 3: // TIMEOUT
+              setError('Location request timed out');
+              break;
+            default:
+              setError('Unable to get location');
+          }
+          
           setLoading(false);
         },
         {
           enableHighAccuracy: false,
-          timeout: 15000,  // Increased timeout for iOS
+          timeout: 12000, // Increased for iOS (was 10000)
           maximumAge: 300000 // Cache location for 5 minutes
         }
       );
     } catch (err) {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
       setError('Unable to load travel time');
-      console.error('Travel time fetch error:', err);
+      setDebugInfo(`Catch error: ${err}`);
+      console.error('❌ TravelTime fetch error:', err);
       setLoading(false);
     }
   }, []);
 
   useEffect(() => {
     fetchTravelTime();
+    
+    // Cleanup timeout on unmount
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, [fetchTravelTime]);
+  
+  // Debug: Log state changes (visible in remote debugging or Eruda)
+  useEffect(() => {
+    console.log('🔄 TravelTime state:', { loading, error, locationDenied, debugInfo, hasTravelTime: !!travelTime });
+  }, [loading, error, locationDenied, debugInfo, travelTime]);
 
   if (loading) {
     return (
@@ -119,8 +165,12 @@ export default function TravelTimeWidget() {
         <div className="flex flex-col gap-1 items-end">
           <div className="h-4 bg-gray-700/30 rounded animate-pulse w-24" />
           <div className="h-4 bg-gray-700/30 rounded animate-pulse w-24" />
-          {/* Debug info - remove after testing */}
-          <span className="text-[10px] text-yellow-500">{debugInfo}</span>
+          {/* Debug info visible on screen for iOS testing */}
+          {debugInfo && (
+            <div className="text-[10px] text-gray-500 mt-1 max-w-[150px] text-right truncate">
+              {debugInfo}
+            </div>
+          )}
         </div>
       </div>
     );
@@ -139,27 +189,20 @@ export default function TravelTimeWidget() {
           onClick={fetchTravelTime}
           className="text-xs text-gray-400 hover:text-gray-300 transition-colors"
         >
-          📍 Enable Location to get travel times
+          📍 Enable Location
         </button>
+        {/* Debug info for troubleshooting iOS */}
+        {debugInfo && (
+          <div className="text-[10px] text-red-400/60 mt-1 max-w-[150px] text-right">
+            {debugInfo}
+          </div>
+        )}
       </div>
     );
   }
 
   if (!travelTime || (!travelTime.driving && !travelTime.transit)) {
-    // Show a minimal indicator instead of hiding completely
-    return (
-      <div className="lg:border-t-3 border-dotted flex flex-col justify-center backdrop-blur-sm w-1/2 lg:w-auto lg:ml-auto px-2 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] lg:pt-1 -mt-2 lg:-mt-2" style={{ borderTopColor: '#9ca3af31' }}>
-        <div className="flex justify-end mb-0">
-          <span className="text-sm font-medium">
-            <span className="text-gray-200">Time</span>{' '}
-            <span className="text-gray-400">To Haas</span>
-          </span>
-        </div>
-        <div className="flex justify-end">
-          <span className="text-xs text-gray-500">No route data</span>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (
