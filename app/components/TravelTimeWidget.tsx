@@ -64,6 +64,7 @@ export default function TravelTimeWidget() {
           
           try {
             // Call our API route with user's location
+            setDebugInfo(`Calling API...`);
             const response = await fetch('/api/travel-time', {
               method: 'POST',
               headers: {
@@ -74,15 +75,17 @@ export default function TravelTimeWidget() {
               })
             });
             
-            if (!response.ok) {
-              setDebugInfo(`API error: ${response.status}`);
-              throw new Error('Failed to fetch travel time');
-            }
-            
+            // Try to get response body for better error info
             const data = await response.json();
             
+            if (!response.ok) {
+              const errorMsg = data?.error || data?.details || `HTTP ${response.status}`;
+              setDebugInfo(`API ${response.status}: ${errorMsg}`);
+              throw new Error(errorMsg);
+            }
+            
             if (data.error) {
-              setDebugInfo(`API returned error: ${data.error}`);
+              setDebugInfo(`API error: ${data.error}`);
               throw new Error(data.error);
             }
             
@@ -91,7 +94,8 @@ export default function TravelTimeWidget() {
             setTravelTime(data);
           } catch (fetchErr) {
             console.error('❌ TravelTime API error:', fetchErr);
-            setDebugInfo(`Fetch error: ${fetchErr}`);
+            const errMsg = fetchErr instanceof Error ? fetchErr.message : String(fetchErr);
+            setDebugInfo(`API: ${errMsg.slice(0, 50)}`);
             setError('Unable to load travel time');
           }
           
