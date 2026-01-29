@@ -258,13 +258,14 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
     };
   }, [event, onClose, hasNext, hasPrevious, onNext, onPrevious]);
 
-  // Auto-focus and scroll modal into view when opened
+  // Auto-focus modal when opened (no scrollIntoView needed - modal is fixed position and centered via flexbox)
   useEffect(() => {
     if (event && modalRef.current) {
-      // Scroll modal into view (centered) with smooth animation
-      modalRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Focus the modal for accessibility
+      // Focus the modal for accessibility and keyboard navigation
       modalRef.current.focus();
+      
+      // Scroll page to top to ensure modal appears centered (optional, remove if not desired)
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [event]);
 
@@ -420,26 +421,24 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
   const eventModalHeight = 'max-h-[70vh] md:max-h-[80vh]';
 
   return (
-    <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 [&>div]:relative [&>div]:shadow-[0_0_0_1px_rgba(139,92,246,0.3),0_0_18px_4px_rgba(139,92,246,0.25)] [&>div]:transition-shadow ${
-      isGmailNewsletter ? 'p-4 py-20' : 'p-4'
-    }`}>
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 p-4">
       <div
         ref={modalRef}
         tabIndex={-1}
-        className={`backdrop-blur-3xl rounded-2xl shadow-2xl max-w-3xl md:max-w-xl w-200 overflow-hidden flex flex-col outline-none ${eventModalHeight} ${
+        className={`backdrop-blur-3xl rounded-2xl shadow-2xl max-w-3xl md:max-w-xl w-full overflow-hidden flex flex-col outline-none ${eventModalHeight} [&]:relative [&]:shadow-[0_0_0_1px_rgba(139,92,246,0.3),0_0_18px_4px_rgba(139,92,246,0.25)] [&]:transition-shadow ${
           isGmailNewsletter 
             ? 'bg-gradient-to-br from-violet-950/20 to-slate-950/20' 
             : 'bg-slate-900/60'
         }`}
       >
         {/* Navigation and Close Buttons - Top Row */}
-        <div className="flex items-center justify-end px-6 pt-4 pb-2 flex-shrink-0">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-end px-4 pt-2 pb-1 flex-shrink-0">
+          <div className="flex items-center gap-1">
             {/* Previous Button */}
             <button
               onClick={onPrevious}
               disabled={!hasPrevious}
-              className={`p-2 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-lg transition-colors ${
                 hasPrevious 
                   ? isGmailNewsletter 
                     ? 'hover:bg-violet-700/30 text-slate-200' 
@@ -460,7 +459,7 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
             <button
               onClick={onNext}
               disabled={!hasNext}
-              className={`p-2 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-lg transition-colors ${
                 hasNext 
                   ? isGmailNewsletter 
                     ? 'hover:bg-violet-700/30 text-slate-200' 
@@ -480,7 +479,7 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
             {/* Close Button */}
             <button
               onClick={onClose}
-              className={`p-2 rounded-lg transition-colors ml-2 ${
+              className={`p-1.5 rounded-lg transition-colors ml-1 ${
                 isGmailNewsletter 
                   ? 'hover:bg-violet-700/30' 
                   : 'hover:bg-slate-700'
