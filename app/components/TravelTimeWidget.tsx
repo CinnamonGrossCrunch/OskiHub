@@ -21,51 +21,78 @@ export default function TravelTimeWidget() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [locationDenied, setLocationDenied] = useState(false);
+  const [debugInfo, setDebugInfo] = useState<string>('init');
 
   const fetchTravelTime = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
       setLocationDenied(false);
+      setDebugInfo('getting location...');
       
       // Get user's current location
       if (!navigator.geolocation) {
+        setDebugInfo('no geolocation API');
         throw new Error('Geolocation not supported');
       }
 
       navigator.geolocation.getCurrentPosition(
         async (position) => {
           const { latitude, longitude } = position.coords;
+          console.log('📍 Got location:', { latitude, longitude });
+          setDebugInfo(`loc: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`);
           
           // Call our API route with user's location
-          const response = await fetch('/api/travel-time', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              origin: { latitude, longitude }
-            })
-          });
+          try {
+            setDebugInfo('fetching API...');
+            const response = await fetch('/api/travel-time', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                origin: { latitude, longitude }
+              })
+            });
+            
+            console.log('🚗 Travel time API status:', response.status);
+            setDebugInfo(`API status: ${response.status}`);
+            
+            if (!response.ok) {
+              const errorText = await response.text();
+              console.error('🚗 Travel time API failed:', errorText);
+              throw new Error('Failed to fetch travel time');
+            }
           
-          if (!response.ok) throw new Error('Failed to fetch travel time');
-          
-          const data = await response.json();
-          
-          if (data.error) throw new Error(data.error);
-          
-          setTravelTime(data);
-          setLoading(false);
+            const data = await response.json();
+            
+            console.log('🚗 Travel time API response:', JSON.stringify(data, null, 2));
+            
+            if (data.error) {
+              console.error('🚗 Travel time API error:', data.error);
+              throw new Error(data.error);
+            }
+            
+            setTravelTime(data);
+            setDebugInfo(`done: d=${data.driving?.duration || 'null'}, t=${data.transit?.duration || 'null'}`);
+            setLoading(false);
+          } catch (fetchErr) {
+            console.error('🚗 Fetch error in callback:', fetchErr);
+            setDebugInfo(`fetch err: ${fetchErr}`);
+            setError('Failed to get travel time');
+            setLoading(false);
+          }
         },
         (error) => {
-          console.error('Geolocation error:', error);
+          console.error('📍 Geolocation error:', error.code, error.message);
+          setDebugInfo(`geo err: ${error.code} ${error.message}`);
           setLocationDenied(true);
           setError('Location access denied');
           setLoading(false);
         },
         {
           enableHighAccuracy: false,
-          timeout: 10000,
+          timeout: 15000,  // Increased timeout for iOS
           maximumAge: 300000 // Cache location for 5 minutes
         }
       );
@@ -92,6 +119,8 @@ export default function TravelTimeWidget() {
         <div className="flex flex-col gap-1 items-end">
           <div className="h-4 bg-gray-700/30 rounded animate-pulse w-24" />
           <div className="h-4 bg-gray-700/30 rounded animate-pulse w-24" />
+          {/* Debug info - remove after testing */}
+          <span className="text-[10px] text-yellow-500">{debugInfo}</span>
         </div>
       </div>
     );
@@ -117,7 +146,20 @@ export default function TravelTimeWidget() {
   }
 
   if (!travelTime || (!travelTime.driving && !travelTime.transit)) {
-    return null;
+    // Show a minimal indicator instead of hiding completely
+    return (
+      <div className="lg:border-t-3 border-dotted flex flex-col justify-center backdrop-blur-sm w-1/2 lg:w-auto lg:ml-auto px-2 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] lg:pt-1 -mt-2 lg:-mt-2" style={{ borderTopColor: '#9ca3af31' }}>
+        <div className="flex justify-end mb-0">
+          <span className="text-sm font-medium">
+            <span className="text-gray-200">Time</span>{' '}
+            <span className="text-gray-400">To Haas</span>
+          </span>
+        </div>
+        <div className="flex justify-end">
+          <span className="text-xs text-gray-500">No route data</span>
+        </div>
+      </div>
+    );
   }
 
   return (
