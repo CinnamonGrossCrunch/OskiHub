@@ -363,75 +363,94 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     if (!cohortEvent.source) return null;
 
     const eventDate = new Date(cohortEvent.start);
-    const isCourse201 = cohortEvent.source.includes('201') || cohortEvent.source.includes('micro');
-    const isLeadingPeople = cohortEvent.source.includes('205') || cohortEvent.source.includes('leadingpeople');
-    const isDataDecisions = cohortEvent.source.includes('DataDecisions') || cohortEvent.source.includes('202');
-    const isMarketing = cohortEvent.source.includes('Marketing') || cohortEvent.source.includes('208');
+    const sourceLower = cohortEvent.source.toLowerCase();
     
-    if (!isCourse201 && !isLeadingPeople && !isDataDecisions && !isMarketing) return null;
+    // Detect Spring 2026 courses by filename patterns
+    const isSpring2026 = sourceLower.includes('spring2026');
+    const isMacro = sourceLower.includes('201b') || sourceLower.includes('macro');
+    const isAccounting = sourceLower.includes('accounting') || (sourceLower.includes('202') && isSpring2026);
+    
+    // Fall 2025 courses
+    const isCourse201A = (sourceLower.includes('201a') || sourceLower.includes('201') || sourceLower.includes('micro')) && !isMacro;
+    const isLeadingPeople = sourceLower.includes('205') || sourceLower.includes('leadingpeople');
+    const isDataDecisions = sourceLower.includes('datadecisions') || (sourceLower.includes('202') && !isSpring2026 && !isAccounting);
+    const isMarketing = sourceLower.includes('marketing') || sourceLower.includes('208');
+    
+    // Check if this matches any known course
+    const isFall2025Course = isCourse201A || isLeadingPeople || isDataDecisions || isMarketing;
+    const isSpring2026Course = isMacro || isAccounting;
+    
+    if (!isFall2025Course && !isSpring2026Course) return null;
 
-    // Course start dates
-    const courseStartDates = {
-      // MicroEconomics (201) start dates
-      micro_blue: new Date(2025, 6, 28), // July 28, 2025 (Monday)
-      micro_gold: new Date(2025, 6, 29), // July 29, 2025 (Tuesday)
-      // Leading People start dates  
-      leading_blue: new Date(2025, 7, 6), // August 6, 2025
-      leading_gold: new Date(2025, 7, 7), // August 7, 2025
-      // Data & Decisions (202) start dates
-      data_blue: new Date(2025, 9, 14), // October 14, 2025 (Monday)
-      data_gold: new Date(2025, 9, 15), // October 15, 2025 (Tuesday)
-      // Marketing (208) start dates
-      marketing_blue: new Date(2025, 9, 14), // October 14, 2025 (Monday)
-      marketing_gold: new Date(2025, 9, 15), // October 15, 2025 (Tuesday)
+    // Course start dates and bCourses IDs
+    const courseConfig = {
+      // Fall 2025 Courses
+      micro_blue: { start: new Date(2025, 6, 28), courseId: '1544880', urlPattern: 'pages/week-' }, // July 28, 2025
+      micro_gold: { start: new Date(2025, 6, 29), courseId: '1544880', urlPattern: 'pages/week-' }, // July 29, 2025
+      leading_blue: { start: new Date(2025, 7, 6), courseId: '1545386', urlPattern: 'pages/' }, // August 6, 2025
+      leading_gold: { start: new Date(2025, 7, 7), courseId: '1545386', urlPattern: 'pages/' }, // August 7, 2025
+      data_blue: { start: new Date(2025, 9, 14), courseId: '1545042', urlPattern: 'pages/week-' }, // October 14, 2025
+      data_gold: { start: new Date(2025, 9, 15), courseId: '1545042', urlPattern: 'pages/week-' }, // October 15, 2025
+      marketing_blue: { start: new Date(2025, 9, 14), courseId: '1545360', urlPattern: 'pages/session-' }, // October 14, 2025
+      marketing_gold: { start: new Date(2025, 9, 15), courseId: '1545360', urlPattern: 'pages/session-' }, // October 15, 2025
+      
+      // Spring 2026 Courses
+      macro_blue: { start: new Date(2026, 0, 7), courseId: '1549648', urlPattern: 'pages/week-' }, // January 7, 2026
+      macro_gold: { start: new Date(2026, 0, 8), courseId: '1549648', urlPattern: 'pages/week-' }, // January 8, 2026
+      accounting_blue: { start: new Date(2026, 0, 5), courseId: '1549713', urlPattern: 'pages/week-' }, // January 5, 2026
+      accounting_gold: { start: new Date(2026, 0, 6), courseId: '1549713', urlPattern: 'pages/week-' }, // January 6, 2026
     };
 
-    let startDate: Date;
+    let config: { start: Date; courseId: string; urlPattern: string };
     let courseTitle: string;
-    let baseUrl: string;
     
-    if (isCourse201) {
-      startDate = selectedCohort === 'blue' ? courseStartDates.micro_blue : courseStartDates.micro_gold;
+    if (isMacro) {
+      config = selectedCohort === 'blue' ? courseConfig.macro_blue : courseConfig.macro_gold;
+      courseTitle = 'MacroEconomics';
+    } else if (isAccounting) {
+      config = selectedCohort === 'blue' ? courseConfig.accounting_blue : courseConfig.accounting_gold;
+      courseTitle = 'Financial Accounting';
+    } else if (isCourse201A) {
+      config = selectedCohort === 'blue' ? courseConfig.micro_blue : courseConfig.micro_gold;
       courseTitle = 'MicroEconomics';
-      baseUrl = 'https://bcourses.berkeley.edu/courses/1544880/pages/week-';
     } else if (isDataDecisions) {
-      startDate = selectedCohort === 'blue' ? courseStartDates.data_blue : courseStartDates.data_gold;
+      config = selectedCohort === 'blue' ? courseConfig.data_blue : courseConfig.data_gold;
       courseTitle = 'Data & Decisions';
-      baseUrl = 'https://bcourses.berkeley.edu/courses/1545042/pages/week-';
     } else if (isMarketing) {
-      startDate = selectedCohort === 'blue' ? courseStartDates.marketing_blue : courseStartDates.marketing_gold;
+      config = selectedCohort === 'blue' ? courseConfig.marketing_blue : courseConfig.marketing_gold;
       courseTitle = 'Marketing';
-      baseUrl = 'https://bcourses.berkeley.edu/courses/1545360/pages/session-';
     } else {
-      startDate = selectedCohort === 'blue' ? courseStartDates.leading_blue : courseStartDates.leading_gold;
+      config = selectedCohort === 'blue' ? courseConfig.leading_blue : courseConfig.leading_gold;
       courseTitle = 'Leading People';
-      baseUrl = 'https://bcourses.berkeley.edu/courses/1545386/pages/';
     }
 
+    const baseUrl = `https://bcourses.berkeley.edu/courses/${config.courseId}/${config.urlPattern}`;
+
     // Calculate week number
-    const weeksDiff = Math.floor((eventDate.getTime() - startDate.getTime()) / (7 * 24 * 60 * 60 * 1000));
+    const weeksDiff = Math.floor((eventDate.getTime() - config.start.getTime()) / (7 * 24 * 60 * 60 * 1000));
     const weekNumber = Math.max(1, weeksDiff + 1); // Start from week 1
 
     // Generate enhanced content
-    const enhancedTitle = isCourse201 
-      ? `MicroEconomics Week ${weekNumber}`
-      : isDataDecisions
-        ? `Data & Decisions Week ${weekNumber}`
-        : isMarketing
-          ? `Marketing Session ${weekNumber}`
-          : `Leading People Week ${weekNumber}`;
+    const enhancedTitle = isMacro 
+      ? `MacroEconomics Week ${weekNumber}`
+      : isAccounting
+        ? `Financial Accounting Week ${weekNumber}`
+        : isCourse201A 
+          ? `MicroEconomics Week ${weekNumber}`
+          : isDataDecisions
+            ? `Data & Decisions Week ${weekNumber}`
+            : isMarketing
+              ? `Marketing Session ${weekNumber}`
+              : `Leading People Week ${weekNumber}`;
     
-    const courseUrl = isCourse201 
-      ? `${baseUrl}${weekNumber}`
-      : isDataDecisions
-        ? `${baseUrl}${weekNumber}`
-        : isMarketing
-          ? `${baseUrl}${weekNumber}`
-          : `${baseUrl}week-${weekNumber}`;
+    // Build course URL
+    const courseUrl = isLeadingPeople 
+      ? `${baseUrl}week-${weekNumber}` // Leading People uses 'pages/week-X' pattern
+      : `${baseUrl}${weekNumber}`;
 
     const enhancedDescription = `For course content for ${courseTitle}, Week ${weekNumber}, please click Event Link. `;
 
-    console.log(`Generated course content for ${cohortEvent.title}: ${enhancedTitle} -> ${courseUrl}`);
+    console.log(`Generated course content for ${cohortEvent.title}: ${enhancedTitle} -> ${courseUrl} (courseId: ${config.courseId})`);
 
     return {
       ...cohortEvent,
@@ -482,7 +501,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
       console.log(`Found matching event by date: ${sameDateEvents[0].title}`);
       return {
         ...sameDateEvents[0],
-        url: sameDateEvents[0].url || generatedContent?.url, // Add generated URL if ICS doesn't have one
+        url: sameDateEvents[0].url || generatedContent?.url, // PREFER ICS URL, fallback to generated
       };
     }
 
@@ -533,7 +552,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
       console.log(`Found best matching event (${bestSimilarity.toFixed(2)} similarity): ${bestMatch.title}`);
       return {
         ...bestMatch,
-        url: bestMatch.url || generatedContent?.url, // Add generated URL if ICS doesn't have one
+        url: bestMatch.url || generatedContent?.url, // PREFER ICS URL, fallback to generated
       };
     }
 
@@ -576,11 +595,12 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     const enrichedEvent = findMatchingOriginalEvent(event, cohortEvents.original || []);
     
     if (enrichedEvent) {
-      console.log(`✅ Enriched event with URL: ${enrichedEvent.url}`);
-      // Merge: Use the base event (has rich ICS description) but add the URL from enrichedEvent
+      console.log(`✅ Enriched event found. Event URL: ${event.url}, Enriched URL: ${enrichedEvent.url}`);
+      // Merge: Use the base event (has rich ICS description) 
+      // PREFER the base event's URL (from ICS file) as it's authoritative, fallback to enriched
       const mergedEvent: CalendarEvent = {
         ...event, // Start with base event (has rich description from ICS)
-        url: enrichedEvent.url, // Add the generated URL
+        url: event.url || enrichedEvent.url, // PREFER ICS URL from base event
       };
       setSelectedEvent(mergedEvent);
       setMatchedOriginalEvent(null);

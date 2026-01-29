@@ -279,17 +279,22 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
 
   // Prioritize showing the actual event data from ICS files
   // Only use originalEvent if it has more content than the base event
-  // BUT always preserve the URL from BOTH sources - prefer event.url (generated) over originalEvent.url
+  // IMPORTANT: Prefer the URL from ICS file (originalEvent.url) as it's authoritative
+  // The ICS files contain verified course URLs, generated URLs may be stale
   let displayEvent: CalendarEvent;
   
   if (originalEvent && originalEvent.description && originalEvent.description.length > (event.description?.length || 0)) {
-    // Use rich ICS content but ALWAYS use the event.url (generated course link) if available
+    // Use rich ICS content and PREFER the ICS URL (originalEvent.url) as authoritative
     displayEvent = {
       ...originalEvent,
-      url: event.url || originalEvent.url, // Prefer generated course URL from event
+      url: originalEvent.url || event.url, // Prefer ICS URL over generated URL
     };
   } else {
-    displayEvent = event;
+    // Use the event, but prefer ICS URL if available
+    displayEvent = {
+      ...event,
+      url: originalEvent?.url || event.url, // Prefer ICS URL if originalEvent exists
+    };
   }
   
   const start = new Date(displayEvent.start);
