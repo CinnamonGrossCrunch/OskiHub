@@ -425,7 +425,7 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
       <div
         ref={modalRef}
         tabIndex={-1}
-        className={`backdrop-blur-3xl rounded-2xl shadow-2xl max-w-3xl md:max-w-xl w-full overflow-hidden flex flex-col outline-none ${eventModalHeight} [&]:relative [&]:shadow-[0_0_0_1px_rgba(139,92,246,0.3),0_0_18px_4px_rgba(139,92,246,0.25)] [&]:transition-shadow ${
+        className={`backdrop-blur-3xl rounded-2xl shadow-2xl h-xl w-xl max-w-3xl md:max-w-md lg:max-w-lg overflow-hidden flex flex-col outline-none ${eventModalHeight} [&]:relative [&]:shadow-[0_0_0_1px_rgba(139,92,246,0.3),0_0_18px_4px_rgba(139,92,246,0.25)] [&]:transition-shadow ${
           isGmailNewsletter 
             ? 'bg-gradient-to-br from-violet-950/20 to-slate-950/20' 
             : 'bg-slate-900/60'

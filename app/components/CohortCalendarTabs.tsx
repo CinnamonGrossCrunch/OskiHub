@@ -677,7 +677,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   return (
     <>
       {/* Compact Header - All controls on one line */}
-      <header className="mb-4 relative overflow-visible px-0 sm:px-6 lg:px-0">{/* Removed px-4 on mobile for full width */}
+      <header className="mb-2 relative overflow-visible px-0 sm:px-6 lg:px-0">{/* Removed px-4 on mobile for full width */}
         <div className="relative flex items-center gap-3 flex-wrap">
 
           {/* Cohort Tabs - Only show if not externally controlled 
@@ -725,7 +725,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
           )}
 
           {/* Month Navigation - Right on mobile, centered on desktop */}
-          <div className="mr-auto ml-2 sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 flex items-center gap-0 flex-shrink-0">
+          <div className="mr-auto ml-2 sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 flex  items-center gap-0 flex-shrink-0">
             <button
               onClick={goToPreviousMonth}
               className="p-0 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-white"

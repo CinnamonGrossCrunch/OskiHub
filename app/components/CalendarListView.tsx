@@ -339,7 +339,7 @@ export default function CalendarListView({
     >
       {/* Widget Header */}
       <div className="widget-header">
-        <header className="header-container mx-0 mt- mb-1  w-full flex items-center justify-start px-0 py-0  rounded-tr-lg rounded-tl-lg">
+        <header className="header-container mx-0 md:-mt-4  -mb-1  w-full flex items-center justify-start px-0 py-0  rounded-tr-lg rounded-tl-lg">
           <h3 className="text-white p-3 text-base urbanist-medium tracking-wide leading-none m-0 p-0">
             {title}
           </h3>
