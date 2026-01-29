@@ -78,19 +78,54 @@ export default function MonthGrid({
   }, [currentMonth]);
 
   // Helper to check if an event spans multiple days
-  // Note: ICS DTEND is exclusive, so we subtract 1 day to get the actual last day
+  // Note: ICS DTEND handling depends on format:
+  // - DATE-only format (VALUE=DATE): DTEND is exclusive (day after last day)
+  // - DATE-TIME format: DTEND is the actual end time, so if it ends at 23:xx, that day is included
   const isMultiDayEvent = (event: CalendarEvent): boolean => {
     if (!event.end) return false;
     const start = startOfDay(new Date(event.start));
-    // DTEND is exclusive in ICS format - subtract 1 day to get actual end
-    const end = startOfDay(addDays(new Date(event.end), -1));
-    return differenceInDays(end, start) >= 1;
+    const endDate = new Date(event.end);
+    const end = startOfDay(endDate);
+    
+    // Check if this is a timed event ending near end of day (23:xx hour)
+    // ISO format: "2026-01-25T23:59:00.000Z" - check the hour
+    const endHour = endDate.getHours();
+    const isTimedEndOfDay = endHour === 23;
+    
+    if (isTimedEndOfDay) {
+      // Timed event ending at 23:xx - end date IS the last day
+      return differenceInDays(end, start) >= 1;
+    } else {
+      // DATE-only or earlier time - DTEND is exclusive, subtract 1 day
+      const actualEnd = startOfDay(addDays(end, -1));
+      return differenceInDays(actualEnd, start) >= 1;
+    }
   };
 
-  // Get the actual end date (DTEND - 1 day since ICS DTEND is exclusive)
+  // Helper to check if an event is a quiz window (multi-day quiz period from course ICS)
+  const isQuizWindowEvent = (event: CalendarEvent): boolean => {
+    // Check if title contains "Quiz" and it's a multi-day event
+    const isQuizTitle = event.title.toLowerCase().includes('quiz') && 
+                        event.title.toLowerCase().includes('window');
+    return isQuizTitle && isMultiDayEvent(event);
+  };
+
+  // Get the actual end date accounting for ICS format differences
+  // - DATE-only format (VALUE=DATE): DTEND is exclusive (day after last day)
+  // - DATE-TIME format ending at 23:xx: DTEND day IS the last day
   const getActualEndDate = (event: CalendarEvent): Date => {
     if (!event.end) return new Date(event.start);
-    return startOfDay(addDays(new Date(event.end), -1));
+    const endDate = new Date(event.end);
+    const endHour = endDate.getHours();
+    const isTimedEndOfDay = endHour === 23;
+    
+    if (isTimedEndOfDay) {
+      // Timed event ending at 23:xx - this day IS the last day
+      return startOfDay(endDate);
+    } else {
+      // DATE-only or earlier time - DTEND is exclusive, subtract 1 day
+      return startOfDay(addDays(endDate, -1));
+    }
   };
 
   // Get multi-day spanning events that appear on a specific day
@@ -152,9 +187,25 @@ export default function MonthGrid({
 
       {/* Days */}
       {days.map((day) => {
+        // Filter regular events - exclude quiz window events (they show as spanning bars)
         const dayEvents = events.filter((ev) =>
-          isSameDay(new Date(ev.start), day)
+          isSameDay(new Date(ev.start), day) && !isQuizWindowEvent(ev)
         );
+        
+        // Get quiz window events that START on this day (for showing start of bar)
+        const startingQuizWindowEvents = events.filter((ev) =>
+          isSameDay(new Date(ev.start), day) && isQuizWindowEvent(ev)
+        );
+        
+        // Get quiz window events that span this day (but don't start on this day)
+        const spanningQuizWindowEvents = events.filter((ev) => {
+          if (!isQuizWindowEvent(ev)) return false;
+          const eventStart = startOfDay(new Date(ev.start));
+          const eventEnd = getActualEndDate(ev);
+          const dayStart = startOfDay(day);
+          // Event spans this day but doesn't start on this day
+          return dayStart > eventStart && dayStart <= eventEnd;
+        });
         
         // Add UC Launch events for this day if they should be shown
         const dayLaunchEvents = showUCLaunch ? launchEvents.filter((ev) =>
@@ -266,6 +317,8 @@ export default function MonthGrid({
         const hasNewsletterEvent = showNewsletter && dayNewsletterEvents.length > 0;
         const hasSpanningEvent = spanningAcademicEvents.length > 0;
         const hasStartingMultiDayEvent = startingMultiDayAcademicEvents.length > 0;
+        const hasStartingQuizWindow = startingQuizWindowEvents.length > 0;
+        const hasSpanningQuizWindow = spanningQuizWindowEvents.length > 0;
 
         // Debug log for days with newsletter events
         if (hasNewsletterEvent) {
@@ -718,6 +771,89 @@ export default function MonthGrid({
                 <div className="flex-1" />
                 )}
               </div>
+              
+              {/* Quiz window bar START (first day of quiz window) */}
+              {hasStartingQuizWindow && (
+                <div className="absolute bottom-3 left-0 right-0 h-3 z-10">
+                  {startingQuizWindowEvents.slice(0, 1).map((ev, idx) => {
+                    const eventStart = startOfDay(new Date(ev.start));
+                    const eventEnd = getActualEndDate(ev);
+                    const totalDays = differenceInDays(eventEnd, eventStart) + 1;
+                    const isAlsoLastDay = isSameDay(eventStart, eventEnd);
+                    
+                    // Get course color based on source
+                    const quizColor = ev.source?.includes('202_accounting') || ev.source?.includes('ewmba202') 
+                      ? 'bg-teal-600/90 hover:bg-teal-500' 
+                      : ev.source?.includes('DataDecisions') || ev.source?.includes('206_')
+                      ? 'bg-sky-600/90 hover:bg-sky-500'
+                      : 'bg-violet-600/90 hover:bg-violet-500';
+                    
+                    return (
+                      <div
+                        key={`quiz-start-${ev.uid || ev.title}-${idx}`}
+                        className={`h-full ${quizColor} cursor-pointer transition-colors flex items-center justify-between px-1 border-l border-white/50 ${isAlsoLastDay ? 'border-r' : ''}`}
+                        title={`${ev.title} (Day 1 of ${totalDays})`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onEventClick(ev);
+                        }}
+                      >
+                        <span className="text-[8px] text-white font-medium truncate">
+                          📝 {ev.title.replace(' Window', '').replace('(Take anytime ', '(')}
+                        </span>
+                        <span className="text-[7px] text-white/90 font-medium flex-shrink-0 ml-0.5">
+                          1/{totalDays}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+              
+              {/* Quiz window spanning bar (continuation days) */}
+              {hasSpanningQuizWindow && !hasStartingQuizWindow && (
+                <div className="absolute bottom-3 left-0 right-0 h-3 z-10">
+                  {spanningQuizWindowEvents.slice(0, 1).map((ev, idx) => {
+                    const eventStart = startOfDay(new Date(ev.start));
+                    const eventEnd = getActualEndDate(ev);
+                    const totalDays = differenceInDays(eventEnd, eventStart) + 1;
+                    const currentDayNumber = differenceInDays(startOfDay(day), eventStart) + 1;
+                    const isLastDay = isSameDay(day, eventEnd);
+                    const dayOfWeek = day.getDay();
+                    const isFirstOfWeek = dayOfWeek === 0;
+                    
+                    // Get course color based on source
+                    const quizColor = ev.source?.includes('202_accounting') || ev.source?.includes('ewmba202') 
+                      ? 'bg-teal-600/80 hover:bg-teal-500' 
+                      : ev.source?.includes('DataDecisions') || ev.source?.includes('206_')
+                      ? 'bg-sky-600/80 hover:bg-sky-500'
+                      : 'bg-violet-600/80 hover:bg-violet-500';
+                    
+                    return (
+                      <div
+                        key={`quiz-span-${ev.uid || ev.title}-${idx}`}
+                        className={`h-full ${quizColor} cursor-pointer transition-colors flex items-center justify-between px-1 border-l border-white/50 ${
+                          isLastDay ? 'border-r' : ''
+                        }`}
+                        title={`${ev.title} (Day ${currentDayNumber} of ${totalDays})`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onEventClick(ev);
+                        }}
+                      >
+                        {isFirstOfWeek && (
+                          <span className="text-[8px] text-white font-medium truncate">
+                            📝 {ev.title.replace(' Window', '').replace('(Take anytime ', '(')}
+                          </span>
+                        )}
+                        <span className="text-[7px] text-white/90 font-medium flex-shrink-0 ml-auto">
+                          {currentDayNumber}/{totalDays}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
               
               {/* Multi-day event bar START (first day of multi-day event) */}
               {hasStartingMultiDayEvent && (
