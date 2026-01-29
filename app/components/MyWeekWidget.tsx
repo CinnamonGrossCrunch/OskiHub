@@ -45,23 +45,7 @@ interface MyWeekWidgetProps {
 export default function MyWeekWidget({ data, selectedCohort = 'blue' }: MyWeekWidgetProps) {
   const [weekData, setWeekData] = useState<MyWeekData | null>(data || null);
   const [loading, setLoading] = useState(!data); // If data provided, don't start loading
-  const [isExpanded, setIsExpanded] = useState(false); // Toggle state for events list - default will be set by useEffect
-
-  // Set initial expanded state based on screen size
-  useEffect(() => {
-    const checkScreenSize = () => {
-      // Desktop (md breakpoint is 768px in Tailwind)
-      const isDesktop = window.innerWidth >= 768;
-      setIsExpanded(isDesktop);
-    };
-
-    // Set initial state
-    checkScreenSize();
-
-    // Update on resize
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []); // Run once on mount
+  const [isExpanded, setIsExpanded] = useState(false); // Toggle state for events list - default collapsed on all screens
 
   // Function to handle MyWeek event clicks
   const handleEventClick = (event: React.MouseEvent, eventData: WeeklyEvent) => {
@@ -333,17 +317,17 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue' }: MyWeekWi
           {/* Toggle button for all screens - centered at bottom on small screens, positioned near "My Week" on md+ */}
               <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className={`flex items-center justify-center w-8 h-8 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite] absolute bottom-1 left-1/2 -translate-x-1/2 translate-x-[-110px] translate-y-[5px] scale-60 md:scale-100 md:bottom-auto md:top-0 md:left-[100px] md:translate-x-0 ${
-                !isExpanded ? 'md:translate-x-[60px] md:translate-y-[20px]' : 'md:translate-x-10 md:translate-y-0 md:w-5 md:h-5'
+              className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite] absolute bottom-1 left-1/2 -translate-x-1/2 translate-x-[-110px] translate-y-[5px] scale-70 md:scale-100 md:bottom-auto md:top-0 md:left-[100px] md:translate-x-0 ${
+                !isExpanded ? 'md:translate-x-[10px] md:translate-y-[0px]': 'md:translate-x-10 md:translate-y-0 md:w-5 md:h-5'
               }`}
               aria-label={isExpanded ? 'Collapse events' : 'Expand events'}
               >
               <svg
-                className={`w-5 h-5 text-white/70 transition-transform duration-500 ease-in-out ${isExpanded ? ' md:scale-80 rotate-[315deg]' : 'rotate-0'}`}
+                className={`w-5 h-5 text-white/50 transition-transform duration-500 ease-in-out ${isExpanded ? ' md:scale-80 rotate-[315deg]' : 'rotate-0'}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                strokeWidth={2.5}
+                strokeWidth={2.0}
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
               </svg>

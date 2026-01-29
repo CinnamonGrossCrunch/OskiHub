@@ -102,7 +102,7 @@ export default function MainDashboardTabs({
             onClick={() => setActiveTab(tab)}
             className={`relative  transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 overflow-hidden
               ${activeTab === tab
-                ? ' text-center text-md px-10 py-3 lg:px-8 bg-violet-100/10 backdrop-blur-lg text-white shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] z-20 rounded-t-3xl saturate-[80%] font-light'
+                ? ' text-center text-md px-10 py-3 lg:px-8 bg-violet-100/10 -mb-0 backdrop-blur-lg text-white shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] z-0 rounded-t-3xl saturate-[80%] font-light'
                 : ' text-center text-sm ml-3 mr-4 mb-2 px-5 lg:px-10 py-2 tab-inactive backdrop-blur-md text-white shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] z-20 rounded-full font-normal'
               }
               ${tab === 'OskiHub Cal' && calendarTabGlowing && activeTab !== tab ? 'newsletter-tab-glow' : ''}

@@ -377,14 +377,21 @@ export default function NewsletterWidget({ data }: { data: Payload }) {
   // ==========================================================================
   
   // Extract and format date from newsletter title
-  // Expected format: "[EWMBA] Bear Necessities MM-DD-YYYY"
+  // Expected formats: "[EWMBA] Bear Necessities MM-DD-YYYY" or "[EWMBA] Bear Necessities M-D-YY"
   const getNewsletterDate = (): string => {
     if (!data.title) return '';
     
-    // Extract date pattern MM-DD-YYYY or MM/DD/YYYY
-    const dateMatch = data.title.match(/(\d{1,2})[-/](\d{1,2})[-/](\d{4})/);
-    if (dateMatch) {
-      const [, month, day, year] = dateMatch;
+    // Extract date pattern MM-DD-YYYY or MM/DD/YYYY (4-digit year)
+    const dateMatch4Digit = data.title.match(/(\d{1,2})[-/](\d{1,2})[-/](\d{4})/);
+    if (dateMatch4Digit) {
+      const [, month, day] = dateMatch4Digit;
+      return `${month.padStart(2, '0')}/${day.padStart(2, '0')}`;
+    }
+    
+    // Extract date pattern M-D-YY or MM-DD-YY (2-digit year)
+    const dateMatch2Digit = data.title.match(/(\d{1,2})[-/](\d{1,2})[-/](\d{2})(?!\d)/);
+    if (dateMatch2Digit) {
+      const [, month, day] = dateMatch2Digit;
       return `${month.padStart(2, '0')}/${day.padStart(2, '0')}`;
     }
     
@@ -920,6 +927,9 @@ export default function NewsletterWidget({ data }: { data: Payload }) {
               <h2 className="text-lg font-semibold urbanist-black whitespace-nowrap truncate">
                 <span style={{ color: 'white' }}>Bear</span>
                 <span className="" style={{ color: 'var(--berkeley-gold)' }}>Necessities</span>
+                {getNewsletterDate() && (
+                  <span style={{ color: 'var(--berkeley-gold)' }}>{` ${getNewsletterDate()}`}</span>
+                )}
               </h2>
             </div>
             
@@ -928,11 +938,7 @@ export default function NewsletterWidget({ data }: { data: Payload }) {
                So A Bear Can Rest at Ease
               </p>
             )}
-            {getNewsletterDate() && (
-              <p className="text-gray-500 text-xs urbanist-regular mb-0">
-                Released {getNewsletterDate()}
-              </p>
-            )}
+
             {data.sourceUrl && (
               <a
                 className="text-gray-800 dark:text-gray-600 text-xs urbanist-regular transition-colors inline-block mb-0  select-text"

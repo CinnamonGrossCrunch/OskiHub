@@ -64,6 +64,25 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
     // Remove broken inline images (cid: references)
     cleaned = cleaned.replace(/<img[^>]*src="cid:[^"]*"[^>]*>/gi, '');
     
+    // Remove fixed-width col elements entirely (they break responsive layout)
+    cleaned = cleaned.replace(/<colgroup>[\s\S]*?<\/colgroup>/gi, '');
+    cleaned = cleaned.replace(/<col[^>]*>/gi, '');
+    
+    // Remove fixed-width inline styles from elements
+    // Remove width:XXXpx patterns from style attributes
+    cleaned = cleaned.replace(/width:\s*\d+px\s*;?/gi, '');
+    cleaned = cleaned.replace(/height:\s*\d+px\s*;?/gi, '');
+    
+    // Remove decorative sidebar cells (gold background cells that are empty or just contain <br>)
+    // These are the narrow colored columns on left/right that squeeze content
+    cleaned = cleaned.replace(/<td[^>]*background-color:\s*rgb\(253,\s*181,\s*21\)[^>]*>(\s*<br>\s*|\s*)<\/td>/gi, '');
+    
+    // Also remove rowspan decorative cells
+    cleaned = cleaned.replace(/<td[^>]*rowspan[^>]*background-color:\s*rgb\(253,\s*181,\s*21\)[^>]*>(\s*<br>\s*|\s*)<\/td>/gi, '');
+    
+    // Remove empty spans that were image placeholders (spans with only width/height in style)
+    cleaned = cleaned.replace(/<span[^>]*style="[^"]*"[^>]*>\s*<\/span>/gi, '');
+    
     // Fix external image URLs - add responsive classes
     cleaned = cleaned.replace(
       /<img([^>]*)>/gi,

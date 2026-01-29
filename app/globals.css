@@ -1070,6 +1070,93 @@ body {
    ============================================================================ */
 .gmail-newsletter-content {
   @apply text-white leading-normal text-center;
+  max-width: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* Force responsive tables - override inline width styles */
+.gmail-newsletter-content table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed !important;
+  border-collapse: collapse !important;
+}
+
+.gmail-newsletter-content col {
+  width: auto !important;
+}
+
+/* Force decorative sidebar cells (gold background) to be hidden */
+.gmail-newsletter-content td[style*="background-color:rgb(253,181,21)"],
+.gmail-newsletter-content td[style*="background-color: rgb(253,181,21)"],
+.gmail-newsletter-content td[style*="background-color: rgb(253, 181, 21)"] {
+  display: none !important;
+}
+
+/* Main content cells should take full width */
+.gmail-newsletter-content td {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: normal !important;
+}
+
+/* Header rows (navy background) - keep as full-width blocks */
+.gmail-newsletter-content td[style*="background-color:rgb(21,40,75)"],
+.gmail-newsletter-content td[style*="background-color: rgb(21,40,75)"],
+.gmail-newsletter-content td[style*="background-color: rgb(21, 40, 75)"] {
+  display: block !important;
+  width: 100% !important;
+}
+
+.gmail-newsletter-content th {
+  width: 100% !important;
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Force text wrapping on all text elements */
+.gmail-newsletter-content p,
+.gmail-newsletter-content span,
+.gmail-newsletter-content li,
+.gmail-newsletter-content div {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: normal !important;
+  max-width: 100% !important;
+}
+
+/* Override white-space: pre that prevents wrapping */
+.gmail-newsletter-content *[style*="white-space"] {
+  white-space: normal !important;
+}
+
+/* Force responsive inline elements with fixed widths */
+.gmail-newsletter-content span[style*="width"],
+.gmail-newsletter-content div[style*="width"] {
+  width: auto !important;
+  max-width: 100% !important;
+  display: block !important;
+}
+
+/* Hide empty placeholder spans (broken images) */
+.gmail-newsletter-content span[style*="width"][style*="height"]:empty {
+  display: none !important;
+}
+
+/* Responsive images */
+.gmail-newsletter-content img {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
 }
 
 /* Headings - More compact with better hierarchy */
@@ -1117,9 +1204,9 @@ body {
   @apply text-violet-400 hover:text-violet-300 underline transition-colors font-medium;
 }
 
-/* Tables - Compact */
+/* Tables - Compact and responsive (width rules in main section with !important) */
 .gmail-newsletter-content table {
-  @apply w-full mb-3 border-collapse text-sm;
+  @apply mb-3 border-collapse text-sm;
 }
 
 .gmail-newsletter-content thead {
@@ -1127,11 +1214,11 @@ body {
 }
 
 .gmail-newsletter-content th {
-  @apply px-3 py-1.5 text-left font-semibold text-white border border-slate-600/50;
+  @apply px-2 py-1.5 text-left font-semibold text-white border border-slate-600/50;
 }
 
 .gmail-newsletter-content td {
-  @apply px-3 py-1.5 border border-slate-600/50 text-white;
+  @apply px-2 py-1.5 border border-slate-600/50 text-white;
 }
 
 .gmail-newsletter-content tr:nth-child(even) {
@@ -1171,9 +1258,9 @@ body {
   @apply italic text-white;
 }
 
-/* Images */
+/* Images - responsive rules with !important in main section */
 .gmail-newsletter-content img {
-  @apply max-w-full h-auto rounded-lg my-3 border border-slate-700/50;
+  @apply rounded-lg my-3 border border-slate-700/50;
 }
 
 /* Image placeholder styling (for broken/missing images) */
