@@ -1,5 +1,8 @@
 'use client';
 
+// ============================================================================
+// IMPORTS
+// ============================================================================
 import { useState, useEffect, useRef } from 'react';
 import { format, addMonths, subMonths } from 'date-fns';
 import Image from 'next/image';
@@ -8,6 +11,9 @@ import EventDetailModal from './EventDetailModal';
 import type { CalendarEvent, CohortEvents } from '@/lib/icsUtils';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
 
+// ============================================================================
+// TYPES & INTERFACES
+// ============================================================================
 type Props = {
   cohortEvents: CohortEvents;
   title: string;
@@ -17,9 +23,9 @@ type Props = {
 
 type CohortType = 'blue' | 'gold';
 
-// Newsletter event type for calendar display
+/** Newsletter event type for calendar display */
 interface NewsletterCalendarEvent extends CalendarEvent {
-  htmlContent?: string; // Formatted HTML from organized newsletter
+  htmlContent?: string;
   sourceMetadata: {
     sectionTitle: string;
     sectionIndex: number;
@@ -32,31 +38,65 @@ interface NewsletterCalendarEvent extends CalendarEvent {
     eventType: 'deadline' | 'event' | 'announcement' | 'reminder';
     priority: 'high' | 'medium' | 'low';
   };
-  multipleEvents?: NewsletterCalendarEvent[]; // For combined events with multiple newsletter items on same date
+  multipleEvents?: NewsletterCalendarEvent[];
 }
 
+// ============================================================================
+// MAIN COMPONENT
+// ============================================================================
 export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohort, newsletterData }: Props) {
+  
+  // --------------------------------------------------------------------------
+  // STATE: Cohort & Navigation
+  // --------------------------------------------------------------------------
   const [selectedCohort, setSelectedCohort] = useState<CohortType>(externalSelectedCohort || 'blue');
-  const [currentMonth, setCurrentMonth] = useState(new Date()); // Current month
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+  
+  // --------------------------------------------------------------------------
+  // STATE: Event Selection & Modal
+  // --------------------------------------------------------------------------
   const [selectedEvent, setSelectedEvent] = useState<CalendarEvent | null>(null);
   const [matchedOriginalEvent, setMatchedOriginalEvent] = useState<CalendarEvent | null>(null);
-  const [currentEventIndex, setCurrentEventIndex] = useState<number>(-1); // Track current event index
+  const [currentEventIndex, setCurrentEventIndex] = useState<number>(-1);
+  
+  // --------------------------------------------------------------------------
+  // STATE: Event Source Toggles (which calendars to show)
+  // --------------------------------------------------------------------------
   const [showGreekTheater, setShowGreekTheater] = useState(false);
   const [showUCLaunch, setShowUCLaunch] = useState(false);
-  const [showCalBears, setShowCalBears] = useState(true); // Default ON
+  const [showCalBears, setShowCalBears] = useState(true);
   const [showCampusGroups, setShowCampusGroups] = useState(false);
-  const [showAcademicCalendar, setShowAcademicCalendar] = useState(true); // Default ON
-  const [showNewsletter, setShowNewsletter] = useState(true); // Default ON
+  const [showAcademicCalendar, setShowAcademicCalendar] = useState(true);
+  const [showNewsletter, setShowNewsletter] = useState(true);
+  
+  // --------------------------------------------------------------------------
+  // STATE: Newsletter Events (converted from newsletter data)
+  // --------------------------------------------------------------------------
   const [newsletterEvents, setNewsletterEvents] = useState<NewsletterCalendarEvent[]>([]);
+  
+  // --------------------------------------------------------------------------
+  // STATE: UI Controls
+  // --------------------------------------------------------------------------
   const [showEventDropdown, setShowEventDropdown] = useState(false);
-  const [glowingDate, setGlowingDate] = useState<string | null>(null); // Track which date should glow (ISO string)
-  // Multi-event modal state
+  const [glowingDate, setGlowingDate] = useState<string | null>(null);
+  
+  // --------------------------------------------------------------------------
+  // STATE: Multi-Event Modal (when clicking day with multiple events)
+  // --------------------------------------------------------------------------
   const [multiEventModalOpen, setMultiEventModalOpen] = useState(false);
   const [multiEventModalEvents, setMultiEventModalEvents] = useState<CalendarEvent[]>([]);
   const [multiEventModalDate, setMultiEventModalDate] = useState<Date | null>(null);
+  
+  // --------------------------------------------------------------------------
+  // REFS
+  // --------------------------------------------------------------------------
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Load cohort preference from localStorage on mount (only if not externally controlled)
+  // ==========================================================================
+  // EFFECTS: Load/Save Preferences from localStorage
+  // ==========================================================================
+  
+  /** Load cohort and toggle preferences from localStorage on mount */
   useEffect(() => {
     if (!externalSelectedCohort) {
       const saved = localStorage.getItem('calendar-cohort');
@@ -65,7 +105,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
       }
     }
     
-    // Load event toggle preferences from localStorage
+    // Load event toggle preferences
     const savedShowNewsletter = localStorage.getItem('calendar-show-newsletter');
     if (savedShowNewsletter !== null) {
       setShowNewsletter(savedShowNewsletter === 'true');
@@ -82,7 +122,9 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     }
   }, [externalSelectedCohort]);
 
-  // Convert newsletter data to calendar events when provided
+  // ==========================================================================
+  // EFFECT: Convert Newsletter Data to Calendar Events
+  // ==========================================================================
   useEffect(() => {
     if (!newsletterData) {
       console.log('📰 [CohortCalendarTabs] No newsletter data provided');
@@ -92,26 +134,11 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
 
     console.log('📰 [CohortCalendarTabs] Converting newsletter data to calendar events...');
     console.log(`📊 Newsletter has ${newsletterData.sections.length} sections`);
-    console.log('� [v2] Enhanced regex date extraction active'); // Cache buster
-    console.log('�📰 Full newsletterData:', JSON.stringify(newsletterData, null, 2));
     
-    // Debug: Log the structure of newsletter items
+    // Debug logging (can be removed in production)
     try {
       newsletterData.sections.forEach((section, idx) => {
-        console.log(`📰 Section ${idx}:`, section);
-        console.log(`📰 Section ${idx} title: "${section.sectionTitle || 'NO TITLE'}"`);
-        console.log(`📰 Section ${idx} items:`, section.items);
-        console.log(`📰 Section ${idx} items length: ${section.items?.length || 0}`);
-        
-        if (section.items && section.items.length > 0) {
-          section.items.forEach((item, itemIdx) => {
-            console.log(`📰   Item ${itemIdx} "${item.title}":`, {
-              hasTimeSensitive: !!item.timeSensitive,
-              timeSensitiveStructure: item.timeSensitive,
-              fullItem: item
-            });
-          });
-        }
+        console.log(`📰 Section ${idx}: "${section.sectionTitle || 'NO TITLE'}" (${section.items?.length || 0} items)`);
       });
     } catch (error) {
       console.error('📰 Error logging newsletter structure:', error);
@@ -125,27 +152,22 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
         let eventType: 'deadline' | 'event' | 'announcement' | 'reminder' = 'announcement';
         let priority: 'high' | 'medium' | 'low' = 'medium';
         
-        // Primary: Check if item has time-sensitive data from AI
+        // PRIMARY: Check if item has time-sensitive data from AI
         if (item.timeSensitive && item.timeSensitive.dates && item.timeSensitive.dates.length > 0) {
           console.log(`✓ "${item.title}" has timeSensitive data:`, item.timeSensitive.dates);
           datesToProcess = item.timeSensitive.dates;
           eventType = item.timeSensitive.eventType || 'announcement';
           priority = item.timeSensitive.priority || 'medium';
         } else {
-          // Fallback: Extract dates from HTML content using regex (same as MyWeek widget)
+          // FALLBACK: Extract dates from HTML content using regex
           console.log(`✗ "${item.title}" has NO timeSensitive - trying regex fallback...`);
           const content = item.html?.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
           if (content) {
-            // Enhanced regex to match multiple date formats:
-            // - "Sunday, Nov 16" or "Sunday Nov 16"
-            // - "Nov 16, 2025" or "Nov 16"
-            // - "November 16, 2025"
-            // - "Saturday May 23, 2PM" (no comma after month)
-            // - "Dec 1 at 11:59 PM"
+            // Date regex patterns for various formats
             const datePatterns = [
-              // Pattern 1: Day name + Month + Date (e.g., "Sunday, Nov 16" or "Friday Nov 21")
+              // "Sunday, Nov 16" or "Friday Nov 21"
               /\b(?:Mon|Tues?|Wed(?:nes)?|Thu(?:rs)?|Fri|Sat(?:ur)?|Sun)(?:day)?s?,?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}(?:,?\s+\d{4})?\b/gi,
-              // Pattern 2: Month + Date (e.g., "Nov 15" or "Dec 1" or "May 23, 2026")
+              // "Nov 15" or "Dec 1" or "May 23, 2026"
               /\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{1,2}(?:,?\s+\d{4})?\b/gi
             ];
             
@@ -298,24 +320,27 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
 
     console.log(`✅ [CohortCalendarTabs] Converted ${events.length} newsletter events from ${newsletterData.sections.length} sections`);
     setNewsletterEvents(events);
-  }, [newsletterData]); // Re-run when newsletter data changes
+  }, [newsletterData]);
 
-  // Save newsletter toggle preference to localStorage
+  // ==========================================================================
+  // EFFECTS: Save Toggle Preferences to localStorage
+  // ==========================================================================
+  
   useEffect(() => {
     localStorage.setItem('calendar-show-newsletter', String(showNewsletter));
   }, [showNewsletter]);
 
-  // Save Cal Bears toggle preference to localStorage
   useEffect(() => {
     localStorage.setItem('calendar-show-calbears', String(showCalBears));
   }, [showCalBears]);
 
-  // Save Academic Calendar toggle preference to localStorage
   useEffect(() => {
     localStorage.setItem('calendar-show-academic', String(showAcademicCalendar));
   }, [showAcademicCalendar]);
 
-  // Handle clicking outside dropdown to close it
+  // ==========================================================================
+  // EFFECT: Close Dropdown When Clicking Outside
+  // ==========================================================================
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -329,22 +354,29 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     };
   }, []);
 
-  // Sync with external cohort selection
+  // ==========================================================================
+  // EFFECTS: Sync Cohort Selection
+  // ==========================================================================
+  
+  /** Sync with external cohort selection (from parent component) */
   useEffect(() => {
     if (externalSelectedCohort) {
       setSelectedCohort(externalSelectedCohort);
     }
   }, [externalSelectedCohort]);
 
-  // Save cohort preference to localStorage (only if not externally controlled)
+  /** Save cohort preference to localStorage (only if not externally controlled) */
   useEffect(() => {
     if (!externalSelectedCohort) {
       localStorage.setItem('calendar-cohort', selectedCohort);
     }
   }, [selectedCohort, externalSelectedCohort]);
 
+  // ==========================================================================
+  // HANDLERS: Navigation & Cohort Selection
+  // ==========================================================================
+  
   const handleCohortChange = (cohort: CohortType) => {
-    // Only allow local changes if not externally controlled
     if (!externalSelectedCohort) {
       setSelectedCohort(cohort);
     }
@@ -358,7 +390,13 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     setCurrentMonth(prev => addMonths(prev, 1));
   };
 
-  // Generate course-specific fallback content for events without original calendar matches
+  // ==========================================================================
+  // HELPER: Generate Course-Specific Content for Events
+  // ==========================================================================
+  /**
+   * Generates fallback content for course events without original calendar matches.
+   * Creates bCourses URLs based on course start dates and week numbers.
+   */
   const generateCourseContent = (cohortEvent: CalendarEvent): CalendarEvent | null => {
     if (!cohortEvent.source) return null;
 
@@ -445,12 +483,10 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     
     // Build course URL
     const courseUrl = isLeadingPeople 
-      ? `${baseUrl}week-${weekNumber}` // Leading People uses 'pages/week-X' pattern
+      ? `${baseUrl}week-${weekNumber}`
       : `${baseUrl}${weekNumber}`;
 
     const enhancedDescription = `For course content for ${courseTitle}, Week ${weekNumber}, please click Event Link. `;
-
-    console.log(`Generated course content for ${cohortEvent.title}: ${enhancedTitle} -> ${courseUrl} (courseId: ${config.courseId})`);
 
     return {
       ...cohortEvent,
@@ -461,24 +497,29 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     };
   };
 
-  // Client-side function to find matching event from original calendar
+  // ==========================================================================
+  // HELPER: Find Matching Event from Original Calendar
+  // ==========================================================================
+  /**
+   * Matches cohort events to original calendar events for enriched content.
+   * Falls back to generated course content if no match found.
+   */
   const findMatchingOriginalEvent = (
     cohortEvent: CalendarEvent,
     originalEvents: CalendarEvent[]
   ): CalendarEvent | null => {
-    // Always display Teams@Haas events as-is (no matching or generated content)
+    // Teams@Haas events: show as-is without matching
     if (cohortEvent.source && cohortEvent.source.toLowerCase().includes('teams@haas')) {
-      return null; // explicitly no matching content
+      return null;
     }
 
     if (!originalEvents.length) {
-      // No original events available - try to generate course content
       return generateCourseContent(cohortEvent);
     }
 
     const cohortDate = new Date(cohortEvent.start);
 
-    // First, try exact date match
+    // Try exact date match
     const sameDateEvents = originalEvents.filter(originalEvent => {
       const originalDate = new Date(originalEvent.start);
       return (
@@ -489,26 +530,23 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     });
 
     if (sameDateEvents.length === 0) {
-      // No date match found - try to generate course content
       return generateCourseContent(cohortEvent);
     }
 
-    // Generate the course URL for this event (we'll use it to enhance matched events)
     const generatedContent = generateCourseContent(cohortEvent);
 
-    // If only one event on the same date, return it enhanced with generated URL
+    // Single event on same date - return with enhanced URL
     if (sameDateEvents.length === 1) {
-      console.log(`Found matching event by date: ${sameDateEvents[0].title}`);
       return {
         ...sameDateEvents[0],
-        url: sameDateEvents[0].url || generatedContent?.url, // PREFER ICS URL, fallback to generated
+        url: sameDateEvents[0].url || generatedContent?.url,
       };
     }
 
-    // Multiple events on same date - try to match by title similarity
+    // Multiple events on same date - match by title similarity
     const cohortTitle = cohortEvent.title.toLowerCase();
 
-    // Helper function to calculate title similarity
+    /** Helper: Calculate title similarity score (0-1) */
     const getTitleSimilarity = (title1: string, title2: string): number => {
       const t1 = title1.toLowerCase().replace(/[^\w\s]/g, '').trim();
       const t2 = title2.toLowerCase().replace(/[^\w\s]/g, '').trim();
@@ -533,84 +571,75 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
       return matches / Math.max(keywords1.length, keywords2.length);
     };
 
-    // Find the event with the highest title similarity
+    // Find event with highest title similarity (minimum 30%)
     let bestMatch: CalendarEvent | null = null;
     let bestSimilarity = 0;
 
     for (const originalEvent of sameDateEvents) {
       const similarity = getTitleSimilarity(cohortTitle, originalEvent.title);
-      console.log(`Comparing "${cohortTitle}" with "${originalEvent.title.toLowerCase()}" - similarity: ${similarity}`);
-
       if (similarity > bestSimilarity && similarity > 0.3) {
-        // Minimum 30% similarity
         bestSimilarity = similarity;
         bestMatch = originalEvent;
       }
     }
 
     if (bestMatch) {
-      console.log(`Found best matching event (${bestSimilarity.toFixed(2)} similarity): ${bestMatch.title}`);
       return {
         ...bestMatch,
-        url: bestMatch.url || generatedContent?.url, // PREFER ICS URL, fallback to generated
+        url: bestMatch.url || generatedContent?.url,
       };
     }
 
-    // If no good title match, try to generate course content as fallback
+    // Fallback: use generated course content
     if (generatedContent) {
-      console.log(`No good title match found, using generated course content: ${generatedContent.title}`);
       return generatedContent;
     }
 
-    // Final fallback - return the first event on the same date
+    // Final fallback: first event on same date
     if (sameDateEvents.length > 0) {
-      const fallbackEvent = sameDateEvents[0] as CalendarEvent;
-      console.log(`No good title match found, returning first event on same date: ${fallbackEvent.title}`);
-      return fallbackEvent;
+      return sameDateEvents[0] as CalendarEvent;
     }
     
-    // Should never reach here, but return null as ultimate fallback
     return null;
   };
 
+  // ==========================================================================
+  // HANDLERS: Event Click & Modal Navigation
+  // ==========================================================================
+  
+  /** Handle clicking on an event - opens detail modal */
   const handleEventClick = (event: CalendarEvent) => {
-    // Scroll to top of page first
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
-    // Find the index of this event in the current events array
     const eventIndex = currentEvents.findIndex(e => 
       e.start === event.start && e.title === event.title
     );
     setCurrentEventIndex(eventIndex);
     
-    // Teams@Haas: show raw event only
+    // Teams@Haas: show raw event without enrichment
     if (event.source && event.source.toLowerCase().includes('teams@haas')) {
       setSelectedEvent(event);
       setMatchedOriginalEvent(null);
-      console.log(`Teams@Haas event selected (no enrichment): ${event.title}`);
       return;
     }
 
-    // Try to find matching/enriched event from original calendar (this adds the URL!)
+    // Try to find matching/enriched event from original calendar
     const enrichedEvent = findMatchingOriginalEvent(event, cohortEvents.original || []);
     
     if (enrichedEvent) {
-      console.log(`✅ Enriched event found. Event URL: ${event.url}, Enriched URL: ${enrichedEvent.url}`);
-      // Merge: Use the base event (has rich ICS description) 
-      // PREFER the base event's URL (from ICS file) as it's authoritative, fallback to enriched
       const mergedEvent: CalendarEvent = {
-        ...event, // Start with base event (has rich description from ICS)
-        url: event.url || enrichedEvent.url, // PREFER ICS URL from base event
+        ...event,
+        url: event.url || enrichedEvent.url,
       };
       setSelectedEvent(mergedEvent);
       setMatchedOriginalEvent(null);
     } else {
-      console.log(`⚠️ No enrichment found for "${event.title}"`);
       setSelectedEvent(event);
       setMatchedOriginalEvent(null);
     }
   };
 
+  /** Navigate to next event in list */
   const handleNextEvent = () => {
     if (currentEventIndex < currentEvents.length - 1) {
       const nextEvent = currentEvents[currentEventIndex + 1];
@@ -618,6 +647,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     }
   };
 
+  /** Navigate to previous event in list */
   const handlePreviousEvent = () => {
     if (currentEventIndex > 0) {
       const prevEvent = currentEvents[currentEventIndex - 1];
@@ -625,59 +655,64 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     }
   };
 
+  /** Close the event detail modal */
   const handleCloseModal = () => {
     setSelectedEvent(null);
     setMatchedOriginalEvent(null);
     setCurrentEventIndex(-1);
   };
 
-  // Handle triggering glow effect on date cell after "View in Newsletter" is clicked
+  // ==========================================================================
+  // HANDLERS: Glow Effect & Multi-Event Modal
+  // ==========================================================================
+  
+  /** Trigger violet glow effect on a date cell (after "View in Newsletter" click) */
   const handleTriggerGlow = (eventDate: Date) => {
-    const dateString = eventDate.toISOString().split('T')[0]; // Convert to YYYY-MM-DD format
-    console.log(`✨ [CohortCalendarTabs] Triggering violet glow for date: ${dateString}`);
-    
+    const dateString = eventDate.toISOString().split('T')[0];
     setGlowingDate(dateString);
     
     // Auto-remove glow after 7 seconds
     setTimeout(() => {
       setGlowingDate(null);
-      console.log(`🌅 [CohortCalendarTabs] Violet glow faded out for date: ${dateString}`);
     }, 7000);
   };
 
-  // Handle multi-event expand click from MonthGrid
+  /** Handle clicking expand button on a day with multiple events */
   const handleMultiEventClick = (events: CalendarEvent[], date: Date) => {
-    console.log(`📅 [CohortCalendarTabs] Multi-event expand clicked for ${date.toDateString()}:`, events.length, 'events');
     setMultiEventModalEvents(events);
     setMultiEventModalDate(date);
     setMultiEventModalOpen(true);
   };
 
-  // Handle selecting an event from multi-event modal
+  /** Select an event from the multi-event modal */
   const handleSelectFromMultiEventModal = (event: CalendarEvent) => {
     setMultiEventModalOpen(false);
     handleEventClick(event);
   };
 
-  // Close multi-event modal
+  /** Close the multi-event modal */
   const handleCloseMultiEventModal = () => {
     setMultiEventModalOpen(false);
     setMultiEventModalEvents([]);
     setMultiEventModalDate(null);
   };
 
-  // Get current cohort events
+  // ==========================================================================
+  // COMPUTED VALUES
+  // ==========================================================================
+  
+  /** Current cohort's events */
   const currentEvents = cohortEvents[selectedCohort] || [];
 
-  // Debug logging for Campus Groups
-  console.log('Campus Groups Events:', cohortEvents.campusGroups?.length || 0, 'events');
-  console.log('Show Campus Groups:', showCampusGroups);
-  console.log('Campus Groups Events Detail:', cohortEvents.campusGroups);
-
+  // ==========================================================================
+  // RENDER
+  // ==========================================================================
   return (
     <>
-      {/* Compact Header - All controls on one line */}
-      <header className="mb-2 relative overflow-visible px-0 sm:px-6 lg:px-0">{/* Removed px-4 on mobile for full width */}
+      {/* ================================================================== */}
+      {/* HEADER: Month Navigation & Event Toggles                          */}
+      {/* ================================================================== */}
+      <header className="mb-2 relative overflow-visible px-0 sm:px-6 lg:px-0">
         <div className="relative flex items-center gap-3 flex-wrap">
 
           {/* Cohort Tabs - Only show if not externally controlled 
@@ -961,9 +996,11 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
         </div>
       </header>
 
-      {/* Calendar Content */}
+      {/* ================================================================== */}
+      {/* CALENDAR GRID                                                      */}
+      {/* ================================================================== */}
       <div id="calendar-content" role="tabpanel">
-        <div className="-mb-0 mx-1 rounded-none sm:rounded-xl overflow-hidden">{/* Removed -mx-6 sm:-mx-0 to prevent overflow */}
+        <div className="-mb-0 mx-1 rounded-none sm:rounded-xl overflow-hidden">
           <MonthGrid 
             events={currentEvents} 
             currentMonth={currentMonth} 
@@ -985,7 +1022,9 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
         </div>
       </div>
 
-      {/* Event Detail Modal */}
+      {/* ================================================================== */}
+      {/* EVENT DETAIL MODAL                                                 */}
+      {/* ================================================================== */}
       <EventDetailModal 
         event={selectedEvent} 
         originalEvent={matchedOriginalEvent}
@@ -997,7 +1036,9 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
         onTriggerGlow={handleTriggerGlow}
       />
 
-      {/* Multi-Event Grid Modal */}
+      {/* ================================================================== */}
+      {/* MULTI-EVENT MODAL (when clicking day with 2+ events)              */}
+      {/* ================================================================== */}
       {multiEventModalOpen && multiEventModalDate && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
           <div className="backdrop-blur-3xl bg-slate-900/80 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-hidden flex flex-col border border-slate-700/50">

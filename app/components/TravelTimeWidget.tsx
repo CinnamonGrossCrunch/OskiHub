@@ -209,8 +209,20 @@ export default function TravelTimeWidget() {
     return null;
   }
 
+  const handleClick = () => {
+    // Open Google Maps with directions from current location to Haas
+    const haasAddress = 'Haas School of Business, Berkeley, CA';
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(haasAddress)}&travelmode=driving`;
+    window.open(mapsUrl, '_blank');
+  };
+
   return (
-    <div className="lg:border-t-3 border-dotted flex flex-col justify-center backdrop-blur-sm w-1/2 lg:w-auto lg:ml-auto px-2 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] lg:pt-1 -mt-2 lg:-mt-2" style={{ borderTopColor: '#9ca3af31' }}>
+    <div 
+      onClick={handleClick}
+      className="lg:border-t-3 border-dotted flex flex-col justify-center backdrop-blur-sm w-1/2 lg:w-auto lg:ml-auto px-2 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] lg:pt-1 -mt-2 lg:-mt-2 cursor-pointer hover:bg-white/5 transition-colors" 
+      style={{ borderTopColor: '#9ca3af31' }}
+      title="Click for directions to Haas School of Business"
+    >
       {/* Small screens: All elements in one horizontal line */}
       {/* Large screens: Header on top (right-aligned), driving/transit below (horizontal) */}
       

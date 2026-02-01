@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useEffect, useState } from 'react';
+import { useMemo, useEffect } from 'react';
 import { startOfMonth, endOfMonth, startOfWeek, endOfWeek, eachDayOfInterval, isSameMonth, isSameDay, format, addDays, differenceInDays, isWithinInterval, startOfDay, endOfDay } from 'date-fns';
 import Image from 'next/image';
 import type { CalendarEvent } from '@/lib/icsUtils';
@@ -55,9 +55,6 @@ export default function MonthGrid({
   glowingDate = null,
   onMultiEventClick
 }: Props) {
-  // State for tracking hovered date cell
-  const [hoveredDate, setHoveredDate] = useState<string | null>(null);
-  
   // Remove the internal state since month is controlled by parent
   // const [currentMonth, setCurrentMonth] = useState(new Date(2025, 7, 1));
 
@@ -160,18 +157,6 @@ export default function MonthGrid({
         
         return { event, isStart, isEnd, spanInWeek, dayPositionInWeek };
       });
-  };
-
-  // Handler for expand button click
-  const handleExpandClick = (e: React.MouseEvent, allDayEvents: CalendarEvent[], day: Date) => {
-    e.stopPropagation();
-    if (allDayEvents.length === 1) {
-      // Single event - open normal modal
-      onEventClick(allDayEvents[0]);
-    } else if (allDayEvents.length > 1 && onMultiEventClick) {
-      // Multiple events - open multi-event grid modal
-      onMultiEventClick(allDayEvents, day);
-    }
   };
 
   return (
@@ -488,7 +473,7 @@ export default function MonthGrid({
           }
           
           // Default styling - no title-based fallbacks to avoid misclassification
-          return `bg-slate-100 border-slate-200 text-slate-900 ${hoverGold}`;
+          return `bg-slate-600/40 border-transparent text-white ${hoverGold}`;
         };
         
         // Function to check if event has a quiz (for Data & Decisions classes)
@@ -509,33 +494,16 @@ export default function MonthGrid({
         // Check if this day should have the violet glow effect
         const dayString = format(day, 'yyyy-MM-dd'); // Convert to YYYY-MM-DD format
         const shouldGlow = glowingDate === dayString;
-        const isHovered = hoveredDate === dayString;
-        const hasEvents = allDayEvents.length > 0;
-        
 
         return (
             <div
               key={day.toISOString()}
-              className={`relative h-28 lg:h-32 p-0 flex flex-col sm:overflow-hidden ${
+              className={`relative h-28 lg:h-32 p-0 flex flex-col sm:overflow-hidden rounded-md ${
                 isSameMonth(day, currentMonth) ? 'bg-slate-600/10' : 'bg-transparent opacity-40'
               } ${isToday ? 'rounded-md border-1 border-yellow-300 ring-1 ring-yellow-300/60 shadow-[0_0_30px_rgba(253,181,21,0.3)]' : ''} ${
                 shouldGlow ? 'newsletter-cell-glow' : ''
               }`}
-              onMouseEnter={() => setHoveredDate(dayString)}
-              onMouseLeave={() => setHoveredDate(null)}
             >
-              {/* Expand button - appears on hover when there are events */}
-              {hasEvents && isHovered && (
-                <button
-                  className="absolute top-0.5 right-0.5 z-50 w-5 h-5 bg-slate-800/90 hover:bg-[#003262] rounded-md flex items-center justify-center transition-all duration-200 border border-slate-600/50 hover:border-[#FDB515] shadow-lg"
-                  onClick={(e) => handleExpandClick(e, allDayEvents, day)}
-                  title={allDayEvents.length === 1 ? 'View event details' : `View all ${allDayEvents.length} events`}
-                >
-                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-                  </svg>
-                </button>
-              )}
               <div className={`text-xs  mb-0 lg:mb-1 flex-shrink-0 flex items-center gap-1 ${
                 isToday ? 'translate-x-[2px] text-yellow-500 font-black ' : 'text-white font-light'
               }`}>
@@ -684,11 +652,15 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className="text-[10px] px-0.5 rounded-sm border cursor-pointer hover:opacity-80 transition-opacity backdrop-blur-sm bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 border-purple-500/50 text-white hover:border-[#FDB515] font-medium overflow-hidden line-clamp-1 md:line-clamp-3"
+                        className="text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity backdrop-blur- bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 text-white font-medium overflow-hidden line-clamp-1 md:line-clamp-3"
                         title={isMultiple ? `${newsletterEv.multipleEvents?.length || 0} Newsletter Events` : `Newsletter: ${ev.title}`}
                         onClick={(e) => {
                           e.stopPropagation();
-                          onEventClick(ev);
+                          if (allDayEvents.length > 1 && onMultiEventClick) {
+                            onMultiEventClick(allDayEvents, day);
+                          } else {
+                            onEventClick(ev);
+                          }
                         }}
                         style={{
                           height: eventHeight
@@ -706,11 +678,15 @@ export default function MonthGrid({
                       return (
                         <div
                           key={ev.uid ?? ev.title + ev.start}
-                          className={`text-[10px] px-0.5 rounded-sm border cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1`}
+                          className={`text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1`}
                           title={`${ev.title} (${eventSpanDays} days)`}
                           onClick={(e) => {
                             e.stopPropagation();
-                            onEventClick(ev);
+                            if (allDayEvents.length > 1 && onMultiEventClick) {
+                              onMultiEventClick(allDayEvents, day);
+                            } else {
+                              onEventClick(ev);
+                            }
                           }}
                           style={{
                             height: eventHeight
@@ -727,11 +703,15 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`text-[10px] px-0.5 rounded-sm border cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden line-clamp-1 md:line-clamp-3`}
+                        className={`text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden line-clamp-1 md:line-clamp-3`}
                         title={ev.title}
                         onClick={(e) => {
                           e.stopPropagation();
-                          onEventClick(ev);
+                          if (allDayEvents.length > 1 && onMultiEventClick) {
+                            onMultiEventClick(allDayEvents, day);
+                          } else {
+                            onEventClick(ev);
+                          }
                         }}
                         style={{
                           height: eventHeight
@@ -752,11 +732,15 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`text-[10px] px-1 py-0.5 rounded-sm border cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden line-clamp-2 md:line-clamp-none`}
+                        className={`text-[10px] px-1 py-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden line-clamp-2 md:line-clamp-none`}
                         title={`${assignment ? assignment + ' - ' : ''}${courseName} (${ev.title})${eventHasQuiz ? ' - QUIZ TODAY!' : ''}`}
                         onClick={(e) => {
                           e.stopPropagation();
-                          onEventClick(ev);
+                          if (allDayEvents.length > 1 && onMultiEventClick) {
+                            onMultiEventClick(allDayEvents, day);
+                          } else {
+                            onEventClick(ev);
+                          }
                         }}
                         style={{
                           height: eventHeight

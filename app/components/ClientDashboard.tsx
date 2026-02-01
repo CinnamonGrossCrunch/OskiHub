@@ -34,6 +34,35 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
   
   // Dynamic layout state - track if DashboardTabs2 is taller than MainDashboardTabs
   const [isDash2Taller, setIsDash2Taller] = useState(false);
+  
+  // Track widget expanded states - exactly one must be expanded at all times
+  const [isMyWeekExpanded, setIsMyWeekExpanded] = useState(false);
+  const [isResourcesExpanded, setIsResourcesExpanded] = useState(true); // Resources default expanded
+  
+  // Handlers that ensure exactly one is always expanded
+  const handleMyWeekExpandChange = (expanded: boolean) => {
+    if (expanded) {
+      // Expanding MyWeek -> collapse Resources
+      setIsMyWeekExpanded(true);
+      setIsResourcesExpanded(false);
+    } else {
+      // Collapsing MyWeek -> expand Resources
+      setIsMyWeekExpanded(false);
+      setIsResourcesExpanded(true);
+    }
+  };
+  
+  const handleResourcesExpandChange = (expanded: boolean) => {
+    if (expanded) {
+      // Expanding Resources -> collapse MyWeek
+      setIsResourcesExpanded(true);
+      setIsMyWeekExpanded(false);
+    } else {
+      // Collapsing Resources -> expand MyWeek
+      setIsResourcesExpanded(false);
+      setIsMyWeekExpanded(true);
+    }
+  };
 
   // Fetch data if not provided (client-side fetching)
   useEffect(() => {
@@ -223,35 +252,30 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         </div> {/* Close Header */}
         
       {/* Main Content */}
-      <main className="max-w-[90rem] mx-auto px-3  sm:px-0 lg:px-4 py-0 relative">
+      <main className="max-w-[90rem] mx-auto  md:px-0 lg:px-4 py-0 relative">
         {/* Animated black overlay - z-index 20 (middle layer) */}
           <div 
             className="fixed inset-0 bg-black transition-opacity duration-300 ease-out pointer-events-none z-45"
             style={{ opacity: overlayOpacity / 100 }}
           />
-        {/* Section A: Haas Journey (Full Width Row) */}
-        <div className="mb-0 border-b border-slate-700">
-          <HaasJourneyWidget />
-        </div>
       
   
-        {/* Section B: My Week Widget and Weather Widget */}
-        <div className="flex flex-col lg:flex-row mt-2 lg:py-2 mb-0 gap-0 items-start -mx-3 sm:mx-0 lg:mx-0 transition-all duration-500 ease-in-out">
-          {/* Weather Widget - Side by side on small/medium, right-aligned, above My Week */}
-          <div className="flex-shrink-0 flex items-start justify-end w-full lg:w-auto lg:order-2 lg:min-w-0 mb-0 px-3 sm:px-0 transition-all duration-500 ease-in-out">
-            <div className="w-full lg:w-auto flex flex-row lg:flex-col gap-0 min-w-0 justify-end">
-              {/* Weather and Travel - side by side on small/medium, stacked on large */}
-              <WeatherWidget />
-              <TravelTimeWidget />
-            </div>
-          </div>
+        {/* Section B: My Week Widget, Resources, and Weather Widget */}
+        {/* Mobile: Stacked layout (Resources row → Weather/Travel row → MyWeek) */}
+        {/* Desktop (lg+): 8-column grid layout */}
+        {/* Col 1: MyWeek collapsed | Cols 2-6: Expansion area | Col 7: HaasJourney collapsed | Col 8: Weather/Travel */}
+        <div className="flex flex-col lg:grid lg:grid-cols-8 mt-2 lg:py-2 mb-0 gap-2 items-start sm:mx-0 lg:mx-0 transition-all duration-500 ease-in-out">
           
-          {/* My Week Widget - Grows to fill available space, below weather on small/medium */}
-          <div className="flex-grow flex items-center min-w-0 w-full lg:order-1 transition-all duration-500 ease-in-out">
+          {/* My Week Widget - Column 1 collapsed, expands into Cols 1-5 */}
+          <div className={`order-3 lg:order-1 w-full transition-all duration-500 ease-in-out px-3 sm:px-0 ${
+            isMyWeekExpanded ? 'lg:col-span-5' : 'lg:col-span-1'
+          }`}>
             {!loading && dashboardData && (
               <MyWeekWidget 
                 data={dashboardData.myWeekData}
                 selectedCohort={selectedCohort}
+                isExpanded={isMyWeekExpanded}
+                onExpandChange={handleMyWeekExpandChange}
               />
             )}
             {loading && (
@@ -261,10 +285,28 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
               </div>
             )}
           </div>
+          
+          {/* Haas Journey Resources - Column 7 collapsed, expands into Cols 2-7 */}
+          <div className={`order-1 lg:order-2 w-full transition-all duration-500 ease-in-out px-3 sm:px-0 ${
+            isResourcesExpanded ? 'lg:col-span-6 lg:col-start-2' : 'lg:col-span-1 lg:col-start-7'
+          }`}>
+            <HaasJourneyWidget 
+              isExpanded={isResourcesExpanded} 
+              onExpandChange={handleResourcesExpandChange}
+            />
+          </div>
+          
+          {/* Weather/Travel Widget - Column 8 (fixed) */}
+          <div className="order-2 lg:order-3 lg:col-span-1 lg:col-start-8 w-full flex items-start justify-between lg:justify-end px-3 sm:px-0 transition-all duration-500 ease-in-out">
+            <div className="w-full flex flex-row lg:flex-col gap-0 min-w-0 justify-between lg:justify-end">
+              <WeatherWidget />
+              <TravelTimeWidget />
+            </div>
+          </div>
         </div>
         
         {/* Section C: Dashboard Tabs */}
-        <div className="grid grid-cols-1 lg:grid-cols-8 lg:auto-rows-min gap-1 mt-4 mb-6 -mx-3 sm:mx-0 lg:mx-0 transition-[margin-top,transform] duration-1200 ease-in-out will-change-transform">
+        <div className="grid grid-cols-1 lg:grid-cols-8 lg:auto-rows-min gap-1 mt-4 mb-6  md:mx-0 lg:mx-2 transition-[margin-top,transform] duration-1200 ease-in-out will-change-transform">
           {/* Left Column: MainDashboardTabs - Always 6 columns on large screens */}
           <div className="lg:col-span-6 lg:row-span-1">
             <div id="main-dashboard-tabs" className="transition-all duration-700 ease-in-out">{/* Removed px-3 sm:px-0 lg:px-0 - let parent grid handle spacing */}

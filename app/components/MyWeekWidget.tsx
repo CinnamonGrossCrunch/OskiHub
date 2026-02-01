@@ -40,12 +40,18 @@ interface MyWeekWidgetProps {
   // Direct data from unified API
   data?: MyWeekData;
   selectedCohort?: CohortType;
+  isExpanded?: boolean;
+  onExpandChange?: (isExpanded: boolean) => void;
 }
 
-export default function MyWeekWidget({ data, selectedCohort = 'blue' }: MyWeekWidgetProps) {
+export default function MyWeekWidget({ data, selectedCohort = 'blue', isExpanded = false, onExpandChange }: MyWeekWidgetProps) {
   const [weekData, setWeekData] = useState<MyWeekData | null>(data || null);
   const [loading, setLoading] = useState(!data); // If data provided, don't start loading
-  const [isExpanded, setIsExpanded] = useState(false); // Toggle state for events list - default collapsed on all screens
+
+  // Use controlled state from parent
+  const setIsExpanded = (value: boolean) => {
+    onExpandChange?.(value);
+  };
 
   // Function to handle MyWeek event clicks
   const handleEventClick = (event: React.MouseEvent, eventData: WeeklyEvent) => {
@@ -317,13 +323,13 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue' }: MyWeekWi
           {/* Toggle button for all screens - centered at bottom on small screens, positioned near "My Week" on md+ */}
               <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite] absolute bottom-1 left-1/2 -translate-x-1/2 translate-x-[-110px] translate-y-[5px] scale-70 md:scale-100 md:bottom-auto md:top-0 md:left-[100px] md:translate-x-0 ${
+              className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite] absolute bottom-2 left-[90px] translate-y-[5px] scale-70 md:scale-100 md:bottom-auto md:top-0 md:left-[100px] md:translate-x-0 md:translate-y-10 ${
                 !isExpanded ? 'md:translate-x-[10px] md:translate-y-[0px]': 'md:translate-x-10 md:translate-y-0 md:w-5 md:h-5'
               }`}
               aria-label={isExpanded ? 'Collapse events' : 'Expand events'}
               >
               <svg
-                className={`w-5 h-5 text-white/50 transition-transform duration-500 ease-in-out ${isExpanded ? ' md:scale-80 rotate-[315deg]' : 'rotate-0'}`}
+                className={`w-5 h-5 text-white/50 transition-transform duration-500 ease-in-out ${isExpanded ? ' md:scale-80 rotate-[225deg]' : 'rotate-0'}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -335,7 +341,7 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue' }: MyWeekWi
         </div>
 
           {/* Events Section */}
-          <div className={`flex-1 mr-5 min-w-0 space-y-0 w-full px-0 transition-all duration-500 overflow-hidden ${!isExpanded ? 'w-0 min-w-0 opacity-0 p-0' : 'p-1'}`}>
+          <div className={`flex-1 md:ml-10 -mr-20 min-w-0 space-y-0 w-full px-0 transition-all duration-500 overflow-hidden ${!isExpanded ? 'w-0 min-w-0 opacity-0 p-0' : 'p-1'}`}>
           {/* AI Summary */}
           {/* {currentSummary && (
             <div className="flex items-start backdrop-blur-md bg-turbulence gap-3 rounded-2xl p-1 mb-1">

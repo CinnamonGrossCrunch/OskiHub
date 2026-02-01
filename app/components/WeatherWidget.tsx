@@ -105,8 +105,16 @@ export default function WeatherWidget() {
     );
   }
 
-return (
-    <div className="-mt-2 flex flex-col justify-center backdrop-blur-sm w-1/2 lg:w-1/2 lg:ml-auto px-2 h-17 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%]">
+const handleClick = () => {
+    window.open('https://www.timeanddate.com/weather/usa/berkeley', '_blank');
+  };
+
+  return (
+    <div 
+      onClick={handleClick}
+      className="-mt-2 flex flex-col justify-center backdrop-blur-sm w-1/2 lg:w-1/2 lg:ml-auto px-2 h-17 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] cursor-pointer hover:bg-white/5 transition-colors"
+      title="View detailed Berkeley weather"
+    >
       {/* Small screens: All elements in one horizontal line */}
       {/* Large screens: Header on top (right-aligned), content below in two columns */}
       
