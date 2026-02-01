@@ -338,13 +338,7 @@ export default function CalendarListView({
       data-calendar-list-view
     >
       {/* Widget Header */}
-      <div className="widget-header">
-        <header className="header-container mx-0 md:-mt-4  -mb-1  w-full flex items-center justify-start px-0 py-0  rounded-tr-lg rounded-tl-lg">
-          <h3 className="text-white p-3 text-base urbanist-medium tracking-wide leading-none m-0 p-0">
-            {title}
-          </h3>
-        </header>
-      </div>
+      
 
       {/* Widget Content */}
       <div className="widget-content px-1 py-2 relative bg-slate-500/10 ">
@@ -362,7 +356,7 @@ export default function CalendarListView({
           <div className="events-container relative">
             <div 
               ref={scrollContainerRef}
-              className="flex gap-1 overflow-x-auto scrollbar-hide scroll-smooth pb-2"
+              className="flex gap-1 overflow-x-auto scrollbar-hide scroll-smooth pb-0"
               style={{ 
                 scrollbarWidth: 'none',
                 msOverflowStyle: 'none',
@@ -415,7 +409,7 @@ export default function CalendarListView({
           return (
             <div 
             key={ev.uid || `${ev.title}-${ev.start}`}
-            className="event-card bg-black/20 flex-shrink-0 w-45    p-2 rounded-lg  transition-all duration-200 ease-in-out cursor-pointer"
+            className="event-card bg-black/20 flex-shrink-0 w-35   p-2 rounded-lg  transition-all duration-100 ease-in-out cursor-pointer hover:box-shadow  hover:bg-violet-500/10 hover:transform hover:translate-y-[-1px]"
             onClick={() => handleEventClick(ev)}
             >
             <div className="event-content flex flex-col h-full">
@@ -426,11 +420,11 @@ export default function CalendarListView({
               >
               {daysRemainingText}
               </div>
-              <h4 className="event-title urbanist-light text-white dark:text-white text-sm mb-2 line-clamp-2 flex-grow">
+              <h4 className="event-title urbanist-light text-white dark:text-white text-sm mb-0 line-clamp-2 flex-grow">
               {ev.title}
               </h4>
               <div className="event-meta space-y-1 mt-auto">
-              <div className="event-time text-xs text-slate-600 dark:text-slate-400">
+                {/* <div className="event-time text-xs text-slate-600 dark:text-slate-400">
                 <div 
                 className="inline-block w-3 h-3 rounded-full mr-2" 
                 style={{ backgroundColor: circleColor }}
@@ -441,7 +435,7 @@ export default function CalendarListView({
                   : `${format(start, 'MMM d, h:mm a')} ${end ? `- ${format(end, 'h:mm a')}` : ''}`
                 }
                 </span>
-              </div>
+                </div> */}
               </div>
             </div>
             </div>

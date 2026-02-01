@@ -328,7 +328,7 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue', isExpanded
               aria-label={isExpanded ? 'Collapse events' : 'Expand events'}
               >
               <svg
-                className={`w-5 h-5 text-white/50 transition-transform duration-500 ease-in-out ${isExpanded ? ' md:scale-80 rotate-[225deg]' : 'rotate-0'}`}
+                className={`w-5 h-5 bg-none text-white/50 md:scale-80 transition-transform duration-1000 ease-in-out ${isExpanded ? '  md:scale-80 rotate-[225deg]' : 'rotate-0'}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

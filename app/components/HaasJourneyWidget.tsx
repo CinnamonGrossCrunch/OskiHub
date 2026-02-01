@@ -154,7 +154,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
   };
 
   return (
-    <div className={`select-none rounded-3xl py-2 mr-1 bg-violet-100/10 ${STYLES.container} ${className}`}>
+    <div className={`select-none rounded-none lg:rounded-3xl py-0 lg:py-2 mr-1  bg-none lg:bg-violet-100/10 ${STYLES.container} ${className}`}>
       {/* Mobile Layout - Always visible compact 6-icon horizontal row */}
       <div className="lg:hidden">
         <div className={STYLES.gridMobile}>
@@ -200,7 +200,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
             aria-label={isOpen ? 'Collapse resources' : 'Expand resources'}
           >
             <svg
-              className={`w-5 h-5 text-white/50 scale-80 transition-transform duration-600 ease-in-out ${isOpen ? 'rotate-[225deg]' : 'rotate-0'}`}
+              className={`w-5 h-5 text-white/50 scale-80 transition-transform duration-1000 ease-in-out ${isOpen ? 'rotate-[225deg] ' : 'rotate-0'}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -211,7 +211,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
           </button>
           {/* "Haas Official" and "Critical Links" text - styled like MyWeekWidget, always visible */}
           <div 
-            className="flex flex-col items-end justify-center whitespace-nowrap transition-all duration-500 ease-in-out"
+            className="flex flex-col items-end justify-center whitespace-nowrap transition-all duration-1000 ease-in-out h-full mr-1"
           >
             <span className="text-lg md:text-lg font-extralight text-slate-400">
               Haas Official

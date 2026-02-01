@@ -172,7 +172,7 @@ export default function MainDashboardTabs({
         {activeTab === 'OskiHub Cal' && (
           <div>
             {/* What's Next Widget - Horizontal Layout (PRESERVED) */}
-            <div className="mb-2 px-4 sm:px-6 lg:px-0">
+            <div className="mb-2 lg:px-0 px-0 sm:px-6 lg:px-0">
               <CalendarListView 
                 cohortEvents={cohortEvents}
                 defaultCohort={selectedCohort}
