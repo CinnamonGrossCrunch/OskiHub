@@ -1,17 +1,17 @@
 {
   "newsletterData": {
-    "sourceUrl": "http://eepurl.com/jxAlUU",
-    "title": "[EWMBA] Bear Necessities 1-22-26",
+    "sourceUrl": "http://eepurl.com/jx9_JA",
+    "title": "[EWMBA] Bear Necessities 1-28-26",
     "sections": [
       {
         "sectionTitle": "This Week",
         "items": [
           {
             "title": "Class of 2026 & 2027",
-            "html": "<h4>Class of 2026 & 2027</h4><p>Spring 2026 Add/Drop Reminders</p><ul><li>Add/Drop Round 3 ends on Thu, 1/29 @ 12PM (noon) PST. Results for Round 3 will be available on 1/29 @ 1pm PT on <a href=\"https://olr.haas.berkeley.edu/\" target=\"_blank\" rel=\"noopener noreferrer\">OLR</a>.</li><li>Add/Drop Round 4 opens on Thu, 1/29 at 4PM PST. This is the last chance to add classes.</li><li>Drop Only Round: Thurs, Jan 29, 4PM PST - Mon, Feb 2, 11:59PM PST.</li><li>Full-Time Course Sign Up closes Thursday Jan 29, 12 noon PST.<ul><li>Please refer to the <a href=\"https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/\" target=\"_blank\" rel=\"noopener noreferrer\">Registration Timeline</a> as well for Add/Drop Round Dates</li></ul></li></ul>",
+            "html": "<h4>Class of 2026 & 2027</h4><p>Spring 2026 Add/Drop Reminders</p><ul><li>Drop Only Round Ends Mon, Feb 2, 11:59PM PST.</li><li>Be sure to check <a href='https://olr.haas.berkeley.edu/' target='_blank' rel='noopener noreferrer'>OLR</a> during the Drops Only Round and drop any classes you no longer want to take, including those that you are on the waitlist for.</li><li>If you remain on a waitlist, you may be automatically enrolled (without any notice) as drops occur.</li></ul>",
             "timeSensitive": {
               "dates": [
-                "2026-01-29"
+                "2026-02-02"
               ],
               "eventType": "deadline",
               "priority": "high"
@@ -23,34 +23,45 @@
         "sectionTitle": "Announcements",
         "items": [
           {
-            "title": "Haas Reception with Nexus students in the Class of 2028",
-            "html": "<h4>Haas Reception with Nexus students in the Class of 2028</h4><p><br />Saturday, Feb 21, 2026</p><ul><li>All Class of 2028 students and Flex students in the Class of 2027 received an email invitation.</li><li>RSVP using the emailed link by Thursday, Feb 5 at 11:59PM PST</li><li>Note: Students enrolled in Nexus Leadership Communications completed the RSVP process in the pre-course survey and do not need an additional RSVP.</li><li>If you didn’t receive an email and wish to attend, please contact the <a href=\"mailto:ewmba_office@haas.berkeley.edu\" target=\"_blank\" rel=\"noopener noreferrer\">Program Office</a>.</li></ul>",
+            "title": "Haas Building Access Changes",
+            "html": "<h4>Haas Building Access Changes</h4><ul><li>Students should have received an email on Jan 22 with the subject line, 'Changes to Evening Access to Haas Buildings, Beginning Feb 1'.</li><li>Starting Sunday, Feb 1, Haas building perimeter doors will require Cal1 card access starting at 7PM PST.<ul><li>These changes are being made in an effort to create a safer environment for the Haas community</li></ul></li><li>Please note that building hours will remain unchanged.<ul><li>For a <a href='https://haas.berkeley.edu/facilities/building-hours/' target='_blank' rel='noopener noreferrer'>full list of Haas Building Hours</a>, please visit the Facilities at Haas website</li></ul></li><li>The Program Office would like to remind students to carry their Cal1 card with them at all times.</li></ul>",
             "timeSensitive": {
               "dates": [
-                "2026-02-05"
+                "2026-02-01"
+              ],
+              "eventType": "announcement",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
+            "html": "<h4>UC LAUNCH Startup Accelerator Spring 2026 Application Now Available</h4><p>Deadline to Apply is Wednesday, Feb 4 at 11:59PM</p><ul><li>UC LAUNCH is an accelerator that supports early-stage startups that have already validated their idea and achieved product-market fit, and are ready to scale rapidly.</li><li>Applicants who are selected for UC LAUNCH will recieve:<ul><li>Paired mentorship with industry experts</li><li>Training in scaling your business</li><li>A chance to win up to $50K+ in prizes at Demo Day</li></ul></li><li>For a list of key program dates, applicant criterion, and to apply for Spring 2026, please visit the <a href='https://docs.google.com/forms/d/e/1FAIpQLSfUGffqmd0EfY57VZySEQ4weosjcjcm419KxmwZX2KMWIYJ5Q/viewform' target='_blank' rel='noopener noreferrer'>UC LAUNCH Startup Accelerator Spring 2026 Application Form</a>.</li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-04"
               ],
               "eventType": "deadline",
               "priority": "medium"
             }
           },
           {
-            "title": "Ladle & Leaf Now Open",
-            "html": "<h4>Ladle & Leaf Now Open</h4><ul><li>Ladle &amp; Leaf is now open in the Café Think space.<ul><li>Ladle &amp; Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area  </li></ul></li><li>Ladle &amp; Leaf is open Monday's to Thursday's from 8AM to 8:15 PM PST, and on Friday's from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></li><li>Students are highly encouraged to visit Ladle &amp; Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses. </li></ul>"
-          },
-          {
-            "title": "Class of 2027 - Biz Comm Post Event Survey Reminder",
-            "html": "<h4>Class of 2027 - Biz Comm Post Event Survey Reminder</h4><br />Survey closes Sunday, Jan 25 at 11:59PM PT<ul><li>Students who attended Biz Comm 2026 should have received an email with the subject line,\"[EWMBA] Biz Comm Feedback Requested\".   <ul><li>The email contains a link to the Biz Comm 2026 Post Event Feedback Survey</li></ul></li><li>The Program Office greatly appreciates constructive feedback to help us refine future events &amp; courses!</li></ul>"
-          },
-          {
-            "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><br />Lottery Closes Friday, Feb 6 at 11:59 PM PST<ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform\" target=\"_blank\" rel=\"noopener noreferrer\">Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href=\"https://www.climatecap.org/mba-summit\" target=\"_blank\" rel=\"noopener noreferrer\">learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage. </li></ul>",
+            "title": "Calvanize Showcase Day",
+            "html": "<h4>Calvanize Showcase Day</h4><p>Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall</p><ul><li>Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator.</li><li><a href='https://luma.com/kib5sqg9' target='_blank' rel='noopener noreferrer'>Registration for Calvanize Showcase Day</a> is now open.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-06"
               ],
-              "eventType": "deadline",
+              "eventType": "event",
               "priority": "medium"
             }
+          },
+          {
+            "title": "International Exchange Applications Now Open",
+            "html": "<h4>International Exchange Applications Now Open</h4><p>Applications Due Before Mar 13, 12PM PST</p><ul><li>Review the <a href='https://drive.google.com/file/d/18diQaugJhPllAfrWeri9SCJK_Pbn7J5H/view' target='_blank' rel='noopener noreferrer'>2026-27 International Exchange slide deck</a> and our <a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>International Exchange webpage for a timeline of key dates and deadlines</a> for more information.</li></ul>"
+          },
+          {
+            "title": "Int’l Advising Drop In Hours",
+            "html": "<h4>Int’l Advising Drop In Hours</h4><p>Feb 4, Feb 16, and Mar 10</p><ul><li>Jason Choi will be hosting three (3) Zoom drop-in hours to answer any questions about international exchange.<ul><li>Please note that these drop-in hours will not be recorded</li></ul></li><li><a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>Zoom links to the drop-in hours</a> are hyperlinked on the International Exchange webpage</li></ul>"
           }
         ]
       },
@@ -58,8 +69,23 @@
         "sectionTitle": "Important Reminders",
         "items": [
           {
-            "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href=\"https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/\" target=\"_blank\" rel=\"noopener noreferrer\">Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President &amp; CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event. </li></ul>",
+            "title": "Ladle & Leaf Now Open",
+            "html": "<h4>Ladle & Leaf Now Open</h4><ul><li>Ladle &amp; Leaf is now open in the Café Think space.<ul><li>Ladle &amp; Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area</li></ul></li><li>Ladle &amp; Leaf is open Mondays to Thursdays from 8AM to 8:15 PM PST, and on Fridays from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></li><li>Students are highly encouraged to visit Ladle &amp; Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses.</li></ul>"
+          },
+          {
+            "title": "Haas Reception with Nexus students in the Class of 2028",
+            "html": "<h4>Haas Reception with Nexus students in the Class of 2028</h4><p>Saturday, Feb 21, 2026</p><ul><li>All Class of 2028 students and Flex students in the Class of 2027 received an email invitation.</li><li>RSVP using the emailed link by Thursday, Feb 5 at 11:59PM PST</li><li>Note: Students enrolled in Nexus Leadership Communications completed the RSVP process in the pre-course survey and do not need an additional RSVP.</li><li>If you didn’t receive an email and wish to attend, please contact the <a href='mailto:ewmba_office@haas.berkeley.edu' target='_blank' rel='noopener noreferrer'>Program Office</a>.</li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-21"
+              ],
+              "eventType": "event",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
+            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href='https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/' target='_blank' rel='noopener noreferrer'>Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President &amp; CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-05"
@@ -69,8 +95,19 @@
             }
           },
           {
-            "title": "Berkeley StEP Spring 2026 Application and Virtual Info Sessions Now Available",
-            "html": "<h4>Berkeley StEP Spring 2026 Application and Virtual Info Sessions Now Available</h4><ul><li>Deadline to apply is Feb 7, 2026 at 11:50PM PST</li><li>StEP was developed by former students to create the next generation of UC Berkeley startups. </li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks &amp; up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform\" target=\"_blank\" rel=\"noopener noreferrer\">Berkeley StEP Spring 2026</a> is now available. </li><li>Sign up for a virtual info session to learn more about StEP program and application process.</li><li>The dates and respective signup links are as follows: <ul><li><a href=\"https://luma.com/36heumvj\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Monday, Jan 26, 12PM - 1PM PST</a></li><li><a href=\"https://luma.com/x25ga7hv\" target=\"_blank\" rel=\"noopener noreferrer\">StEP Spring 2026 Virtual Info Session on Thursday, Jan 29, 4PM - 5PM PST</a></li></ul></li></ul>",
+            "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
+            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p>Lottery Closes Friday, Feb 6 at 11:59 PM PST</p><ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform' target='_blank' rel='noopener noreferrer'>Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href='https://www.climatecap.org/mba-summit' target='_blank' rel='noopener noreferrer'>learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage.</li></ul>",
+            "timeSensitive": {
+              "dates": [
+                "2026-02-06"
+              ],
+              "eventType": "deadline",
+              "priority": "medium"
+            }
+          },
+          {
+            "title": "Berkeley StEP Spring 2026 Application Now Available",
+            "html": "<h4>Berkeley StEP Spring 2026 Application Now Available</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST</p><ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks &amp; up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href='https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform' target='_blank' rel='noopener noreferrer'>Berkeley StEP Spring 2026</a> is now available.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-07"
@@ -85,16 +122,16 @@
         "sectionTitle": "Saturday Scoop",
         "items": [
           {
-            "title": "Classes Start Saturday Jan 24",
-            "html": "<h4>Classes Start Saturday Jan 24</h4><ul><li>Looking forward to a great spring!</li><li>Review your classroom locations here in the <a href=\"https://docs.google.com/spreadsheets/d/1gifGXNUlxZ0w-Nd1mtMKrv4rrsvDqKxjsYnrjE0b2sk/edit?gid=2115339531#gid=2115339531\" target=\"_blank\" rel=\"noopener noreferrer\">Spring 2026 Comprehensive Calendar</a> here. (Locations subject to change! Please check again the first day of class.)</li></ul>"
+            "title": "EWMBA Days At Haas",
+            "html": "<h4>EWMBA Days At Haas</h4><ul><li>Please expect extra guests in and around Chou Hall for this Haas admissions yield event. Thank you for your patience!</li></ul>"
           },
           {
             "title": "Program Office Staff",
-            "html": "<h4>Program Office Staff</h4><ul><li>This week's Program Office staff is Hannah Fischer and Christine Lee, our Student Assistant. Drop by S440 and say hello!</li></ul>"
+            "html": "<h4>Program Office Staff</h4><ul><li>This week's Program Office staff is Jason Choi and Christine Lee, our Student Assistant. Drop by S440 and say hello!</li></ul>"
           },
           {
-            "title": "Parking & Transportation - Minor Advisory",
-            "html": "<h4>Parking & Transportation - Minor Advisory</h4><ul><li>Berkeley Law Lot and Underhill, etc should be available. Please take note of any posted signs at lot entrances or specific spots.</li><li>Bowles Lot might be closed or have reserved spaces for a Rugby game.</li></ul>"
+            "title": "Parking & Transportation - No Advisories as of Thursday",
+            "html": "<h4>Parking & Transportation - No Advisories as of Thursday</h4><ul><li>Berkeley Law Lot, Bowles and Underhill should be available. Please take note of any posted signs at lot entrances or specific spots.</li></ul>"
           }
         ]
       },
@@ -102,16 +139,8 @@
         "sectionTitle": "Career Corner",
         "items": [
           {
-            "title": "Resume Workshop",
-            "html": "<h4>Resume Workshop</h4><p>Tuesday, Jan 27; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101327010\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>This workshop is going to walk you through how a recruiter or hiring manager might evaluate a resume, and along the way highlight how you might alter your resume to help them help you.</li></ul>"
-          },
-          {
-            "title": "Transferable Skills",
-            "html": "<h4>Transferable Skills</h4><p>Wednesday, Jan 28; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101328482\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>\"Transferable Skills\" is a term you'll hear frequently, especially if you are changing roles and/or industries.</li><li>This workshop will help you describe your accomplishments in a way that your new audience can easily understand.<ul><li>This workshop is especially relevant for pivoters</li></ul></li><li>Through lectures, individual &amp; small group learning activities, and Q&amp;A's, you will learn: <ul><li>A way to explicitly talk about your transferable skills</li><li>How to elevate your skills-based stories by making them applicable to another role, organization, or industry</li><li>Make your past relevant and valuable to your future</li></ul></li></ul>"
-          },
-          {
             "title": "Product Management Resumes",
-            "html": "<h4>Product Management Resumes</h4><p>Wednesday, Feb 4; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101327012\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>Come learn how a Product recruiter or hiring manager would evaluate a resume, and some tips and tricks on how to frame your work and gear your resume towards a product mindset.</li></ul>",
+            "html": "<h4>Product Management Resumes</h4><p>Wednesday, Feb 4; 12-1:00PM PST, <a href='https://mba-haas-berkeley.12twenty.com/events/30006101327012' target='_blank' rel='noopener noreferrer'>CMG Bears</a></p><ul><li>Come learn how a Product recruiter or hiring manager would evaluate a resume, and some tips and tricks on how to frame your work and gear your resume towards a product mindset.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-04"
@@ -122,7 +151,7 @@
           },
           {
             "title": "Your Intro Story for Career Conversations",
-            "html": "<h4>Your Intro Story for Career Conversations</h4><p>Thursday, Feb 5; 12-1:00PM PST, <a href=\"https://mba-haas-berkeley.12twenty.com/events/30006101328483\" target=\"_blank\" rel=\"noopener noreferrer\">CMG Bears</a></p><ul><li>In this workshop, you will identify elements that make a great introduction that helps others engage you in a conversation.<ul><li>This is useful for networking events such as conferences and company events.</li></ul></li></ul>",
+            "html": "<h4>Your Intro Story for Career Conversations</h4><p>Thursday, Feb 5; 12-1:00PM PST, <a href='https://mba-haas-berkeley.12twenty.com/events/30006101328483' target='_blank' rel='noopener noreferrer'>CMG Bears</a></p><ul><li>In this workshop, you will identify elements that make a great introduction that helps others engage you in a conversation.<ul><li>This is useful for networking events such as conferences and company events.</li></ul></li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-05"
@@ -130,80 +159,52 @@
               "eventType": "event",
               "priority": "medium"
             }
+          },
+          {
+            "title": "Creating Engaging Behavioral Stories",
+            "html": "<h4>Creating Engaging Behavioral Stories</h4><p>Wednesday, Feb 11 ; 5-6:30PM PST, <a href='https://mba-haas-berkeley.12twenty.com/events/30006101328492' target='_blank' rel='noopener noreferrer'>CMG Bears</a></p><ul><li>In this workshop, we will take a step-by-step approach to convert your memorable experiences into an engaging story to share in behavioral interviews. Along the way, you learn what elements make a story engaging and what elements provide structure. From this class, you will walk away with one complete story.</li></ul>"
+          },
+          {
+            "title": "Learn to Speak Tech and Talk like a PM",
+            "html": "<h4>Learn to Speak Tech and Talk like a PM</h4><p>Wednesday, Feb 11 ; 12-1:00PM PST, <a href='https://mba-haas-berkeley.12twenty.com/events/30006101327013' target='_blank' rel='noopener noreferrer'>CMG Bears</a></p><ul><li>Come learn some fundamentals of how Product Managers in Tech speak - including basic language around product development, design and engineering. Learn how to translate your experiences into more tech-friendly speak and talk about your skills in a way that resonates with people working in tech!</li></ul>"
           }
         ]
       },
       {
-        "sectionTitle": "PO Tips & Tidbits",
+        "sectionTitle": "PO Tips and Tidbits",
         "items": [
           {
-            "title": "Planning Ahead for Spring 2026 Fees",
-            "html": "<h4>Planning Ahead for Spring 2026 Fees</h4><br /><br /><br /><strong>How to Calculate the Spring 2026 Fees</strong><ul><li>The all inclusive per unit fee for 2025-2026 is $3,972. Multiply that by the number of units you will be taking to calculate your total tuition.</li><li>Enrollment in the Fee Payment Plan is per semester, not per year. Students must enroll in the plan again for Spring 2026.</li></ul><strong>Setting up your Direct Deposit Account</strong><ul><li>A Direct Deposit Electronic Funds Transfer Account is the easiest way to get refunds or other payments.</li><li>Go to CalCentral &gt; My Finances &gt; Financial Resources &gt; Billing &amp; Payments &gt; Direct Deposit. Complete the steps to set up your account.</li></ul><strong>1098-T Form</strong><ul><li>Students will receive notification that their 1098-T form is read by the end of Jan 2026. More information here on the <a href=\"https://studentbilling.berkeley.edu/irs-form-1098-t-tax-form-information/accessing-your-1098-t-form-online\" target=\"_blank\" rel=\"noopener noreferrer\">Student Billing website</a>.</li></ul>"
+            "title": "bCourses Troubleshooting - Not Seeing Enrolled Courses",
+            "html": "<h4>bCourses Troubleshooting - Not Seeing Enrolled Courses</h4><ul><li>Don't see one of the bCourses site for a course you are enrolled in?<ul><li>If the course has not started yet, please allow professors time to finalize the bCourses site</li><li>If the course has started, double check your enrollment in CalCentral</li></ul></li><li>If you are enrolled, CalCentral and bCourses sync overnight and you should have access after that time.</li><li>Did you know? The Courses window will only list so many courses.<ul><li>To update which courses you see, in the left nav, click on Courses > All Courses.</li><li>There is a limit on how many courses can be shown in that view and on your dashboard</li><li>You can star or unstar courses to customize what comes up when you log in</li><li>Please note that courses are not sorted in any particular order</li></ul></li></ul>"
+          },
+          {
+            "title": "How to Calculate Spring 2026 Fees",
+            "html": "<h4>How to Calculate Spring 2026 Fees</h4><ul><li>The all inclusive per unit fee for 2025-2026 is $3,972. Multiply that by the number of units you will be taking to calculate your total tuition.</li><li>Enrollment in the Fee Payment Plan is per semester, not per year. Students must enroll in the plan again for Spring 2026.</li></ul>"
+          },
+          {
+            "title": "Setting up your Direct Deposit Account",
+            "html": "<h4>Setting up your Direct Deposit Account</h4><ul><li>A Direct Deposit Electronic Funds Transfer Account is the easiest way to get refunds or other payments.</li><li>Go to CalCentral > My Finances > Financial Resources > Billing & Payments > Direct Deposit. Complete the steps to set up your account.</li></ul>"
+          },
+          {
+            "title": "1098-T Form",
+            "html": "<h4>1098-T Form</h4><ul><li>Students will receive notification that their 1098-T form is read by the end of Jan 2026. More information here on the <a href='https://studentbilling.berkeley.edu/irs-form-1098-t-tax-form-information/accessing-your-1098-t-form-online' target='_blank' rel='noopener noreferrer'>Student Billing website</a>.</li></ul>"
           }
         ]
       }
     ],
     "aiDebugInfo": {
-      "reasoning": "The JSON structure preserves all sections and items, maintaining the original content, headers, lists, and links as specified. The content is organized into sections with titles and items, each with a title and HTML content, matching the provided newsletter.",
+      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as instructed, organizing the newsletter into sections and items with appropriate HTML tags.",
       "sectionDecisions": [],
       "edgeCasesHandled": [],
       "totalSections": 6,
-      "processingTime": 46321
+      "processingTime": 23269
     },
     "aiMeta": {}
   },
   "myWeekData": {
-    "weekStart": "2026-01-25",
-    "weekEnd": "2026-02-02",
+    "weekStart": "2026-02-01",
+    "weekEnd": "2026-02-09",
     "blueEvents": [
-      {
-        "date": "2026-01-25",
-        "time": "7:00 PM",
-        "title": "GSI Section - Week 3",
-        "type": "other",
-        "priority": "medium",
-        "description": "GSI: Patrik Raty\nTopic: Week 3 material review and Problem Set 2\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
-        "location": "Zoom",
-        "url": "https://berkeley.zoom.us/j/6988413081"
-      },
-      {
-        "date": "2026-01-26",
-        "time": "6:00 PM",
-        "title": "Week 4: Financial Statement Analysis & Non-GAAP (Blue Cohort)",
-        "type": "assignment",
-        "priority": "high",
-        "description": "Topic: Financial Statement Analysis and Non-GAAP Reporting\n\nObjectives:\n• Analyze cash conversion cycle\n• Analyze financial statements\n• Describe non-GAAP reporting\n\nPre-Class Materials:\n• Textbook: 4.1-4.14, 6.16-6.17, 5.3-5.6, 5.22-5.33\n• Article 5: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3272286273\n\nAssignments:\n• Homework 2 DUE (Tuesday 1/27)\n• Prepare J Prep Case report for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-4"
-      },
-      {
-        "date": "2026-01-27",
-        "time": "6:30 PM",
-        "title": "DEADLINE: Homework 2 Due",
-        "type": "assignment",
-        "priority": "high",
-        "description": "Homework 2 must be submitted on bCourses before 6:30 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
-      },
-      {
-        "date": "2026-01-28",
-        "time": "6:00 PM",
-        "title": "Class 4: Labor Markets",
-        "type": "class",
-        "priority": "medium",
-        "description": "Topic: Labor Markets\n\nNote: Week 4 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
-        "location": "Berkeley Haas",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-4"
-      },
-      {
-        "date": "2026-01-30",
-        "time": "5:00 PM",
-        "title": "DEADLINE: Group and Topic Selection Due",
-        "type": "assignment",
-        "priority": "high",
-        "description": "DEADLINE: Friday Jan 30 @ 5pm\n\nForm groups of 5 students and rank debate topic preferences.\nYes/No position will be assigned by instructor.\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform\n\nNote: Groups will be assigned if you don't form one.",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform"
-      },
       {
         "date": "2026-02-01",
         "time": "7:00 PM",
@@ -215,11 +216,68 @@
         "url": "https://berkeley.zoom.us/j/6988413081"
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-02-02",
+        "time": "6:00 PM",
+        "title": "Week 5: ESG Reporting, Accounts Receivables & Inventories (Blue Cohort)",
+        "type": "assignment",
+        "priority": "high",
+        "description": "Topic: ESG Reporting, Accounts Receivables & Inventories\n\nObjectives:\n• Describe ESG reporting\n• Describe the process for accounts receivables\n• Describe the financial accounting of inventories\n\nPre-Class Materials:\n• Textbook: 5.17-5.21 and 6.1-6.11\n• Article 6: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2938264461\n• Article 7: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2906681028\n• Climate Reporting Case\n\nAssignments:\n• J Prep Case report DUE (Tuesday 2/3)\n• Take Online Quiz 2 (Feb 6-8)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
+        "location": "Chou Hall N370",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-5"
+      },
+      {
+        "date": "2026-02-03",
+        "time": "6:00 PM",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "type": "assignment",
+        "priority": "high",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
+      },
+      {
+        "date": "2026-02-04",
+        "time": "6:00 PM",
+        "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
+        "type": "exam",
+        "priority": "high",
+        "description": "IN-CLASS MIDTERM EXAM (First Half of Class)\nTopic: Business Cycles I - Measurement and Indicators\n\nMIDTERM DETAILS:\n• Covers material from Weeks 1-4 (Labor Markets)\n• Exam Format: Multiple choice + box for reasoning\n• Allowed: One-page notes (one-side) and calculator\n• Practice exams: Midterms 2022-2025 available on bCourses\n\nObjectives:\n• Identify recessions and booms\n• Indicators of booms and recessions\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
+        "location": "Berkeley Haas",
+        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-5"
+      },
+      {
+        "date": "2026-02-06",
+        "time": "12:00 AM",
+        "title": "Quiz 2 Window (Take anytime Feb 6-8)",
+        "type": "exam",
+        "priority": "high",
+        "description": "Online Quiz 2 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes"
+      },
+      {
+        "date": "2026-02-06",
+        "time": "12:00 AM",
+        "title": "Teams@Haas Team Debrief (Self-Faciltiated) (EWMBA Blue) [Teams@Haas 2025]",
+        "type": "social",
+        "priority": "low",
+        "description": "At the end of your academic team journey, your team will be asked to self-facilitate a Team Debrief Workshop. \n\nPlease identify one member of the team who is responsible for submitting a photo of your Team Journey Map and providing a reflection of your team journey based on one of the prompts outlined below that emerged in your discussions—no more than one paragraph required.  \n\nPlease select one of the prompts below and share your reflections:\n\n* Please share one way your team developed either intentionally or unintentionally during your team journey, and what actions team members took to support this development? \n\n* Please share the conditions or actions that lead to a team's low point.  Was your team able to pivot and move out of this zone?  If so, what actions did the team take?   If not, why do you think this was the case?\n\n* What were some of the benefits and challenges of working with a team of people from different disciplines, lived experiences, and cultures?  How did this contribute to the leadership development of the team members?\n\nDEBRIEF KIT:\n\n* [Video] (https://bcourses.berkeley.edu/courses/1546457/pages/video-team-debrief)Links to an external site. to provide an overview of the goals of the Team Debrief\n\n* [] (https://prod.ally.ac/static/ally-icon-indicator-low-circle.b7cd3e0c1511a1080fd322790193604f.svg)[Deck] (https://bcourses.berkeley.edu/courses/1546457/files/92053932?wrap=1) to take you through the process\n\n* Supplies are available in the MBA lounge or draw your journey map using the zoom whiteboard function to support the conversation.\n\nSUBMISSION:\n\n* Identify one team member who will submit a photo of your team journey map and joint reflections.",
+        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=02&year=2026#assignment_8930028"
+      },
+      {
+        "date": "2026-02-08",
+        "time": "7:00 PM",
+        "title": "GSI Section - Week 5",
+        "type": "other",
+        "priority": "medium",
+        "description": "GSI: Patrik Raty\nTopic: Week 5 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081"
+      },
+      {
+        "date": "2026-02-02",
         "title": "Class of 2026 & 2027",
         "type": "newsletter",
         "priority": "high",
-        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders   Add/Drop Round 3 ends on Thu, 1/29 @ 12PM (noon) PST. Results for Round 3 will be available on 1/29 @ 1pm PT on  OLR .  Add/Drop Round 4 opens o",
+        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders   Drop Only Round Ends Mon, Feb 2, 11:59PM PST.  Be sure to check  OLR  during the Drops Only Round and drop any classes you no longer want to tak",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "This Week",
@@ -229,98 +287,106 @@
         }
       },
       {
-        "date": "2026-01-25",
-        "title": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+        "date": "2026-02-04",
+        "title": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "low",
-        "description": " Class of 2027 - Biz Comm Post Event Survey Reminder  Survey closes Sunday, Jan 25 at 11:59PM PT  Students who attended Biz Comm 2026 should have received an email with the subject line,\"[EWMBA] Biz C",
+        "priority": "medium",
+        "description": " UC LAUNCH Startup Accelerator Spring 2026 Application Now Available  Deadline to Apply is Wednesday, Feb 4 at 11:59PM   UC LAUNCH is an accelerator that supports early-stage startups that have alread",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Announcements",
           "sectionIndex": 1,
-          "itemTitle": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+          "itemTitle": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
+          "itemIndex": 1
+        }
+      },
+      {
+        "date": "2026-02-06",
+        "title": "Calvanize Showcase Day",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Calvanize Showcase Day  Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall   Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
+          "itemTitle": "Calvanize Showcase Day",
           "itemIndex": 2
         }
       },
       {
-        "date": "2026-01-27",
-        "title": "Resume Workshop",
+        "date": "2026-02-05",
+        "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
-        "priority": "low",
-        "description": " Resume Workshop  Tuesday, Jan 27; 12-1:00PM PST,  CMG Bears    This workshop is going to walk you through how a recruiter or hiring manager might evaluate a resume, and along the way highlight how yo",
+        "priority": "medium",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
+          "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
+          "itemIndex": 2
+        }
+      },
+      {
+        "date": "2026-02-06",
+        "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
+          "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
+          "itemIndex": 3
+        }
+      },
+      {
+        "date": "2026-02-07",
+        "title": "Berkeley StEP Spring 2026 Application Now Available",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
+          "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
+          "itemIndex": 4
+        }
+      },
+      {
+        "date": "2026-02-04",
+        "title": "Product Management Resumes",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Product Management Resumes  Wednesday, Feb 4; 12-1:00PM PST,  CMG Bears    Come learn how a Product recruiter or hiring manager would evaluate a resume, and some tips and tricks on how to frame your ",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
           "sectionIndex": 4,
-          "itemTitle": "Resume Workshop",
+          "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
       },
       {
-        "date": "2026-01-28",
-        "title": "Transferable Skills",
+        "date": "2026-02-05",
+        "title": "Your Intro Story for Career Conversations",
         "type": "newsletter",
-        "priority": "low",
-        "description": " Transferable Skills  Wednesday, Jan 28; 12-1:00PM PST,  CMG Bears    \"Transferable Skills\" is a term you'll hear frequently, especially if you are changing roles and/or industries.  This workshop wil",
+        "priority": "medium",
+        "description": " Your Intro Story for Career Conversations  Thursday, Feb 5; 12-1:00PM PST,  CMG Bears    In this workshop, you will identify elements that make a great introduction that helps others engage you in a ",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
           "sectionIndex": 4,
-          "itemTitle": "Transferable Skills",
+          "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
       }
     ],
     "goldEvents": [
       {
-        "date": "2026-01-25",
-        "time": "7:00 PM",
-        "title": "GSI Section - Week 3",
-        "type": "other",
-        "priority": "medium",
-        "description": "GSI: Patrik Raty\nTopic: Week 3 material review and Problem Set 2\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
-        "location": "Zoom",
-        "url": "https://berkeley.zoom.us/j/6988413081"
-      },
-      {
-        "date": "2026-01-27",
-        "time": "6:00 PM",
-        "title": "Week 4: Financial Statement Analysis & Non-GAAP (Gold Cohort)",
-        "type": "assignment",
-        "priority": "high",
-        "description": "Topic: Financial Statement Analysis and Non-GAAP Reporting\n\nObjectives:\n• Analyze cash conversion cycle\n• Analyze financial statements\n• Describe non-GAAP reporting\n\nPre-Class Materials:\n• Textbook: 4.1-4.14, 6.16-6.17, 5.3-5.6, 5.22-5.33\n• Article 5: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_3272286273\n\nAssignments:\n• Homework 2 DUE\n• Prepare J Prep Case report for next week\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-4",
-        "location": "Chou Hall N370",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-4"
-      },
-      {
-        "date": "2026-01-27",
-        "time": "6:30 PM",
-        "title": "DEADLINE: Homework 2 Due",
-        "type": "assignment",
-        "priority": "high",
-        "description": "Homework 2 must be submitted on bCourses before 6:30 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
-      },
-      {
-        "date": "2026-01-29",
-        "time": "6:00 PM",
-        "title": "Class 4: Labor Markets",
-        "type": "class",
-        "priority": "medium",
-        "description": "Topic: Labor Markets\n\nNote: Week 4 content page not yet available\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-4",
-        "location": "Berkeley Haas",
-        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-4"
-      },
-      {
-        "date": "2026-01-30",
-        "time": "5:00 PM",
-        "title": "DEADLINE: Group and Topic Selection Due",
-        "type": "assignment",
-        "priority": "high",
-        "description": "DEADLINE: Friday Jan 30 @ 5pm\n\nForm groups of 5 students and rank debate topic preferences.\nYes/No position will be assigned by instructor.\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform\n\nNote: Groups will be assigned if you don't form one.",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform"
-      },
-      {
         "date": "2026-02-01",
         "time": "7:00 PM",
         "title": "GSI Section - Week 4",
@@ -331,11 +397,68 @@
         "url": "https://berkeley.zoom.us/j/6988413081"
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-02-03",
+        "time": "6:00 PM",
+        "title": "Week 5: ESG Reporting, Accounts Receivables & Inventories (Gold Cohort)",
+        "type": "assignment",
+        "priority": "high",
+        "description": "Topic: ESG Reporting, Accounts Receivables & Inventories\n\nObjectives:\n• Describe ESG reporting\n• Describe the process for accounts receivables\n• Describe the financial accounting of inventories\n\nPre-Class Materials:\n• Textbook: 5.17-5.21 and 6.1-6.11\n• Article 6: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2938264461\n• Article 7: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2906681028\n• Climate Reporting Case\n\nAssignments:\n• J Prep Case report DUE\n• Take Online Quiz 2 (Feb 6-8)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5",
+        "location": "Chou Hall N370",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-5"
+      },
+      {
+        "date": "2026-02-03",
+        "time": "6:00 PM",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "type": "assignment",
+        "priority": "high",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
+      },
+      {
+        "date": "2026-02-05",
+        "time": "6:00 PM",
+        "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
+        "type": "exam",
+        "priority": "high",
+        "description": "IN-CLASS MIDTERM EXAM (First Half of Class)\nTopic: Business Cycles I - Measurement and Indicators\n\nMIDTERM DETAILS:\n• Covers material from Weeks 1-4 (Labor Markets)\n• Exam Format: Multiple choice + box for reasoning\n• Allowed: One-page notes (one-side) and calculator\n• Practice exams: Midterms 2022-2025 available on bCourses\n\nObjectives:\n• Identify recessions and booms\n• Indicators of booms and recessions\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648/pages/week-5",
+        "location": "Berkeley Haas",
+        "url": "https://bcourses.berkeley.edu/courses/1549648/pages/week-5"
+      },
+      {
+        "date": "2026-02-06",
+        "time": "12:00 AM",
+        "title": "Quiz 2 Window (Take anytime Feb 6-8)",
+        "type": "exam",
+        "priority": "high",
+        "description": "Online Quiz 2 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/quizzes"
+      },
+      {
+        "date": "2026-02-06",
+        "time": "12:00 AM",
+        "title": "Teams@Haas Team Debrief (Self-Faciltiated) (EWMBA Blue) [Teams@Haas 2025]",
+        "type": "social",
+        "priority": "low",
+        "description": "At the end of your academic team journey, your team will be asked to self-facilitate a Team Debrief Workshop. \n\nPlease identify one member of the team who is responsible for submitting a photo of your Team Journey Map and providing a reflection of your team journey based on one of the prompts outlined below that emerged in your discussions—no more than one paragraph required.  \n\nPlease select one of the prompts below and share your reflections:\n\n* Please share one way your team developed either intentionally or unintentionally during your team journey, and what actions team members took to support this development? \n\n* Please share the conditions or actions that lead to a team's low point.  Was your team able to pivot and move out of this zone?  If so, what actions did the team take?   If not, why do you think this was the case?\n\n* What were some of the benefits and challenges of working with a team of people from different disciplines, lived experiences, and cultures?  How did this contribute to the leadership development of the team members?\n\nDEBRIEF KIT:\n\n* [Video] (https://bcourses.berkeley.edu/courses/1546457/pages/video-team-debrief)Links to an external site. to provide an overview of the goals of the Team Debrief\n\n* [] (https://prod.ally.ac/static/ally-icon-indicator-low-circle.b7cd3e0c1511a1080fd322790193604f.svg)[Deck] (https://bcourses.berkeley.edu/courses/1546457/files/92053932?wrap=1) to take you through the process\n\n* Supplies are available in the MBA lounge or draw your journey map using the zoom whiteboard function to support the conversation.\n\nSUBMISSION:\n\n* Identify one team member who will submit a photo of your team journey map and joint reflections.",
+        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=02&year=2026#assignment_8930028"
+      },
+      {
+        "date": "2026-02-08",
+        "time": "7:00 PM",
+        "title": "GSI Section - Week 5",
+        "type": "other",
+        "priority": "medium",
+        "description": "GSI: Patrik Raty\nTopic: Week 5 material review\n\nZoom: https://berkeley.zoom.us/j/6988413081\n\nSections are recorded and posted on Panopto",
+        "location": "Zoom",
+        "url": "https://berkeley.zoom.us/j/6988413081"
+      },
+      {
+        "date": "2026-02-02",
         "title": "Class of 2026 & 2027",
         "type": "newsletter",
         "priority": "high",
-        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders   Add/Drop Round 3 ends on Thu, 1/29 @ 12PM (noon) PST. Results for Round 3 will be available on 1/29 @ 1pm PT on  OLR .  Add/Drop Round 4 opens o",
+        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders   Drop Only Round Ends Mon, Feb 2, 11:59PM PST.  Be sure to check  OLR  during the Drops Only Round and drop any classes you no longer want to tak",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "This Week",
@@ -345,76 +468,110 @@
         }
       },
       {
-        "date": "2026-01-25",
-        "title": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+        "date": "2026-02-04",
+        "title": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "low",
-        "description": " Class of 2027 - Biz Comm Post Event Survey Reminder  Survey closes Sunday, Jan 25 at 11:59PM PT  Students who attended Biz Comm 2026 should have received an email with the subject line,\"[EWMBA] Biz C",
+        "priority": "medium",
+        "description": " UC LAUNCH Startup Accelerator Spring 2026 Application Now Available  Deadline to Apply is Wednesday, Feb 4 at 11:59PM   UC LAUNCH is an accelerator that supports early-stage startups that have alread",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Announcements",
           "sectionIndex": 1,
-          "itemTitle": "Class of 2027 - Biz Comm Post Event Survey Reminder",
+          "itemTitle": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
+          "itemIndex": 1
+        }
+      },
+      {
+        "date": "2026-02-06",
+        "title": "Calvanize Showcase Day",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Calvanize Showcase Day  Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall   Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
+          "itemTitle": "Calvanize Showcase Day",
           "itemIndex": 2
         }
       },
       {
-        "date": "2026-01-27",
-        "title": "Resume Workshop",
+        "date": "2026-02-05",
+        "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
-        "priority": "low",
-        "description": " Resume Workshop  Tuesday, Jan 27; 12-1:00PM PST,  CMG Bears    This workshop is going to walk you through how a recruiter or hiring manager might evaluate a resume, and along the way highlight how yo",
+        "priority": "medium",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
+          "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
+          "itemIndex": 2
+        }
+      },
+      {
+        "date": "2026-02-06",
+        "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
+          "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
+          "itemIndex": 3
+        }
+      },
+      {
+        "date": "2026-02-07",
+        "title": "Berkeley StEP Spring 2026 Application Now Available",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
+        "sourceType": "newsletter",
+        "newsletterSource": {
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
+          "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
+          "itemIndex": 4
+        }
+      },
+      {
+        "date": "2026-02-04",
+        "title": "Product Management Resumes",
+        "type": "newsletter",
+        "priority": "medium",
+        "description": " Product Management Resumes  Wednesday, Feb 4; 12-1:00PM PST,  CMG Bears    Come learn how a Product recruiter or hiring manager would evaluate a resume, and some tips and tricks on how to frame your ",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
           "sectionIndex": 4,
-          "itemTitle": "Resume Workshop",
+          "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
       },
       {
-        "date": "2026-01-28",
-        "title": "Transferable Skills",
+        "date": "2026-02-05",
+        "title": "Your Intro Story for Career Conversations",
         "type": "newsletter",
-        "priority": "low",
-        "description": " Transferable Skills  Wednesday, Jan 28; 12-1:00PM PST,  CMG Bears    \"Transferable Skills\" is a term you'll hear frequently, especially if you are changing roles and/or industries.  This workshop wil",
+        "priority": "medium",
+        "description": " Your Intro Story for Career Conversations  Thursday, Feb 5; 12-1:00PM PST,  CMG Bears    In this workshop, you will identify elements that make a great introduction that helps others engage you in a ",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
           "sectionIndex": 4,
-          "itemTitle": "Transferable Skills",
+          "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
       }
     ],
-    "blueSummary": "[DEV MODE] Blue cohort: 10 events this week.",
-    "goldSummary": "[DEV MODE] Gold cohort: 10 events this week.",
-    "processingTime": 31
+    "blueSummary": "[DEV MODE] Blue cohort: 15 events this week.",
+    "goldSummary": "[DEV MODE] Gold cohort: 15 events this week.",
+    "processingTime": 36
   },
   "cohortEvents": {
     "blue": [
-      {
-        "uid": "5fd046cc-be74-4ba9-b0e2-3511265b1d0c@vibeshift.me",
-        "title": "Leading People – Class 9 – Organizational Change + Transition Management (Blue)",
-        "start": "2025-10-02T01:00:00.000Z",
-        "end": "2025-10-02T04:30:00.000Z",
-        "location": "Chou Hall Room N470",
-        "description": "Course: EWMBA 205 – Leading People\nInstructor: Rebecca Portnoy",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba205_blue_fallA2025_v2.ics"
-      },
-      {
-        "uid": "f5233b20-201b-49cd-b8dd-9c2405586a36@vibeshift.me",
-        "title": "Team Assignment Final — DUE",
-        "start": "2025-10-04T06:59:00.000Z",
-        "end": "2025-10-04T07:04:00.000Z",
-        "location": "bCourses",
-        "description": "Final team assignment due Friday Oct 3; set to 11:59 PM.",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba201a_micro_blue_fall2025.ics"
-      },
       {
         "uid": "c1394093-18aa-4cce-ad0b-f49e67d5625b@vibeshift.me",
         "title": "Consulting Project: Part 2 – Presentation – DUE",
@@ -1250,28 +1407,6 @@
     ],
     "gold": [
       {
-        "uid": "b2f8763d-1642-4213-8507-99284e2f6a07@vibeshift.me",
-        "title": "Leading People – Class 9 – Organizational Change + Transition Management (Gold)",
-        "start": "2025-10-03T01:00:00.000Z",
-        "end": "2025-10-03T04:30:00.000Z",
-        "location": "Chou Hall Room N470",
-        "description": "Course: EWMBA 205 – Leading People\nInstructor: Rebecca Portnoy",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba205_gold_fallA2025_v2.ics"
-      },
-      {
-        "uid": "bb9eb93c-0d3a-4c32-82c3-a4410f9618b1@vibeshift.me",
-        "title": "Team Assignment Final — DUE",
-        "start": "2025-10-04T06:59:00.000Z",
-        "end": "2025-10-04T07:04:00.000Z",
-        "location": "bCourses",
-        "description": "Final team assignment due Friday Oct 3; set to 11:59 PM.",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba201a_micro_gold_fall2025.ics"
-      },
-      {
         "uid": "72e426ee-2586-438f-8922-987d2c64664e@vibeshift.me",
         "title": "Consulting Project: Part 2 – Presentation – DUE",
         "start": "2025-10-08T05:00:00.000Z",
@@ -2106,17 +2241,6 @@
     ],
     "original": [
       {
-        "uid": "event-assignment-8909109",
-        "title": "Team Assignment: Corporate Memo (Final Submission) [EWMBA 201A-LEC-01A & 02A FA25]",
-        "start": "2025-10-03T07:00:00.000Z",
-        "end": "2025-10-04T07:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1544880&month=10&year=2025#assignment_8909109",
-        "description": "Much of the work of business takes place in teams. To enhance your experience with teams and with your classmates, you will be asked to write a short memo analyzing a company’s cost structure and pricing policies. The details about this team assignment can be found below. You have to work on this assignment with the study group you have been assigned to.\n\nOnly one member per study group has to upload the PDF with the team's pricing project to bCourses. For more detailed instructions, read the following page:\n\n[Pricing Project Directions] (https://bcourses.berkeley.edu/courses/1544880/pages/team-assignment-corporate-memo-instructions)\n\nNote that this is your final submission and will be graded. Make sure you submitted the latest version of your group project.",
-        "allDay": true,
-        "cohort": "blue",
-        "source": "calendar.ics"
-      },
-      {
         "uid": "event-calendar-event-2893258",
         "title": "Give feedback - Consulting Project - Peer Evaluation [EWMBA 205-LEC-01A & 02A FA25]",
         "start": "2025-10-08T06:59:00.000Z",
@@ -2162,23 +2286,6 @@
       }
     ],
     "calBears": [
-      {
-        "uid": "7aa7bb8b-6618-4a7f-841b-6d1924287dd7@vibeshift",
-        "title": "Duke Blue Devils at California Golden Bears Football",
-        "start": "2025-10-04T07:00:00.000Z",
-        "end": "2025-10-05T07:00:00.000Z",
-        "location": "California Memorial Stadium, Berkeley, CA",
-        "url": "https://calbears.evenue.net/events/FBS",
-        "description": "Duke Blue Devils at California Golden Bears Football\n\nLocation: California Memorial Stadium, Berkeley, CA\nTickets: https://calbears.evenue.net/events/FBS",
-        "allDay": true,
-        "cohort": "blue",
-        "source": "cal_bears_home_2025_original.ics",
-        "categories": [
-          "Sports",
-          "Football",
-          "California Golden Bears"
-        ]
-      },
       {
         "uid": "07f97c21-b94c-4c73-87c4-e4ff5a581479@vibeshift",
         "title": "North Carolina Tar Heels at California Golden Bears Football",
@@ -2622,10 +2729,10 @@
     ]
   },
   "processingInfo": {
-    "totalTime": 57647,
-    "newsletterTime": 57615,
-    "calendarTime": 474,
-    "myWeekTime": 32,
-    "timestamp": "2026-01-29T19:05:29.904Z"
+    "totalTime": 34406,
+    "newsletterTime": 34369,
+    "calendarTime": 471,
+    "myWeekTime": 36,
+    "timestamp": "2026-02-01T08:56:45.052Z"
   }
 }

@@ -186,19 +186,18 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue', isExpanded
 
   // Temporary debug to understand the data issue
   useEffect(() => {
-    if (data) {
-      console.log('🔍 MyWeekWidget received data:', {
-        weekStart: data.weekStart,
-        weekEnd: data.weekEnd,
-        blueEvents: data.blueEvents?.length || 0,
-        goldEvents: data.goldEvents?.length || 0,
-        blueSummary: data.blueSummary ? 'Present' : 'Missing',
-        goldSummary: data.goldSummary ? 'Present' : 'Missing',
-        selectedCohort,
-        actualBlueEvents: data.blueEvents,
-        actualGoldEvents: data.goldEvents
-      });
-    }
+    console.log('🔍 MyWeekWidget received data:', {
+      hasData: !!data,
+      weekStart: data?.weekStart,
+      weekEnd: data?.weekEnd,
+      blueEvents: data?.blueEvents?.length || 0,
+      goldEvents: data?.goldEvents?.length || 0,
+      blueSummary: data?.blueSummary ? 'Present' : 'Missing',
+      goldSummary: data?.goldSummary ? 'Present' : 'Missing',
+      selectedCohort,
+      actualBlueEvents: data?.blueEvents,
+      actualGoldEvents: data?.goldEvents
+    });
   }, [data, selectedCohort]);
 
   useEffect(() => {
@@ -323,8 +322,8 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue', isExpanded
           {/* Toggle button for all screens - centered at bottom on small screens, positioned near "My Week" on md+ */}
               <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite] absolute bottom-2 left-[90px] translate-y-[5px] scale-70 md:scale-100 md:bottom-auto md:top-0 md:left-[100px] md:translate-x-0 md:translate-y-10 ${
-                !isExpanded ? 'md:translate-x-[10px] md:translate-y-[0px]': 'md:translate-x-10 md:translate-y-0 md:w-5 md:h-5'
+              className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out absolute bottom-2 left-[90px] translate-y-[5px] scale-100 md:scale-100 md:bottom-auto md:top-0 translate-x-[10px] transition-transform ${
+                !isExpanded ? 'animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite]' : ''
               }`}
               aria-label={isExpanded ? 'Collapse events' : 'Expand events'}
               >

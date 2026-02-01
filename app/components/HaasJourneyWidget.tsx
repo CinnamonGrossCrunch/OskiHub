@@ -64,14 +64,14 @@ const HAAS_RESOURCES: ResourceItem[] = [
 // Centralized styling constants for easy maintenance
 const STYLES = {
   container: "w-full",
-  dropdownHeader: "flex items-center justify-end p-2 rounded-xl hover:bg-turbulence transition-all duration-500 cursor-pointer group",
+  dropdownHeader: "flex items-center justify-end p-2 rounded-xl hover:bg-white/10 transition-all duration-500 cursor-pointer group",
   dropdownTitle: "text-md font-semibold text-white transition-all duration-600 overflow-hidden text-center leading-tight",
   dropdownIcon: "text-white material-icons transition-all duration-600 ease-in-out",
   dropdownIconOpen: "translate-x-3 translate-y-0",
   dropdownContent: "transition-all duration-600 w-full",
   // Grid styles - mobile (6-col horizontal) vs desktop expanded (3x2) vs desktop compact (1x6)
   gridMobile: "grid grid-cols-6 gap-x-1 w-full",
-  gridExpanded: "grid grid-cols-3 gap-x-6 gap-y-0 w-full",
+  gridExpanded: "grid grid-cols-3 gap-x-0 -my-2 gap-y-0 p-1 w-full",
   gridCompact: "grid grid-cols-1 gap-y-0 w-full",
   resourceContainer: "border-white/30 rounded-md relative",
   resourceLink: "flex flex-row items-center justify-start gap-2 px-4 py-1.5 rounded-xl hover:bg-turbulence transition-all duration-100 group",
@@ -154,7 +154,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
   };
 
   return (
-    <div className={`select-none ${STYLES.container} ${className}`}>
+    <div className={`select-none rounded-3xl py-2 mr-1 bg-violet-100/10 ${STYLES.container} ${className}`}>
       {/* Mobile Layout - Always visible compact 6-icon horizontal row */}
       <div className="lg:hidden">
         <div className={STYLES.gridMobile}>
@@ -165,7 +165,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
       </div>
       
       {/* Desktop Layout - Expandable with toggle button */}
-      <div className="hidden lg:flex items-start justify-end w-full z-10">
+      <div className="hidden lg:flex  -ml-2 items-center justify-end w-full h-full z-10  relative">
         {/* Dropdown Content - Same Row, Left Side */}
         <div 
           className={`${STYLES.dropdownContent} ${!isOpen ? 'pointer-events-none' : ''}`}
@@ -190,10 +190,10 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
         </div>
         
         {/* Dropdown Header - Right Side */}
-        <div className="flex items-start gap-5">
+        <div className="flex items-start gap-5 ">
           <button 
-            className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite] ${
-              isOpen ? '-translate-x-0 translate-y-5 w-5 h-5' : 'translate-x-10 translate-y-0'
+            className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out  ${
+              isOpen ? 'translate-x-8 translate-y-0 w-5 h-5' : 'translate-x-8 translate-y-0 animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite'
             }`}
             onClick={() => setIsOpen(!isOpen)}
             title={isOpen ? 'Collapse' : 'Expand'}
@@ -211,13 +211,13 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
           </button>
           {/* "Haas Official" and "Critical Links" text - styled like MyWeekWidget, always visible */}
           <div 
-            className="flex flex-col items-end whitespace-nowrap transition-all duration-500 ease-in-out"
+            className="flex flex-col items-end justify-center whitespace-nowrap transition-all duration-500 ease-in-out"
           >
-            <span className="text-xl md:text-xl font-extralight text-slate-400">
+            <span className="text-lg md:text-lg font-extralight text-slate-400">
               Haas Official
             </span>
-            <span className="text-3xl md:text-3xl font-medium text-white">
-              Critical <span className="text-white/60">Links</span>
+            <span className="text-xl md:text- xl font-medium text-white">
+              Campus <span className="text-white/60">Links</span>
             </span>
           </div>
         </div>

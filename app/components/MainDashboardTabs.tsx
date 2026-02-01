@@ -162,7 +162,7 @@ export default function MainDashboardTabs({
       </div>
 
       {/* Content Pane */}
-      <div className={`bg-violet-100/10 backdrop-blur-lg rounded-b-3xl shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] flex-1 min-h-[600px] overflow-y-auto ${
+      <div className={`bg-violet-100/10 backdrop-blur-lg rounded-b-3xl  shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] flex-1 min-h-[600px] overflow-y-auto ${
         activeTab === 'OskiHub Cal' ? 'p-0 sm:p-6' : 'p-4 sm:p-6'
       }
         ${activeTab === 'OskiHub Cal' ? 'rounded-tr-3xl lg:rounded-r-3xl' : ''}
