@@ -214,9 +214,11 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
             scrollbarWidth: 'none',
             msOverflowStyle: 'none'
           }}>
+        {/* Centering wrapper - ensures all content is centered on ultra-wide screens */}
+        <div className="min-h-full w-full flex flex-col items-center">
         {/* Header - full width background with constrained content */}
         <div className={getPerformanceClasses(
-          `w-full sticky top-0 z-30 bg-black/10 border-b border-red-600 backdrop-blur-lg relative overflow-hidden py-1 mb-0`,
+          `w-full max-w-[1740px] sticky top-0 z-30 bg-black/10 border-b border-red-600 backdrop-blur-lg relative overflow-hidden py-1 mb-0`,
           capabilities
         )}>
           {/* Animated black overlay - z-index 20 (middle layer) */}
@@ -227,7 +229,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
 
           <div className="pointer-events-none absolute flex justify-left inset-0" style={{ maskImage: 'radial-gradient(circle at 30% 25%, rgba(0,0,0,.7), transparent 70%)', WebkitMaskImage: 'radial-gradient(circle at 30% 25%, rgba(0,0,0,.7), transparent 70%)', filter: 'url(#glassDistort)' }} />
 
-        <div className="max-w-[1740px] mx-auto px-3 sm:px-4 lg:px-6 py-2 relative z-10">
+        <div className="px-3 sm:px-4 lg:px-6 py-2 relative z-10">
           <div className="flex items-center h-10 sm:h-12 md:h-12">
             {/* Left section - Logos */}
             <div className="flex-1 flex items-center gap-1 sm:gap-2 h-full px-1">
@@ -252,7 +254,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         </div> {/* Close Header */}
         
       {/* Main Content */}
-      <main className="max-w-[1740px] mx-auto md:px-0 lg:px-4 py-0 relative overflow-hidden">
+      <main className="w-full max-w-[1740px] md:px-0 lg:px-4 py-0 relative overflow-hidden">
         {/* Animated black overlay - z-index 20 (middle layer) */}
           <div 
             className="fixed inset-0 bg-black transition-opacity duration-300 ease-out pointer-events-none z-45"
@@ -351,8 +353,8 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
       </main>
 
       {/* Footer */}
-      <footer className="mt-8 pb-6">
-        <div className="max-w-[1740px] mx-auto px-3 sm:px-4 lg:px-6">
+      <footer className="mt-8 pb-6 w-full max-w-[1740px]">
+        <div className="px-3 sm:px-4 lg:px-6">
             <p className="text-center text-xs text-slate-400 mb-4">
               Oski.app created and maintained by <a href="https://www.linkedin.com/in/designrefinerepeat/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-slate-300 transition-colors duration-200">Matt Gross</a>. &nbsp;|  &nbsp; Not an officially endorsed UC Berkeley website.
             </p>
@@ -366,6 +368,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
           </div>
         </div>
       </footer>
+        </div>{/* Close centering wrapper */}
 
       <GmailNewsletterModalHost />
     </div>
