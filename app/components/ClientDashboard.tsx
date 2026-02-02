@@ -208,7 +208,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
 
       {/* Content Overlay */}
       <div
-          className="fixed inset-0 z-50 overflow-auto max-w-100 scrollbar-hide"
+          className="fixed inset-0 z-50 overflow-auto scrollbar-hide"
           style={{ 
             scrollbarGutter: 'stable both-edges',
             scrollbarWidth: 'none',

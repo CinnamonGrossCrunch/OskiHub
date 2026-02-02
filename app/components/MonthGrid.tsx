@@ -470,6 +470,11 @@ export default function MonthGrid({
             if (event.source.includes('212_') || event.source.includes('entrepreneurship')) {
               return `${glassBase} bg-fuchsia-800/50 border-fuchsia-700/50 text-white ${hoverGold}`;
             }
+
+            // Spring B Term Classes - Cyan
+            if (event.source.includes('springb')) {
+              return `${glassBase} bg-cyan-700/50 border-cyan-600/50 text-white ${hoverGold}`;
+            }
           }
           
           // Default styling - no title-based fallbacks to avoid misclassification
