@@ -105,8 +105,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba202-sp26-jprep-due-gold
-DTSTART:20260203T180000
-DTEND:20260203T180000
+DTSTART:20260206T180000
+DTEND:20260206T180000
 SUMMARY:DEADLINE: J Prep Case Report Due
 DESCRIPTION:J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments

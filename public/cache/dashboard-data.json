@@ -62,15 +62,10 @@
           {
             "title": "Int’l Advising Drop In Hours",
             "html": "<h4>Int’l Advising Drop In Hours</h4><p>Feb 4, Feb 16, and Mar 10</p><ul><li>Jason Choi will be hosting three (3) Zoom drop-in hours to answer any questions about international exchange.<ul><li>Please note that these drop-in hours will not be recorded</li></ul></li><li><a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>Zoom links to the drop-in hours</a> are hyperlinked on the International Exchange webpage</li></ul>"
-          }
-        ]
-      },
-      {
-        "sectionTitle": "Important Reminders",
-        "items": [
+          },
           {
-            "title": "Ladle & Leaf Now Open",
-            "html": "<h4>Ladle & Leaf Now Open</h4><ul><li>Ladle &amp; Leaf is now open in the Café Think space.<ul><li>Ladle &amp; Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area</li></ul></li><li>Ladle &amp; Leaf is open Mondays to Thursdays from 8AM to 8:15 PM PST, and on Fridays from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></li><li>Students are highly encouraged to visit Ladle &amp; Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses.</li></ul>"
+            "title": "Important Reminders",
+            "html": "<h4>Important Reminders</h4><p>Ladle & Leaf is now open in the Café Think space.<ul><li>Ladle & Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area</li></ul></p><p>Ladle & Leaf is open Mondays to Thursdays from 8AM to 8:15 PM PST, and on Fridays from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></p><p>Students are highly encouraged to visit Ladle & Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses.</p>"
           },
           {
             "title": "Haas Reception with Nexus students in the Class of 2028",
@@ -80,12 +75,12 @@
                 "2026-02-21"
               ],
               "eventType": "event",
-              "priority": "medium"
+              "priority": "low"
             }
           },
           {
             "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href='https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/' target='_blank' rel='noopener noreferrer'>Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President &amp; CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul>",
+            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href='https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/' target='_blank' rel='noopener noreferrer'>Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President & CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-05"
@@ -107,13 +102,13 @@
           },
           {
             "title": "Berkeley StEP Spring 2026 Application Now Available",
-            "html": "<h4>Berkeley StEP Spring 2026 Application Now Available</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST</p><ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks &amp; up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href='https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform' target='_blank' rel='noopener noreferrer'>Berkeley StEP Spring 2026</a> is now available.</li></ul>",
+            "html": "<h4>Berkeley StEP Spring 2026 Application Now Available</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST</p><ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks & up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href='https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform' target='_blank' rel='noopener noreferrer'>Berkeley StEP Spring 2026</a> is now available.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-07"
               ],
               "eventType": "deadline",
-              "priority": "medium"
+              "priority": "low"
             }
           }
         ]
@@ -193,11 +188,11 @@
       }
     ],
     "aiDebugInfo": {
-      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as specified, organizing the newsletter into sections with titles and items, each containing HTML content. The section headers and list items are formatted with the specified tags, and all content is included without truncation.",
+      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as instructed, organizing the newsletter into sections and items with appropriate HTML tags.",
       "sectionDecisions": [],
       "edgeCasesHandled": [],
-      "totalSections": 6,
-      "processingTime": 26033
+      "totalSections": 5,
+      "processingTime": 34442
     },
     "aiMeta": {}
   },
@@ -319,13 +314,13 @@
         "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President & CEO of",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-          "itemIndex": 2
+          "itemIndex": 7
         }
       },
       {
@@ -336,24 +331,24 @@
         "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings tog",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-          "itemIndex": 3
+          "itemIndex": 8
         }
       },
       {
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "medium",
+        "priority": "low",
         "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
-          "itemIndex": 4
+          "itemIndex": 9
         }
       },
       {
@@ -365,7 +360,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
@@ -379,7 +374,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
@@ -500,13 +495,13 @@
         "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President & CEO of",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-          "itemIndex": 2
+          "itemIndex": 7
         }
       },
       {
@@ -517,24 +512,24 @@
         "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings tog",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-          "itemIndex": 3
+          "itemIndex": 8
         }
       },
       {
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "medium",
+        "priority": "low",
         "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
-          "itemIndex": 4
+          "itemIndex": 9
         }
       },
       {
@@ -546,7 +541,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
@@ -560,7 +555,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
@@ -1427,12 +1422,12 @@
         "source": "ewmba_springb_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba-springb-sp26-blue-class2-mon",
-        "title": "Spring B - Class 2 (Blue)",
+        "uid": "ewmba-springb-sp26-combined-class2-mon",
+        "title": "Spring B - Class 2 (Combined)",
         "start": "2026-03-24T01:00:00.000Z",
         "end": "2026-03-24T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 2\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -2470,6 +2465,17 @@
         "source": "ewmba_springb_gold_spring2026.ics"
       },
       {
+        "uid": "ewmba-springb-sp26-combined-class2-mon-gold",
+        "title": "Spring B - Class 2 (Combined)",
+        "start": "2026-03-24T01:00:00.000Z",
+        "end": "2026-03-24T04:30:00.000Z",
+        "location": "Cheit Hall",
+        "description": "Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba_springb_gold_spring2026.ics"
+      },
+      {
         "uid": "ewmba-springb-sp26-gold-class3-tue",
         "title": "Spring B - Class 3 (Gold)",
         "start": "2026-04-01T01:00:00.000Z",
@@ -3108,7 +3114,7 @@
         "uid": "haas-spring2026-spring-break-start@oskihub",
         "title": "Spring Break",
         "start": "2026-03-24T07:00:00.000Z",
-        "end": "2026-04-03T07:00:00.000Z",
+        "end": "2026-03-28T07:00:00.000Z",
         "description": "Spring Break - No classes. Enjoy your break!",
         "allDay": true,
         "cohort": "blue",
@@ -3151,10 +3157,10 @@
     ]
   },
   "processingInfo": {
-    "totalTime": 34485,
-    "newsletterTime": 34445,
-    "calendarTime": 443,
-    "myWeekTime": 40,
-    "timestamp": "2026-02-02T01:57:27.738Z"
+    "totalTime": 46333,
+    "newsletterTime": 46294,
+    "calendarTime": 489,
+    "myWeekTime": 39,
+    "timestamp": "2026-02-02T02:03:55.078Z"
   }
 }

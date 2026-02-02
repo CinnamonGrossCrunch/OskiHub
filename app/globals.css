@@ -54,7 +54,8 @@ html.dark,
 /* Base styles - apply Urbanist as default font family */
 html {
   font-family: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100%;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
@@ -71,9 +72,18 @@ body {
   font-family: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100%;
+  width: 100%;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Prevent horizontal overflow on ultra-wide screens */
+#__next,
+#__next > div {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

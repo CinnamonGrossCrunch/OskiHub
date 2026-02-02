@@ -11,7 +11,7 @@ UID:ewmba-springb-sp26-blue-class1-mon
 DTSTART:20260316T180000
 DTEND:20260316T213000
 SUMMARY:Spring B - Class 1 (Blue)
-DESCRIPTION:Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -20,7 +20,7 @@ UID:ewmba-springb-sp26-blue-class1-wed
 DTSTART:20260318T180000
 DTEND:20260318T213000
 SUMMARY:Spring B - Class 1 (Blue)
-DESCRIPTION:Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -29,7 +29,7 @@ UID:ewmba-springb-sp26-combined-class2-mon
 DTSTART:20260323T180000
 DTEND:20260323T213000
 SUMMARY:Spring B - Class 2 (Combined)
-DESCRIPTION:Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -38,7 +38,7 @@ UID:ewmba-springb-sp26-blue-class3-mon
 DTSTART:20260330T180000
 DTEND:20260330T213000
 SUMMARY:Spring B - Class 3 (Blue)
-DESCRIPTION:Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -47,7 +47,7 @@ UID:ewmba-springb-sp26-blue-class3-wed
 DTSTART:20260401T180000
 DTEND:20260401T213000
 SUMMARY:Spring B - Class 3 (Blue)
-DESCRIPTION:Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -56,7 +56,7 @@ UID:ewmba-springb-sp26-blue-class4-mon
 DTSTART:20260406T180000
 DTEND:20260406T213000
 SUMMARY:Spring B - Class 4 (Blue)
-DESCRIPTION:Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -65,7 +65,7 @@ UID:ewmba-springb-sp26-blue-class4-wed
 DTSTART:20260408T180000
 DTEND:20260408T213000
 SUMMARY:Spring B - Class 4 (Blue)
-DESCRIPTION:Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -74,7 +74,7 @@ UID:ewmba-springb-sp26-blue-class5-mon
 DTSTART:20260413T180000
 DTEND:20260413T213000
 SUMMARY:Spring B - Class 5 (Blue)
-DESCRIPTION:Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -83,7 +83,7 @@ UID:ewmba-springb-sp26-blue-class5-wed
 DTSTART:20260415T180000
 DTEND:20260415T213000
 SUMMARY:Spring B - Class 5 (Blue)
-DESCRIPTION:Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -92,7 +92,7 @@ UID:ewmba-springb-sp26-blue-class6-mon
 DTSTART:20260420T180000
 DTEND:20260420T213000
 SUMMARY:Spring B - Class 6 (Blue)
-DESCRIPTION:Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -101,7 +101,7 @@ UID:ewmba-springb-sp26-blue-class6-wed
 DTSTART:20260422T180000
 DTEND:20260422T213000
 SUMMARY:Spring B - Class 6 (Blue)
-DESCRIPTION:Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -110,7 +110,7 @@ UID:ewmba-springb-sp26-blue-class7-mon
 DTSTART:20260427T180000
 DTEND:20260427T213000
 SUMMARY:Spring B - Class 7 (Blue)
-DESCRIPTION:Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -119,7 +119,7 @@ UID:ewmba-springb-sp26-blue-class7-wed
 DTSTART:20260429T180000
 DTEND:20260429T213000
 SUMMARY:Spring B - Class 7 (Blue)
-DESCRIPTION:Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -128,7 +128,7 @@ UID:ewmba-springb-sp26-blue-class8-mon
 DTSTART:20260504T180000
 DTEND:20260504T213000
 SUMMARY:Spring B - Class 8 (Blue)
-DESCRIPTION:Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -137,7 +137,7 @@ UID:ewmba-springb-sp26-blue-class8-wed
 DTSTART:20260506T180000
 DTEND:20260506T213000
 SUMMARY:Spring B - Class 8 (Blue)
-DESCRIPTION:Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -146,7 +146,7 @@ UID:ewmba-springb-sp26-blue-class9-mon
 DTSTART:20260511T180000
 DTEND:20260511T213000
 SUMMARY:Spring B - Class 9 (Blue)
-DESCRIPTION:Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -155,7 +155,7 @@ UID:ewmba-springb-sp26-blue-class9-wed
 DTSTART:20260513T180000
 DTEND:20260513T213000
 SUMMARY:Spring B - Class 9 (Blue)
-DESCRIPTION:Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+DESCRIPTION:Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -164,7 +164,7 @@ UID:ewmba-springb-sp26-blue-finals-mon
 DTSTART:20260518T180000
 DTEND:20260518T213000
 SUMMARY:Spring B - Finals (Blue)
-DESCRIPTION:Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT
+DESCRIPTION:Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -173,7 +173,7 @@ UID:ewmba-springb-sp26-blue-finals-wed
 DTSTART:20260520T180000
 DTEND:20260520T213000
 SUMMARY:Spring B - Finals (Blue)
-DESCRIPTION:Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT
+DESCRIPTION:Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 END:VCALENDAR

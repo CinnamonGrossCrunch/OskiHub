@@ -109,12 +109,17 @@ export default function RootLayout({
         style={{ 
           colorScheme: 'dark',
           scrollbarWidth: 'none',
-          msOverflowStyle: 'none'
+          msOverflowStyle: 'none',
+          overflowX: 'hidden',
+          maxWidth: '100%',
+          width: '100%'
         }}
       >
-        <PerformanceProvider>
-          {children}
-        </PerformanceProvider>
+        <div className="w-full max-w-full overflow-x-hidden">
+          <PerformanceProvider>
+            {children}
+          </PerformanceProvider>
+        </div>
         <Analytics />
       </body>
     </html>
