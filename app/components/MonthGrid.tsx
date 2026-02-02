@@ -287,13 +287,14 @@ export default function MonthGrid({
         
         // Combine regular events with launch events, Campus Groups events, Academic Calendar, and Newsletter events
         // NOTE: Cal Bears events are EXCLUDED - they only appear as logo icon in header (like Greek Theater)
+        // Sort all events chronologically by start time
         const allDayEvents: (CalendarEvent | NewsletterCalendarEvent)[] = [
           ...dayEvents, 
           ...dayLaunchEvents, 
           ...dayCampusGroupsEvents,
           ...dayAcademicCalendarEvents,
           ...processedNewsletterEvents
-        ];
+        ].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
         const isToday = isSameDay(day, new Date());
         const hasGreekEvent = hasGreekTheaterEventOnDate(day);
         const hasCalBearsEvent = showCalBears && dayCalBearsEvents.length > 0;
@@ -641,14 +642,6 @@ export default function MonthGrid({
                   const isMultiDayAcademicEvent = isAcademicCalendarEvent && isMultiDayEvent(ev);
                   const eventSpanDays = isMultiDayAcademicEvent && ev.end ? differenceInDays(startOfDay(new Date(ev.end)), startOfDay(new Date(ev.start))) + 1 : 0;
                   
-                  // Check if this is a non-cohort event (UC Launch, Campus Groups, Newsletter, Cal Bears, Academic Calendar)
-                  const isNonCohortEvent = isNewsletterEvent || isOtherNonCohortEvent;
-                  
-                  // Height: cohort events get calculated proportional height, non-cohort get fixed 20px
-                  const eventHeight = isNonCohortEvent 
-                    ? '20px'
-                    : `calc((100% - ${(allDayEvents.length - 1) * 1}px) / ${allDayEvents.length})`;
-                  
                   if (isNewsletterEvent) {
                     // Newsletter event - show title with line-clamp-1 on mobile, line-clamp-3 on desktop
                     const newsletterEv = ev as NewsletterCalendarEvent;
@@ -657,7 +650,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className="text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity backdrop-blur- bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 text-white font-medium overflow-hidden line-clamp-1 md:line-clamp-3"
+                        className="flex-1 min-h-0 text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity backdrop-blur- bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 text-white font-medium overflow-hidden line-clamp-1 md:line-clamp-3"
                         title={isMultiple ? `${newsletterEv.multipleEvents?.length || 0} Newsletter Events` : `Newsletter: ${ev.title}`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -666,9 +659,6 @@ export default function MonthGrid({
                           } else {
                             onEventClick(ev);
                           }
-                        }}
-                        style={{
-                          height: eventHeight
                         }}
                       >
                         {ev.title}
@@ -683,7 +673,7 @@ export default function MonthGrid({
                       return (
                         <div
                           key={ev.uid ?? ev.title + ev.start}
-                          className={`text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1`}
+                          className={`flex-1 min-h-0 text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1 line-clamp-1 md:line-clamp-3`}
                           title={`${ev.title} (${eventSpanDays} days)`}
                           onClick={(e) => {
                             e.stopPropagation();
@@ -692,9 +682,6 @@ export default function MonthGrid({
                             } else {
                               onEventClick(ev);
                             }
-                          }}
-                          style={{
-                            height: eventHeight
                           }}
                         >
                           <span className="truncate">{ev.title}</span>
@@ -708,7 +695,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden line-clamp-1 md:line-clamp-3`}
+                        className={`flex-1 min-h-0 text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden line-clamp-1 md:line-clamp-3`}
                         title={ev.title}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -717,9 +704,6 @@ export default function MonthGrid({
                           } else {
                             onEventClick(ev);
                           }
-                        }}
-                        style={{
-                          height: eventHeight
                         }}
                       >
                         {ev.title}
@@ -737,7 +721,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`text-[10px] px-1 py-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden line-clamp-2 md:line-clamp-none`}
+                        className={`flex-1 min-h-0 text-[10px] px-1 py-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden line-clamp-2 md:line-clamp-none`}
                         title={`${assignment ? assignment + ' - ' : ''}${courseName} (${ev.title})${eventHasQuiz ? ' - QUIZ TODAY!' : ''}`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -746,9 +730,6 @@ export default function MonthGrid({
                           } else {
                             onEventClick(ev);
                           }
-                        }}
-                        style={{
-                          height: eventHeight
                         }}
                       >
                         {displayText}
@@ -763,7 +744,7 @@ export default function MonthGrid({
               
               {/* Quiz window bar START (first day of quiz window) */}
               {hasStartingQuizWindow && (
-                <div className="absolute bottom-3 left-0 right-0 h-3 z-10">
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
                   {startingQuizWindowEvents.slice(0, 1).map((ev, idx) => {
                     const eventStart = startOfDay(new Date(ev.start));
                     const eventEnd = getActualEndDate(ev);
@@ -801,7 +782,7 @@ export default function MonthGrid({
               
               {/* Quiz window spanning bar (continuation days) */}
               {hasSpanningQuizWindow && !hasStartingQuizWindow && (
-                <div className="absolute bottom-3 left-0 right-0 h-3 z-10">
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
                   {spanningQuizWindowEvents.slice(0, 1).map((ev, idx) => {
                     const eventStart = startOfDay(new Date(ev.start));
                     const eventEnd = getActualEndDate(ev);

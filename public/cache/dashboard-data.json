@@ -62,10 +62,15 @@
           {
             "title": "Int’l Advising Drop In Hours",
             "html": "<h4>Int’l Advising Drop In Hours</h4><p>Feb 4, Feb 16, and Mar 10</p><ul><li>Jason Choi will be hosting three (3) Zoom drop-in hours to answer any questions about international exchange.<ul><li>Please note that these drop-in hours will not be recorded</li></ul></li><li><a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>Zoom links to the drop-in hours</a> are hyperlinked on the International Exchange webpage</li></ul>"
-          },
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Important Reminders",
+        "items": [
           {
-            "title": "Important Reminders",
-            "html": "<h4>Important Reminders</h4><p>Ladle & Leaf is now open in the Café Think space.<ul><li>Ladle & Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area</li></ul></p><p>Ladle & Leaf is open Mondays to Thursdays from 8AM to 8:15 PM PST, and on Fridays from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></p><p>Students are highly encouraged to visit Ladle & Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses.</p>"
+            "title": "Ladle & Leaf Now Open",
+            "html": "<h4>Ladle & Leaf Now Open</h4><ul><li>Ladle &amp; Leaf is now open in the Café Think space.<ul><li>Ladle &amp; Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area</li></ul></li><li>Ladle &amp; Leaf is open Mondays to Thursdays from 8AM to 8:15 PM PST, and on Fridays from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></li><li>Students are highly encouraged to visit Ladle &amp; Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses.</li></ul>"
           },
           {
             "title": "Haas Reception with Nexus students in the Class of 2028",
@@ -75,12 +80,12 @@
                 "2026-02-21"
               ],
               "eventType": "event",
-              "priority": "low"
+              "priority": "medium"
             }
           },
           {
             "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href='https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/' target='_blank' rel='noopener noreferrer'>Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President & CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul>",
+            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href='https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/' target='_blank' rel='noopener noreferrer'>Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President &amp; CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-05"
@@ -91,7 +96,7 @@
           },
           {
             "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p>Lottery Closes Friday, Feb 6 at 11:59 PM PST</p><ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform' target='_blank' rel='noopener noreferrer'>Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href='https://www.climatecap.org/mba-summit' target='_blank' rel='noopener noreferrer'>learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage.</li></ul>",
+            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p>Lottery Closes Friday, Feb 6 at 11:59 PM PST</p><ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform' target='_blank' rel='noopener noreferrer'>Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href='https://www.climatecap.org/mba-summit' target='_blank' rel='noopener noreferrer'>learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-06"
@@ -102,13 +107,13 @@
           },
           {
             "title": "Berkeley StEP Spring 2026 Application Now Available",
-            "html": "<h4>Berkeley StEP Spring 2026 Application Now Available</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST</p><ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks & up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href='https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform' target='_blank' rel='noopener noreferrer'>Berkeley StEP Spring 2026</a> is now available.</li></ul>",
+            "html": "<h4>Berkeley StEP Spring 2026 Application Now Available</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST</p><ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks &amp; up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href='https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform' target='_blank' rel='noopener noreferrer'>Berkeley StEP Spring 2026</a> is now available.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-07"
               ],
               "eventType": "deadline",
-              "priority": "low"
+              "priority": "medium"
             }
           }
         ]
@@ -188,11 +193,11 @@
       }
     ],
     "aiDebugInfo": {
-      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as instructed, organizing the newsletter into sections and items with appropriate HTML tags.",
+      "reasoning": "The JSON structure preserves all sections and items, maintaining the original content, headers, links, and formatting as specified. Each section is represented with a title and a list of items, each with a title and HTML content.",
       "sectionDecisions": [],
       "edgeCasesHandled": [],
-      "totalSections": 5,
-      "processingTime": 34442
+      "totalSections": 6,
+      "processingTime": 29490
     },
     "aiMeta": {}
   },
@@ -221,15 +226,6 @@
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-5"
       },
       {
-        "date": "2026-02-03",
-        "time": "6:00 PM",
-        "title": "DEADLINE: J Prep Case Report Due",
-        "type": "assignment",
-        "priority": "high",
-        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
-      },
-      {
         "date": "2026-02-04",
         "time": "6:00 PM",
         "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
@@ -256,6 +252,15 @@
         "priority": "low",
         "description": "At the end of your academic team journey, your team will be asked to self-facilitate a Team Debrief Workshop. \n\nPlease identify one member of the team who is responsible for submitting a photo of your Team Journey Map and providing a reflection of your team journey based on one of the prompts outlined below that emerged in your discussions—no more than one paragraph required.  \n\nPlease select one of the prompts below and share your reflections:\n\n* Please share one way your team developed either intentionally or unintentionally during your team journey, and what actions team members took to support this development? \n\n* Please share the conditions or actions that lead to a team's low point.  Was your team able to pivot and move out of this zone?  If so, what actions did the team take?   If not, why do you think this was the case?\n\n* What were some of the benefits and challenges of working with a team of people from different disciplines, lived experiences, and cultures?  How did this contribute to the leadership development of the team members?\n\nDEBRIEF KIT:\n\n* [Video] (https://bcourses.berkeley.edu/courses/1546457/pages/video-team-debrief)Links to an external site. to provide an overview of the goals of the Team Debrief\n\n* [] (https://prod.ally.ac/static/ally-icon-indicator-low-circle.b7cd3e0c1511a1080fd322790193604f.svg)[Deck] (https://bcourses.berkeley.edu/courses/1546457/files/92053932?wrap=1) to take you through the process\n\n* Supplies are available in the MBA lounge or draw your journey map using the zoom whiteboard function to support the conversation.\n\nSUBMISSION:\n\n* Identify one team member who will submit a photo of your team journey map and joint reflections.",
         "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=02&year=2026#assignment_8930028"
+      },
+      {
+        "date": "2026-02-06",
+        "time": "6:00 PM",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "type": "assignment",
+        "priority": "high",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
       },
       {
         "date": "2026-02-08",
@@ -314,13 +319,13 @@
         "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President & CEO of",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Announcements",
-          "sectionIndex": 1,
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
           "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-          "itemIndex": 7
+          "itemIndex": 2
         }
       },
       {
@@ -328,27 +333,27 @@
         "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
         "type": "newsletter",
         "priority": "medium",
-        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings tog",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Announcements",
-          "sectionIndex": 1,
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
           "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-          "itemIndex": 8
+          "itemIndex": 3
         }
       },
       {
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "low",
+        "priority": "medium",
         "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Announcements",
-          "sectionIndex": 1,
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
           "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
-          "itemIndex": 9
+          "itemIndex": 4
         }
       },
       {
@@ -360,7 +365,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 3,
+          "sectionIndex": 4,
           "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
@@ -374,7 +379,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 3,
+          "sectionIndex": 4,
           "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
@@ -402,15 +407,6 @@
         "url": "https://bcourses.berkeley.edu/courses/1549713/pages/week-5"
       },
       {
-        "date": "2026-02-03",
-        "time": "6:00 PM",
-        "title": "DEADLINE: J Prep Case Report Due",
-        "type": "assignment",
-        "priority": "high",
-        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
-      },
-      {
         "date": "2026-02-05",
         "time": "6:00 PM",
         "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
@@ -437,6 +433,15 @@
         "priority": "low",
         "description": "At the end of your academic team journey, your team will be asked to self-facilitate a Team Debrief Workshop. \n\nPlease identify one member of the team who is responsible for submitting a photo of your Team Journey Map and providing a reflection of your team journey based on one of the prompts outlined below that emerged in your discussions—no more than one paragraph required.  \n\nPlease select one of the prompts below and share your reflections:\n\n* Please share one way your team developed either intentionally or unintentionally during your team journey, and what actions team members took to support this development? \n\n* Please share the conditions or actions that lead to a team's low point.  Was your team able to pivot and move out of this zone?  If so, what actions did the team take?   If not, why do you think this was the case?\n\n* What were some of the benefits and challenges of working with a team of people from different disciplines, lived experiences, and cultures?  How did this contribute to the leadership development of the team members?\n\nDEBRIEF KIT:\n\n* [Video] (https://bcourses.berkeley.edu/courses/1546457/pages/video-team-debrief)Links to an external site. to provide an overview of the goals of the Team Debrief\n\n* [] (https://prod.ally.ac/static/ally-icon-indicator-low-circle.b7cd3e0c1511a1080fd322790193604f.svg)[Deck] (https://bcourses.berkeley.edu/courses/1546457/files/92053932?wrap=1) to take you through the process\n\n* Supplies are available in the MBA lounge or draw your journey map using the zoom whiteboard function to support the conversation.\n\nSUBMISSION:\n\n* Identify one team member who will submit a photo of your team journey map and joint reflections.",
         "url": "https://bcourses.berkeley.edu/calendar?include_contexts=course_1546457&month=02&year=2026#assignment_8930028"
+      },
+      {
+        "date": "2026-02-06",
+        "time": "6:00 PM",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "type": "assignment",
+        "priority": "high",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments"
       },
       {
         "date": "2026-02-08",
@@ -495,13 +500,13 @@
         "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President & CEO of",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Announcements",
-          "sectionIndex": 1,
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
           "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-          "itemIndex": 7
+          "itemIndex": 2
         }
       },
       {
@@ -509,27 +514,27 @@
         "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
         "type": "newsletter",
         "priority": "medium",
-        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings tog",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Announcements",
-          "sectionIndex": 1,
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
           "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-          "itemIndex": 8
+          "itemIndex": 3
         }
       },
       {
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "low",
+        "priority": "medium",
         "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Announcements",
-          "sectionIndex": 1,
+          "sectionTitle": "Important Reminders",
+          "sectionIndex": 2,
           "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
-          "itemIndex": 9
+          "itemIndex": 4
         }
       },
       {
@@ -541,7 +546,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 3,
+          "sectionIndex": 4,
           "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
@@ -555,7 +560,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 3,
+          "sectionIndex": 4,
           "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
@@ -563,7 +568,7 @@
     ],
     "blueSummary": "[DEV MODE] Blue cohort: 15 events this week.",
     "goldSummary": "[DEV MODE] Gold cohort: 15 events this week.",
-    "processingTime": 39
+    "processingTime": 37
   },
   "cohortEvents": {
     "blue": [
@@ -1100,17 +1105,6 @@
         "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-jprep-due-blue",
-        "title": "DEADLINE: J Prep Case Report Due",
-        "start": "2026-02-04T02:00:00.000Z",
-        "end": "2026-02-04T02:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba202_accounting_blue_spring2026.ics"
-      },
-      {
         "uid": "ewmba201b-sp26-blue-week5",
         "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
         "start": "2026-02-05T02:00:00.000Z",
@@ -1143,6 +1137,17 @@
         "allDay": true,
         "cohort": "blue",
         "source": "teams@Haas.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-jprep-due-blue",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "start": "2026-02-07T02:00:00.000Z",
+        "end": "2026-02-07T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "allDay": false,
+        "cohort": "blue",
+        "source": "ewmba202_accounting_blue_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-blue-week5-gsi",
@@ -1405,7 +1410,7 @@
         "start": "2026-03-17T01:00:00.000Z",
         "end": "2026-03-17T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1416,7 +1421,7 @@
         "start": "2026-03-19T01:00:00.000Z",
         "end": "2026-03-19T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1427,7 +1432,7 @@
         "start": "2026-03-24T01:00:00.000Z",
         "end": "2026-03-24T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1438,7 +1443,7 @@
         "start": "2026-03-31T01:00:00.000Z",
         "end": "2026-03-31T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1449,7 +1454,7 @@
         "start": "2026-04-02T01:00:00.000Z",
         "end": "2026-04-02T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1460,7 +1465,7 @@
         "start": "2026-04-07T01:00:00.000Z",
         "end": "2026-04-07T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1471,7 +1476,7 @@
         "start": "2026-04-09T01:00:00.000Z",
         "end": "2026-04-09T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1482,7 +1487,7 @@
         "start": "2026-04-14T01:00:00.000Z",
         "end": "2026-04-14T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1493,7 +1498,7 @@
         "start": "2026-04-16T01:00:00.000Z",
         "end": "2026-04-16T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1504,7 +1509,7 @@
         "start": "2026-04-21T01:00:00.000Z",
         "end": "2026-04-21T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1515,7 +1520,7 @@
         "start": "2026-04-23T01:00:00.000Z",
         "end": "2026-04-23T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1526,7 +1531,7 @@
         "start": "2026-04-28T01:00:00.000Z",
         "end": "2026-04-28T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1537,7 +1542,7 @@
         "start": "2026-04-30T01:00:00.000Z",
         "end": "2026-04-30T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1548,7 +1553,7 @@
         "start": "2026-05-05T01:00:00.000Z",
         "end": "2026-05-05T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1559,7 +1564,7 @@
         "start": "2026-05-07T01:00:00.000Z",
         "end": "2026-05-07T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1570,7 +1575,7 @@
         "start": "2026-05-12T01:00:00.000Z",
         "end": "2026-05-12T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1581,7 +1586,7 @@
         "start": "2026-05-14T01:00:00.000Z",
         "end": "2026-05-14T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1592,7 +1597,7 @@
         "start": "2026-05-19T01:00:00.000Z",
         "end": "2026-05-19T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1603,7 +1608,7 @@
         "start": "2026-05-21T01:00:00.000Z",
         "end": "2026-05-21T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -2143,17 +2148,6 @@
         "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba202-sp26-jprep-due-gold",
-        "title": "DEADLINE: J Prep Case Report Due",
-        "start": "2026-02-04T02:00:00.000Z",
-        "end": "2026-02-04T02:00:00.000Z",
-        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba202_accounting_gold_spring2026.ics"
-      },
-      {
         "uid": "ewmba201b-sp26-gold-week5",
         "title": "Class 5: Business Cycles I & MIDTERM EXAM (Half Class)",
         "start": "2026-02-06T02:00:00.000Z",
@@ -2186,6 +2180,17 @@
         "allDay": true,
         "cohort": "gold",
         "source": "teams@Haas.ics"
+      },
+      {
+        "uid": "ewmba202-sp26-jprep-due-gold",
+        "title": "DEADLINE: J Prep Case Report Due",
+        "start": "2026-02-07T02:00:00.000Z",
+        "end": "2026-02-07T02:00:00.000Z",
+        "url": "https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "description": "J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments",
+        "allDay": false,
+        "cohort": "gold",
+        "source": "ewmba202_accounting_gold_spring2026.ics"
       },
       {
         "uid": "ewmba201b-sp26-gold-week5-gsi",
@@ -2448,7 +2453,7 @@
         "start": "2026-03-18T01:00:00.000Z",
         "end": "2026-03-18T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2459,7 +2464,7 @@
         "start": "2026-03-20T01:00:00.000Z",
         "end": "2026-03-20T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2470,7 +2475,7 @@
         "start": "2026-03-24T01:00:00.000Z",
         "end": "2026-03-24T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2481,7 +2486,7 @@
         "start": "2026-04-01T01:00:00.000Z",
         "end": "2026-04-01T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2492,7 +2497,7 @@
         "start": "2026-04-03T01:00:00.000Z",
         "end": "2026-04-03T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2503,7 +2508,7 @@
         "start": "2026-04-08T01:00:00.000Z",
         "end": "2026-04-08T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2514,7 +2519,7 @@
         "start": "2026-04-10T01:00:00.000Z",
         "end": "2026-04-10T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2525,7 +2530,7 @@
         "start": "2026-04-15T01:00:00.000Z",
         "end": "2026-04-15T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2536,7 +2541,7 @@
         "start": "2026-04-17T01:00:00.000Z",
         "end": "2026-04-17T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2547,7 +2552,7 @@
         "start": "2026-04-22T01:00:00.000Z",
         "end": "2026-04-22T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2558,7 +2563,7 @@
         "start": "2026-04-24T01:00:00.000Z",
         "end": "2026-04-24T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2569,7 +2574,7 @@
         "start": "2026-04-29T01:00:00.000Z",
         "end": "2026-04-29T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2580,7 +2585,7 @@
         "start": "2026-05-01T01:00:00.000Z",
         "end": "2026-05-01T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2591,7 +2596,7 @@
         "start": "2026-05-06T01:00:00.000Z",
         "end": "2026-05-06T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2602,7 +2607,7 @@
         "start": "2026-05-08T01:00:00.000Z",
         "end": "2026-05-08T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2613,7 +2618,7 @@
         "start": "2026-05-13T01:00:00.000Z",
         "end": "2026-05-13T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2624,7 +2629,7 @@
         "start": "2026-05-15T01:00:00.000Z",
         "end": "2026-05-15T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2635,7 +2640,7 @@
         "start": "2026-05-20T01:00:00.000Z",
         "end": "2026-05-20T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2646,7 +2651,7 @@
         "start": "2026-05-22T01:00:00.000Z",
         "end": "2026-05-22T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -3157,10 +3162,10 @@
     ]
   },
   "processingInfo": {
-    "totalTime": 46333,
-    "newsletterTime": 46294,
-    "calendarTime": 489,
-    "myWeekTime": 39,
-    "timestamp": "2026-02-02T02:03:55.078Z"
+    "totalTime": 40683,
+    "newsletterTime": 40646,
+    "calendarTime": 478,
+    "myWeekTime": 37,
+    "timestamp": "2026-02-02T03:47:10.558Z"
   }
 }
