@@ -1,6 +1,6 @@
 # OskiHub - Copilot Instructions
 
-> UC Berkeley EWMBA Dashboard | Next.js 15.5 + TypeScript + Tailwind  
+> UC Berkeley EWMBA Dashboard | Next.js 15.5 + TypeScript 5 + Tailwind 4  
 > Production: https://www.oski.app | Vercel-hosted  
 > Repo: https://github.com/CinnamonGrossCrunch/OskiHub
 
@@ -9,18 +9,19 @@
 OskiHub aggregates EWMBA data into a unified dashboard:
 - **Entry point**: `app/page.tsx` → `ClientDashboard.tsx` → fetches `/api/unified-dashboard`
 - **Two newsletter sources**: Mailchimp scraper (Bear Necessities) + Gmail pipeline (Blue Crew, EW Wire)
-- **Caching strategy**: Upstash KV (primary, 50ms) → Static JSON fallback (500ms) → Fresh regeneration (20s)
+- **Caching strategy**: Upstash KV (primary, ~50ms) → Static JSON fallback (~500ms) → Fresh regeneration (~20s)
+- **AI Processing**: OpenAI with model fallback chain for newsletter organization + weekly summaries
 
 ### Key Directories
 | Path | Purpose |
 |------|---------|
-| `app/api/unified-dashboard/` | Main endpoint - aggregates all dashboard data |
+| `app/api/unified-dashboard/` | Main endpoint - aggregates all dashboard data (maxDuration: 200s) |
 | `app/api/cron/` | Vercel cron handlers (daily newsletter + cache refresh) |
 | `app/api/gmail-newsletters/` | Serves Gmail-sourced newsletters from `content/newsletters/` |
 | `app/api/github-webhook/` | Receives GitHub push events → triggers Vercel redeploy |
-| `app/components/` | React components (`ClientDashboard.tsx` is shell) |
+| `app/components/` | React components (`ClientDashboard.tsx` is main shell) |
 | `lib/` | Core logic: `cache.ts`, `scrape.ts`, `aiClient.ts`, `date-utils.ts`, `icsUtils.ts` |
-| `public/*.ics` | Course calendars per cohort |
+| `public/*.ics` | Course calendars per cohort (naming: `ewmba{courseNum}_{cohort}_{term}.ics`) |
 | `public/cache/` | Static JSON fallbacks (committed to repo) |
 | `content/newsletters/` | Gmail-ingested newsletters (markdown + frontmatter) |
 | `scripts/` | Google Apps Scripts (reference copies - actual scripts live in script.google.com) |
@@ -155,6 +156,17 @@ const COHORT_FILES = {
 | Edit `scripts/*.js` directly | Edit in Google Apps Script, then copy to repo |
 | Assume cron succeeded | Check Vercel logs, add failsafe validations |
 | Skip build before commit | Run `npm run build` (catches type errors) |
+| Missing route config | Add `export const runtime/dynamic/maxDuration` to API routes |
+
+## API Route Configuration Pattern
+
+All API routes that use Node.js features (OpenAI, cheerio, fs) must include these exports:
+```typescript
+export const runtime = 'nodejs';           // Required for Node.js APIs
+export const dynamic = 'force-dynamic';    // Prevent static generation
+export const maxDuration = 200;            // Seconds (AI routes need 200-300)
+export const fetchCache = 'force-no-store'; // Disable fetch caching
+```
 
 ## API Response: `/api/unified-dashboard`
 
@@ -180,6 +192,7 @@ interface UnifiedDashboardData {
     launch: CalendarEvent[];    // UC Launch Accelerator
     calBears: CalendarEvent[];  // Cal Bears home games
     campusGroups: CalendarEvent[];
+    academicCalendar: CalendarEvent[]; // Haas academic calendar
   };
   processingInfo: { totalTime: number; newsletterTime: number; calendarTime: number; myWeekTime: number };
 }
@@ -195,50 +208,39 @@ Response header `X-Cache-Source: kv | static | fresh` indicates data origin.
 | Wrong dates | Using `date-utils.ts`? Berkeley timezone? | [`MY_WEEK_DATE_LOGIC.md`](../markdown_files/MY_WEEK_DATE_LOGIC.md) |
 | ICS events missing | File in `public/`? In `COHORT_FILES`? | [`ICS_CALENDAR_GUIDE.md`](../markdown_files/ICS_CALENDAR_GUIDE.md) |
 | Gmail newsletter missing | See Pipeline Troubleshooting above | [`NEWSLETTER_SYNC_SETUP.md`](../markdown_files/NEWSLETTER_SYNC_SETUP.md) |
-| AI timeout | Increase `maxDuration` in route exports | [`TIME_SENSITIVE_LOGIC_ANALYSIS.md`](../markdown_files/TIME_SENSITIVE_LOGIC_ANALYSIS.md) |
+| AI timeout | Increase `maxDuration` in route exports + `vercel.json` | - |
 | Webhook not firing | Check GitHub webhook deliveries | [`GITHUB_WEBHOOK_SETUP.md`](../markdown_files/GITHUB_WEBHOOK_SETUP.md) |
 | Cron not running | Verify `CRON_SECRET` in Vercel | [`VERCEL_CRON_SECRET_SETUP.md`](../markdown_files/VERCEL_CRON_SECRET_SETUP.md) |
-
-## Documentation Index
-
-| Guide | Purpose |
-|-------|---------|
-| [`ENV_SETUP.md`](../markdown_files/ENV_SETUP.md) | All environment variables with generation commands |
-| [`CACHE_SETUP_GUIDE.md`](../markdown_files/CACHE_SETUP_GUIDE.md) | Upstash Redis configuration |
-| [`QUICK_SETUP.md`](../markdown_files/QUICK_SETUP.md) | 5-minute setup checklist |
-| [`QUICK_CACHE_REFRESH_GUIDE.md`](../markdown_files/QUICK_CACHE_REFRESH_GUIDE.md) | Manual cache refresh commands |
-| [`ICS_CALENDAR_GUIDE.md`](../markdown_files/ICS_CALENDAR_GUIDE.md) | Calendar troubleshooting & adding courses |
-| [`MY_WEEK_DATA_FLOW.md`](../markdown_files/MY_WEEK_DATA_FLOW.md) | AI summary architecture |
-| [`MY_WEEK_DATE_LOGIC.md`](../markdown_files/MY_WEEK_DATE_LOGIC.md) | Week boundary calculations |
-| [`TIME_SENSITIVE_LOGIC_ANALYSIS.md`](../markdown_files/TIME_SENSITIVE_LOGIC_ANALYSIS.md) | Deadline detection logic |
-| [`GITHUB_WEBHOOK_SETUP.md`](../markdown_files/GITHUB_WEBHOOK_SETUP.md) | GitHub → Vercel webhook |
-| [`GITHUB_ACTION_SETUP.md`](../markdown_files/GITHUB_ACTION_SETUP.md) | GitHub Actions configuration |
-| [`NEWSLETTER_SYNC_SETUP.md`](../markdown_files/NEWSLETTER_SYNC_SETUP.md) | Gmail pipeline setup |
-| [`WEBHOOK_QUICK_SETUP.md`](../markdown_files/WEBHOOK_QUICK_SETUP.md) | Quick webhook reference |
-| [`VERCEL_CRON_SECRET_SETUP.md`](../markdown_files/VERCEL_CRON_SECRET_SETUP.md) | Cron authentication |
-| [`scripts/GMAIL_DISPATCHER_SETUP.md`](../scripts/GMAIL_DISPATCHER_SETUP.md) | Google Apps Script setup |
+| Port 3000 in use | `taskkill /F /IM node.exe` before `npm run dev` | - |
 
 ## Developer Commands
 
-**Before starting dev server, always kill existing Node processes to avoid port conflicts:**
-```bash
-# Windows (run this FIRST)
+```powershell
+# Windows: Kill existing Node processes first (prevents port conflicts)
 taskkill /F /IM node.exe 2>$null; npm run dev
 
-# Or separately:
-taskkill /F /IM node.exe    # Kill all Node processes
-npm run dev                  # Then start fresh
-```
+# Development
+npm run dev           # Dev server (cache bypassed for calendar data)
+npm run build         # Full build with type checking  
+npm run type-check    # TypeScript only
+npm run build:safe    # Build + verify no API key leakage
+npm run lint          # ESLint
 
-```bash
-npm run dev          # Dev server (cache bypassed for calendar data)
-npm run build        # Full build with type checking
-npm run type-check   # TypeScript only
-npm run build:safe   # Build + verify no API key leakage
+# Manual cache refresh
+curl -H "Authorization: Bearer $CRON_SECRET" https://oski.app/api/cron/refresh-newsletter
 ```
 
 ## Deployment
 
-- **Auto-deploy**: Push to `main` → Vercel builds → `warm-cache.yml` prewarms
-- **Manual cache refresh**: `curl -H "Authorization: Bearer $CRON_SECRET" https://oski.app/api/cron/refresh-newsletter`
+- **Auto-deploy**: Push to `main` → Vercel builds → `warm-cache.yml` prewarms cache
+- **Build command**: `npm run build && node scripts/verify-no-api-leakage.js`
 - **Static fallback**: `public/cache/*.json` committed to repo (used if KV fails)
+- **Region**: `iad1` (configured in `vercel.json`)
+
+## File Naming Conventions
+
+| Type | Pattern | Example |
+|------|---------|---------|
+| Course ICS | `ewmba{courseNum}_{cohort}_{term}.ics` | `ewmba201b_macro_blue_spring2026.ics` |
+| Gmail newsletter | `{YYYY-MM-DD}-{slug}.md` | `2026-01-28-ew-wire-week-of-january-26-2026.md` |
+| Static cache | `{cache-key}.json` | `dashboard-data.json` |

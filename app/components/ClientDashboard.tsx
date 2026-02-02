@@ -185,23 +185,40 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
       {/* Dark Overlay - Gradient blend for browsers with support */}
       <div className="fixed inset-0 -z-10 pointer-events-none bg-gradient-to-b from-black/60 to-black/20 mix-blend-multiply hidden supports-[mix-blend-mode:multiply]:block"></div>
       
-      {/* Animated logo - z-index 100 (highest layer) - anchored to top with max-w-[1740px] alignment */}
-      <div className="fixed top-0 left-0 right-0 z-[100] pointer-events-none">
-        <div className="max-w-[1740px] mx-auto px-3 sm:px-4 lg:px-6 py-3.5  md:py-4.5">
-          <div className="h-9 w-auto flex items-center">
-            {showLogo && (
-              <div className="pointer-events-auto">
+      {/* Fixed Header Bar - Logo + Cohort Toggle - z-index 100 (highest layer) */}
+      <div className={getPerformanceClasses(
+        `fixed top-0 left-0 right-0 z-[100] bg-black/20 backdrop-blur-lg border-b border-white/10`,
+        capabilities
+      )}>
+        {/* Animated black overlay for intro */}
+        <div 
+          className="absolute inset-0 bg-black transition-opacity duration-300 ease-out pointer-events-none"
+          style={{ opacity: overlayOpacity / 100 }}
+        />
+        <div className="max-w-[1740px] mx-auto px-3 sm:px-4 lg:px-6 py-2">
+          <div className="h-10 sm:h-12 flex items-center justify-between relative z-10">
+            {/* Left - Logo */}
+            <div className="flex items-center">
+              {showLogo && (
                 <AnimatedLogo
                   videoSrc="/oskihub_anim.mp4"
                   fallbackImageSrc="/oskihub_anim_still.png"
                   alt="OskiHub Logo"
                   width={80}
                   height={36}
-                  className="h-full w-auto object-contain"
+                  className="h-9 w-auto object-contain"
                   playOnce={true}
                 />
-              </div>
-            )}
+              )}
+            </div>
+            {/* Right - Cohort Toggle */}
+            <div className="flex items-center">
+              <CohortToggleWidget 
+                selectedCohort={selectedCohort}
+                onCohortChange={handleCohortChange}
+                className=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -215,43 +232,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
             msOverflowStyle: 'none'
           }}>
         {/* Centering wrapper - ensures all content is centered on ultra-wide screens */}
-        <div className="min-h-full w-full flex flex-col items-center overflow-x-hidden">
-        {/* Header - full width background with constrained content */}
-        <div className={getPerformanceClasses(
-          `w-full max-w-[1740px] sticky top-0 z-30 bg-black/10 border-b border-red-600 backdrop-blur-lg relative overflow-hidden py-1 mb-0`,
-          capabilities
-        )}>
-          {/* Animated black overlay - z-index 20 (middle layer) */}
-          <div 
-            className="absolute inset-0 bg-black transition-opacity duration-300 ease-out pointer-events-none z-20"
-            style={{ opacity: overlayOpacity / 100 }}
-          />
-
-          <div className="pointer-events-none absolute flex justify-left inset-0" style={{ maskImage: 'radial-gradient(circle at 30% 25%, rgba(0,0,0,.7), transparent 70%)', WebkitMaskImage: 'radial-gradient(circle at 30% 25%, rgba(0,0,0,.7), transparent 70%)', filter: 'url(#glassDistort)' }} />
-
-        <div className="px-3 sm:px-4 lg:px-6 py-2 relative z-10">
-          <div className="flex items-center h-10 sm:h-12 md:h-12">
-            {/* Left section - Logos */}
-            <div className="flex-1 flex items-center gap-1 sm:gap-2 h-full px-1">
-          
-              {/* Spacer to reserve space for absolutely positioned logo */}
-              <div className="min-w-[80px] h-9 flex items-center"></div>
-            
-            {/* Center section */}
-            
-            </div> {/* Close Left section */}
-            
-            {/* Right section - Cohort Toggle */}
-            <div className="flex-1 flex items-center justify-end h-full px-1 relative z-50">
-              <CohortToggleWidget 
-          selectedCohort={selectedCohort}
-          onCohortChange={handleCohortChange}
-          className=""
-              />
-            </div>
-          </div>
-        </div>
-        </div> {/* Close Header */}
+        <div className="min-h-full w-full flex flex-col items-center overflow-x-hidden pt-14 sm:pt-16">
         
       {/* Main Content */}
       <main className="w-full max-w-[1740px] md:px-0 lg:px-4 py-0 relative overflow-hidden box-border">
