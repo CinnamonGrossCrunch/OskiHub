@@ -541,13 +541,13 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
               
               <div className="flex flex-col gap-4">
                 {newsletterEvent.multipleEvents.slice(0, 2).map((individualEvent: NewsletterCalendarEvent, index: number) => (
-                  <div key={index} className="bg-slate-800/30 rounded-lg p-4 border border-slate-600/30">
+                  <div key={index} className="bg-slate-900/40 backdrop-blur-sm rounded-lg p-4 border border-violet-500/30 shadow-[0_0_12px_2px_rgba(139,92,246,0.15)]">
                     {/* Individual Event Header */}
                     <div className="mb-3">
                       <h4 className="text-md font-semibold text-white leading-tight mb-2">
                         {safeStringify(individualEvent.title)}
                       </h4>
-                      <div className="text-xs text-slate-400 mb-3">
+                      <div className="text-xs text-violet-300/80 mb-3">
                         From: {individualEvent.sourceMetadata?.sectionTitle || 'Newsletter'}
                       </div>
                     </div>
@@ -582,13 +582,13 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
               {newsletterEvent.multipleEvents.length > 2 && (
                 <div className="grid gap-4" style={{ gridTemplateColumns: `repeat(${Math.min(newsletterEvent.multipleEvents.length - 2, 2)}, 1fr)` }}>
                   {newsletterEvent.multipleEvents.slice(2).map((individualEvent: NewsletterCalendarEvent, index: number) => (
-                    <div key={index + 2} className="bg-slate-800/30 rounded-lg p-4 border border-slate-600/30">
+                    <div key={index + 2} className="bg-slate-900/40 backdrop-blur-sm rounded-lg p-4 border border-violet-500/30 shadow-[0_0_12px_2px_rgba(139,92,246,0.15)]">
                       {/* Individual Event Header */}
                       <div className="mb-3">
                         <h4 className="text-md font-semibold text-white leading-tight mb-2">
                           {safeStringify(individualEvent.title)}
                         </h4>
-                        <div className="text-xs text-slate-400 mb-1">
+                        <div className="text-xs text-violet-300/80 mb-1">
                           From: {individualEvent.sourceMetadata?.sectionTitle || 'Newsletter'}
                         </div>
                       </div>
