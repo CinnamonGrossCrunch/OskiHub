@@ -208,13 +208,13 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
 
       {/* Content Overlay */}
       <div
-          className="fixed inset-0 z-50 overflow-auto scrollbar-hide"
+          className="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden scrollbar-hide"
           style={{ 
             scrollbarGutter: 'stable both-edges',
             scrollbarWidth: 'none',
             msOverflowStyle: 'none'
           }}>
-        {/* Header */}
+        {/* Header - full width background with constrained content */}
         <div className={getPerformanceClasses(
           `w-full sticky top-0 z-30 bg-black/10 border-b border-red-600 backdrop-blur-lg relative overflow-hidden py-1 mb-0`,
           capabilities
@@ -252,7 +252,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         </div> {/* Close Header */}
         
       {/* Main Content */}
-      <main className="max-w-[1740px] mx-auto  md:px-0 lg:px-4 py-0 relative">
+      <main className="max-w-[1740px] mx-auto md:px-0 lg:px-4 py-0 relative overflow-hidden">
         {/* Animated black overlay - z-index 20 (middle layer) */}
           <div 
             className="fixed inset-0 bg-black transition-opacity duration-300 ease-out pointer-events-none z-45"
@@ -264,7 +264,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         {/* Mobile: Stacked layout (Resources row → Weather/Travel row → MyWeek) */}
         {/* Desktop (lg+): 8-column grid layout */}
         {/* Col 1: MyWeek collapsed | Cols 2-6: Expansion area | Col 7: HaasJourney collapsed | Col 8: Weather/Travel */}
-        <div className="flex flex-col lg:grid lg:grid-cols-8 mt-2 lg:py-2 mb-0 gap-2 items-start sm:mx-0 lg:mx-0 transition-all duration-500 ease-in-out">
+        <div className="flex flex-col lg:grid lg:grid-cols-8 mt-2 lg:py-2 mb-0 gap-2 items-start sm:mx-0 lg:mx-0 transition-all duration-500 ease-in-out overflow-hidden">
           
           {/* My Week Widget - Column 1 collapsed, expands into Cols 1-5 */}
           <div className={`order-3 lg:order-1 w-full transition-all duration-500 ease-in-out px-3 sm:px-0 ${
@@ -306,7 +306,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         </div>
         
         {/* Section C: Dashboard Tabs */}
-        <div className="grid grid-cols-1 lg:grid-cols-8 lg:auto-rows-min gap-1 mt-4 mb-6  md:mx-0 lg:mx-2 transition-[margin-top,transform] duration-1200 ease-in-out will-change-transform">
+        <div className="grid grid-cols-1 lg:grid-cols-8 lg:auto-rows-min gap-1 mt-4 mb-6 md:mx-0 lg:mx-2 transition-[margin-top,transform] duration-1200 ease-in-out will-change-transform overflow-hidden">
           {/* Left Column: MainDashboardTabs - Always 6 columns on large screens */}
           <div className="lg:col-span-6 lg:row-span-1">
             <div id="main-dashboard-tabs" className="transition-all duration-700 ease-in-out">{/* Removed px-3 sm:px-0 lg:px-0 - let parent grid handle spacing */}
