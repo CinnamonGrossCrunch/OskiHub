@@ -38,7 +38,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:haas-spring2026-spring-break-start@oskihub
-DTSTART;VALUE=DATE:20260329
+DTSTART;VALUE=DATE:20260324
 DTEND;VALUE=DATE:20260403
 SUMMARY:Spring Break
 DESCRIPTION:Spring Break - No classes. Enjoy your break!
@@ -50,18 +50,28 @@ BEGIN:VEVENT
 UID:haas-spring2026-last-day@oskihub
 DTSTART;VALUE=DATE:20260305
 DTEND;VALUE=DATE:20260306
-SUMMARY:Last Day of Classes
-DESCRIPTION:Final day of regular instruction for Spring 2026 semester.
+SUMMARY:Last Day of Spring A Classes
+DESCRIPTION:Final day of regular instruction for Spring A 2026.
 CATEGORIES:ACADEMIC
 STATUS:CONFIRMED
 END:VEVENT
 
 BEGIN:VEVENT
 UID:haas-spring2026-finals-week@oskihub
-DTSTART;VALUE=DATE:20260315
-DTEND;VALUE=DATE:20260319
-SUMMARY:Finals Week
-DESCRIPTION:Final examinations period for Spring 2026 semester. Check your course schedules for specific exam dates and times.
+DTSTART;VALUE=DATE:20260309
+DTEND;VALUE=DATE:20260313
+SUMMARY:Finals Week (Spring A)
+DESCRIPTION:Spring A Final examinations period. Check your course schedules for specific exam dates and times.
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:haas-spring2026-springb-finals-week@oskihub
+DTSTART;VALUE=DATE:20260518
+DTEND;VALUE=DATE:20260522
+SUMMARY:Finals Week (Spring B)
+DESCRIPTION:Spring B Final examinations period. Check your course schedules for specific exam dates and times.
 CATEGORIES:ACADEMIC,FINALS
 STATUS:CONFIRMED
 END:VEVENT
