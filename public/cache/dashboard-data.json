@@ -96,7 +96,7 @@
           },
           {
             "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p>Lottery Closes Friday, Feb 6 at 11:59 PM PST</p><ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform' target='_blank' rel='noopener noreferrer'>Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href='https://www.climatecap.org/mba-summit' target='_blank' rel='noopener noreferrer'>learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage.</li></ul>",
+            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p>Lottery Closes Friday, Feb 6 at 11:59 PM PST</p><ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform' target='_blank' rel='noopener noreferrer'>Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href='https://www.climatecap.org/mba-summit' target='_blank' rel='noopener noreferrer'>learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage.</li></ul>",
             "timeSensitive": {
               "dates": [
                 "2026-02-06"
@@ -113,7 +113,7 @@
                 "2026-02-07"
               ],
               "eventType": "deadline",
-              "priority": "high"
+              "priority": "medium"
             }
           }
         ]
@@ -193,11 +193,11 @@
       }
     ],
     "aiDebugInfo": {
-      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as instructed, organizing the newsletter into sections with titles and items, each containing HTML content. The section titles and item titles follow the specified header tags, and lists are converted to <ul>/<li> format. All hyperlinks are kept intact.",
+      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as specified, organizing the newsletter into sections with titles and items, each containing HTML content. The section headers and list items are formatted with the specified tags, and all content is included without truncation.",
       "sectionDecisions": [],
       "edgeCasesHandled": [],
       "totalSections": 6,
-      "processingTime": 33294
+      "processingTime": 26033
     },
     "aiMeta": {}
   },
@@ -333,7 +333,7 @@
         "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
         "type": "newsletter",
         "priority": "medium",
-        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings tog",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Important Reminders",
@@ -346,7 +346,7 @@
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "high",
+        "priority": "medium",
         "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
         "sourceType": "newsletter",
         "newsletterSource": {
@@ -514,7 +514,7 @@
         "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
         "type": "newsletter",
         "priority": "medium",
-        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings tog",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Important Reminders",
@@ -527,7 +527,7 @@
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "high",
+        "priority": "medium",
         "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
         "sourceType": "newsletter",
         "newsletterSource": {
@@ -568,7 +568,7 @@
     ],
     "blueSummary": "[DEV MODE] Blue cohort: 15 events this week.",
     "goldSummary": "[DEV MODE] Gold cohort: 15 events this week.",
-    "processingTime": 42
+    "processingTime": 39
   },
   "cohortEvents": {
     "blue": [
@@ -1410,18 +1410,7 @@
         "start": "2026-03-17T01:00:00.000Z",
         "end": "2026-03-17T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class1-tue",
-        "title": "Spring B - Class 1 (Blue)",
-        "start": "2026-03-18T01:00:00.000Z",
-        "end": "2026-03-18T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1432,18 +1421,7 @@
         "start": "2026-03-19T01:00:00.000Z",
         "end": "2026-03-19T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class1-thu",
-        "title": "Spring B - Class 1 (Blue)",
-        "start": "2026-03-20T01:00:00.000Z",
-        "end": "2026-03-20T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1454,7 +1432,7 @@
         "start": "2026-03-24T01:00:00.000Z",
         "end": "2026-03-24T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 2\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 2\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1465,18 +1443,7 @@
         "start": "2026-03-31T01:00:00.000Z",
         "end": "2026-03-31T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class3-tue",
-        "title": "Spring B - Class 3 (Blue)",
-        "start": "2026-04-01T01:00:00.000Z",
-        "end": "2026-04-01T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1487,18 +1454,7 @@
         "start": "2026-04-02T01:00:00.000Z",
         "end": "2026-04-02T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class3-thu",
-        "title": "Spring B - Class 3 (Blue)",
-        "start": "2026-04-03T01:00:00.000Z",
-        "end": "2026-04-03T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1509,18 +1465,7 @@
         "start": "2026-04-07T01:00:00.000Z",
         "end": "2026-04-07T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class4-tue",
-        "title": "Spring B - Class 4 (Blue)",
-        "start": "2026-04-08T01:00:00.000Z",
-        "end": "2026-04-08T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1531,18 +1476,7 @@
         "start": "2026-04-09T01:00:00.000Z",
         "end": "2026-04-09T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class4-thu",
-        "title": "Spring B - Class 4 (Blue)",
-        "start": "2026-04-10T01:00:00.000Z",
-        "end": "2026-04-10T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1553,18 +1487,7 @@
         "start": "2026-04-14T01:00:00.000Z",
         "end": "2026-04-14T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class5-tue",
-        "title": "Spring B - Class 5 (Blue)",
-        "start": "2026-04-15T01:00:00.000Z",
-        "end": "2026-04-15T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1575,18 +1498,7 @@
         "start": "2026-04-16T01:00:00.000Z",
         "end": "2026-04-16T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class5-thu",
-        "title": "Spring B - Class 5 (Blue)",
-        "start": "2026-04-17T01:00:00.000Z",
-        "end": "2026-04-17T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1597,18 +1509,7 @@
         "start": "2026-04-21T01:00:00.000Z",
         "end": "2026-04-21T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class6-tue",
-        "title": "Spring B - Class 6 (Blue)",
-        "start": "2026-04-22T01:00:00.000Z",
-        "end": "2026-04-22T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1619,18 +1520,7 @@
         "start": "2026-04-23T01:00:00.000Z",
         "end": "2026-04-23T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class6-thu",
-        "title": "Spring B - Class 6 (Blue)",
-        "start": "2026-04-24T01:00:00.000Z",
-        "end": "2026-04-24T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1641,18 +1531,7 @@
         "start": "2026-04-28T01:00:00.000Z",
         "end": "2026-04-28T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class7-tue",
-        "title": "Spring B - Class 7 (Blue)",
-        "start": "2026-04-29T01:00:00.000Z",
-        "end": "2026-04-29T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1663,18 +1542,7 @@
         "start": "2026-04-30T01:00:00.000Z",
         "end": "2026-04-30T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class7-thu",
-        "title": "Spring B - Class 7 (Blue)",
-        "start": "2026-05-01T01:00:00.000Z",
-        "end": "2026-05-01T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1685,18 +1553,7 @@
         "start": "2026-05-05T01:00:00.000Z",
         "end": "2026-05-05T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class8-tue",
-        "title": "Spring B - Class 8 (Blue)",
-        "start": "2026-05-06T01:00:00.000Z",
-        "end": "2026-05-06T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1707,18 +1564,7 @@
         "start": "2026-05-07T01:00:00.000Z",
         "end": "2026-05-07T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class8-thu",
-        "title": "Spring B - Class 8 (Blue)",
-        "start": "2026-05-08T01:00:00.000Z",
-        "end": "2026-05-08T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1729,18 +1575,7 @@
         "start": "2026-05-12T01:00:00.000Z",
         "end": "2026-05-12T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class9-tue",
-        "title": "Spring B - Class 9 (Blue)",
-        "start": "2026-05-13T01:00:00.000Z",
-        "end": "2026-05-13T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1751,18 +1586,7 @@
         "start": "2026-05-14T01:00:00.000Z",
         "end": "2026-05-14T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-class9-thu",
-        "title": "Spring B - Class 9 (Blue)",
-        "start": "2026-05-15T01:00:00.000Z",
-        "end": "2026-05-15T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 9\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1773,18 +1597,7 @@
         "start": "2026-05-19T01:00:00.000Z",
         "end": "2026-05-19T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-finals-tue",
-        "title": "Spring B - Finals (Blue)",
-        "start": "2026-05-20T01:00:00.000Z",
-        "end": "2026-05-20T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -1795,18 +1608,7 @@
         "start": "2026-05-21T01:00:00.000Z",
         "end": "2026-05-21T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
-        "allDay": false,
-        "cohort": "blue",
-        "source": "ewmba_springb_blue_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-blue-finals-thu",
-        "title": "Spring B - Finals (Blue)",
-        "start": "2026-05-22T01:00:00.000Z",
-        "end": "2026-05-22T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT",
         "allDay": false,
         "cohort": "blue",
         "source": "ewmba_springb_blue_spring2026.ics"
@@ -2646,34 +2448,12 @@
         "source": "ewmba201b_macro_gold_spring2026.ics"
       },
       {
-        "uid": "ewmba-springb-sp26-gold-class1-mon",
-        "title": "Spring B - Class 1 (Gold)",
-        "start": "2026-03-17T01:00:00.000Z",
-        "end": "2026-03-17T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
         "uid": "ewmba-springb-sp26-gold-class1-tue",
         "title": "Spring B - Class 1 (Gold)",
         "start": "2026-03-18T01:00:00.000Z",
         "end": "2026-03-18T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class1-wed",
-        "title": "Spring B - Class 1 (Gold)",
-        "start": "2026-03-19T01:00:00.000Z",
-        "end": "2026-03-19T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2684,29 +2464,7 @@
         "start": "2026-03-20T01:00:00.000Z",
         "end": "2026-03-20T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 1\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class2-mon",
-        "title": "Spring B - Class 2 (Gold)",
-        "start": "2026-03-24T01:00:00.000Z",
-        "end": "2026-03-24T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 2\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class3-mon",
-        "title": "Spring B - Class 3 (Gold)",
-        "start": "2026-03-31T01:00:00.000Z",
-        "end": "2026-03-31T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2717,18 +2475,7 @@
         "start": "2026-04-01T01:00:00.000Z",
         "end": "2026-04-01T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class3-wed",
-        "title": "Spring B - Class 3 (Gold)",
-        "start": "2026-04-02T01:00:00.000Z",
-        "end": "2026-04-02T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2739,18 +2486,7 @@
         "start": "2026-04-03T01:00:00.000Z",
         "end": "2026-04-03T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 3\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class4-mon",
-        "title": "Spring B - Class 4 (Gold)",
-        "start": "2026-04-07T01:00:00.000Z",
-        "end": "2026-04-07T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2761,18 +2497,7 @@
         "start": "2026-04-08T01:00:00.000Z",
         "end": "2026-04-08T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class4-wed",
-        "title": "Spring B - Class 4 (Gold)",
-        "start": "2026-04-09T01:00:00.000Z",
-        "end": "2026-04-09T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2783,18 +2508,7 @@
         "start": "2026-04-10T01:00:00.000Z",
         "end": "2026-04-10T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 4\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class5-mon",
-        "title": "Spring B - Class 5 (Gold)",
-        "start": "2026-04-14T01:00:00.000Z",
-        "end": "2026-04-14T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2805,18 +2519,7 @@
         "start": "2026-04-15T01:00:00.000Z",
         "end": "2026-04-15T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class5-wed",
-        "title": "Spring B - Class 5 (Gold)",
-        "start": "2026-04-16T01:00:00.000Z",
-        "end": "2026-04-16T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2827,18 +2530,7 @@
         "start": "2026-04-17T01:00:00.000Z",
         "end": "2026-04-17T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 5\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class6-mon",
-        "title": "Spring B - Class 6 (Gold)",
-        "start": "2026-04-21T01:00:00.000Z",
-        "end": "2026-04-21T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2849,18 +2541,7 @@
         "start": "2026-04-22T01:00:00.000Z",
         "end": "2026-04-22T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class6-wed",
-        "title": "Spring B - Class 6 (Gold)",
-        "start": "2026-04-23T01:00:00.000Z",
-        "end": "2026-04-23T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2871,18 +2552,7 @@
         "start": "2026-04-24T01:00:00.000Z",
         "end": "2026-04-24T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 6\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class7-mon",
-        "title": "Spring B - Class 7 (Gold)",
-        "start": "2026-04-28T01:00:00.000Z",
-        "end": "2026-04-28T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2893,18 +2563,7 @@
         "start": "2026-04-29T01:00:00.000Z",
         "end": "2026-04-29T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class7-wed",
-        "title": "Spring B - Class 7 (Gold)",
-        "start": "2026-04-30T01:00:00.000Z",
-        "end": "2026-04-30T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2915,18 +2574,7 @@
         "start": "2026-05-01T01:00:00.000Z",
         "end": "2026-05-01T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 7\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class8-mon",
-        "title": "Spring B - Class 8 (Gold)",
-        "start": "2026-05-05T01:00:00.000Z",
-        "end": "2026-05-05T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2937,18 +2585,7 @@
         "start": "2026-05-06T01:00:00.000Z",
         "end": "2026-05-06T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class8-wed",
-        "title": "Spring B - Class 8 (Gold)",
-        "start": "2026-05-07T01:00:00.000Z",
-        "end": "2026-05-07T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2959,18 +2596,7 @@
         "start": "2026-05-08T01:00:00.000Z",
         "end": "2026-05-08T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 8\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class9-mon",
-        "title": "Spring B - Class 9 (Gold)",
-        "start": "2026-05-12T01:00:00.000Z",
-        "end": "2026-05-12T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -2981,18 +2607,7 @@
         "start": "2026-05-13T01:00:00.000Z",
         "end": "2026-05-13T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-class9-wed",
-        "title": "Spring B - Class 9 (Gold)",
-        "start": "2026-05-14T01:00:00.000Z",
-        "end": "2026-05-14T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
+        "description": "Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -3003,18 +2618,7 @@
         "start": "2026-05-15T01:00:00.000Z",
         "end": "2026-05-15T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Class 9\n\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-finals-mon",
-        "title": "Spring B - Finals (Gold)",
-        "start": "2026-05-19T01:00:00.000Z",
-        "end": "2026-05-19T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -3025,18 +2629,7 @@
         "start": "2026-05-20T01:00:00.000Z",
         "end": "2026-05-20T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
-        "allDay": false,
-        "cohort": "gold",
-        "source": "ewmba_springb_gold_spring2026.ics"
-      },
-      {
-        "uid": "ewmba-springb-sp26-gold-finals-wed",
-        "title": "Spring B - Finals (Gold)",
-        "start": "2026-05-21T01:00:00.000Z",
-        "end": "2026-05-21T04:30:00.000Z",
-        "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -3047,7 +2640,7 @@
         "start": "2026-05-22T01:00:00.000Z",
         "end": "2026-05-22T04:30:00.000Z",
         "location": "Cheit Hall",
-        "description": "Spring B Term - Final Exams\n\nClass meets 6:00-9:30 PM PT",
+        "description": "Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT",
         "allDay": false,
         "cohort": "gold",
         "source": "ewmba_springb_gold_spring2026.ics"
@@ -3484,10 +3077,10 @@
       },
       {
         "uid": "haas-spring2026-last-day@oskihub",
-        "title": "Last Day of Classes",
+        "title": "Last Day of Spring A Classes",
         "start": "2026-03-05T08:00:00.000Z",
         "end": "2026-03-06T08:00:00.000Z",
-        "description": "Final day of regular instruction for Spring 2026 semester.",
+        "description": "Final day of regular instruction for Spring A 2026.",
         "allDay": true,
         "cohort": "blue",
         "source": "haas_academic_calendar_spring2026.ics",
@@ -3498,10 +3091,10 @@
       },
       {
         "uid": "haas-spring2026-finals-week@oskihub",
-        "title": "Finals Week",
-        "start": "2026-03-15T07:00:00.000Z",
-        "end": "2026-03-19T07:00:00.000Z",
-        "description": "Final examinations period for Spring 2026 semester. Check your course schedules for specific exam dates and times.",
+        "title": "Finals Week (Spring A)",
+        "start": "2026-03-09T07:00:00.000Z",
+        "end": "2026-03-13T07:00:00.000Z",
+        "description": "Spring A Final examinations period. Check your course schedules for specific exam dates and times.",
         "allDay": true,
         "cohort": "blue",
         "source": "haas_academic_calendar_spring2026.ics",
@@ -3514,7 +3107,7 @@
       {
         "uid": "haas-spring2026-spring-break-start@oskihub",
         "title": "Spring Break",
-        "start": "2026-03-29T07:00:00.000Z",
+        "start": "2026-03-24T07:00:00.000Z",
         "end": "2026-04-03T07:00:00.000Z",
         "description": "Spring Break - No classes. Enjoy your break!",
         "allDay": true,
@@ -3539,14 +3132,29 @@
           "ACADEMIC",
           "CEREMONY"
         ]
+      },
+      {
+        "uid": "haas-spring2026-springb-finals-week@oskihub",
+        "title": "Finals Week (Spring B)",
+        "start": "2026-05-18T07:00:00.000Z",
+        "end": "2026-05-22T07:00:00.000Z",
+        "description": "Spring B Final examinations period. Check your course schedules for specific exam dates and times.",
+        "allDay": true,
+        "cohort": "blue",
+        "source": "haas_academic_calendar_spring2026.ics",
+        "status": "CONFIRMED",
+        "categories": [
+          "ACADEMIC",
+          "FINALS"
+        ]
       }
     ]
   },
   "processingInfo": {
-    "totalTime": 44878,
-    "newsletterTime": 44836,
-    "calendarTime": 457,
-    "myWeekTime": 42,
-    "timestamp": "2026-02-02T01:50:25.516Z"
+    "totalTime": 34485,
+    "newsletterTime": 34445,
+    "calendarTime": 443,
+    "myWeekTime": 40,
+    "timestamp": "2026-02-02T01:57:27.738Z"
   }
 }

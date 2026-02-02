@@ -25,11 +25,11 @@ LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-blue-class2-mon
+UID:ewmba-springb-sp26-combined-class2-mon
 DTSTART:20260323T180000
 DTEND:20260323T213000
-SUMMARY:Spring B - Class 2 (Blue)
-DESCRIPTION:Spring B Term - Class 2\nBlue Cohort: Mon/Wed\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
+SUMMARY:Spring B - Class 2 (Combined)
+DESCRIPTION:Spring B Term - Class 2\nCOMBINED COHORT (Blue & Gold)\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
