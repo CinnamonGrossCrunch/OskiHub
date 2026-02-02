@@ -356,43 +356,44 @@ export default function CalendarListView({
           <div className="events-container relative">
             <div 
               ref={scrollContainerRef}
-              className="flex gap-1 overflow-x-auto scrollbar-hide scroll-smooth pb-0"
+              className="flex gap-1 overflow-x-auto scrollbar-hide scroll-smooth pb-0 px-1 0"
               style={{ 
-                scrollbarWidth: 'none',
-                msOverflowStyle: 'none',
-                WebkitOverflowScrolling: 'touch'
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+              WebkitOverflowScrolling: 'touch',
+              boxShadow: '4px 0 6px -1px rgba(0, 0, 0, 0.1)'
               }}
             >
               {allFutureEvents.map((ev) => {
-                const start = new Date(ev.start);
-                const end = ev.end ? new Date(ev.end) : undefined;
-                const isAllDay = ev.allDay || (!end || (start.getHours() === 0 && start.getMinutes() === 0 && end.getHours() === 0 && end.getMinutes() === 0));
+              const start = new Date(ev.start);
+              const end = ev.end ? new Date(ev.end) : undefined;
+              const isAllDay = ev.allDay || (!end || (start.getHours() === 0 && start.getMinutes() === 0 && end.getHours() === 0 && end.getMinutes() === 0));
 
-                // Calculate days remaining
-                const today = new Date();
-                const eventDate = new Date(start);
-                
-                // Reset time to start of day for accurate day calculation
-                today.setHours(0, 0, 0, 0);
-                eventDate.setHours(0, 0, 0, 0);
-                
-                const diffInMs = eventDate.getTime() - today.getTime();
-                const diffInDays = Math.round(diffInMs / (1000 * 60 * 60 * 24));
-                
-          // Generate days remaining text
-          let daysRemainingText = '';
-          if (diffInDays === 0) {
+              // Calculate days remaining
+              const today = new Date();
+              const eventDate = new Date(start);
+              
+              // Reset time to start of day for accurate day calculation
+              today.setHours(0, 0, 0, 0);
+              eventDate.setHours(0, 0, 0, 0);
+              
+              const diffInMs = eventDate.getTime() - today.getTime();
+              const diffInDays = Math.round(diffInMs / (1000 * 60 * 60 * 24));
+              
+            // Generate days remaining text
+            let daysRemainingText = '';
+            if (diffInDays === 0) {
             daysRemainingText = 'Today';
-          } else if (diffInDays === 1) {
+            } else if (diffInDays === 1) {
             daysRemainingText = 'Tomorrow';
-          } else if (diffInDays > 1) {
+            } else if (diffInDays > 1) {
             daysRemainingText = `${diffInDays} Days Remaining`;
-          } else {
+            } else {
             daysRemainingText = `${Math.abs(diffInDays)} Day's Ago`;
-          }
+            }
 
-          // Generate color for the day indicator circle based on days remaining
-          const getDayIndicatorColor = (days: number): string => {
+            // Generate color for the day indicator circle based on days remaining
+            const getDayIndicatorColor = (days: number): string => {
             if (days <= 0) return '#ef4444'; // Today or past - red-500 equivalent
             if (days === 1) return '#f97316'; // Tomorrow - orange-500
             if (days === 2) return '#f59e0b'; // 2 days - amber-500
@@ -402,14 +403,14 @@ export default function CalendarListView({
             if (days === 6) return '#06b6d4'; // 6 days - cyan-500
             if (days === 7) return '#14b8a680'; // 7 days - medium opacity teal (50% opacity)
             return '#14b8a680'; // 7+ days - medium opacity teal (50% opacity)
-          };
+            };
 
-          const circleColor = getDayIndicatorColor(diffInDays);
+            const circleColor = getDayIndicatorColor(diffInDays);
 
-          return (
+            return (
             <div 
             key={ev.uid || `${ev.title}-${ev.start}`}
-            className="event-card bg-black/20 flex-shrink-0 w-35   p-2 rounded-lg  transition-all duration-100 ease-in-out cursor-pointer hover:box-shadow  hover:bg-violet-500/10 hover:transform hover:translate-y-[-1px]"
+            className="event-card bg-black/20 flex-shrink-0 w-40   p-2 rounded-lg  transition-all duration-100 ease-in-out cursor-pointer hover:box-shadow  hover:bg-violet-500/10 hover:transform hover:translate-y-[-1px]"
             onClick={() => handleEventClick(ev)}
             >
             <div className="event-content flex flex-col h-full">
@@ -424,24 +425,24 @@ export default function CalendarListView({
               {ev.title}
               </h4>
               <div className="event-meta space-y-1 mt-auto">
-                {/* <div className="event-time text-xs text-slate-600 dark:text-slate-400">
-                <div 
-                className="inline-block w-3 h-3 rounded-full mr-2" 
-                style={{ backgroundColor: circleColor }}
-                ></div>
-                <span className="">
-                {isAllDay 
-                  ? format(start, 'MMM d, yyyy')
-                  : `${format(start, 'MMM d, h:mm a')} ${end ? `- ${format(end, 'h:mm a')}` : ''}`
-                }
-                </span>
-                </div> */}
+              {/* <div className="event-time text-xs text-slate-600 dark:text-slate-400">
+              <div 
+              className="inline-block w-3 h-3 rounded-full mr-2" 
+              style={{ backgroundColor: circleColor }}
+              ></div>
+              <span className="">
+              {isAllDay 
+                ? format(start, 'MMM d, yyyy')
+                : `${format(start, 'MMM d, h:mm a')} ${end ? `- ${format(end, 'h:mm a')}` : ''}`
+              }
+              </span>
+              </div> */}
               </div>
             </div>
             </div>
-          );
-          })}
-        </div>
+            );
+            })}
+          </div>
         
         {/* Navigation buttons - hidden on mobile, visible on lg screens */}
         {canScrollLeft && (

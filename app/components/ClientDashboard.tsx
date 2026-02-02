@@ -185,9 +185,9 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
       {/* Dark Overlay - Gradient blend for browsers with support */}
       <div className="fixed inset-0 -z-10 pointer-events-none bg-gradient-to-b from-black/60 to-black/20 mix-blend-multiply hidden supports-[mix-blend-mode:multiply]:block"></div>
       
-      {/* Animated logo - z-index 100 (highest layer) - anchored to top with max-w-[90rem] alignment */}
+      {/* Animated logo - z-index 100 (highest layer) - anchored to top with max-w-[1740px] alignment */}
       <div className="fixed top-0 left-0 right-0 z-[100] pointer-events-none">
-        <div className="max-w-[90rem] mx-auto px-3 sm:px-4 lg:px-6 py-3.5  md:py-4.5">
+        <div className="max-w-[1740px] mx-auto px-3 sm:px-4 lg:px-6 py-3.5  md:py-4.5">
           <div className="h-9 w-auto flex items-center">
             {showLogo && (
               <div className="pointer-events-auto">
@@ -227,7 +227,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
 
           <div className="pointer-events-none absolute flex justify-left inset-0" style={{ maskImage: 'radial-gradient(circle at 30% 25%, rgba(0,0,0,.7), transparent 70%)', WebkitMaskImage: 'radial-gradient(circle at 30% 25%, rgba(0,0,0,.7), transparent 70%)', filter: 'url(#glassDistort)' }} />
 
-        <div className="max-w-[90rem] mx-auto px-3 sm:px-4 lg:px-6 py-2 relative z-10">
+        <div className="max-w-[1740px] mx-auto px-3 sm:px-4 lg:px-6 py-2 relative z-10">
           <div className="flex items-center h-10 sm:h-12 md:h-12">
             {/* Left section - Logos */}
             <div className="flex-1 flex items-center gap-1 sm:gap-2 h-full px-1">
@@ -252,7 +252,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         </div> {/* Close Header */}
         
       {/* Main Content */}
-      <main className="max-w-[90rem] mx-auto  md:px-0 lg:px-4 py-0 relative">
+      <main className="max-w-[1740px] mx-auto  md:px-0 lg:px-4 py-0 relative">
         {/* Animated black overlay - z-index 20 (middle layer) */}
           <div 
             className="fixed inset-0 bg-black transition-opacity duration-300 ease-out pointer-events-none z-45"
@@ -352,7 +352,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
 
       {/* Footer */}
       <footer className="mt-8 pb-6">
-        <div className="max-w-[90rem] mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="max-w-[1740px] mx-auto px-3 sm:px-4 lg:px-6">
             <p className="text-center text-xs text-slate-400 mb-4">
               Oski.app created and maintained by <a href="https://www.linkedin.com/in/designrefinerepeat/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-slate-300 transition-colors duration-200">Matt Gross</a>. &nbsp;|  &nbsp; Not an officially endorsed UC Berkeley website.
             </p>
