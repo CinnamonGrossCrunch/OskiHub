@@ -716,3 +716,150 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
     </div>
   );
 }
+
+// =============================================================================
+// MULTI-EVENT MODAL - Shows list of events when clicking a day with 2+ events
+// =============================================================================
+
+type MultiEventModalProps = {
+  isOpen: boolean;
+  events: CalendarEvent[];
+  date: Date | null;
+  onClose: () => void;
+  onSelectEvent: (event: CalendarEvent) => void;
+};
+
+export function MultiEventModal({ isOpen, events, date, onClose, onSelectEvent }: MultiEventModalProps) {
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  // Close modal on escape key
+  useEffect(() => {
+    const handleKeyboard = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('keydown', handleKeyboard);
+      document.body.style.overflow = 'hidden';
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyboard);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen, onClose]);
+
+  // Close modal when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen || !date) return null;
+
+  // Determine event color based on source
+  const getEventColor = (event: CalendarEvent) => {
+    if (event.source?.includes('newsletter')) return 'bg-purple-600/30 hover:bg-purple-600/50';
+    if (event.source?.includes('uc_launch')) return 'bg-orange-600/30 hover:bg-orange-600/50';
+    if (event.source?.includes('campus_groups')) return 'bg-blue-600/30 hover:bg-blue-600/50';
+    if (event.source?.includes('cal_bears')) return 'bg-blue-800/30 hover:bg-blue-800/50';
+    if (event.source?.includes('haas_academic')) return 'bg-amber-600/30 hover:bg-amber-600/50';
+    if (event.source?.includes('201a_micro')) return 'bg-green-800/30 hover:bg-green-800/50';
+    if (event.source?.includes('201b_macro')) return 'bg-blue-900/30 hover:bg-blue-900/50';
+    if (event.source?.includes('202_')) return 'bg-teal-700/30 hover:bg-teal-700/50';
+    if (event.source?.includes('205_')) return 'bg-red-800/30 hover:bg-red-800/50';
+    if (event.source?.includes('206_')) return 'bg-sky-700/30 hover:bg-sky-700/50';
+    return 'bg-slate-700/30 hover:bg-slate-700/50';
+  };
+
+  // Get event type label
+  const getEventType = (event: CalendarEvent) => {
+    if (event.source?.includes('newsletter')) return '📰 Newsletter';
+    if (event.source?.includes('uc_launch')) return '🚀 UC Launch';
+    if (event.source?.includes('campus_groups')) return '👥 Campus Groups';
+    if (event.source?.includes('cal_bears')) return '🐻 Cal Bears';
+    if (event.source?.includes('haas_academic')) return '📅 Academic';
+    return '📚 Course';
+  };
+
+  // Unified modal sizing (same as EventDetailModal)
+  const eventModalHeight = 'max-h-[70vh] md:max-h-[80vh]';
+
+  return (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 p-4">
+      <div
+        ref={modalRef}
+        className={`backdrop-blur-3xl bg-slate-900/60 rounded-2xl shadow-[0_0_0_1px_rgba(139,92,246,0.3),0_0_18px_4px_rgba(139,92,246,0.25)] h-xl w-xl max-w-3xl md:max-w-md lg:max-w-lg ${eventModalHeight} overflow-hidden flex flex-col`}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between px-6 py-4">
+          <div>
+            <h2 className="text-lg font-semibold text-white">
+              Events on {format(date, 'EEEE, MMMM d, yyyy')}
+            </h2>
+            <p className="text-sm text-slate-400 mt-0.5">
+              {events.length} events • Click to view details
+            </p>
+          </div>
+          <button
+            onClick={onClose}
+            className="p-2 rounded-lg hover:bg-slate-700 transition-colors"
+            aria-label="Close"
+          >
+            <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Event List */}
+        <div className="px-6 py-4 overflow-y-auto flex-1">
+          <div className="flex flex-col gap-3">
+            {events.map((event, index) => (
+              <button
+                key={event.uid || `${event.title}-${index}`}
+                onClick={() => onSelectEvent(event)}
+                className={`text-left p-4 rounded-xl ${getEventColor(event)} transition-all duration-200 cursor-pointer hover:scale-[1.02] hover:shadow-lg`}
+              >
+                <div className="flex items-start gap-3">
+                  <div className="flex-1 min-w-0">
+                    <div className="text-xs text-slate-400 mb-1">{getEventType(event)}</div>
+                    <h3 className="text-sm font-medium text-white truncate">{event.title}</h3>
+                    {event.description && (
+                      <p className="text-xs text-slate-400 mt-1 line-clamp-2">
+                        {event.description.substring(0, 100)}
+                        {event.description.length > 100 ? '...' : ''}
+                      </p>
+                    )}
+                    {event.start && !event.allDay && (
+                      <p className="text-xs text-slate-500 mt-2">
+                        {format(new Date(event.start), 'h:mm a')}
+                        {event.end && ` - ${format(new Date(event.end), 'h:mm a')}`}
+                      </p>
+                    )}
+                  </div>
+                  <svg className="w-4 h-4 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

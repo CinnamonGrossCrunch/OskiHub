@@ -8,7 +8,7 @@
         "items": [
           {
             "title": "Class of 2026 & 2027",
-            "html": "<h4>Class of 2026 & 2027</h4><p>Spring 2026 Add/Drop Reminders</p><ul><li>Drop Only Round Ends Mon, Feb 2, 11:59PM PST.</li><li>Be sure to check <a href='https://olr.haas.berkeley.edu/' target='_blank' rel='noopener noreferrer'>OLR</a> during the Drops Only Round and drop any classes you no longer want to take, including those that you are on the waitlist for.</li><li>If you remain on a waitlist, you may be automatically enrolled (without any notice) as drops occur.</li></ul>",
+            "html": "<h4>Class of 2026 & 2027</h4><p>Spring 2026 Add/Drop Reminders<ul><li>Drop Only Round Ends Mon, Feb 2, 11:59PM PST.</li><li>Be sure to check <a href='https://olr.haas.berkeley.edu/' target='_blank' rel='noopener noreferrer'>OLR</a> during the Drops Only Round and drop any classes you no longer want to take, including those that you are on the waitlist for.</li><li>If you remain on a waitlist, you may be automatically enrolled (without any notice) as drops occur.</li></ul></p>",
             "timeSensitive": {
               "dates": [
                 "2026-02-02"
@@ -35,18 +35,18 @@
           },
           {
             "title": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
-            "html": "<h4>UC LAUNCH Startup Accelerator Spring 2026 Application Now Available</h4><p>Deadline to Apply is Wednesday, Feb 4 at 11:59PM</p><ul><li>UC LAUNCH is an accelerator that supports early-stage startups that have already validated their idea and achieved product-market fit, and are ready to scale rapidly.</li><li>Applicants who are selected for UC LAUNCH will recieve:<ul><li>Paired mentorship with industry experts</li><li>Training in scaling your business</li><li>A chance to win up to $50K+ in prizes at Demo Day</li></ul></li><li>For a list of key program dates, applicant criterion, and to apply for Spring 2026, please visit the <a href='https://docs.google.com/forms/d/e/1FAIpQLSfUGffqmd0EfY57VZySEQ4weosjcjcm419KxmwZX2KMWIYJ5Q/viewform' target='_blank' rel='noopener noreferrer'>UC LAUNCH Startup Accelerator Spring 2026 Application Form</a>.</li></ul>",
+            "html": "<h4>UC LAUNCH Startup Accelerator Spring 2026 Application Now Available</h4><p>Deadline to Apply is Wednesday, Feb 4 at 11:59PM<ul><li>UC LAUNCH is an accelerator that supports early-stage startups that have already validated their idea and achieved product-market fit, and are ready to scale rapidly.</li><li>Applicants who are selected for UC LAUNCH will recieve:<ul><li>Paired mentorship with industry experts</li><li>Training in scaling your business</li><li>A chance to win up to $50K+ in prizes at Demo Day</li></ul></li><li>For a list of key program dates, applicant criterion, and to apply for Spring 2026, please visit the <a href='https://docs.google.com/forms/d/e/1FAIpQLSfUGffqmd0EfY57VZySEQ4weosjcjcm419KxmwZX2KMWIYJ5Q/viewform' target='_blank' rel='noopener noreferrer'>UC LAUNCH Startup Accelerator Spring 2026 Application Form</a>.</li></ul></p>",
             "timeSensitive": {
               "dates": [
                 "2026-02-04"
               ],
               "eventType": "deadline",
-              "priority": "medium"
+              "priority": "high"
             }
           },
           {
             "title": "Calvanize Showcase Day",
-            "html": "<h4>Calvanize Showcase Day</h4><p>Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall</p><ul><li>Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator.</li><li><a href='https://luma.com/kib5sqg9' target='_blank' rel='noopener noreferrer'>Registration for Calvanize Showcase Day</a> is now open.</li></ul>",
+            "html": "<h4>Calvanize Showcase Day</h4><p>Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall<ul><li>Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator.</li><li><a href='https://luma.com/kib5sqg9' target='_blank' rel='noopener noreferrer'>Registration for Calvanize Showcase Day</a> is now open.</li></ul></p>",
             "timeSensitive": {
               "dates": [
                 "2026-02-06"
@@ -57,20 +57,15 @@
           },
           {
             "title": "International Exchange Applications Now Open",
-            "html": "<h4>International Exchange Applications Now Open</h4><p>Applications Due Before Mar 13, 12PM PST</p><ul><li>Review the <a href='https://drive.google.com/file/d/18diQaugJhPllAfrWeri9SCJK_Pbn7J5H/view' target='_blank' rel='noopener noreferrer'>2026-27 International Exchange slide deck</a> and our <a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>International Exchange webpage for a timeline of key dates and deadlines</a> for more information.</li></ul>"
+            "html": "<h4>International Exchange Applications Now Open</h4><p>Applications Due Before Mar 13, 12PM PST<ul><li>Review the <a href='https://drive.google.com/file/d/18diQaugJhPllAfrWeri9SCJK_Pbn7J5H/view' target='_blank' rel='noopener noreferrer'>2026-27 International Exchange slide deck</a> and our <a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>International Exchange webpage for a timeline of key dates and deadlines</a> for more information.</li></ul></p>"
           },
           {
             "title": "Int’l Advising Drop In Hours",
-            "html": "<h4>Int’l Advising Drop In Hours</h4><p>Feb 4, Feb 16, and Mar 10</p><ul><li>Jason Choi will be hosting three (3) Zoom drop-in hours to answer any questions about international exchange.<ul><li>Please note that these drop-in hours will not be recorded</li></ul></li><li><a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>Zoom links to the drop-in hours</a> are hyperlinked on the International Exchange webpage</li></ul>"
-          }
-        ]
-      },
-      {
-        "sectionTitle": "Important Reminders",
-        "items": [
+            "html": "<h4>Int’l Advising Drop In Hours</h4><p>Feb 4, Feb 16, and Mar 10<ul><li>Jason Choi will be hosting three (3) Zoom drop-in hours to answer any questions about international exchange.<ul><li>Please note that these drop-in hours will not be recorded</li></ul></li><li><a href='https://haas.berkeley.edu/ewmba/academics/international-exchange-program/' target='_blank' rel='noopener noreferrer'>Zoom links to the drop-in hours</a> are hyperlinked on the International Exchange webpage</li></ul></p>"
+          },
           {
-            "title": "Ladle & Leaf Now Open",
-            "html": "<h4>Ladle & Leaf Now Open</h4><ul><li>Ladle &amp; Leaf is now open in the Café Think space.<ul><li>Ladle &amp; Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area</li></ul></li><li>Ladle &amp; Leaf is open Mondays to Thursdays from 8AM to 8:15 PM PST, and on Fridays from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></li><li>Students are highly encouraged to visit Ladle &amp; Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses.</li></ul>"
+            "title": "Important Reminders",
+            "html": "<h4>Important Reminders</h4><p>Ladle & Leaf Now Open<ul><li>Ladle &amp; Leaf is now open in the Café Think space.<ul><li>Ladle &amp; Leaf serves made-from-scratch salads, soups, and sandwiches, along with coffee and bakery options sourced from Bay Area</li></ul></li><li>Ladle &amp; Leaf is open Mondays to Thursdays from 8AM to 8:15 PM PST, and on Fridays from 8AM to 2:30PM PST.<ul><li>Hours may change based on demand</li></ul></li><li>Students are highly encouraged to visit Ladle &amp; Leaf, as the Program Office strongly advocated for hours that would be accessible for those with evening courses.</li></ul></p>"
           },
           {
             "title": "Haas Reception with Nexus students in the Class of 2028",
@@ -85,7 +80,7 @@
           },
           {
             "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum</p><ul><li>Please join Berkeley Haas for a <a href='https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/' target='_blank' rel='noopener noreferrer'>Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President &amp; CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul>",
+            "html": "<h4>Dean’s Speaker Series: Cynt Marshall, BS' 81</h4><p>Thursday, Feb 5, 12:30PM PST, Spieker Forum<ul><li>Please join Berkeley Haas for a <a href='https://haas.berkeley.edu/about/speaker-series/deans-speaker-series/' target='_blank' rel='noopener noreferrer'>Dean’s Speaker Series</a> with Cynt Marshall.<ul><li>Cynt is the President &amp; CEO of Marshalling Resources, and is the Former CEO, Dallas Mavericks</li></ul></li><li>Be on the lookout for future communications regarding registration for this Dean's Speaker Series Event.</li></ul></p>",
             "timeSensitive": {
               "dates": [
                 "2026-02-05"
@@ -96,7 +91,7 @@
           },
           {
             "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p>Lottery Closes Friday, Feb 6 at 11:59 PM PST</p><ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform' target='_blank' rel='noopener noreferrer'>Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href='https://www.climatecap.org/mba-summit' target='_blank' rel='noopener noreferrer'>learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage.</li></ul>",
+            "html": "<h4>ClimateCAP 2026 Ticket Lottery Entry Now Available</h4><p>Lottery Closes Friday, Feb 6 at 11:59 PM PST<ul><li>ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings together MBA students and industry leaders from around the world.<ul><li>This year, the summit takes place on April 17–18 at the MIT Sloan School of Management in Cambridge, MA</li></ul></li><li>Haas School of Business is giving away 5 tickets to the ClimateCAP Summit!<ul><li>The giveaway is open to all currently enrolled UC Berkeley Haas MBA students</li><li>Winners will be notified via email on February 12, 2026</li></ul></li><li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdeez4_y-7H_ro22gXjEWjpNdvMSUmeVC9H1Gxh0BR1SMt7Eg/viewform' target='_blank' rel='noopener noreferrer'>Entry for the ClimateCAP 2026 Ticket Lottery</a> is now open.</li><li>To <a href='https://www.climatecap.org/mba-summit' target='_blank' rel='noopener noreferrer'>learn more about ClimateCAP 2026's programming and guest speakers</a>, please visit the ClimateCAP 2026's summit homepage.</li></ul></p>",
             "timeSensitive": {
               "dates": [
                 "2026-02-06"
@@ -107,13 +102,13 @@
           },
           {
             "title": "Berkeley StEP Spring 2026 Application Now Available",
-            "html": "<h4>Berkeley StEP Spring 2026 Application Now Available</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST</p><ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks &amp; up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href='https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform' target='_blank' rel='noopener noreferrer'>Berkeley StEP Spring 2026</a> is now available.</li></ul>",
+            "html": "<h4>Berkeley StEP Spring 2026 Application Now Available</h4><p>Deadline to apply is Feb 7, 2026 at 11:50PM PST<ul><li>StEP was developed by former students to create the next generation of UC Berkeley startups.</li><li>During this 10-week experiential program, you will:<ul><li>Connect with PhDs in engineering and computer science, MBAs, designers, law students</li><li>Network with top-notch experts that will help you in bringing your ideas to life</li><li>Access to 5k in in-kind perks &amp; up to 1k in prizes</li><li>Opportunities to pitch to VCs and Industry leaders</li></ul></li><li>The application for <a href='https://docs.google.com/forms/d/e/1FAIpQLScIz3YzWQu6Cyc5K2fdu4kaZskeXK8P-UGciH7BvCzimZQsCg/closedform' target='_blank' rel='noopener noreferrer'>Berkeley StEP Spring 2026</a> is now available.</li></ul></p>",
             "timeSensitive": {
               "dates": [
                 "2026-02-07"
               ],
               "eventType": "deadline",
-              "priority": "medium"
+              "priority": "high"
             }
           }
         ]
@@ -175,29 +170,29 @@
         "items": [
           {
             "title": "bCourses Troubleshooting - Not Seeing Enrolled Courses",
-            "html": "<h4>bCourses Troubleshooting - Not Seeing Enrolled Courses</h4><ul><li>Don't see one of the bCourses site for a course you are enrolled in?<ul><li>If the course has not started yet, please allow professors time to finalize the bCourses site</li><li>If the course has started, double check your enrollment in CalCentral</li></ul></li><li>If you are enrolled, CalCentral and bCourses sync overnight and you should have access after that time.</li><li>Did you know? The Courses window will only list so many courses.<ul><li>To update which courses you see, in the left nav, click on Courses > All Courses.</li><li>There is a limit on how many courses can be shown in that view and on your dashboard</li><li>You can star or unstar courses to customize what comes up when you log in</li><li>Please note that courses are not sorted in any particular order</li></ul></li></ul>"
+            "html": "<h4>bCourses Troubleshooting - Not Seeing Enrolled Courses</h4><ul><li>Don't see one of the bCourses site for a course you are enrolled in?<ul><li>If the course has not started yet, please allow professors time to finalize the bCourses site</li><li>If the course has started, double check your enrollment in CalCentral</li></ul></li><li>If you are enrolled, CalCentral and bCourses sync overnight and you should have access after that time.</li><li>Did you know? The Courses window will only list so many courses.<ul><li>To update which courses you see, in the left nav, click on Courses > All Courses.</li><li>There is a limit on how many courses can be shown in that view and on your dashboard</li><li>You can star or unstar courses to customize what comes up when you log in</li><li>Please note that courses are not sorted in any particular order</li></ul></li></ul></p>"
           },
           {
             "title": "How to Calculate Spring 2026 Fees",
-            "html": "<h4>How to Calculate Spring 2026 Fees</h4><ul><li>The all inclusive per unit fee for 2025-2026 is $3,972. Multiply that by the number of units you will be taking to calculate your total tuition.</li><li>Enrollment in the Fee Payment Plan is per semester, not per year. Students must enroll in the plan again for Spring 2026.</li></ul>"
+            "html": "<h4>How to Calculate Spring 2026 Fees</h4><ul><li>The all inclusive per unit fee for 2025-2026 is $3,972. Multiply that by the number of units you will be taking to calculate your total tuition.</li><li>Enrollment in the Fee Payment Plan is per semester, not per year. Students must enroll in the plan again for Spring 2026.</li></ul></p>"
           },
           {
             "title": "Setting up your Direct Deposit Account",
-            "html": "<h4>Setting up your Direct Deposit Account</h4><ul><li>A Direct Deposit Electronic Funds Transfer Account is the easiest way to get refunds or other payments.</li><li>Go to CalCentral > My Finances > Financial Resources > Billing & Payments > Direct Deposit. Complete the steps to set up your account.</li></ul>"
+            "html": "<h4>Setting up your Direct Deposit Account</h4><ul><li>A Direct Deposit Electronic Funds Transfer Account is the easiest way to get refunds or other payments.</li><li>Go to CalCentral > My Finances > Financial Resources > Billing & Payments > Direct Deposit. Complete the steps to set up your account.</li></ul></p>"
           },
           {
             "title": "1098-T Form",
-            "html": "<h4>1098-T Form</h4><ul><li>Students will receive notification that their 1098-T form is read by the end of Jan 2026. More information here on the <a href='https://studentbilling.berkeley.edu/irs-form-1098-t-tax-form-information/accessing-your-1098-t-form-online' target='_blank' rel='noopener noreferrer'>Student Billing website</a>.</li></ul>"
+            "html": "<h4>1098-T Form</h4><ul><li>Students will receive notification that their 1098-T form is read by the end of Jan 2026. More information here on the <a href='https://studentbilling.berkeley.edu/irs-form-1098-t-tax-form-information/accessing-your-1098-t-form-online' target='_blank' rel='noopener noreferrer'>Student Billing website</a>.</li></ul></p>"
           }
         ]
       }
     ],
     "aiDebugInfo": {
-      "reasoning": "The JSON structure preserves all sections and items, maintaining the original content, headers, links, and formatting as specified. Each section is represented with a title and a list of items, each with a title and HTML content.",
+      "reasoning": "The JSON structure preserves all content, hyperlinks, and formatting as instructed, organizing the newsletter into sections and items with appropriate HTML tags.",
       "sectionDecisions": [],
       "edgeCasesHandled": [],
-      "totalSections": 6,
-      "processingTime": 29490
+      "totalSections": 5,
+      "processingTime": 35040
     },
     "aiMeta": {}
   },
@@ -277,7 +272,7 @@
         "title": "Class of 2026 & 2027",
         "type": "newsletter",
         "priority": "high",
-        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders   Drop Only Round Ends Mon, Feb 2, 11:59PM PST.  Be sure to check  OLR  during the Drops Only Round and drop any classes you no longer want to tak",
+        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders  Drop Only Round Ends Mon, Feb 2, 11:59PM PST.  Be sure to check  OLR  during the Drops Only Round and drop any classes you no longer want to take",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "This Week",
@@ -290,8 +285,8 @@
         "date": "2026-02-04",
         "title": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "medium",
-        "description": " UC LAUNCH Startup Accelerator Spring 2026 Application Now Available  Deadline to Apply is Wednesday, Feb 4 at 11:59PM   UC LAUNCH is an accelerator that supports early-stage startups that have alread",
+        "priority": "high",
+        "description": " UC LAUNCH Startup Accelerator Spring 2026 Application Now Available  Deadline to Apply is Wednesday, Feb 4 at 11:59PM  UC LAUNCH is an accelerator that supports early-stage startups that have already",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Announcements",
@@ -305,7 +300,7 @@
         "title": "Calvanize Showcase Day",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Calvanize Showcase Day  Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall   Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator",
+        "description": " Calvanize Showcase Day  Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall  Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator.",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Announcements",
@@ -319,13 +314,13 @@
         "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum  Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CEO",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-          "itemIndex": 2
+          "itemIndex": 7
         }
       },
       {
@@ -333,27 +328,27 @@
         "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
         "type": "newsletter",
         "priority": "medium",
-        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST  ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings toge",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-          "itemIndex": 3
+          "itemIndex": 8
         }
       },
       {
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "medium",
-        "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
+        "priority": "high",
+        "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST  StEP was developed by former students to create the next generation of UC Berkeley startups.  Dur",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
-          "itemIndex": 4
+          "itemIndex": 9
         }
       },
       {
@@ -365,7 +360,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
@@ -379,7 +374,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
@@ -458,7 +453,7 @@
         "title": "Class of 2026 & 2027",
         "type": "newsletter",
         "priority": "high",
-        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders   Drop Only Round Ends Mon, Feb 2, 11:59PM PST.  Be sure to check  OLR  during the Drops Only Round and drop any classes you no longer want to tak",
+        "description": " Class of 2026 & 2027  Spring 2026 Add/Drop Reminders  Drop Only Round Ends Mon, Feb 2, 11:59PM PST.  Be sure to check  OLR  during the Drops Only Round and drop any classes you no longer want to take",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "This Week",
@@ -471,8 +466,8 @@
         "date": "2026-02-04",
         "title": "UC LAUNCH Startup Accelerator Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "medium",
-        "description": " UC LAUNCH Startup Accelerator Spring 2026 Application Now Available  Deadline to Apply is Wednesday, Feb 4 at 11:59PM   UC LAUNCH is an accelerator that supports early-stage startups that have alread",
+        "priority": "high",
+        "description": " UC LAUNCH Startup Accelerator Spring 2026 Application Now Available  Deadline to Apply is Wednesday, Feb 4 at 11:59PM  UC LAUNCH is an accelerator that supports early-stage startups that have already",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Announcements",
@@ -486,7 +481,7 @@
         "title": "Calvanize Showcase Day",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Calvanize Showcase Day  Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall   Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator",
+        "description": " Calvanize Showcase Day  Friday, Feb 6, 6PM - 8PM PST, N100, Chou Hall  Come watch founders pitch live to VC judges for $4K+ in prizes with the top 4 startups advancing to the Berkeley StEP Incubator.",
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Announcements",
@@ -500,13 +495,13 @@
         "title": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
         "type": "newsletter",
         "priority": "medium",
-        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum   Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CE",
+        "description": " Dean’s Speaker Series: Cynt Marshall, BS' 81  Thursday, Feb 5, 12:30PM PST, Spieker Forum  Please join Berkeley Haas for a  Dean’s Speaker Series  with Cynt Marshall.  Cynt is the President &amp; CEO",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Dean’s Speaker Series: Cynt Marshall, BS' 81",
-          "itemIndex": 2
+          "itemIndex": 7
         }
       },
       {
@@ -514,27 +509,27 @@
         "title": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
         "type": "newsletter",
         "priority": "medium",
-        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST   ClimateCAP: The Global MBA Summit on Climate, Capital, &amp; Business is a premier event that brings",
+        "description": " ClimateCAP 2026 Ticket Lottery Entry Now Available  Lottery Closes Friday, Feb 6 at 11:59 PM PST  ClimateCAP: The Global MBA Summit on Climate, Capital, & Business is a premier event that brings toge",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "ClimateCAP 2026 Ticket Lottery Entry Now Available",
-          "itemIndex": 3
+          "itemIndex": 8
         }
       },
       {
         "date": "2026-02-07",
         "title": "Berkeley StEP Spring 2026 Application Now Available",
         "type": "newsletter",
-        "priority": "medium",
-        "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST   StEP was developed by former students to create the next generation of UC Berkeley startups.  Du",
+        "priority": "high",
+        "description": " Berkeley StEP Spring 2026 Application Now Available  Deadline to apply is Feb 7, 2026 at 11:50PM PST  StEP was developed by former students to create the next generation of UC Berkeley startups.  Dur",
         "sourceType": "newsletter",
         "newsletterSource": {
-          "sectionTitle": "Important Reminders",
-          "sectionIndex": 2,
+          "sectionTitle": "Announcements",
+          "sectionIndex": 1,
           "itemTitle": "Berkeley StEP Spring 2026 Application Now Available",
-          "itemIndex": 4
+          "itemIndex": 9
         }
       },
       {
@@ -546,7 +541,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Product Management Resumes",
           "itemIndex": 0
         }
@@ -560,7 +555,7 @@
         "sourceType": "newsletter",
         "newsletterSource": {
           "sectionTitle": "Career Corner",
-          "sectionIndex": 4,
+          "sectionIndex": 3,
           "itemTitle": "Your Intro Story for Career Conversations",
           "itemIndex": 1
         }
@@ -3162,10 +3157,10 @@
     ]
   },
   "processingInfo": {
-    "totalTime": 40683,
-    "newsletterTime": 40646,
-    "calendarTime": 478,
-    "myWeekTime": 37,
-    "timestamp": "2026-02-02T03:47:10.558Z"
+    "totalTime": 45563,
+    "newsletterTime": 45524,
+    "calendarTime": 468,
+    "myWeekTime": 38,
+    "timestamp": "2026-02-02T04:17:10.576Z"
   }
 }
