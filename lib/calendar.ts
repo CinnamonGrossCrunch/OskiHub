@@ -108,11 +108,25 @@ export async function getUpcomingEvents(
       return String(value);
     };
 
+    // For all-day events, preserve the local date to avoid timezone shift issues
+    // When parsing VALUE=DATE (e.g., 20260324), we want to keep it as March 24, not shift to UTC
+    const formatDateForStorage = (date: Date, isAllDay: boolean): string => {
+      if (isAllDay) {
+        // Use local date components to create an ISO string at midnight UTC
+        // This preserves the intended date regardless of server timezone
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}T00:00:00.000Z`;
+      }
+      return date.toISOString();
+    };
+
     events.push({
       uid: v.uid,
       title: safeStringExtract(v.summary) || 'Untitled',
-      start: start.toISOString(),
-      end: end?.toISOString(),
+      start: formatDateForStorage(start, allDay),
+      end: end ? formatDateForStorage(end, allDay) : undefined,
       location: safeStringExtract(v.location),
       url: safeStringExtract(v.url),
       description: safeStringExtract(v.description),
