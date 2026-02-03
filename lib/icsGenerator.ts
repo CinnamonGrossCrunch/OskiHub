@@ -35,12 +35,31 @@ function formatIcsDate(date: Date): string {
 }
 
 /**
- * Format a date to ICS datetime format (YYYYMMDDTHHMMSSZ) for timed events
+ * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) for timed events in Pacific Time
+ * This uses local time representation (not UTC) for use with TZID=America/Los_Angeles
  */
-function formatIcsDateTime(date: Date): string {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
+function formatIcsDateTimeLocal(date: Date): string {
+  // Convert to PST/PDT by creating date in America/Los_Angeles timezone
+  // We'll use the date's local representation but need to ensure it's in PST
+  const pstDate = new Date(date.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+  
+  const year = pstDate.getFullYear();
+  const month = String(pstDate.getMonth() + 1).padStart(2, '0');
+  const day = String(pstDate.getDate()).padStart(2, '0');
+  const hours = String(pstDate.getHours()).padStart(2, '0');
+  const minutes = String(pstDate.getMinutes()).padStart(2, '0');
+  const seconds = String(pstDate.getSeconds()).padStart(2, '0');
+  return `${year}${month}${day}T${hours}${minutes}${seconds}`;
+}
+
+/**
+ * Format a date to ICS datetime format (YYYYMMDDTHHMMSSZ) for timed events in UTC
+ * Use this for DTSTAMP which must be in UTC
+ */
+function formatIcsDateTimeUTC(date: Date): string {
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(date.getUTCDate()).padStart(2, '0');
   const hours = String(date.getUTCHours()).padStart(2, '0');
   const minutes = String(date.getUTCMinutes()).padStart(2, '0');
   const seconds = String(date.getUTCSeconds()).padStart(2, '0');
@@ -140,16 +159,17 @@ function eventToVEvent(event: CalendarEvent): string {
   // UID (required)
   lines.push(`UID:${generateUid(event)}`);
   
-  // Timestamp (required)
+  // Timestamp (required) - must be in UTC
   const now = new Date();
-  lines.push(`DTSTAMP:${formatIcsDateTime(now)}`);
+  lines.push(`DTSTAMP:${formatIcsDateTimeUTC(now)}`);
   
   // Start date/time (required)
   const startDate = new Date(event.start);
   if (event.allDay) {
     lines.push(`DTSTART;VALUE=DATE:${formatIcsDate(startDate)}`);
   } else {
-    lines.push(`DTSTART:${formatIcsDateTime(startDate)}`);
+    // Use timezone-aware format for timed events
+    lines.push(`DTSTART;TZID=America/Los_Angeles:${formatIcsDateTimeLocal(startDate)}`);
   }
   
   // End date/time (optional but recommended)
@@ -160,7 +180,8 @@ function eventToVEvent(event: CalendarEvent): string {
       endDate.setDate(endDate.getDate() + 1);
       lines.push(`DTEND;VALUE=DATE:${formatIcsDate(endDate)}`);
     } else {
-      lines.push(`DTEND:${formatIcsDateTime(endDate)}`);
+      // Use timezone-aware format for timed events
+      lines.push(`DTEND;TZID=America/Los_Angeles:${formatIcsDateTimeLocal(endDate)}`);
     }
   } else if (event.allDay) {
     // If no end date for all-day, default to 1 day duration
