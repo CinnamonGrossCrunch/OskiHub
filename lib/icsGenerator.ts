@@ -36,19 +36,20 @@ function formatIcsDate(date: Date): string {
 
 /**
  * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) for timed events in Pacific Time
- * Dates are now stored with proper PST adjustment (+8 hours to UTC).
- * We extract UTC components which now correctly represent PST times.
- * Example: 6:00 PM PST is stored as 02:00 UTC next day, and we output those UTC components.
+ * Dates are stored as UTC with +8 hour adjustment (e.g., 6 PM PST = 02:00 UTC next day).
+ * To export for TZID=America/Los_Angeles, we need to subtract 8 hours to get back to PST time.
+ * Example: 02:00 UTC - 8 hours = 18:00 (6:00 PM) for PST output.
  */
 function formatIcsDateTimeLocal(date: Date): string {
-  // Use UTC methods to extract the time components
-  // These UTC values now correctly represent PST after our +8 hour adjustment
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-  const day = String(date.getUTCDate()).padStart(2, '0');
-  const hours = String(date.getUTCHours()).padStart(2, '0');
-  const minutes = String(date.getUTCMinutes()).padStart(2, '0');
-  const seconds = String(date.getUTCSeconds()).padStart(2, '0');
+  // Subtract 8 hours to convert back from our UTC+8 storage to PST
+  const pstTime = new Date(date.getTime() - (8 * 60 * 60 * 1000));
+  
+  const year = pstTime.getUTCFullYear();
+  const month = String(pstTime.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(pstTime.getUTCDate()).padStart(2, '0');
+  const hours = String(pstTime.getUTCHours()).padStart(2, '0');
+  const minutes = String(pstTime.getUTCMinutes()).padStart(2, '0');
+  const seconds = String(pstTime.getUTCSeconds()).padStart(2, '0');
   
   return `${year}${month}${day}T${hours}${minutes}${seconds}`;
 }
