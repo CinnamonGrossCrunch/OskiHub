@@ -12,6 +12,7 @@ import HaasJourneyWidget from "./HaasJourneyWidget";
 import CohortToggleWidget from "./CohortToggleWidget";
 import AnimatedLogo from "./AnimatedLogo";
 import GmailNewsletterModalHost from "./GmailNewsletterModalHost";
+import IcsExportModal from "./IcsExportModal";
 import { usePerformance, getPerformanceClasses } from "./PerformanceProvider";
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
 
@@ -38,6 +39,9 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
   // Track widget expanded states - exactly one must be expanded at all times
   const [isMyWeekExpanded, setIsMyWeekExpanded] = useState(false);
   const [isResourcesExpanded, setIsResourcesExpanded] = useState(true); // Resources default expanded
+  
+  // ICS Export Modal state
+  const [showIcsModal, setShowIcsModal] = useState(false);
   
   // Handlers that ensure exactly one is always expanded
   const handleMyWeekExpandChange = (expanded: boolean) => {
@@ -339,7 +343,16 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
             <p className="text-center text-xs text-slate-400 mb-4">
               Oski.app created and maintained by <a href="https://www.linkedin.com/in/designrefinerepeat/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-slate-300 transition-colors duration-200">Matt Gross</a>. &nbsp;|  &nbsp; Not an officially endorsed UC Berkeley website.
             </p>
-          <div className="flex justify-end">
+          <div className="flex justify-end items-center gap-4">
+            <button
+              onClick={() => setShowIcsModal(true)}
+              className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200 flex items-center gap-1"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Calendar Export
+            </button>
             <Link 
               href="/admin/cache-refresh"
               className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"
@@ -352,6 +365,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         </div>{/* Close centering wrapper */}
 
       <GmailNewsletterModalHost />
+      <IcsExportModal isOpen={showIcsModal} onClose={() => setShowIcsModal(false)} />
     </div>
   </div>
   );
