@@ -36,30 +36,18 @@ function formatIcsDate(date: Date): string {
 
 /**
  * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) for timed events in Pacific Time
- * This uses local time representation (not UTC) for use with TZID=America/Los_Angeles
+ * IMPORTANT: Assumes the input date is already in PST (not UTC)
+ * The source ICS files have floating times that should be interpreted as PST
  */
 function formatIcsDateTimeLocal(date: Date): string {
-  // Convert to PST/PDT using Intl.DateTimeFormat for reliable server-side timezone handling
-  const formatter = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'America/Los_Angeles',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false
-  });
-  
-  const parts = formatter.formatToParts(date);
-  const get = (type: string) => parts.find(p => p.type === type)?.value || '00';
-  
-  const year = get('year');
-  const month = get('month');
-  const day = get('day');
-  const hours = get('hour');
-  const minutes = get('minute');
-  const seconds = get('second');
+  // The date coming in is stored as UTC in ISO format, but represents PST time
+  // We need to extract the UTC components and use them as-is (they're actually PST)
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(date.getUTCDate()).padStart(2, '0');
+  const hours = String(date.getUTCHours()).padStart(2, '0');
+  const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+  const seconds = String(date.getUTCSeconds()).padStart(2, '0');
   
   return `${year}${month}${day}T${hours}${minutes}${seconds}`;
 }
