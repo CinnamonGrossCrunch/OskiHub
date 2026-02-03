@@ -35,6 +35,21 @@ function formatIcsDate(date: Date): string {
 }
 
 /**
+ * Format a date as ICS local date-time without timezone adjustment
+ * Used when date is already in the correct timezone format
+ * Format: YYYYMMDDTHHmmss
+ */
+function formatIcsDateTimeLocalRaw(date: Date): string {
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(date.getUTCDate()).padStart(2, '0');
+  const hours = String(date.getUTCHours()).padStart(2, '0');
+  const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+  const seconds = String(date.getUTCSeconds()).padStart(2, '0');
+  return `${year}${month}${day}T${hours}${minutes}${seconds}`;
+}
+
+/**
  * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) for timed events in Pacific Time
  * Dates are stored as UTC with +8 hour adjustment (e.g., 6 PM PST = 02:00 UTC next day).
  * To export for TZID=America/Los_Angeles, we need to subtract 8 hours to get back to PST time.
@@ -171,7 +186,22 @@ function eventToVEvent(event: CalendarEvent): string {
     lines.push(`DTSTART;VALUE=DATE:${formatIcsDate(startDate)}`);
   } else {
     // Use timezone-aware format for timed events
-    lines.push(`DTSTART;TZID=America/Los_Angeles:${formatIcsDateTimeLocal(startDate)}`);
+    // Check if this is a cohort event (which has +8 hour adjustment applied)
+    const isCohortEvent = event.cohort || 
+                          (event.source && (
+                            event.source.includes('ewmba') || 
+                            event.source.includes('DataDecisions') ||
+                            event.source.includes('Marketing') ||
+                            event.source.includes('teams@Haas') ||
+                            event.source.includes('calendar.ics')
+                          ));
+    
+    // Only apply -8 hour adjustment for cohort events (which had +8 applied during parsing)
+    const exportDate = isCohortEvent 
+      ? new Date(startDate.getTime() - (8 * 60 * 60 * 1000))
+      : startDate;
+    
+    lines.push(`DTSTART;TZID=America/Los_Angeles:${formatIcsDateTimeLocalRaw(exportDate)}`);
   }
   
   // End date/time (optional but recommended)
@@ -183,7 +213,20 @@ function eventToVEvent(event: CalendarEvent): string {
       lines.push(`DTEND;VALUE=DATE:${formatIcsDate(endDate)}`);
     } else {
       // Use timezone-aware format for timed events
-      lines.push(`DTEND;TZID=America/Los_Angeles:${formatIcsDateTimeLocal(endDate)}`);
+      const isCohortEvent = event.cohort || 
+                            (event.source && (
+                              event.source.includes('ewmba') || 
+                              event.source.includes('DataDecisions') ||
+                              event.source.includes('Marketing') ||
+                              event.source.includes('teams@Haas') ||
+                              event.source.includes('calendar.ics')
+                            ));
+      
+      const exportEndDate = isCohortEvent 
+        ? new Date(endDate.getTime() - (8 * 60 * 60 * 1000))
+        : endDate;
+      
+      lines.push(`DTEND;TZID=America/Los_Angeles:${formatIcsDateTimeLocalRaw(exportEndDate)}`);
     }
   } else if (event.allDay) {
     // If no end date for all-day, default to 1 day duration
