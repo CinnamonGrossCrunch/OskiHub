@@ -177,21 +177,31 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
         !!v.datetype && v.datetype === 'date' ||
         (start.getHours() === 0 && start.getMinutes() === 0 && (!end || (end.getHours() === 0 && end.getMinutes() === 0)));
 
-      // CRITICAL FIX: Source ICS files have floating times (no TZID) that should be PST.
-      // node-ical parses them as server local time (UTC on Vercel), so 18:00 becomes 18:00 UTC.
-      // But 18:00 in the ICS file means 18:00 PST. We need to shift the time.
-      // PST is UTC-8, so we subtract 8 hours to get the correct UTC representation.
+      // CRITICAL FIX: Handle both UTC (Z suffix) and floating times
+      // - Some ICS files use UTC: DTSTART:20251014T011000Z (already correct)
+      // - Others use floating: DTSTART:20260218T180000 (should be PST, but node-ical parses as UTC)
+      // Check if the original ICS had a Z suffix by looking for the UID in the raw text
       let adjustedStart = start;
       let adjustedEnd = end;
       
-      if (!allDay && cohort) { // Only adjust timed course events, not all-day or external events
-        // Subtract 8 hours (PST offset) to convert "18:00 as UTC" to "18:00 PST in UTC format"
-        // 18:00 UTC - 8 hours = 10:00 UTC, but we want 18:00 PST = 02:00 next day UTC
-        // Actually: 18:00 PST = 18:00 + 8 = 26:00 = 02:00 next day UTC
-        adjustedStart = new Date(start.getTime() + (8 * 60 * 60 * 1000));
-        if (end) {
-          adjustedEnd = new Date(end.getTime() + (8 * 60 * 60 * 1000));
+      if (!allDay && cohort && v.uid) {
+        // Find this event's DTSTART line in the raw ICS
+        const uidPattern = new RegExp(`UID:${v.uid.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[\\s\\S]{0,500}?DTSTART[^:]*:([0-9T]+)(Z?)`, 'i');
+        const match = unfoldedIcs.match(uidPattern);
+        
+        const isUtcFormat = match && match[2] === 'Z'; // Has Z suffix = already UTC
+        const isFloatingTime = match && match[2] !== 'Z' && !match[0].includes('TZID'); // No Z, no TZID = floating
+        
+        if (isFloatingTime) {
+          // Floating times should be interpreted as PST, but node-ical parsed as UTC
+          // 18:00 floating → should be 18:00 PST = 02:00 UTC next day
+          // So add 8 hours to shift from "18:00 as UTC" to "18:00 PST stored as UTC"
+          adjustedStart = new Date(start.getTime() + (8 * 60 * 60 * 1000));
+          if (end) {
+            adjustedEnd = new Date(end.getTime() + (8 * 60 * 60 * 1000));
+          }
         }
+        // If isUtcFormat, leave dates as-is (already correct)
       }
 
       // Helper function to safely extract string values with better debugging
