@@ -504,13 +504,13 @@ export default function MonthGrid({
         return (
             <div
               key={day.toISOString()}
-              className={`relative h-28 lg:h-32 p-0 flex flex-col sm:overflow-hidden rounded-md ${
+              className={`relative h-28 lg:h-32 p-0 flex flex-col overflow-hidden rounded-md ${
                 isSameMonth(day, currentMonth) ? 'bg-slate-600/10' : 'bg-transparent opacity-40'
               } ${isToday ? 'rounded-md border-1 border-yellow-300 ring-1 ring-yellow-300/60 shadow-[0_0_30px_rgba(253,181,21,0.3)]' : ''} ${
                 shouldGlow ? 'newsletter-cell-glow' : ''
               }`}
             >
-              <div className={`text-xs  mb-0 lg:mb-1 flex-shrink-0 flex items-center gap-1 ${
+              <div className={`text-xs mb-0 lg:mb-1 flex-shrink-0 flex items-center gap-1 overflow-hidden ${
                 isToday ? 'translate-x-[2px] text-yellow-500 font-black ' : 'text-white font-light'
               }`}>
                 {format(day, 'd')}
@@ -622,7 +622,7 @@ export default function MonthGrid({
                 </div>
                 )}
               </div>
-              <div className="flex-1 flex flex-col gap-px">
+              <div className="flex-1 flex flex-col gap-px overflow-hidden">
                 {allDayEvents.length > 0 ? (
                 allDayEvents.map((ev) => {
                   // Check if this is a newsletter event
@@ -650,7 +650,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className="flex-1 min-h-0 text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity backdrop-blur- bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 text-white font-medium overflow-hidden line-clamp-1 md:line-clamp-3"
+                        className="flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity backdrop-blur- bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 text-white font-medium overflow-hidden"
                         title={isMultiple ? `${newsletterEv.multipleEvents?.length || 0} Newsletter Events` : `Newsletter: ${ev.title}`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -661,7 +661,7 @@ export default function MonthGrid({
                           }
                         }}
                       >
-                        {ev.title}
+                        <div className="line-clamp-1 md:line-clamp-3">{ev.title}</div>
                       </div>
                     );
                   } else if (isOtherNonCohortEvent) {
@@ -673,7 +673,7 @@ export default function MonthGrid({
                       return (
                         <div
                           key={ev.uid ?? ev.title + ev.start}
-                          className={`flex-1 min-h-0 text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1 line-clamp-1 md:line-clamp-3`}
+                          className={`flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1`}
                           title={`${ev.title} (${eventSpanDays} days)`}
                           onClick={(e) => {
                             e.stopPropagation();
@@ -684,7 +684,7 @@ export default function MonthGrid({
                             }
                           }}
                         >
-                          <span className="truncate">{ev.title}</span>
+                          <span className="truncate line-clamp-1 md:line-clamp-3">{ev.title}</span>
                           <span className="flex-shrink-0 text-[8px] bg-amber-700/60 px-1 rounded hidden md:inline">
                             {eventSpanDays}d
                           </span>
@@ -695,7 +695,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`flex-1 min-h-0 text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden line-clamp-1 md:line-clamp-3`}
+                        className={`flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden`}
                         title={ev.title}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -706,7 +706,7 @@ export default function MonthGrid({
                           }
                         }}
                       >
-                        {ev.title}
+                        <div className="line-clamp-1 md:line-clamp-3">{ev.title}</div>
                       </div>
                     );
                   } else {
@@ -721,7 +721,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`flex-1 min-h-0 text-[10px] px-1 py-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden line-clamp-2 md:line-clamp-none`}
+                        className={`flex-1 min-h-0 max-h-full text-[10px] px-1 py-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden`}
                         title={`${assignment ? assignment + ' - ' : ''}${courseName} (${ev.title})${eventHasQuiz ? ' - QUIZ TODAY!' : ''}`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -732,7 +732,7 @@ export default function MonthGrid({
                           }
                         }}
                       >
-                        {displayText}
+                        <div className="line-clamp-2 md:line-clamp-none">{displayText}</div>
                       </div>
                     );
                   }
@@ -744,7 +744,7 @@ export default function MonthGrid({
               
               {/* Quiz window bar START (first day of quiz window) */}
               {hasStartingQuizWindow && (
-                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10 overflow-hidden">
                   {startingQuizWindowEvents.slice(0, 1).map((ev, idx) => {
                     const eventStart = startOfDay(new Date(ev.start));
                     const eventEnd = getActualEndDate(ev);
@@ -761,7 +761,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={`quiz-start-${ev.uid || ev.title}-${idx}`}
-                        className={`h-full ${quizColor} cursor-pointer transition-colors flex items-center justify-between px-1 border-l border-white/50 ${isAlsoLastDay ? 'border-r' : ''}`}
+                        className={`h-full ${quizColor} cursor-pointer transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${isAlsoLastDay ? 'border-r' : ''}`}
                         title={`${ev.title} (Day 1 of ${totalDays})`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -782,7 +782,7 @@ export default function MonthGrid({
               
               {/* Quiz window spanning bar (continuation days) */}
               {hasSpanningQuizWindow && !hasStartingQuizWindow && (
-                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10 overflow-hidden">
                   {spanningQuizWindowEvents.slice(0, 1).map((ev, idx) => {
                     const eventStart = startOfDay(new Date(ev.start));
                     const eventEnd = getActualEndDate(ev);
@@ -802,7 +802,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={`quiz-span-${ev.uid || ev.title}-${idx}`}
-                        className={`h-full ${quizColor} cursor-pointer transition-colors flex items-center justify-between px-1 border-l border-white/50 ${
+                        className={`h-full ${quizColor} cursor-pointer transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${
                           isLastDay ? 'border-r' : ''
                         }`}
                         title={`${ev.title} (Day ${currentDayNumber} of ${totalDays})`}
@@ -827,7 +827,7 @@ export default function MonthGrid({
               
               {/* Multi-day event bar START (first day of multi-day event) */}
               {hasStartingMultiDayEvent && (
-                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10 overflow-hidden">
                   {startingMultiDayAcademicEvents.slice(0, 1).map((ev, idx) => {
                     const eventStart = startOfDay(new Date(ev.start));
                     const eventEnd = getActualEndDate(ev);
@@ -837,7 +837,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={`start-${ev.uid || ev.title}-${idx}`}
-                        className={`h-full bg-amber-500/80 cursor-pointer hover:bg-amber-600 transition-colors flex items-center justify-between px-1 border-l border-white/50 ${isAlsoLastDay ? 'border-r' : ''}`}
+                        className={`h-full bg-amber-500/80 cursor-pointer hover:bg-amber-600 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${isAlsoLastDay ? 'border-r' : ''}`}
                         title={`${ev.title} (Day 1 of ${totalDays})`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -858,7 +858,7 @@ export default function MonthGrid({
               
               {/* Multi-day spanning event bar (continuation days) */}
               {hasSpanningEvent && !hasStartingMultiDayEvent && (
-                <div className="absolute bottom-0 left-0 right-0 h-3 z-10">
+                <div className="absolute bottom-0 left-0 right-0 h-3 z-10 overflow-hidden">
                   {spanningAcademicEvents.slice(0, 1).map((ev, idx) => {
                     const eventStart = startOfDay(new Date(ev.start));
                     const eventEnd = getActualEndDate(ev);
@@ -871,7 +871,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={`span-${ev.uid || ev.title}-${idx}`}
-                        className={`h-full bg-amber-500/70 cursor-pointer hover:bg-amber-500/90 transition-colors flex items-center justify-between px-1 border-l border-white/50 ${
+                        className={`h-full bg-amber-500/70 cursor-pointer hover:bg-amber-500/90 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${
                           isLastDay ? 'border-r' : ''
                         }`}
                         title={`${ev.title} (Day ${currentDayNumber} of ${totalDays})`}

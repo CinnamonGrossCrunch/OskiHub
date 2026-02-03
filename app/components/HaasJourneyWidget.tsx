@@ -63,34 +63,34 @@ const HAAS_RESOURCES: ResourceItem[] = [
 
 // Centralized styling constants for easy maintenance
 const STYLES = {
-  container: "w-full",
-  dropdownHeader: "flex items-center justify-end p-2 rounded-xl hover:bg-white/10 transition-all duration-500 cursor-pointer group",
+  container: "ml-auto",
+  dropdownHeader: "flex items-center justify-end p-2 rounded-full hover:bg-white/10 transition-all duration-500 cursor-pointer group",
   dropdownTitle: "text-md font-semibold text-white transition-all duration-600 overflow-hidden text-center leading-tight",
   dropdownIcon: "text-white material-icons transition-all duration-600 ease-in-out",
   dropdownIconOpen: "translate-x-3 translate-y-0",
-  dropdownContent: "transition-all duration-600 w-full",
+  dropdownContent: "transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] w-full",
   // Grid styles - mobile (6-col horizontal) vs desktop expanded (3x2) vs desktop compact (1x6)
   gridMobile: "grid grid-cols-6 gap-x-1 w-full",
   gridExpanded: "grid grid-cols-3 gap-x-0 -my-2 gap-y-0 p-1 w-full",
   gridCompact: "grid grid-cols-1 gap-y-0 w-full",
-  resourceContainer: "border-white/30 rounded-md relative",
-  resourceLink: "flex flex-row items-center justify-start gap-2 px-4 py-1.5 rounded-xl hover:bg-turbulence transition-all duration-100 group",
-  resourceLinkMobile: "flex flex-col items-center justify-start gap-0.5 p-1 rounded-lg hover:bg-turbulence transition-all duration-100 group text-center",
-  resourceLinkCompact: "flex flex-row items-center justify-start gap-1 p-1 rounded-lg hover:bg-turbulence transition-all duration-100 group",
-  iconContainer: "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 border border-white/20",
+  resourceContainer: "border-white hover:rounded-3xl  relative",
+  resourceLink: "flex flex-row items-center justify-start gap-2 px-4 py-1.5 mx-2 hover:py-1 hover:mx-4 rounded-full hover:bg-white/70 hover:-translate-y-0.5 hover:scale-110 hover-border-2 hover-borer-violet-200 hover:shadow-[0_0_30px_rgba(109,40,217,0.9)] transition-all duration-500 group hover:overflow-hidden",
+  resourceLinkMobile: "flex flex-col items-center justify- gap-0.5 p-1 rounded-lg hover:bg-white/50 hover:-translate-y-1 hover:scale-110 hover:shadow-[0_0_20px_rgba(109,40,217,0.2)] transition-all duration-200 group text-center overflow-hidden",
+  resourceLinkCompact: "flex flex-row items-center justify-start gap-1 p-1 mx-2 hover:mx-4 rounded-lg hover:bg-white/80 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_20px_rgba(109,40,217,0.2)]  group hover:overflow-hidden",
+  iconContainer: "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 border border-white/20 ",
   iconContainerMobile: "w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 border border-white/20",
   iconContainerCompact: "w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 border border-white/20",
-  icon: "text-white/80 material-icons !text-[24px]",
-  iconMobile: "text-white/80 material-icons !text-[16px]",
-  iconCompact: "text-white/80 material-icons !text-[14px]",
-  textContainer: "text-left leading-tight flex flex-col",
-  textContainerMobile: "text-center leading-tight flex flex-col",
-  resourceTitle: "text-xs font-light text-white/40 truncate leading-tight",
+  icon: "text-white/80 group-hover:text-violet-500 material-icons !text-[24px] transition-colors duration-200",
+  iconMobile: "text-white/80 group-hover:text-black material-icons !text-[16px] transition-colors duration-200",
+  iconCompact: "text-white/80 group-hover:text-black material-icons !text-[14px] transition-colors duration-200",
+  textContainer: "text-left leading-tight flex flex-col hover:overflow-hidden",
+  textContainerMobile: "text-center leading-tight flex flex-col overflow-hidden",
+  resourceTitle: "text-xs font-light text-white/40 group-hover:text-black/60 group-hover:font-medium truncate leading-tight overflow-hidden text-ellipsis",
   resourceTitleMobile: "hidden", // Hide subtitle on mobile
-  resourceCta: "text-sm font-light text-white/80 group-hover:text-blue-200 transition-colors whitespace-nowrap leading-tight",
-  resourceCtaMobile: "text-[10px] font-light text-white/70 group-hover:text-blue-200 transition-colors leading-tight",
-  resourceCtaCompact: "text-xs font-light text-gray-400 group-hover:text-blue-200 transition-colors whitespace-nowrap leading-tight",
-  cascadeItem: "transform transition-all duration-500 ease-out"
+  resourceCta: "text-sm font-light text-white/80 group-hover:text-black group-hover:font-semibold transition-all duration-200 whitespace-nowrap leading-tight",
+  resourceCtaMobile: "text-[10px] font-light text-white/70 group-hover:text-black group-hover:font-semibold transition-all duration-200 leading-tight",
+  resourceCtaCompact: "text-xs font-light text-gray-400 group-hover:text-black group-hover:font-semibold transition-all duration-200 whitespace-nowrap leading-tight",
+  cascadeItem: "transform transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)]"
 } as const
 
 // Mobile compact card - horizontal 6-icon row
@@ -116,16 +116,19 @@ function MobileResourceCard({ resource }: { resource: ResourceItem }) {
 
 // Desktop card with animation
 function ResourceCard({ resource, index, isOpen, totalItems }: { resource: ResourceItem; index: number; isOpen: boolean; totalItems: number }) {
-  // Reverse the index for right-to-left animation
+  // Reverse the index for right-to-left animation on expand
   const reverseIndex = totalItems - 1 - index;
+  // On expand: right-to-left (reverseIndex), on collapse: right-to-left (reverseIndex) - same direction
+  const expandDelay = 100 + reverseIndex * 60;
+  const collapseDelay = 50 + reverseIndex * 60;
   
   return (
     <div 
       className={`select-none ${STYLES.resourceContainer} ${STYLES.cascadeItem}`}
       style={{
-        transitionDelay: isOpen ? `${300 + reverseIndex * 50}ms` : '0ms',
+        transitionDelay: isOpen ? `${expandDelay}ms` : `${collapseDelay}ms`,
         opacity: isOpen ? 1 : 0,
-        transform: isOpen ? 'translateY(0)' : 'translateY(-10px)'
+        transform: isOpen ? 'translateY(0) scale(1)' : 'translateY(-8px) scale(0.95)'
       }}
     >
       <a 
@@ -154,7 +157,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
   };
 
   return (
-    <div className={`select-none rounded-none lg:rounded-3xl py-0 lg:py-2 mr-1  bg-none lg:bg-violet-100/10 ${STYLES.container} ${className}`}>
+    <div className={`select-none rounded-none lg:rounded-l-3xl lg:rounded-r-md py-0 lg:py-2 mr-1 bg-none lg:bg-violet-100/10 min-h-[80px] lg:min-w-[160px] ${!isOpen ? 'lg:-ml-8' : ''} ${STYLES.container} ${className}`}>
       {/* Mobile Layout - Always visible compact 6-icon horizontal row */}
       <div className="lg:hidden">
         <div className={STYLES.gridMobile}>
@@ -165,7 +168,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
       </div>
       
       {/* Desktop Layout - Expandable with toggle button */}
-      <div className="hidden lg:flex  -ml-2 items-center justify-end w-full h-full z-10  relative">
+      <div className="hidden lg:flex items-center justify-end w-full h-full min-h-[80px] z-10 relative">
         {/* Dropdown Content - Same Row, Left Side */}
         <div 
           className={`${STYLES.dropdownContent} ${!isOpen ? 'pointer-events-none' : ''}`}
@@ -173,7 +176,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
             maxWidth: isOpen ? '2000px' : '0',
             maxHeight: isOpen ? '500px' : '0',
             opacity: isOpen ? 1 : 0,
-            transitionDelay: isOpen ? '300ms' : '0ms'
+            transitionDelay: isOpen ? '150ms' : '180ms'
           }}
         >
           <div className={STYLES.gridExpanded}>
@@ -211,7 +214,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
           </button>
           {/* "Haas Official" and "Critical Links" text - styled like MyWeekWidget, always visible */}
           <div 
-            className="flex flex-col items-end justify-center whitespace-nowrap transition-all duration-1000 ease-in-out h-full mr-1"
+            className="flex flex-col items-end justify-center whitespace-nowrap transition-all duration-1000 ease-in-out h-full mr-3"
           >
             <span className="text-lg md:text-lg font-extralight text-slate-400">
               Haas Official
