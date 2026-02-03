@@ -38,7 +38,7 @@ export const CACHE_KEYS = {
   NEWSLETTER_DATA: 'newsletter-data',
   MY_WEEK_DATA: 'myweek-data',
   DASHBOARD_DATA: 'dashboard-data',
-  COHORT_EVENTS: 'cohort-events',
+  COHORT_EVENTS: 'cohort-events-v2', // v2: Fixed UTC vs floating time parsing
 } as const;
 
 // Cache TTL (time-to-live) - 8 hours (28800 seconds)
