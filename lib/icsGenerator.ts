@@ -36,12 +36,9 @@ function formatIcsDate(date: Date): string {
 
 /**
  * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) for timed events in Pacific Time
- * IMPORTANT: Assumes the input date is already in PST (not UTC)
- * The source ICS files have floating times that should be interpreted as PST
+ * The dates are now correctly stored with PST timezone, so we just extract UTC components
  */
 function formatIcsDateTimeLocal(date: Date): string {
-  // The date coming in is stored as UTC in ISO format, but represents PST time
-  // We need to extract the UTC components and use them as-is (they're actually PST)
   const year = date.getUTCFullYear();
   const month = String(date.getUTCMonth() + 1).padStart(2, '0');
   const day = String(date.getUTCDate()).padStart(2, '0');

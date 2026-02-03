@@ -164,8 +164,8 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
         continue;
       }
 
-      const start = v.start instanceof Date ? v.start : new Date(v.start);
-      const end = v.end ? (v.end instanceof Date ? v.end : new Date(v.end)) : undefined;
+      let start = v.start instanceof Date ? v.start : new Date(v.start);
+      let end = v.end ? (v.end instanceof Date ? v.end : new Date(v.end)) : undefined;
 
       // Validate date
       if (isNaN(start.getTime())) {
@@ -173,9 +173,41 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
         continue;
       }
 
+      // Check if this is a timed event (not all-day)
       const allDay =
         !!v.datetype && v.datetype === 'date' ||
         (start.getHours() === 0 && start.getMinutes() === 0 && (!end || (end.getHours() === 0 && end.getMinutes() === 0)));
+
+      // For timed events: node-ical parses floating times (no TZID) as local server time,
+      // then stores as UTC. But our source ICS files are in PST. We need to adjust.
+      // If the event has a time component (not all-day), treat the parsed time as PST.
+      if (!allDay) {
+        // The date object has been parsed assuming server local time.
+        // We need to reinterpret it as if those components were PST.
+        // Strategy: Get the UTC components (which actually represent the local time from ICS)
+        // and create a new date treating them as PST by manually constructing the ISO string.
+        const year = start.getUTCFullYear();
+        const month = String(start.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(start.getUTCDate()).padStart(2, '0');
+        const hour = String(start.getUTCHours()).padStart(2, '0');
+        const minute = String(start.getUTCMinutes()).padStart(2, '0');
+        const second = String(start.getUTCSeconds()).padStart(2, '0');
+        
+        // Create an ISO string treating these as PST times (add PST offset of -08:00)
+        const pstIsoString = `${year}-${month}-${day}T${hour}:${minute}:${second}-08:00`;
+        start = new Date(pstIsoString);
+        
+        if (end) {
+          const endYear = end.getUTCFullYear();
+          const endMonth = String(end.getUTCMonth() + 1).padStart(2, '0');
+          const endDay = String(end.getUTCDate()).padStart(2, '0');
+          const endHour = String(end.getUTCHours()).padStart(2, '0');
+          const endMinute = String(end.getUTCMinutes()).padStart(2, '0');
+          const endSecond = String(end.getUTCSeconds()).padStart(2, '0');
+          const endPstIsoString = `${endYear}-${endMonth}-${endDay}T${endHour}:${endMinute}:${endSecond}-08:00`;
+          end = new Date(endPstIsoString);
+        }
+      }
 
       // Helper function to safely extract string values with better debugging
       const safeStringExtract = (value: unknown, fieldName?: string): string | undefined => {
