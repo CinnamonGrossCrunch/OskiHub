@@ -152,9 +152,9 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-slate-700">
+      <div className="bg-gradient-to-br from-slate-500/20 to-slate-500/20 backdrop-blur-xl rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
-        <div className="sticky top-0 bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-4 rounded-t-xl flex items-center justify-between">
+        <div className="sticky top-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-md px-6 py-4 rounded-t-xl flex items-center justify-between">
           <div className="flex items-center gap-3">
             <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -175,7 +175,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
         {/* Content */}
         <div className="p-6 space-y-6">
           {/* Instructions */}
-          <div className="bg-blue-900/30 border border-blue-700/50 rounded-lg p-4">
+          <div className="bg-blue-500/20 backdrop-blur-sm rounded-lg p-4">
             <h3 className="font-semibold text-blue-300 mb-2 flex items-center gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
@@ -212,13 +212,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {/* Blue Cohort */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-green-500/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.blueClasses}
                     onChange={() => toggleFilter('blueClasses')}
-                    className="w-5 h-5 rounded border-slate-500 text-green-600 focus:ring-green-500 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-green-600 focus:ring-green-500 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-green-600"></div>
@@ -241,7 +241,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['blue']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['blue'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -255,13 +255,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
               </div>
 
               {/* Gold Cohort */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-yellow-500/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.goldClasses}
                     onChange={() => toggleFilter('goldClasses')}
-                    className="w-5 h-5 rounded border-slate-500 text-yellow-600 focus:ring-yellow-500 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-yellow-600 focus:ring-yellow-500 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-yellow-600"></div>
@@ -284,7 +284,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['gold']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['gold'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -298,13 +298,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
               </div>
 
               {/* Cal Bears */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-blue-500/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.calBears}
                     onChange={() => toggleFilter('calBears')}
-                    className="w-5 h-5 rounded border-slate-500 text-blue-600 focus:ring-blue-500 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-blue-600 focus:ring-blue-500 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-blue-600"></div>
@@ -327,7 +327,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['calbears']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['calbears'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -341,13 +341,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
               </div>
 
               {/* UC Launch */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-orange-500/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.ucLaunch}
                     onChange={() => toggleFilter('ucLaunch')}
-                    className="w-5 h-5 rounded border-slate-500 text-orange-600 focus:ring-orange-500 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-orange-600 focus:ring-orange-500 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-orange-600"></div>
@@ -370,7 +370,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['uclaunch']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['uclaunch'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -384,13 +384,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
               </div>
 
               {/* Newsletter */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-purple-500/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.newsletter}
                     onChange={() => toggleFilter('newsletter')}
-                    className="w-5 h-5 rounded border-slate-500 text-purple-600 focus:ring-purple-500 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-purple-600 focus:ring-purple-500 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-purple-600"></div>
@@ -413,7 +413,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['newsletter']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['newsletter'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -427,13 +427,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
               </div>
 
               {/* Campus Groups */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-blue-400/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.campusGroups}
                     onChange={() => toggleFilter('campusGroups')}
-                    className="w-5 h-5 rounded border-slate-500 text-blue-500 focus:ring-blue-400 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-blue-500 focus:ring-blue-400 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-blue-500"></div>
@@ -456,7 +456,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['campusgroups']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['campusgroups'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -470,13 +470,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
               </div>
 
               {/* Greek Theater */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-pink-500/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.greekTheater}
                     onChange={() => toggleFilter('greekTheater')}
-                    className="w-5 h-5 rounded border-slate-500 text-pink-600 focus:ring-pink-500 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-pink-600 focus:ring-pink-500 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-pink-600"></div>
@@ -499,7 +499,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['greektheater']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['greektheater'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -513,13 +513,13 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
               </div>
 
               {/* Teams@Haas */}
-              <div className="rounded-lg bg-slate-700/50 border border-transparent hover:border-violet-500/50 transition-colors">
+              <div className="rounded-lg bg-slate-700/50 transition-colors">
                 <label className="flex items-center gap-3 p-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={filters.teamsAtHaas}
                     onChange={() => toggleFilter('teamsAtHaas')}
-                    className="w-5 h-5 rounded border-slate-500 text-violet-600 focus:ring-violet-500 focus:ring-offset-slate-800"
+                    className="w-5 h-5 rounded text-violet-600 focus:ring-violet-500 focus:ring-offset-slate-800"
                   />
                   <div className="flex items-center gap-2 flex-1">
                     <div className="w-3 h-3 rounded-full bg-violet-600"></div>
@@ -542,7 +542,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                     ) : eventPreviews['teamsathaas']?.length > 0 ? (
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {eventPreviews['teamsathaas'].map((event, idx) => (
-                          <div key={idx} className="flex justify-between text-slate-300 py-1 border-t border-slate-600/50">
+                          <div key={idx} className="flex justify-between text-slate-300 py-1">
                             <span className="truncate flex-1 pr-2">{event.title}</span>
                             <span className="text-slate-400 text-xs whitespace-nowrap">{formatDate(event.start)}</span>
                           </div>
@@ -569,7 +569,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                   value={subscriptionUrl}
                   readOnly
                   placeholder="Select event types to generate URL"
-                  className="w-full px-4 py-3 pr-24 bg-slate-700 border border-slate-600 rounded-lg text-slate-200 text-sm font-mono focus:outline-none focus:border-blue-500"
+                  className="w-full px-4 py-3 pr-24 bg-slate-700 rounded-lg text-slate-200 text-sm font-mono focus:outline-none"
                 />
                 <button
                   onClick={copyToClipboard}
@@ -628,7 +628,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
         </div>
 
         {/* Footer */}
-        <div className="sticky bottom-0 bg-slate-800 px-6 py-4 rounded-b-xl border-t border-slate-700 flex justify-end">
+        <div className="sticky bottom-0 bg-slate-500/20 backdrop-blur-md px-6 py-4 rounded-b-xl flex justify-end">
           <button
             onClick={onClose}
             className="px-6 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg transition-colors font-medium"

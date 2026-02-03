@@ -291,20 +291,54 @@ export async function GET(request: Request) {
           ]);
           myWeekTime = Date.now() - myWeekStart;
         } catch (error) {
-          safeError('⚠️ My Week timeout, using fallback:', error);
-          // Provide fallback data with correct structure
-          const now = new Date();
-          const weekStart = new Date(now.setDate(now.getDate() - now.getDay()));
-          const weekEnd = new Date(weekStart.getTime() + 6 * 24 * 60 * 60 * 1000);
+          safeError('⚠️ My Week AI analysis failed, using calendar fallback:', error);
+          // Import date utilities for proper week range calculation
+          const { getConsistentWeekRange, parseICSDate, isDateInWeekRange } = await import('@/lib/date-utils');
+          const { start: weekStart, end: weekEnd } = getConsistentWeekRange();
+          
+          // Filter events for this week from cohort calendars (no AI, just date filtering)
+          const filterEventsForWeek = (events: CalendarEvent[]) => {
+            return events
+              .filter(event => event.start && isDateInWeekRange(event.start, weekStart, weekEnd))
+              .map(event => {
+                const eventDate = parseICSDate(event.start);
+                const originalDate = new Date(event.start);
+                const titleLower = (event.title || '').toLowerCase();
+                const type = titleLower.includes('due') || titleLower.includes('deadline') ? 'assignment' as const :
+                            titleLower.includes('exam') || titleLower.includes('quiz') ? 'exam' as const :
+                            titleLower.includes('class') || titleLower.includes('lecture') ? 'class' as const : 'other' as const;
+                const priority = type === 'assignment' || type === 'exam' ? 'high' as const : 'medium' as const;
+                return {
+                  date: `${eventDate.getFullYear()}-${String(eventDate.getMonth() + 1).padStart(2, '0')}-${String(eventDate.getDate()).padStart(2, '0')}`,
+                  time: originalDate.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true }),
+                  title: event.title || 'Calendar Event',
+                  type,
+                  priority,
+                  description: event.description || undefined,
+                  location: event.location || undefined,
+                  url: event.url || undefined
+                };
+              });
+          };
+          
+          const blueEvents = filterEventsForWeek(cohortEvents.blue || []);
+          const goldEvents = filterEventsForWeek(cohortEvents.gold || []);
+          
+          safeLog(`📘 Fallback: Found ${blueEvents.length} blue events for this week`);
+          safeLog(`📙 Fallback: Found ${goldEvents.length} gold events for this week`);
           
           myWeekData = {
-            weekStart: weekStart.toISOString(),
-            weekEnd: weekEnd.toISOString(),
-            blueEvents: [],
-            goldEvents: [],
-            blueSummary: 'My Week analysis temporarily unavailable. Calendar events still accessible in Calendar tab.',
-            goldSummary: 'My Week analysis temporarily unavailable. Calendar events still accessible in Calendar tab.',
-            processingTime: 0
+            weekStart: weekStart.toISOString().split('T')[0],
+            weekEnd: weekEnd.toISOString().split('T')[0],
+            blueEvents,
+            goldEvents,
+            blueSummary: blueEvents.length > 0 
+              ? `Found ${blueEvents.length} events this week. AI summary unavailable.` 
+              : 'No Blue cohort events found for this week.',
+            goldSummary: goldEvents.length > 0 
+              ? `Found ${goldEvents.length} events this week. AI summary unavailable.` 
+              : 'No Gold cohort events found for this week.',
+            processingTime: Date.now() - myWeekStart
           };
           myWeekTime = Date.now() - myWeekStart;
         }
