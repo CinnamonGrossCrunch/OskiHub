@@ -324,8 +324,8 @@ export async function GET(request: Request) {
           const blueEvents = filterEventsForWeek(cohortEvents.blue || []);
           const goldEvents = filterEventsForWeek(cohortEvents.gold || []);
           
-          safeLog(`📘 Fallback: Found ${blueEvents.length} blue events for this week`);
-          safeLog(`📙 Fallback: Found ${goldEvents.length} gold events for this week`);
+          console.log(`📘 Fallback: Found ${blueEvents.length} blue events for this week`);
+          console.log(`📙 Fallback: Found ${goldEvents.length} gold events for this week`);
           
           myWeekData = {
             weekStart: weekStart.toISOString().split('T')[0],
