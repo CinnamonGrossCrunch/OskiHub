@@ -39,16 +39,28 @@ function formatIcsDate(date: Date): string {
  * This uses local time representation (not UTC) for use with TZID=America/Los_Angeles
  */
 function formatIcsDateTimeLocal(date: Date): string {
-  // Convert to PST/PDT by creating date in America/Los_Angeles timezone
-  // We'll use the date's local representation but need to ensure it's in PST
-  const pstDate = new Date(date.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+  // Convert to PST/PDT using Intl.DateTimeFormat for reliable server-side timezone handling
+  const formatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Los_Angeles',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false
+  });
   
-  const year = pstDate.getFullYear();
-  const month = String(pstDate.getMonth() + 1).padStart(2, '0');
-  const day = String(pstDate.getDate()).padStart(2, '0');
-  const hours = String(pstDate.getHours()).padStart(2, '0');
-  const minutes = String(pstDate.getMinutes()).padStart(2, '0');
-  const seconds = String(pstDate.getSeconds()).padStart(2, '0');
+  const parts = formatter.formatToParts(date);
+  const get = (type: string) => parts.find(p => p.type === type)?.value || '00';
+  
+  const year = get('year');
+  const month = get('month');
+  const day = get('day');
+  const hours = get('hour');
+  const minutes = get('minute');
+  const seconds = get('second');
+  
   return `${year}${month}${day}T${hours}${minutes}${seconds}`;
 }
 
