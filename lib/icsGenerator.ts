@@ -36,15 +36,19 @@ function formatIcsDate(date: Date): string {
 
 /**
  * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) for timed events in Pacific Time
- * The dates are now correctly stored with PST timezone, so we just extract UTC components
+ * The source ICS files have floating times in PST. When parsed by node-ical on the server,
+ * they get interpreted as server local time, then stored as UTC via toISOString().
+ * To export correctly, we extract the local time components (not UTC) which represent PST.
  */
 function formatIcsDateTimeLocal(date: Date): string {
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-  const day = String(date.getUTCDate()).padStart(2, '0');
-  const hours = String(date.getUTCHours()).padStart(2, '0');
-  const minutes = String(date.getUTCMinutes()).padStart(2, '0');
-  const seconds = String(date.getUTCSeconds()).padStart(2, '0');
+  // Use getFullYear, getMonth, etc. (NOT getUTCFullYear) to get the local time components
+  // These represent the actual PST time from the original ICS file
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const seconds = String(date.getSeconds()).padStart(2, '0');
   
   return `${year}${month}${day}T${hours}${minutes}${seconds}`;
 }
