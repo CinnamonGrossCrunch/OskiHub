@@ -15,6 +15,7 @@
  *   - newsletter: Include newsletter-extracted events
  *   - greektheater: Include Greek Theater events
  *   - teamsathaas: Include Teams@Haas events
+ *   - cmg: Include CMG (Career Management Group) events
  *   - all: Include all event types (shortcut)
  */
 
@@ -220,7 +221,8 @@ export async function GET(request: NextRequest) {
         campusGroups: true,
         newsletter: true,
         greekTheater: true,
-        teamsAtHaas: true
+        teamsAtHaas: true,
+        cmg: true
       };
     } else {
       filterOptions = parseFilterOptionsFromParams(searchParams);
@@ -242,7 +244,8 @@ export async function GET(request: NextRequest) {
     // Fetch cohort and related events
     if (filterOptions.blueClasses || filterOptions.goldClasses || 
         filterOptions.ucLaunch || filterOptions.calBears || 
-        filterOptions.campusGroups || filterOptions.teamsAtHaas) {
+        filterOptions.campusGroups || filterOptions.teamsAtHaas ||
+        filterOptions.cmg) {
       
       safeLog('[ICS Export] Fetching cohort events...');
       const cohortEvents = await getCohortEvents(365, 500); // Extended range
@@ -261,6 +264,9 @@ export async function GET(request: NextRequest) {
       }
       if (filterOptions.campusGroups) {
         allEvents.push(...cohortEvents.campusGroups);
+      }
+      if (filterOptions.cmg) {
+        allEvents.push(...(cohortEvents.cmg || []));
       }
       
       safeLog(`[ICS Export] Added cohort events: ${allEvents.length} total`);
@@ -288,6 +294,7 @@ export async function GET(request: NextRequest) {
     if (filterOptions.newsletter) calendarNameParts.push('Newsletter');
     if (filterOptions.ucLaunch) calendarNameParts.push('UC Launch');
     if (filterOptions.greekTheater) calendarNameParts.push('Greek Theater');
+    if (filterOptions.cmg) calendarNameParts.push('CMG');
     const calendarName = calendarNameParts.length > 1 ? calendarNameParts.join(' - ') : 'OskiHub Calendar';
     
     // Generate ICS content (no additional filtering needed, events are pre-filtered)

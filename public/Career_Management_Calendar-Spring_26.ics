@@ -1,0 +1,140 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Berkeley Haas//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Berkeley Haas Career Management Events
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:UC Berkeley Haas Career Management Group events
+
+BEGIN:VEVENT
+UID:30006101327013@mba-haas-berkeley.12twenty.com
+DTSTART:20260211T200000Z
+DTEND:20260211T210000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Learn to Speak Tech and Talk like a PM
+DESCRIPTION:Come learn some fundamentals of how Product Managers in Tech speak - including basic language around product development\, design and engineering. Learn how to translate your experiences into more tech-friendly speak and talk about your skills in a way that resonates with people working in tech!\n\nPresenter: Stephanie Cheng\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101327013
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101327013
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101328492@mba-haas-berkeley.12twenty.com
+DTSTART:20260212T010000Z
+DTEND:20260212T023000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Creating Engaging Behavioral Stories
+DESCRIPTION:In this workshop\, we will take a step-by-step approach to convert your memorable experiences into an engaging story to share in behavioral interviews. Along the way\, you learn what elements make a story engaging and what elements provide structure. From this class\, you will walk away with one complete story.\n\nPresenter: Hoyt Ng\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101328492
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101328492
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101333091@mba-haas-berkeley.12twenty.com
+DTSTART:20260218T200000Z
+DTEND:20260218T210000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Finding and networking with startups
+DESCRIPTION:Join this session hosted by Deepak Gupta\, CMG Startup Employer Relationship Manager\, if you are looking for opportunities within the startup space. Interested in joining a startup? How do you find the players in your industry of interest? Want advice on how to network with these industry disruptors? This workshop will provide tips and practical tools on finding and networking with startups!\n\nPresenter: Deepak Gupta\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101333091
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101333091
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101327014@mba-haas-berkeley.12twenty.com
+DTSTART:20260224T010000Z
+DTEND:20260224T023000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Your Story: Tell Me About Yourself
+DESCRIPTION:This is an interactive online workshop using Zoom video. We ask that all participants come prepared with their cameras on. As part of it\, you will have the opportunity to practice your introduction. This is NOT an I'll just listen and take notes type of workshop! Be on the lookout for important pre-work instructions\, which will be sent out by email about one week prior to the webinar.\n\nIn this interactive webinar\, you will: Learn the important elements to include in your story\, Have opportunities to practice\, Get feedback and refine\, Work on the non-verbals (body language\, tone\, pace\, etc.)\n\nYou will leave feeling more confident and able to effectively convey your unique story and how it aligns with the next step in your career.\n\nPresenter: Mark Friedfeld\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101327014
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101327014
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101327015@mba-haas-berkeley.12twenty.com
+DTSTART:20260225T200000Z
+DTEND:20260225T210000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Resume Workshop
+DESCRIPTION:This workshop is going to walk you through how a recruiter or hiring manager might evaluate a resume\, and along the way highlight how you might alter your resume to help them help you. We will look at resumes together and evaluate them through this process and understand how to stack the odds in your favor. There is no magic bullet.\n\nPresenter: Laura Benoit\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101327015
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101327015
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101333092@mba-haas-berkeley.12twenty.com
+DTSTART:20260225T200000Z
+DTEND:20260225T210000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Pitching a project to a startup
+DESCRIPTION:Join this session hosted by Deepak Gupta\, CMG Startup Employer Relationship Manager\, and Hoyt Ng\, Sr Director of Coaching and Programming\, if you are looking for opportunities within the startup space. Learn how to do your homework and pitch the project you want! In this workshop we will walk you through how you develop a point of view on the startup's business or project and pitch your contribution to the company.\n\nPresenters: Deepak Gupta and Hoyt Ng\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101333092
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101333092
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101331041@mba-haas-berkeley.12twenty.com
+DTSTART:20260226T200000Z
+DTEND:20260226T210000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Career Conversations
+DESCRIPTION:The ability to have skillful career conversations builds and deepens relationships\, gives you insights\, and allows for opportunities. Whether it be informational interviews\, connecting with people\, or coffee chats\, these are all career conversations.\n\nIntended Audience: This learning lab will give you a simple framework that helps you be more intentional\, less transactional\, and allow you to connect\, get curious and be understood.\n\nWhat You'll Learn: How to reframe career conversations (exploring\, learning\, demonstrating)\, A simple yet powerful framework\, Practical ways to approach different conversations.\n\nHow You'll Learn: This will be a highly interactive learning lab that focuses on working in pairs and trios to start practicing the career convos approach.\n\nPresenters: Julia Rosof and Lara Klein\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101331041
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101331041
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101337753@mba-haas-berkeley.12twenty.com
+DTSTART:20260304T200000Z
+DTEND:20260304T210000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Transferable Skills Part 2
+DESCRIPTION:You'll hear this term frequently\, especially if you are changing roles and/or industries. This workshop will help you describe your accomplishments in a way that your new audience can easily understand: reframe your experience such that people in different industries/roles/organizations understand its value.\n\nIntended Audience: This workshop is especially relevant for pivoters.\n\nWhat You'll Learn: A way to explicitly talk about your transferable skills\, How to elevate your skills-based stories by making them applicable to another role\, organization\, or industry\, Make your past relevant and valuable to your future.\n\nHow You'll Learn: A combination of lecture\, individual and small group learning activities\, Q&A.\n\nPresenter: Hoyt Ng\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101337753
+LOCATION:Virtual
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101337753
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101334085@mba-haas-berkeley.12twenty.com
+DTSTART:20260401T000000Z
+DTEND:20260401T020000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:First Gen Mixer
+DESCRIPTION:Student Registration OPENS one month before the event on February 27. Register ONLY if you know you can attend as spots are limited. We strongly discourage no-shows to this event.\n\nJoin the Career Management Group\, Haas alumni\, and your First Gen peers for an intimate mixer designed to foster community and connection. This event is your chance to engage with alumni who've navigated similar paths\, gain insights into career transitions\, and sharpen your networking skills.\n\nThis is an opportunity to build relationships and tap into the Haas alumni network as you navigate your job search this spring. Come ready to engage\, ask questions\, and share your story.\n\nWhy Attend?: Learn from alumni about their challenges\, successes\, and career journeys. Join your First Gen peers in refining your perspective and discussing professional interests. Expand your network—connect with First Gen alumni and students who can support your growth.\n\nAdditional Information: Attire: Dress in business casual and bring your Haas nametag. Event Flow: This is a drop-in event. You do not need to stay the entire time. Refreshments: Light food and beverages will be provided. Accommodations: If you require an accommodation for effective communication (ASL interpreting/CART captioning\, alternative media formats\, etc.) or information about campus mobility access features in order to fully participate in this event\, please contact mbacareers@haas.berkeley.edu with as much advance notice as possible and at least 7-10 days in advance of the event.\n\nThis event is open to all UC Berkeley community members\, regardless of race\, color\, national origin\, ethnicity\, age\, gender\, gender identity\, sexual orientation\, disability\, religion\, or any other protected class status. UC Berkeley is committed to fostering an inclusive environment that welcomes participants from all backgrounds.\n\nLocation: S300\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: mbacareers@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101334085
+LOCATION:S300
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:mbacareers@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101334085
+END:VEVENT
+
+BEGIN:VEVENT
+UID:30006101326020@mba-haas-berkeley.12twenty.com
+DTSTART:20260409T000000Z
+DTEND:20260409T020000Z
+DTSTAMP:20260209T000000Z
+SUMMARY:Real Estate Mixer
+DESCRIPTION:Student Registration OPENS one month before the event on March 8. Register ONLY if you know you can attend as spots are limited. We strongly discourage no-shows to this event.\n\nPlease join the Career Management Group and Haas alumni for an informal mixer focused on the Real Estate space. This event will give you the opportunity to connect with alumni in this space\, as well as learn more about their roles\, how to break into this space\, and how you might build new skills and expose yourself to experiences.\n\nThis is not a recruiting event\, but rather a chance to build your network and tap into the Haas alumni community as you progress in your job search this Spring. Come ready to make connections. Bring your questions\, your why\, and your curiosity about the Real Estate field.\n\nAdditional Information: Attire: Dress in business smart and bring your Haas nametag. Event Flow: This is a drop-in event. You do not need to stay the entire time. Refreshments: Light food and beverages will be provided.\n\nLocation: S300\nIndustry: Real Estate\nOrganizer: Berkeley Haas Career Management Group (CMG)\nContact: abigail_franklin@haas.berkeley.edu\n\nEvent Page: https://mba-haas-berkeley.12twenty.com/events#/events/30006101326020
+LOCATION:S300
+STATUS:CONFIRMED
+ORGANIZER;CN=Berkeley Haas Career Management Group:MAILTO:abigail_franklin@haas.berkeley.edu
+URL:https://mba-haas-berkeley.12twenty.com/events#/events/30006101326020
+END:VEVENT
+
+END:VCALENDAR

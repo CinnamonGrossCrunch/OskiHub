@@ -437,7 +437,7 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
   };
 
   // Unified modal height for all event types
-  const eventModalHeight = 'max-h-[70vh] md:max-h-[80vh]';
+  const eventModalHeight = 'max-h-[650px]';
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 p-4">

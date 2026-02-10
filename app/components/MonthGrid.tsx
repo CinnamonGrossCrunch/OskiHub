@@ -33,6 +33,8 @@ type Props = {
   newsletterEvents?: NewsletterCalendarEvent[];
   showAcademicCalendar?: boolean;
   academicCalendarEvents?: CalendarEvent[];
+  showCMG?: boolean;
+  cmgEvents?: CalendarEvent[];
   glowingDate?: string | null; // Date string (YYYY-MM-DD) that should have violet glow effect
   onMultiEventClick?: (events: CalendarEvent[], date: Date) => void; // Handler for expand button with multiple events
 };
@@ -52,6 +54,8 @@ export default function MonthGrid({
   newsletterEvents = [],
   showAcademicCalendar = true,
   academicCalendarEvents = [],
+  showCMG = true,
+  cmgEvents = [],
   glowingDate = null,
   onMultiEventClick
 }: Props) {
@@ -234,6 +238,11 @@ export default function MonthGrid({
           isSameDay(new Date(ev.start), day)
         ) : [];
         
+        // Add CMG events for this day if they should be shown
+        const dayCMGEvents = showCMG ? cmgEvents.filter((ev) =>
+          isSameDay(new Date(ev.start), day)
+        ) : [];
+        
         // Debug logging for Newsletter events (only on 1st of month to avoid spam)
         if (day.getDate() === 1) {
           console.log(`📰 [MonthGrid] Newsletter Debug for ${format(day, 'MMMM yyyy')}:`, {
@@ -293,6 +302,7 @@ export default function MonthGrid({
           ...dayLaunchEvents, 
           ...dayCampusGroupsEvents,
           ...dayAcademicCalendarEvents,
+          ...dayCMGEvents,
           ...processedNewsletterEvents
         ].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
         const isToday = isSameDay(day, new Date());
@@ -382,6 +392,11 @@ export default function MonthGrid({
           // Check for Haas Academic Calendar events - Amber/Gold styling
           if (event.source && event.source.includes('haas_academic_calendar')) {
             return `${glassBase} bg-amber-600/50 border-amber-500/50 text-white ${hoverGold}`;
+          }
+
+          // Check for CMG (Career Management Group) events - Light Pink styling
+          if (event.source && event.source.includes('Career_Management')) {
+            return `${glassBase} bg-pink-400/50 border-pink-300/50 text-white ${hoverGold}`;
           }
 
           // Check for UC Launch events FIRST - Orange styling

@@ -306,7 +306,8 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
                     launch: dashboardData.cohortEvents?.launch || [],
                     calBears: dashboardData.cohortEvents?.calBears || [],
                     campusGroups: dashboardData.cohortEvents?.campusGroups || [],
-                    academicCalendar: dashboardData.cohortEvents?.academicCalendar || []
+                    academicCalendar: dashboardData.cohortEvents?.academicCalendar || [],
+                    cmg: dashboardData.cohortEvents?.cmg || []
                   }}
                   selectedCohort={selectedCohort}
                   dashboardData={dashboardData}

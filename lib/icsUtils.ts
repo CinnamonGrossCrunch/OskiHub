@@ -1,5 +1,6 @@
 import ical from 'node-ical';
 import { addDays, isAfter, isBefore } from 'date-fns';
+import { fromZonedTime } from 'date-fns-tz';
 import fs from 'fs';
 import path from 'path';
 
@@ -46,6 +47,7 @@ export type CohortEvents = {
   calBears: CalendarEvent[]; // Cal Bears home events
   campusGroups: CalendarEvent[]; // Campus Groups events
   academicCalendar: CalendarEvent[]; // Haas Academic Calendar (holidays, breaks, finals)
+  cmg: CalendarEvent[]; // Career Management Group (CMG) events
 };
 
 // File mappings for each cohort
@@ -177,31 +179,60 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
         !!v.datetype && v.datetype === 'date' ||
         (start.getHours() === 0 && start.getMinutes() === 0 && (!end || (end.getHours() === 0 && end.getMinutes() === 0)));
 
-      // CRITICAL FIX: Handle both UTC (Z suffix) and floating times
-      // - Some ICS files use UTC: DTSTART:20251014T011000Z (already correct)
-      // - Others use floating: DTSTART:20260218T180000 (should be PST, but node-ical parses as UTC)
-      // Check if the original ICS had a Z suffix by looking for the UID in the raw text
+      // Normalize floating and TZID times to UTC without hardcoded offsets.
+      // Floating times (no TZID, no Z) are interpreted as America/Los_Angeles.
+      const DEFAULT_TZ = 'America/Los_Angeles';
+
+      type RawIcsDateTime = {
+        value: string;
+        tzid?: string;
+        isUtc: boolean;
+      };
+
+      const buildIcsDateTime = (raw: RawIcsDateTime): Date => {
+        const datePart = raw.value.slice(0, 8);
+        const timePart = raw.value.slice(9);
+        const isoLike = `${datePart.slice(0, 4)}-${datePart.slice(4, 6)}-${datePart.slice(6, 8)}T${timePart.slice(0, 2)}:${timePart.slice(2, 4)}:${timePart.slice(4, 6)}`;
+        if (raw.isUtc) {
+          return new Date(`${isoLike}Z`);
+        }
+        const timeZone = raw.tzid || DEFAULT_TZ;
+        return fromZonedTime(isoLike, timeZone);
+      };
+
+      const getEventBlock = (uid?: string): string | null => {
+        if (!uid) return null;
+        const safeUid = uid.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const match = unfoldedIcs.match(new RegExp(`UID:${safeUid}[\\s\\S]*?END:VEVENT`, 'i'));
+        return match ? match[0] : null;
+      };
+
+      const extractDateTime = (block: string, prop: 'DTSTART' | 'DTEND'): RawIcsDateTime | null => {
+        const match = block.match(new RegExp(`${prop}(?:;TZID=([^:;]+))?:(\\d{8}T\\d{6})(Z)?`, 'i'));
+        if (!match) return null;
+        return {
+          value: match[2],
+          tzid: match[1],
+          isUtc: match[3] === 'Z',
+        };
+      };
+
       let adjustedStart = start;
       let adjustedEnd = end;
-      
-      if (!allDay && cohort && v.uid) {
-        // Find this event's DTSTART line in the raw ICS
-        const uidPattern = new RegExp(`UID:${v.uid.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[\\s\\S]{0,500}?DTSTART[^:]*:([0-9T]+)(Z?)`, 'i');
-        const match = unfoldedIcs.match(uidPattern);
-        
-        const isUtcFormat = match && match[2] === 'Z'; // Has Z suffix = already UTC
-        const isFloatingTime = match && match[2] !== 'Z' && !match[0].includes('TZID'); // No Z, no TZID = floating
-        
-        if (isFloatingTime) {
-          // Floating times should be interpreted as PST, but node-ical parsed as UTC
-          // 18:00 floating → should be 18:00 PST = 02:00 UTC next day
-          // So add 8 hours to shift from "18:00 as UTC" to "18:00 PST stored as UTC"
-          adjustedStart = new Date(start.getTime() + (8 * 60 * 60 * 1000));
-          if (end) {
-            adjustedEnd = new Date(end.getTime() + (8 * 60 * 60 * 1000));
+
+      if (!allDay) {
+        const eventBlock = getEventBlock(v.uid);
+        if (eventBlock) {
+          const rawStart = extractDateTime(eventBlock, 'DTSTART');
+          const rawEnd = extractDateTime(eventBlock, 'DTEND');
+
+          if (rawStart) {
+            adjustedStart = buildIcsDateTime(rawStart);
+          }
+          if (rawEnd) {
+            adjustedEnd = buildIcsDateTime(rawEnd);
           }
         }
-        // If isUtcFormat, leave dates as-is (already correct)
       }
 
       // Helper function to safely extract string values with better debugging
@@ -618,6 +649,23 @@ async function fetchHaasAcademicCalendar(): Promise<CalendarEvent[]> {
 }
 
 /**
+ * Fetch and parse events from the Career Management Group (CMG) ICS file
+ */
+async function fetchCMGEvents(): Promise<CalendarEvent[]> {
+  safeLog('Fetching CMG (Career Management Group) events');
+
+  try {
+    const icsText = await fetchIcsData('Career_Management_Calendar-Spring_26.ics');
+    const events = parseIcsToEvents(icsText, 'blue', 'Career_Management_Calendar-Spring_26.ics');
+    safeLog(`Successfully parsed ${events.length} events from CMG calendar`);
+    return events;
+  } catch (error) {
+    safeError('Error fetching CMG events:', error);
+    return [];
+  }
+}
+
+/**
  * Main function to fetch events for both cohorts plus original calendar
  */
 export async function getCohortEvents(
@@ -627,8 +675,8 @@ export async function getCohortEvents(
   safeLog('Fetching events for both cohorts, original calendar, and UC Launch...');
 
   try {
-    // Fetch both cohorts, original calendar, UC Launch events, Cal Bears events, Campus Groups events, and Academic Calendar in parallel
-    const [blueEvents, goldEvents, originalEvents, launchEvents, calBearsEvents, campusGroupsEvents, academicCalendarEvents] = await Promise.all([
+    // Fetch both cohorts, original calendar, UC Launch events, Cal Bears events, Campus Groups events, Academic Calendar, and CMG in parallel
+    const [blueEvents, goldEvents, originalEvents, launchEvents, calBearsEvents, campusGroupsEvents, academicCalendarEvents, cmgEvents] = await Promise.all([
       fetchCohortEvents('blue'),
       fetchCohortEvents('gold'),
       fetchOriginalCalendarEvents().catch(() => {
@@ -649,6 +697,10 @@ export async function getCohortEvents(
       }),
       fetchHaasAcademicCalendar().catch((err) => {
         safeWarn('Could not load Haas Academic Calendar, continuing without them:', err);
+        return [];
+      }),
+      fetchCMGEvents().catch((err) => {
+        safeWarn('Could not load CMG events, continuing without them:', err);
         return [];
       })
     ]);
@@ -706,8 +758,11 @@ export async function getCohortEvents(
     
     // Filter and limit Academic Calendar events with extended date range (6 months ahead)
     const filteredAcademicCalendar = filterEventsByDateRange(academicCalendarEvents, daysAhead * 6, limit);
+    
+    // Filter and limit CMG events with extended date range (6 months ahead)
+    const filteredCMG = filterEventsByDateRange(cmgEvents, daysAhead * 6, limit);
 
-    safeLog(`Filtered events - Blue: ${filteredBlue.length}, Gold: ${filteredGold.length}, Original: ${filteredOriginal.length}, Launch: ${filteredLaunch.length}, Cal Bears: ${filteredCalBears.length}, Campus Groups: ${filteredCampusGroups.length}, Academic Calendar: ${filteredAcademicCalendar.length}`);
+    safeLog(`Filtered events - Blue: ${filteredBlue.length}, Gold: ${filteredGold.length}, Original: ${filteredOriginal.length}, Launch: ${filteredLaunch.length}, Cal Bears: ${filteredCalBears.length}, Campus Groups: ${filteredCampusGroups.length}, Academic Calendar: ${filteredAcademicCalendar.length}, CMG: ${filteredCMG.length}`);
 
     return {
       blue: filteredBlue,
@@ -716,7 +771,8 @@ export async function getCohortEvents(
       launch: filteredLaunch,
       calBears: filteredCalBears,
       campusGroups: filteredCampusGroups,
-      academicCalendar: filteredAcademicCalendar
+      academicCalendar: filteredAcademicCalendar,
+      cmg: filteredCMG
     };
   } catch (error) {
     safeError('Error fetching cohort events:', error);

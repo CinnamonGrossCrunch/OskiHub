@@ -5,11 +5,13 @@
  * Used to create subscribable calendar feeds for external calendar apps (Gmail, Apple, Outlook).
  */
 
+import { formatInTimeZone } from 'date-fns-tz';
 import type { CalendarEvent } from './icsUtils';
 
 // Calendar name for the generated feed
 const CALENDAR_NAME = 'OskiHub Calendar';
 const CALENDAR_PRODID = '-//OskiHub//EWMBA Hub Calendar//EN';
+const DEFAULT_TIMEZONE = 'America/Los_Angeles';
 
 /**
  * Escape special characters for ICS text fields
@@ -35,38 +37,10 @@ function formatIcsDate(date: Date): string {
 }
 
 /**
- * Format a date as ICS local date-time without timezone adjustment
- * Used when date is already in the correct timezone format
- * Format: YYYYMMDDTHHmmss
+ * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) in a specific timezone
  */
-function formatIcsDateTimeLocalRaw(date: Date): string {
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-  const day = String(date.getUTCDate()).padStart(2, '0');
-  const hours = String(date.getUTCHours()).padStart(2, '0');
-  const minutes = String(date.getUTCMinutes()).padStart(2, '0');
-  const seconds = String(date.getUTCSeconds()).padStart(2, '0');
-  return `${year}${month}${day}T${hours}${minutes}${seconds}`;
-}
-
-/**
- * Format a date to ICS datetime format (YYYYMMDDTHHMMSS) for timed events in Pacific Time
- * Dates are stored as UTC with +8 hour adjustment (e.g., 6 PM PST = 02:00 UTC next day).
- * To export for TZID=America/Los_Angeles, we need to subtract 8 hours to get back to PST time.
- * Example: 02:00 UTC - 8 hours = 18:00 (6:00 PM) for PST output.
- */
-function formatIcsDateTimeLocal(date: Date): string {
-  // Subtract 8 hours to convert back from our UTC+8 storage to PST
-  const pstTime = new Date(date.getTime() - (8 * 60 * 60 * 1000));
-  
-  const year = pstTime.getUTCFullYear();
-  const month = String(pstTime.getUTCMonth() + 1).padStart(2, '0');
-  const day = String(pstTime.getUTCDate()).padStart(2, '0');
-  const hours = String(pstTime.getUTCHours()).padStart(2, '0');
-  const minutes = String(pstTime.getUTCMinutes()).padStart(2, '0');
-  const seconds = String(pstTime.getUTCSeconds()).padStart(2, '0');
-  
-  return `${year}${month}${day}T${hours}${minutes}${seconds}`;
+function formatIcsDateTimeInTimeZone(date: Date, timeZone: string = DEFAULT_TIMEZONE): string {
+  return formatInTimeZone(date, timeZone, "yyyyMMdd'T'HHmmss");
 }
 
 /**
@@ -139,6 +113,8 @@ function getEventCategory(event: CalendarEvent): string[] {
     categories.push('Campus Groups');
   } else if (source.includes('newsletter') || source === 'newsletter') {
     categories.push('Newsletter');
+  } else if (source.includes('career_management') || source.includes('cmg')) {
+    categories.push('Career Management');
   } else if (source.includes('teams@haas')) {
     categories.push('Teams@Haas');
   } else if (source.includes('201') || source.includes('micro')) {
@@ -185,23 +161,7 @@ function eventToVEvent(event: CalendarEvent): string {
   if (event.allDay) {
     lines.push(`DTSTART;VALUE=DATE:${formatIcsDate(startDate)}`);
   } else {
-    // Use timezone-aware format for timed events
-    // Check if this is a cohort event (which has +8 hour adjustment applied)
-    const isCohortEvent = event.cohort || 
-                          (event.source && (
-                            event.source.includes('ewmba') || 
-                            event.source.includes('DataDecisions') ||
-                            event.source.includes('Marketing') ||
-                            event.source.includes('teams@Haas') ||
-                            event.source.includes('calendar.ics')
-                          ));
-    
-    // Only apply -8 hour adjustment for cohort events (which had +8 applied during parsing)
-    const exportDate = isCohortEvent 
-      ? new Date(startDate.getTime() - (8 * 60 * 60 * 1000))
-      : startDate;
-    
-    lines.push(`DTSTART;TZID=America/Los_Angeles:${formatIcsDateTimeLocalRaw(exportDate)}`);
+    lines.push(`DTSTART;TZID=America/Los_Angeles:${formatIcsDateTimeInTimeZone(startDate)}`);
   }
   
   // End date/time (optional but recommended)
@@ -212,21 +172,7 @@ function eventToVEvent(event: CalendarEvent): string {
       endDate.setDate(endDate.getDate() + 1);
       lines.push(`DTEND;VALUE=DATE:${formatIcsDate(endDate)}`);
     } else {
-      // Use timezone-aware format for timed events
-      const isCohortEvent = event.cohort || 
-                            (event.source && (
-                              event.source.includes('ewmba') || 
-                              event.source.includes('DataDecisions') ||
-                              event.source.includes('Marketing') ||
-                              event.source.includes('teams@Haas') ||
-                              event.source.includes('calendar.ics')
-                            ));
-      
-      const exportEndDate = isCohortEvent 
-        ? new Date(endDate.getTime() - (8 * 60 * 60 * 1000))
-        : endDate;
-      
-      lines.push(`DTEND;TZID=America/Los_Angeles:${formatIcsDateTimeLocalRaw(exportEndDate)}`);
+      lines.push(`DTEND;TZID=America/Los_Angeles:${formatIcsDateTimeInTimeZone(endDate)}`);
     }
   } else if (event.allDay) {
     // If no end date for all-day, default to 1 day duration
@@ -307,6 +253,8 @@ export interface IcsFilterOptions {
   greekTheater?: boolean;
   /** Include Teams@Haas events */
   teamsAtHaas?: boolean;
+  /** Include Career Management Group (CMG) events */
+  cmg?: boolean;
 }
 
 /**
@@ -333,6 +281,11 @@ export function eventMatchesFilter(event: CalendarEvent, options: IcsFilterOptio
   // Campus Groups events
   if (source.includes('campus_groups')) {
     return options.campusGroups === true;
+  }
+  
+  // CMG (Career Management Group) events
+  if (source.includes('career_management') || source.includes('cmg')) {
+    return options.cmg === true;
   }
   
   // Greek Theater events
@@ -437,6 +390,7 @@ export function parseFilterOptionsFromParams(params: URLSearchParams): IcsFilter
     newsletter: getBoolParam('newsletter', false),
     greekTheater: getBoolParam('greektheater', false),
     teamsAtHaas: getBoolParam('teamsathaas', false),
+    cmg: getBoolParam('cmg', false),
   };
 }
 
@@ -454,6 +408,7 @@ export function buildIcsSubscriptionUrl(baseUrl: string, options: IcsFilterOptio
   if (options.newsletter) params.set('newsletter', '1');
   if (options.greekTheater) params.set('greektheater', '1');
   if (options.teamsAtHaas) params.set('teamsathaas', '1');
+  if (options.cmg) params.set('cmg', '1');
   
   const queryString = params.toString();
   return queryString ? `${baseUrl}?${queryString}` : baseUrl;

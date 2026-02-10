@@ -68,6 +68,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   const [showCampusGroups, setShowCampusGroups] = useState(false);
   const [showAcademicCalendar, setShowAcademicCalendar] = useState(true);
   const [showNewsletter, setShowNewsletter] = useState(true);
+  const [showCMG, setShowCMG] = useState(false);
   
   // --------------------------------------------------------------------------
   // STATE: Newsletter Events (converted from newsletter data)
@@ -119,6 +120,11 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     const savedShowAcademicCalendar = localStorage.getItem('calendar-show-academic');
     if (savedShowAcademicCalendar !== null) {
       setShowAcademicCalendar(savedShowAcademicCalendar === 'true');
+    }
+    
+    const savedShowCMG = localStorage.getItem('calendar-show-cmg');
+    if (savedShowCMG !== null) {
+      setShowCMG(savedShowCMG === 'true');
     }
   }, [externalSelectedCohort]);
 
@@ -337,6 +343,10 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   useEffect(() => {
     localStorage.setItem('calendar-show-academic', String(showAcademicCalendar));
   }, [showAcademicCalendar]);
+
+  useEffect(() => {
+    localStorage.setItem('calendar-show-cmg', String(showCMG));
+  }, [showCMG]);
 
   // ==========================================================================
   // EFFECT: Close Dropdown When Clicking Outside
@@ -803,6 +813,25 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
             {showEventDropdown && (
               <div className="absolute top-full right-0 mt-2 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-600 py-0 z-50 min-w-[150px]">
                 
+                {/* Hide All Button */}
+                <button
+                  onClick={() => {
+                    setShowGreekTheater(false);
+                    setShowUCLaunch(false);
+                    setShowCalBears(false);
+                    setShowCampusGroups(false);
+                    setShowAcademicCalendar(false);
+                    setShowNewsletter(false);
+                    setShowCMG(false);
+                  }}
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2 text-xs font-medium text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-red-500 dark:hover:text-red-400 transition-colors border-b border-slate-200 dark:border-slate-600 cursor-pointer"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                  </svg>
+                  Hide All
+                </button>
+
                 {/* Greek Theater Toggle */}
                 <label className="flex items-center justify-between px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer">
                   <div className="flex items-center gap-3">
@@ -978,6 +1007,34 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                   </div>
                 </label>
 
+                {/* CMG (Career Management Group) Toggle */}
+                <label className="flex items-center justify-between px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-7 flex items-center justify-center bg-pink-400 rounded-lg">
+                      <svg className="w-6 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12z"/>
+                      </svg>
+                    </div>
+                    <span className="text-sm pr-2 font-medium">CMG</span>
+                  </div>
+                  <div className="relative">
+                    <input
+                      type="checkbox"
+                      checked={showCMG}
+                      onChange={(e) => setShowCMG(e.target.checked)}
+                      className="sr-only"
+                      aria-label="Toggle CMG Career Management events"
+                    />
+                    <div className={`w-10 h-6 rounded-full transition-colors duration-200 ${
+                      showCMG ? 'bg-pink-400' : 'bg-slate-300 dark:bg-slate-600'
+                    }`}>
+                      <div className={`translate-y-1 w-4 h-4 bg-white rounded-full shadow transform transition-transform duration-200 mt-1 ${
+                        showCMG ? 'translate-x-5' : 'translate-x-1'
+                      }`} />
+                    </div>
+                  </div>
+                </label>
+
               {/* COMING SOON*/}
                 <label className="flex items-center justify-center text-center px-5 py-1 hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer">
                   <div className="flex items-center gap-3">
@@ -1014,6 +1071,8 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
             campusGroupsEvents={cohortEvents.campusGroups || []}
             showAcademicCalendar={showAcademicCalendar}
             academicCalendarEvents={cohortEvents.academicCalendar || []}
+            showCMG={showCMG}
+            cmgEvents={cohortEvents.cmg || []}
             showNewsletter={showNewsletter}
             newsletterEvents={newsletterEvents}
             glowingDate={glowingDate}

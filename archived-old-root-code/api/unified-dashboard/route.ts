@@ -244,7 +244,8 @@ export async function GET() {
             launch: [],
             calBears: [],
             campusGroups: [],
-            academicCalendar: []
+            academicCalendar: [],
+            cmg: []
           };
         }
         
@@ -378,7 +379,8 @@ export async function GET() {
           launch: [],
           calBears: [],
           campusGroups: [],
-          academicCalendar: []
+          academicCalendar: [],
+          cmg: []
         },
         processingInfo: {
           totalTime,
