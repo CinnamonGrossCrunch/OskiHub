@@ -15,6 +15,7 @@ import GmailNewsletterModalHost from "./GmailNewsletterModalHost";
 import IcsExportModal from "./IcsExportModal";
 import { usePerformance, getPerformanceClasses } from "./PerformanceProvider";
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
+import { trackEvent } from '@/lib/analytics';
 
 type CohortType = 'blue' | 'gold';
 
@@ -45,24 +46,22 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
   
   // Handlers that ensure exactly one is always expanded
   const handleMyWeekExpandChange = (expanded: boolean) => {
+    trackEvent('widget_expanded', { widget: 'my_week', expanded });
     if (expanded) {
-      // Expanding MyWeek -> collapse Resources
       setIsMyWeekExpanded(true);
       setIsResourcesExpanded(false);
     } else {
-      // Collapsing MyWeek -> expand Resources
       setIsMyWeekExpanded(false);
       setIsResourcesExpanded(true);
     }
   };
   
   const handleResourcesExpandChange = (expanded: boolean) => {
+    trackEvent('widget_expanded', { widget: 'resources', expanded });
     if (expanded) {
-      // Expanding Resources -> collapse MyWeek
       setIsResourcesExpanded(true);
       setIsMyWeekExpanded(false);
     } else {
-      // Collapsing Resources -> expand MyWeek
       setIsResourcesExpanded(false);
       setIsMyWeekExpanded(true);
     }
@@ -149,6 +148,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
   }, [selectedCohort]);
 
   const handleCohortChange = (cohort: CohortType) => {
+    trackEvent('cohort_selected', { cohort });
     setSelectedCohort(cohort);
   };
   
@@ -346,7 +346,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
             </p>
           <div className="flex justify-end items-center gap-4">
             <button
-              onClick={() => setShowIcsModal(true)}
+              onClick={() => { trackEvent('ics_export_modal_opened'); setShowIcsModal(true); }}
               className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200 flex items-center gap-1"
             >
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

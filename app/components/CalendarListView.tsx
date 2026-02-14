@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { format } from 'date-fns';
 import EventDetailModal from './EventDetailModal';
 import type { CalendarEvent, CohortEvents } from '@/lib/icsUtils';
+import { trackEvent } from '@/lib/analytics';
 
 type Props = {
   cohortEvents: CohortEvents;
@@ -272,6 +273,7 @@ export default function CalendarListView({
   const handleEventClick = (event: CalendarEvent) => {
     // Scroll to top of page first
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    trackEvent('calendar_event_clicked', { source: 'list_view', title: event.title });
     
     // Teams@Haas: show raw event only
     if (event.source && event.source.toLowerCase().includes('teams@haas')) {
@@ -305,6 +307,7 @@ export default function CalendarListView({
       const cardWidth = 180; // Approximate card width + gap
       scrollContainerRef.current.scrollBy({ left: cardWidth, behavior: 'smooth' });
       setScrollIndex(prev => prev + 1);
+      trackEvent('calendar_list_scrolled', { direction: 'next' });
     }
   };
 
@@ -313,6 +316,7 @@ export default function CalendarListView({
       const cardWidth = 180; // Approximate card width + gap
       scrollContainerRef.current.scrollBy({ left: -cardWidth, behavior: 'smooth' });
       setScrollIndex(prev => Math.max(0, prev - 1));
+      trackEvent('calendar_list_scrolled', { direction: 'previous' });
     }
   };
 

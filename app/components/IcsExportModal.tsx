@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { buildIcsSubscriptionUrl, type IcsFilterOptions } from '@/lib/icsGenerator';
+import { trackEvent } from '@/lib/analytics';
 
 interface IcsExportModalProps {
   isOpen: boolean;
@@ -42,6 +43,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
   const toggleFilter = (key: keyof IcsFilterOptions) => {
     setFilters(prev => ({ ...prev, [key]: !prev[key] }));
     setCopied(false); // Reset copied state when filters change
+    trackEvent('ics_filter_toggled', { filter: key, enabled: !filters[key] });
   };
 
   const selectAll = () => {
@@ -79,6 +81,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
     try {
       await navigator.clipboard.writeText(subscriptionUrl);
       setCopied(true);
+      trackEvent('ics_url_copied', { filterCount: Object.values(filters).filter(v => v).length });
       setTimeout(() => setCopied(false), 3000);
     } catch (err) {
       console.error('Failed to copy:', err);
@@ -598,6 +601,7 @@ export default function IcsExportModal({ isOpen, onClose }: IcsExportModalProps)
                   href={subscriptionUrl}
                   download="oskihub-calendar.ics"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg transition-colors text-sm font-medium"
+                  onClick={() => trackEvent('ics_downloaded', { filterCount: Object.values(filters).filter(v => v).length })}
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

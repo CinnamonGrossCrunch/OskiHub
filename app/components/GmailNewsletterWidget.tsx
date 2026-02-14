@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import type { CalendarEvent } from "@/lib/icsUtils";
+import { trackEvent } from '@/lib/analytics';
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -190,6 +191,7 @@ export default function GmailNewsletterWidget({ variant, selectedCohort = 'blue'
     if (!latestNewsletter) return;
 
     setIsAnimating(true);
+    trackEvent('gmail_newsletter_opened', { title: latestNewsletter.title || 'unknown' });
 
     const calendarEvent = convertToCalendarEvent(latestNewsletter);
     const event = new CustomEvent("openGmailNewsletter", {

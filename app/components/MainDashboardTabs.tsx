@@ -9,6 +9,7 @@ import GmailNewsletterWidget, { GMAIL_NEWSLETTER_VARIANTS } from "./GmailNewslet
 import SlackWidget from "./SlackWidget";
 import type { CohortEvents } from '@/lib/icsUtils';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
+import { trackEvent } from '@/lib/analytics';
 
 type CohortType = 'blue' | 'gold';
 
@@ -68,6 +69,7 @@ export default function MainDashboardTabs({
       
       // Switch to the requested tab
       setActiveTab(detail.tabName);
+      trackEvent('tab_switched', { tab: detail.tabName, source: 'cross_widget' });
       console.log(`✅ Switched to tab: ${detail.tabName}`);
     };
     
@@ -99,7 +101,7 @@ export default function MainDashboardTabs({
         {cohortTabs.map((tab, index) => (
           <button
             key={index}
-            onClick={() => setActiveTab(tab)}
+            onClick={() => { setActiveTab(tab); trackEvent('tab_switched', { tab, source: 'click' }); }}
             className={`relative  transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 overflow-hidden
               ${activeTab === tab
                 ? ' text-center text-md px-10 py-3 lg:px-8 bg-violet-100/10 -mb-0 backdrop-blur-lg text-white shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] z-0 rounded-t-3xl saturate-[80%] font-light'
@@ -134,7 +136,7 @@ export default function MainDashboardTabs({
           {dashboardTabs.map((tab, index) => (
             <button
               key={index}
-              onClick={() => setActiveTab(tab)}
+              onClick={() => { setActiveTab(tab); trackEvent('tab_switched', { tab, source: 'click' }); }}
               className={`relative transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 overflow-hidden
                 ${activeTab === tab
                   ? 'text-center px-10 text-md py-3 bg-violet-100/10 backdrop-blur-lg text-white shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] z-20 rounded-t-3xl saturate-[80%] font-light'
@@ -205,6 +207,7 @@ export default function MainDashboardTabs({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative group cursor-pointer"
+                onClick={() => trackEvent('book_a_space_clicked')}
               >
                 <Image 
                   src="/EMS-CAP.png" 

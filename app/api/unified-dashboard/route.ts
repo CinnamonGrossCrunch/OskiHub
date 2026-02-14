@@ -13,6 +13,7 @@ import { organizeNewsletterWithAI, type OrganizedNewsletter } from '@/lib/openai
 import { analyzeCohortMyWeekWithAI, type CohortMyWeekAnalysis } from '@/lib/my-week-analyzer';
 import { getCohortEvents, type CalendarEvent } from '@/lib/icsUtils';
 import { getCachedData, setCachedData, CACHE_KEYS } from '@/lib/cache';
+import { trackServerEvent } from '@/lib/analytics-server';
 
 const safeError = (...args: unknown[]) => {
   // Always log errors, but ensure they don't leak into response
@@ -134,6 +135,7 @@ export async function GET(request: Request) {
     
     if (cachedDashboard) {
       console.log(`✅ [API] CACHE HIT from ${cachedDashboard.source}! Returning pre-rendered data (${Date.now() - startTime}ms)`);
+      await trackServerEvent('dashboard_data_served', { source: cachedDashboard.source === 'kv' ? 'kv_cache' : 'static_fallback', latencyMs: Date.now() - startTime });
       return NextResponse.json(cachedDashboard.data, {
         headers: {
           'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
@@ -387,6 +389,7 @@ export async function GET(request: Request) {
         } catch (cacheError) {
           console.error('⚠️ [API] Cache write failed (non-fatal):', cacheError);
         }
+        trackServerEvent('dashboard_data_served', { source: 'fresh_build', latencyMs: totalTime }).catch(() => {});
         
         return NextResponse.json(response, { 
           status: 200,

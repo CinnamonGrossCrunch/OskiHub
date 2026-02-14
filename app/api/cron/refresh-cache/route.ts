@@ -8,6 +8,7 @@ import { analyzeCohortMyWeekWithAI } from '@/lib/my-week-analyzer';
 import { getCohortEvents } from '@/lib/icsUtils';
 import { setCachedData, CACHE_KEYS } from '@/lib/cache';
 import { sendCronNotification } from '@/lib/notifications';
+import { trackServerEvent } from '@/lib/analytics-server';
 
 export async function GET(request: Request) {
   // Verify this is a cron job request from Vercel
@@ -32,11 +33,13 @@ export async function GET(request: Request) {
     
     // 🚀 WRITE TO CACHE (KV + static fallback)
     console.log('💾 Cron: Writing to cache...');
-    await setCachedData(CACHE_KEYS.COHORT_EVENTS, cohortEvents, { writeStatic: true });
-    await setCachedData(CACHE_KEYS.MY_WEEK_DATA, myWeekData, { writeStatic: true });
+    await setCachedData(CACHE_KEYS.COHORT_EVENTS, cohortEvents);
+    await setCachedData(CACHE_KEYS.MY_WEEK_DATA, myWeekData);
     
     const duration = Date.now() - startTime;
-    console.log('✅ Cron: Midnight cache refresh completed (data written to KV + static)');
+    console.log('✅ Cron: Midnight cache refresh completed (data written to KV)');
+    const eventCount = (cohortEvents.blue?.length || 0) + (cohortEvents.gold?.length || 0);
+    await trackServerEvent('cache_cron_completed', { success: true, durationMs: duration, eventCount });
     
     // 📧 Send success notification email
     await sendCronNotification({
@@ -45,7 +48,7 @@ export async function GET(request: Request) {
       durationMs: duration,
       timestamp: new Date().toISOString(),
       details: {
-        sectionsProcessed: (cohortEvents.blue?.length || 0) + (cohortEvents.gold?.length || 0),
+        sectionsProcessed: eventCount,
       }
     });
     
@@ -61,6 +64,7 @@ export async function GET(request: Request) {
     });
   } catch (error) {
     console.error('❌ Cron error:', error);
+    await trackServerEvent('cache_fetch_failed', { error: String(error).slice(0, 255) });
     
     // 📧 Send failure notification email
     await sendCronNotification({

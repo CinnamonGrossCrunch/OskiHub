@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import EventDetailModal from "./EventDetailModal";
 import type { CalendarEvent } from "@/lib/icsUtils";
+import { trackEvent } from '@/lib/analytics';
 
 interface GmailEventDetail {
   event: CalendarEvent;
@@ -43,12 +44,14 @@ export default function GmailNewsletterModalHost() {
   const handleNext = useCallback(() => {
     if (currentIndex < newsletters.length - 1) {
       goToEvent(currentIndex + 1);
+      trackEvent('gmail_newsletter_navigated', { direction: 'next' });
     }
   }, [currentIndex, newsletters.length, goToEvent]);
 
   const handlePrevious = useCallback(() => {
     if (currentIndex > 0) {
       goToEvent(currentIndex - 1);
+      trackEvent('gmail_newsletter_navigated', { direction: 'previous' });
     }
   }, [currentIndex, goToEvent]);
 

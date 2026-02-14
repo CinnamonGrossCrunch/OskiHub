@@ -10,6 +10,7 @@ import MonthGrid from './MonthGrid';
 import EventDetailModal, { MultiEventModal } from './EventDetailModal';
 import type { CalendarEvent, CohortEvents } from '@/lib/icsUtils';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
+import { trackEvent } from '@/lib/analytics';
 
 // ============================================================================
 // TYPES & INTERFACES
@@ -393,11 +394,19 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   };
 
   const goToPreviousMonth = () => {
-    setCurrentMonth(prev => subMonths(prev, 1));
+    setCurrentMonth(prev => {
+      const target = subMonths(prev, 1);
+      trackEvent('calendar_month_navigated', { direction: 'previous', targetMonth: format(target, 'yyyy-MM') });
+      return target;
+    });
   };
 
   const goToNextMonth = () => {
-    setCurrentMonth(prev => addMonths(prev, 1));
+    setCurrentMonth(prev => {
+      const target = addMonths(prev, 1);
+      trackEvent('calendar_month_navigated', { direction: 'next', targetMonth: format(target, 'yyyy-MM') });
+      return target;
+    });
   };
 
   // ==========================================================================
@@ -620,6 +629,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   /** Handle clicking on an event - opens detail modal */
   const handleEventClick = (event: CalendarEvent) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    trackEvent('calendar_event_clicked', { source: event.source || 'unknown', title: event.title || 'Untitled' });
     
     const eventIndex = currentEvents.findIndex(e => 
       e.start === event.start && e.title === event.title
@@ -652,6 +662,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   /** Navigate to next event in list */
   const handleNextEvent = () => {
     if (currentEventIndex < currentEvents.length - 1) {
+      trackEvent('event_modal_navigated', { direction: 'next' });
       const nextEvent = currentEvents[currentEventIndex + 1];
       handleEventClick(nextEvent);
     }
@@ -660,6 +671,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   /** Navigate to previous event in list */
   const handlePreviousEvent = () => {
     if (currentEventIndex > 0) {
+      trackEvent('event_modal_navigated', { direction: 'previous' });
       const prevEvent = currentEvents[currentEventIndex - 1];
       handleEventClick(prevEvent);
     }
@@ -689,6 +701,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
 
   /** Handle clicking expand button on a day with multiple events */
   const handleMultiEventClick = (events: CalendarEvent[], date: Date) => {
+    trackEvent('multi_event_day_clicked', { eventCount: events.length, date: format(date, 'yyyy-MM-dd') });
     setMultiEventModalEvents(events);
     setMultiEventModalDate(date);
     setMultiEventModalOpen(true);
@@ -696,6 +709,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
 
   /** Select an event from the multi-event modal */
   const handleSelectFromMultiEventModal = (event: CalendarEvent) => {
+    trackEvent('multi_event_selected', { source: event.source || 'unknown', title: event.title || 'Untitled' });
     setMultiEventModalOpen(false);
     handleEventClick(event);
   };
@@ -798,7 +812,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
           {/* Special Event Toggles - Dropdown - Right Anchored */}
           <div className="relative flex-shrink-0 sm:ml-auto" ref={dropdownRef}>
             <button
-              onClick={() => setShowEventDropdown(!showEventDropdown)}
+              onClick={() => { if (!showEventDropdown) trackEvent('event_source_dropdown_opened'); setShowEventDropdown(!showEventDropdown); }}
               className="flex items-center justify-center gap-2 px-3 py-2 bg-slate-400/10 rounded-full hover:bg-slate-800 transition-all duration-200 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
               aria-label="Toggle special events"
             >
@@ -816,6 +830,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                 {/* Hide All Button */}
                 <button
                   onClick={() => {
+                    trackEvent('event_source_hide_all');
                     setShowGreekTheater(false);
                     setShowUCLaunch(false);
                     setShowCalBears(false);
@@ -848,7 +863,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     <input
                       type="checkbox"
                       checked={showGreekTheater}
-                      onChange={(e) => setShowGreekTheater(e.target.checked)}
+                      onChange={(e) => { trackEvent('event_source_toggled', { source: 'greek_theater', enabled: e.target.checked }); setShowGreekTheater(e.target.checked); }}
                       className="sr-only"
                       aria-label="Toggle Greek Theater events"
                     />
@@ -878,7 +893,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     <input
                       type="checkbox"
                       checked={showUCLaunch}
-                      onChange={(e) => setShowUCLaunch(e.target.checked)}
+                      onChange={(e) => { trackEvent('event_source_toggled', { source: 'uc_launch', enabled: e.target.checked }); setShowUCLaunch(e.target.checked); }}
                       className="sr-only"
                       aria-label="Toggle UC Launch Accelerator events"
                     />
@@ -908,7 +923,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     <input
                       type="checkbox"
                       checked={showCalBears}
-                      onChange={(e) => setShowCalBears(e.target.checked)}
+                      onChange={(e) => { trackEvent('event_source_toggled', { source: 'cal_bears', enabled: e.target.checked }); setShowCalBears(e.target.checked); }}
                       className="sr-only"
                       aria-label="Toggle Cal Bears events"
                     />
@@ -936,7 +951,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     <input
                       type="checkbox"
                       checked={showCampusGroups}
-                      onChange={(e) => setShowCampusGroups(e.target.checked)}
+                      onChange={(e) => { trackEvent('event_source_toggled', { source: 'campus_groups', enabled: e.target.checked }); setShowCampusGroups(e.target.checked); }}
                       className="sr-only"
                       aria-label="Toggle Campus Groups events"
                     />
@@ -964,7 +979,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     <input
                       type="checkbox"
                       checked={showNewsletter}
-                      onChange={(e) => setShowNewsletter(e.target.checked)}
+                      onChange={(e) => { trackEvent('event_source_toggled', { source: 'newsletter', enabled: e.target.checked }); setShowNewsletter(e.target.checked); }}
                       className="sr-only"
                       aria-label="Toggle Newsletter events"
                       disabled={!newsletterData}
@@ -993,7 +1008,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     <input
                       type="checkbox"
                       checked={showAcademicCalendar}
-                      onChange={(e) => setShowAcademicCalendar(e.target.checked)}
+                      onChange={(e) => { trackEvent('event_source_toggled', { source: 'academic_calendar', enabled: e.target.checked }); setShowAcademicCalendar(e.target.checked); }}
                       className="sr-only"
                       aria-label="Toggle Academic Calendar events"
                     />
@@ -1021,7 +1036,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     <input
                       type="checkbox"
                       checked={showCMG}
-                      onChange={(e) => setShowCMG(e.target.checked)}
+                      onChange={(e) => { trackEvent('event_source_toggled', { source: 'cmg', enabled: e.target.checked }); setShowCMG(e.target.checked); }}
                       className="sr-only"
                       aria-label="Toggle CMG Career Management events"
                     />

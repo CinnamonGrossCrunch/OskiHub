@@ -1,5 +1,7 @@
 'use client';
 
+import { trackEvent } from '@/lib/analytics';
+
 interface ResourceItem {
   id: string;
   title: string;
@@ -102,6 +104,7 @@ function MobileResourceCard({ resource }: { resource: ResourceItem }) {
         target="_blank" 
         rel="noopener noreferrer"
         className={STYLES.resourceLinkMobile}
+        onClick={() => trackEvent('haas_journey_link_clicked', { resource: resource.id, title: resource.cta })}
       >
         <div className={STYLES.iconContainerMobile}>
           <span className={STYLES.iconMobile}>{resource.icon}</span>
@@ -136,6 +139,7 @@ function ResourceCard({ resource, index, isOpen, totalItems }: { resource: Resou
         target="_blank" 
         rel="noopener noreferrer"
         className={STYLES.resourceLink}
+        onClick={() => trackEvent('haas_journey_link_clicked', { resource: resource.id, title: resource.cta })}
       >
         <div className={STYLES.iconContainer}>
           <span className={STYLES.icon}>{resource.icon}</span>
@@ -198,7 +202,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
             className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out  ${
               isOpen ? 'translate-x-8 translate-y-0 w-5 h-5' : 'translate-x-8 translate-y-0 animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite'
             }`}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => { trackEvent('haas_journey_toggled', { expanded: !isOpen }); setIsOpen(!isOpen); }}
             title={isOpen ? 'Collapse' : 'Expand'}
             aria-label={isOpen ? 'Collapse resources' : 'Expand resources'}
           >

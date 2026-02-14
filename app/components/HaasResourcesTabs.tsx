@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { HaasResourcesData, ResourceCategory, ResourceItem } from '../../lib/resources';
+import { trackEvent } from '@/lib/analytics';
 
 type Props = {
   resourcesData: HaasResourcesData;
@@ -19,6 +20,7 @@ export default function HaasResourcesTabs({ resourcesData, title }: Props) {
     } else {
       // If clicking on a closed section, open only that one
       newExpanded.add(categoryKey);
+      trackEvent('resource_category_toggled', { category: categoryKey });
     }
     setExpandedCategories(newExpanded);
   };
@@ -95,6 +97,7 @@ export default function HaasResourcesTabs({ resourcesData, title }: Props) {
                               rel="noopener noreferrer"
                               className="underline hover:opacity-80 transition-opacity flex items-center gap-1"
                               style={{ color: 'var(--berkeley-gold)' }}
+                              onClick={() => trackEvent('resource_link_clicked', { category: categoryKey, item: item.text, url: item.url! })}
                             >
                               {item.text}
                               <svg 

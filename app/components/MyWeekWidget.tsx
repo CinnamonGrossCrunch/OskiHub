@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Image from 'next/image';
 import { formatConsistentDate } from '@/lib/date-utils';
+import { trackEvent } from '@/lib/analytics';
 
 type WeeklyEvent = {
   date: string;
@@ -60,6 +61,7 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue', isExpanded
     
     console.log(`🖱️ MyWeek event clicked: ${eventData.title}`);
     console.log(`🔍 Event source type:`, eventData.sourceType);
+    trackEvent('my_week_event_clicked', { title: eventData.title, source: eventData.sourceType || 'unknown' });
     
     // Check if this is a newsletter-sourced event
     if (eventData.sourceType === 'newsletter' && eventData.newsletterSource) {
@@ -321,7 +323,7 @@ export default function MyWeekWidget({ data, selectedCohort = 'blue', isExpanded
           </div>
           {/* Toggle button for all screens - centered at bottom on small screens, positioned near "My Week" on md+ */}
               <button
-              onClick={() => setIsExpanded(!isExpanded)}
+              onClick={() => { trackEvent('my_week_expanded', { expanded: !isExpanded }); setIsExpanded(!isExpanded); }}
               className={`flex items-center justify-center w-6 h-6 rounded-full bg-transparent border border-violet-400/40 hover:bg-slate-800 hover:border-violet-300/60 transition-all duration-500 ease-in-out absolute bottom-2 left-[90px] translate-y-[5px] scale-100 md:scale-100 md:bottom-auto md:top-0 translate-x-[10px] transition-transform ${
                 !isExpanded ? 'animate-[rotating-violet-glow_1.5s_ease-in-out_infinite] hover:animate-[rotating-violet-glow-hover_4s_ease-in-out_infinite]' : ''
               }`}

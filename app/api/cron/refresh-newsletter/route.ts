@@ -11,6 +11,7 @@ import { analyzeCohortMyWeekWithAI } from '@/lib/my-week-analyzer';
 import { getCohortEvents } from '@/lib/icsUtils';
 import { setCachedData, CACHE_KEYS } from '@/lib/cache';
 import { sendCronNotification } from '@/lib/notifications';
+import { trackServerEvent } from '@/lib/analytics-server';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
 
 // Track warnings during execution for email notification
@@ -134,6 +135,7 @@ export async function GET(request: Request) {
     const duration = Date.now() - startTime;
     console.log(`✅ Cron: 8:10 AM newsletter refresh completed in ${duration}ms`);
     console.log('💾 Cron: All data cached in KV - users will experience INSTANT loads (~50-200ms)!');
+    await trackServerEvent('newsletter_cron_completed', { success: true, durationMs: duration, hasNewsletter: true });
     
     // 📧 Send success notification email
     await sendCronNotification({
@@ -165,6 +167,7 @@ export async function GET(request: Request) {
     });
   } catch (error) {
     console.error('❌ Cron error:', error);
+    await trackServerEvent('newsletter_fetch_failed', { error: String(error).slice(0, 255) });
     
     // 📧 Send failure notification email
     await sendCronNotification({

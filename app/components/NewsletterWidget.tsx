@@ -37,6 +37,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Lottie from 'lottie-react';
+import { trackEvent } from '@/lib/analytics';
 
 // ============================================================================
 // TYPE DEFINITIONS
@@ -947,6 +948,7 @@ export default function NewsletterWidget({ data }: { data: Payload }) {
                 href={data.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent('newsletter_source_clicked', { url: data.sourceUrl! })}
               >
                 View original  Newsletter 
               </a>
@@ -1061,6 +1063,7 @@ export default function NewsletterWidget({ data }: { data: Payload }) {
                   const newOpen: Record<string, boolean> = {};
                   if (!isOpen) {
                     newOpen[id] = true;
+                    trackEvent('newsletter_section_opened', { section: sec.sectionTitle });
                   }
                   setOpen(newOpen);
                   // Also close all item dropdowns when switching sections
@@ -1142,6 +1145,7 @@ export default function NewsletterWidget({ data }: { data: Payload }) {
                                     if (!isItemVisited) {
                                       setItemVisited(new Set([...itemVisited, itemKey]));
                                     }
+                                    trackEvent('newsletter_item_read', { section: sec.sectionTitle, item: subsection.title });
                                   }
                                   setItemOpen(newItemOpen);
                                 }}

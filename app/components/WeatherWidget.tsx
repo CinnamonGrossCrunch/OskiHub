@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
+import { trackEvent } from '@/lib/analytics';
 
 interface WeatherData {
   temperature: number;
@@ -106,6 +107,7 @@ export default function WeatherWidget() {
   }
 
 const handleClick = () => {
+    trackEvent('weather_clicked');
     window.open('https://www.timeanddate.com/weather/usa/berkeley', '_blank');
   };
 

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback, useRef } from 'react';
+import { trackEvent } from '@/lib/analytics';
 
 interface TravelTimeData {
   driving: {
@@ -213,6 +214,7 @@ export default function TravelTimeWidget() {
     // Open Google Maps with directions from current location to Haas
     const haasAddress = 'Haas School of Business, Berkeley, CA';
     const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(haasAddress)}&travelmode=driving`;
+    trackEvent('travel_time_clicked');
     window.open(mapsUrl, '_blank');
   };
 

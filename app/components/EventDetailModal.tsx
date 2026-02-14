@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { format } from 'date-fns';
 import type { CalendarEvent } from '@/lib/icsUtils';
+import { trackEvent } from '@/lib/analytics';
 
 // Newsletter event type (same as in CohortCalendarTabs.tsx)
 interface NewsletterCalendarEvent extends CalendarEvent {
@@ -132,6 +133,7 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
   // Handle "View in Newsletter" button click for individual events
   const handleViewInNewsletterForEvent = (eventToView: NewsletterCalendarEvent) => {
     if (!eventToView?.sourceMetadata) return;
+    trackEvent('event_modal_view_newsletter', { source: eventToView.source || 'newsletter', title: eventToView.title || 'Untitled' });
 
     console.log(`📰 [EventDetailModal] View in Newsletter clicked for individual event`);
     console.log(`Section: ${eventToView.sourceMetadata.sectionTitle} (index ${eventToView.sourceMetadata.sectionIndex})`);
@@ -700,6 +702,7 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
                 href={displayEvent.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent('event_modal_open_class_page', { title: displayEvent.title || 'Untitled', url: displayEvent.url || '' })}
                 className="flex-1 bg-[#003262]/10 backdrop-blur-xl hover:bg-[#CC9500]/60 text-white text-sm font-medium py-2 px-4 rounded-lg transition-all duration-300 text-center flex items-center justify-center gap-2 shadow-[0_0_0_1px_rgba(255,255,255,0.2),0_0_18px_4px_rgba(255,255,255,0.25)] hover:shadow-[0_0_0_1px_rgba(255,255,255,0.6),0_0_25px_8px_rgba(255,255,255,0.4)] hover:scale-[1.02]"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
