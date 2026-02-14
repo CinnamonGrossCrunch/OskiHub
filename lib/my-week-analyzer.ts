@@ -25,10 +25,12 @@ const AI_CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
 const aiCache = new Map<string, CachedAIResult>();
 
 function getTodayDateString(): string {
-  // Use a more consistent approach for getting today's date
-  const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  return today.toISOString().split('T')[0]; // YYYY-MM-DD
+  // Use getConsistentToday() for Berkeley-timezone-aware date on Vercel (UTC server)
+  const today = getConsistentToday();
+  const y = today.getFullYear();
+  const m = String(today.getMonth() + 1).padStart(2, '0');
+  const d = String(today.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`; // YYYY-MM-DD in Berkeley timezone
 }
 
 // function getCacheKey(cohort: string): string {
@@ -365,7 +367,11 @@ function extractNewsletterEventsForWeek(newsletterData: NewsletterData, weekStar
                 }
                 
                 if (eventDate >= weekStart && eventDate <= weekEnd) {
-                  relevantDates.push(eventDate.toISOString().split('T')[0]);
+                  // Use local date components to avoid UTC timezone shift
+                  const ey = eventDate.getFullYear();
+                  const em = String(eventDate.getMonth() + 1).padStart(2, '0');
+                  const ed = String(eventDate.getDate()).padStart(2, '0');
+                  relevantDates.push(`${ey}-${em}-${ed}`);
                 }
               } catch {
                 // Ignore invalid dates

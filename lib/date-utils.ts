@@ -71,14 +71,11 @@ export function getConsistentWeekRange(): { start: Date; end: Date } {
 
 /**
  * Format date consistently for display
- * PATCH: Add 1 day to compensate for timezone shift bug
+ * Uses parseConsistentDate which already handles Berkeley timezone conversion
  */
 export function formatConsistentDate(dateString: string): string {
   const date = parseConsistentDate(dateString);
-  // TEMPORARY FIX: Add 1 day to compensate for timezone conversion issue
-  const correctedDate = new Date(date);
-  correctedDate.setDate(correctedDate.getDate() + 1);
-  return correctedDate.toLocaleDateString('en-US', { 
+  return date.toLocaleDateString('en-US', { 
     weekday: 'short', 
     month: 'short', 
     day: 'numeric' 

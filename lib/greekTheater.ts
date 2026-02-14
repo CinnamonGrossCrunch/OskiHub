@@ -10,11 +10,15 @@ export interface GreekTheaterEvent {
 
 // Convert Greek Theater event to CalendarEvent format for the modal
 export function greekTheaterToCalendarEvent(greekEvent: GreekTheaterEvent): CalendarEvent {
+  // Use local date components to create ISO string, avoiding UTC shift
+  // Greek Theater dates are constructed with new Date(year, month, day) (local timezone)
+  const d = greekEvent.date;
+  const localIso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}T12:00:00`;
   return {
     uid: `greek-${greekEvent.date.getTime()}`,
     title: ` ${greekEvent.title}`,
-    start: greekEvent.date.toISOString(),
-    end: greekEvent.date.toISOString(),
+    start: localIso,
+    end: localIso,
     description: `Greek Theater Berkeley presents: ${greekEvent.title}${greekEvent.showTime ? `\n\nShow Time: ${greekEvent.showTime}` : ''}${greekEvent.doorsTime ? `\nDoors: ${greekEvent.doorsTime}` : ''}\n\nGet tickets: ${greekEvent.url}`,
     url: greekEvent.url,
     location: 'Greek Theater, Berkeley, CA'

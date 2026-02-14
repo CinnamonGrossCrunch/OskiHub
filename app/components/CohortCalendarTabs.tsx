@@ -224,7 +224,11 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
                     }
                     
                     if (!isNaN(parsedDate.getTime())) {
-                      return parsedDate.toISOString().split('T')[0]; // YYYY-MM-DD
+                      // Use local date components to avoid UTC timezone shift
+                      const y = parsedDate.getFullYear();
+                      const m = String(parsedDate.getMonth() + 1).padStart(2, '0');
+                      const d = String(parsedDate.getDate()).padStart(2, '0');
+                      return `${y}-${m}-${d}`; // YYYY-MM-DD in local timezone
                     }
                   } catch {
                     return null;
@@ -765,7 +769,8 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   
   /** Trigger violet glow effect on a date cell (after "View in Newsletter" click) */
   const handleTriggerGlow = (eventDate: Date) => {
-    const dateString = eventDate.toISOString().split('T')[0];
+    // Use format() for local timezone instead of toISOString() which converts to UTC
+    const dateString = format(eventDate, 'yyyy-MM-dd');
     setGlowingDate(dateString);
     
     // Auto-remove glow after 7 seconds
