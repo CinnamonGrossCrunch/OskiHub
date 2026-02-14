@@ -295,11 +295,25 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
         }
       }
 
+      // For all-day events (VALUE=DATE), preserve the local date to avoid timezone shift.
+      // node-ical parses "20260216" as 2026-02-16T00:00:00Z (UTC midnight).
+      // On client in PST, that UTC midnight becomes Feb 15 4PM → wrong day!
+      // Fix: store as YYYY-MM-DDT12:00:00 (noon) to anchor to the correct local date.
+      const formatForStorage = (d: Date, isAllDayEvent: boolean): string => {
+        if (isAllDayEvent) {
+          const year = d.getUTCFullYear();
+          const month = String(d.getUTCMonth() + 1).padStart(2, '0');
+          const day = String(d.getUTCDate()).padStart(2, '0');
+          return `${year}-${month}-${day}T12:00:00`;
+        }
+        return d.toISOString();
+      };
+
       const event: CalendarEvent = {
         uid: v.uid,
         title: summaryVal || 'Untitled',
-        start: adjustedStart.toISOString(),
-        end: adjustedEnd?.toISOString(),
+        start: formatForStorage(adjustedStart, allDay),
+        end: adjustedEnd ? formatForStorage(adjustedEnd, allDay) : undefined,
         location,
         url,
         description,
