@@ -412,7 +412,8 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   /** Handle Today button click - navigate to current month, glow today, open events */
   const handleTodayClick = () => {
     const today = new Date();
-    const todayString = today.toISOString().split('T')[0];
+    // Use format() for local timezone instead of toISOString() which converts to UTC
+    const todayString = format(today, 'yyyy-MM-dd');
     
     // 1. Navigate to current month
     setCurrentMonth(today);
