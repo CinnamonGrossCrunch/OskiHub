@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Urbanist } from "next/font/google";
 import { PerformanceProvider } from "./components/PerformanceProvider";
+import ClarityScript from "./components/ClarityScript";
 import "./globals.css";
 
 const urbanist = Urbanist({
@@ -121,6 +123,8 @@ export default function RootLayout({
           </PerformanceProvider>
         </div>
         <Analytics />
+        <SpeedInsights />
+        <ClarityScript />
       </body>
     </html>
   );
