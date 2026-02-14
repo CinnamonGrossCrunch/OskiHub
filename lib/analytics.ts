@@ -85,8 +85,10 @@ export function trackEvent<K extends keyof AnalyticsEvents>(
         }
       }
     }
+    console.log('[Analytics]', eventName, properties);
     track(eventName, properties);
-  } catch {
-    // Analytics should never break the app
+  } catch (err) {
+    // Log analytics failures in dev for debugging
+    console.warn('[Analytics] trackEvent failed:', eventName, err);
   }
 }
