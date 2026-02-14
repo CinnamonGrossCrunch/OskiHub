@@ -6,10 +6,12 @@ export const maxDuration = 300; // 300 seconds (5 minutes) - AI processing takes
 import { NextResponse } from 'next/server';
 import { getLatestNewsletterUrl, scrapeNewsletter } from '@/lib/scrape';
 import { organizeNewsletterWithAI } from '@/lib/openai-organizer';
+import { extractTimeSensitiveData } from '@/lib/openai-organizer-fixed';
 import { analyzeCohortMyWeekWithAI } from '@/lib/my-week-analyzer';
 import { getCohortEvents } from '@/lib/icsUtils';
 import { setCachedData, CACHE_KEYS } from '@/lib/cache';
 import { sendCronNotification } from '@/lib/notifications';
+import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
 
 // Track warnings during execution for email notification
 const warnings: string[] = [];
@@ -63,17 +65,20 @@ export async function GET(request: Request) {
     console.log('🤖 Cron: Processing newsletter with AI...');
     const organizedNewsletter = await organizeNewsletterWithAI(rawNewsletter.sections, latestUrl, rawNewsletter.title);
     
-    console.log('📅 Cron: Fetching calendar events...');
+    console.log('� Cron: Extracting time-sensitive data...');
+    const enrichedNewsletter = await extractTimeSensitiveData(organizedNewsletter);
+    
+    console.log('�📅 Cron: Fetching calendar events...');
     const cohortEvents = await getCohortEvents();
     
     console.log('🧠 Cron: Pre-generating AI summaries...');
     const myWeekData = await analyzeCohortMyWeekWithAI({
       blue: cohortEvents.blue || [],
       gold: cohortEvents.gold || []
-    }, organizedNewsletter);
+    }, enrichedNewsletter);
     
     // 🛡️ FAILSAFE: Extract date from newsletter title and check staleness
-    const titleMatch = organizedNewsletter.title?.match(/(\d{1,2})[-/](\d{1,2})[-/](\d{2,4})/);
+    const titleMatch = enrichedNewsletter.title?.match(/(\d{1,2})[-/](\d{1,2})[-/](\d{2,4})/);
     if (titleMatch) {
       const [, month, day, year] = titleMatch;
       const fullYear = year.length === 2 ? `20${year}` : year;
@@ -95,24 +100,40 @@ export async function GET(request: Request) {
       warnings.push(`Could not extract date from title: "${organizedNewsletter.title}"`);
     }
     
-    // 🚀 WRITE TO CACHE (KV + static fallback) - This is the KEY to instant loads!
-    console.log('💾 Cron: Writing to cache (KV + static JSON)...');
-    await setCachedData(CACHE_KEYS.NEWSLETTER_DATA, organizedNewsletter, { writeStatic: true });
-    await setCachedData(CACHE_KEYS.COHORT_EVENTS, cohortEvents, { writeStatic: true });
-    await setCachedData(CACHE_KEYS.MY_WEEK_DATA, myWeekData, { writeStatic: true });
+    // 🚀 WRITE TO CACHE (KV only - static JSON doesn't persist on Vercel's read-only filesystem)
+    console.log('💾 Cron: Writing to KV cache...');
+    const newsletterTime = Date.now() - startTime;
+    await setCachedData(CACHE_KEYS.NEWSLETTER_DATA, enrichedNewsletter);
+    await setCachedData(CACHE_KEYS.COHORT_EVENTS, cohortEvents);
+    await setCachedData(CACHE_KEYS.MY_WEEK_DATA, myWeekData);
     
-    // Combined dashboard data (full payload for instant rendering)
-    const dashboardData = {
-      newsletterData: organizedNewsletter,
+    // Combined dashboard data - MUST match UnifiedDashboardData shape exactly
+    const dashboardData: UnifiedDashboardData = {
+      newsletterData: {
+        ...enrichedNewsletter,
+        aiDebugInfo: enrichedNewsletter.aiDebugInfo ? {
+          reasoning: enrichedNewsletter.aiDebugInfo.reasoning || 'Cron refresh',
+          sectionDecisions: enrichedNewsletter.aiDebugInfo.sectionDecisions || [],
+          edgeCasesHandled: enrichedNewsletter.aiDebugInfo.edgeCasesHandled || [],
+          totalSections: enrichedNewsletter.aiDebugInfo.totalSections,
+          processingTime: enrichedNewsletter.aiDebugInfo.processingTime || 0,
+        } : undefined,
+      },
       cohortEvents,
       myWeekData,
-      timestamp: new Date().toISOString(),
+      processingInfo: {
+        totalTime: Date.now() - startTime,
+        newsletterTime,
+        calendarTime: 0,
+        myWeekTime: myWeekData.processingTime || 0,
+        timestamp: new Date().toISOString(),
+      },
     };
-    await setCachedData(CACHE_KEYS.DASHBOARD_DATA, dashboardData, { writeStatic: true });
+    await setCachedData(CACHE_KEYS.DASHBOARD_DATA, dashboardData);
     
     const duration = Date.now() - startTime;
     console.log(`✅ Cron: 8:10 AM newsletter refresh completed in ${duration}ms`);
-    console.log('💾 Cron: All data cached (KV + static) - users will experience INSTANT loads (~50-200ms)!');
+    console.log('💾 Cron: All data cached in KV - users will experience INSTANT loads (~50-200ms)!');
     
     // 📧 Send success notification email
     await sendCronNotification({
@@ -121,9 +142,9 @@ export async function GET(request: Request) {
       durationMs: duration,
       timestamp: new Date().toISOString(),
       details: {
-        newsletterTitle: organizedNewsletter.title,
+        newsletterTitle: enrichedNewsletter.title,
         newsletterUrl: latestUrl,
-        sectionsProcessed: organizedNewsletter.sections.length,
+        sectionsProcessed: enrichedNewsletter.sections.length,
         warnings: warnings.length > 0 ? warnings : undefined,
       }
     });
@@ -134,7 +155,7 @@ export async function GET(request: Request) {
       timestamp: new Date().toISOString(),
       newsletterUrl: latestUrl,
       durationMs: duration,
-      sectionsProcessed: organizedNewsletter.sections.length,
+      sectionsProcessed: enrichedNewsletter.sections.length,
       cached: {
         newsletter: true,
         cohortEvents: true,

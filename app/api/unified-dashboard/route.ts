@@ -136,8 +136,8 @@ export async function GET(request: Request) {
       console.log(`✅ [API] CACHE HIT from ${cachedDashboard.source}! Returning pre-rendered data (${Date.now() - startTime}ms)`);
       return NextResponse.json(cachedDashboard.data, {
         headers: {
-          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
-          'X-Cache-Source': cachedDashboard.source, // Debug header showing cache source
+          'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
+          'X-Cache-Source': cachedDashboard.source,
           'X-Response-Time': `${Date.now() - startTime}ms`
         }
       });
@@ -379,22 +379,20 @@ export async function GET(request: Request) {
         // @ts-expect-error augment for debug
         response.myWeekData.aiMeta = (myWeekData as CohortMyWeekAnalysis).aiMeta;
         
-        // 🚀 CRITICAL FIX: Write fresh data back to cache for next request!
-        // This ensures that even on cache miss, subsequent requests will be instant
-        console.log('💾 [API] Writing fresh data to cache (KV + static JSON)...');
+        // 🚀 Write fresh data to KV cache for next request (skip static JSON - doesn't persist on Vercel)
+        console.log('💾 [API] Writing fresh data to KV cache...');
         try {
-          await setCachedData(CACHE_KEYS.DASHBOARD_DATA, response, { writeStatic: true });
-          console.log('✅ [API] Cache write successful - next request will be instant!');
+          await setCachedData(CACHE_KEYS.DASHBOARD_DATA, response);
+          console.log('✅ [API] KV cache write successful - next request will be instant!');
         } catch (cacheError) {
           console.error('⚠️ [API] Cache write failed (non-fatal):', cacheError);
-          // Don't fail the request if cache write fails
         }
         
         return NextResponse.json(response, { 
           status: 200,
           headers: {
-            'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
-            'X-Cache-Source': forceRefresh ? 'force-refresh' : 'fresh-computed', // Debug header showing source
+            'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
+            'X-Cache-Source': forceRefresh ? 'force-refresh' : 'fresh-computed',
             'X-Response-Time': `${totalTime}ms`,
             'X-Force-Refresh': forceRefresh ? 'true' : 'false'
           }
@@ -470,8 +468,8 @@ export async function GET(request: Request) {
       { 
         status: 200, // Return 200 with degraded data instead of 500/504
         headers: {
-          // Shorter cache for error responses (5 min vs 1 hour)
-          'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=3600',
+          // Shorter cache for error responses
+          'Cache-Control': 'no-store, must-revalidate',
         }
       }
     );

@@ -35,15 +35,9 @@ export interface OrganizedNewsletter {
   };
 }
 
-// Simple in-memory cache for organized newsletters
-interface NewsletterCache {
-  sourceUrl: string;
-  timestamp: number;
-  data: OrganizedNewsletter;
-}
-
-const newsletterCacheHolder: { current: NewsletterCache | null } = { current: null };
-const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+// In-memory cache disabled — KV cache handles freshness across invocations.
+// On Vercel serverless, in-memory state persists unpredictably within a Lambda
+// warm instance, causing stale newsletter data to survive across cron runs.
 
 /**
  * Uses OpenAI to intelligently reorganize newsletter content into proper sections
@@ -58,14 +52,7 @@ export async function organizeNewsletterWithAI(
   console.log('🤖 [AI] Input sections:', rawSections.length);
   console.log('🤖 [AI] Source URL:', sourceUrl);
   
-  // Check cache first
-  if (newsletterCacheHolder.current && 
-      newsletterCacheHolder.current.sourceUrl === sourceUrl && 
-      Date.now() - newsletterCacheHolder.current.timestamp < CACHE_DURATION) {
-    console.log('✅ [AI] Using cached newsletter (age:', 
-      Math.round((Date.now() - newsletterCacheHolder.current.timestamp) / 1000 / 60), 'minutes)');
-    return newsletterCacheHolder.current.data;
-  }
+  // In-memory cache removed — KV handles caching at the API/cron layer
   
   if (!process.env.OPENAI_API_KEY) {
     console.warn('⚠️ [AI] OpenAI API key not found, falling back to original parsing');
@@ -208,13 +195,8 @@ ${rawContent}`;
     //   processingTime: result.aiDebugInfo?.processingTime
     // });
 
-    // Cache the result
-    newsletterCacheHolder.current = {
-      sourceUrl,
-      timestamp: Date.now(),
-      data: result
-    };
-    console.log('💾 [AI] Newsletter cached for 24 hours');
+    // In-memory cache removed — KV handles caching
+    console.log('✅ [AI] Newsletter AI processing complete');
 
     return result;
 

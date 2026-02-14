@@ -100,13 +100,18 @@ export async function getCachedData<T>(key: string): Promise<{ data: T; source: 
 }
 
 /**
- * Set cached data in KV (primary) and optionally write static JSON (fallback)
+ * Set cached data in KV (primary).
+ * 
+ * NOTE: Static JSON fallback (public/cache/) does NOT work on Vercel.
+ * Vercel's serverless filesystem is read-only — writes to public/ are
+ * ephemeral and lost on cold start. Static JSON is only useful for local
+ * development seeding. The writeStatic option is kept for local dev only.
  */
 export async function setCachedData<T>(
   key: string, 
   data: T, 
   options: { 
-    writeStatic?: boolean; // Whether to also write static JSON fallback
+    writeStatic?: boolean; // Only works in local dev — Vercel fs is read-only
     ttl?: number; // Custom TTL in seconds (defaults to CACHE_TTL)
   } = {}
 ): Promise<void> {
@@ -124,8 +129,8 @@ export async function setCachedData<T>(
     console.warn(`⚠️ [Cache] KV not available - skipping KV write for key: ${key}`);
   }
 
-  // Optionally write static JSON fallback (for free tier resilience)
-  if (writeStatic) {
+  // Static JSON fallback — only attempt in local development (Vercel fs is read-only)
+  if (writeStatic && process.env.NODE_ENV === 'development') {
     try {
       const fs = await import('fs/promises');
       const path = await import('path');
@@ -139,7 +144,7 @@ export async function setCachedData<T>(
       const filePath = path.join(cacheDir, `${key}.json`);
       await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
       
-      console.log(`✅ [Cache] Static JSON write successful: ${filePath}`);
+      console.log(`✅ [Cache] Static JSON write successful (dev only): ${filePath}`);
     } catch (err) {
       console.error(`❌ [Cache] Static JSON write failed for key ${key}:`, err);
     }
