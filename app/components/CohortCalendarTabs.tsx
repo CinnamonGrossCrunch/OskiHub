@@ -4,7 +4,7 @@
 // IMPORTS
 // ============================================================================
 import { useState, useEffect, useRef } from 'react';
-import { format, addMonths, subMonths } from 'date-fns';
+import { format, addMonths, subMonths, isSameDay } from 'date-fns';
 import Image from 'next/image';
 import MonthGrid from './MonthGrid';
 import EventDetailModal, { MultiEventModal } from './EventDetailModal';
@@ -409,6 +409,80 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
     });
   };
 
+  /** Handle Today button click - navigate to current month, glow today, open events */
+  const handleTodayClick = () => {
+    const today = new Date();
+    const todayString = today.toISOString().split('T')[0];
+    
+    // 1. Navigate to current month
+    setCurrentMonth(today);
+    trackEvent('calendar_today_clicked', { date: todayString });
+    
+    // 2. Trigger glow on today's date cell
+    setGlowingDate(todayString);
+    
+    // 3. After 1000ms delay, open events for today
+    setTimeout(() => {
+      // Gather all events for today from all active sources
+      const todayEvents: CalendarEvent[] = [];
+      
+      // Current cohort events for today
+      const cohortTodayEvents = currentEvents.filter(ev => 
+        isSameDay(new Date(ev.start), today)
+      );
+      todayEvents.push(...cohortTodayEvents);
+      
+      // Newsletter events for today (if enabled)
+      if (showNewsletter) {
+        const newsletterTodayEvents = newsletterEvents.filter(ev => 
+          isSameDay(new Date(ev.start), today)
+        );
+        todayEvents.push(...newsletterTodayEvents);
+      }
+      
+      // Cal Bears events for today (if enabled)
+      if (showCalBears && cohortEvents.calBears) {
+        const calBearsTodayEvents = cohortEvents.calBears.filter(ev => 
+          isSameDay(new Date(ev.start), today)
+        );
+        todayEvents.push(...calBearsTodayEvents);
+      }
+      
+      // Academic calendar events for today (if enabled)
+      if (showAcademicCalendar && cohortEvents.academicCalendar) {
+        const academicTodayEvents = cohortEvents.academicCalendar.filter(ev => 
+          isSameDay(new Date(ev.start), today)
+        );
+        todayEvents.push(...academicTodayEvents);
+      }
+      
+      // CMG events for today (if enabled)
+      if (showCMG && cohortEvents.cmg) {
+        const cmgTodayEvents = cohortEvents.cmg.filter(ev => 
+          isSameDay(new Date(ev.start), today)
+        );
+        todayEvents.push(...cmgTodayEvents);
+      }
+      
+      // Open appropriate modal based on event count
+      if (todayEvents.length === 0) {
+        // No events today - just keep the glow, no modal
+        console.log('📅 No events scheduled for today');
+      } else if (todayEvents.length === 1) {
+        // Single event - open detail modal
+        handleEventClick(todayEvents[0]);
+      } else {
+        // Multiple events - open multi-event modal
+        handleMultiEventClick(todayEvents, today);
+      }
+      
+      // Clear glow after 7 seconds (consistent with existing behavior)
+      setTimeout(() => {
+        setGlowingDate(null);
+      }, 6000); // 7 seconds total (1 second delay + 6 seconds glow)
+    }, 1000);
+  };
+
   // ==========================================================================
   // HELPER: Generate Course-Specific Content for Events
   // ==========================================================================
@@ -738,6 +812,15 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
       {/* ================================================================== */}
       <header className="mb-2 relative overflow-visible px-0 sm:px-6 lg:px-0">
         <div className="relative flex items-center gap-3 flex-wrap">
+
+          {/* Today Button - Top Left */}
+          <button
+            onClick={handleTodayClick}
+            className="px-3 py-1.5 bg-berkeley-gold/80 hover:bg-berkeley-gold text-berkeley-blue rounded-full text-xs font-semibold transition-all duration-200 shadow-[0_0_10px_rgba(253,181,21,0.3)] hover:shadow-[0_0_20px_rgba(253,181,21,0.5)] flex-shrink-0"
+            aria-label="Go to today"
+          >
+            Today
+          </button>
 
           {/* Cohort Tabs - Only show if not externally controlled 
           {!externalSelectedCohort && (

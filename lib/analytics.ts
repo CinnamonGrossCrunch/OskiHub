@@ -20,6 +20,7 @@ export type AnalyticsEvents = {
 
   // ── Calendar ──
   calendar_month_navigated: { direction: 'previous' | 'next'; targetMonth: string };
+  calendar_today_clicked: { date: string };
   event_source_toggled: { source: string; enabled: boolean };
   event_source_hide_all: Record<string, never>;
   event_source_dropdown_opened: Record<string, never>;
