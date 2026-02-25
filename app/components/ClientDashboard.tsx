@@ -239,7 +239,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         <div className="min-h-full w-full flex flex-col items-center overflow-x-hidden pt-14 sm:pt-16">
         
       {/* Main Content */}
-      <main className="w-full max-w-[1740px] md:px-0 lg:px-4 py-0 relative overflow-hidden box-border">
+      <main className="w-full max-w-[1740px] mx-auto md:px-0 lg:px-4 py-0 relative overflow-visible box-border">
         {/* Animated black overlay - z-index 20 (middle layer) */}
           <div 
             className="fixed inset-0 bg-black transition-opacity duration-300 ease-out pointer-events-none z-45"
@@ -251,10 +251,10 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
         {/* Mobile: Stacked layout (Resources row → Weather/Travel row → MyWeek) */}
         {/* Desktop (lg+): 8-column grid layout */}
         {/* Col 1: MyWeek collapsed | Cols 2-6: Expansion area | Col 7: HaasJourney collapsed | Col 8: Weather/Travel */}
-        <div className="flex flex-col lg:grid lg:grid-cols-8 mt-2 lg:py-2 mb-0 gap-2 items-start sm:mx-0 lg:mx-0 transition-all duration-500 ease-in-out overflow-hidden w-full max-w-full">
+        <div className="flex flex-col lg:grid lg:grid-cols-8 mt-2 lg:py-2 mb-0 gap-2 items-start sm:mx-0 lg:mx-0 transition-all duration-500 ease-in-out overflow-visible w-full max-w-full">
           
           {/* My Week Widget - Column 1 collapsed, expands into Cols 1-5 */}
-          <div className={`order-3 lg:order-1 w-full transition-all duration-500 ease-in-out px-3 sm:px-0 ${
+          <div className={`order-3 lg:order-1 w-full transition-all duration-500 ease-in-out px-3 sm:px-0 relative z-30 lg:z-auto ${
             isMyWeekExpanded ? 'lg:col-span-5' : 'lg:col-span-1'
           }`}>
             {!loading && dashboardData && (
@@ -274,7 +274,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
           </div>
           
           {/* Haas Journey Resources - Column 7 collapsed, expands into Cols 2-7 */}
-          <div className={`order-1 lg:order-2 w-full transition-all duration-500 ease-in-out px-3 sm:px-0 ${
+          <div className={`order-1 lg:order-2 w-full transition-all duration-500 ease-in-out px-3 sm:px-0 -mb-1 lg:mb-0 ${
             isResourcesExpanded ? 'lg:col-span-6 lg:col-start-2' : 'lg:col-span-1 lg:col-start-7'
           }`}>
             <HaasJourneyWidget 
@@ -339,7 +339,7 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
       </main>
 
       {/* Footer */}
-      <footer className="mt-8 pb-6 w-full max-w-[1740px]">
+      <footer className="mt-8 pb-6 w-full max-w-[1740px] mx-auto">
         <div className="px-3 sm:px-4 lg:px-6">
             <p className="text-center text-xs text-slate-400 mb-4">
               Oski.app created and maintained by <a href="https://www.linkedin.com/in/designrefinerepeat/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-slate-300 transition-colors duration-200">Matt Gross</a>. &nbsp;|  &nbsp; Not an officially endorsed UC Berkeley website.

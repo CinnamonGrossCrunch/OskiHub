@@ -30,7 +30,46 @@ export default function CalendarListView({
   const [matchedOriginalEvent, setMatchedOriginalEvent] = useState<CalendarEvent | null>(null);
   const [isGlowing, setIsGlowing] = useState(false);
   const [scrollIndex, setScrollIndex] = useState(0);
+  const [hasScrolledLeft, setHasScrolledLeft] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStartX, setDragStartX] = useState(0);
+  const [dragScrollLeft, setDragScrollLeft] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Track horizontal scroll position to show/hide left gradient
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+    const handleScroll = () => {
+      setHasScrolledLeft(container.scrollLeft > 10);
+    };
+    container.addEventListener('scroll', handleScroll, { passive: true });
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Drag-to-scroll handlers for large screens
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollContainerRef.current) return;
+    setIsDragging(true);
+    setDragStartX(e.pageX - scrollContainerRef.current.offsetLeft);
+    setDragScrollLeft(scrollContainerRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollContainerRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainerRef.current.offsetLeft;
+    const walk = (x - dragStartX) * 1.5;
+    scrollContainerRef.current.scrollLeft = dragScrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
 
   // Sync with external cohort selection
   useEffect(() => {
@@ -345,7 +384,7 @@ export default function CalendarListView({
       
 
       {/* Widget Content */}
-      <div className="widget-content px-1 py-2 relative bg-slate-500/10 ">
+      <div className="widget-content px-1 py-2 relative bg-transparent sm:bg-slate-500/10 ">
         {/* Events List */}
         {allFutureEvents.length === 0 ? (
           <div className="empty-state text-center py-8">
@@ -358,14 +397,36 @@ export default function CalendarListView({
           </div>
         ) : (
           <div className="events-container relative">
+            {/* Left fade gradient + scroll-back hint (visible after scrolling) */}
+            <div
+              className={`absolute top-0 left-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none lg:pointer-events-auto lg:cursor-pointer rounded-l-lg flex items-center justify-start pl-1 transition-opacity duration-300 ${hasScrolledLeft ? 'opacity-100' : 'opacity-0 lg:pointer-events-none'}`}
+              onClick={handleScrollPrevious}
+            >
+              <svg className="w-5 h-5 text-white/60 animate-[pulse_2s_ease-in-out_infinite]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </div>
+            {/* Right fade gradient + scroll hint icon */}
+            <div
+              className="absolute top-0 right-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none lg:pointer-events-auto lg:cursor-pointer rounded-r-lg flex items-center justify-end pr-1"
+              onClick={handleScrollNext}
+            >
+              <svg className="w-5 h-5 text-white/60 animate-[pulse_2s_ease-in-out_infinite]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
             <div 
               ref={scrollContainerRef}
-              className="flex gap-1 overflow-x-auto scrollbar-hide scroll-smooth pb-0 px-1 0"
+              className={`flex gap-1 overflow-x-auto scrollbar-hide scroll-smooth pb-0 px-1 lg:cursor-grab ${isDragging ? 'lg:cursor-grabbing lg:!scroll-auto select-none' : ''}`}
               style={{ 
                 scrollbarWidth: 'none',
                 msOverflowStyle: 'none',
                 WebkitOverflowScrolling: 'touch'
               }}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseLeave}
             >
               {allFutureEvents.map((ev) => {
                 const start = new Date(ev.start);
@@ -447,40 +508,6 @@ export default function CalendarListView({
           })}
         </div>
         
-        {/* Navigation buttons - hidden on mobile, visible on lg screens */}
-        {canScrollLeft && (
-          <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 left-0.5 z-50">
-            <div 
-              className="w-8 h-20 glass-nav-button glass-turbulence rounded-lg flex items-center justify-center cursor-pointer"
-              onClick={handleScrollPrevious}
-            >
-              <svg 
-                className="w-6 h-6 text-white drop-shadow-md" 
-                fill="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-              </svg>
-            </div>
-          </div>
-        )}
-        
-        {canScrollRight && (
-          <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-0.5 z-50">
-            <div 
-              className="w-8 h-20 glass-nav-button glass-turbulence rounded-xl flex items-center justify-center cursor-pointer"
-              onClick={handleScrollNext}
-            >
-              <svg 
-                className="w-6 h-6 text-white drop-shadow-md" 
-                fill="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-              </svg>
-            </div>
-          </div>
-        )}
         </div>
       )}
         </div>

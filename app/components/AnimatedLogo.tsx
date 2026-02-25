@@ -202,7 +202,7 @@ export default function AnimatedLogo({
   });
 
   return (
-    <div style={containerStyle}>
+    <div className="logo-fixed-size" style={containerStyle}>
       {/* Static image layer - always underneath, fades in as video fades out */}
       <Image
         src={fallbackImageSrc}

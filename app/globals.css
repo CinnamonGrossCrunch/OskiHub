@@ -1063,16 +1063,16 @@ body {
   touch-action: pan-y pinch-zoom;
 }
 
-/* Ensure main container doesn't exceed viewport */
-#__next, main {
-  max-width: 100vw;
+/* Ensure Next.js root doesn't cause horizontal overflow */
+#__next {
   overflow-x: hidden;
 }
 
-/* Force all containers to respect viewport width */
-* {
-  max-width: 100vw;
-  box-sizing: border-box;
+/* Prevent Tailwind preflight max-width:100% / height:auto from shrinking fixed-size logos */
+.logo-fixed-size img,
+.logo-fixed-size video {
+  max-width: none;
+  height: inherit;
 }
 
 /* ============================================================================

@@ -817,12 +817,12 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
       {/* HEADER: Month Navigation & Event Toggles                          */}
       {/* ================================================================== */}
       <header className="mb-2 relative overflow-visible px-0 sm:px-6 lg:px-0">
-        <div className="relative flex items-center gap-3 flex-wrap">
+        <div className="relative flex items-center gap-2 flex-wrap">
 
           {/* Today Button - Top Left */}
           <button
             onClick={handleTodayClick}
-            className="px-3 py-1.5 bg-berkeley-gold/80 hover:bg-berkeley-gold text-berkeley-blue rounded-full text-xs font-semibold transition-all duration-200 shadow-[0_0_10px_rgba(253,181,21,0.3)] hover:shadow-[0_0_20px_rgba(253,181,21,0.5)] flex-shrink-0"
+            className="ml-2 px-3 py-1.5 bg-berkeley-gold/80 hover:bg-berkeley-gold text-berkeley-blue rounded-full text-xs font-semibold transition-all duration-200 shadow-[0_0_10px_rgba(253,181,21,0.3)] hover:shadow-[0_0_20px_rgba(253,181,21,0.5)] flex-shrink-0"
             aria-label="Go to today"
           >
             Today
@@ -872,8 +872,8 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
             </div>
           )}
 
-          {/* Month Navigation - Right on mobile, centered on desktop */}
-          <div className="mr-auto ml-2 sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 flex  items-center gap-0 flex-shrink-0">
+          {/* Month Navigation - Centered between Today and Events */}
+          <div className="flex-1 flex justify-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 items-center gap-0 flex-shrink-0">
             <button
               onClick={goToPreviousMonth}
               className="p-0 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-white"
@@ -899,16 +899,16 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
           </div>
           
           {/* Special Event Toggles - Dropdown - Right Anchored */}
-          <div className="relative flex-shrink-0 sm:ml-auto" ref={dropdownRef}>
+          <div className="relative flex-shrink-0 mr-2 sm:ml-auto" ref={dropdownRef}>
             <button
               onClick={() => { if (!showEventDropdown) trackEvent('event_source_dropdown_opened'); setShowEventDropdown(!showEventDropdown); }}
-              className="flex items-center justify-center gap-2 px-3 py-2 bg-slate-400/10 rounded-full hover:bg-slate-800 transition-all duration-200 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
+              className="flex items-center justify-center gap-1.5 px-3 py-1.5 bg-berkeley-gold/80 hover:bg-berkeley-gold text-berkeley-blue rounded-full transition-all duration-200 shadow-[0_0_10px_rgba(253,181,21,0.3)] hover:shadow-[0_0_20px_rgba(253,181,21,0.5)]"
               aria-label="Toggle special events"
             >
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-berkeley-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-              <span className="text-sm font-semibold text-white/80">Events</span>
+              <span className="text-xs font-semibold text-berkeley-blue">Events</span>
 
             </button>
 

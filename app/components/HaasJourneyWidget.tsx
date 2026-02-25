@@ -161,7 +161,7 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
   };
 
   return (
-    <div className={`select-none rounded-none lg:rounded-l-3xl lg:rounded-r-md py-0 lg:py-2 mr-1 bg-none lg:bg-violet-100/10 min-h-[80px] lg:min-w-[160px] ${!isOpen ? 'lg:-ml-8' : ''} ${STYLES.container} ${className}`}>
+    <div className={`select-none rounded-none lg:rounded-l-3xl lg:rounded-r-md py-0 lg:py-2 mr-1 bg-none lg:bg-violet-100/10 min-h-0 lg:min-h-[80px] lg:min-w-[160px] ${!isOpen ? 'lg:-ml-8' : ''} ${STYLES.container} ${className}`}>
       {/* Mobile Layout - Always visible compact 6-icon horizontal row */}
       <div className="lg:hidden">
         <div className={STYLES.gridMobile}>
@@ -172,7 +172,10 @@ export default function HaasJourneyWidget({ className = "", isExpanded = true, o
       </div>
       
       {/* Desktop Layout - Expandable with toggle button */}
-      <div className="hidden lg:flex items-center justify-end w-full h-full min-h-[80px] z-10 relative">
+      <div
+        className={`hidden lg:flex items-center justify-end w-full h-full min-h-[80px] z-10 relative ${!isOpen ? 'cursor-pointer' : ''}`}
+        onClick={() => { if (!isOpen) { trackEvent('haas_journey_toggled', { expanded: true }); setIsOpen(true); } }}
+      >
         {/* Dropdown Content - Same Row, Left Side */}
         <div 
           className={`${STYLES.dropdownContent} ${!isOpen ? 'pointer-events-none' : ''}`}
