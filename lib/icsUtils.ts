@@ -48,6 +48,7 @@ export type CohortEvents = {
   campusGroups: CalendarEvent[]; // Campus Groups events
   academicCalendar: CalendarEvent[]; // Haas Academic Calendar (holidays, breaks, finals)
   cmg: CalendarEvent[]; // Career Management Group (CMG) events
+  registration: CalendarEvent[]; // EWMBA Registration deadlines (bidding, add/drop, etc.)
 };
 
 // File mappings for each cohort
@@ -726,6 +727,23 @@ async function fetchCMGEvents(): Promise<CalendarEvent[]> {
 }
 
 /**
+ * Fetch and parse events from the EWMBA Registration Calendar ICS file
+ */
+async function fetchRegistrationCalendar(): Promise<CalendarEvent[]> {
+  safeLog('Fetching EWMBA Registration Calendar events');
+
+  try {
+    const icsText = await fetchIcsData('ewmba_registration_2026.ics');
+    const events = parseIcsToEvents(icsText, 'blue', 'ewmba_registration_2026.ics');
+    safeLog(`Successfully parsed ${events.length} events from Registration Calendar`);
+    return events;
+  } catch (error) {
+    safeError('Error fetching Registration Calendar events:', error);
+    return [];
+  }
+}
+
+/**
  * Main function to fetch events for both cohorts plus original calendar
  */
 export async function getCohortEvents(
@@ -735,8 +753,8 @@ export async function getCohortEvents(
   safeLog('Fetching events for both cohorts, original calendar, and UC Launch...');
 
   try {
-    // Fetch both cohorts, original calendar, UC Launch events, Cal Bears events, Campus Groups events, Academic Calendar, and CMG in parallel
-    const [blueEvents, goldEvents, originalEvents, launchEvents, calBearsEvents, campusGroupsEvents, academicCalendarEvents, cmgEvents] = await Promise.all([
+    // Fetch both cohorts, original calendar, UC Launch events, Cal Bears events, Campus Groups events, Academic Calendar, CMG, and Registration in parallel
+    const [blueEvents, goldEvents, originalEvents, launchEvents, calBearsEvents, campusGroupsEvents, academicCalendarEvents, cmgEvents, registrationEvents] = await Promise.all([
       fetchCohortEvents('blue'),
       fetchCohortEvents('gold'),
       fetchOriginalCalendarEvents().catch(() => {
@@ -761,6 +779,10 @@ export async function getCohortEvents(
       }),
       fetchCMGEvents().catch((err) => {
         safeWarn('Could not load CMG events, continuing without them:', err);
+        return [];
+      }),
+      fetchRegistrationCalendar().catch((err) => {
+        safeWarn('Could not load Registration Calendar, continuing without them:', err);
         return [];
       })
     ]);
@@ -821,8 +843,11 @@ export async function getCohortEvents(
     
     // Filter and limit CMG events with extended date range (6 months ahead)
     const filteredCMG = filterEventsByDateRange(cmgEvents, daysAhead * 6, limit);
+    
+    // Filter and limit Registration events with extended date range (12 months ahead)
+    const filteredRegistration = filterEventsByDateRange(registrationEvents, daysAhead * 8, limit);
 
-    safeLog(`Filtered events - Blue: ${filteredBlue.length}, Gold: ${filteredGold.length}, Original: ${filteredOriginal.length}, Launch: ${filteredLaunch.length}, Cal Bears: ${filteredCalBears.length}, Campus Groups: ${filteredCampusGroups.length}, Academic Calendar: ${filteredAcademicCalendar.length}, CMG: ${filteredCMG.length}`);
+    safeLog(`Filtered events - Blue: ${filteredBlue.length}, Gold: ${filteredGold.length}, Original: ${filteredOriginal.length}, Launch: ${filteredLaunch.length}, Cal Bears: ${filteredCalBears.length}, Campus Groups: ${filteredCampusGroups.length}, Academic Calendar: ${filteredAcademicCalendar.length}, CMG: ${filteredCMG.length}, Registration: ${filteredRegistration.length}`);
 
     return {
       blue: filteredBlue,
@@ -832,7 +857,8 @@ export async function getCohortEvents(
       calBears: filteredCalBears,
       campusGroups: filteredCampusGroups,
       academicCalendar: filteredAcademicCalendar,
-      cmg: filteredCMG
+      cmg: filteredCMG,
+      registration: filteredRegistration
     };
   } catch (error) {
     safeError('Error fetching cohort events:', error);

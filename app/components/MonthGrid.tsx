@@ -35,6 +35,7 @@ type Props = {
   academicCalendarEvents?: CalendarEvent[];
   showCMG?: boolean;
   cmgEvents?: CalendarEvent[];
+  registrationEvents?: CalendarEvent[];
   glowingDate?: string | null; // Date string (YYYY-MM-DD) that should have violet glow effect
   onMultiEventClick?: (events: CalendarEvent[], date: Date) => void; // Handler for expand button with multiple events
 };
@@ -56,6 +57,7 @@ export default function MonthGrid({
   academicCalendarEvents = [],
   showCMG = true,
   cmgEvents = [],
+  registrationEvents = [],
   glowingDate = null,
   onMultiEventClick
 }: Props) {
@@ -243,6 +245,25 @@ export default function MonthGrid({
           isSameDay(new Date(ev.start), day)
         ) : [];
         
+        // Registration events (always visible, no toggle) - single-day events only
+        const dayRegistrationEvents = registrationEvents.filter((ev) =>
+          isSameDay(new Date(ev.start), day) && !isMultiDayEvent(ev)
+        );
+        
+        // Multi-day registration events that START on this day
+        const startingMultiDayRegEvents = registrationEvents.filter((ev) =>
+          isSameDay(new Date(ev.start), day) && isMultiDayEvent(ev)
+        );
+        
+        // Multi-day registration events that span this day (continuation)
+        const spanningRegEvents = registrationEvents.filter((ev) => {
+          if (!ev.end) return false;
+          const eventStart = startOfDay(new Date(ev.start));
+          const eventEnd = getActualEndDate(ev);
+          const dayStart = startOfDay(day);
+          return dayStart > eventStart && dayStart <= eventEnd;
+        });
+        
         // Debug logging for Newsletter events (only on 1st of month to avoid spam)
         if (day.getDate() === 1) {
           console.log(`📰 [MonthGrid] Newsletter Debug for ${format(day, 'MMMM yyyy')}:`, {
@@ -303,6 +324,7 @@ export default function MonthGrid({
           ...dayCampusGroupsEvents,
           ...dayAcademicCalendarEvents,
           ...dayCMGEvents,
+          ...dayRegistrationEvents,
           ...processedNewsletterEvents
         ].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
         const isToday = isSameDay(day, new Date());
@@ -315,6 +337,9 @@ export default function MonthGrid({
         const hasStartingMultiDayEvent = startingMultiDayAcademicEvents.length > 0;
         const hasStartingQuizWindow = startingQuizWindowEvents.length > 0;
         const hasSpanningQuizWindow = spanningQuizWindowEvents.length > 0;
+        const hasStartingMultiDayReg = startingMultiDayRegEvents.length > 0;
+        const hasSpanningReg = spanningRegEvents.length > 0;
+        const hasRegistrationEvent = dayRegistrationEvents.length > 0;
 
         // Debug log for days with newsletter events
         if (hasNewsletterEvent) {
@@ -392,6 +417,11 @@ export default function MonthGrid({
           // Check for Haas Academic Calendar events - Amber/Gold styling
           if (event.source && event.source.includes('haas_academic_calendar')) {
             return `${glassBase} bg-amber-600/50 border-amber-500/50 text-white ${hoverGold}`;
+          }
+
+          // Check for Registration Calendar events - Teal styling
+          if (event.source && event.source.includes('ewmba_registration')) {
+            return `${glassBase} bg-teal-600/50 border-teal-500/50 text-white ${hoverGold}`;
           }
 
           // Check for CMG (Career Management Group) events - Light Pink styling
@@ -596,6 +626,23 @@ export default function MonthGrid({
                     <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
                   </svg>
                   <span className="hidden md:inline text-[10px] text-white font-medium leading-tight">📅</span>
+                </div>
+                )}
+                {hasRegistrationEvent && (
+                <div 
+                  className="flex-shrink-0 cursor-pointer opacity-80 hover:opacity-100 transition-all duration-200 bg-teal-600 rounded-md flex items-center justify-center relative border border-transparent hover:border-white w-4 h-4 md:w-auto md:h-auto md:px-1.5 md:py-0"
+                  title={`Registration: ${dayRegistrationEvents.map(e => e.title).join(', ')}`}
+                  onClick={(e) => {
+                  e.stopPropagation();
+                  if (dayRegistrationEvents.length > 0) {
+                    onEventClick(dayRegistrationEvents[0]);
+                  }
+                  }}
+                >
+                  <svg className="w-3 h-3 text-white md:hidden" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 2v2H15V2h2v2h2c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h2V2h2zm10 6H5v12h14V8zm-7 2h5v5h-5v-5z"/>
+                  </svg>
+                  <span className="hidden md:inline text-[10px] text-white font-medium leading-tight">📋</span>
                 </div>
                 )}
                 {hasNewsletterEvent && (
@@ -898,6 +945,75 @@ export default function MonthGrid({
                         {isFirstOfWeek && (
                           <span className="text-[8px] text-white font-medium truncate">
                             {ev.title}
+                          </span>
+                        )}
+                        <span className="text-[7px] text-white/90 font-medium flex-shrink-0 ml-auto">
+                          {currentDayNumber}/{totalDays}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+              
+              {/* Registration multi-day bar START (first day) */}
+              {hasStartingMultiDayReg && (
+                <div className={`absolute left-0 right-0 h-3 z-10 overflow-hidden ${(hasStartingMultiDayEvent || hasSpanningEvent || hasStartingQuizWindow || hasSpanningQuizWindow) ? 'bottom-3' : 'bottom-0'}`}>
+                  {startingMultiDayRegEvents.slice(0, 1).map((ev, idx) => {
+                    const eventStart = startOfDay(new Date(ev.start));
+                    const eventEnd = getActualEndDate(ev);
+                    const totalDays = differenceInDays(eventEnd, eventStart) + 1;
+                    const isAlsoLastDay = isSameDay(eventStart, eventEnd);
+                    
+                    return (
+                      <div
+                        key={`reg-start-${ev.uid || ev.title}-${idx}`}
+                        className={`h-full bg-teal-500/80 cursor-pointer hover:bg-teal-600 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${isAlsoLastDay ? 'border-r' : ''}`}
+                        title={`${ev.title} (Day 1 of ${totalDays})`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onEventClick(ev);
+                        }}
+                      >
+                        <span className="text-[8px] text-white font-medium truncate">
+                          📋 {ev.title}
+                        </span>
+                        <span className="text-[7px] text-white/90 font-medium flex-shrink-0 ml-0.5">
+                          1/{totalDays}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+              
+              {/* Registration multi-day spanning bar (continuation days) */}
+              {hasSpanningReg && !hasStartingMultiDayReg && (
+                <div className={`absolute left-0 right-0 h-3 z-10 overflow-hidden ${(hasStartingMultiDayEvent || hasSpanningEvent || hasStartingQuizWindow || hasSpanningQuizWindow) ? 'bottom-3' : 'bottom-0'}`}>
+                  {spanningRegEvents.slice(0, 1).map((ev, idx) => {
+                    const eventStart = startOfDay(new Date(ev.start));
+                    const eventEnd = getActualEndDate(ev);
+                    const totalDays = differenceInDays(eventEnd, eventStart) + 1;
+                    const currentDayNumber = differenceInDays(startOfDay(day), eventStart) + 1;
+                    const isLastDay = isSameDay(day, eventEnd);
+                    const dayOfWeek = day.getDay();
+                    const isFirstOfWeek = dayOfWeek === 0;
+                    
+                    return (
+                      <div
+                        key={`reg-span-${ev.uid || ev.title}-${idx}`}
+                        className={`h-full bg-teal-500/70 cursor-pointer hover:bg-teal-500/90 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${
+                          isLastDay ? 'border-r' : ''
+                        }`}
+                        title={`${ev.title} (Day ${currentDayNumber} of ${totalDays})`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onEventClick(ev);
+                        }}
+                      >
+                        {isFirstOfWeek && (
+                          <span className="text-[8px] text-white font-medium truncate">
+                            📋 {ev.title}
                           </span>
                         )}
                         <span className="text-[7px] text-white/90 font-medium flex-shrink-0 ml-auto">

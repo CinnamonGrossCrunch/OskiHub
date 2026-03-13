@@ -1177,6 +1177,7 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
             academicCalendarEvents={cohortEvents.academicCalendar || []}
             showCMG={showCMG}
             cmgEvents={cohortEvents.cmg || []}
+            registrationEvents={cohortEvents.registration || []}
             showNewsletter={showNewsletter}
             newsletterEvents={newsletterEvents}
             glowingDate={glowingDate}
