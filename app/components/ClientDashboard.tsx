@@ -345,15 +345,21 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
               Oski.app created and maintained by <a href="https://www.linkedin.com/in/designrefinerepeat/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-slate-300 transition-colors duration-200">Matt Gross</a>. &nbsp;|  &nbsp; Not an officially endorsed UC Berkeley website.
             </p>
           <div className="flex justify-end items-center gap-4">
-            <button
-              onClick={() => { trackEvent('ics_export_modal_opened'); setShowIcsModal(true); }}
-              className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200 flex items-center gap-1"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              Calendar Export
-            </button>
+            <div className="relative group">
+              <button
+                disabled
+                className="text-xs text-slate-600 cursor-not-allowed flex items-center gap-1 opacity-50"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Calendar Export
+              </button>
+              <div className="absolute bottom-full right-0 mb-2 px-3 py-1.5 rounded-md text-xs font-semibold pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-50"
+                style={{ color: '#ffffff', backgroundColor: '#1a1a00', border: '1px solid #ffff00', textShadow: '0 0 8px #ffff00, 0 0 16px #ffff00' }}>
+                ⚠️ This feature is undergoing maintenance updates
+              </div>
+            </div>
             <Link 
               href="/admin/cache-refresh"
               className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"

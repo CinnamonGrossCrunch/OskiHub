@@ -217,8 +217,40 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
         };
       };
 
+      // For VALUE=DATE all-day events, extract raw YYYYMMDD digits directly from the ICS text.
+      // This bypasses node-ical's Date object interpretation entirely, which can vary by server
+      // timezone (dev machine PST vs Vercel UTC) and cause the "one day forward/back" shift.
+      // This mirrors the same raw-text extraction already done for timed events via extractDateTime.
+      const extractDateOnly = (block: string, prop: 'DTSTART' | 'DTEND'): string | null => {
+        const match = block.match(new RegExp(`${prop};VALUE=DATE:(\\d{8})`, 'i'));
+        return match ? match[1] : null; // e.g., "20260216"
+      };
+
+      const parseRawDateToUTCMidnight = (digits: string): Date => {
+        // "20260216" → 2026-02-16T00:00:00Z (UTC midnight = unambiguous date anchor)
+        const year = parseInt(digits.slice(0, 4), 10);
+        const month = parseInt(digits.slice(4, 6), 10) - 1; // 0-based
+        const day = parseInt(digits.slice(6, 8), 10);
+        return new Date(Date.UTC(year, month, day));
+      };
+
       let adjustedStart = start;
       let adjustedEnd = end;
+
+      if (allDay) {
+        // Override with raw ICS digits to guarantee correct date regardless of server timezone
+        const eventBlock = getEventBlock(v.uid);
+        if (eventBlock) {
+          const rawDateStart = extractDateOnly(eventBlock, 'DTSTART');
+          if (rawDateStart) {
+            adjustedStart = parseRawDateToUTCMidnight(rawDateStart);
+          }
+          const rawDateEnd = extractDateOnly(eventBlock, 'DTEND');
+          if (rawDateEnd) {
+            adjustedEnd = parseRawDateToUTCMidnight(rawDateEnd);
+          }
+        }
+      }
 
       if (!allDay) {
         const eventBlock = getEventBlock(v.uid);
@@ -228,9 +260,23 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
 
           if (rawStart) {
             adjustedStart = buildIcsDateTime(rawStart);
+          } else {
+            // extractDateTime requires T+time component; if it returned null, check whether
+            // the event is actually a VALUE=DATE event that allDay detection missed.
+            // This is the defensive fallback that prevents the "one day shift" bug even when
+            // allDay=false is a false negative (e.g., server timezone != UTC, unusual node-ical version).
+            const rawDateStart = extractDateOnly(eventBlock, 'DTSTART');
+            if (rawDateStart) {
+              adjustedStart = parseRawDateToUTCMidnight(rawDateStart);
+            }
           }
           if (rawEnd) {
             adjustedEnd = buildIcsDateTime(rawEnd);
+          } else {
+            const rawDateEnd = extractDateOnly(eventBlock, 'DTEND');
+            if (rawDateEnd) {
+              adjustedEnd = parseRawDateToUTCMidnight(rawDateEnd);
+            }
           }
         }
       }

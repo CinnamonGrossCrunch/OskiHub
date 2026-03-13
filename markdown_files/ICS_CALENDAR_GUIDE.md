@@ -54,6 +54,25 @@ END:VCALENDAR
 | Misplaced events | Check event belongs to correct course (macro events in macro files only) |
 | Missing URLs | All events should have a URL field pointing to relevant page |
 
+### Holiday / All-Day Event Date Shifting (Root Cause — Permanently Fixed)
+
+**Symptom:** Holidays or all-day events appear one day early or one day late on the calendar.
+
+**Root cause (two cooperating bugs):**
+
+1. **`allDay` detection was timezone-sensitive.** The fallback check `start.getHours() === 0` uses LOCAL time on the server. On a dev machine in PST (UTC-8), floating midnight events have `getHours()=16`, not 0, so `allDay=false` was returned incorrectly. On Vercel (UTC), `getHours()=0` so it worked in production but not in development.
+
+2. **node-ical's `Date` object was trusted for `VALUE=DATE` events.** Different node-ical versions and different server timezones can interpret `DTSTART;VALUE=DATE:20260216` as UTC midnight OR as local midnight, making the date ambiguous.
+
+**The permanent fix (applied Feb 2026 in `lib/icsUtils.ts`):**  
+For all-day events, the code now reads the raw `YYYYMMDD` digits directly from the ICS text using `extractDateOnly()` — exactly as timed events bypass node-ical via `extractDateTime()`. The digits are parsed as `Date.UTC(year, month, day)` which is timezone-independent and always unambiguous. Two layers of protection:
+- `if (allDay)` block uses raw digits directly  
+- `!allDay` fallback also tries `extractDateOnly` when `extractDateTime` returns null (i.e., VALUE=DATE caught by wrong branch)
+
+**⚠️ Don't regress this by:**
+- Removing the `allDay` block or the `extractDateOnly` fallback in `icsUtils.ts`
+- Adding holiday/closure events to course ICS files as timed events (`DTSTART:20260216T000000`) instead of using `VALUE=DATE` — always use `DTSTART;VALUE=DATE:YYYYMMDD` for all-day events
+
 ---
 
 ## Step 2: Register in `lib/icsUtils.ts`

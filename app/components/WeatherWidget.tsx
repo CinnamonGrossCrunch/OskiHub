@@ -67,13 +67,13 @@ export default function WeatherWidget() {
   };
 
   const getWeatherIcon = (code: number): string => {
-    // Returns Material Icons icon names
+    // Material Symbols Outlined icon names
     if (code === 0) return 'wb_sunny'; // Clear
-    if (code <= 3) return 'wb_cloudy'; // Partly Cloudy
+    if (code <= 3) return 'partly_cloudy_day'; // Partly Cloudy
     if (code <= 48) return 'foggy'; // Foggy
     if (code <= 67) return 'rainy'; // Rainy
     if (code <= 77) return 'ac_unit'; // Snowy
-    if (code <= 82) return 'grain'; // Showers
+    if (code <= 82) return 'rainy_light'; // Showers
     if (code <= 86) return 'weather_snowy'; // Snow Showers
     return 'thunderstorm'; // Thunderstorms
   };
@@ -114,7 +114,7 @@ const handleClick = () => {
   return (
     <div 
       onClick={handleClick}
-      className="-mt-2 flex flex-col justify-center backdrop-blur-sm w-1/2 lg:w-1/2 lg:ml-auto px-2 h-17 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] cursor-pointer hover:bg-white/5 transition-colors"
+      className="-mt-2 flex flex-col justify-center lg:items-end backdrop-blur-sm w-1/2 lg:w-auto lg:self-end px-2 h-17 mb-0 lg:mb-1 backdrop-blur-lg shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)] saturate-[80%] cursor-pointer hover:bg-white/5 transition-colors"
       title="View detailed Berkeley weather"
     >
       {/* Small screens: All elements in one horizontal line */}
@@ -142,16 +142,14 @@ const handleClick = () => {
           </div>
 
           <div className="flex flex-row items-center gap-1">
-            <i className="material-icons text-gray-200" style={{ fontSize: '20px' }}>
-              {weather.icon}
-            </i>
+            <span className="material-symbols-outlined text-gray-200" style={{ fontSize: '18px' }}>{weather.icon}</span>
             <p className="text-xs font-medium text-gray-400 mt-0">{weather.condition}</p>
           </div>
         </div>
       </div>
       
       {/* Large screen: two column layout */}
-      <div className="hidden lg:flex justify-end gap-1">
+      <div className="hidden lg:flex justify-end items-center gap-2">
         {/* Column 1: Temperature Data */}
         <div className="flex flex-col pr-0">
           <div className="flex gap-1">
@@ -178,9 +176,7 @@ const handleClick = () => {
 
         {/* Column 2: Weather Icon & Condition */}
         <div className="flex flex-row items-center gap-1">
-          <i className="material-icons text-gray-200" style={{ fontSize: '20px' }}>
-            {weather.icon}
-          </i>
+          <span className="material-symbols-outlined text-gray-200" style={{ fontSize: '20px' }}>{weather.icon}</span>
           <p className="text-xs font-medium text-gray-400 mt-0">{weather.condition}</p>
         </div>
       </div>
