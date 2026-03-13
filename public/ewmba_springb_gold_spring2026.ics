@@ -4,23 +4,14 @@ PRODID:-//OSKI Hub//EWMBA Spring B Gold//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:EWMBA Spring B Classes (Gold)
-X-WR-CALDESC:Spring 2026 Schedule - Gold Cohort meets Tue/Thu 6:00-9:30 PM PT
+X-WR-CALDESC:Spring 2026 Schedule - Gold Cohort meets Tuesdays 6:00-9:30 PM PT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba-springb-sp26-gold-class1-tue
 DTSTART:20260317T180000
 DTEND:20260317T213000
 SUMMARY:Spring B - Class 1 (Gold)
-DESCRIPTION:Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class1-thu
-DTSTART:20260319T180000
-DTEND:20260319T213000
-SUMMARY:Spring B - Class 1 (Gold)
-DESCRIPTION:Spring B Term - Class 1\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 1\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -38,16 +29,7 @@ UID:ewmba-springb-sp26-gold-class3-tue
 DTSTART:20260331T180000
 DTEND:20260331T213000
 SUMMARY:Spring B - Class 3 (Gold)
-DESCRIPTION:Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class3-thu
-DTSTART:20260402T180000
-DTEND:20260402T213000
-SUMMARY:Spring B - Class 3 (Gold)
-DESCRIPTION:Spring B Term - Class 3\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 3\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -56,16 +38,7 @@ UID:ewmba-springb-sp26-gold-class4-tue
 DTSTART:20260407T180000
 DTEND:20260407T213000
 SUMMARY:Spring B - Class 4 (Gold)
-DESCRIPTION:Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class4-thu
-DTSTART:20260409T180000
-DTEND:20260409T213000
-SUMMARY:Spring B - Class 4 (Gold)
-DESCRIPTION:Spring B Term - Class 4\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 4\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -74,16 +47,7 @@ UID:ewmba-springb-sp26-gold-class5-tue
 DTSTART:20260414T180000
 DTEND:20260414T213000
 SUMMARY:Spring B - Class 5 (Gold)
-DESCRIPTION:Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class5-thu
-DTSTART:20260416T180000
-DTEND:20260416T213000
-SUMMARY:Spring B - Class 5 (Gold)
-DESCRIPTION:Spring B Term - Class 5\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 5\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -92,16 +56,7 @@ UID:ewmba-springb-sp26-gold-class6-tue
 DTSTART:20260421T180000
 DTEND:20260421T213000
 SUMMARY:Spring B - Class 6 (Gold)
-DESCRIPTION:Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class6-thu
-DTSTART:20260423T180000
-DTEND:20260423T213000
-SUMMARY:Spring B - Class 6 (Gold)
-DESCRIPTION:Spring B Term - Class 6\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 6\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -110,16 +65,7 @@ UID:ewmba-springb-sp26-gold-class7-tue
 DTSTART:20260428T180000
 DTEND:20260428T213000
 SUMMARY:Spring B - Class 7 (Gold)
-DESCRIPTION:Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class7-thu
-DTSTART:20260430T180000
-DTEND:20260430T213000
-SUMMARY:Spring B - Class 7 (Gold)
-DESCRIPTION:Spring B Term - Class 7\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 7\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -128,16 +74,7 @@ UID:ewmba-springb-sp26-gold-class8-tue
 DTSTART:20260505T180000
 DTEND:20260505T213000
 SUMMARY:Spring B - Class 8 (Gold)
-DESCRIPTION:Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class8-thu
-DTSTART:20260507T180000
-DTEND:20260507T213000
-SUMMARY:Spring B - Class 8 (Gold)
-DESCRIPTION:Spring B Term - Class 8\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 8\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -146,16 +83,7 @@ UID:ewmba-springb-sp26-gold-class9-tue
 DTSTART:20260512T180000
 DTEND:20260512T213000
 SUMMARY:Spring B - Class 9 (Gold)
-DESCRIPTION:Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-class9-thu
-DTSTART:20260514T180000
-DTEND:20260514T213000
-SUMMARY:Spring B - Class 9 (Gold)
-DESCRIPTION:Spring B Term - Class 9\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Class 9\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\nDinner Break: 7:30-8:15 PM\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 BEGIN:VEVENT
@@ -164,16 +92,7 @@ UID:ewmba-springb-sp26-gold-finals-tue
 DTSTART:20260519T180000
 DTEND:20260519T213000
 SUMMARY:Spring B - Finals (Gold)
-DESCRIPTION:Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
-LOCATION:Cheit Hall
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba-springb-sp26-gold-finals-thu
-DTSTART:20260521T180000
-DTEND:20260521T213000
-SUMMARY:Spring B - Finals (Gold)
-DESCRIPTION:Spring B Term - Final Exams\nGold Cohort: Tue/Thu\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
+DESCRIPTION:Spring B Term - Final Exams\nGold Cohort: Tuesdays\nClass meets 6:00-9:30 PM PT\n\nClass Schedule: https://docs.google.com/spreadsheets/d/1OZpoHmc8V0SFi4ZD7lPb856JUhf4GgXnBfELirDeKCk/edit?gid=1620286150#gid=1620286150
 LOCATION:Cheit Hall
 END:VEVENT
 END:VCALENDAR
