@@ -378,6 +378,7 @@ export default function MonthGrid({
                 '201A': 'Microeconomics',
                 '201B': 'Macroeconomics',
                 '202': 'Financial Accounting',
+                '203': 'Introduction to Finance',
                 '204': 'Organizational Behavior',
                 '205': 'Leading People',
                 '206': 'Data & Decisions',
