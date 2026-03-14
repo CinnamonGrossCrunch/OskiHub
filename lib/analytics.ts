@@ -32,6 +32,7 @@ export type AnalyticsEvents = {
   event_modal_navigated: { direction: 'next' | 'previous' };
   event_modal_view_newsletter: { source: string; title: string };
   event_modal_open_class_page: { title: string; url: string };
+  event_modal_open_olr: { title: string };
   multi_event_selected: { source: string; title: string };
 
   // ── Newsletter ──
