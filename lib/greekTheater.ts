@@ -179,6 +179,116 @@ export function parseGreekTheaterEvents(): GreekTheaterEvent[] {
       url: "https://thegreekberkeley.com/events/lorde-251019",
       showTime: "6:00 pm",
       doorsTime: "4:30 pm"
+    },
+
+    // April 2026
+    {
+      date: new Date(2026, 3, 16),
+      title: "Royel Otis & STRFKR",
+      url: "https://thegreekberkeley.com/events/royel-otis-260416",
+      showTime: "7:00 pm"
+    },
+
+    // May 2026
+    {
+      date: new Date(2026, 4, 3),
+      title: "Lewis Capaldi",
+      url: "https://thegreekberkeley.com/events/lewis-capaldi-260503",
+      showTime: "7:00 pm"
+    },
+    {
+      date: new Date(2026, 4, 29),
+      title: "Alabama Shakes",
+      url: "https://thegreekberkeley.com/events/alabama-shakes-260529",
+      showTime: "8:00 pm"
+    },
+    {
+      date: new Date(2026, 4, 30),
+      title: "Alabama Shakes",
+      url: "https://thegreekberkeley.com/events/alabama-shakes-260530",
+      showTime: "8:00 pm"
+    },
+
+    // June 2026
+    {
+      date: new Date(2026, 5, 11),
+      title: "James Blake",
+      url: "https://thegreekberkeley.com/events/james-blake-260611",
+      showTime: "7:00 pm"
+    },
+    {
+      date: new Date(2026, 5, 26),
+      title: "Khalid",
+      url: "https://thegreekberkeley.com/events/khalid-260626",
+      showTime: "8:00 pm"
+    },
+
+    // July 2026
+    {
+      date: new Date(2026, 6, 17),
+      title: "Bob Moses & Cannons",
+      url: "https://thegreekberkeley.com/events/bob-moses-cannons-260717",
+      showTime: "7:30 pm"
+    },
+    {
+      date: new Date(2026, 6, 18),
+      title: "Rainbow Kitten Surprise",
+      url: "https://thegreekberkeley.com/events/rainbow-kitten-surprise-260718",
+      showTime: "8:00 pm"
+    },
+    {
+      date: new Date(2026, 6, 19),
+      title: "Young the Giant",
+      url: "https://thegreekberkeley.com/events/young-the-giant-260719",
+      showTime: "6:00 pm"
+    },
+    {
+      date: new Date(2026, 6, 23),
+      title: "The Fray",
+      url: "https://thegreekberkeley.com/events/the-fray-260723",
+      showTime: "6:00 pm"
+    },
+
+    // August 2026
+    {
+      date: new Date(2026, 7, 12),
+      title: "Tedeschi Trucks Band",
+      url: "https://thegreekberkeley.com/events/tedeschi-trucks-band-260812",
+      showTime: "6:00 pm"
+    },
+    {
+      date: new Date(2026, 7, 15),
+      title: "Thee Sacred Souls",
+      url: "https://thegreekberkeley.com/events/thee-sacred-souls-260815",
+      showTime: "7:00 pm"
+    },
+    {
+      date: new Date(2026, 7, 29),
+      title: "Tori Amos",
+      url: "https://thegreekberkeley.com/events/tori-amos-260829",
+      showTime: "8:00 pm"
+    },
+
+    // September 2026
+    {
+      date: new Date(2026, 8, 17),
+      title: "Bleachers",
+      url: "https://thegreekberkeley.com/events/bleachers-260917",
+      showTime: "6:30 pm"
+    },
+    {
+      date: new Date(2026, 8, 30),
+      title: "Jack Johnson",
+      url: "https://thegreekberkeley.com/events/jack-johnson-260930",
+      showTime: "6:30 pm"
+    },
+
+    // October 2026
+    {
+      date: new Date(2026, 9, 1),
+      title: "Jack Johnson",
+      url: "https://thegreekberkeley.com/events/jack-johnson-251001",
+      showTime: "6:30 pm"
     }
   ];
 
