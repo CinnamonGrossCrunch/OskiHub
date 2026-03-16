@@ -51,6 +51,13 @@ export type CohortEvents = {
   registration: CalendarEvent[]; // EWMBA Registration deadlines (bidding, add/drop, etc.)
 };
 
+// In-memory memoization for parsed ICS data (survives within a single Lambda invocation)
+// Avoids re-parsing ~18 ICS files when getCohortEvents() is called multiple times
+// in the same request or cron job (e.g., once for calendar cache, once for My Week analysis).
+// TTL: 15 minutes — safe because ICS files only change on deploy.
+const ICS_MEMO_TTL = 15 * 60 * 1000; // 15 min
+let icsMemo: { data: CohortEvents; params: string; timestamp: number } | null = null;
+
 // File mappings for each cohort
 const COHORT_FILES = {
   blue: [
@@ -752,6 +759,13 @@ export async function getCohortEvents(
   daysAhead = 150,
   limit = 150
 ): Promise<CohortEvents> {
+  // Check in-memory memo (avoids re-parsing 18+ ICS files within same Lambda invocation)
+  const memoKey = `${daysAhead}:${limit}`;
+  if (icsMemo && icsMemo.params === memoKey && Date.now() - icsMemo.timestamp < ICS_MEMO_TTL) {
+    safeLog(`✅ [ICS] Memo hit for getCohortEvents(${daysAhead}, ${limit})`);
+    return icsMemo.data;
+  }
+
   safeLog('Fetching events for both cohorts, original calendar, and UC Launch...');
 
   try {
@@ -851,7 +865,7 @@ export async function getCohortEvents(
 
     safeLog(`Filtered events - Blue: ${filteredBlue.length}, Gold: ${filteredGold.length}, Original: ${filteredOriginal.length}, Launch: ${filteredLaunch.length}, Cal Bears: ${filteredCalBears.length}, Campus Groups: ${filteredCampusGroups.length}, Academic Calendar: ${filteredAcademicCalendar.length}, CMG: ${filteredCMG.length}, Registration: ${filteredRegistration.length}`);
 
-    return {
+    const result: CohortEvents = {
       blue: filteredBlue,
       gold: filteredGold,
       original: filteredOriginal,
@@ -862,6 +876,11 @@ export async function getCohortEvents(
       cmg: filteredCMG,
       registration: filteredRegistration
     };
+
+    // Memoize for subsequent calls within same Lambda invocation
+    icsMemo = { data: result, params: memoKey, timestamp: Date.now() };
+
+    return result;
   } catch (error) {
     safeError('Error fetching cohort events:', error);
     throw error;

@@ -67,45 +67,57 @@ export default function ClientDashboard({ initialData }: ClientDashboardProps) {
     }
   };
 
-  // Fetch data if not provided (client-side fetching)
+  // Fetch data if not provided (client-side fetching with retry)
   useEffect(() => {
     if (!initialData) {
-      console.log('🔄 Fetching unified dashboard data...');
+      const MAX_RETRIES = 2;
+      const RETRY_DELAY_MS = 3000;
+      let retryCount = 0;
       const controller = new AbortController();
 
-      fetch('/api/unified-dashboard', {
-        signal: controller.signal,
-        headers: {
-          'Cache-Control': 'no-cache',
-        }
-      })
-        .then(res => {
-          if (!res.ok) {
-            throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      const fetchDashboard = () => {
+        const attempt = retryCount + 1;
+        console.log(`🔄 Fetching unified dashboard data (attempt ${attempt}/${MAX_RETRIES + 1})...`);
+
+        fetch('/api/unified-dashboard', {
+          signal: controller.signal,
+          headers: {
+            'Cache-Control': 'no-cache',
           }
-          return res.json();
         })
-        .then(data => {
-          console.log('✅ Dashboard data loaded:', {
-            hasNewsletter: !!data.newsletterData,
-            hasMyWeek: !!data.myWeekData,
-            hasCalendar: !!data.cohortEvents,
-            newsletterSections: data.newsletterData?.sections?.length || 0,
-            blueEvents: data.cohortEvents?.blue?.length || 0,
-            goldEvents: data.cohortEvents?.gold?.length || 0,
+          .then(res => {
+            if (!res.ok) {
+              throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+            }
+            return res.json();
+          })
+          .then(data => {
+            console.log('✅ Dashboard data loaded:', {
+              hasNewsletter: !!data.newsletterData,
+              hasMyWeek: !!data.myWeekData,
+              hasCalendar: !!data.cohortEvents,
+              newsletterSections: data.newsletterData?.sections?.length || 0,
+              blueEvents: data.cohortEvents?.blue?.length || 0,
+              goldEvents: data.cohortEvents?.gold?.length || 0,
+            });
+            setDashboardData(data);
+            setLoading(false);
+          })
+          .catch(error => {
+            if (error.name === 'AbortError') return;
+            console.error(`❌ Error fetching dashboard data (attempt ${attempt}):`, error);
+            if (retryCount < MAX_RETRIES) {
+              retryCount++;
+              console.log(`🔁 Retrying in ${RETRY_DELAY_MS / 1000}s...`);
+              setTimeout(fetchDashboard, RETRY_DELAY_MS);
+            } else {
+              console.error('❌ All fetch retries exhausted');
+              setLoading(false);
+            }
           });
-          setDashboardData(data);
-          setLoading(false);
-        })
-        .catch(error => {
-          // Ignore AbortError - this is expected when component unmounts during fetch
-          if (error.name === 'AbortError') {
-            return;
-          }
-          console.error('❌ Error fetching dashboard data:', error);
-          setLoading(false);
-          // Don't set dashboardData to null - leave it as is so components can handle undefined
-        });
+      };
+
+      fetchDashboard();
 
       return () => {
         controller.abort();

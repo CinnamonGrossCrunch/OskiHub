@@ -48,7 +48,16 @@
       ]
     },
     {
-      "source": "/api/:path*",
+      "source": "/api/unified-dashboard",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=60, stale-while-revalidate=300"
+        }
+      ]
+    },
+    {
+      "source": "/api/(?!unified-dashboard):path*",
       "headers": [
         {
           "key": "Cache-Control",

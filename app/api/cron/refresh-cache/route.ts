@@ -6,9 +6,10 @@ export const maxDuration = 300; // 300 seconds (5 minutes) - Allow time for cale
 import { NextResponse } from 'next/server';
 import { analyzeCohortMyWeekWithAI } from '@/lib/my-week-analyzer';
 import { getCohortEvents } from '@/lib/icsUtils';
-import { setCachedData, CACHE_KEYS } from '@/lib/cache';
+import { getCachedData, setCachedData, CACHE_KEYS } from '@/lib/cache';
 import { sendCronNotification } from '@/lib/notifications';
 import { trackServerEvent } from '@/lib/analytics-server';
+import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
 
 export async function GET(request: Request) {
   // Verify this is a cron job request from Vercel
@@ -25,16 +26,49 @@ export async function GET(request: Request) {
     // Fetch calendar events
     const cohortEvents = await getCohortEvents();
     
-    // Pre-generate AI summaries for both cohorts (no newsletter data needed for midnight refresh)
+    // Try to reuse existing newsletter data from KV for richer My Week summaries
+    let newsletterSections: { sections: { sectionTitle: string; items: { title: string; html: string }[] }[] } = { sections: [] };
+    try {
+      const cachedNewsletter = await getCachedData<UnifiedDashboardData['newsletterData']>(CACHE_KEYS.NEWSLETTER_DATA);
+      if (cachedNewsletter?.data?.sections) {
+        newsletterSections = { sections: cachedNewsletter.data.sections };
+        console.log(`📰 Cron: Reusing ${cachedNewsletter.data.sections.length} cached newsletter sections for My Week`);
+      }
+    } catch (err) {
+      console.warn('⚠️ Cron: Could not read cached newsletter, using empty:', err);
+    }
+
+    // Pre-generate AI summaries for both cohorts
     const myWeekData = await analyzeCohortMyWeekWithAI({
       blue: cohortEvents.blue || [],
       gold: cohortEvents.gold || []
-    }, { sections: [] }); // Empty newsletter data
+    }, newsletterSections);
     
-    // 🚀 WRITE TO CACHE (KV + static fallback)
+    // 🚀 WRITE TO CACHE — all keys including dashboard-data composite
     console.log('💾 Cron: Writing to cache...');
     await setCachedData(CACHE_KEYS.COHORT_EVENTS, cohortEvents);
     await setCachedData(CACHE_KEYS.MY_WEEK_DATA, myWeekData);
+
+    // Also write composite dashboard-data so unified-dashboard gets a cache hit
+    // Reuse existing newsletter or provide a placeholder
+    const existingDashboard = await getCachedData<UnifiedDashboardData>(CACHE_KEYS.DASHBOARD_DATA);
+    const compositeData: UnifiedDashboardData = {
+      newsletterData: existingDashboard?.data?.newsletterData || {
+        sourceUrl: '',
+        title: 'Newsletter data from morning refresh',
+        sections: newsletterSections.sections.length > 0 ? newsletterSections.sections : []
+      },
+      myWeekData,
+      cohortEvents,
+      processingInfo: {
+        totalTime: Date.now() - startTime,
+        newsletterTime: 0,
+        calendarTime: Date.now() - startTime,
+        myWeekTime: 0,
+        timestamp: new Date().toISOString()
+      }
+    };
+    await setCachedData(CACHE_KEYS.DASHBOARD_DATA, compositeData);
     
     const duration = Date.now() - startTime;
     console.log('✅ Cron: Midnight cache refresh completed (data written to KV)');
@@ -59,7 +93,8 @@ export async function GET(request: Request) {
       durationMs: duration,
       cached: {
         cohortEvents: true,
-        myWeekData: true
+        myWeekData: true,
+        dashboardData: true
       }
     });
   } catch (error) {

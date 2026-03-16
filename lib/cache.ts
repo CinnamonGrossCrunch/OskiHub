@@ -41,8 +41,10 @@ export const CACHE_KEYS = {
   COHORT_EVENTS: 'cohort-events-v2', // v2: Fixed UTC vs floating time parsing
 } as const;
 
-// Cache TTL (time-to-live) - 8 hours (28800 seconds)
-const CACHE_TTL = 28800;
+// Cache TTL (time-to-live) - 25 hours (90000 seconds)
+// Must exceed the interval between cron runs (~24h) so data survives until the next refresh.
+// Previously 8h, which caused mid-day expiration and cold rebuilds for afternoon users.
+const CACHE_TTL = 90000;
 
 /**
  * Get cached data from KV (primary) or static JSON (fallback)
