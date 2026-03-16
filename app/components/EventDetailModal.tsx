@@ -46,6 +46,9 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
 
   // Check if event is a registration/enrollment event
   const isRegistrationEvent = !!(event?.source?.includes('ewmba_registration'));
+
+  // Check if event is an Ethics course (not yet published on bCourses)
+  const isEthicsEvent = !!(event?.source?.toLowerCase().includes('ethics'));
   
   // Function to clean Gmail newsletter HTML - basic cleaning only
   // Newsletter-specific cleaning (like EW Wire footer removal) happens in Google Apps Script
@@ -699,8 +702,24 @@ export default function EventDetailModal({ event, originalEvent, onClose, onNext
               </button>
             )}
             
+            {/* Ethics Event: Grayed-out Class Page Button */}
+            {!isNewsletterEvent && isEthicsEvent && (
+              <div className="flex-1 flex flex-col items-center gap-1">
+                <button
+                  disabled
+                  className="w-full bg-gray-500/20 backdrop-blur-xl text-gray-400 text-sm font-medium py-2 px-4 rounded-lg text-center flex items-center justify-center gap-2 cursor-not-allowed opacity-60 border border-gray-500/30"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  Open Class Page
+                </button>
+                <span className="text-red-400 text-xs font-medium">Waiting for Course to be Published</span>
+              </div>
+            )}
+
             {/* Regular Event: Open Class Page / Registration Timeline Button */}
-            {!isNewsletterEvent && displayEvent.url && (
+            {!isNewsletterEvent && !isEthicsEvent && displayEvent.url && (
               <a
                 href={displayEvent.url}
                 target="_blank"

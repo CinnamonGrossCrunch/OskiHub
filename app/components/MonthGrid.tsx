@@ -315,8 +315,9 @@ export default function MonthGrid({
           processedNewsletterEvents = [combinedEvent];
         }
         
-        // Combine regular events with launch events, Campus Groups events, Academic Calendar, and Newsletter events
+        // Combine regular events with launch events, Campus Groups events, Academic Calendar events
         // NOTE: Cal Bears events are EXCLUDED - they only appear as logo icon in header (like Greek Theater)
+        // NOTE: Newsletter events are EXCLUDED - they only appear as pulsing "Event" icon in header
         // Sort all events chronologically by start time
         const allDayEvents: (CalendarEvent | NewsletterCalendarEvent)[] = [
           ...dayEvents, 
@@ -325,7 +326,6 @@ export default function MonthGrid({
           ...dayAcademicCalendarEvents,
           ...dayCMGEvents,
           ...dayRegistrationEvents,
-          ...processedNewsletterEvents
         ].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
         const isToday = isSameDay(day, new Date());
         const hasGreekEvent = hasGreekTheaterEventOnDate(day);
@@ -420,9 +420,9 @@ export default function MonthGrid({
             return `${glassBase} bg-amber-600/50 border-amber-500/50 text-white ${hoverGold}`;
           }
 
-          // Check for Registration Calendar events - Teal styling
+          // Check for Registration Calendar events - Dark Red styling
           if (event.source && event.source.includes('ewmba_registration')) {
-            return `${glassBase} bg-teal-600/50 border-teal-500/50 text-white ${hoverGold}`;
+            return `${glassBase} bg-red-900/60 border-red-700/50 text-white ${hoverGold}`;
           }
 
           // Check for CMG (Career Management Group) events - Light Pink styling
@@ -631,7 +631,7 @@ export default function MonthGrid({
                 )}
                 {hasRegistrationEvent && (
                 <div 
-                  className="flex-shrink-0 cursor-pointer opacity-80 hover:opacity-100 transition-all duration-200 bg-teal-600 rounded-md flex items-center justify-center relative border border-transparent hover:border-white w-4 h-4 md:w-auto md:h-auto md:px-1.5 md:py-0"
+                  className="flex-shrink-0 cursor-pointer opacity-80 hover:opacity-100 transition-all duration-200 bg-red-900 rounded-md flex items-center justify-center relative border border-transparent hover:border-white w-4 h-4 md:w-auto md:h-auto md:px-1.5 md:py-0"
                   title={`Registration: ${dayRegistrationEvents.map(e => e.title).join(', ')}`}
                   onClick={(e) => {
                   e.stopPropagation();
@@ -969,7 +969,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={`reg-start-${ev.uid || ev.title}-${idx}`}
-                        className={`h-full bg-teal-500/80 cursor-pointer hover:bg-teal-600 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${isAlsoLastDay ? 'border-r' : ''}`}
+                        className={`h-full bg-red-900/80 cursor-pointer hover:bg-red-800 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${isAlsoLastDay ? 'border-r' : ''}`}
                         title={`${ev.title} (Day 1 of ${totalDays})`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -1003,7 +1003,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={`reg-span-${ev.uid || ev.title}-${idx}`}
-                        className={`h-full bg-teal-500/70 cursor-pointer hover:bg-teal-500/90 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${
+                        className={`h-full bg-red-900/70 cursor-pointer hover:bg-red-900/90 transition-colors flex items-center justify-between px-1 border-l border-white/50 overflow-hidden ${
                           isLastDay ? 'border-r' : ''
                         }`}
                         title={`${ev.title} (Day ${currentDayNumber} of ${totalDays})`}
