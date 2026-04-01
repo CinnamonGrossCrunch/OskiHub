@@ -57,7 +57,34 @@
       ]
     },
     {
-      "source": "/api/(?!unified-dashboard):path*",
+      "source": "/api/cron/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=0, stale-while-revalidate=0"
+        }
+      ]
+    },
+    {
+      "source": "/api/newsletter",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=0, stale-while-revalidate=0"
+        }
+      ]
+    },
+    {
+      "source": "/api/calendar/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=0, stale-while-revalidate=0"
+        }
+      ]
+    },
+    {
+      "source": "/api/resources",
       "headers": [
         {
           "key": "Cache-Control",
