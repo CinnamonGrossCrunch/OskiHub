@@ -87,15 +87,6 @@ LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba201b-gold-assign-topic
-DTSTART:20260130T170000
-DTEND:20260130T170000
-SUMMARY:DEADLINE: Group and Topic Selection Due
-DESCRIPTION:DEADLINE: Friday Jan 30 @ 5pm\n\nForm groups of 5 students and rank debate topic preferences.\nYes/No position will be assigned by instructor.\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform\n\nNote: Groups will be assigned if you don't form one.
-URL;VALUE=URI:https://docs.google.com/forms/d/e/1FAIpQLSe4-CSW_MpEbfGpivkGBpxOR5TLYZNj2HfjsvpGF_1kKhPYRw/viewform
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba201b-sp26-gold-week5
 DTSTART:20260205T180000
 DTEND:20260205T213000
@@ -176,15 +167,6 @@ LOCATION:Zoom
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba201b-gold-assign-slides
-DTSTART:20260305T170000
-DTEND:20260305T170000
-SUMMARY:DEADLINE: Presentation/Debate Slides Due
-DESCRIPTION:DEADLINE: Thursday Mar 5 @ 5pm\n\nSubmit slides using form (if using slides for your debate presentation).\n\nSubmit using form: https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform
-URL;VALUE=URI:https://docs.google.com/forms/d/e/1FAIpQLSeAWK8NvL2LaVY6GezEuczrc2OOJNHpChbGZ05Pqo9pbd7lCg/viewform
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba201b-sp26-gold-week9
 DTSTART:20260305T180000
 DTEND:20260305T213000
@@ -192,15 +174,6 @@ SUMMARY:Class 9: Climate Change & Group Presentations/Debate
 DESCRIPTION:Topic: Climate Change and the Macroeconomy\nActivity: Group Presentations/Debate\n\nNote: 2 members per group present\nEach debate: ~20 minutes (5 min per side + 10 min discussion)\nClass vote on most convincing arguments (does not affect grade)\n\nDebate Topics:\n• Will the "One Big Beautiful Bill" be inflationary or disinflationary?\n• Should Argentina fully float the peso?\n• Should countries impose a tax on AI/robots?\n• Should the US cut tariffs applied to imports from China?\n• Should the Fed lower interest rates more aggressively?\n• Should the ECB incorporate climate change into its monetary policy decisions?\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549648
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648
 LOCATION:Berkeley Haas
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba201b-gold-assign-report
-DTSTART:20260307T180000
-DTEND:20260307T180000
-SUMMARY:DEADLINE: Group Report Due
-DESCRIPTION:DEADLINE: Saturday Mar 7 @ 6pm\n\nSubmit Group Report via bCourses.\n\nSubmission: https://bcourses.berkeley.edu/courses/1549648/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549648/assignments
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z

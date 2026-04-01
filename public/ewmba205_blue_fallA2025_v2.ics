@@ -1,4 +1,4 @@
-BEGIN:VCALENDAR
+﻿BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//VibeShift//EWMBA205//EN
 CALSCALE:GREGORIAN
@@ -119,53 +119,6 @@ LOCATION:Chou Hall Room N470
 DESCRIPTION:Course: EWMBA 205 – Leading People\nInstructor: Rebecca Portnoy
   (mailto:rportnoy@berkeley.edu)\nGSI: Aish Venketeswaran (mailto:aish_venk
  @berkeley.edu)\nReadings & materials on bCourses.\nCohort: Blue
-END:VEVENT
-BEGIN:VEVENT
-UID:1e3dd246-d99d-4329-b0b0-88fef29f1bb8@vibeshift.me
-DTSTAMP:20250827T065044Z
-SUMMARY:Teams@Haas Collaborative Plan – DUE
-DTSTART;TZID=America/Los_Angeles:20250808T235900
-DTEND;TZID=America/Los_Angeles:20250809T000500
-LOCATION:bCourses
-DESCRIPTION:Submit on the Teams@Haas bCourses site.
-END:VEVENT
-BEGIN:VEVENT
-UID:35fd6724-95cd-485d-a1b8-09e61c834a52@vibeshift.me
-DTSTAMP:20250827T065044Z
-SUMMARY:Consulting Project: Proposal Form – DUE
-DTSTART;TZID=America/Los_Angeles:20250822T220000
-DTEND;TZID=America/Los_Angeles:20250822T220500
-LOCATION:bCourses
-DESCRIPTION:Submit proposal form on bCourses.
-END:VEVENT
-BEGIN:VEVENT
-UID:a96dd868-1b35-4971-9a76-c31f37af0ed9@vibeshift.me
-DTSTAMP:20250827T065044Z
-SUMMARY:Consulting Project: Part 1 – Interview Report – DUE
-DTSTART;TZID=America/Los_Angeles:20250904T220000
-DTEND;TZID=America/Los_Angeles:20250904T220500
-LOCATION:bCourses
-DESCRIPTION:Submit Part 1 (Interview Report) on bCourses.
-END:VEVENT
-BEGIN:VEVENT
-UID:208e36bd-6fb2-4bc2-a9fc-dbd231a391f3@vibeshift.me
-DTSTAMP:20250827T065044Z
-SUMMARY:Midterm Quiz Window (online)
-DTSTART;TZID=America/Los_Angeles:20250905T000100
-DTEND;TZID=America/Los_Angeles:20250908T235900
-LOCATION:Online
-DESCRIPTION:Open-book online midterm. Window opens 12:01am Fri 9/5 and clos
- es 11:59pm Mon 9/8. You will have 1 hour once you start.
-END:VEVENT
-BEGIN:VEVENT
-UID:c1394093-18aa-4cce-ad0b-f49e67d5625b@vibeshift.me
-DTSTAMP:20250827T065044Z
-SUMMARY:Consulting Project: Part 2 – Presentation – DUE
-DTSTART;TZID=America/Los_Angeles:20251007T220000
-DTEND;TZID=America/Los_Angeles:20251007T220500
-LOCATION:bCourses
-DESCRIPTION:Submit pre-recorded presentation (10–14 min) with slides on bCo
- urses.
 END:VEVENT
 BEGIN:VEVENT
 UID:d2a757a2-6641-4193-a593-e5d655a61b9b@vibeshift.me

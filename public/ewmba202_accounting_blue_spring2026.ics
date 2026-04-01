@@ -57,24 +57,6 @@ LOCATION:Chou Hall N100
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-hw1-due-blue
-DTSTART:20260120T180000
-DTEND:20260120T180000
-SUMMARY:DEADLINE: Homework 1 Due
-DESCRIPTION:Homework 1 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-quiz1-window-blue
-DTSTART:20260123T000000
-DTEND:20260125T235900
-SUMMARY:Quiz 1 Window (Take anytime Jan 23-25)
-DESCRIPTION:Online Quiz 1 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/quizzes
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba202-sp26-week4-blue
 DTSTART:20260126T180000
 DTEND:20260126T213000
@@ -85,15 +67,6 @@ LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-hw2-due-blue
-DTSTART:20260127T183000
-DTEND:20260127T183000
-SUMMARY:DEADLINE: Homework 2 Due
-DESCRIPTION:Homework 2 must be submitted on bCourses before 6:30 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba202-sp26-week5-blue
 DTSTART:20260202T180000
 DTEND:20260202T213000
@@ -101,24 +74,6 @@ SUMMARY:Week 5: ESG Reporting\, Accounts Receivables & Inventories (Blue Cohort)
 DESCRIPTION:Topic: ESG Reporting\, Accounts Receivables & Inventories\n\nObjectives:\n• Describe ESG reporting\n• Describe the process for accounts receivables\n• Describe the financial accounting of inventories\n\nPre-Class Materials:\n• Textbook: 5.17-5.21 and 6.1-6.11\n• Article 6: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2938264461\n• Article 7: https://search.library.berkeley.edu/discovery/fulldisplay?context=PC&vid=01UCS_BER:UCB&docid=cdi_proquest_wirefeeds_2906681028\n• Climate Reporting Case\n\nAssignments:\n• J Prep Case report DUE (Tuesday 2/3)\n• Take Online Quiz 2 (Feb 6-8)\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-5
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-5
 LOCATION:Chou Hall N370
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-jprep-due-blue
-DTSTART:20260206T180000
-DTEND:20260206T180000
-SUMMARY:DEADLINE: J Prep Case Report Due
-DESCRIPTION:J Prep Case report must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-quiz2-window-blue
-DTSTART:20260206T000000
-DTEND:20260208T235900
-SUMMARY:Quiz 2 Window (Take anytime Feb 6-8)
-DESCRIPTION:Online Quiz 2 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/quizzes
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
@@ -142,32 +97,6 @@ LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-hw3-due-blue
-DTSTART:20260217T180000
-DTEND:20260217T180000
-SUMMARY:DEADLINE: Homework 3 Due
-DESCRIPTION:Homework 3 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-quiz3-window-blue
-DTSTART:20260220T000000
-DTEND:20260222T235900
-SUMMARY:Quiz 3 Window (Take anytime Feb 20-22)
-DESCRIPTION:Online Quiz 3 (15-20 minutes)\n• Open notes\n• Covers all material taught prior to quiz\n• 10 points\n\nTake quiz at: https://bcourses.berkeley.edu/courses/1549713/quizzes
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/quizzes
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-topic-selection-due-blue
-DTSTART:20260221T235900
-DTEND:20260221T235900
-SUMMARY:DEADLINE: Presentation Topic Selection Due
-DESCRIPTION:Email your chosen group presentation topic by Feb 21.\n\nTopics may be drawn from current business press\, professional experience\, or accounting issues such as revenue recognition\, valuation\, frauds\, ESG reporting\, industry-specific rules\, or financial statement analysis.
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba202-sp26-week8-blue
 DTSTART:20260223T180000
 DTEND:20260223T213000
@@ -185,23 +114,6 @@ SUMMARY:Week 9: Review & Group Presentations (Blue Cohort)
 DESCRIPTION:Topic: Course Review and Catch-up\n\nObjectives:\n• Comprehensive understanding of major concepts of financial accounting\n\nPre-Class Materials: None\n\nAssignments:\n• Homework 4 DUE (Tuesday 3/3)\n• Group Presentations (10 minutes each)\n\nNote: Teams will be paired to form seven larger groups. Slides must be emailed by 4:00 pm on presentation day.\n\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549713/external_tools/79374\nCourse Page: https://bcourses.berkeley.edu/courses/1549713/pages/week-9
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/pages/week-9
 LOCATION:Chou Hall N370
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-hw4-due-blue
-DTSTART:20260303T180000
-DTEND:20260303T180000
-SUMMARY:DEADLINE: Homework 4 Due
-DESCRIPTION:Homework 4 must be submitted on bCourses before 6:00 pm.\n\nSubmit at: https://bcourses.berkeley.edu/courses/1549713/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549713/assignments
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba202-sp26-presentation-slides-due-blue
-DTSTART:20260302T160000
-DTEND:20260302T160000
-SUMMARY:DEADLINE: Group Presentation Slides Due
-DESCRIPTION:One member must email the slide deck by 4:00 pm on the presentation day.\n\nPresentation Format:\n• 10 minutes per group\n• Teams paired to form seven larger groups\n• Evaluation is at the group level
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z

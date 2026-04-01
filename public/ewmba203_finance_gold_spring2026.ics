@@ -29,16 +29,6 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba203-deltatech-due-gold
-DTSTART;TZID=America/Los_Angeles:20260327T235900
-DTEND;TZID=America/Los_Angeles:20260327T235900
-SUMMARY:Finance Assignment DUE: DeltaTech Case Study
-DESCRIPTION:DeltaTech Case Study is due by 11:59pm.\nWeight: Cases (15% of grade) | 5 points possible\n\nThis case study relates to Week 2: Free Cash Flow and Capital Budgeting.\n\nStudy.Net Case Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAssignment Link: https://bcourses.berkeley.edu/courses/1549853/assignments/9059516
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059516
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba203-w3-gold
 DTSTART;TZID=America/Los_Angeles:20260402T180000
 DTEND;TZID=America/Los_Angeles:20260402T213000
@@ -46,26 +36,6 @@ SUMMARY:Finance - Week 3
 DESCRIPTION:Topic: Investment Decision Rules\n\nObjectives:\n1. Apply investment decision rules including Net Present Value (NPV)\, Internal Rate of Return (IRR)\, and Payback Period to evaluate capital projects.\n2. Compare decision rules and explain situations in which different methods may produce conflicting recommendations.\n3. Determine which projects a firm should accept or reject based on value creation principles.\n\nPre-Class Reading: Berk and DeMarzo (6th Ed.)\, Chapter 7\n\nAssignments Due This Week: IntelliDrive Case Study (due Sun Apr 5 by 11:59pm)\nIntelliDrive Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059517\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-3\nAssignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-3
 LOCATION:Chou Hall N370
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-intellidrive-due-gold
-DTSTART;TZID=America/Los_Angeles:20260405T235900
-DTEND;TZID=America/Los_Angeles:20260405T235900
-SUMMARY:Finance Assignment DUE: IntelliDrive Case Study
-DESCRIPTION:IntelliDrive Case Study is due by 11:59pm.\nWeight: Cases (15% of grade) | 5 points possible\n\nThis case study relates to Week 3: Investment Decision Rules.\n\nStudy.Net Case Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAssignment Link: https://bcourses.berkeley.edu/courses/1549853/assignments/9059517
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059517
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-pulselogic-due-gold
-DTSTART;TZID=America/Los_Angeles:20260412T235900
-DTEND;TZID=America/Los_Angeles:20260412T235900
-SUMMARY:Finance Assignment DUE: PulseLogic Case Study
-DESCRIPTION:PulseLogic Case Study is due by 11:59pm.\nWeight: Cases (15% of grade) | 5 points possible\n\nThis case study relates to Week 4: Bonds and Interest Rates.\n\nStudy.Net Case Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAssignment Link: https://bcourses.berkeley.edu/courses/1549853/assignments/9059518
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059518
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
@@ -92,16 +62,6 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba203-interco-due-gold
-DTSTART;TZID=America/Los_Angeles:20260419T235900
-DTEND;TZID=America/Los_Angeles:20260419T235900
-SUMMARY:Finance Assignment DUE: Interco Case Study
-DESCRIPTION:Due: Sunday April 19\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 5: Valuing Stocks - DCF\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059523\nStudy.Net (Interco PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059523
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba203-w6-gold
 DTSTART;TZID=America/Los_Angeles:20260423T180000
 DTEND;TZID=America/Los_Angeles:20260423T213000
@@ -109,16 +69,6 @@ SUMMARY:Finance - Week 6
 DESCRIPTION:Topic: Relative Valuation of Stocks\n\nObjectives:\n1. Apply relative valuation multiples such as P/E\, EV/EBITDA\, and P/B to estimate a company's value.\n2. Select appropriate comparable firms and interpret differences in valuation multiples across companies.\n3. Evaluate the advantages and limitations of relative valuation compared with DCF methods.\n\nPre-Class Reading: Review Week 5 Chapter 9 and class slides\n\nAssignments Due This Week:\n- Homework 3 due Wed Apr 22 @ 11:59pm\n- Twitter Case Study due Sun Apr 26 @ 11:59pm\n\nWeek 6 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-6\nTwitter Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059525\nHomework 3: https://bcourses.berkeley.edu/courses/1549853/assignments/9006399\nStudy.Net (Twitter/Elon Musk PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-6
 LOCATION:Chou Hall N370
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-twitter-due-gold
-DTSTART;TZID=America/Los_Angeles:20260426T235900
-DTEND;TZID=America/Los_Angeles:20260426T235900
-SUMMARY:Finance Assignment DUE: Twitter Case Study
-DESCRIPTION:Due: Sunday April 26\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 6: Relative Valuation of Stocks\nCase: Elon Musk's Twitter Deal - Valuation and Financing of the Leveraged Buyout\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059525\nStudy.Net (Twitter PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059525
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
@@ -145,16 +95,6 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
-UID:ewmba203-ameritrade-due-gold
-DTSTART;TZID=America/Los_Angeles:20260510T235900
-DTEND;TZID=America/Los_Angeles:20260510T235900
-SUMMARY:Finance Assignment DUE: Ameritrade Case Study
-DESCRIPTION:Due: Sun May 10\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 8: Estimating the Cost of Capital\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059527\nStudy.Net (PDF+Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059527
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
 UID:ewmba203-w9-gold
 DTSTART;TZID=America/Los_Angeles:20260514T180000
 DTEND;TZID=America/Los_Angeles:20260514T213000
@@ -162,56 +102,6 @@ SUMMARY:Finance - Week 9
 DESCRIPTION:Topic: Capital Structure\n\nObjectives:\n1. Explain how firms choose between debt and equity financing and how capital structure affects firm value.\n2. Analyze trade-offs of leverage: tax benefits\, financial distress costs\, and agency considerations.\n3. Evaluate how changes in leverage affect risk\, cost of capital\, and shareholder returns.\n\nPre-Class Reading: Berk & DeMarzo (6th Ed.)\, Chapters 14 & 15\n\nAssignments Due This Week:\n- Homework 5: Wed May 13 @ 11:59pm\n\nWeek 9 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-9-3\nHomework 5: https://bcourses.berkeley.edu/courses/1549853/assignments/9006402\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nStudy.Net: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-9-3
 LOCATION:Chou Hall N370
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-hw1-due-gold
-DTSTART;TZID=America/Los_Angeles:20260408T235900
-DTEND;TZID=America/Los_Angeles:20260408T235900
-SUMMARY:Finance Assignment DUE: Homework 1
-DESCRIPTION:Homework 1 (Quiz) is due by 11:59pm.\nAvailable starting Mar 22 at 12am.\nWeight: Homework (15% of grade) | 20 points possible\n\nRelates to Weeks 1-3 material.\n\nAssignment Link: https://bcourses.berkeley.edu/courses/1549853/assignments/9006401\nAssignments Page: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9006401
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-hw2-due-gold
-DTSTART;TZID=America/Los_Angeles:20260415T235900
-DTEND;TZID=America/Los_Angeles:20260415T235900
-SUMMARY:Finance Assignment DUE: Homework 2
-DESCRIPTION:Due: Wed April 15\, 2026 @ 11:59pm\nAvailable from: April 8 @ 12:00am\nWeight: Homework (15% of grade) | 9 pts possible\nCovers: Weeks 3-4 material (Investment Decision Rules\, Bonds)\n\nHomework 2 Quiz: https://bcourses.berkeley.edu/courses/1549853/assignments/9006397\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9006397
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-hw3-due-gold
-DTSTART;TZID=America/Los_Angeles:20260422T235900
-DTEND;TZID=America/Los_Angeles:20260422T235900
-SUMMARY:Finance Assignment DUE: Homework 3
-DESCRIPTION:Due: Wednesday April 22\, 2026 @ 11:59pm\nAvailable from: April 15 @ 12:00am\nWeight: Homework (15% of grade) | 14 pts possible\nCovers: Weeks 4-5 material (Bonds\, Stock Valuation DCF)\n\nHomework 3 Quiz: https://bcourses.berkeley.edu/courses/1549853/assignments/9006399\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9006399
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-hw4-due-gold
-DTSTART;TZID=America/Los_Angeles:20260506T235900
-DTEND;TZID=America/Los_Angeles:20260506T235900
-SUMMARY:Finance Assignment DUE: Homework 4
-DESCRIPTION:Due: Wed May 6\, 2026 @ 11:59pm\nAvailable from: Apr 22 @ 12:00am\nWeight: Homework (15% of grade) | 10 pts possible\nCovers: Weeks 6-7 material (Relative Valuation\, Portfolio Selection)\n\nHomework 4 Quiz: https://bcourses.berkeley.edu/courses/1549853/assignments/9006400\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9006400
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20260101T000000Z
-UID:ewmba203-hw5-due-gold
-DTSTART;TZID=America/Los_Angeles:20260513T235900
-DTEND;TZID=America/Los_Angeles:20260513T235900
-SUMMARY:Finance Assignment DUE: Homework 5
-DESCRIPTION:Due: Wed May 13\, 2026 @ 11:59pm\nAvailable from: May 3 @ 12:00am\nWeight: Homework (15% of grade) | 14 pts possible\nCovers: Weeks 8-9 material (Cost of Capital\, Capital Structure)\n\nHomework 5: https://bcourses.berkeley.edu/courses/1549853/assignments/9006402\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
-URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9006402
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
