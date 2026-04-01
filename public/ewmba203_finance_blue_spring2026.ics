@@ -43,7 +43,7 @@ UID:ewmba203-w3-blue
 DTSTART;TZID=America/Los_Angeles:20260401T180000
 DTEND;TZID=America/Los_Angeles:20260401T213000
 SUMMARY:Finance - Week 3
-DESCRIPTION:Topic: Investment Decision Rules\n\nObjectives:\n1. Apply investment decision rules including Net Present Value (NPV)\, Internal Rate of Return (IRR)\, and Payback Period to evaluate capital projects.\n2. Compare decision rules and explain situations in which different methods may produce conflicting recommendations.\n3. Determine which projects a firm should accept or reject based on value creation principles.\n\nPre-Class Reading: Berk and DeMarzo (6th Ed.)\, Chapter 7\n\nAssignments Due This Week: IntelliDrive Case Study (due Fri Apr 3 by 11:59pm)\nIntelliDrive Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059517\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-3\nAssignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374
+DESCRIPTION:Topic: Investment Decision Rules\n\nObjectives:\n1. Apply investment decision rules including Net Present Value (NPV)\, Internal Rate of Return (IRR)\, and Payback Period to evaluate capital projects.\n2. Compare decision rules and explain situations in which different methods may produce conflicting recommendations.\n3. Determine which projects a firm should accept or reject based on value creation principles.\n\nPre-Class Reading: Berk and DeMarzo (6th Ed.)\, Chapter 7\n\nAssignments Due This Week: IntelliDrive Case Study (due Sun Apr 5 by 11:59pm)\nIntelliDrive Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059517\n\nCourse Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-3\nAssignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-3
 LOCATION:Chou Hall N370
 STATUS:CONFIRMED
@@ -51,8 +51,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba203-intellidrive-due-blue
-DTSTART;TZID=America/Los_Angeles:20260403T235900
-DTEND;TZID=America/Los_Angeles:20260403T235900
+DTSTART;TZID=America/Los_Angeles:20260405T235900
+DTEND;TZID=America/Los_Angeles:20260405T235900
 SUMMARY:Finance Assignment DUE: IntelliDrive Case Study
 DESCRIPTION:IntelliDrive Case Study is due by 11:59pm.\nWeight: Cases (15% of grade) | 5 points possible\n\nThis case study relates to Week 3: Investment Decision Rules.\n\nStudy.Net Case Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAssignment Link: https://bcourses.berkeley.edu/courses/1549853/assignments/9059517
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059517
@@ -71,8 +71,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba203-pulselogic-due-blue
-DTSTART;TZID=America/Los_Angeles:20260410T235900
-DTEND;TZID=America/Los_Angeles:20260410T235900
+DTSTART;TZID=America/Los_Angeles:20260412T235900
+DTEND;TZID=America/Los_Angeles:20260412T235900
 SUMMARY:Finance Assignment DUE: PulseLogic Case Study
 DESCRIPTION:PulseLogic Case Study is due by 11:59pm.\nWeight: Cases (15% of grade) | 5 points possible\n\nThis case study relates to Week 4: Bonds and Interest Rates.\n\nStudy.Net Case Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAssignment Link: https://bcourses.berkeley.edu/courses/1549853/assignments/9059518
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059518
@@ -84,7 +84,7 @@ UID:ewmba203-w4-blue
 DTSTART;TZID=America/Los_Angeles:20260408T180000
 DTEND;TZID=America/Los_Angeles:20260408T213000
 SUMMARY:Finance - Week 4
-DESCRIPTION:Topic: Bonds and Interest Rates\n\nObjectives:\n1. Calculate the price and yield of bonds using present value techniques.\n2. Explain why bond prices move inversely to interest rates.\n3. Assess the effects of maturity\, coupon rate\, and credit risk on bond valuation and yield.\n\nPre-Class Reading: Berk & DeMarzo (6th Ed.)\, Chapters 5 & 6\n\nAssignments Due This Week:\n- Homework 1: Wed Apr 8 @ 11:59pm\n- PulseLogic Case Study: Fri Apr 10 @ 11:59pm\n- Homework 2: Wed Apr 15 @ 11:59pm\n\nWeek 4 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-4\nPulseLogic Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059518\nHomework 1: https://bcourses.berkeley.edu/courses/1549853/assignments/9006401\nHomework 2: https://bcourses.berkeley.edu/courses/1549853/assignments/9006397\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
+DESCRIPTION:Topic: Bonds and Interest Rates\n\nObjectives:\n1. Calculate the price and yield of bonds using present value techniques.\n2. Explain why bond prices move inversely to interest rates.\n3. Assess the effects of maturity\, coupon rate\, and credit risk on bond valuation and yield.\n\nPre-Class Reading: Berk & DeMarzo (6th Ed.)\, Chapters 5 & 6\n\nAssignments Due This Week:\n- Homework 1: Wed Apr 8 @ 11:59pm\n- PulseLogic Case Study: Sun Apr 12 @ 11:59pm\n- Homework 2: Wed Apr 15 @ 11:59pm\n\nWeek 4 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-4\nPulseLogic Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059518\nHomework 1: https://bcourses.berkeley.edu/courses/1549853/assignments/9006401\nHomework 2: https://bcourses.berkeley.edu/courses/1549853/assignments/9006397\nStudy.Net Materials: https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-4
 LOCATION:Chou Hall N370
 STATUS:CONFIRMED
@@ -105,7 +105,7 @@ UID:ewmba203-w5-blue
 DTSTART;TZID=America/Los_Angeles:20260415T180000
 DTEND;TZID=America/Los_Angeles:20260415T213000
 SUMMARY:Finance - Week 5
-DESCRIPTION:Topic: Valuing Stocks - DCF\n\nObjectives:\n1. Estimate the intrinsic value of a stock using discounted cash flow models (Dividend Discount Model and Free Cash Flow models).\n2. Forecast future cash flows and growth rates required for DCF valuation.\n3. Evaluate how changes in growth\, discount rates\, and assumptions affect stock value estimates.\n\nPre-Class Reading: Berk & DeMarzo (6th Ed.)\, Chapter 9\n\nAssignments Due This Week:\n- Homework 2 due Wed Apr 15 @ 11:59pm\n- Interco Case Study due Fri Apr 17 @ 11:59pm\n\nWeek 5 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-5\nInterco Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059523\nHomework 2: https://bcourses.berkeley.edu/courses/1549853/assignments/9006397\nStudy.Net (Interco PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
+DESCRIPTION:Topic: Valuing Stocks - DCF\n\nObjectives:\n1. Estimate the intrinsic value of a stock using discounted cash flow models (Dividend Discount Model and Free Cash Flow models).\n2. Forecast future cash flows and growth rates required for DCF valuation.\n3. Evaluate how changes in growth\, discount rates\, and assumptions affect stock value estimates.\n\nPre-Class Reading: Berk & DeMarzo (6th Ed.)\, Chapter 9\n\nAssignments Due This Week:\n- Homework 2 due Wed Apr 15 @ 11:59pm\n- Interco Case Study due Sun Apr 19 @ 11:59pm\n\nWeek 5 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-5\nInterco Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059523\nHomework 2: https://bcourses.berkeley.edu/courses/1549853/assignments/9006397\nStudy.Net (Interco PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-5
 LOCATION:Chou Hall N370
 STATUS:CONFIRMED
@@ -113,10 +113,10 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba203-interco-due-blue
-DTSTART;TZID=America/Los_Angeles:20260417T235900
-DTEND;TZID=America/Los_Angeles:20260417T235900
+DTSTART;TZID=America/Los_Angeles:20260419T235900
+DTEND;TZID=America/Los_Angeles:20260419T235900
 SUMMARY:Finance Assignment DUE: Interco Case Study
-DESCRIPTION:Due: Friday April 17\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 5: Valuing Stocks - DCF\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059523\nStudy.Net (Interco PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
+DESCRIPTION:Due: Sunday April 19\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 5: Valuing Stocks - DCF\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059523\nStudy.Net (Interco PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059523
 STATUS:CONFIRMED
 END:VEVENT
@@ -136,7 +136,7 @@ UID:ewmba203-w6-blue
 DTSTART;TZID=America/Los_Angeles:20260422T180000
 DTEND;TZID=America/Los_Angeles:20260422T213000
 SUMMARY:Finance - Week 6
-DESCRIPTION:Topic: Relative Valuation of Stocks\n\nObjectives:\n1. Apply relative valuation multiples such as P/E\, EV/EBITDA\, and P/B to estimate a company's value.\n2. Select appropriate comparable firms and interpret differences in valuation multiples across companies.\n3. Evaluate the advantages and limitations of relative valuation compared with DCF methods.\n\nPre-Class Reading: Review Week 5 Chapter 9 and class slides\n\nAssignments Due This Week:\n- Homework 3 due Wed Apr 22 @ 11:59pm\n- Twitter Case Study due Fri Apr 24 @ 11:59pm\n\nWeek 6 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-6\nTwitter Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059525\nHomework 3: https://bcourses.berkeley.edu/courses/1549853/assignments/9006399\nStudy.Net (Twitter/Elon Musk PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
+DESCRIPTION:Topic: Relative Valuation of Stocks\n\nObjectives:\n1. Apply relative valuation multiples such as P/E\, EV/EBITDA\, and P/B to estimate a company's value.\n2. Select appropriate comparable firms and interpret differences in valuation multiples across companies.\n3. Evaluate the advantages and limitations of relative valuation compared with DCF methods.\n\nPre-Class Reading: Review Week 5 Chapter 9 and class slides\n\nAssignments Due This Week:\n- Homework 3 due Wed Apr 22 @ 11:59pm\n- Twitter Case Study due Sun Apr 26 @ 11:59pm\n\nWeek 6 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-6\nTwitter Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059525\nHomework 3: https://bcourses.berkeley.edu/courses/1549853/assignments/9006399\nStudy.Net (Twitter/Elon Musk PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-6
 LOCATION:Chou Hall N370
 STATUS:CONFIRMED
@@ -144,10 +144,10 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba203-twitter-due-blue
-DTSTART;TZID=America/Los_Angeles:20260424T235900
-DTEND;TZID=America/Los_Angeles:20260424T235900
+DTSTART;TZID=America/Los_Angeles:20260426T235900
+DTEND;TZID=America/Los_Angeles:20260426T235900
 SUMMARY:Finance Assignment DUE: Twitter Case Study
-DESCRIPTION:Due: Friday April 24\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 6: Relative Valuation of Stocks\nCase: Elon Musk's Twitter Deal - Valuation and Financing of the Leveraged Buyout\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059525\nStudy.Net (Twitter PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
+DESCRIPTION:Due: Sunday April 26\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 6: Relative Valuation of Stocks\nCase: Elon Musk's Twitter Deal - Valuation and Financing of the Leveraged Buyout\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059525\nStudy.Net (Twitter PDF + Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059525
 STATUS:CONFIRMED
 END:VEVENT
@@ -178,7 +178,7 @@ UID:ewmba203-w8-blue
 DTSTART;TZID=America/Los_Angeles:20260506T180000
 DTEND;TZID=America/Los_Angeles:20260506T213000
 SUMMARY:Finance - Week 8
-DESCRIPTION:Topic: Estimating the Cost of Capital\n\nObjectives:\n1. Estimate cost of equity using CAPM.\n2. Calculate WACC using costs of equity and debt.\n3. Apply WACC as discount rate for corporate investment projects.\n\nPre-Class Reading: Berk & DeMarzo (6th Ed.)\, Chapter 12\n\nAssignments Due This Week:\n- Homework 4: Wed May 6 @ 11:59pm\n- Ameritrade Case Study: Fri May 8 @ 11:59pm\n\nWeek 8 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-8\nAmeritrade Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059527\nHomework 4: https://bcourses.berkeley.edu/courses/1549853/assignments/9006400\nStudy.Net (Ameritrade PDF+Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
+DESCRIPTION:Topic: Estimating the Cost of Capital\n\nObjectives:\n1. Estimate cost of equity using CAPM.\n2. Calculate WACC using costs of equity and debt.\n3. Apply WACC as discount rate for corporate investment projects.\n\nPre-Class Reading: Berk & DeMarzo (6th Ed.)\, Chapter 12\n\nAssignments Due This Week:\n- Homework 4: Wed May 6 @ 11:59pm\n- Ameritrade Case Study: Sun May 10 @ 11:59pm\n\nWeek 8 Page: https://bcourses.berkeley.edu/courses/1549853/pages/week-8\nAmeritrade Assignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059527\nHomework 4: https://bcourses.berkeley.edu/courses/1549853/assignments/9006400\nStudy.Net (Ameritrade PDF+Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments\nSyllabus: https://bcourses.berkeley.edu/courses/1549853/assignments/syllabus
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/pages/week-8
 LOCATION:Chou Hall N370
 STATUS:CONFIRMED
@@ -186,10 +186,10 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20260101T000000Z
 UID:ewmba203-ameritrade-due-blue
-DTSTART;TZID=America/Los_Angeles:20260508T235900
-DTEND;TZID=America/Los_Angeles:20260508T235900
+DTSTART;TZID=America/Los_Angeles:20260510T235900
+DTEND;TZID=America/Los_Angeles:20260510T235900
 SUMMARY:Finance Assignment DUE: Ameritrade Case Study
-DESCRIPTION:Due: Fri May 8\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 8: Estimating the Cost of Capital\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059527\nStudy.Net (PDF+Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
+DESCRIPTION:Due: Sun May 10\, 2026 @ 11:59pm\nWeight: Cases (15% of grade) | 5 pts possible\nRelated to Week 8: Estimating the Cost of Capital\n\nAssignment: https://bcourses.berkeley.edu/courses/1549853/assignments/9059527\nStudy.Net (PDF+Spreadsheet): https://bcourses.berkeley.edu/courses/1549853/external_tools/79374\nAll Assignments: https://bcourses.berkeley.edu/courses/1549853/assignments
 URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1549853/assignments/9059527
 STATUS:CONFIRMED
 END:VEVENT
