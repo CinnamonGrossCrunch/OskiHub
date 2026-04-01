@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
+import { invalidateAllCaches } from '@/lib/cache';
 
 export const dynamic = 'force-dynamic';
 
 /**
  * Triggers a Vercel deployment to pull latest code/newsletters from GitHub
- * This calls the Vercel Deploy Hook which causes a fresh build
+ * This calls the Vercel Deploy Hook which causes a fresh build.
+ * Also invalidates KV cache so stale data doesn't survive the deploy.
  */
 export async function POST() {
   try {
@@ -20,6 +22,10 @@ export async function POST() {
         { status: 500 }
       );
     }
+
+    // Invalidate KV cache before triggering deploy
+    console.log('🗑️ [Trigger Deploy] Invalidating KV cache...');
+    await invalidateAllCaches();
 
     // Trigger the deployment
     const response = await fetch(deployHookUrl, {

@@ -9,7 +9,7 @@ import { organizeNewsletterWithAI } from '@/lib/openai-organizer';
 import { extractTimeSensitiveData } from '@/lib/openai-organizer-fixed';
 import { analyzeCohortMyWeekWithAI } from '@/lib/my-week-analyzer';
 import { getCohortEvents } from '@/lib/icsUtils';
-import { setCachedData, CACHE_KEYS } from '@/lib/cache';
+import { pipelineSet, CACHE_KEYS } from '@/lib/cache';
 import { sendCronNotification } from '@/lib/notifications';
 import { trackServerEvent } from '@/lib/analytics-server';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
@@ -101,12 +101,9 @@ export async function GET(request: Request) {
       warnings.push(`Could not extract date from title: "${organizedNewsletter.title}"`);
     }
     
-    // 🚀 WRITE TO CACHE (KV only - static JSON doesn't persist on Vercel's read-only filesystem)
-    console.log('💾 Cron: Writing to KV cache...');
+    // 🚀 WRITE TO CACHE — atomic pipeline write (all-or-nothing)
+    console.log('💾 Cron: Writing to KV cache (atomic pipeline)...');
     const newsletterTime = Date.now() - startTime;
-    await setCachedData(CACHE_KEYS.NEWSLETTER_DATA, enrichedNewsletter);
-    await setCachedData(CACHE_KEYS.COHORT_EVENTS, cohortEvents);
-    await setCachedData(CACHE_KEYS.MY_WEEK_DATA, myWeekData);
     
     // Combined dashboard data - MUST match UnifiedDashboardData shape exactly
     const dashboardData: UnifiedDashboardData = {
@@ -130,7 +127,13 @@ export async function GET(request: Request) {
         timestamp: new Date().toISOString(),
       },
     };
-    await setCachedData(CACHE_KEYS.DASHBOARD_DATA, dashboardData);
+    
+    await pipelineSet([
+      { key: CACHE_KEYS.NEWSLETTER_DATA, data: enrichedNewsletter },
+      { key: CACHE_KEYS.COHORT_EVENTS, data: cohortEvents },
+      { key: CACHE_KEYS.MY_WEEK_DATA, data: myWeekData },
+      { key: CACHE_KEYS.DASHBOARD_DATA, data: dashboardData },
+    ], { source: 'cron' });
     
     const duration = Date.now() - startTime;
     console.log(`✅ Cron: 8:10 AM newsletter refresh completed in ${duration}ms`);
@@ -173,7 +176,7 @@ export async function GET(request: Request) {
     await sendCronNotification({
       jobName: 'Newsletter Refresh (8:10 AM)',
       success: false,
-      durationMs: Date.now() - (Date.now()), // Will be 0, but that's okay for errors
+      durationMs: 0, // Error path — duration unknown
       timestamp: new Date().toISOString(),
       details: {
         error: String(error),

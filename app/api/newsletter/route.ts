@@ -10,7 +10,7 @@ export const maxDuration = 180;
 import { NextResponse } from 'next/server';
 import { getLatestNewsletterUrl, scrapeNewsletter } from '@/lib/scrape';
 import { organizeNewsletterWithAI } from '@/lib/openai-organizer';
-import { getCachedData, setCachedData, CACHE_KEYS } from '@/lib/cache';
+import { getCachedData, setCachedData, CACHE_KEYS, type CacheKey } from '@/lib/cache';
 
 // Safe logging that won't contaminate API responses
 const safeLog = (...args: unknown[]) => {
@@ -46,11 +46,11 @@ export async function GET() {
     const cachedNewsletter = await getCachedData(CACHE_KEYS.NEWSLETTER_DATA);
     
     if (cachedNewsletter) {
-      safeLog(`✅ [Newsletter API] CACHE HIT from ${cachedNewsletter.source}! Returning pre-rendered data (${Date.now() - startTime}ms)`);
+      safeLog(`✅ [Newsletter API] CACHE HIT from ${cachedNewsletter.store}! Returning pre-rendered data (${Date.now() - startTime}ms)`);
       return NextResponse.json(cachedNewsletter.data, {
         headers: {
           'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
-          'X-Cache-Source': cachedNewsletter.source,
+          'X-Cache-Source': cachedNewsletter.store,
           'X-Response-Time': `${Date.now() - startTime}ms`
         }
       });
@@ -72,10 +72,14 @@ export async function GET() {
     );
     safeLog('Newsletter API: Content organized with AI');
     
-    // 🚀 Write fresh data back to cache for next request
+    // � Write fresh data back to cache — use source 'api' so cron-enriched data
+    // (which includes extractTimeSensitiveData) won't be overwritten by less-enriched data.
     safeLog('💾 [Newsletter API] Writing fresh data to cache...');
     try {
-      await setCachedData(CACHE_KEYS.NEWSLETTER_DATA, organizedData, { writeStatic: true });
+      await setCachedData(CACHE_KEYS.NEWSLETTER_DATA as CacheKey, organizedData, { 
+        source: 'api',
+        writeStatic: process.env.NODE_ENV === 'development' 
+      });
       safeLog('✅ [Newsletter API] Cache write successful - next request will be instant!');
     } catch (cacheError) {
       console.error('⚠️ [Newsletter API] Cache write failed (non-fatal):', cacheError);

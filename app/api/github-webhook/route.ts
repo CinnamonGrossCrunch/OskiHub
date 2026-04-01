@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
+import { invalidateAllCaches } from '@/lib/cache';
 
 // Force dynamic rendering for this API route
 export const dynamic = 'force-dynamic';
@@ -103,6 +104,10 @@ export async function POST(request: NextRequest) {
 
     console.log('📰 [GitHub Webhook] Newsletter or calendar changes detected!');
     console.log(`📝 [GitHub Webhook] Commits: ${commits.length}`);
+    
+    // Invalidate KV cache so stale data doesn't survive the deploy
+    console.log('🗑️ [GitHub Webhook] Invalidating KV cache...');
+    await invalidateAllCaches();
     
     // Trigger Vercel deployment
     const deployHookUrl = process.env.VERCEL_DEPLOY_HOOK_URL;

@@ -39,7 +39,7 @@
       "headers": [
         {
           "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
+          "value": "DENY"
         },
         {
           "key": "X-Content-Type-Options",
@@ -48,47 +48,11 @@
       ]
     },
     {
-      "source": "/api/unified-dashboard",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=60, stale-while-revalidate=300"
-        }
-      ]
-    },
-    {
       "source": "/api/cron/:path*",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "s-maxage=0, stale-while-revalidate=0"
-        }
-      ]
-    },
-    {
-      "source": "/api/newsletter",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=0, stale-while-revalidate=0"
-        }
-      ]
-    },
-    {
-      "source": "/api/calendar/:path*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=0, stale-while-revalidate=0"
-        }
-      ]
-    },
-    {
-      "source": "/api/resources",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=0, stale-while-revalidate=0"
+          "value": "no-store, must-revalidate"
         }
       ]
     },

@@ -12,7 +12,7 @@ import { getLatestNewsletterUrl, scrapeNewsletter } from '@/lib/scrape';
 import { organizeNewsletterWithAI, type OrganizedNewsletter } from '@/lib/openai-organizer';
 import { analyzeCohortMyWeekWithAI, type CohortMyWeekAnalysis } from '@/lib/my-week-analyzer';
 import { getCohortEvents, type CalendarEvent } from '@/lib/icsUtils';
-import { getCachedData, setCachedData, CACHE_KEYS } from '@/lib/cache';
+import { getCachedData, setCachedData, CACHE_KEYS, withStampedeProtection } from '@/lib/cache';
 import { trackServerEvent } from '@/lib/analytics-server';
 
 const safeError = (...args: unknown[]) => {
@@ -135,12 +135,13 @@ export async function GET(request: Request) {
     const cachedDashboard = await getCachedData<UnifiedDashboardData>(CACHE_KEYS.DASHBOARD_DATA);
     
     if (cachedDashboard) {
-      console.log(`✅ [API] CACHE HIT from ${cachedDashboard.source}! Returning pre-rendered data (${Date.now() - startTime}ms)`);
-      await trackServerEvent('dashboard_data_served', { source: cachedDashboard.source === 'kv' ? 'kv_cache' : 'static_fallback', latencyMs: Date.now() - startTime });
+      console.log(`✅ [API] CACHE HIT from ${cachedDashboard.store}! Returning pre-rendered data (${Date.now() - startTime}ms)`);
+      await trackServerEvent('dashboard_data_served', { source: cachedDashboard.store === 'kv' ? 'kv_cache' : 'static_fallback', latencyMs: Date.now() - startTime });
       return NextResponse.json(cachedDashboard.data, {
         headers: {
           'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
-          'X-Cache-Source': cachedDashboard.source,
+          'X-Cache-Source': cachedDashboard.store,
+          'X-Cache-Age': `${Math.round(cachedDashboard.ageMs / 1000)}s`,
           'X-Response-Time': `${Date.now() - startTime}ms`
         }
       });
@@ -160,8 +161,9 @@ export async function GET(request: Request) {
   
   try {
     // Race the main processing against the overall timeout
+    // withStampedeProtection ensures only one concurrent rebuild runs
     const result = await Promise.race([
-      (async () => {
+      withStampedeProtection('dashboard-rebuild', async () => {
         // Start all data fetching operations in parallel with individual timeouts
         const [newsletterResult, calendarResult] = await Promise.allSettled([
           // Newsletter data fetch and AI organization with 180s timeout (AI can take 2+ minutes)
@@ -383,10 +385,10 @@ export async function GET(request: Request) {
         // @ts-expect-error augment for debug
         response.myWeekData.aiMeta = (myWeekData as CohortMyWeekAnalysis).aiMeta;
         
-        // 🚀 Write fresh data to KV cache for next request (skip static JSON - doesn't persist on Vercel)
+        // � Write fresh data to KV cache for next request
         console.log('💾 [API] Writing fresh data to KV cache...');
         try {
-          await setCachedData(CACHE_KEYS.DASHBOARD_DATA, response);
+          await setCachedData(CACHE_KEYS.DASHBOARD_DATA, response, { source: 'api' });
           console.log('✅ [API] KV cache write successful - next request will be instant!');
         } catch (cacheError) {
           console.error('⚠️ [API] Cache write failed (non-fatal):', cacheError);
@@ -402,7 +404,7 @@ export async function GET(request: Request) {
             'X-Force-Refresh': forceRefresh ? 'true' : 'false'
           }
         });
-      })(),
+      }),
       timeoutPromise
     ]);
     

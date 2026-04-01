@@ -6,7 +6,7 @@ export const maxDuration = 300; // 300 seconds (5 minutes) - Allow time for cale
 import { NextResponse } from 'next/server';
 import { analyzeCohortMyWeekWithAI } from '@/lib/my-week-analyzer';
 import { getCohortEvents } from '@/lib/icsUtils';
-import { getCachedData, setCachedData, CACHE_KEYS } from '@/lib/cache';
+import { getCachedData, pipelineSet, CACHE_KEYS } from '@/lib/cache';
 import { sendCronNotification } from '@/lib/notifications';
 import { trackServerEvent } from '@/lib/analytics-server';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
@@ -44,11 +44,9 @@ export async function GET(request: Request) {
       gold: cohortEvents.gold || []
     }, newsletterSections);
     
-    // 🚀 WRITE TO CACHE — all keys including dashboard-data composite
-    console.log('💾 Cron: Writing to cache...');
-    await setCachedData(CACHE_KEYS.COHORT_EVENTS, cohortEvents);
-    await setCachedData(CACHE_KEYS.MY_WEEK_DATA, myWeekData);
-
+    // 🚀 WRITE TO CACHE — atomic pipeline write
+    console.log('💾 Cron: Writing to cache (atomic pipeline)...');
+    
     // Also write composite dashboard-data so unified-dashboard gets a cache hit
     // Reuse existing newsletter or provide a placeholder
     const existingDashboard = await getCachedData<UnifiedDashboardData>(CACHE_KEYS.DASHBOARD_DATA);
@@ -68,7 +66,12 @@ export async function GET(request: Request) {
         timestamp: new Date().toISOString()
       }
     };
-    await setCachedData(CACHE_KEYS.DASHBOARD_DATA, compositeData);
+    
+    await pipelineSet([
+      { key: CACHE_KEYS.COHORT_EVENTS, data: cohortEvents },
+      { key: CACHE_KEYS.MY_WEEK_DATA, data: myWeekData },
+      { key: CACHE_KEYS.DASHBOARD_DATA, data: compositeData },
+    ], { source: 'cron' });
     
     const duration = Date.now() - startTime;
     console.log('✅ Cron: Midnight cache refresh completed (data written to KV)');
