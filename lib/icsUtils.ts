@@ -65,7 +65,7 @@ const COHORT_FILES = {
     'ewmba201b_macro_blue_spring2026.ics',
     'ewmba202_accounting_blue_spring2026.ics',
     'ewmba203_finance_blue_spring2026.ics',
-    'ewmba_ethics_spring2026.ics',
+    'ewmba_ethics_blue_spring2026.ics',
     // Fall 2025 courses (archive)
     'ewmba201a_micro_blue_fall2025.ics',
     'ewmba_leadingpeople_blue_fall2025.ics',
@@ -78,7 +78,7 @@ const COHORT_FILES = {
     'ewmba201b_macro_gold_spring2026.ics',
     'ewmba202_accounting_gold_spring2026.ics',
     'ewmba203_finance_gold_spring2026.ics',
-    'ewmba_ethics_spring2026.ics',
+    'ewmba_ethics_gold_spring2026.ics',
     // Fall 2025 courses (archive)
     'ewmba201a_micro_gold_fall2025.ics',
     'ewmba_leadingpeople_gold_fall2025.ics',

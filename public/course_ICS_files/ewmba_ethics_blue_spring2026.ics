@@ -1,0 +1,86 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Berkeley Haas//EWMBA 207 Ethics Blue//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EWMBA 207 Ethics & Responsible Business Leadership (Blue)
+X-WR-CALDESC:Spring 2026 - Prof. Jonathan Weigel - Blue Section 1B Mon 6-9:30 PM PT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba207-sp26-blue-w1
+DTSTART;TZID=America/Los_Angeles:20260330T180000
+DTEND;TZID=America/Los_Angeles:20260330T213000
+SUMMARY:Ethics - Week 1: Beyond Yourself? Principles of Moral Architecture
+DESCRIPTION:EWMBA 207 - Ethics & Responsible Business Leadership\nProf. Jonathan Weigel\n\nWeek 1 (Blue): Monday March 30\, 2026\n6:00-9:30 PM PT\n\nTopic: Beyond yourself? Principles of moral architecture\n\nObjectives:\n- Managerial application: Moral architecture for organizations\n- Explore structural forces (organizational\, legal\, market-related) and psychological tendencies behind fraudulent behavior\n- Conversations on what values to uphold\n\nPreparation Guidelines:\n- Are there limits to self-interest as a principle on which to run organizations/society?\n- Can you highlight structural and psychological factors behind the Theranos downfall?\n- Would values that depart from self-interest help avoid Theranos-like cases? What alternative values?\n- What are your non-negotiables?\n\nRequired Readings:\n- Dal Bo and Xu / How did a $9 Billion Health Tech Startup End up DOA?\n- Griffith / The Ugly Unethical Underside of Silicon Valley\n- Zimbardo / The Psychology of Power: To the Person? To the Situation? To the System?\n- The Inventor: Out For Blood In Silicon Valley (2019) - HBO Documentary\n\nAssignments Due Before Class:\n- Assignment 1a: Opinion survey (optional)\n- Assignment 1b: My experience (graded - contributes to participation)\n\nGrading: Participation 30% | Quizzes 10% | Midterm 25% | Final 35%\n\nCourse Page: https://bcourses.berkeley.edu/courses/1550881
+LOCATION:N370 Chou Hall
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1550881
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba207-sp26-blue-w2
+DTSTART;TZID=America/Los_Angeles:20260406T180000
+DTEND;TZID=America/Los_Angeles:20260406T213000
+SUMMARY:Ethics - Week 2: Welfare v. Duty - Utilitarian & Deontological Perspectives
+DESCRIPTION:EWMBA 207 - Ethics & Responsible Business Leadership\nProf. Jonathan Weigel\n\nWeek 2 (Blue): Monday April 6\, 2026\n6:00-9:30 PM PT\n\nTopic: Welfare v. Duty: Utilitarian and Deontological Perspectives on Ethics\n\nObjectives:\n- Managerial domain: Non-market strategy challenges in the global economy\n- Consequentialist Ethics (Utilitarianism): Maximize well-being of a specified group\n- Deontological Ethics (Duty-based): Rights and duties\n- Managerial application: Human Resources - gender asymmetries in organizational life\n\nPreparation Guidelines:\n- How would a utilitarian evaluate the dilemma facing Ziqitza's leadership?\n- "When in Rome\, do as the Romans do." Should you always play by local rules? Act vs. Rule Utilitarianism?\n- Is it right to sacrifice the individual for the collective? Always\, sometimes\, or never?\n- Do businesses have a responsibility to create an inclusive work environment if it doesn't maximize welfare or profits?\n- Should romantic relationships among members of the same organization be forbidden?\n\nRequired Readings:\n- Smith and Crawford: Ziqitza Health Care Limited: Responding to Corruption\n- Vaccaro: Dirty dancing\, Too much drinking\n- Velasquez: Utilitarianism (60-71)\n- Marcus and Kaiser: Deontological Ethics - Rights and Duties\n- Le Guin: Those who walk away from Omelas\n\nOptional:\n- Awad et. al. (2018) / The Moral Machine Experiment\n- O'Neill / A Simplified Account of Kant's Ethics\n\nCourse Page: https://bcourses.berkeley.edu/courses/1550881
+LOCATION:N370 Chou Hall
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1550881
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba207-sp26-blue-w3
+DTSTART;TZID=America/Los_Angeles:20260413T180000
+DTEND;TZID=America/Los_Angeles:20260413T213000
+SUMMARY:Ethics - Week 3: MIDTERM EXAM + Theories of Justice
+DESCRIPTION:EWMBA 207 - Ethics & Responsible Business Leadership\nProf. Jonathan Weigel\n\nWeek 3 (Blue): Monday April 13\, 2026\n6:00-9:30 PM PT\n\n*** MIDTERM EXAM - First Half of Class ***\nOpen-notes\, individual exam via bCourses. Bring your laptop.\nAvailable for download at 6:00 PM. Submit within allotted time.\n\nSecond Half: Theories of Justice\n\nObjectives:\n- Mid-term examination (graded quiz\, in-person)\n- Normative Frameworks (Justice): Economic inequality and distribution\n- Two contrasting 20th-century theories of justice\n\nPreparation Guidelines:\n- Is justice primarily about processes or about outcomes?\n- Are there forms of discrimination that are acceptable\, while others are not?\n- How much is your success determined by luck vs. effort?\n- Who is the relevant "worst off" party when applying the maximin criterion?\n\nReadings for Second Half:\n- Sandel: Excerpts from Justice\, Chapter 6 - The Case for Equality\n- Stanford Encyclopedia of Philosophy: Justice as Entitlements\n\nOptional Midterm Prep:\n- Assignment 2: Google's Dragonfly\n- Assignment 3: Inclusive Organizations\n\nCourse Page: https://bcourses.berkeley.edu/courses/1550881
+LOCATION:N370 Chou Hall
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1550881
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba207-sp26-blue-w4
+DTSTART;TZID=America/Los_Angeles:20260420T180000
+DTEND;TZID=America/Los_Angeles:20260420T213000
+SUMMARY:Ethics - Week 4: Environmental Justice & Ethics of Training Generative AI
+DESCRIPTION:EWMBA 207 - Ethics & Responsible Business Leadership\nProf. Jonathan Weigel\n\nWeek 4 (Blue): Monday April 20\, 2026\n6:00-9:30 PM PT\n\nTopic: Environmental Justice and the Ethics of Training Generative AI\n\nObjectives:\n- Managerial application: Inequality\, equity\, sustainability\n- Environmental Justice: Market-based mechanisms (pollution rights) and asymmetric outcomes across social groups\n- Generative AI: Trade-off between data for effective AI models and property rights of content creators\n\nPreparation Guidelines:\n- What are the motives of opponents/proponents of market mechanisms to resolve environmental challenges? Do their claims have a rigorous ethical defense?\n- Are market-based mechanisms discriminatory? Are they fair?\n- Assess the fairness of the pollution credits trading system. Would your assessment differ if you lived in a hotspot?\n- Whose property rights are at stake in the debate over training generative AI models and IP?\n- Would an act and rule utilitarian agree or disagree about the ethics of training generative AI without licensing agreements?\n\nRequired Readings:\n- Dal Bo\, Weigel\, and Xu: Cap-and-Trade Meets Environmental Justice in Richmond\, CA\n- Dal Bo\, Weigel\, and Xu: The Ethics of Training Generative AI Models\n\nOptional:\n- Fears and Dennis: This is environmental racism\n- The Economist: Environmental Justice in the Balance\n- The Economist: Generative AI is a marvel. Is it also built on theft?\n- Menand: Is A.I. the Death of I.P.? (The New Yorker)\n\nCourse Page: https://bcourses.berkeley.edu/courses/1550881
+LOCATION:N370 Chou Hall
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1550881
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba207-sp26-blue-w5
+DTSTART;TZID=America/Los_Angeles:20260427T180000
+DTEND;TZID=America/Los_Angeles:20260427T213000
+SUMMARY:Ethics - Week 5: Corporate Social Responsibility & Gene Editing
+DESCRIPTION:EWMBA 207 - Ethics & Responsible Business Leadership\nProf. Jonathan Weigel\n\nWeek 5 (Blue): Monday April 27\, 2026\n6:00-9:30 PM PT\n\nTopic: Corporate Social Responsibility and Gene Editing\n\nObjectives:\n- Managerial application: Corporate Social Responsibility\, ethical challenges from scientific progress\n- Contrast traditional leadership with leadership in economic ecosystems\n- Address who "owns" the firm\n- Apply frameworks to CRISPR and gene editing\n\nPreparation Guidelines:\n- Should firms do everything they can to "do good\," only certain things\, or none?\n- Do shareholders own firms\, and should managers maximize share value?\n- Do you think CSR can be defined meaningfully beyond legal compliance?\n- Consider the situation from Dr. He's position. What paths of action are available?\n- Would a virtuous choice involve other considerations? Which?\n- Who are the relevant actors\, and what are the stakes involved in pursuing gene editing?\n\nRequired Readings:\n- Dal Bo\, Weigel and Xu: CRISPR and the Selfish Gene Editor\n- Friedman: The Social Responsibility of Business is to Increase its Profits\n- Detert: Managing yourself: Cultivating everyday courage\n\nOptional:\n- Fisher / Dimmock: Aristotelian Virtue Ethics - Introduction\n- Pinker: The Moral Instinct\n- Haidt: The New Synthesis in Moral Psychology\n\nAssignment Due Today:\n- Assignment 4: My Experience Revisited (graded)\n\nOptional Exam Prep (due midnight before Final):\n- Assignment 5: Sustainable Supply Chains\n\nCourse Page: https://bcourses.berkeley.edu/courses/1550881
+LOCATION:N370 Chou Hall
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1550881
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba207-sp26-blue-final
+DTSTART;TZID=America/Los_Angeles:20260504T180000
+DTEND;TZID=America/Los_Angeles:20260504T213000
+SUMMARY:Ethics - FINAL EXAM
+DESCRIPTION:EWMBA 207 - Ethics & Responsible Business Leadership\nProf. Jonathan Weigel\n\n*** FINAL EXAM ***\nBlue Section: Monday May 4\, 2026\n6:00-9:30 PM PT\n\nIn-Person Final Exam at N370 Chou Hall\nOpen-notes\, individual exam via bCourses.\nAvailable for download at 6:00 PM. Submit within allotted time.\nBring your laptop.\n\nExam Weight: 35% of final grade\n\nThe exam will test your understanding of relevant ethical frameworks and concepts discussed in class.\n\nOptional Exam Prep (due midnight before Final):\n- Assignment 5: Sustainable Supply Chains\n\nCourse Page: https://bcourses.berkeley.edu/courses/1550881
+LOCATION:N370 Chou Hall
+URL;VALUE=URI:https://bcourses.berkeley.edu/courses/1550881
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260101T000000Z
+UID:ewmba207-sp26-blue-gsi-oh
+DTSTART;TZID=America/Los_Angeles:20260329T170000
+DTEND;TZID=America/Los_Angeles:20260329T183000
+SUMMARY:Ethics - GSI Review Session / Office Hours (Sarah Martin)
+DESCRIPTION:EWMBA 207 - GSI Office Hours\n\nSarah Martin - Review Session / Office Hours\nSunday 5:00-6:30 PM PT via Zoom\n\nZoom: https://berkeley.zoom.us/j/9725314266\n\nWeekly recurring session before Monday/Tuesday classes.
+LOCATION:Zoom
+URL;VALUE=URI:https://berkeley.zoom.us/j/9725314266
+STATUS:CONFIRMED
+RRULE:FREQ=WEEKLY;COUNT=6
+END:VEVENT
+END:VCALENDAR
