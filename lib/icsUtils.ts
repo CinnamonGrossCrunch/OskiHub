@@ -87,13 +87,25 @@ const COHORT_FILES = {
     'teams@Haas.ics'
   ]
 };/**
+ * Resolve the filesystem path for an ICS file.
+ * Course ICS files live in public/course_ICS_files/, while shared/non-course
+ * files (calendar.ics, academic calendar, etc.) live in public/.
+ * Checks the course subfolder first, then falls back to public root.
+ */
+function resolveIcsPath(filename: string): string {
+  const coursePath = path.join(process.cwd(), 'public', 'course_ICS_files', filename);
+  if (fs.existsSync(coursePath)) return coursePath;
+  return path.join(process.cwd(), 'public', filename);
+}
+
+/**
  * Fetch ICS data from either external URL or local file
  */
 async function fetchIcsData(filename: string): Promise<string> {
   // For development/local, always try local files first
   if (process.env.NODE_ENV === 'development') {
     try {
-      const filePath = path.join(process.cwd(), 'public', filename);
+      const filePath = resolveIcsPath(filename);
       if (fs.existsSync(filePath)) {
         safeLog(`Reading ICS from local file: ${filePath}`);
         const content = fs.readFileSync(filePath, 'utf-8');
@@ -124,7 +136,7 @@ async function fetchIcsData(filename: string): Promise<string> {
 
   // For cohort-specific files, try local files in both dev and production
   try {
-    const filePath = path.join(process.cwd(), 'public', filename);
+    const filePath = resolveIcsPath(filename);
     if (fs.existsSync(filePath)) {
       const content = fs.readFileSync(filePath, 'utf-8');
       if (content.trim().length > 0) {

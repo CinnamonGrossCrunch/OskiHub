@@ -89,7 +89,7 @@ export default function CohortCalendarWidget({
             <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">Calendar Loading</p>
             <p className="text-xs text-slate-500 dark:text-slate-500">{error}</p>
             <div className="mt-4 text-xs text-slate-500 dark:text-slate-500">
-              <p>Expected ICS files in /public/:</p>
+              <p>Expected ICS files in /public/course_ICS_files/:</p>
               <ul className="mt-2 space-y-1">
                 <li>• ewmba201a_micro_blue_fall2025.ics</li>
                 <li>• ewmba_leadingpeople_blue_fall2025.ics</li>
@@ -99,7 +99,7 @@ export default function CohortCalendarWidget({
                 <li>• ewmba_leadingpeople_gold_fall2025.ics</li>
                 <li>• DataDecisions-Gold.ics</li>
                 <li>• Marketing-Gold-Final.ics</li>
-                <li>• calendar.ics (for rich content matching)</li>
+                <li>• calendar.ics (in /public/, for rich content matching)</li>
               </ul>
             </div>
           </div>
