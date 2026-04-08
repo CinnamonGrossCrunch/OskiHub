@@ -503,9 +503,9 @@ export default function MonthGrid({
               return `${glassBase} bg-purple-800/50 border-purple-700/50 text-white ${hoverGold}`;
             }
 
-            // EWMBA 210 (Ethics) - Rose
+            // EWMBA 210 (Ethics) - Dark Teal
             if (event.source.includes('210_') || event.source.includes('ethics')) {
-              return `${glassBase} bg-rose-700/50 border-rose-600/50 text-white ${hoverGold}`;
+              return `${glassBase} bg-teal-900/60 border-teal-700/50 text-white ${hoverGold}`;
             }
 
             // EWMBA 211 (Negotiations) - Emerald

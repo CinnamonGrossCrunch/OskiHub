@@ -1,0 +1,159 @@
+That sounds like a great plan. I've gathered the details from your Berkeley EWMBA 207 course page and prepared them for a Google Doc. Since I can't directly "push" a new file into your Drive, I've organized everything below in a format that you can easily copy and paste.
+Course Overview: EWMBA 207 - Ethics and Responsibility in Business
+Week 1: Beyond yourself? Principles of moral architecture
+ Objectives
+Managerial application: Moral architecture for organizations
+Corporate scandals are often blamed on greed. But this obscures the question of when will greed truly be a problem, if ever. This class aims to explore structural forces (organizational, legal, market-related) and psychological tendencies that underlie fraudulent behavior. This sets the stage for a conversation on what values to uphold.
+
+Preparation Guidelines
+Are there limits to self-interest as a principle on which to run organizations/society? What might those limits be?
+
+
+Can you highlight structural and psychological factors behind the Theranos downfall? In other words, if you had run that company, what different rules might you have imposed, and what behaviors/temptations would you have tried to guard against?
+
+
+Would values that depart from self-interest help avoid Theranos-like cases? What alternative values would you propose? What are your non-negotiables?
+
+
+ Readings
+Dal Bó and Xu / How did a $9 Billion Health Tech Startup End up DOA? (Access via Study.Net)
+
+
+Griffith / The Ugly Unethical Underside of Silicon Valley (Access via Study.Net)
+
+
+Zimbardo / The Psychology of Power: To the Person? To the Situation? To the System? (Access via Study.Net)
+
+
+The Inventor: Out For Blood In Silicon Valley (2019) (https://www.hbo.com/documentaries/the-inventor-out-for-blood-in-silicon-valley) - HBO Documentary
+Optional: Asher-Schapiro / What the Theranos Documentary Misses (Access via Study.Net)
+ Assignments
+Assignment 1a: Opinion survey (https://bcourses.berkeley.edu/courses/1550881/assignments/8404392)
+Assignment 1b: My experience (https://bcourses.berkeley.edu/courses/1550881/assignments/8404393)
+ In-Class Materials
+Class Slides (https://bcourses.berkeley.edu/courses/1550881/files/86794697/download?download_frd=1)
+Section Slides (https://bcourses.berkeley.edu/courses/1550881/files/86794698/download?download_frd=1)
+Would you like me to summarize any of the Theranos-related readings or provide some initial thoughts for the preparation guidelines?
+
+I've compiled the information from your Week 2 course page. You can copy the section below directly into your Google Doc to keep your notes organized.
+
+Week 2: Welfare v. Duty: Utilitarian and Deontological Perspectives on Ethics
+Objectives
+Managerial domain: Non-market strategy challenges in the global economy
+This session addresses common business situations by stipulating moral principles (act and rule utilitarianism) and deriving ethically defensible behavior. We examine rule utilitarianism as an approach to handle situations where individual actions might lead to bad collective outcomes, gaining an appreciation for the algorithmic nature of ethical reasoning.
+Managerial application: Human Resources
+We will confront gender asymmetries in organizational life using two frameworks:
+Consequentialist Ethics (Utilitarianism): Seeking to maximize the well-being of a specified group (similar to public policy or business optimization).
+Deontological Ethics (Duty-based): Connecting with strong intuitions regarding rights and duties.
+Preparation Guidelines
+How would a utilitarian evaluate the dilemma facing Ziqitza's leadership?
+"When in Rome, do as the Romans do." Should you always play by local rules? Does the answer change between Act vs. Rule Utilitarianism?
+Is it right to sacrifice the individual for the collective? Always, sometimes, or never?
+Do businesses have a responsibility to create an inclusive work environment if it doesn't maximize welfare or profits?
+Should romantic relationships among members of the same organization be forbidden? Why or why not?
+
+Readings
+Case Material (Access via Study.Net)
+Smith and Crawford: Ziqitza Health Care Limited: Responding to Corruption (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Vaccaro: Dirty dancing, Too much drinking (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374) (Note: "raunchy emails" is optional)
+For Assignment/GSI: Dal Bó and Xu / Google's Dragonfly: The Ethics of Providing a Censored Search Engine in China (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Conceptual Material (Access via Study.Net)
+Velasquez: Utilitarianism (60-71) (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Marcus and Kaiser: Deontological Ethics – Rights and Duties (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Le Guin: Those who walk away from Omelas (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Optional: Awad et. al. (2018) / The Moral Machine Experiment (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Optional: O’Neill / A Simplified Account of Kant’s Ethics (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+
+In-Class Materials
+Slides (https://bcourses.berkeley.edu/courses/1550881) (To be posted after class)
+Navigation
+Week 1 (https://bcourses.berkeley.edu/courses/1550881/modules/items/17597399) | Week 3 (https://bcourses.berkeley.edu/courses/1550881/modules/items/17597401) | Week 4 (https://bcourses.berkeley.edu/courses/1550881/modules/items/17597402) | Week 5 (https://bcourses.berkeley.edu/courses/1550881/modules/items/17597403)
+
+Would you like a quick breakdown of the difference between Act and Rule Utilitarianism to help with the first two preparation questions?
+
+I've formatted the details from your Week 3 page. You can copy and paste this directly into your Google Doc.
+
+Week 3: Mid-term Exam and Theories of Justice
+Objectives
+This class is structured in two parts:
+Mid-term Examination: A short, graded quiz taken in person to provide feedback on your learning progress.
+Normative Frameworks (Justice): A focus on economic inequality and distribution. We will explore two contrasting 20th-century theories of justice to help parse out contemporary social debates.
+Preparation Guidelines
+Is justice primarily about processes or about outcomes?
+Are there forms of discrimination that are acceptable, while others are not?
+How much is your success determined by luck vs. effort?
+Who is the relevant “worst off” party to consider when applying the maximin criterion?
+
+Readings
+Conceptual material for the second half of class (Access via Study.Net)
+Sandel: Excerpts from Justice, Chapter 6 - The Case for Equality
+Stanford Encyclopedia of Philosophy: Justice as Entitlements (First paragraph, c. Distributive Justice)
+
+Assignments
+Optional Midterm Prep
+Assignment 2: Google's Dragonfly (https://bcourses.berkeley.edu/courses/1550881/assignments/9009238)
+Assignment 3: Inclusive Organizations (https://bcourses.berkeley.edu/courses/1550881/assignments/9062661)
+
+In-Class Materials
+Slides: To be posted after class.
+
+
+I've captured the information from your Week 4 page. This section covers two very different but equally complex topics: environmental policy and AI ethics. You can copy this into your Google Doc below your previous notes.
+
+Week 4: Environmental Justice and the Ethics of Training Generative AI
+Objectives
+Managerial application: Inequality, equity, sustainability
+In this integrative class, we discuss two contemporary issues through the lens of our frameworks:
+Environmental Justice: We examine market-based mechanisms (like pollution rights) which are technically successful but often lead to asymmetric outcomes across social groups.
+Generative AI: We explore the trade-off between amassing the massive amounts of data needed for effective AI models and respecting the property rights of content creators.
+Preparation Guidelines
+What are the motives of opponents/proponents of market mechanisms to resolve environmental challenges? Do their claims have a rigorous ethical defense?
+Are market-based mechanisms discriminatory? Are they fair?
+Assess the fairness of the pollution credits trading system. Would your assessment differ if you lived in a hotspot?
+Whose property rights are at stake in the debate over training generative AI models and IP?
+Would an act and rule utilitarian agree or disagree about the ethics of training generative AI models without licensing agreements in place?
+
+Readings
+All materials accessible via Study.Net Materials (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Case Materials
+Dal Bó, Weigel, and Xu: Cap-and-Trade Meets Environmental Justice in Richmond, CA
+Dal Bó, Weigel, and Xu: The Ethics of Training Generative AI Models
+Optional Readings
+Fears and Dennis: This is environmental racism – How a protest in a North Carolina farming town sparked a national movement
+The Economist: Environmental Justice in the Balance – the case of pursuing civil rights and climate policy in tandem has been oversold
+The Economist: Generative AI is a marvel. Is it also built on theft?
+Menand: Is A.I. the Death of I.P.? (The New Yorker)
+
+In-Class Materials
+Class Slides (https://bcourses.berkeley.edu/courses/1550881) (To be posted after class)
+
+Week 5: Corporate Social Responsibility and Gene Editing
+Objectives
+Managerial application: Corporate Social Responsibility, ethical challenges from scientific progress
+This session explores ethical corporate leadership and the definition of CSR. We will contrast traditional leadership with leadership in economic ecosystems and address the thorny issue of who "owns" the firm. These frameworks will be applied to the case of CRISPR and gene editing—technologies that could redefine what it means to be human.
+Preparation Guidelines
+Should firms do everything they can to “do good,” only certain things, or none?
+Do shareholders own firms, and should managers maximize share value?
+Do you think CSR can be defined meaningfully beyond legal compliance? If so, what would be a good definition?
+Consider the situation from Dr. He’s position. What paths of action are available? What are the individual risks and rewards involved?
+Would a virtuous choice involve other considerations? Which?
+Who are the relevant actors, and what are the stakes involved in pursuing gene editing?
+
+Readings
+All materials accessible via Study.Net Materials (https://bcourses.berkeley.edu/courses/1550881/external_tools/79374)
+Case Material
+Dal Bó, Weigel and Xu: CRISPR and the Selfish Gene Editor
+Conceptual Readings
+Friedman: The Social Responsibility of Business is to Increase its Profits
+Detert: Managing yourself: Cultivating everyday courage
+Optional: Fisher / Dimmock: Aristotelian Virtue Ethics - Introduction
+Optional: Pinker: The Moral Instinct
+Optional: Haidt: The New Synthesis in Moral Psychology
+
+Assignments
+Due Today: Assignment 4: My Experience Revisited (https://bcourses.berkeley.edu/courses/1550881/assignments/9009241)
+Optional Exam Prep (due midnight before Final): Assignment 5: Sustainable Supply Chains (https://bcourses.berkeley.edu/courses/1550881/assignments/9062666)
+
+In-Class Materials
+Slides to be posted after class.
+
