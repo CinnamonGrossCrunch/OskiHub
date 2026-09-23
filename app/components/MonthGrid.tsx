@@ -740,10 +740,10 @@ export default function MonthGrid({
                     setParkingPopover({ x: e.clientX, y: e.clientY, titles: parkingImpactTitles });
                   }}
                 >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle cx="12" cy="12" r="11" fill="#FACC15" />
-                    <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
-                    <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="5" y1="19" x2="19" y2="5" stroke="#111827" strokeWidth="2" strokeLinecap="round" />
+                    <text x="12" y="17.2" textAnchor="middle" fontSize="15" fontWeight="900" fill="#111827">P</text>
                   </svg>
                 </button>
                 )}
@@ -1130,8 +1130,8 @@ export default function MonthGrid({
         <span className="flex items-center gap-1">
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
             <circle cx="12" cy="12" r="11" fill="#FACC15" />
-            <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
-            <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
+            <line x1="5" y1="19" x2="19" y2="5" stroke="#111827" strokeWidth="2" strokeLinecap="round" />
+            <text x="12" y="17.2" textAnchor="middle" fontSize="15" fontWeight="900" fill="#111827">P</text>
           </svg>
           parking impact
         </span>
@@ -1156,8 +1156,8 @@ export default function MonthGrid({
               <p className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <circle cx="12" cy="12" r="11" fill="#FACC15" />
-                  <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
-                  <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
+                  <line x1="5" y1="19" x2="19" y2="5" stroke="#111827" strokeWidth="2" strokeLinecap="round" />
+                  <text x="12" y="17.2" textAnchor="middle" fontSize="15" fontWeight="900" fill="#111827">P</text>
                 </svg>
                 Parking impact
               </p>
