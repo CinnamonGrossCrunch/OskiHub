@@ -7,92 +7,294 @@ X-WR-CALNAME:EW204 Operations (Fall 2026)
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
 UID:ew204-20260729@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260729T180000
 DTEND:20260729T213000
-SUMMARY:Operations (EW204.1A) — Session 1 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
+SUMMARY:Operations (EW204.1A) — Week 1: Process
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Process — Workflows (1A) & Process Design (1B)\nPre-class: Pre-course survey by 6PM Tue 7/28\nRead: Mortgage Processing at Haas Bank\; prepare Pick-up Pizza Mini-Case\; Beleza Natural (Study.Net)\nSlides: Week 1 Before/After in bCourses Files > Lecture Materials\nDue: National Cranberry Cooperative case + group report — Tue 8/4\, 6PM\nReflection: Week 1 Reflection due Sat 8/1\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-1
 LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260805@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260805T180000
 DTEND:20260805T213000
-SUMMARY:Operations (EW204.1A) — Session 2 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
+SUMMARY:Operations (EW204.1A) — Week 2: Flow
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Flow — Bottlenecks (2A) & Flow Time (2B)\nPre-class: Cranberry case + group report by 6PM Tue 8/4\nRead: National Cranberry Cooperative (Study.Net)\; prepare Rent the Runway mini case\nSlides: Week 2 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #1 — Tue 8/11\, 6PM\nReflection: Week 2 Reflection due Sat 8/8\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-2
 LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260812@oski.app
-DTSTAMP:20260923T000000Z
-DTSTART:20260812T180000
-DTEND:20260812T213000
-SUMMARY:Operations (EW204.1A) — Session 3 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
-LOCATION:Chou Hall N370
+DTSTAMP:20260923T050000Z
+DTSTART:20260811T180000
+DTEND:20260811T213000
+SUMMARY:Operations (EW204.1A) — Week 3: Service (Queues) — COMBINED COHORT
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nCOMBINED COHORT: Tue 8/11 @ N100 (Blue + Gold together\; moved from Wed 8/12)\nTopic: Service — Queues (3A) & Service Operations (3B)\nPre-class: Concept Check #1 due 6PM day of class\nRead: Tessei case (Study.Net)\nBring: laptop\nSlides: Week 3 Before/After\; Time in Queue Calculator\nDue: Ritz-Carlton case + group report — Tue 8/18\, 9PM (extended)\nReflection: Week 3 Reflection due Sat 8/15\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-3
+LOCATION:Chou Hall N100
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260819@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260819T180000
 DTEND:20260819T213000
-SUMMARY:Operations (EW204.1A) — Session 4 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
+SUMMARY:Operations (EW204.1A) — Week 4: Quality
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Quality — Quality Control (4A) & Service Operations (4B)\nPre-class: Ritz-Carlton + group report by 8PM Tue 8/18\nRead: Ritz-Carlton case (Study.Net)\; Statistics Review\; Tessei case\nBring: laptop\nSlides: Week 4 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #2 — Wed 8/26\, 6PM\; Simulation team of 5 + "secret name" — Fri 8/28\nReflection: Week 4 Reflection due Sat 8/22\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-4
 LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260826@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260826T180000
 DTEND:20260826T213000
-SUMMARY:Operations (EW204.1A) — Session 5 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
+SUMMARY:Operations (EW204.1A) — Week 5: Inventory
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Inventory — Inventory Management (5A) & Capacity Allocation (5B)\nPre-class: Concept Check #2 by 6PM day before\; sim team secret name by 8/28\nRead: Matching Supply with Demand ch. 2.4–2.5\, 5.6–5.7\, 14.1–14.4\, 15.1–15.4\nSlides: Week 5 Before/After in bCourses Files > Lecture Materials\nReflection: Week 5 Reflection due Sat 8/29\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-5
 LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260902@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260902T180000
 DTEND:20260902T213000
-SUMMARY:Operations (EW204.1A) — Session 6 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
+SUMMARY:Operations (EW204.1A) — Week 6: Fashion (Risk Pooling & Sourcing)
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Fashion — Risk Pooling (6A) & Sourcing (6B)\nRead: Zara (Study.Net)\; Crocs (Study.Net)\nSlides: Week 6 Before/After in bCourses Files > Lecture Materials\nDue: prepare for simulation\nReflection: Week 6 Reflection due Sat 9/5\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-6
 LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260909@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260909T180000
-DTEND:20260909T213000
-SUMMARY:Operations (EW204.1A) — Session 7 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
-LOCATION:Chou Hall N370
+DTEND:20260909T220000
+SUMMARY:Operations (EW204.1A) — Week 7: Integrated Operations Simulation
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nNO REGULAR CLASS — Integrated Operations Simulation (Blue cohort)\nWhere: factora-sim.vercel.app — game code BLUE2026\, password = Berkeley student ID\nRead: simulation instructions (see syllabus)\nDue: Simulation Slides — Mon 9/14\, 11:59PM (PPTX)\; Self/Team Assessment — 6PM day of Week 8 class\nReflection: Week 7 Reflection due Sat 9/12\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-7
+LOCATION:Online — factora-sim.vercel.app
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260916@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260916T180000
 DTEND:20260916T213000
-SUMMARY:Operations (EW204.1A) — Session 8 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
+SUMMARY:Operations (EW204.1A) — Week 8: Networks (Omnichannel & Platform Ops)
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Networks — Omnichannel Operations (8A\, guest Yatin Kathpalia MBA '18) & Platform Operations / simulation debrief (8B)\nNote: Apple guest speaker cancelled\; dinner still 7:30–8:15PM\nPre-class: Simulation slides due Mon 9/14\, 11:59PM\; Peer Evaluation due 6PM day of class\nSlides: Week 8 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #3 — Wed 9/23\, 6PM\nReflection: Week 8 Reflection due Sat 9/19\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-8
 LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260923@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260923T180000
 DTEND:20260923T213000
-SUMMARY:Operations (EW204.1A) — Session 9 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session.
+SUMMARY:Operations (EW204.1A) — Week 9: Modern Ops (Scale & Innovation)
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Modern Ops — Operating Scale (9A\, guest Duco Pasmooij EMBA '01) & Innovation Management (9B)\nRead: Uber (Study.Net)\; Google X (optional)\; Southwest (optional)\nBring: computer (course wrap-up + evaluation)\nPre-class: Concept Check #3 by 6PM day before\nDue: Prepare Uber — Thu 9/24\, 6PM\; final exam prep\nReflection: Week 9 Reflection due Mon 10/5\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/week-9
 LOCATION:Chou Hall N370
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-20260930@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20260923T050000Z
 DTSTART:20260930T180000
-DTEND:20260930T213000
-SUMMARY:Operations (EW204.1A) — Session 10 of 10
-DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Sinchaisri\, W.\nWeekly Wednesday session. Final session.
+DTEND:20260930T210000
+SUMMARY:Operations (EW204.1A) — Final Exam (in person)
+DESCRIPTION:Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nIn-person final exam (30% of grade)\nBring: pen/pencil and calculator\nDue: Concept Check #4 — Thu 10/1\, 12:59AM\; Concept Check #5 — Sat 10/3\, 12:59AM\; Operations for My Job — Sun 10/4\, 11:59PM
+URL:https://bcourses.berkeley.edu/courses/1555698/pages/final-exam-3
 LOCATION:Chou Hall N370
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-teamwork@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260731T180000
+DTEND:20260731T183000
+SUMMARY:Operations — Teamwork Agreement due
+DESCRIPTION:EW204.1A Operations (1 pt). Due 6PM.
+URL:https://bcourses.berkeley.edu/courses/1555698
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-cranberry@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260804T180000
+DTEND:20260804T183000
+SUMMARY:Operations — Cranberry case + group report due
+DESCRIPTION:EW204.1A Operations (8 pts). Prepare National Cranberry Cooperative + submit group report. Due 6PM.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093763
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-cc1@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260811T180000
+DTEND:20260811T183000
+SUMMARY:Operations — Concept Check #1 due
+DESCRIPTION:EW204.1A Operations (4 pts). Due 6PM at start of Week 3 class. Unlimited attempts until the deadline.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9136668
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-ritz@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260818T210000
+DTEND:20260818T213000
+SUMMARY:Operations — Ritz-Carlton + group report due
+DESCRIPTION:EW204.1A Operations (8 pts). Prepare Ritz-Carlton case + submit group report. Extended to 9PM per Aug 7 class announcement.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9098560
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-cc2@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260826T180000
+DTEND:20260826T183000
+SUMMARY:Operations — Concept Check #2 due
+DESCRIPTION:EW204.1A Operations (4 pts). Due 6PM at start of Week 5 class. Unlimited attempts until the deadline.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9142722
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-simteam@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260828T233000
+DTEND:20260829T000000
+SUMMARY:Operations — Simulation team + secret name due
+DESCRIPTION:EW204.1A Operations. Register simulation team of 5 and submit "secret name". Due Fri 8/28.
+URL:https://bcourses.berkeley.edu/courses/1555698
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-lab2a@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260908T233000
+DTEND:20260909T000000
+SUMMARY:Operations — Ops Lab #2 Phase 1 due
+DESCRIPTION:EW204.1A Operations (2 pts). Individual. Due Mon 9/7\, 11:59PM per Sep 2 announcement (bCourses lists Tue 9/8\, 11:59PM).
+URL:https://bcourses.berkeley.edu/courses/1555698
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-lab2b@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260909T233000
+DTEND:20260909T235900
+SUMMARY:Operations — Ops Lab #2 Phase 2 due
+DESCRIPTION:EW204.1A Operations. Due Wed 9/9\, 11:59PM.
+URL:https://bcourses.berkeley.edu/courses/1555698
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-simslides@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260914T233000
+DTEND:20260915T000000
+SUMMARY:Operations — Simulation slides due
+DESCRIPTION:EW204.1A Operations (8 pts). PPTX strategy slides. Due Mon 9/14\, 11:59PM.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093762
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-simassess@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260915T180000
+DTEND:20260915T183000
+SUMMARY:Operations — Simulation self/team assessment due
+DESCRIPTION:EW204.1A Operations (2 pts). Due 6PM.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9152553
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-tour-brewery@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260918T150000
+DTEND:20260918T163000
+SUMMARY:Operations — Site tour: Alameda Brewery
+DESCRIPTION:EW204.1A Operations site tour\, per Sep 17 class announcement. Fri 9/18\, 3PM.
+URL:https://bcourses.berkeley.edu/courses/1555698
+LOCATION:Alameda Brewery
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-tour-petitpot@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260921T110000
+DTEND:20260921T123000
+SUMMARY:Operations — Site tour: Petit Pot (Emeryville)
+DESCRIPTION:EW204.1A Operations site tour\, per Sep 17 class announcement. Mon 9/21\, 11AM.
+URL:https://bcourses.berkeley.edu/courses/1555698
+LOCATION:Petit Pot\, Emeryville
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-cc3@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260923T180000
+DTEND:20260923T183000
+SUMMARY:Operations — Concept Check #3 due
+DESCRIPTION:EW204.1A Operations (4 pts). Due 6PM at start of Week 9 class. Unlimited attempts until the deadline.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9143857
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-peereval@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260923T180000
+DTEND:20260923T183000
+SUMMARY:Operations — Peer evaluation due
+DESCRIPTION:EW204.1A Operations (4 pts). Self + teammate evaluation. Due 6PM per bCourses.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9110069
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-uber@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260924T180000
+DTEND:20260924T183000
+SUMMARY:Operations — Prepare Uber due
+DESCRIPTION:EW204.1A Operations (5 pts). Prepare Uber case for Week 9. Due 6PM.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093758
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-tour-tcho@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260925T110000
+DTEND:20260925T123000
+SUMMARY:Operations — Site tour: TCHO Chocolate (Berkeley)
+DESCRIPTION:EW204.1A Operations site tour\, per Sep 17 class announcement. Fri 9/25\, 11AM.
+URL:https://bcourses.berkeley.edu/courses/1555698
+LOCATION:TCHO Chocolate\, Berkeley
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-integrity@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260926T005900
+DTEND:20260926T012900
+SUMMARY:Operations — Academic Integrity Assignment due
+DESCRIPTION:EW204.1A Operations (1 pt). Due 12:59AM.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9123834
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-lab3@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20260929T233000
+DTEND:20260930T000000
+SUMMARY:Operations — Ops Lab #3 due
+DESCRIPTION:EW204.1A Operations (2 pts). Due Sun 9/27 per Sep 17 announcement (bCourses lists Tue 9/29\, 11:59PM).
+URL:https://bcourses.berkeley.edu/courses/1555698
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-cc4@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20261001T005900
+DTEND:20261001T012900
+SUMMARY:Operations — Concept Check #4 due
+DESCRIPTION:EW204.1A Operations (4 pts). Due 12:59AM. Unlimited attempts until the deadline.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093761
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-cc5@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20261003T005900
+DTEND:20261003T012900
+SUMMARY:Operations — Concept Check #5 due
+DESCRIPTION:EW204.1A Operations (4 pts). Due 12:59AM. Unlimited attempts until the deadline.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093750
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-myjob@oski.app
+DTSTAMP:20260923T050000Z
+DTSTART:20261004T233000
+DTEND:20261005T000000
+SUMMARY:Operations — Operations for My Job due
+DESCRIPTION:EW204.1A Operations (10 pts). Final reflection deliverable. Due Sun 10/4\, 11:59PM.
+URL:https://bcourses.berkeley.edu/courses/1555698
 END:VEVENT
 END:VCALENDAR
