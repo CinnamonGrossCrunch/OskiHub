@@ -21,6 +21,13 @@ jobs:
           SLUG: ${{ github.event.client_payload.slug }}
           CONTENT: ${{ github.event.client_payload.content }}
         run: |
+          # Skip Google Apps Script failure notifications — these are delivery
+          # errors from the dispatcher itself, not newsletters. They used to get
+          # committed as newsletter files (e.g. Sep 2026).
+          if echo "$TITLE" | grep -qi "summary of failures for google apps script"; then
+            echo "⏭️ Skipping Apps Script failure notification: $TITLE"
+            exit 0
+          fi
           mkdir -p content/newsletters
           FILENAME="content/newsletters/${DATE}-${SLUG}.md"
           

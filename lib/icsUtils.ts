@@ -61,7 +61,11 @@ let icsMemo: { data: CohortEvents; params: string; timestamp: number } | null = 
 // File mappings for each cohort
 const COHORT_FILES = {
   blue: [
-    // Spring 2026 courses
+    // Fall 2026 courses (no cohort split published; shared across cohorts)
+    'ewmba200c_leadershipcomm_fall2026.ics',
+    'ewmba204_operations_fall2026.ics',
+    'ewmba209_strategicleadership_fall2026.ics',
+    // Spring 2026 courses (archive)
     'ewmba201b_macro_blue_spring2026.ics',
     'ewmba202_accounting_blue_spring2026.ics',
     'ewmba203_finance_blue_spring2026.ics',
@@ -74,7 +78,11 @@ const COHORT_FILES = {
     'teams@Haas.ics'
   ],
   gold: [
-    // Spring 2026 courses
+    // Fall 2026 courses (no cohort split published; shared across cohorts)
+    'ewmba200c_leadershipcomm_fall2026.ics',
+    'ewmba204_operations_fall2026.ics',
+    'ewmba209_strategicleadership_fall2026.ics',
+    // Spring 2026 courses (archive)
     'ewmba201b_macro_gold_spring2026.ics',
     'ewmba202_accounting_gold_spring2026.ics',
     'ewmba203_finance_gold_spring2026.ics',

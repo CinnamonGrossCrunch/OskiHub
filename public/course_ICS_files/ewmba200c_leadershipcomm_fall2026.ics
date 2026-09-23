@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//EWMBA Fall 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EW200C Leadership Communications (Fall 2026)
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:ew200c-20260815-kusar@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260815T090000
+DTEND:20260815T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Kusar)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Kusar\, A.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-20260815-morgenstern@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260815T090000
+DTEND:20260815T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Morgenstern)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Morgenstern\, A.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-20260815-bradbury@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260815T090000
+DTEND:20260815T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Bradbury)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Bradbury\, B.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-20260829-rittenberg@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260829T090000
+DTEND:20260829T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Rittenberg)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Rittenberg\, M.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-20260829-rose@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260829T090000
+DTEND:20260829T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Rose)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Rose\, R.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-20260829-gavshon@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260829T090000
+DTEND:20260829T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Gavshon)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Gavshon\, I.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-20260829-cholera@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260829T090000
+DTEND:20260829T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Cholera)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Cholera\, K.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-20260829-lewis@oski.app
+DTSTAMP:20260923T000000Z
+DTSTART:20260829T090000
+DTEND:20260829T180000
+SUMMARY:EW200C Leadership Communications — Small Group (Lewis)
+DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Lewis\, Jr.\, C.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
+LOCATION:Chou Hall N100
+END:VEVENT
+END:VCALENDAR
