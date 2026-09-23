@@ -37,6 +37,8 @@ export type CalendarEvent = {
   organizer?: string; // Event organizer
   status?: string; // CONFIRMED, TENTATIVE, CANCELLED
   categories?: string[]; // Event categories
+  /** Parking impact severity from generated feeds (X-PARKING-SEVERITY) */
+  parkingSeverity?: 'high' | 'medium' | 'low';
 };
 
 export type CohortEvents = {
@@ -401,9 +403,21 @@ function parseIcsToEvents(icsText: string, cohort: 'blue' | 'gold', filename?: s
         categories,
       };
 
+      // Parking-impact metadata from generated feeds (X-PARKING-SEVERITY:HIGH|MEDIUM|LOW).
+      // Extracted from the raw ICS block so it works regardless of node-ical's
+      // handling of custom X- properties.
+      try {
+        const rawBlock = getEventBlock(v.uid);
+        const sevMatch = rawBlock ? rawBlock.match(/^X-PARKING-SEVERITY:(HIGH|MEDIUM|LOW)/im) : null;
+        if (sevMatch) {
+          event.parkingSeverity = sevMatch[1].toLowerCase() as 'high' | 'medium' | 'low';
+        }
+      } catch {
+        /* non-fatal: severity stays undefined */
+      }
+
       // Sanitize Leading People related events: remove any 'team@haas' content
-      if (filename && (filename.includes('leadingpeople') || filename.includes('205_'))) {
-        if (event.description && /team@haas/i.test(event.description)) {
+      if (filename && (filename.includes('leadingpeople') || filename.includes('205_'))) {        if (event.description && /team@haas/i.test(event.description)) {
           const cleaned = event.description.replace(/team@haas/ig, '').replace(/\n\s*\n/g, '\n').trim();
           if (cleaned !== event.description) {
             safeLog(`Sanitized 'team@haas' from description in ${filename}`);
@@ -691,8 +705,10 @@ async function fetchCalBearsEvents(): Promise<CalendarEvent[]> {
   safeLog('Fetching Cal Bears home events');
 
   try {
-    const icsText = await fetchIcsData('cal_bears_home_2025_original.ics');
-    const events = parseIcsToEvents(icsText, 'blue', 'cal_bears_home_2025_original.ics'); // Default to blue for compatibility
+    // Generated weekly by scripts/event-parking/update_parking_events.py:
+    // home Berkeley events only, with X-PARKING-SEVERITY per venue.
+    const icsText = await fetchIcsData('parking-events/cal_bears_home.ics');
+    const events = parseIcsToEvents(icsText, 'blue', 'parking-events/cal_bears_home.ics'); // Default to blue for compatibility
     safeLog(`Successfully parsed ${events.length} events from Cal Bears calendar`);
     return events;
   } catch (error) {

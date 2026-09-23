@@ -330,8 +330,24 @@ export default function MonthGrid({
         const isToday = isSameDay(day, new Date());
         const hasGreekEvent = hasGreekTheaterEventOnDate(day);
         const hasCalBearsEvent = showCalBears && dayCalBearsEvents.length > 0;
-        // Parking impact: stadium / Greek Theater crowds disrupt campus parking & commute
-        const hasParkingImpact = (showGreekTheater && hasGreekEvent) || hasCalBearsEvent;
+        // Parking impact is severity-aware: only HIGH (football at Memorial
+        // Stadium) and MEDIUM (Greek concerts, Haas Pavilion) events trigger
+        // the badge. LOW events (Edwards Stadium, Spieker Aquatics, etc. —
+        // far side of campus) keep the bear icon but get no parking warning,
+        // since they don't affect Haas parking.
+        const parkingImpactTitles: string[] = [
+          ...(showGreekTheater
+            ? getGreekTheaterEventsForDate(day)
+                .filter((e) => e.severity !== 'low')
+                .map((e) => `Greek Theater: ${e.title} (${e.severity} impact)`)
+            : []),
+          ...(showCalBears
+            ? dayCalBearsEvents
+                .filter((e) => e.parkingSeverity && e.parkingSeverity !== 'low')
+                .map((e) => `Cal Bears: ${e.title} (${e.parkingSeverity} impact)`)
+            : []),
+        ];
+        const hasParkingImpact = parkingImpactTitles.length > 0;
 
         // Due-date detection: titles like "Operations — Concept Check #1 due".
         // Used for the red due-date ring and for prioritizing crowded days.
@@ -713,10 +729,7 @@ export default function MonthGrid({
                 {hasParkingImpact && (
                 <span
                   className="ml-auto flex-shrink-0 w-4 h-4 rounded-full bg-yellow-400 flex items-center justify-center cursor-help"
-                  title={`Parking impact — ${[
-                    ...(showGreekTheater ? getGreekTheaterEventsForDate(day).map(e => e.title) : []),
-                    ...dayCalBearsEvents.map(e => e.title),
-                  ].join('; ')}. Expect crowds and tight parking near campus.`}
+                  title={`Parking impact — ${parkingImpactTitles.join('; ')}. Expect crowds and tight parking near campus.`}
                 >
                   <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
                     <circle cx="12" cy="12" r="11" fill="#FACC15" />

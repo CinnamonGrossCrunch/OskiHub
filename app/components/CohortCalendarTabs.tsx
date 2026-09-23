@@ -810,17 +810,21 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   /** Current cohort's events */
   const currentEvents = cohortEvents[selectedCohort] || [];
 
-  /** Parking-impacting events today (stadium / Greek Theater crowds) */
+  /** Parking-impacting events today — HIGH/MEDIUM severity only (stadium / Greek crowds).
+      LOW-severity events (far side of campus) don't affect Haas parking and are excluded. */
   const todayForParking = new Date();
   const parkingTodayKey = format(todayForParking, 'yyyy-MM-dd');
   const parkingTodayEvents: string[] = [
     ...(showCalBears && cohortEvents.calBears
       ? cohortEvents.calBears
           .filter((ev) => isSameDay(new Date(ev.start), todayForParking))
-          .map((ev) => `Cal Bears: ${ev.title}`)
+          .filter((ev) => ev.parkingSeverity && ev.parkingSeverity !== 'low')
+          .map((ev) => `Cal Bears: ${ev.title} (${ev.parkingSeverity} impact)`)
       : []),
     ...(showGreekTheater
-      ? getGreekTheaterEventsForDate(todayForParking).map((e) => `Greek Theater: ${e.title}`)
+      ? getGreekTheaterEventsForDate(todayForParking)
+          .filter((e) => e.severity !== 'low')
+          .map((e) => `Greek Theater: ${e.title} (${e.severity} impact)`)
       : []),
   ];
 
