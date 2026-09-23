@@ -741,8 +741,7 @@ export default function MonthGrid({
                   }}
                 >
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <circle cx="12" cy="12" r="11" fill="#FACC15" />
-                    <circle cx="12" cy="12" r="10" fill="none" stroke="#DC2626" strokeWidth="2" />
+                    <circle cx="12" cy="12" r="10" fill="#FFFFFF" stroke="#DC2626" strokeWidth="2" />
                     <text x="12" y="19.2" textAnchor="middle" fontSize="20" fontWeight="900" fill="#111827">P</text>
                     <line x1="4.2" y1="4.2" x2="19.8" y2="19.8" stroke="#DC2626" strokeWidth="2.5" strokeLinecap="round" />
                   </svg>
@@ -1130,8 +1129,7 @@ export default function MonthGrid({
         </span>
         <span className="flex items-center gap-1">
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
-            <circle cx="12" cy="12" r="11" fill="#FACC15" />
-            <circle cx="12" cy="12" r="10" fill="none" stroke="#DC2626" strokeWidth="2" />
+            <circle cx="12" cy="12" r="10" fill="#FFFFFF" stroke="#DC2626" strokeWidth="2" />
             <text x="12" y="19.2" textAnchor="middle" fontSize="20" fontWeight="900" fill="#111827">P</text>
             <line x1="4.2" y1="4.2" x2="19.8" y2="19.8" stroke="#DC2626" strokeWidth="2.5" strokeLinecap="round" />
           </svg>
@@ -1157,8 +1155,7 @@ export default function MonthGrid({
             <div className="flex items-start justify-between gap-2 mb-1.5">
               <p className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <circle cx="12" cy="12" r="11" fill="#FACC15" />
-                  <circle cx="12" cy="12" r="10" fill="none" stroke="#DC2626" strokeWidth="2" />
+                  <circle cx="12" cy="12" r="10" fill="#FFFFFF" stroke="#DC2626" strokeWidth="2" />
                   <text x="12" y="19.2" textAnchor="middle" fontSize="20" fontWeight="900" fill="#111827">P</text>
                   <line x1="4.2" y1="4.2" x2="19.8" y2="19.8" stroke="#DC2626" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
