@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { startOfMonth, endOfMonth, startOfWeek, endOfWeek, eachDayOfInterval, isSameMonth, isSameDay, format, addDays, differenceInDays, isWithinInterval, startOfDay, endOfDay } from 'date-fns';
 import Image from 'next/image';
 import type { CalendarEvent } from '@/lib/icsUtils';
@@ -1136,10 +1137,12 @@ export default function MonthGrid({
           parking impact
         </span>
       </div>
-      {/* Click-to-open parking-impact popover (badge tap replaces hover tooltip) */}
-      {parkingPopover && (
+      {/* Click-to-open parking-impact popover (badge tap replaces hover tooltip).
+          Portaled to document.body: escapes transformed ancestors that would
+          break `fixed` positioning, and sits above the sidebar/header. */}
+      {parkingPopover && typeof document !== 'undefined' && createPortal(
         <div
-          className="fixed inset-0 z-[100]"
+          className="fixed inset-0 z-[9999]"
           onClick={() => setParkingPopover(null)}
         >
           <div
@@ -1181,7 +1184,8 @@ export default function MonthGrid({
               Expect crowds and tight parking near campus.
             </p>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
