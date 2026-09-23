@@ -1147,8 +1147,10 @@ export default function MonthGrid({
             aria-label="Parking impact details"
             className="absolute bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-slate-200 dark:border-slate-600 p-3 w-64"
             style={{
-              left: Math.max(8, Math.min(parkingPopover.x, (typeof window !== 'undefined' ? window.innerWidth : 400) - 272)),
-              top: parkingPopover.y + 10,
+              // Centered directly over the tap point (no offset), clamped to viewport.
+              left: Math.max(136, Math.min(parkingPopover.x, (typeof window !== 'undefined' ? window.innerWidth : 400) - 136)),
+              top: Math.max(70, Math.min(parkingPopover.y, (typeof window !== 'undefined' ? window.innerHeight : 800) - 70)),
+              transform: 'translate(-50%, -50%)',
             }}
             onClick={(e) => e.stopPropagation()}
           >
