@@ -330,6 +330,32 @@ export default function MonthGrid({
         const isToday = isSameDay(day, new Date());
         const hasGreekEvent = hasGreekTheaterEventOnDate(day);
         const hasCalBearsEvent = showCalBears && dayCalBearsEvents.length > 0;
+        // Parking impact: stadium / Greek Theater crowds disrupt campus parking & commute
+        const hasParkingImpact = (showGreekTheater && hasGreekEvent) || hasCalBearsEvent;
+
+        // Due-date detection: titles like "Operations — Concept Check #1 due".
+        // Used for the red due-date ring and for prioritizing crowded days.
+        const isDueEvent = (event: CalendarEvent): boolean => {
+          return /\bdue\b/i.test(event.title || '');
+        };
+
+        // Sort a day's events: due dates first, then by start time, so the most
+        // urgent items survive the visible cap on crowded days.
+        const sortedDayEvents = [...allDayEvents].sort((a, b) => {
+          const aDue = isDueEvent(a) ? 0 : 1;
+          const bDue = isDueEvent(b) ? 0 : 1;
+          if (aDue !== bDue) return aDue - bDue;
+          return new Date(a.start).getTime() - new Date(b.start).getTime();
+        });
+        const MAX_VISIBLE_DAY_EVENTS = 3;
+        const visibleDayEvents = sortedDayEvents.slice(0, MAX_VISIBLE_DAY_EVENTS);
+        const hiddenDayEvents = sortedDayEvents.slice(MAX_VISIBLE_DAY_EVENTS);
+
+        // Solid dot color mirroring the event's course color (for the overflow chip)
+        const dotColorFor = (event: CalendarEvent): string => {
+          const m = getCourseColor(event).match(/bg-[a-z]+-\d+(\/\d+)?/);
+          return m ? m[0] : 'bg-slate-400';
+        };
         const hasCampusGroupsEvent = showCampusGroups && dayCampusGroupsEvents.length > 0;
         const hasAcademicCalendarEvent = showAcademicCalendar && dayAcademicCalendarEvents.length > 0;
         const hasNewsletterEvent = showNewsletter && dayNewsletterEvents.length > 0;
@@ -379,7 +405,7 @@ export default function MonthGrid({
                 '201B': 'Macroeconomics',
                 '202': 'Financial Accounting',
                 '203': 'Introduction to Finance',
-                '204': 'Organizational Behavior',
+                '204': 'Operations',
                 '205': 'Leading People',
                 '206': 'Data & Decisions',
                 '207': 'Corporate Finance',
@@ -473,9 +499,14 @@ export default function MonthGrid({
               return `${glassBase} bg-amber-700/50 border-amber-600/50 text-white ${hoverGold}`;
             }
 
-            // EWMBA 204 (Operations & Data Analytics) - Slate
+            // EWMBA 204 (Operations) - Cyan
             if (event.source.includes('204_') || event.source.includes('operations')) {
-              return `${glassBase} bg-slate-700/50 border-slate-600/50 text-white ${hoverGold}`;
+              return `${glassBase} bg-cyan-700/50 border-cyan-600/50 text-white ${hoverGold}`;
+            }
+
+            // EWMBA 200C (Leadership Communication) - Rose
+            if (event.source.includes('200c') || event.source.includes('leadershipcomm')) {
+              return `${glassBase} bg-rose-700/50 border-rose-600/50 text-white ${hoverGold}`;
             }
 
             // EWMBA 205 (Leading People) - Crimson
@@ -679,10 +710,28 @@ export default function MonthGrid({
                   <span className="hidden md:inline text-[10px] text-white font-medium leading-tight">Event</span>
                 </div>
                 )}
+                {hasParkingImpact && (
+                <span
+                  className="ml-auto flex-shrink-0 w-4 h-4 rounded-full bg-yellow-400 flex items-center justify-center cursor-help"
+                  title={`Parking impact — ${[
+                    ...(showGreekTheater ? getGreekTheaterEventsForDate(day).map(e => e.title) : []),
+                    ...dayCalBearsEvents.map(e => e.title),
+                  ].join('; ')}. Expect crowds and tight parking near campus.`}
+                >
+                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
+                    <circle cx="12" cy="12" r="11" fill="#FACC15" />
+                    <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
+                    <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
+                  </svg>
+                </span>
+                )}
               </div>
               <div className="flex-1 flex flex-col gap-px overflow-hidden">
                 {allDayEvents.length > 0 ? (
-                allDayEvents.map((ev) => {
+                <>
+                {visibleDayEvents.map((ev) => {
+                  // Red ring marker for due-date events (all courses)
+                  const dueRing = isDueEvent(ev) ? 'ring-1 ring-inset ring-red-500/90' : '';
                   // Check if this is a newsletter event
                   const isNewsletterEvent = ev.source === 'newsletter' || (ev.source && ev.source.includes('newsletter'));
                   
@@ -708,7 +757,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className="flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity backdrop-blur- bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 text-white font-medium overflow-hidden"
+                        className={`flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity backdrop-blur- bg-clip-padding saturate-50 shadow-sm bg-purple-600/60 text-white font-medium overflow-hidden ${dueRing}`}
                         title={isMultiple ? `${newsletterEv.multipleEvents?.length || 0} Newsletter Events` : `Newsletter: ${ev.title}`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -731,7 +780,7 @@ export default function MonthGrid({
                       return (
                         <div
                           key={ev.uid ?? ev.title + ev.start}
-                          className={`flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1`}
+                          className={`flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden flex items-center gap-1 ${dueRing}`}
                           title={`${ev.title} (${eventSpanDays} days)`}
                           onClick={(e) => {
                             e.stopPropagation();
@@ -753,7 +802,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden`}
+                        className={`flex-1 min-h-0 max-h-full text-[10px] px-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} font-medium overflow-hidden ${dueRing}`}
                         title={ev.title}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -779,7 +828,7 @@ export default function MonthGrid({
                     return (
                       <div
                         key={ev.uid ?? ev.title + ev.start}
-                        className={`flex-1 min-h-0 max-h-full text-[10px] px-1 py-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden`}
+                        className={`flex-1 min-h-0 max-h-full text-[10px] px-1 py-0.5 rounded-sm cursor-pointer hover:opacity-80 transition-opacity ${courseColor} ${eventHasQuiz ? 'font-bold' : 'font-medium'} overflow-hidden ${dueRing}`}
                         title={`${assignment ? assignment + ' - ' : ''}${courseName} (${ev.title})${eventHasQuiz ? ' - QUIZ TODAY!' : ''}`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -794,7 +843,25 @@ export default function MonthGrid({
                       </div>
                     );
                   }
-                })
+                })}
+                {hiddenDayEvents.length > 0 && (
+                <div
+                  className="flex-shrink-0 flex items-center gap-1 px-1 py-px rounded-sm cursor-pointer bg-slate-700/60 hover:bg-slate-600/70 transition-colors"
+                  title={`${hiddenDayEvents.length} more: ${hiddenDayEvents.map(e => e.title).join(', ')}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (onMultiEventClick) onMultiEventClick(allDayEvents, day);
+                  }}
+                >
+                  <span className="flex items-center">
+                    {hiddenDayEvents.slice(0, 8).map((hev, i) => (
+                      <span key={hev.uid ?? `${hev.title}-${i}`} className={`w-1.5 h-1.5 rounded-full -ml-0.5 first:ml-0 border border-black/50 ${dotColorFor(hev)}`} />
+                    ))}
+                  </span>
+                  <span className="text-[9px] text-white/85 font-semibold">+{hiddenDayEvents.length}</span>
+                </div>
+                )}
+                </>
                 ) : (
                 <div className="flex-1" />
                 )}
@@ -1023,6 +1090,29 @@ export default function MonthGrid({
             </div>
         );
       })}
+      </div>
+      {/* Legend: course colors, due-date ring, parking-impact badge */}
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 px-2 pt-1.5 pb-1 text-[10px] text-white/60">
+        <span className="flex items-center gap-1">
+          <span className="w-2 h-2 rounded-sm bg-cyan-700/70 border border-cyan-600/60" /> Operations
+        </span>
+        <span className="flex items-center gap-1">
+          <span className="w-2 h-2 rounded-sm bg-rose-700/70 border border-rose-600/60" /> Leadership Comm
+        </span>
+        <span className="flex items-center gap-1">
+          <span className="w-2 h-2 rounded-sm bg-purple-800/70 border border-purple-700/60" /> Strategy
+        </span>
+        <span className="flex items-center gap-1">
+          <span className="w-2 h-2 rounded-sm bg-slate-600/40 ring-1 ring-inset ring-red-500/90" /> due date
+        </span>
+        <span className="flex items-center gap-1">
+          <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
+            <circle cx="12" cy="12" r="11" fill="#FACC15" />
+            <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
+            <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
+          </svg>
+          parking impact
+        </span>
       </div>
     </div>
   );

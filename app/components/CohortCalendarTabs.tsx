@@ -7,10 +7,12 @@ import { useState, useEffect, useRef } from 'react';
 import { format, addMonths, subMonths, isSameDay } from 'date-fns';
 import Image from 'next/image';
 import MonthGrid from './MonthGrid';
+import ParkingBanner from './ParkingBanner';
 import EventDetailModal, { MultiEventModal } from './EventDetailModal';
 import type { CalendarEvent, CohortEvents } from '@/lib/icsUtils';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
 import { trackEvent } from '@/lib/analytics';
+import { getGreekTheaterEventsForDate } from '@/lib/greekTheater';
 
 // ============================================================================
 // TYPES & INTERFACES
@@ -808,6 +810,20 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   /** Current cohort's events */
   const currentEvents = cohortEvents[selectedCohort] || [];
 
+  /** Parking-impacting events today (stadium / Greek Theater crowds) */
+  const todayForParking = new Date();
+  const parkingTodayKey = format(todayForParking, 'yyyy-MM-dd');
+  const parkingTodayEvents: string[] = [
+    ...(showCalBears && cohortEvents.calBears
+      ? cohortEvents.calBears
+          .filter((ev) => isSameDay(new Date(ev.start), todayForParking))
+          .map((ev) => `Cal Bears: ${ev.title}`)
+      : []),
+    ...(showGreekTheater
+      ? getGreekTheaterEventsForDate(todayForParking).map((e) => `Greek Theater: ${e.title}`)
+      : []),
+  ];
+
   // ==========================================================================
   // RENDER
   // ==========================================================================
@@ -1156,6 +1172,11 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
        
         </div>
       </header>
+
+      {/* ================================================================== */}
+      {/* PARKING ALERT (day-of, dismissible)                                */}
+      {/* ================================================================== */}
+      <ParkingBanner dateKey={parkingTodayKey} events={parkingTodayEvents} />
 
       {/* ================================================================== */}
       {/* CALENDAR GRID                                                      */}
