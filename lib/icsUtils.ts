@@ -1,5 +1,5 @@
 import ical from 'node-ical';
-import { addDays, isAfter, isBefore } from 'date-fns';
+import { addDays, isBefore } from 'date-fns';
 import { fromZonedTime } from 'date-fns-tz';
 import fs from 'fs';
 import path from 'path';
@@ -547,7 +547,9 @@ async function fetchCohortEvents(cohort: 'blue' | 'gold'): Promise<CalendarEvent
 }
 
 /**
- * Filter events by date range
+ * Filter events by date range — full history, no past cutoff.
+ * All past events are kept; only the upcoming portion is capped at `limit`
+ * so history can never crowd out future events.
  */
 function filterEventsByDateRange(
   events: CalendarEvent[], 
@@ -556,16 +558,19 @@ function filterEventsByDateRange(
 ): CalendarEvent[] {
   const now = new Date();
   const horizon = addDays(now, daysAhead);
-  const pastLimit = addDays(now, -120); // Show events from 120 days ago (matches calendar.ts)
 
   const filteredEvents = events.filter(event => {
     const start = new Date(event.start);
-    return isAfter(start, pastLimit) && isBefore(start, horizon);
+    return isBefore(start, horizon);
   });
 
-  // Sort by start date and limit results
+  // Sort by start date (ascending)
   filteredEvents.sort((a, b) => +new Date(a.start) - +new Date(b.start));
-  return filteredEvents.slice(0, limit);
+
+  // Keep every past event; cap only the upcoming slice
+  const past = filteredEvents.filter(event => +new Date(event.start) < +now);
+  const upcoming = filteredEvents.filter(event => +new Date(event.start) >= +now);
+  return [...past, ...upcoming.slice(0, limit)];
 }
 
 /**

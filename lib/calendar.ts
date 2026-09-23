@@ -1,5 +1,5 @@
 import ical from 'node-ical';
-import { addDays, isAfter, isBefore } from 'date-fns';
+import { addDays, isBefore } from 'date-fns';
 import fs from 'fs';
 import path from 'path';
 
@@ -76,7 +76,7 @@ export async function getUpcomingEvents(
   const data = ical.sync.parseICS(text);
   const now = new Date();
   const horizon = addDays(now, daysAhead);
-  const pastLimit = addDays(now, -120); // Show events from 120 days ago
+  // No past cutoff: full event history stays visible when scrolling back
 
   const events: CalendarEvent[] = [];
 
@@ -88,8 +88,7 @@ export async function getUpcomingEvents(
     const start = v.start as Date;
     const end = (v.end as Date) || undefined;
 
-    // Show events within range (past 30 days to future daysAhead)
-    if (!isAfter(start, pastLimit)) continue;
+    // Show all events from the beginning of history up to future daysAhead
     if (!isBefore(start, horizon)) continue;
 
     const allDay =
@@ -134,7 +133,10 @@ export async function getUpcomingEvents(
     });
   }
 
-  // sort and cap
+  // sort ascending; keep every past event, cap only upcoming at limit
+  // so history can never crowd out future events
   events.sort((a, b) => +new Date(a.start) - +new Date(b.start));
-  return events.slice(0, limit);
+  const past = events.filter(e => +new Date(e.start) < +now);
+  const upcoming = events.filter(e => +new Date(e.start) >= +now);
+  return [...past, ...upcoming.slice(0, limit)];
 }
