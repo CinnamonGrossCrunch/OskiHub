@@ -1,0 +1,265 @@
+{
+  "courseId": "ew204",
+  "dueEvents": [
+    {
+      "core": "Cranberry case + group report",
+      "description": "EW204.1A Operations (6 pts). Prepare National Cranberry Cooperative + submit group report. Due 6PM.",
+      "end": "20260804T183000",
+      "location": "",
+      "start": "20260804T180000",
+      "title": "Operations \u2014 Cranberry case + group report due",
+      "uid": "ew204-due-cranberry@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093763"
+    },
+    {
+      "core": "Concept Check #1",
+      "description": "EW204.1A Operations (4 pts). Due 6PM at start of Week 3 class. Unlimited attempts until the deadline.",
+      "end": "20260811T183000",
+      "location": "",
+      "start": "20260811T180000",
+      "title": "Operations \u2014 Concept Check #1 due",
+      "uid": "ew204-due-cc1@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093751"
+    },
+    {
+      "core": "Ritz-Carlton + group report",
+      "description": "EW204.1A Operations (6 pts). Prepare Ritz-Carlton case + submit group report. Extended to 9PM per Aug 7 class announcement.",
+      "end": "20260818T213000",
+      "location": "",
+      "start": "20260818T210000",
+      "title": "Operations \u2014 Ritz-Carlton + group report due",
+      "uid": "ew204-due-ritz@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093764"
+    },
+    {
+      "core": "Concept Check #2",
+      "description": "EW204.1A Operations (4 pts). Due 6PM at start of Week 5 class. Unlimited attempts until the deadline.",
+      "end": "20260826T183000",
+      "location": "",
+      "start": "20260826T180000",
+      "title": "Operations \u2014 Concept Check #2 due",
+      "uid": "ew204-due-cc2@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093749"
+    },
+    {
+      "core": "Simulation team + secret name",
+      "description": "EW204.1A Operations. Register simulation team of 5 and submit \"secret name\". Due Fri 8/28.",
+      "end": "20260829T000000",
+      "location": "",
+      "start": "20260828T233000",
+      "title": "Operations \u2014 Simulation team + secret name due",
+      "uid": "ew204-due-simteam@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "core": "Ops Lab #2 Phase 1",
+      "description": "EW204.1A Operations (2 pts). Individual. Due Mon 9/7, 11:59PM per Sep 2 announcement (bCourses lists Tue 9/8, 11:59PM).",
+      "end": "20260909T000000",
+      "location": "",
+      "start": "20260908T233000",
+      "title": "Operations \u2014 Ops Lab #2 Phase 1 due",
+      "uid": "ew204-due-lab2a@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "core": "Ops Lab #2 Phase 2",
+      "description": "EW204.1A Operations. Due Wed 9/9, 11:59PM.",
+      "end": "20260909T235900",
+      "location": "",
+      "start": "20260909T233000",
+      "title": "Operations \u2014 Ops Lab #2 Phase 2 due",
+      "uid": "ew204-due-lab2b@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "core": "Simulation slides",
+      "description": "EW204.1A Operations (8 pts). PPTX strategy slides. Due Mon 9/14, 11:59PM.",
+      "end": "20260915T000000",
+      "location": "",
+      "start": "20260914T233000",
+      "title": "Operations \u2014 Simulation slides due",
+      "uid": "ew204-due-simslides@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093761"
+    },
+    {
+      "core": "Simulation self/team assessment",
+      "description": "EW204.1A Operations (0 pts). Due 6PM.",
+      "end": "20260915T183000",
+      "location": "",
+      "start": "20260915T180000",
+      "title": "Operations \u2014 Simulation self/team assessment due",
+      "uid": "ew204-due-simassess@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093760"
+    },
+    {
+      "core": "Concept Check #3",
+      "description": "EW204.1A Operations (4 pts). Due 6PM at start of Week 9 class. Unlimited attempts until the deadline.",
+      "end": "20260923T183000",
+      "location": "",
+      "start": "20260923T180000",
+      "title": "Operations \u2014 Concept Check #3 due",
+      "uid": "ew204-due-cc3@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093750"
+    },
+    {
+      "core": "Peer evaluation",
+      "description": "EW204.1A Operations. Self + teammate evaluation. Due 6PM day of class per bCourses Week 8 page.\nNot a Canvas assignment \u2014 see course page.",
+      "end": "20260916T183000",
+      "location": "",
+      "start": "20260916T180000",
+      "title": "Operations \u2014 Peer evaluation due",
+      "uid": "ew204-due-peereval@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "core": "Academic Integrity Assignment",
+      "description": "EW204.1A Operations (1 pt). Due 12:59AM.",
+      "end": "20260926T012900",
+      "location": "",
+      "start": "20260926T005900",
+      "title": "Operations \u2014 Academic Integrity Assignment due",
+      "uid": "ew204-due-integrity@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9144993"
+    },
+    {
+      "core": "Ops Lab #3",
+      "description": "EW204.1A Operations (2 pts). Due Sun 9/27 per Sep 17 announcement (bCourses lists Tue 9/29, 11:59PM).",
+      "end": "20260930T000000",
+      "location": "",
+      "start": "20260929T233000",
+      "title": "Operations \u2014 Ops Lab #3 due",
+      "uid": "ew204-due-lab3@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "core": "Operations for My Job",
+      "description": "EW204.1A Operations (10 pts). Final reflection deliverable. Due Sun 10/4, 11:59PM.",
+      "end": "20261005T000000",
+      "location": "",
+      "start": "20261004T233000",
+      "title": "Operations \u2014 Operations for My Job due",
+      "uid": "ew204-due-myjob@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    }
+  ],
+  "sessions": [
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Process \u2014 Workflows (1A) & Process Design (1B)\nPre-class: Pre-course survey by 6PM Tue 7/28\nRead: Mortgage Processing at Haas Bank; prepare Pick-up Pizza Mini-Case; Beleza Natural (Study.Net)\nSlides: Week 1 Before/After in bCourses Files > Lecture Materials\nDue: National Cranberry Cooperative case + group report \u2014 Tue 8/4, 6PM\nReflection: Week 1 Reflection due Sun 8/2, 11:59PM",
+      "end": "20260729T213000",
+      "location": "Chou Hall N370",
+      "start": "20260729T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 1: Process",
+      "uid": "ew204-20260729@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-1"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Flow \u2014 Bottlenecks (2A) & Flow Time (2B)\nPre-class: Cranberry case + group report by 6PM Tue 8/4\nRead: National Cranberry Cooperative (Study.Net); prepare Rent the Runway mini case\nSlides: Week 2 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #1 \u2014 Tue 8/11, 6PM\nReflection: Week 2 Reflection due Mon 8/10, 11:59PM",
+      "end": "20260805T213000",
+      "location": "Chou Hall N370",
+      "start": "20260805T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 2: Flow",
+      "uid": "ew204-20260805@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-2"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nCOMBINED COHORT: Tue 8/11 @ N100 (Blue + Gold together; moved from Wed 8/12)\nTopic: Service \u2014 Queues (3A) & Service Operations (3B)\nPre-class: Concept Check #1 due 6PM day of class\nRead: Tessei case (Study.Net)\nBring: laptop\nSlides: Week 3 Before/After; Time in Queue Calculator\nDue: Ritz-Carlton case + group report \u2014 Tue 8/18, 9PM (extended)\nReflection: Week 3 Reflection due Tue 8/18, 11:59PM",
+      "end": "20260811T213000",
+      "location": "Chou Hall N100",
+      "start": "20260811T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 3: Service (Queues) \u2014 COMBINED COHORT",
+      "uid": "ew204-20260812@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-3"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Quality \u2014 Quality Control (4A) & Service Operations (4B)\nPre-class: Ritz-Carlton + group report by 8PM Tue 8/18\nRead: Ritz-Carlton case (Study.Net); Statistics Review; Tessei case\nBring: laptop\nSlides: Week 4 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #2 \u2014 Wed 8/26, 6PM; Simulation team of 5 + \"secret name\" \u2014 Fri 8/28\nReflection: Week 4 Reflection due Tue 8/25, 11:59PM",
+      "end": "20260819T213000",
+      "location": "Chou Hall N370",
+      "start": "20260819T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 4: Quality",
+      "uid": "ew204-20260819@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-4"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Inventory \u2014 Inventory Management (5A) & Capacity Allocation (5B)\nPre-class: Concept Check #2 by 6PM day before; sim team secret name by 8/28\nRead: Matching Supply with Demand ch. 2.4\u20132.5, 5.6\u20135.7, 14.1\u201314.4, 15.1\u201315.4\nSlides: Week 5 Before/After in bCourses Files > Lecture Materials\nReflection: Week 5 Reflection due Tue 9/1, 11:59PM",
+      "end": "20260826T213000",
+      "location": "Chou Hall N370",
+      "start": "20260826T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 5: Inventory",
+      "uid": "ew204-20260826@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-5"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Fashion \u2014 Risk Pooling (6A) & Sourcing (6B)\nRead: Zara (Study.Net); Crocs (Study.Net)\nSlides: Week 6 Before/After in bCourses Files > Lecture Materials\nDue: prepare for simulation\nReflection: Week 6 Reflection due Wed 9/9, 6PM",
+      "end": "20260902T213000",
+      "location": "Chou Hall N370",
+      "start": "20260902T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 6: Fashion (Risk Pooling & Sourcing)",
+      "uid": "ew204-20260902@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-6"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nNO REGULAR CLASS \u2014 Integrated Operations Simulation (Blue cohort)\nWhere: factora-sim.vercel.app \u2014 game code BLUE2026, password = Berkeley student ID\nRead: simulation instructions (see syllabus)\nDue: Simulation Slides \u2014 Mon 9/14, 11:59PM (PPTX); Self/Team Assessment \u2014 6PM day of Week 8 class\nReflection: Week 7 Reflection due Sat 9/12, 11:59PM",
+      "end": "20260909T220000",
+      "location": "Online \u2014 factora-sim.vercel.app",
+      "start": "20260909T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 7: Integrated Operations Simulation",
+      "uid": "ew204-20260909@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-7"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Networks \u2014 Omnichannel Operations (8A, guest Yatin Kathpalia MBA '18) & Platform Operations / simulation debrief (8B)\nNote: Apple guest speaker cancelled; dinner still 7:30\u20138:15PM\nPre-class: Simulation slides due Mon 9/14, 11:59PM; Peer Evaluation due 6PM day of class\nSlides: Week 8 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #3 \u2014 Wed 9/23, 6PM\nReflection: Week 8 Reflection due Wed 9/23, 6PM",
+      "end": "20260916T213000",
+      "location": "Chou Hall N370",
+      "start": "20260916T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 8: Networks (Omnichannel & Platform Ops)",
+      "uid": "ew204-20260916@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-8"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Modern Ops \u2014 Operating Scale (9A, guest Duco Pasmooij EMBA '01) & Innovation Management (9B)\nRead: Uber (Study.Net); Google X (optional); Southwest (optional)\nBring: computer (course wrap-up + evaluation)\nPre-class: Concept Check #3 by 6PM day before\nDue: final exam prep (in-person)",
+      "end": "20260923T213000",
+      "location": "Chou Hall N370",
+      "start": "20260923T180000",
+      "title": "Operations (EW204.1A) \u2014 Week 9: Modern Ops (Scale & Innovation)",
+      "uid": "ew204-20260923@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/week-9"
+    },
+    {
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nIn-person final exam (30% of grade)\nBring: pen/pencil and calculator\nDue: Operations for My Job \u2014 Sun 10/4, 11:59PM",
+      "end": "20260930T210000",
+      "location": "Chou Hall N370",
+      "start": "20260930T180000",
+      "title": "Operations (EW204.1A) \u2014 Final Exam (in person)",
+      "uid": "ew204-20260930@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/pages/final-exam-3"
+    },
+    {
+      "description": "EW204.1A Operations site tour, per Sep 17 class announcement. Fri 9/18, 3PM.",
+      "end": "20260918T163000",
+      "location": "Alameda Brewery",
+      "start": "20260918T150000",
+      "title": "Operations \u2014 Site tour: Alameda Brewery",
+      "uid": "ew204-tour-brewery@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "description": "EW204.1A Operations site tour, per Sep 17 class announcement. Mon 9/21, 11AM.",
+      "end": "20260921T123000",
+      "location": "Petit Pot, Emeryville",
+      "start": "20260921T110000",
+      "title": "Operations \u2014 Site tour: Petit Pot (Emeryville)",
+      "uid": "ew204-tour-petitpot@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "description": "EW204.1A Operations site tour, per Sep 17 class announcement. Fri 9/25, 11AM.",
+      "end": "20260925T123000",
+      "location": "TCHO Chocolate, Berkeley",
+      "start": "20260925T110000",
+      "title": "Operations \u2014 Site tour: TCHO Chocolate (Berkeley)",
+      "uid": "ew204-tour-tcho@oski.app",
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    }
+  ],
+  "sourceFile": "public/course_ICS_files/ewmba204_operations_fall2026.ics"
+}

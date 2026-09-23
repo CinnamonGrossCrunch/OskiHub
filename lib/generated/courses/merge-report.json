@@ -1,0 +1,26 @@
+{
+  "ew200c": {
+    "canvasOnly": 12,
+    "claimIssues": [],
+    "courseId": "ew200c",
+    "ghostsDropped": [],
+    "merged": 0,
+    "scaffoldKept": 0
+  },
+  "ew204": {
+    "canvasOnly": 12,
+    "claimIssues": [],
+    "courseId": "ew204",
+    "ghostsDropped": [],
+    "merged": 12,
+    "scaffoldKept": 2
+  },
+  "ew209": {
+    "canvasOnly": 0,
+    "claimIssues": [],
+    "courseId": "ew209",
+    "ghostsDropped": [],
+    "merged": 0,
+    "scaffoldKept": 0
+  }
+}

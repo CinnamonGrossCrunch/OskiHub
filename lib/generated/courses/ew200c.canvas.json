@@ -1,0 +1,173 @@
+{
+  "assignments": [
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091167",
+      "id": 9091167,
+      "name": "Curtain Up / Curtain Down Presentations",
+      "pointsPossible": 5.0,
+      "published": true
+    },
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091180",
+      "id": 9091180,
+      "name": "Persuasive Presentation",
+      "pointsPossible": 10.0,
+      "published": true
+    },
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091174",
+      "id": 9091174,
+      "name": "Improvement",
+      "pointsPossible": 5.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-26T07:59:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9144968",
+      "id": 9144968,
+      "name": "Academic Integrity Assignment (Fall 2026)",
+      "pointsPossible": 1.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-16T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091183",
+      "id": 9091183,
+      "name": "Reading Reflections",
+      "pointsPossible": 0.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-23T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091182",
+      "id": 9091182,
+      "name": "Persuasive Presentation Topic Submission",
+      "pointsPossible": 0.25,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-23T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091175",
+      "id": 9091175,
+      "name": "LC Vid 1 Connect Your Why to Your Audience",
+      "pointsPossible": 0.25,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-23T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091176",
+      "id": 9091176,
+      "name": "LC Vid 2 Persuasive Presentation: Prepare Your Content",
+      "pointsPossible": 0.25,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-23T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091177",
+      "id": 9091177,
+      "name": "LC Vid 3 Persuasive Presentation: Prepare Your Delivery",
+      "pointsPossible": 0.25,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-23T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091178",
+      "id": 9091178,
+      "name": "LC Vid 4 Slide Design",
+      "pointsPossible": 0.25,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-23T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091179",
+      "id": 9091179,
+      "name": "LC Vid 5 Storytelling with Data",
+      "pointsPossible": 0.25,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-29T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091181",
+      "id": 9091181,
+      "name": "Persuasive Presentation Slides Submission",
+      "pointsPossible": 5.0,
+      "published": true
+    },
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091169",
+      "id": 9091169,
+      "name": "Day 1 Participation",
+      "pointsPossible": 5.0,
+      "published": true
+    },
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091171",
+      "id": 9091171,
+      "name": "Day 2 Participation",
+      "pointsPossible": 5.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-29T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9101479",
+      "id": 9101479,
+      "name": "Persuasive  Presentation Coaching Session",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-13T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091173",
+      "id": 9091173,
+      "name": "Final Assignment Part 1:  Authentic Leadership Reflection Activities",
+      "pointsPossible": 1.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-13T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091172",
+      "id": 9091172,
+      "name": "Final Assignment Part 2: Authentic Leadership Self-Reflection Final Paper",
+      "pointsPossible": 9.0,
+      "published": true
+    },
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091168",
+      "id": 9091168,
+      "name": "Day 1 Feedback Form ",
+      "pointsPossible": 0.0,
+      "published": true
+    },
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555570/assignments/9091170",
+      "id": 9091170,
+      "name": "Day 2 Feedback Form",
+      "pointsPossible": 0.0,
+      "published": true
+    }
+  ],
+  "canvasCourseId": 1555570,
+  "courseId": "ew200c",
+  "pages": [
+    {
+      "text": "EWMBA 200C Faculty Team Icon Progress Bar/Navigation (built in browser, hidden in app) This is a team-taught class, and you will meet and work with many of us. Below, please find the profiles of the instructors for the course.&nbsp; Mark Rittenberg | Lead Faculty rittenberg@haas.berkeley.edu For over twenty years, Dr. Mark Rittenberg has helped organizations create communities of excellence among their people and empowered individuals to become true leaders with the ability to actualize a vision -- all through the power of communication. Dr. Rittenberg believes that important personal, social, and business problems can be effectively addressed using the Active Communicating methodology he developed -- which draws upon the actor's discipline of engaging, creative and effective communication. Dr. Rittenberg is on the business and leadership communications faculty at the UC Berkeley Haas School of Business where he was awarded the The Earl F. Cheit Award For Excellence In Teaching . Additionally he currently teaches expressive communication and presentation in Executive Education Programs at the Kellogg School of Management at Northwestern University, the Haas School of Business at the University of California at Berkeley, the University of San Francisco, the Weatherhead School of Management at Case Western Reserve University, and the Olin School of Business at Washington University in St. Louis. Dr. Rittenberg holds a Doctorate in International and Multicultural Education from the University of San Francisco. He also holds a Masters of Arts Degree in Interdisciplinary Studies in Education from San Francisco State and a Bachelor of Arts degree from University of California at Berkeley where he double majored in Education and Social Welfare. &nbsp; Doy Charnsupharindr | Lead Faculty doy@berkeley.edu Doy is an executive coach and an instructor of MBA-level courses on developing leadership, communication, and coaching skills. He has taught at UC Berkeley\u2019s Haas School of Business, UC Davis\u2019 Graduate School of Management, and Berkeley Executive Education. He is also guest lecturer at the Berlin School of Creative Leadership (Germany), Nanyang Business School (Singapore) and the Thailand Management Association (Thailand). As an instructor and consultant, Doy draws upon his prior professional experiences in management, customer service, business strategy, operations, and product management for the financial services and high technology industry. Today, he is the CEO of the Berkeley Executive Coaching Institute. He continues to coach and lead workshops for some of the largest corporations, as well as non-profit and governmental organizations worldwide. The clients he has worked with include Adobe, Caterpillar, Cisco, Facebook, Genentech, McKinsey, Moody\u2019s, Novartis, Pixar, and Salesforce. Doy has an MBA from UC Berkeley\u2019s Haas Business School (2011) and a BA in Economics from Stanford University (2000). He is a certified executive coach from BECI and has a certificate in Managing Implicit Bias from UC Berkeley. &nbsp; &nbsp; &nbsp; Ben Bradbury | Course Administrator &amp; Lead Faculty bbradbur@berkeley.edu Ben Bradbury is a lecturer at Berkeley Haas. Ben also manages the R&amp;D portfolio at GALLO and brings 15+ years of business experience spanning R&amp;D, Finance, Lean Six Sigma, and Innovation Management. Ben enjoys empowering people, solving complex problems, and developing new capabilities. He became more involved in teaching after an epiphany in the Advanced Communications elective and has worked in 200C and other communication courses since 2015. When it comes to storytelling, Ben's enjoys \"bringing the data to life\" by finding the emotion and the story behind what some may see as a dry table of numbers or facts. However, Ben's larger passion has become coaching and developing others and is an Executive Coach through the Berkeley Executive Coaching Institute.&nbsp; &nbsp; Kunal Cholera kunal_cholera@berkeley.edu Kunal is passionate about growing leaders and helping them have an impact. He loves learning new things &amp; teaching it in an easy to understand format. He teaches on weekends at Berkeley Haas &amp; shares his learnings online on Youtube. Professionally he is a software engineer by training and has worked at LinkedIn for most of his career where he grew his responsibilities from Software Engineer to Director. He has managed a team of 50+ engineers &amp; several senior managers and has built both large scale consumer and enterprise applications used by millions of customers and users globally. He knows how to attract, retain &amp; grow top talent at scale. He values hard work, commitment to excellence and runs his life on trust.&nbsp; &nbsp; Ingrid Gavshon gavshon@berkeley.edu&nbsp; Ingrid Gavshon helps other become change makers who live their values and who bring humanity to the workplace. With 25 years running a multimedia company and 10 years teaching Leadership Communications and Executive Coaching, she has worked extensively in Asia, Southern Africa, Europe and the USA. She brings the experience of working globally to Leadership Communications and to the companies she serves. Ingrid serves as a lecturer at UC Berkeley Haas School of Business, in Leadership Communications, Creativity and Leadership and the Seminar in International Business (SIB) South Africa. She teaches Leadership Communications for Engineers at the Coleman Fung Institute for Engineering Leadership. In addition, she teaches at the UC Berkeley Executive Education's High Impact Leadership and Advanced Leadership Presence Programs. Ingrid is a partner and Chief of DEI and Social Justice Programs at the Berkeley Executive Coaching Institute (BECI), an Executive Coach and senior training consultant. Ingrid earned her MBA from the Berlin School of Creative Leadership and her UC Berkeley Executive Coaching Institute Certification in 2010. &nbsp; Amelia Kusar amelia_kusar@haas.berkeley.edu &nbsp; Amelia Rose Kusar graduated with her MBA from the UC Berkeley Haas School of Business in 2018, where she served as Commencement Speaker and Student Association President. She now serves as an Assistant Lecturer at Haas, teaching classes in the undergraduate program, the Evening &amp; Weekend and Executive MBA programs, and in Executive Education.&nbsp; Prior to joining Dr. Rittenberg's team, Amelia spent over a decade in the performing arts, where she worked with the world\u2019s top classical musicians and most prestigious concert halls. Amelia spent seven years at the San Francisco Symphony, in the Communications of Marketing departments. She has extensive experience in public relations, marketing, audience development, operations, and change management. &nbsp; Amelia received her Bachelor of Music Degree from New York University, where she studied Clarinet and Bass Clarinet and graduated magna cum laude. When she's not working for Berkeley Executive Coaching Institute or teaching at Haas, you can find Amelia hanging out with her horse, Pluto, who is basically an extremely oversized puppy dog. &nbsp; &nbsp; Dr. Clyde H. Lewis, Jr. clydelew@gmail.com &nbsp; Dr. Clyde Lewis is an Executive Coach and currently serves as Administrator for the Office of Ethnic Services for Alameda County and as a Trustee on the Antioch School Board. Dr. Lewis has over 20 years of international experience in education, governmental, and non-profit experience. He has a bachelor\u2019s degree in Ethnic Studies, a master\u2019s in educational administration, and a Doctorate in Education Leadership. Dr. Lewis has worked in all levels of education (i.e., K12- Doctorate) as a teacher and administrator and has trained leaders internationally while supporting diverse teams. Dr. Lewis is a lifelong learner interested in navigating unfamiliar spaces. Ariela Morgenstern arielamorgenstern@berkeley.edu Ariela Morgenstern is an executive communications coach who specializes in bringing intention and vitality to professionals' leadership presence. Pulling from her 20+ years of professional performance experience at the highest level across the country, she uses her expert knowledge of actor training, codified body movement analysis, and vocal pedagogy to help others communicate with clarity. As a member of the professional faculty at the Haas School of Business at U.C. Berkeley, she teaches Leadership Communication, Advanced Leadership Communications, and Active Communicating classes for the MBA programs, as well as programs in authentic leadership for Haas\u2019 Executive Education. She is also faculty coach and program manager for the Berkeley Executive Coaching Institute (BECI), where she facilitates custom programs to help lead change within organizations. Ariela was recently awarded her master\u2019s degree in Communication Studies at San Francisco State University, where she researched the effects of dominant norms surrounding executive presence. In addition to her leadership communication work, she teaches acting for singers at Stanford University, Berkeley Repertory School of Theatre, and her own long-standing Singing Actor Studio in San Francisco. More of her work can be seen at www.arielamorgenstern.com &nbsp; Reba Rose reba@berkeleyeci.com Reba Rose is a seasoned executive coach, social impact leader, martial artist and talent development executive. As the Senior Director of Learning &amp; Development at Berkeley Executive Coaching Institute (BECI), Reba works with a global audience offering leadership programs that focus on the mind and heart of the leader. As a coach and faculty member, Reba is a thought partner and catalyst who listens deeply, engaging leaders in holistic inquiry to embrace emotional, physical and spiritual intelligence to invite sustainable transformation. She has a passion and agility for activating leaders, rebuilding trust in teams and strengthening organizational culture. &nbsp; Invested in the development of business leaders, Reba has coached and led leadership programs at UC Berkeley's Haas School of Business, the Berlin School of Creative Leadership, Olin School of Business and Nanyang Technological University. Reba is dedicated to facilitating inclusive processes that build conscious communities and accelerate positive social impact.&nbsp; &nbsp; Darcy Illg &nbsp; darcy_illg@berkeley.edu Darcy Illg has 20+ years of experience heading Finance and Business Operations within global high growth services companies in roles ranging from Operations Manager to CFO. She is also Lecturer at UC Berkeley Haas School of Business. She is actively sought out as a speaker for h ighly technical networking groups looking to provide storytelling training for individuals who \u201ctalk in numbers.\u201d Illg earned an MBA from Berkeley-Haas, is a Certified Management Accountant, and holds a Certificate in International Financial Reporting from ACCA. She has served on non-profit boards in a variety of capacities from financial to operational to executive roles. &nbsp; &nbsp; Janine Lee msjaninelee@berkeley.edu Dr. Janine Lee has almost 20 years experience in learning and development (L&amp;D), diversity, equity, inclusion, and belonging (DEIB), organizational development, program management, and change management at Fortune 500 companies. Janine has worked across a variety of industries including academia, technology, energy, non-profit, and entrepreneurship sectors. As a certified Lean Six Sigma Master Black Belt, Janine has led large-scale, 100-person teams in continuous improvement and transformation efforts. She currently works at Google as the Global Head of Learning &amp; Development delivering learning experiences for 30k learners. As a Haas EWMBA 2014 Graduate and Certified Executive Coach, Janine has been lecturing for almost 10 years including Haas SIB South Africa, Santa Clara University Leavey MBA, and the UC Berkeley Center of Executive Education with 200+ students in 35+ countries. Dr. Lee is a USC Doctorate of Education (Ed.D) graduate with an emphasis in Organizational Change and Leadership and has authored her dissertation research on workplace belonging for women of color in technology, published in the Harvard Business Review. She has won dozens of leadership awards including the Maybelline Empowerment through Education Award featured in People magazine. Janine is also a keynote speaker and best-selling author of the book Unstoppable: Rise of Female Global Leaders, where she shares her personal life story of resilience, strength, and inspiration to overcome obstacles in both her personal and professional career. &nbsp;She is a 100+ country world-traveler and Martial Arts Black Belt. Her life mission is \u201cinspire others to reach their full potential\u201d. &nbsp;",
+      "title": "Faculty Team"
+    },
+    {
+      "text": "EWMBA 200C Pre-Course Preparation Icon Progress Bar/Navigation (built in browser, hidden in app) Looking for more ways to customize your page? Click option-shift-D if you're on a Mac or alt-shift-D if you're on a PC to open the Cidi Labs Design Tools. Check out Haas Digital's Cidi Labs guides for tutorials on editing content blocks and to learn more about other features to try out. &nbsp; Objectives Include the learning objectives for the week as a list in this section. EWMBA 200C develops communication skills leaders need to motivate, inspire, and connect with others. By the end of the course, students will be able to: &nbsp; Strengthen their leadership presence and authentic communication style. Deliver clear, persuasive, and inclusive presentations. Use storytelling, voice, body language, focus, spontaneity, and energy effectively. Communicate confidently under pressure and respond to difficult questions. Identify their communication strengths and areas for development. Give, receive, and apply constructive feedback. &nbsp; Through prepared and impromptu speeches, a persuasive PowerPoint presentation, and a Personal Leadership Development Plan, students will explore the connection between leadership and communication. These experiences are designed to build confidence, improve clarity and impact, and help students communicate with both depth and brevity. &nbsp; Readings Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . Book: Benjamin and Rozamund Stone Zander -&nbsp; The Art of Possibility . Read Chapters 1-6. Skim anything else that looks interesting. Purchase this book either. Electronic copies are available. &nbsp; HBR Articles ,&nbsp; available through the class course reader at Study.net. Bill George et \u201cDiscovering Your Authentic Leadership\u201d February, 2007. Robert McKee \u201c Storytelling that Moves People\u201d , June, 2003. Herminia Ibarra \u201cThe Authenticity Paradox\u201d ,January \u2013 February, 2015 Emma Seppala and Kim Cameron,&nbsp;&nbsp;\u201c The Best Leaders have a Contagious Positive Energy\u201d , April 2022 &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Deliverable Turn in via Blue Gold Axe Oski Readings &amp; reflection N/A Aug 15 Aug 22 Aug 16 Aug 23 Persuasive Presentation - topic &amp; viewing of video lectures bCourses Aug 22 Aug 29 Aug 23 Aug 30 Persuasive Presentation - slides bCourses Aug 28 Sept 11 Aug 29 Sept 12 Persuasive Presentation coaching To be scheduled directly with your small group instructor Between Aug 15 &amp; Aug 29 Between Aug 22 &amp; Sept 12 Between Aug 16 &amp; Aug 30 Between Aug 23 &amp; Sept 13 Persuasive Presentation In-class Aug 29 Sept 12 Aug 30 Sept 13 Final Paper bCourses Sep 12 Sept 26 Sept 13 Sept 27",
+      "title": "Pre-Course"
+    },
+    {
+      "text": "EWMBA 200C Post-Course Icon Progress Bar/Navigation (built in browser, hidden in app) Looking for more ways to customize your page? Click option-shift-D if you're on a Mac or alt-shift-D if you're on a PC to open the Cidi Labs Design Tools. Check out Haas Digital's Cidi Labs guides for tutorials on editing content blocks and to learn more about other features to try out. &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Final paper: as a reminder, your&nbsp; Final Paper and Reflection Activities are due two weeks after your final class. As you complete the paper, we encourage you to: be creative -- don't forget the storytelling principles we used in class as you write your paper! be thoughtful -- this is your chance to be introspective and reflect on yourself as a leader and communicator be concrete -- the assignment asks you to map out a 12-18 month action plan for yourself; please be sure to include this in your final submission write the paper in the assignment; do not copy/paste from other tools. Use of generativeAI is prohibited. &nbsp; Additional Resources Insert links to additional resources, further readings, etc. &nbsp;",
+      "title": "Post-Course"
+    }
+  ],
+  "syncedAt": "2026-09-23T09:34:05.240215+00:00"
+}

@@ -1,0 +1,122 @@
+{
+  "assignments": [],
+  "canvasCourseId": null,
+  "canvasSyncedAt": null,
+  "courseId": "ew209",
+  "droppedGhosts": [],
+  "generatedAt": "2026-09-23T02:34:05.366520-07:00",
+  "sessions": [
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.",
+      "end": "2026-10-14T21:30:00-07:00",
+      "id": "scaffold:ew209:ew209-20261014@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261014@oski.app",
+      "start": "2026-10-14T18:00:00-07:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 1 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.",
+      "end": "2026-10-21T21:30:00-07:00",
+      "id": "scaffold:ew209:ew209-20261021@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261021@oski.app",
+      "start": "2026-10-21T18:00:00-07:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 2 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.",
+      "end": "2026-10-28T21:30:00-07:00",
+      "id": "scaffold:ew209:ew209-20261028@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261028@oski.app",
+      "start": "2026-10-28T18:00:00-07:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 3 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.",
+      "end": "2026-11-04T21:30:00-08:00",
+      "id": "scaffold:ew209:ew209-20261104@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261104@oski.app",
+      "start": "2026-11-04T18:00:00-08:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 4 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.\nNote: 2026-11-11 is Veterans Day \u2014 the published schedule does not flag a holiday exception, confirm with the instructor/syllabus.",
+      "end": "2026-11-11T21:30:00-08:00",
+      "id": "scaffold:ew209:ew209-20261111@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261111@oski.app",
+      "start": "2026-11-11T18:00:00-08:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 5 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.",
+      "end": "2026-11-18T21:30:00-08:00",
+      "id": "scaffold:ew209:ew209-20261118@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261118@oski.app",
+      "start": "2026-11-18T18:00:00-08:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 6 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.\nNote: 2026-11-25 is Thanksgiving week \u2014 the published schedule does not flag a holiday exception, confirm with the instructor/syllabus.",
+      "end": "2026-11-25T21:30:00-08:00",
+      "id": "scaffold:ew209:ew209-20261125@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261125@oski.app",
+      "start": "2026-11-25T18:00:00-08:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 7 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.",
+      "end": "2026-12-02T21:30:00-08:00",
+      "id": "scaffold:ew209:ew209-20261202@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261202@oski.app",
+      "start": "2026-12-02T18:00:00-08:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 8 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session.",
+      "end": "2026-12-09T21:30:00-08:00",
+      "id": "scaffold:ew209:ew209-20261209@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261209@oski.app",
+      "start": "2026-12-09T18:00:00-08:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 9 of 10"
+    },
+    {
+      "courseId": "ew209",
+      "description": "Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery, C.\nWeekly Wednesday session. Final session.",
+      "end": "2026-12-16T21:30:00-08:00",
+      "id": "scaffold:ew209:ew209-20261216@oski.app",
+      "location": "Chou Hall N470",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew209-20261216@oski.app",
+      "start": "2026-12-16T18:00:00-08:00",
+      "title": "Strategic Leadership (EW209.1B) \u2014 Session 10 of 10"
+    }
+  ],
+  "term": "Fall 2026",
+  "title": "EWMBA 209 \u2014 Strategic Leadership"
+}

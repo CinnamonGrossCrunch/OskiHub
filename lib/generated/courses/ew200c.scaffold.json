@@ -1,0 +1,79 @@
+{
+  "courseId": "ew200c",
+  "dueEvents": [],
+  "sessions": [
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Kusar, A.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260815T180000",
+      "location": "Chou Hall N100",
+      "start": "20260815T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Kusar)",
+      "uid": "ew200c-20260815-kusar@oski.app",
+      "url": ""
+    },
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Morgenstern, A.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260815T180000",
+      "location": "Chou Hall N100",
+      "start": "20260815T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Morgenstern)",
+      "uid": "ew200c-20260815-morgenstern@oski.app",
+      "url": ""
+    },
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Bradbury, B.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260815T180000",
+      "location": "Chou Hall N100",
+      "start": "20260815T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Bradbury)",
+      "uid": "ew200c-20260815-bradbury@oski.app",
+      "url": ""
+    },
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Rittenberg, M.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260829T180000",
+      "location": "Chou Hall N100",
+      "start": "20260829T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Rittenberg)",
+      "uid": "ew200c-20260829-rittenberg@oski.app",
+      "url": ""
+    },
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Rose, R.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260829T180000",
+      "location": "Chou Hall N100",
+      "start": "20260829T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Rose)",
+      "uid": "ew200c-20260829-rose@oski.app",
+      "url": ""
+    },
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Gavshon, I.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260829T180000",
+      "location": "Chou Hall N100",
+      "start": "20260829T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Gavshon)",
+      "uid": "ew200c-20260829-gavshon@oski.app",
+      "url": ""
+    },
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Cholera, K.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260829T180000",
+      "location": "Chou Hall N100",
+      "start": "20260829T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Cholera)",
+      "uid": "ew200c-20260829-cholera@oski.app",
+      "url": ""
+    },
+    {
+      "description": "Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive, small-group breakout\nInstructor: Lewis, Jr., C.\n\nAll instructors: Rittenberg, M.; Bradbury, B.; Morgenstern, A.; Kusar, A.; Gavshon, I.; Rose, R.; Lewis, Jr., C.; Cholera, K.",
+      "end": "20260829T180000",
+      "location": "Chou Hall N100",
+      "start": "20260829T090000",
+      "title": "EW200C Leadership Communications \u2014 Small Group (Lewis)",
+      "uid": "ew200c-20260829-lewis@oski.app",
+      "url": ""
+    }
+  ],
+  "sourceFile": "public/course_ICS_files/ewmba200c_leadershipcomm_fall2026.ics"
+}

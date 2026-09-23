@@ -1,0 +1,432 @@
+{
+  "assignments": [
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-07-28T18:00:00-07:00",
+      "id": "canvas:9093757",
+      "pointsPossible": 0.0,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Complete Pre-Course Survey Before Class due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093757"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-02T23:59:59-07:00",
+      "id": "canvas:9098560",
+      "pointsPossible": 0.5,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Operations for my Job - Week 1 Reflection due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9098560"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-04T18:00:00-07:00",
+      "id": "canvas:9093763",
+      "pointsPossible": 6.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (6 pts). Prepare National Cranberry Cooperative + submit group report. Due 6PM.",
+      "scaffoldUid": "ew204-due-cranberry@oski.app",
+      "title": "Operations \u2014 Cranberry case + group report due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093763"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-05T17:00:00-07:00",
+      "id": "canvas:9107637",
+      "pointsPossible": 0.0,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Complete Site Visit Survey due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9107637"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-10T23:59:59-07:00",
+      "id": "canvas:9110069",
+      "pointsPossible": 0.5,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Operations for my Job - Week 2 Reflection due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9110069"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-11T18:00:00-07:00",
+      "id": "canvas:9093751",
+      "pointsPossible": 4.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (4 pts). Due 6PM at start of Week 3 class. Unlimited attempts until the deadline.",
+      "scaffoldUid": "ew204-due-cc1@oski.app",
+      "title": "Operations \u2014 Concept Check #1 due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093751"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-16T23:59:59-07:00",
+      "id": "canvas:9117198",
+      "pointsPossible": null,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Sign-up for an Integrated Operations Simulation Team due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9117198"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-18T21:00:00-07:00",
+      "id": "canvas:9093764",
+      "pointsPossible": 6.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (6 pts). Prepare Ritz-Carlton case + submit group report. Extended to 9PM per Aug 7 class announcement.",
+      "scaffoldUid": "ew204-due-ritz@oski.app",
+      "title": "Operations \u2014 Ritz-Carlton + group report due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093764"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-18T23:59:59-07:00",
+      "id": "canvas:9115308",
+      "pointsPossible": 0.5,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Operations for my Job - Week 3 Reflection due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9115308"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-25T23:59:59-07:00",
+      "id": "canvas:9123834",
+      "pointsPossible": 0.5,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Operations for my Job - Week 4 Reflection due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9123834"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-26T18:00:00-07:00",
+      "id": "canvas:9093749",
+      "pointsPossible": 4.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (4 pts). Due 6PM at start of Week 5 class. Unlimited attempts until the deadline.",
+      "scaffoldUid": "ew204-due-cc2@oski.app",
+      "title": "Operations \u2014 Concept Check #2 due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093749"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-08-28T23:30:00-07:00",
+      "id": "scaffold:ew204:ew204-due-simteam@oski.app",
+      "pointsPossible": null,
+      "provenance": "scaffold",
+      "scaffoldNote": "Required per course page 'Week 4'; not a Canvas assignment.",
+      "scaffoldUid": "ew204-due-simteam@oski.app",
+      "title": "Operations \u2014 Simulation team + secret name due",
+      "unverified": true,
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-01T23:59:59-07:00",
+      "id": "canvas:9136668",
+      "pointsPossible": 0.5,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Operations for my Job - Week 5 Reflection due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9136668"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-08T23:59:59-07:00",
+      "id": "canvas:9142709",
+      "pointsPossible": 2.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (2 pts). Individual. Due Mon 9/7, 11:59PM per Sep 2 announcement (bCourses lists Tue 9/8, 11:59PM).",
+      "scaffoldUid": "ew204-due-lab2a@oski.app",
+      "title": "Operations \u2014 Ops Lab #2 Phase 1 due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9142709"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-09T18:00:00-07:00",
+      "id": "canvas:9142722",
+      "pointsPossible": 0.5,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Operations for my Job - Week 6 Reflection due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9142722"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-09T23:59:59-07:00",
+      "id": "canvas:9142713",
+      "pointsPossible": 0.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations. Due Wed 9/9, 11:59PM.",
+      "scaffoldUid": "ew204-due-lab2b@oski.app",
+      "title": "Operations \u2014 Ops Lab #2 Phase 2 due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9142713"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-10T23:59:59-07:00",
+      "id": "canvas:9143857",
+      "pointsPossible": 0.0,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Simulation Link due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9143857"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-14T23:59:59-07:00",
+      "id": "canvas:9093761",
+      "pointsPossible": 8.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (8 pts). PPTX strategy slides. Due Mon 9/14, 11:59PM.",
+      "scaffoldUid": "ew204-due-simslides@oski.app",
+      "title": "Operations \u2014 Simulation slides due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093761"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-15T18:00:00-07:00",
+      "id": "canvas:9093760",
+      "pointsPossible": 0.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (0 pts). Due 6PM.",
+      "scaffoldUid": "ew204-due-simassess@oski.app",
+      "title": "Operations \u2014 Simulation self/team assessment due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093760"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-16T18:00:00-07:00",
+      "id": "canvas:9093759",
+      "pointsPossible": 8.0,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Integrated Operations Simulation Performance due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093759"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-16T18:00:00-07:00",
+      "id": "scaffold:ew204:ew204-due-peereval@oski.app",
+      "pointsPossible": null,
+      "provenance": "scaffold",
+      "scaffoldNote": "Required per course page 'Week 8'; not a Canvas assignment.",
+      "scaffoldUid": "ew204-due-peereval@oski.app",
+      "title": "Operations \u2014 Peer evaluation due",
+      "unverified": true,
+      "url": "https://bcourses.berkeley.edu/courses/1555698"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-23T18:00:00-07:00",
+      "id": "canvas:9093750",
+      "pointsPossible": 4.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (4 pts). Due 6PM at start of Week 9 class. Unlimited attempts until the deadline.",
+      "scaffoldUid": "ew204-due-cc3@oski.app",
+      "title": "Operations \u2014 Concept Check #3 due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093750"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-23T18:00:00-07:00",
+      "id": "canvas:9150869",
+      "pointsPossible": 0.5,
+      "provenance": "canvas",
+      "scaffoldNote": null,
+      "title": "Operations \u2014 Operations for my Job - Week 8 Reflection due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9150869"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-26T00:59:00-07:00",
+      "id": "canvas:9144993",
+      "pointsPossible": 1.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (1 pt). Due 12:59AM.",
+      "scaffoldUid": "ew204-due-integrity@oski.app",
+      "title": "Operations \u2014 Academic Integrity Assignment due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9144993"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-09-29T23:59:59-07:00",
+      "id": "canvas:9152553",
+      "pointsPossible": 2.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (2 pts). Due Sun 9/27 per Sep 17 announcement (bCourses lists Tue 9/29, 11:59PM).",
+      "scaffoldUid": "ew204-due-lab3@oski.app",
+      "title": "Operations \u2014 Ops Lab #3 due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9152553"
+    },
+    {
+      "courseId": "ew204",
+      "dueAt": "2026-10-04T23:59:59-07:00",
+      "id": "canvas:9093762",
+      "pointsPossible": 10.0,
+      "provenance": "merged",
+      "scaffoldNote": "EW204.1A Operations (10 pts). Final reflection deliverable. Due Sun 10/4, 11:59PM.",
+      "scaffoldUid": "ew204-due-myjob@oski.app",
+      "title": "Operations \u2014 Operations for My Job due",
+      "url": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093762"
+    }
+  ],
+  "canvasCourseId": 1555698,
+  "canvasSyncedAt": "2026-09-23T09:32:49.076887+00:00",
+  "courseId": "ew204",
+  "droppedGhosts": [],
+  "generatedAt": "2026-09-23T02:34:05.362976-07:00",
+  "sessions": [
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Process \u2014 Workflows (1A) & Process Design (1B)\nPre-class: Pre-course survey by 6PM Tue 7/28\nRead: Mortgage Processing at Haas Bank; prepare Pick-up Pizza Mini-Case; Beleza Natural (Study.Net)\nSlides: Week 1 Before/After in bCourses Files > Lecture Materials\nDue: National Cranberry Cooperative case + group report \u2014 Tue 8/4, 6PM\nReflection: Week 1 Reflection due Sun 8/2, 11:59PM",
+      "end": "2026-07-29T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260729@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260729@oski.app",
+      "start": "2026-07-29T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 1: Process"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Flow \u2014 Bottlenecks (2A) & Flow Time (2B)\nPre-class: Cranberry case + group report by 6PM Tue 8/4\nRead: National Cranberry Cooperative (Study.Net); prepare Rent the Runway mini case\nSlides: Week 2 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #1 \u2014 Tue 8/11, 6PM\nReflection: Week 2 Reflection due Mon 8/10, 11:59PM",
+      "end": "2026-08-05T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260805@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260805@oski.app",
+      "start": "2026-08-05T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 2: Flow"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nCOMBINED COHORT: Tue 8/11 @ N100 (Blue + Gold together; moved from Wed 8/12)\nTopic: Service \u2014 Queues (3A) & Service Operations (3B)\nPre-class: Concept Check #1 due 6PM day of class\nRead: Tessei case (Study.Net)\nBring: laptop\nSlides: Week 3 Before/After; Time in Queue Calculator\nDue: Ritz-Carlton case + group report \u2014 Tue 8/18, 9PM (extended)\nReflection: Week 3 Reflection due Tue 8/18, 11:59PM",
+      "end": "2026-08-11T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260812@oski.app",
+      "location": "Chou Hall N100",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260812@oski.app",
+      "start": "2026-08-11T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 3: Service (Queues) \u2014 COMBINED COHORT"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Quality \u2014 Quality Control (4A) & Service Operations (4B)\nPre-class: Ritz-Carlton + group report by 8PM Tue 8/18\nRead: Ritz-Carlton case (Study.Net); Statistics Review; Tessei case\nBring: laptop\nSlides: Week 4 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #2 \u2014 Wed 8/26, 6PM; Simulation team of 5 + \"secret name\" \u2014 Fri 8/28\nReflection: Week 4 Reflection due Tue 8/25, 11:59PM",
+      "end": "2026-08-19T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260819@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260819@oski.app",
+      "start": "2026-08-19T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 4: Quality"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Inventory \u2014 Inventory Management (5A) & Capacity Allocation (5B)\nPre-class: Concept Check #2 by 6PM day before; sim team secret name by 8/28\nRead: Matching Supply with Demand ch. 2.4\u20132.5, 5.6\u20135.7, 14.1\u201314.4, 15.1\u201315.4\nSlides: Week 5 Before/After in bCourses Files > Lecture Materials\nReflection: Week 5 Reflection due Tue 9/1, 11:59PM",
+      "end": "2026-08-26T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260826@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260826@oski.app",
+      "start": "2026-08-26T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 5: Inventory"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Fashion \u2014 Risk Pooling (6A) & Sourcing (6B)\nRead: Zara (Study.Net); Crocs (Study.Net)\nSlides: Week 6 Before/After in bCourses Files > Lecture Materials\nDue: prepare for simulation\nReflection: Week 6 Reflection due Wed 9/9, 6PM",
+      "end": "2026-09-02T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260902@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260902@oski.app",
+      "start": "2026-09-02T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 6: Fashion (Risk Pooling & Sourcing)"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nNO REGULAR CLASS \u2014 Integrated Operations Simulation (Blue cohort)\nWhere: factora-sim.vercel.app \u2014 game code BLUE2026, password = Berkeley student ID\nRead: simulation instructions (see syllabus)\nDue: Simulation Slides \u2014 Mon 9/14, 11:59PM (PPTX); Self/Team Assessment \u2014 6PM day of Week 8 class\nReflection: Week 7 Reflection due Sat 9/12, 11:59PM",
+      "end": "2026-09-09T22:00:00-07:00",
+      "id": "scaffold:ew204:ew204-20260909@oski.app",
+      "location": "Online \u2014 factora-sim.vercel.app",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260909@oski.app",
+      "start": "2026-09-09T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 7: Integrated Operations Simulation"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Networks \u2014 Omnichannel Operations (8A, guest Yatin Kathpalia MBA '18) & Platform Operations / simulation debrief (8B)\nNote: Apple guest speaker cancelled; dinner still 7:30\u20138:15PM\nPre-class: Simulation slides due Mon 9/14, 11:59PM; Peer Evaluation due 6PM day of class\nSlides: Week 8 Before/After in bCourses Files > Lecture Materials\nDue: Concept Check #3 \u2014 Wed 9/23, 6PM\nReflection: Week 8 Reflection due Wed 9/23, 6PM",
+      "end": "2026-09-16T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260916@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260916@oski.app",
+      "start": "2026-09-16T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 8: Networks (Omnichannel & Platform Ops)"
+    },
+    {
+      "courseId": "ew204",
+      "description": "EW204.1A Operations site tour, per Sep 17 class announcement. Fri 9/18, 3PM.",
+      "end": "2026-09-18T16:30:00-07:00",
+      "id": "scaffold:ew204:ew204-tour-brewery@oski.app",
+      "location": "Alameda Brewery",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-tour-brewery@oski.app",
+      "start": "2026-09-18T15:00:00-07:00",
+      "title": "Operations \u2014 Site tour: Alameda Brewery"
+    },
+    {
+      "courseId": "ew204",
+      "description": "EW204.1A Operations site tour, per Sep 17 class announcement. Mon 9/21, 11AM.",
+      "end": "2026-09-21T12:30:00-07:00",
+      "id": "scaffold:ew204:ew204-tour-petitpot@oski.app",
+      "location": "Petit Pot, Emeryville",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-tour-petitpot@oski.app",
+      "start": "2026-09-21T11:00:00-07:00",
+      "title": "Operations \u2014 Site tour: Petit Pot (Emeryville)"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nTopic: Modern Ops \u2014 Operating Scale (9A, guest Duco Pasmooij EMBA '01) & Innovation Management (9B)\nRead: Uber (Study.Net); Google X (optional); Southwest (optional)\nBring: computer (course wrap-up + evaluation)\nPre-class: Concept Check #3 by 6PM day before\nDue: final exam prep (in-person)",
+      "end": "2026-09-23T21:30:00-07:00",
+      "id": "scaffold:ew204:ew204-20260923@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260923@oski.app",
+      "start": "2026-09-23T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Week 9: Modern Ops (Scale & Innovation)"
+    },
+    {
+      "courseId": "ew204",
+      "description": "EW204.1A Operations site tour, per Sep 17 class announcement. Fri 9/25, 11AM.",
+      "end": "2026-09-25T12:30:00-07:00",
+      "id": "scaffold:ew204:ew204-tour-tcho@oski.app",
+      "location": "TCHO Chocolate, Berkeley",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-tour-tcho@oski.app",
+      "start": "2026-09-25T11:00:00-07:00",
+      "title": "Operations \u2014 Site tour: TCHO Chocolate (Berkeley)"
+    },
+    {
+      "courseId": "ew204",
+      "description": "Course: EW204.1A Operations (2 units)\nInstructor: Park Sinchaisri\nIn-person final exam (30% of grade)\nBring: pen/pencil and calculator\nDue: Operations for My Job \u2014 Sun 10/4, 11:59PM",
+      "end": "2026-09-30T21:00:00-07:00",
+      "id": "scaffold:ew204:ew204-20260930@oski.app",
+      "location": "Chou Hall N370",
+      "provenance": "scaffold",
+      "scaffoldUid": "ew204-20260930@oski.app",
+      "start": "2026-09-30T18:00:00-07:00",
+      "title": "Operations (EW204.1A) \u2014 Final Exam (in person)"
+    }
+  ],
+  "term": "Fall 2026",
+  "title": "EWMBA 204 \u2014 Operations"
+}

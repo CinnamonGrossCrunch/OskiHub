@@ -1,0 +1,253 @@
+{
+  "assignments": [
+    {
+      "dueAt": "2026-07-29T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093757",
+      "id": 9093757,
+      "name": "Complete Pre-Course Survey Before Class",
+      "pointsPossible": 0.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-03T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9098560",
+      "id": 9098560,
+      "name": "Operations for my Job - Week 1 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-06T00:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9107637",
+      "id": 9107637,
+      "name": "Complete Site Visit Survey",
+      "pointsPossible": 0.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-11T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9110069",
+      "id": 9110069,
+      "name": "Operations for my Job - Week 2 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-19T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9115308",
+      "id": 9115308,
+      "name": "Operations for my Job - Week 3 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-17T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9117198",
+      "id": 9117198,
+      "name": "Sign-up for an Integrated Operations Simulation Team",
+      "pointsPossible": null,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-26T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9123834",
+      "id": 9123834,
+      "name": "Operations for my Job - Week 4 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-02T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9136668",
+      "id": 9136668,
+      "name": "Operations for my Job - Week 5 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-10T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9142722",
+      "id": 9142722,
+      "name": "Operations for my Job - Week 6 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": null,
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9148459",
+      "id": 9148459,
+      "name": "Operations for my Job - Week 7 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-24T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9150869",
+      "id": 9150869,
+      "name": "Operations for my Job - Week 8 Reflection",
+      "pointsPossible": 0.5,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-09T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9142709",
+      "id": 9142709,
+      "name": "Ops Lab #2 \u2013 PHASE 1",
+      "pointsPossible": 2.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-10T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9142713",
+      "id": 9142713,
+      "name": "Ops Lab #2 \u2013 PHASE 2",
+      "pointsPossible": 0.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-30T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9152553",
+      "id": 9152553,
+      "name": "Ops Lab #3",
+      "pointsPossible": 2.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-05T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093763",
+      "id": 9093763,
+      "name": "Prepare National Cranberry Cooperative + Submit Group Report",
+      "pointsPossible": 6.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-19T04:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093764",
+      "id": 9093764,
+      "name": "Prepare Ritz-Carlton + Submit Group Report",
+      "pointsPossible": 6.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-12T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093751",
+      "id": 9093751,
+      "name": "Concept Check #1",
+      "pointsPossible": 4.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-08-27T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093749",
+      "id": 9093749,
+      "name": "Concept Check #2",
+      "pointsPossible": 4.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-24T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093750",
+      "id": 9093750,
+      "name": "Concept Check #3",
+      "pointsPossible": 4.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-15T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093761",
+      "id": 9093761,
+      "name": "Integrated Operations Simulation Slides",
+      "pointsPossible": 8.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-17T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093759",
+      "id": 9093759,
+      "name": "Integrated Operations Simulation Performance",
+      "pointsPossible": 8.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-16T01:00:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093760",
+      "id": 9093760,
+      "name": "Integrated Operations Simulation Self/Team Assessment",
+      "pointsPossible": 0.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-11T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9143857",
+      "id": 9143857,
+      "name": "Simulation Link",
+      "pointsPossible": 0.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-10-05T06:59:59Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9093762",
+      "id": 9093762,
+      "name": "Part A: Operations for My Job",
+      "pointsPossible": 10.0,
+      "published": true
+    },
+    {
+      "dueAt": "2026-09-26T07:59:00Z",
+      "htmlUrl": "https://bcourses.berkeley.edu/courses/1555698/assignments/9144993",
+      "id": 9144993,
+      "name": "Academic Integrity Assignment (Fall 2026)",
+      "pointsPossible": 1.0,
+      "published": true
+    }
+  ],
+  "canvasCourseId": 1555698,
+  "courseId": "ew204",
+  "pages": [
+    {
+      "text": "Orientation Welcome to Operations! Icon Progress Bar/Navigation (built in browser, hidden in app) &nbsp; Getting Started On this page, add information for getting started with the course, such as a course overview, class norms, and/or next steps. If you're new to bCourses, check out this&nbsp; quick guide for students Links to an external site. . For the best experience, we recommend accessing bCourses on desktop. Read the EWMBA204 - Fall 2026 - Syllabus.pdf Take the&nbsp; Academic Integrity Pledge Links to an external site. . Fill out the Pre-Course Survey before the first class: EWMBA204 Operations - Fall 2026 - Pre-Course Survey Prepare for Week 1 . Important Links and Dates Optional Textbook: Matching Supply with Demand: an Introduction to Operations Management : An Introduction to Operations Management ( 3 copies of the ebook available for 7 day checkout) Week 3 combined cohort: Tuesday, August 11 6:00-9:00 p.m. at N100. Integrated Operations Simulation : times and duration TBD, start date Wednesday, September 9, 2026 In-Person Final Exam : Wednesday, September 30 (Blue) | Thursday, October 1 (Gold) 6:00-9:00 p.m. Anonymous Weekly Feedback: EWMBA204 Operations | Weekly Feedback",
+      "title": "Orientation"
+    },
+    {
+      "text": "Week 1 | (7/29 &amp; 7/30) Process &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . Complete Pre-Course Survey by 6PM one day before class. 1A Workflows Read Mortgage Processing at Haas Bank Prepare Pick-up Pizza Mini-Case Optional textbook readings: MSD 2.2, 3.1-3.5 1B Process Design Beleza Natural (access on Study.Net) Optional textbook readings: MSD 2.6, 4.4 &nbsp; Class Session Class Meeting Wednesdays (Blue) / Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 In-Class Materials Insert in-class materials: slides, handouts, etc. Week 1 Before Slides Week 1 After Slides &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. 1. Prepare National Cranberry Cooperative Case + Group Report (for Week 2) &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. 3p-4p via Zoom with Asa Discussion section slides Recording in Panopto",
+      "title": "Week 1"
+    },
+    {
+      "text": "Week 2 | (8/5 &amp; 8/6) Flow &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . Prepare National Cranberry Cooperative + Submit Group Report by 6PM one day before class. 2A Bottlenecks Read National Cranberry Cooperative (access via Study.Net) Optional textbook readings: MSD 3.6, 4.5 2B Flow Time Prepare Rent the Runway Mini Case Optional textbook readings: MSD 2.3, 8.1-8.8 &nbsp; Class Session Class Meeting Wednesdays (Blue) / Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 In-Class Materials Insert in-class materials: slides, handouts, etc. Week 2 Before Slides Week 2 After Slides &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Concept Check 1 &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. 3p-4p via Zoom with Jade Discussion sections slides Recording in Panopto",
+      "title": "Week 2"
+    },
+    {
+      "text": "Week 3 | (8/11) Service &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . Concept Check 1 due by 6PM the day of class. 3A Queues Optional textbook readings: MSD 9.1-9.6 3B Service Operations Read Tessei case (access via Study.Net) Optional textbook readings: MSD 9.9-9.10, 11.1-11.3 &nbsp; Class Session Class Meeting Combined Cohort Tuesday 8/11 6:00PM-9:30PM @ N100 In-Class Materials Insert in-class materials: slides, handouts, etc. Week 3 Before Slides Week 3 After Slides &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Prepare Ritz-Carlton + Submit Group Report &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. 3p-4p via Zoom with Asa Discussion Slides Time in Queue Calculator",
+      "title": "Week 3"
+    },
+    {
+      "text": "Week 4 | (8/19 &amp; 8/20) Quality &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . 4A Quality Control Prepare Ritz-Carlton + Submit Group Report by 8PM one day before class. Read Ritz-Carlston case (access via Study.Net) Statistics Review Optional textbook readings: MSD 7.1\u20137.6 4B Service Operations Read Tessei case (access via Study.Net) Optional textbook readings: MSD 9.10, 8.2, 8.4, 8.7-8.10 &nbsp; Class Session Class Meeting Wednesdays (Blue) / Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 Bring Laptops! In-Class Materials Insert in-class materials: slides, handouts, etc. Week 4 Before Slides Week 4 After Slides &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Concept Check 2 Integrated Operations Simulation Prep: Register your team submit your \"secret name\" by 8/28 &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. TBD",
+      "title": "Week 4"
+    },
+    {
+      "text": "Week 5 | (8/26 &amp; 8/27) Inventory &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . Concept Check 2 by 6PM one day before class. Integrated Operations Simulation Prep: Register your team of 5 and submit your \"secret name\" by 8/28 5A Inventory Management Optional textbook readings: MSD 2.4-2.5, 5.6-5.7, 14.1-14.4 5B Capacity Allocation Optional textbook readings: MSD 15.1-15.4 &nbsp; Class Session Class Meeting Wednesdays (Blue) /Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 In-Class Materials Insert in-class materials: slides, handouts, etc. Week 5 Before Slides Week 5 After Slides &nbsp; &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. &nbsp; &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. Discussion Slides",
+      "title": "Week 5"
+    },
+    {
+      "text": "Week 6 | (9/2 &amp; 9/3) Fashion &nbsp; Pre-Class Prep The following is based on Week 6 in the Fall 2024 bCourse site, which is different from the syllabus. Please update as needed. 6A Risk Pooling Read Zara (Study.net) Optional textbook readings: MSD 17.1, 17.3 6B Sourcing Read Crocs (Study.net) Optional textbook readings: MSD 15.1-15.4 &nbsp; Class Session Class Meeting Wednesdays (Blue) / Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 In-Class Materials Insert in-class materials: slides, handouts, etc. Week 6 Before Slides Week 6 After Slides &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. &nbsp; Prepare for simulation &nbsp; TA Session Insert materials and/or recordings from TA discussion sections.",
+      "title": "Week 6"
+    },
+    {
+      "text": "Week 7 | (9/9 &amp; 9/10) Simulation: Integrated Operations &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . Simulation: Integrated Operations (no class) Read Simulation instructions (see syllabus for more details) &nbsp; Class Session Class Meeting No class In-Class Materials Insert in-class materials: slides, handouts, etc. N/A &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Integrated Operations Simulation Slides Peer Evaluations &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. Slides",
+      "title": "Week 7"
+    },
+    {
+      "text": "Week 8 | (9/16 &amp; 9/17) Networks &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . Integrated Operations Simulation slides due Monday (9/14) at 11:59 PM Peer Evaluation due by 6:00 PM day of class 8A Omnichannel Operations Guest Speaker: Yatin Kathpalia (MBA '18) 8B Platform Operations Integrated Operations simulation debrief &nbsp; Class Session Class Meeting Wednesdays (Blue) / Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 In-Class Materials Insert in-class materials: slides, handouts, etc. Week 8 Before Slides Week 8 After Slides to be posted on Sunday &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Concept Check 3 &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. TBD",
+      "title": "Week 8"
+    },
+    {
+      "text": "Week 9 | (9/23 &amp; 9/24) Modern &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . The list below is based on the Fall '24 bCourse site, which differs from the syllabus. Please update as needed. Concept Check 3 &nbsp;by 6PM one day before class. 9A Operating Scale Guest Speaker: Duco Pasmooij (EMBA '01) 9B Innovation Management Read Uber (Study.net) Optional reading: Google X (Study.net) Read Southwest (Study.net) Course Wrap-Up (bring computers) &nbsp; Class Session Class Meeting Wednesdays (Blue) / Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 In-Class Materials Insert in-class materials: slides, handouts, etc. To be posted &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Prepare for Final Exam (in-person) &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. TBD",
+      "title": "Week 9"
+    },
+    {
+      "text": "Week 10 | (9/30 &amp; 10/1) Final Exam &nbsp; Pre-Class Prep Provide any necessary/relevant context for readings, videos, etc. that students should complete before class here.&nbsp; When adding links, use descriptive link text so that the link text alone lets people know where they'll be directed. Avoid using \"link,\" \"click here,\" or long URLs, which can make it difficult to understand where the link goes, especially for those using screen readers or speech recognition software. For examples and more information about why descriptive links are important, check out the Digital Accessibility Program's resource on link accessibility . The list below is based on the Fall '24 bCourse site, which differs from the syllabus. Please update as needed. &nbsp; In-Person Integrated Final Exam Blue: Wednesday 9/30 - 6:00PM-9:00PM Gold: Thursday 10/1 - 6:00PM-9:00PM &nbsp; Class Session Class Meeting Wednesdays (Blue) / Thursdays (Gold) 6:00PM-9:30PM@ Chou N370 In-Class Materials Insert in-class materials: slides, handouts, etc. Bring a pen or a pencil and a calculator (if you'd like!) &nbsp; Assignments Include links to and/or a brief description of any assignments due this week. You can also include links to upcoming assignments so that students can prepare ahead of time. Operations for My Job Due Sunday 10/4 by 11:59PM &nbsp; TA Session Insert materials and/or recordings from TA discussion sections. TBD",
+      "title": "Final Exam"
+    }
+  ],
+  "syncedAt": "2026-09-23T09:32:49.076887+00:00"
+}
