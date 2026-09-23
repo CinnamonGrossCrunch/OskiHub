@@ -7,10 +7,12 @@ We keep only home events in Berkeley and classify parking impact by venue:
   HIGH   - Football at California Memorial Stadium. Stadium Rimway closes
            4h before kickoff; Piedmont Ave/Gayley Rd and Bancroft/Warring
            closures begin 2h before kickoff.
-  MEDIUM - Events at Haas Pavilion (adjacent to Haas; nearby lots fill).
   LOW    - Other Berkeley venues (Edwards Stadium, Witter Rugby Field,
            tennis, etc.). Kept in the feed for the bear icon, but they do
            NOT trigger parking badges/banners.
+
+Haas Pavilion events are EXCLUDED entirely — the arena is across campus
+and its crowds do not affect parking near the business school.
 
 Away games ("California X at Opponent", non-Berkeley LOCATION) are dropped.
 """
@@ -23,9 +25,9 @@ from common import fetch_url
 FEED_URL = "https://calbears.com/calendar.ashx/calendar.ics"
 
 # Campus venues that count as "home" even when LOCATION omits "Berkeley".
+# (Haas Pavilion deliberately excluded: across campus, no parking impact.)
 CAMPUS_VENUES = [
     "memorial stadium",
-    "haas pavilion",
     "edwards stadium",
     "witter rugby field",
     "underhill field",
@@ -48,10 +50,10 @@ FOOTBALL_NOTE = (
     "Piedmont Ave/Gayley Rd and Bancroft Ave/Warring St close 2h before. "
     "Expect severe parking pressure near campus."
 )
-HAAS_PAVILION_NOTE = (
-    "Event at Haas Pavilion, adjacent to Haas (MEDIUM impact): "
-    "nearby lots fill and traffic builds around the venue."
-)
+
+# Haas Pavilion is across campus from the business school; its events are
+# excluded from the feed entirely (no parking impact for Matt's commute).
+EXCLUDED_VENUES = ("haas pavilion",)
 
 
 def _unfold(text: str) -> str:
@@ -94,8 +96,6 @@ def _classify(location: str) -> tuple[str, str | None]:
     loc = location.lower()
     if "memorial stadium" in loc:
         return "high", FOOTBALL_NOTE
-    if "haas pavilion" in loc:
-        return "medium", HAAS_PAVILION_NOTE
     return "low", None
 
 
@@ -112,6 +112,8 @@ def fetch_calbears_events() -> list[dict]:
     for ev in parsed:
         if not ev["dtstart"] or not ev["summary"]:
             continue
+        if any(v in ev["location"].lower() for v in EXCLUDED_VENUES):
+            continue  # Haas Pavilion: across campus, excluded from the feed
         if not _is_home(ev["summary"], ev["location"]):
             continue
         title = _normalize_title(ev["summary"])

@@ -4,7 +4,7 @@ PRODID:-//OskiHub//Parking Events//EN
 X-WR-CALNAME:Cal Bears home events (parking impact)
 BEGIN:VEVENT
 UID:vcal_38709-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260829T010000Z
 DTEND:20260829T040000Z
 SUMMARY:Cal Bears: California Field Hockey vs American
@@ -16,23 +16,8 @@ DESCRIPTION:[W] California Field Hockey vs American\nW 4-3 OT\nStreaming Vi
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38693-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20260829T020000Z
-DTEND:20260829T040000Z
-SUMMARY:Cal Bears: California Volleyball vs Pacific
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38693&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\n[W] California Volley
- ball vs Pacific\nW 3-0
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38749-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260829T220000Z
 DTEND:20260830T000000Z
 SUMMARY:Cal Bears: California Women's Soccer vs LMU
@@ -44,38 +29,8 @@ DESCRIPTION:[W] California Women's Soccer vs LMU\nW 2-1\nStreaming Video: h
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38692-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20260830T020000Z
-DTEND:20260830T040000Z
-SUMMARY:Cal Bears: California Volleyball vs UC San Diego
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38692&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\n[W] California Volley
- ball vs UC San Diego\nW 3-1
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38691-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20260830T180000Z
-DTEND:20260830T200000Z
-SUMMARY:Cal Bears: California Volleyball vs Pacific vs. Southern Utah
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38691&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Pacific vs. Southern Utah
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38710-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260830T200000Z
 DTEND:20260830T230000Z
 SUMMARY:Cal Bears: California Field Hockey vs Central Michigan
@@ -87,23 +42,8 @@ DESCRIPTION:[W] California Field Hockey vs Central Michigan\nW 4-2\nStreami
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38690-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20260830T210000Z
-DTEND:20260830T230000Z
-SUMMARY:Cal Bears: California Volleyball vs Gonzaga vs. UC San Diego
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38690&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Gonzaga vs. UC San Diego
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38767-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260902T000000Z
 DTEND:20260902T020000Z
 SUMMARY:Cal Bears: California Men's Soccer vs UCLA
@@ -116,7 +56,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38750-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260903T230000Z
 DTEND:20260904T010000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Cal Poly
@@ -129,7 +69,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38591-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260906T023000Z
 DTEND:20260906T053000Z
 SUMMARY:Cal Bears: California Football vs UCLA - Joe Roth Memorial Game/Hom
@@ -149,7 +89,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38711-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260906T200000Z
 DTEND:20260906T230000Z
 SUMMARY:Cal Bears: California Field Hockey vs Columbia
@@ -160,7 +100,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38751-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260906T200000Z
 DTEND:20260906T220000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Columbia
@@ -173,7 +113,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38768-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260906T230000Z
 DTEND:20260907T010000Z
 SUMMARY:Cal Bears: California Men's Soccer vs North Carolina
@@ -186,7 +126,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38769-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260909T230000Z
 DTEND:20260910T010000Z
 SUMMARY:Cal Bears: California Men's Soccer vs Cal State Fullerton
@@ -199,7 +139,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38729-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260912T020000Z
 DTEND:20260912T033000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Pacific
@@ -212,7 +152,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38753-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260917T230000Z
 DTEND:20260918T010000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Wake Forest
@@ -225,7 +165,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38593-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260919T193000Z
 DTEND:20260919T223000Z
 SUMMARY:Cal Bears: California Football vs Wagner - Rooted In The Bay Day
@@ -247,7 +187,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38754-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260920T200000Z
 DTEND:20260920T220000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Louisville
@@ -260,7 +200,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38772-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260920T223000Z
 DTEND:20260921T003000Z
 SUMMARY:Cal Bears: California Men's Soccer vs Pittsburgh
@@ -273,7 +213,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38895-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260921T000000Z
 DTEND:20260922T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -284,7 +224,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38896-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260922T000000Z
 DTEND:20260923T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -295,7 +235,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38897-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260923T000000Z
 DTEND:20260924T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -306,7 +246,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38898-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260924T000000Z
 DTEND:20260925T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -317,7 +257,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38899-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260925T000000Z
 DTEND:20260926T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -328,7 +268,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38732-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260925T000000Z
 DTEND:20260925T013000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Saint Mary's
@@ -341,7 +281,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38795-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260925T020000Z
 DTEND:20260925T033000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs West Valley College
@@ -352,7 +292,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38715-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260925T210000Z
 DTEND:20260926T000000Z
 SUMMARY:Cal Bears: California Field Hockey vs #16 Louisville
@@ -363,7 +303,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38900-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260926T000000Z
 DTEND:20260927T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -374,7 +314,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38594-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260926T023000Z
 DTEND:20260926T053000Z
 SUMMARY:Cal Bears: California Football vs Clemson - Fiat Lux / AAPI Appreci
@@ -394,7 +334,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38901-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260927T000000Z
 DTEND:20260928T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -405,7 +345,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38716-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260927T200000Z
 DTEND:20260927T230000Z
 SUMMARY:Cal Bears: California Field Hockey vs #11 North Carolina
@@ -418,7 +358,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38756-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20260927T210000Z
 DTEND:20260927T230000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Fresno State
@@ -429,38 +369,8 @@ DESCRIPTION:California Women's Soccer vs Fresno State\nStreaming Video: htt
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38678-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261003T020000Z
-DTEND:20261003T040000Z
-SUMMARY:Cal Bears: California Volleyball vs Virginia
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38678&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Virginia
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38677-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261004T010000Z
-DTEND:20261004T030000Z
-SUMMARY:Cal Bears: California Volleyball vs Virginia Tech
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38677&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Virginia Tech
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38596-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261010T000000Z
 DTEND:20261011T000000Z
 SUMMARY:Cal Bears: California Football vs Virginia Tech - Homecoming / Alum
@@ -479,7 +389,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38719-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261010T010000Z
 DTEND:20261010T040000Z
 SUMMARY:Cal Bears: California Field Hockey vs #4 Wake Forest
@@ -490,7 +400,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38720-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261011T190000Z
 DTEND:20261011T220000Z
 SUMMARY:Cal Bears: California Field Hockey vs #8 Duke - Senior Day
@@ -501,7 +411,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38776-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261014T223000Z
 DTEND:20261015T003000Z
 SUMMARY:Cal Bears: California Men's Soccer vs Saint Mary's
@@ -511,24 +421,8 @@ DESCRIPTION:California Men's Soccer vs Saint Mary's\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_39057-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261015T010000Z
-DTEND:20261015T030000Z
-SUMMARY:Cal Bears: California Women's Basketball vs UCLA (Exhibition) - Tic
- kets
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39057&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs UCLA (Exhibition) - Tickets
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38597-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261017T000000Z
 DTEND:20261018T000000Z
 SUMMARY:Cal Bears: California Football vs Wake Forest - Grateful Bears
@@ -545,7 +439,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38735-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261017T000000Z
 DTEND:20261018T000000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Stanford
@@ -555,38 +449,8 @@ DESCRIPTION:California Men's Water Polo vs Stanford\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38674-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261017T020000Z
-DTEND:20261017T040000Z
-SUMMARY:Cal Bears: California Volleyball vs NC State
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38674&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs NC State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38673-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261018T200000Z
-DTEND:20261018T220000Z
-SUMMARY:Cal Bears: California Volleyball vs Wake Forest
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38673&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Wake Forest
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38777-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261018T210000Z
 DTEND:20261018T230000Z
 SUMMARY:Cal Bears: California Men's Soccer vs NC State
@@ -597,7 +461,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38736-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261022T010000Z
 DTEND:20261022T023000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Princeton
@@ -608,7 +472,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38759-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261022T190000Z
 DTEND:20261022T210000Z
 SUMMARY:Cal Bears: California Women's Soccer vs SMU
@@ -619,7 +483,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38737-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261023T200000Z
 DTEND:20261023T213000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Pepperdine
@@ -630,7 +494,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38778-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261024T220000Z
 DTEND:20261025T000000Z
 SUMMARY:Cal Bears: California Men's Soccer vs SMU
@@ -640,23 +504,8 @@ DESCRIPTION:California Men's Soccer vs SMU\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38670-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261029T020000Z
-DTEND:20261029T040000Z
-SUMMARY:Cal Bears: California Volleyball vs Stanford
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38670&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Stanford
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38760-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261029T220000Z
 DTEND:20261030T000000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Notre Dame
@@ -666,23 +515,8 @@ DESCRIPTION:California Women's Soccer vs Notre Dame\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_39060-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261030T010000Z
-DTEND:20261030T030000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Vanguard (Exhibition)
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39060&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Vanguard (Exhibition)
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38738-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261031T200000Z
 DTEND:20261031T213000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs UCLA
@@ -693,7 +527,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38739-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261101T210000Z
 DTEND:20261101T223000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs USC
@@ -704,7 +538,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38761-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261101T210000Z
 DTEND:20261101T230000Z
 SUMMARY:Cal Bears: California Women's Soccer vs NC State
@@ -714,68 +548,8 @@ DESCRIPTION:California Women's Soccer vs NC State\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_39013-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261102T000000Z
-DTEND:20261103T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Adams State
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39013&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Adams State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38782-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261103T020000Z
-DTEND:20261103T040000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Washington State
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38782&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Washington State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38870-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261104T000000Z
-DTEND:20261105T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Radford
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38870&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Radford
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38783-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261106T020000Z
-DTEND:20261106T040000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Long Beach State
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38783&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Long Beach State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_39036-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261107T000000Z
 DTEND:20261108T000000Z
 SUMMARY:Cal Bears: California Rugby vs Western Washington University
@@ -786,7 +560,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38740-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261107T030000Z
 DTEND:20261107T043000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Fordham
@@ -796,98 +570,8 @@ DESCRIPTION:California Men's Water Polo vs Fordham\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38872-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261111T000000Z
-DTEND:20261112T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs USC
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38872&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs USC
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38785-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261112T190000Z
-DTEND:20261112T210000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Charleston
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38785&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Charleston
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38873-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261114T000000Z
-DTEND:20261115T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Utah Tech
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38873&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Utah Tech
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38619-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261114T030000Z
-DTEND:20261114T050000Z
-SUMMARY:Cal Bears: California Volleyball vs Georgia Tech
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38619&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Georgia Tech
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38618-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261115T210000Z
-DTEND:20261115T230000Z
-SUMMARY:Cal Bears: California Volleyball vs Clemson
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38618&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Clemson
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38874-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261119T000000Z
-DTEND:20261120T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs East Texas A&M
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38874&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs East Texas A&M
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38601-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261121T000000Z
 DTEND:20261122T000000Z
 SUMMARY:Cal Bears: California Football vs Stanford - 129th Big Game
@@ -903,100 +587,8 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
  ing St close 2h before. Expect severe parking pressure near campus.
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38617-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261121T030000Z
-DTEND:20261121T050000Z
-SUMMARY:Cal Bears: California Volleyball vs Boston College
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38617&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Boston College
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38616-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261122T210000Z
-DTEND:20261122T230000Z
-SUMMARY:Cal Bears: California Volleyball vs Syracuse
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38616&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Syracuse
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38875-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261123T000000Z
-DTEND:20261124T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Alabama State
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38875&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Alabama State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38615-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261125T210000Z
-DTEND:20261125T230000Z
-SUMMARY:Cal Bears: California Volleyball vs Notre Dame
-LOCATION:Berkeley\, CA\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38615&sport_id=30
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Volleyball
-  vs Notre Dame
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38789-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261127T000000Z
-DTEND:20261128T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Raising the B.A.R. Invi
- tational
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38789&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Raising the B.A.R. Invitational
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38790-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261128T000000Z
-DTEND:20261129T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Raising the B.A.R. Invi
- tational
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38790&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Raising the B.A.R. Invitational
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38602-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
+DTSTAMP:20260923T080923Z
 DTSTART:20261128T000000Z
 DTEND:20261129T000000Z
 SUMMARY:Cal Bears: California Football vs Pittsburgh - Hometown Heroes
@@ -1010,380 +602,5 @@ X-PARKING-SEVERITY:HIGH
 X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
  ay closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warr
  ing St close 2h before. Expect severe parking pressure near campus.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38791-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261204T020000Z
-DTEND:20261204T040000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Texas A&M
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38791&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Texas A&M
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38878-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261206T000000Z
-DTEND:20261207T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Vanderbilt
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38878&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Vanderbilt
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38879-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261210T000000Z
-DTEND:20261211T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Southeastern Louisiana
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38879&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Southeastern Louisiana
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38880-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261212T000000Z
-DTEND:20261213T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs UC Riverside
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38880&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs UC Riverside
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39014-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261213T000000Z
-DTEND:20261214T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Stanford
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39014&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Stanford
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38881-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261220T000000Z
-DTEND:20261221T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Southern
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38881&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Southern
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38882-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261222T000000Z
-DTEND:20261223T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Northeastern
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38882&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Northeastern
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38794-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20261222T200000Z
-DTEND:20261222T220000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Southern Utah
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=38794&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Southern Utah
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39041-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270106T000000Z
-DTEND:20270107T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Florida State
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39041&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Florida State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39017-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270107T000000Z
-DTEND:20270108T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs NC State
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39017&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs NC State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39042-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270109T000000Z
-DTEND:20270110T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Virginia
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39042&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Virginia
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39018-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270110T000000Z
-DTEND:20270111T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Miami
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39018&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Miami
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39021-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270121T000000Z
-DTEND:20270122T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs North Carolina
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39021&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs North Carolina
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39045-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270123T000000Z
-DTEND:20270124T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Stanford
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39045&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Stanford
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39022-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270124T000000Z
-DTEND:20270125T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Syracuse
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39022&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Syracuse
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39046-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270127T000000Z
-DTEND:20270128T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs NC State
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39046&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs NC State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39047-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270130T000000Z
-DTEND:20270131T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Syracuse
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39047&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Syracuse
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39025-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270204T000000Z
-DTEND:20270205T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Florida State
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39025&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Florida State
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39026-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270207T000000Z
-DTEND:20270208T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Georgia Tech
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39026&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Georgia Tech
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39050-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270210T000000Z
-DTEND:20270211T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Virginia Tech
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39050&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Virginia Tech
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39051-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270213T000000Z
-DTEND:20270214T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Miami
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39051&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Miami
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39054-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270224T000000Z
-DTEND:20270225T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Boston College
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39054&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Boston College
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39030-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270225T000000Z
-DTEND:20270226T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Boston College
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39030&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Boston College
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39055-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270227T000000Z
-DTEND:20270228T000000Z
-SUMMARY:Cal Bears: California Men's Basketball vs Wake Forest
-LOCATION:Berkeley\, Calif.\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39055&sport_id=7
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Men's Bask
- etball vs Wake Forest
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39031-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080624Z
-DTSTART:20270228T000000Z
-DTEND:20270301T000000Z
-SUMMARY:Cal Bears: California Women's Basketball vs Pitt
-LOCATION:\, Haas Pavilion
-URL:https://admin.calbears.com/calendar.aspx?game_id=39031&sport_id=19
-DESCRIPTION:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): near
- by lots fill and traffic builds around the venue.\n\nCalifornia Women's Ba
- sketball vs Pitt
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Event at Haas Pavilion\, adjacent to Haas (MEDIUM impact): n
- earby lots fill and traffic builds around the venue.
 END:VEVENT
 END:VCALENDAR

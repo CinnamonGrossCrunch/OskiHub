@@ -15,8 +15,8 @@ Update cadence (verified via Wayback Machine analysis of thegreekberkeley.com):
   Summer: steady trickle of additions; past shows drop off
 Hence: weekly checks Mar-Oct, monthly Nov-Feb.
 
-All Greek evening concerts are MEDIUM parking impact: crowds fill nearby
-lots and add commute traffic around the venue.
+All Greek evening concerts are HIGH parking impact: crowds fill nearby
+lots and add significant commute traffic around the venue.
 """
 
 import re
@@ -27,8 +27,8 @@ from common import fetch_url, fetch_url_or_none
 
 BASE = "https://thegreekberkeley.com"
 GREEK_NOTE = (
-    "Greek Theatre evening concert (MEDIUM impact): "
-    "crowds fill nearby lots and add commute traffic around the venue."
+    "Greek Theatre evening concert (HIGH impact): "
+    "crowds fill nearby lots and add significant commute traffic around the venue."
 )
 
 # Homepage anchors: <a ... href=".../events/{slug}" ...> with a title attr like
@@ -133,7 +133,7 @@ def scrape_greek_events() -> list[dict]:
             "url": url,
             "show_time": show,
             "doors_time": doors,
-            "severity": "medium",
+            "severity": "high",
             "note": GREEK_NOTE,
         })
 

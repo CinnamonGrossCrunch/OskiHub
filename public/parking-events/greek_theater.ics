@@ -4,144 +4,144 @@ PRODID:-//OskiHub//Parking Events//EN
 X-WR-CALNAME:Greek Theatre concerts (parking impact)
 BEGIN:VEVENT
 UID:greek-erykah-badu-260927@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20260927T190000
 SUMMARY:Greek Theatre: Erykah Badu
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/erykah-badu-260927
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 5:30 pm\nShow: 7
- :00 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 5:30 p
+ m\nShow: 7:00 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-jack-johnson-260930@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20260930T183000
 SUMMARY:Greek Theatre: Jack Johnson
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/jack-johnson-260930
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 5:00 pm\nShow: 6
- :30 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 5:00 p
+ m\nShow: 6:30 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-jack-johnson-251001@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261001T183000
 SUMMARY:Greek Theatre: Jack Johnson
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/jack-johnson-251001
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 5:00 pm\nShow: 6
- :30 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 5:00 p
+ m\nShow: 6:30 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-jon-batiste-261003@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261003T200000
 SUMMARY:Greek Theatre: Jon Batiste
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/jon-batiste-261003
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 6:30 pm\nShow: 8
- :00 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 6:30 p
+ m\nShow: 8:00 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-jungle-261006@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261006T190000
 SUMMARY:Greek Theatre: JUNGLE – World Tour 2026
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/jungle-261006
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 5:30 pm\nShow: 7
- :00 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 5:30 p
+ m\nShow: 7:00 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-jungle-261007@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261007T190000
 SUMMARY:Greek Theatre: JUNGLE – World Tour 2026
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/jungle-261007
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 5:30 pm\nShow: 7
- :00 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 5:30 p
+ m\nShow: 7:00 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-vulfpeck-261016@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261016T200000
 SUMMARY:Greek Theatre: Vulfpeck
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/vulfpeck-261016
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 6:30 pm\nShow: 8
- :00 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 6:30 p
+ m\nShow: 8:00 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-role-model-261018@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261018T193000
 SUMMARY:Greek Theatre: Role Model
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/role-model-261018
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 6:00 pm\nShow: 7
- :30 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 6:00 p
+ m\nShow: 7:30 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-ms-lauryn-hill-and-wyclef-jean-261104@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261104T190000
 SUMMARY:Greek Theatre: Ms. Lauryn Hill & Wyclef Jean: Celebrating 30 years 
  of Fugees’ The Score
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/ms-lauryn-hill-and-wyclef-jean-2611
  04
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 5:30 pm\nShow: 7
- :00 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 5:30 p
+ m\nShow: 7:00 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 BEGIN:VEVENT
 UID:greek-hugel-261107@oskihub.parking
-DTSTAMP:20260923T080641Z
+DTSTAMP:20260923T080940Z
 DTSTART;TZID=America/Los_Angeles:20261107T180000
 SUMMARY:Greek Theatre: HUGEL
 LOCATION:Greek Theatre\, Berkeley\, CA
 URL:https://thegreekberkeley.com/events/hugel-261107
-DESCRIPTION:Greek Theatre evening concert (MEDIUM impact): crowds fill near
- by lots and add commute traffic around the venue.\nDoors: 5:00 pm\nShow: 6
- :00 pm
-X-PARKING-SEVERITY:MEDIUM
-X-PARKING-NOTE:Greek Theatre evening concert (MEDIUM impact): crowds fill n
- earby lots and add commute traffic around the venue.
+DESCRIPTION:Greek Theatre evening concert (HIGH impact): crowds fill nearby
+  lots and add significant commute traffic around the venue.\nDoors: 5:00 p
+ m\nShow: 6:00 pm
+X-PARKING-SEVERITY:HIGH
+X-PARKING-NOTE:Greek Theatre evening concert (HIGH impact): crowds fill nea
+ rby lots and add significant commute traffic around the venue.
 END:VEVENT
 END:VCALENDAR

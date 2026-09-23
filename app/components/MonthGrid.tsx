@@ -331,10 +331,11 @@ export default function MonthGrid({
         const hasGreekEvent = hasGreekTheaterEventOnDate(day);
         const hasCalBearsEvent = showCalBears && dayCalBearsEvents.length > 0;
         // Parking impact is severity-aware: only HIGH (football at Memorial
-        // Stadium) and MEDIUM (Greek concerts, Haas Pavilion) events trigger
-        // the badge. LOW events (Edwards Stadium, Spieker Aquatics, etc. —
-        // far side of campus) keep the bear icon but get no parking warning,
-        // since they don't affect Haas parking.
+        // Stadium, Greek concerts) events trigger the badge. LOW events
+        // (Edwards Stadium, Spieker Aquatics, etc. — far side of campus)
+        // keep the bear icon but get no parking warning, since they don't
+        // affect Haas parking. Haas Pavilion events are excluded from the
+        // feed entirely.
         const parkingImpactTitles: string[] = [
           ...(showGreekTheater
             ? getGreekTheaterEventsForDate(day)
