@@ -120,7 +120,7 @@ DTSTAMP:20260923T050000Z
 DTSTART:20260804T180000
 DTEND:20260804T183000
 SUMMARY:Operations — Cranberry case + group report due
-DESCRIPTION:EW204.1A Operations (8 pts). Prepare National Cranberry Cooperative + submit group report. Due 6PM.
+DESCRIPTION:EW204.1A Operations (6 pts). Prepare National Cranberry Cooperative + submit group report. Due 6PM.
 URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093763
 END:VEVENT
 BEGIN:VEVENT
@@ -130,7 +130,7 @@ DTSTART:20260811T180000
 DTEND:20260811T183000
 SUMMARY:Operations — Concept Check #1 due
 DESCRIPTION:EW204.1A Operations (4 pts). Due 6PM at start of Week 3 class. Unlimited attempts until the deadline.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9136668
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093751
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-ritz@oski.app
@@ -138,8 +138,8 @@ DTSTAMP:20260923T050000Z
 DTSTART:20260818T210000
 DTEND:20260818T213000
 SUMMARY:Operations — Ritz-Carlton + group report due
-DESCRIPTION:EW204.1A Operations (8 pts). Prepare Ritz-Carlton case + submit group report. Extended to 9PM per Aug 7 class announcement.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9098560
+DESCRIPTION:EW204.1A Operations (6 pts). Prepare Ritz-Carlton case + submit group report. Extended to 9PM per Aug 7 class announcement.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093764
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-cc2@oski.app
@@ -148,7 +148,7 @@ DTSTART:20260826T180000
 DTEND:20260826T183000
 SUMMARY:Operations — Concept Check #2 due
 DESCRIPTION:EW204.1A Operations (4 pts). Due 6PM at start of Week 5 class. Unlimited attempts until the deadline.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9142722
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093749
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-simteam@oski.app
@@ -184,7 +184,7 @@ DTSTART:20260914T233000
 DTEND:20260915T000000
 SUMMARY:Operations — Simulation slides due
 DESCRIPTION:EW204.1A Operations (8 pts). PPTX strategy slides. Due Mon 9/14\, 11:59PM.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093762
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093761
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-simassess@oski.app
@@ -192,8 +192,8 @@ DTSTAMP:20260923T050000Z
 DTSTART:20260915T180000
 DTEND:20260915T183000
 SUMMARY:Operations — Simulation self/team assessment due
-DESCRIPTION:EW204.1A Operations (2 pts). Due 6PM.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9152553
+DESCRIPTION:EW204.1A Operations (0 pts). Due 6PM.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093760
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-tour-brewery@oski.app
@@ -222,7 +222,7 @@ DTSTART:20260923T180000
 DTEND:20260923T183000
 SUMMARY:Operations — Concept Check #3 due
 DESCRIPTION:EW204.1A Operations (4 pts). Due 6PM at start of Week 9 class. Unlimited attempts until the deadline.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9143857
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093750
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-peereval@oski.app
@@ -230,8 +230,8 @@ DTSTAMP:20260923T050000Z
 DTSTART:20260923T180000
 DTEND:20260923T183000
 SUMMARY:Operations — Peer evaluation due
-DESCRIPTION:EW204.1A Operations (4 pts). Self + teammate evaluation. Due 6PM per bCourses.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9110069
+DESCRIPTION:EW204.1A Operations (4 pts). Self + teammate evaluation. Due 6PM per bCourses.\nNot a bCourses assignment — per syllabus; see course page.
+URL:https://bcourses.berkeley.edu/courses/1555698
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-uber@oski.app
@@ -239,8 +239,8 @@ DTSTAMP:20260923T050000Z
 DTSTART:20260924T180000
 DTEND:20260924T183000
 SUMMARY:Operations — Prepare Uber due
-DESCRIPTION:EW204.1A Operations (5 pts). Prepare Uber case for Week 9. Due 6PM.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093758
+DESCRIPTION:EW204.1A Operations (5 pts). Prepare Uber case for Week 9. Due 6PM.\nNot a bCourses assignment — per syllabus; see course page.
+URL:https://bcourses.berkeley.edu/courses/1555698
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-tour-tcho@oski.app
@@ -259,7 +259,7 @@ DTSTART:20260926T005900
 DTEND:20260926T012900
 SUMMARY:Operations — Academic Integrity Assignment due
 DESCRIPTION:EW204.1A Operations (1 pt). Due 12:59AM.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9123834
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9144993
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-lab3@oski.app
@@ -276,8 +276,8 @@ DTSTAMP:20260923T050000Z
 DTSTART:20261001T005900
 DTEND:20261001T012900
 SUMMARY:Operations — Concept Check #4 due
-DESCRIPTION:EW204.1A Operations (4 pts). Due 12:59AM. Unlimited attempts until the deadline.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093761
+DESCRIPTION:EW204.1A Operations (4 pts). Due 12:59AM. Unlimited attempts until the deadline.\nNot a bCourses assignment — per syllabus; see course page.
+URL:https://bcourses.berkeley.edu/courses/1555698
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-cc5@oski.app
@@ -285,8 +285,8 @@ DTSTAMP:20260923T050000Z
 DTSTART:20261003T005900
 DTEND:20261003T012900
 SUMMARY:Operations — Concept Check #5 due
-DESCRIPTION:EW204.1A Operations (4 pts). Due 12:59AM. Unlimited attempts until the deadline.
-URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093750
+DESCRIPTION:EW204.1A Operations (4 pts). Due 12:59AM. Unlimited attempts until the deadline.\nNot a bCourses assignment — per syllabus; see course page.
+URL:https://bcourses.berkeley.edu/courses/1555698
 END:VEVENT
 BEGIN:VEVENT
 UID:ew204-due-myjob@oski.app
