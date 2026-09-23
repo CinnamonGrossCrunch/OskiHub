@@ -734,7 +734,7 @@ export default function MonthGrid({
                 <button
                   type="button"
                   aria-label={`Parking impact: ${parkingImpactTitles.join('; ')}. Tap for details.`}
-                  className="ml-auto flex-shrink-0 w-6 h-6 rounded-full bg-yellow-400 flex items-center justify-center cursor-pointer hover:scale-110 active:scale-95 transition-transform"
+                  className="ml-auto flex-shrink-0 w-6 h-6 rounded-full bg-transparent flex items-center justify-center cursor-pointer hover:scale-110 active:scale-95 transition-transform"
                   onClick={(e) => {
                     e.stopPropagation();
                     setParkingPopover({ x: e.clientX, y: e.clientY, titles: parkingImpactTitles });
