@@ -65,13 +65,13 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   // --------------------------------------------------------------------------
   // STATE: Event Source Toggles (which calendars to show)
   // --------------------------------------------------------------------------
-  const [showGreekTheater, setShowGreekTheater] = useState(false);
-  const [showUCLaunch, setShowUCLaunch] = useState(false);
+  const [showGreekTheater, setShowGreekTheater] = useState(true);
+  const [showUCLaunch, setShowUCLaunch] = useState(true);
   const [showCalBears, setShowCalBears] = useState(true);
-  const [showCampusGroups, setShowCampusGroups] = useState(false);
+  const [showCampusGroups, setShowCampusGroups] = useState(true);
   const [showAcademicCalendar, setShowAcademicCalendar] = useState(true);
   const [showNewsletter, setShowNewsletter] = useState(true);
-  const [showCMG, setShowCMG] = useState(false);
+  const [showCMG, setShowCMG] = useState(true);
   
   // --------------------------------------------------------------------------
   // STATE: Newsletter Events (converted from newsletter data)
@@ -811,21 +811,21 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
   const currentEvents = cohortEvents[selectedCohort] || [];
 
   /** Parking-impacting events today — HIGH/MEDIUM severity only (stadium / Greek crowds).
-      LOW-severity events (far side of campus) don't affect Haas parking and are excluded. */
+      LOW-severity events (far side of campus) don't affect Haas parking and are excluded.
+      Deliberately NOT gated on the feed toggles: parking warnings show even if the
+      event feed itself is hidden. */
   const todayForParking = new Date();
   const parkingTodayKey = format(todayForParking, 'yyyy-MM-dd');
   const parkingTodayEvents: string[] = [
-    ...(showCalBears && cohortEvents.calBears
+    ...(cohortEvents.calBears
       ? cohortEvents.calBears
           .filter((ev) => isSameDay(new Date(ev.start), todayForParking))
           .filter((ev) => ev.parkingSeverity && ev.parkingSeverity !== 'low')
           .map((ev) => `Cal Bears: ${ev.title} (${ev.parkingSeverity} impact)`)
       : []),
-    ...(showGreekTheater
-      ? getGreekTheaterEventsForDate(todayForParking)
-          .filter((e) => e.severity !== 'low')
-          .map((e) => `Greek Theater: ${e.title} (${e.severity} impact)`)
-      : []),
+    ...getGreekTheaterEventsForDate(todayForParking)
+        .filter((e) => e.severity !== 'low')
+        .map((e) => `Greek Theater: ${e.title} (${e.severity} impact)`),
   ];
 
   // ==========================================================================

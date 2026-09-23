@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useEffect } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 import { startOfMonth, endOfMonth, startOfWeek, endOfWeek, eachDayOfInterval, isSameMonth, isSameDay, format, addDays, differenceInDays, isWithinInterval, startOfDay, endOfDay } from 'date-fns';
 import Image from 'next/image';
 import type { CalendarEvent } from '@/lib/icsUtils';
@@ -63,6 +63,10 @@ export default function MonthGrid({
 }: Props) {
   // Remove the internal state since month is controlled by parent
   // const [currentMonth, setCurrentMonth] = useState(new Date(2025, 7, 1));
+
+  // Click-to-open parking-impact popover (replaces the old hover tooltip).
+  // Positioned from the click coordinates since day cells clip overflow.
+  const [parkingPopover, setParkingPopover] = useState<{ x: number; y: number; titles: string[] } | null>(null);
 
   // Debug log newsletter props on component mount/update
   useEffect(() => {
@@ -336,17 +340,16 @@ export default function MonthGrid({
         // keep the bear icon but get no parking warning, since they don't
         // affect Haas parking. Haas Pavilion events are excluded from the
         // feed entirely.
+        // Deliberately NOT gated on the feed toggles: the parking badge shows
+        // even if the event feed itself is hidden.
         const parkingImpactTitles: string[] = [
-          ...(showGreekTheater
-            ? getGreekTheaterEventsForDate(day)
-                .filter((e) => e.severity !== 'low')
-                .map((e) => `Greek Theater: ${e.title} (${e.severity} impact)`)
-            : []),
-          ...(showCalBears
-            ? dayCalBearsEvents
-                .filter((e) => e.parkingSeverity && e.parkingSeverity !== 'low')
-                .map((e) => `Cal Bears: ${e.title} (${e.parkingSeverity} impact)`)
-            : []),
+          ...getGreekTheaterEventsForDate(day)
+              .filter((e) => e.severity !== 'low')
+              .map((e) => `Greek Theater: ${e.title} (${e.severity} impact)`),
+          ...calBearsEvents
+              .filter((ev) => isSameDay(new Date(ev.start), day))
+              .filter((e) => e.parkingSeverity && e.parkingSeverity !== 'low')
+              .map((e) => `Cal Bears: ${e.title} (${e.parkingSeverity} impact)`),
         ];
         const hasParkingImpact = parkingImpactTitles.length > 0;
 
@@ -728,16 +731,21 @@ export default function MonthGrid({
                 </div>
                 )}
                 {hasParkingImpact && (
-                <span
-                  className="ml-auto flex-shrink-0 w-4 h-4 rounded-full bg-yellow-400 flex items-center justify-center cursor-help"
-                  title={`Parking impact — ${parkingImpactTitles.join('; ')}. Expect crowds and tight parking near campus.`}
+                <button
+                  type="button"
+                  aria-label={`Parking impact: ${parkingImpactTitles.join('; ')}. Tap for details.`}
+                  className="ml-auto flex-shrink-0 w-6 h-6 rounded-full bg-yellow-400 flex items-center justify-center cursor-pointer hover:scale-110 active:scale-95 transition-transform"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setParkingPopover({ x: e.clientX, y: e.clientY, titles: parkingImpactTitles });
+                  }}
                 >
-                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle cx="12" cy="12" r="11" fill="#FACC15" />
                     <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
                     <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
                   </svg>
-                </span>
+                </button>
                 )}
               </div>
               <div className="flex-1 flex flex-col gap-px overflow-hidden">
@@ -1120,7 +1128,7 @@ export default function MonthGrid({
           <span className="w-2 h-2 rounded-sm bg-slate-600/40 ring-1 ring-inset ring-red-500/90" /> due date
         </span>
         <span className="flex items-center gap-1">
-          <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
             <circle cx="12" cy="12" r="11" fill="#FACC15" />
             <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
             <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
@@ -1128,6 +1136,51 @@ export default function MonthGrid({
           parking impact
         </span>
       </div>
+      {/* Click-to-open parking-impact popover (badge tap replaces hover tooltip) */}
+      {parkingPopover && (
+        <div
+          className="fixed inset-0 z-[100]"
+          onClick={() => setParkingPopover(null)}
+        >
+          <div
+            role="dialog"
+            aria-label="Parking impact details"
+            className="absolute bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-slate-200 dark:border-slate-600 p-3 w-64"
+            style={{
+              left: Math.max(8, Math.min(parkingPopover.x, (typeof window !== 'undefined' ? window.innerWidth : 400) - 272)),
+              top: parkingPopover.y + 10,
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-2 mb-1.5">
+              <p className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="11" fill="#FACC15" />
+                  <text x="12" y="16.5" textAnchor="middle" fontSize="12" fontWeight="900" fill="#111827">P</text>
+                  <line x1="4.5" y1="19.5" x2="19.5" y2="4.5" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
+                </svg>
+                Parking impact
+              </p>
+              <button
+                type="button"
+                aria-label="Close parking details"
+                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-lg leading-none cursor-pointer"
+                onClick={() => setParkingPopover(null)}
+              >
+                ×
+              </button>
+            </div>
+            <ul className="space-y-1">
+              {parkingPopover.titles.map((t, i) => (
+                <li key={i} className="text-xs text-slate-700 dark:text-slate-200">• {t}</li>
+              ))}
+            </ul>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-2">
+              Expect crowds and tight parking near campus.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
