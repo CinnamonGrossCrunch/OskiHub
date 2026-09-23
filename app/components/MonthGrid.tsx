@@ -743,7 +743,7 @@ export default function MonthGrid({
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle cx="12" cy="12" r="11" fill="#FACC15" />
                     <line x1="5" y1="19" x2="19" y2="5" stroke="#111827" strokeWidth="2" strokeLinecap="round" />
-                    <text x="12" y="17.2" textAnchor="middle" fontSize="15" fontWeight="900" fill="#111827">P</text>
+                    <text x="12" y="20.6" textAnchor="middle" fontSize="24" fontWeight="900" fill="#111827">P</text>
                   </svg>
                 </button>
                 )}
@@ -1131,7 +1131,7 @@ export default function MonthGrid({
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-label="Parking impact">
             <circle cx="12" cy="12" r="11" fill="#FACC15" />
             <line x1="5" y1="19" x2="19" y2="5" stroke="#111827" strokeWidth="2" strokeLinecap="round" />
-            <text x="12" y="17.2" textAnchor="middle" fontSize="15" fontWeight="900" fill="#111827">P</text>
+            <text x="12" y="20.6" textAnchor="middle" fontSize="24" fontWeight="900" fill="#111827">P</text>
           </svg>
           parking impact
         </span>
@@ -1157,7 +1157,7 @@ export default function MonthGrid({
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <circle cx="12" cy="12" r="11" fill="#FACC15" />
                   <line x1="5" y1="19" x2="19" y2="5" stroke="#111827" strokeWidth="2" strokeLinecap="round" />
-                  <text x="12" y="17.2" textAnchor="middle" fontSize="15" fontWeight="900" fill="#111827">P</text>
+                  <text x="12" y="20.6" textAnchor="middle" fontSize="24" fontWeight="900" fill="#111827">P</text>
                 </svg>
                 Parking impact
               </p>
