@@ -30,13 +30,13 @@
     "gray-matter": "^4.0.3",
     "lottie-react": "^2.4.1",
     "marked": "^17.0.1",
-    "next": "15.5.9",
+    "next": "15.5.26",
     "node-ical": "^0.20.1",
     "openai": "^5.19.1",
     "react": "^19.1.2",
     "react-dom": "^19.1.2",
     "resend": "^6.7.0",
-    "sanitize-html": "^2.17.0"
+    "sanitize-html": "^2.17.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -51,5 +51,8 @@
     "nodemon": "^3.1.10",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "tar": "7.5.22"
   }
 }
