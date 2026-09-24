@@ -297,7 +297,7 @@ UID:reg-fall2026-fulltime-signup@oskihub
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260828
 SUMMARY:Full Time Sign Up (Fall)
-DESCRIPTION:Fall 2026 Full Time Sign Up. Fri 8/21 @ 12 noon PT - Thu 8/27 @ 12 noon PT. Results processed Fri 8/28.
+DESCRIPTION:Fall 2026 Full Time Sign Up. Fri 8/21 @ 12 noon PT - Thu 8/27 @ 12 noon PT. Results processed Fri 9/4 by 4 PM PT.
 CATEGORIES:REGISTRATION
 STATUS:CONFIRMED
 URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
@@ -331,6 +331,138 @@ DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260905
 SUMMARY:Fall Drop Only
 DESCRIPTION:Fall 2026 Drop Only period. Mon 8/31 @ 4PM PT - Fri 9/4 @ 11:59PM PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-schedule-release@oskihub
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Spring Schedule Release
+DESCRIPTION:Spring 2027 course schedule is released.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-electives-webinar@oskihub
+DTSTART;TZID=America/Los_Angeles:20261014T120000
+DTEND;TZID=America/Los_Angeles:20261014T130000
+SUMMARY:Spring Electives Webinar
+DESCRIPTION:Spring 2027 Electives Webinar via Zoom. Wed 10/14 @ 12 PM PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-bidding-round1@oskihub
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261027
+SUMMARY:Spring Bidding Round 1
+DESCRIPTION:Spring 2027 Bidding Round 1. Wed 10/21 @ 12 noon PT - Mon 10/26 @ 12 noon PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-bidding-round2@oskihub
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261031
+SUMMARY:Spring Bidding Round 2
+DESCRIPTION:Spring 2027 Bidding Round 2. Mon 10/26 @ 4 PM PT - Fri 10/30 @ 12 noon PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-core-auto-enroll@oskihub
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261107
+SUMMARY:Auto Enrollment in Spring Core Courses
+DESCRIPTION:Auto Enrollment in Spring Core Courses. Mon 11/2 - Fri 11/6.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-core-waiver-exams@oskihub
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261205
+SUMMARY:Spring Core Waiver Exams
+DESCRIPTION:Spring Core Waiver Exams. Sun 11/29 @ 12 noon PT - Fri 12/4 @ 11:59 PM PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-add-drop-round1@oskihub
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270109
+SUMMARY:Spring Add/Drop Round 1
+DESCRIPTION:Spring 2027 Add/Drop Round 1. Mon 1/4 @ 12 noon PT - Fri 1/8 @ 12 noon PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-add-drop-round2@oskihub
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270114
+SUMMARY:Spring Add/Drop Round 2
+DESCRIPTION:Spring 2027 Add/Drop Round 2. Fri 1/8 @ 4 PM PT - Wed 1/13 @ 12 noon PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-fulltime-signup@oskihub
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270129
+SUMMARY:Full Time Sign Up (Spring)
+DESCRIPTION:Spring 2027 Full Time Sign Up. Tue 1/19 @ 12 noon PT - Thu 1/28 @ 12 noon PT. Results processed Fri 1/29 by 4 PM PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-add-drop-round3@oskihub
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270126
+SUMMARY:Spring Add/Drop Round 3
+DESCRIPTION:Spring 2027 Add/Drop Round 3. Tue 1/19 @ 12 noon PT - Mon 1/25 @ 12 noon PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-add-drop-round4@oskihub
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270129
+SUMMARY:Spring Add/Drop Round 4
+DESCRIPTION:Spring 2027 Add/Drop Round 4. Mon 1/25 @ 4 PM PT - Thu 1/28 @ 12 noon PT.
+CATEGORIES:REGISTRATION
+STATUS:CONFIRMED
+URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:reg-spring2027-drop-only@oskihub
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270202
+SUMMARY:Spring Drop Only
+DESCRIPTION:Spring 2027 Drop Only. Thu 1/28 @ 4 PM PT - Mon 2/1 @ 11:59 PM PT. Final opportunity to drop a course.
 CATEGORIES:REGISTRATION
 STATUS:CONFIRMED
 URL:https://haas.berkeley.edu/ewmba/academics/registration-enrollment/registration-timeline/
