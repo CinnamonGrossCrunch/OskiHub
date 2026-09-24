@@ -782,8 +782,8 @@ async function fetchHaasAcademicCalendar(): Promise<CalendarEvent[]> {
   safeLog('Fetching Haas Academic Calendar events');
 
   try {
-    const icsText = await fetchIcsData('haas_academic_calendar_spring2026.ics');
-    const events = parseIcsToEvents(icsText, 'blue', 'haas_academic_calendar_spring2026.ics');
+    const icsText = await fetchIcsData('haas_academic_calendar_fall2026.ics');
+    const events = parseIcsToEvents(icsText, 'blue', 'haas_academic_calendar_fall2026.ics');
     safeLog(`Successfully parsed ${events.length} events from Haas Academic Calendar`);
     return events;
   } catch (error) {

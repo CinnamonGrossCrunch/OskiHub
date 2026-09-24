@@ -1,0 +1,279 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//Haas Academic Calendar Fall 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Haas Academic Calendar Fall 2026
+X-WR-TIMEZONE:America/Los_Angeles
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-we-launch-2029@oskihub
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260727
+SUMMARY:Class of 2029 WE Launch
+DESCRIPTION:Weekend-Evening (WE) launch weekend for the Class of 2029. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-re-launch-2028@oskihub
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260802
+SUMMARY:Class of 2028 RE Launch
+DESCRIPTION:Regular-Evening (RE) launch weekend for the Class of 2028. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-blue-1@oskihub
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:Leadership Communications - Blue cohort (day 1)
+DESCRIPTION:Leadership Communications Saturday intensive\, Blue cohort. Day 2 is Sat 8/29. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-axe-1@oskihub
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+SUMMARY:Leadership Communications - Axe cohort (day 1)
+DESCRIPTION:Leadership Communications Sunday intensive\, Axe cohort. Day 2 is Sun 8/30. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-gold-1@oskihub
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+SUMMARY:Leadership Communications - Gold cohort (day 1)
+DESCRIPTION:Leadership Communications Saturday intensive\, Gold cohort. Day 2 is Sat 9/12. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-oski-1@oskihub
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260824
+SUMMARY:Leadership Communications - Oski cohort (day 1)
+DESCRIPTION:Leadership Communications Sunday intensive\, Oski cohort. Day 2 is Sun 9/13. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-blue-2@oskihub
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+SUMMARY:Leadership Communications - Blue cohort (day 2)
+DESCRIPTION:Leadership Communications Saturday intensive\, Blue cohort (day 2 of 2). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-axe-2@oskihub
+DTSTART;VALUE=DATE:20260830
+DTEND;VALUE=DATE:20260831
+SUMMARY:Leadership Communications - Axe cohort (day 2)
+DESCRIPTION:Leadership Communications Sunday intensive\, Axe cohort (day 2 of 2). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-gold-2@oskihub
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Leadership Communications - Gold cohort (day 2)
+DESCRIPTION:Leadership Communications Saturday intensive\, Gold cohort (day 2 of 2). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-leadcomm-oski-2@oskihub
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Leadership Communications - Oski cohort (day 2)
+DESCRIPTION:Leadership Communications Sunday intensive\, Oski cohort (day 2 of 2). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:COHORT
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-falla-start-bluegold@oskihub
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
+SUMMARY:First Day of Fall A Classes (Blue & Gold)
+DESCRIPTION:First day of Fall A core classes for Blue & Gold cohorts (Mon-Thu\, 6:00-9:30 PM PT). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-falla-start-axeoski@oskihub
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+SUMMARY:First Day of Fall A Electives (Axe & Oski\, Saturday)
+DESCRIPTION:First Saturday elective session for Axe & Oski cohorts (9:00 AM-1:00 PM and 2:00-6:00 PM PT). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-falla-start-nexuslux@oskihub
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:First Day of Fall A Classes (Nexus & Lux)
+DESCRIPTION:First day of Fall A core classes for Nexus & Lux cohorts (Mon-Thu\, 4:00-6:00 PM PT synchronous). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fall-start-weekend@oskihub
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+SUMMARY:First Day of Fall Electives (Weekend\, Saturday)
+DESCRIPTION:First Saturday elective session for the Weekend track (10:00 AM-1:00 PM or 2:00-5:00 PM PT). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fall-start-evening@oskihub
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:First Day of Fall Electives (Evening\, Mon-Thu)
+DESCRIPTION:First evening elective session (Mon-Thu\, 6:00-9:30 PM PT). Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-falla-finals-weekday@oskihub
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261002
+SUMMARY:Finals Week - Fall A (Blue & Gold\, Nexus & Lux)
+DESCRIPTION:Fall A finals\, Mon 9/28 - Thu 10/1\, for Blue & Gold and Nexus & Lux cohorts. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-falla-finals-sat@oskihub
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Finals - Fall A (Axe & Oski\, Saturday)
+DESCRIPTION:Fall A finals for the Axe & Oski Saturday track. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fall-break@oskihub
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261009
+SUMMARY:Fall Break
+DESCRIPTION:Fall break\, Mon 10/5 - Thu 10/8. No weekday classes. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:BREAK
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fall-break-sat@oskihub
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Fall Break (Saturday classes)
+DESCRIPTION:Fall break for Saturday tracks. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:BREAK
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fallb-start@oskihub
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:First Day of Fall B Classes (all weekday cohorts)
+DESCRIPTION:First day of Fall B core classes for all weekday cohorts. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fallb-start-sat@oskihub
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:First Day of Fall B Electives (Saturday tracks)
+DESCRIPTION:First Fall B Saturday elective session. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fallb-finals-nexuslux@oskihub
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261211
+SUMMARY:Finals Week - Fall B (Nexus & Lux)
+DESCRIPTION:Fall B finals\, Mon 12/7 - Thu 12/10\, Nexus & Lux cohorts. Same week is Evening elective makeup week. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fallb-finals-sat@oskihub
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Finals - Fall B (Saturday tracks)
+DESCRIPTION:Fall B finals for Axe & Oski and Weekend Saturday tracks. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-fallb-finals-bluegold@oskihub
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261218
+SUMMARY:Finals Week - Fall B (Blue & Gold)
+DESCRIPTION:Fall B finals\, Mon 12/14 - Thu 12/17\, Blue & Gold cohorts. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-labor-day@oskihub
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Labor Day (No Classes)
+DESCRIPTION:University holiday. No classes\; Saturday 9/5 sessions also cancelled. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:HOLIDAY
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-veterans-day@oskihub
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Veterans Day (No Classes)
+DESCRIPTION:University holiday. No classes. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:HOLIDAY
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ewmba-cal-f26-thanksgiving@oskihub
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261128
+SUMMARY:Thanksgiving Break
+DESCRIPTION:No classes Wed 11/25 - Fri 11/27\; Saturday 11/28 sessions also cancelled. Source: EWMBA Academic Calendar (26-27)\, Haas EWMBA program office (Google Sheet\, last updated 03/13/2026).
+CATEGORIES:HOLIDAY
+STATUS:CONFIRMED
+END:VEVENT
+
+END:VCALENDAR
