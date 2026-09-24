@@ -77,4 +77,112 @@ SUMMARY:EW200C Leadership Communications — Small Group (Lewis)
 DESCRIPTION:Course: EW200C.1A Leadership Communications (1 unit)\nSession: Saturday intensive\, small-group breakout\nInstructor: Lewis\, Jr.\, C.\n\nAll instructors: Rittenberg\, M.\; Bradbury\, B.\; Morgenstern\, A.\; Kusar\, A.\; Gavshon\, I.\; Rose\, R.\; Lewis\, Jr.\, C.\; Cholera\, K.
 LOCATION:Chou Hall N100
 END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-academic-integrity@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260926T005900
+DTEND:20260926T012900
+SUMMARY:Leadership Communications — Academic Integrity Assignment (Fall 2026) due
+DESCRIPTION:EW200C.1A Leadership Communications (1 pt). Due 12:59 AM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9144968
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-reading-reflections@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260815T235959
+DTEND:20260816T002959
+SUMMARY:Leadership Communications — Reading Reflections due
+DESCRIPTION:EW200C.1A Leadership Communications (0 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091183
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-persuasive-topic@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260822T235959
+DTEND:20260823T002959
+SUMMARY:Leadership Communications — Persuasive Presentation Topic Submission due
+DESCRIPTION:EW200C.1A Leadership Communications (0.25 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091182
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-lc-vid-1@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260822T235959
+DTEND:20260823T002959
+SUMMARY:Leadership Communications — LC Vid 1: Connect Your Why to Your Audience due
+DESCRIPTION:EW200C.1A Leadership Communications (0.25 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091175
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-lc-vid-2@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260822T235959
+DTEND:20260823T002959
+SUMMARY:Leadership Communications — LC Vid 2 Persuasive Presentation: Prepare Your Content due
+DESCRIPTION:EW200C.1A Leadership Communications (0.25 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091176
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-lc-vid-3@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260822T235959
+DTEND:20260823T002959
+SUMMARY:Leadership Communications — LC Vid 3 Persuasive Presentation: Prepare Your Delivery due
+DESCRIPTION:EW200C.1A Leadership Communications (0.25 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091177
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-lc-vid-4@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260822T235959
+DTEND:20260823T002959
+SUMMARY:Leadership Communications — LC Vid 4: Slide Design due
+DESCRIPTION:EW200C.1A Leadership Communications (0.25 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091178
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-lc-vid-5@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260822T235959
+DTEND:20260823T002959
+SUMMARY:Leadership Communications — LC Vid 5: Storytelling with Data due
+DESCRIPTION:EW200C.1A Leadership Communications (0.25 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091179
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-slides-submission@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260828T235959
+DTEND:20260829T002959
+SUMMARY:Leadership Communications — Persuasive Presentation Slides Submission due
+DESCRIPTION:EW200C.1A Leadership Communications (5 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091181
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-coaching-session@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260828T235959
+DTEND:20260829T002959
+SUMMARY:Leadership Communications — Persuasive Presentation Coaching Session due
+DESCRIPTION:EW200C.1A Leadership Communications (0.5 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9101479
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-final-part-1@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260912T235959
+DTEND:20260913T002959
+SUMMARY:Leadership Communications — Final Assignment Part 1: Authentic Leadership Reflection Activities due
+DESCRIPTION:EW200C.1A Leadership Communications (1 pt). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091173
+END:VEVENT
+BEGIN:VEVENT
+UID:ew200c-due-final-part-2@oski.app
+DTSTAMP:20260924T192845Z
+DTSTART:20260912T235959
+DTEND:20260913T002959
+SUMMARY:Leadership Communications — Final Assignment Part 2: Self-Reflection Final Paper due
+DESCRIPTION:EW200C.1A Leadership Communications (9 pts). Due 11:59 PM.
+URL:https://bcourses.berkeley.edu/courses/1555570/assignments/9091172
+END:VEVENT
 END:VCALENDAR
