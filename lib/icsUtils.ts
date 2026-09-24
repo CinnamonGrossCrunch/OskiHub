@@ -39,12 +39,6 @@ export type CalendarEvent = {
   categories?: string[]; // Event categories
   /** Parking impact severity from generated feeds (X-PARKING-SEVERITY) */
   parkingSeverity?: 'high' | 'medium' | 'low';
-  /** Course-data foundation: where this event's facts came from.
-      'canvas' = Canvas is the source of truth; 'scaffold' = curated
-      narrative; 'merged' = Canvas facts + scaffold narrative. */
-  provenance?: 'canvas' | 'scaffold' | 'merged';
-  /** Stable assignment identity, e.g. 'canvas:9093750' */
-  assignmentId?: string;
 };
 
 export type CohortEvents = {
@@ -456,17 +450,6 @@ async function fetchCohortEvents(cohort: 'blue' | 'gold'): Promise<CalendarEvent
 
   safeLog(`Fetching ${cohort} cohort events from ${files.length} files`);
 
-  // Course-data foundation: courses migrated off hand-built ICS read their
-  // merged generated JSON instead. ICS filename -> course-data courseId.
-  // Unmigrated courses keep the legacy ICS path — migration is per-course,
-  // no flag days. See docs/architecture/course-data-foundation.md
-  const { courseDataToEvents, loadCourseDataMany } = await import('./course-data/reader');
-  const MIGRATED_COURSES: Record<string, string> = {
-    'ewmba204_operations_fall2026.ics': 'ew204',
-  };
-  const legacyFiles = files.filter(f => !(f in MIGRATED_COURSES));
-  const migratedIds = [...new Set(Object.values(MIGRATED_COURSES))];
-
   // Helper to attempt loading a single file with fallback
   const loadFileWithFallback = async (filename: string): Promise<CalendarEvent[]> => {
     try {
@@ -505,28 +488,12 @@ async function fetchCohortEvents(cohort: 'blue' | 'gold'): Promise<CalendarEvent
     }
   };
 
-  // Fetch legacy ICS files for this cohort in parallel
-  const results = await Promise.all(legacyFiles.map(f => loadFileWithFallback(f)));
+  // Fetch all files for this cohort in parallel
+  const results = await Promise.all(files.map(f => loadFileWithFallback(f)));
 
   // Merge all events
   for (const events of results) {
     allEvents.push(...events);
-  }
-
-  // Course-data foundation: append merged generated events for migrated courses.
-  // sourceFile stays the original ICS filename so course-type detection keeps working.
-  try {
-    const migrated = await loadCourseDataMany(migratedIds);
-    for (const data of migrated) {
-      const sourceFile = Object.keys(MIGRATED_COURSES).find(
-        f => MIGRATED_COURSES[f] === data.courseId
-      ) || `${data.courseId}.ics`;
-      const converted = courseDataToEvents(data, cohort, sourceFile);
-      safeLog(`Loaded ${converted.length} course-data events for ${data.courseId} (${cohort})`);
-      allEvents.push(...converted);
-    }
-  } catch (e) {
-    safeError('Failed to load course-data generated events:', e);
   }
 
   // Source priority for deduplication (lower index = higher priority)
@@ -782,8 +749,8 @@ async function fetchHaasAcademicCalendar(): Promise<CalendarEvent[]> {
   safeLog('Fetching Haas Academic Calendar events');
 
   try {
-    const icsText = await fetchIcsData('haas_academic_calendar_fall2026.ics');
-    const events = parseIcsToEvents(icsText, 'blue', 'haas_academic_calendar_fall2026.ics');
+    const icsText = await fetchIcsData('haas_academic_calendar_spring2026.ics');
+    const events = parseIcsToEvents(icsText, 'blue', 'haas_academic_calendar_spring2026.ics');
     safeLog(`Successfully parsed ${events.length} events from Haas Academic Calendar`);
     return events;
   } catch (error) {
