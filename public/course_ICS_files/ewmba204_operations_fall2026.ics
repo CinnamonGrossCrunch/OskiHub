@@ -262,6 +262,15 @@ DESCRIPTION:EW204.1A Operations (1 pt). Due 12:59AM.
 URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9144993
 END:VEVENT
 BEGIN:VEVENT
+UID:ew204-due-courseeval@oski.app
+DTSTAMP:20260925T050000Z
+DTSTART:20260930T173000
+DTEND:20260930T180000
+SUMMARY:Operations — Berkeley's Official Course Evaluation due
+DESCRIPTION:EW204.1A Operations (0 pts). Due Wed 9/30\, 6PM.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9154393
+END:VEVENT
+BEGIN:VEVENT
 UID:ew204-due-lab3@oski.app
 DTSTAMP:20260925T050000Z
 DTSTART:20261011T233000
