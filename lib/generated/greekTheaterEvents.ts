@@ -14,16 +14,6 @@ export interface GeneratedGreekEvent {
 
 export const GENERATED_GREEK_EVENTS: GeneratedGreekEvent[] = [
   {
-    year: 2026, month: 9, day: 27,
-    title: "Greek Theatre: Erykah Badu",
-    artist: "Erykah Badu",
-    url: "https://thegreekberkeley.com/events/erykah-badu-260927",
-    showTime: "7:00 pm",
-    doorsTime: "5:30 pm",
-    severity: "high",
-    note: "Greek Theatre evening concert (HIGH impact): crowds fill nearby lots and add significant commute traffic around the venue.",
-  },
-  {
     year: 2026, month: 9, day: 30,
     title: "Greek Theatre: Jack Johnson",
     artist: "Jack Johnson",

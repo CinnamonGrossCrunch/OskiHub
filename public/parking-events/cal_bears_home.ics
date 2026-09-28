@@ -4,7 +4,7 @@ PRODID:-//OskiHub//Parking Events//EN
 X-WR-CALNAME:Cal Bears home events (parking impact)
 BEGIN:VEVENT
 UID:vcal_38709-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260829T010000Z
 DTEND:20260829T040000Z
 SUMMARY:Cal Bears: California Field Hockey vs American
@@ -17,7 +17,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38749-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260829T220000Z
 DTEND:20260830T000000Z
 SUMMARY:Cal Bears: California Women's Soccer vs LMU
@@ -30,7 +30,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38710-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260830T200000Z
 DTEND:20260830T230000Z
 SUMMARY:Cal Bears: California Field Hockey vs Central Michigan
@@ -43,7 +43,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38767-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260902T000000Z
 DTEND:20260902T020000Z
 SUMMARY:Cal Bears: California Men's Soccer vs UCLA
@@ -56,7 +56,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38750-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260903T230000Z
 DTEND:20260904T010000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Cal Poly
@@ -69,7 +69,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38591-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260906T023000Z
 DTEND:20260906T053000Z
 SUMMARY:Cal Bears: California Football vs UCLA - Joe Roth Memorial Game/Hom
@@ -89,7 +89,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38711-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260906T200000Z
 DTEND:20260906T230000Z
 SUMMARY:Cal Bears: California Field Hockey vs Columbia
@@ -100,7 +100,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38751-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260906T200000Z
 DTEND:20260906T220000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Columbia
@@ -113,7 +113,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38768-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260906T230000Z
 DTEND:20260907T010000Z
 SUMMARY:Cal Bears: California Men's Soccer vs North Carolina
@@ -126,7 +126,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38769-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260909T230000Z
 DTEND:20260910T010000Z
 SUMMARY:Cal Bears: California Men's Soccer vs Cal State Fullerton
@@ -139,7 +139,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38729-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260912T020000Z
 DTEND:20260912T033000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Pacific
@@ -152,7 +152,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38753-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260917T230000Z
 DTEND:20260918T010000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Wake Forest
@@ -165,7 +165,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38593-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260919T193000Z
 DTEND:20260919T223000Z
 SUMMARY:Cal Bears: California Football vs Wagner - Rooted In The Bay Day
@@ -187,7 +187,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38754-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260920T200000Z
 DTEND:20260920T220000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Louisville
@@ -200,7 +200,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38772-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260920T223000Z
 DTEND:20260921T003000Z
 SUMMARY:Cal Bears: California Men's Soccer vs Pittsburgh
@@ -213,7 +213,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38895-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260921T000000Z
 DTEND:20260922T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -224,7 +224,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38896-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260922T000000Z
 DTEND:20260923T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -235,7 +235,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38897-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260923T000000Z
 DTEND:20260924T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -246,7 +246,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38898-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260924T000000Z
 DTEND:20260925T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -257,7 +257,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38899-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260925T000000Z
 DTEND:20260926T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -268,42 +268,44 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38732-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260925T000000Z
 DTEND:20260925T013000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Saint Mary's
 LOCATION:\, Spieker Aquatics Complex
 URL:https://admin.calbears.com/calendar.aspx?game_id=38732&sport_id=17
-DESCRIPTION:California Men's Water Polo vs Saint Mary's\nStreaming Video: h
- ttps://www.overnght.com/event/32c8cfc7-b0ab-4ff9-bd90-87cddb0fc7ff?src=car
- d\n
+DESCRIPTION:[W] California Men's Water Polo vs Saint Mary's\nW 22-8\nStream
+ ing Video: https://www.overnght.com/event/32c8cfc7-b0ab-4ff9-bd90-87cddb0f
+ c7ff?src=card\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38795-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260925T020000Z
 DTEND:20260925T033000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs West Valley College
 LOCATION:\, Spieker Aquatics Complex
 URL:https://admin.calbears.com/calendar.aspx?game_id=38795&sport_id=17
-DESCRIPTION:California Men's Water Polo vs West Valley College\n
+DESCRIPTION:[N] California Men's Water Polo vs West Valley College\n\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38715-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260925T210000Z
 DTEND:20260926T000000Z
-SUMMARY:Cal Bears: California Field Hockey vs #16 Louisville
+SUMMARY:Cal Bears: California Field Hockey vs #12 Louisville
 LOCATION:\, Underhill Field
 URL:https://admin.calbears.com/calendar.aspx?game_id=38715&sport_id=3
-DESCRIPTION:California Field Hockey vs #16 Louisville\n
+DESCRIPTION:[L] California Field Hockey vs #12 Louisville\nL 2-3\nStreaming
+  Video: https://www.espn.com/watch/player/_/id/f5951ec8-df56-4b37-8eaf-794
+ 74472b26c\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38900-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260926T000000Z
 DTEND:20260927T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -314,7 +316,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38594-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260926T023000Z
 DTEND:20260926T053000Z
 SUMMARY:Cal Bears: California Football vs Clemson - Fiat Lux / AAPI Appreci
@@ -323,10 +325,10 @@ LOCATION:Berkeley\, Calif.\, California Memorial Stadium
 URL:https://admin.calbears.com/calendar.aspx?game_id=38594&sport_id=4
 DESCRIPTION:Cal football at Memorial Stadium (HIGH impact): Stadium Rimway 
  closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warring
-  St close 2h before. Expect severe parking pressure near campus.\n\nCalifo
- rnia Football vs Clemson - Fiat Lux / AAPI Appreciation\nTV: ESPN\nRadio: 
- KSFO 810 AM\nStreaming Audio: https://thevarsitynetwork.com/audioapplink/s
- ource/oas-1169/content/calberk:allaccess-Live-513
+  St close 2h before. Expect severe parking pressure near campus.\n\n[L] Ca
+ lifornia Football vs Clemson - Fiat Lux / AAPI Appreciation\nL 10-24\nTV: 
+ ESPN\nRadio: KSFO 810 AM\nStreaming Audio: https://thevarsitynetwork.com/a
+ udioapplink/source/oas-1169/content/calberk:allaccess-Live-513
 X-PARKING-SEVERITY:HIGH
 X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
  ay closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warr
@@ -334,7 +336,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38901-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260927T000000Z
 DTEND:20260928T000000Z
 SUMMARY:Cal Bears: California Women's Tennis vs W50 Berkeley
@@ -345,32 +347,33 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38716-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260927T200000Z
 DTEND:20260927T230000Z
-SUMMARY:Cal Bears: California Field Hockey vs #11 North Carolina
+SUMMARY:Cal Bears: California Field Hockey vs North Carolina
 LOCATION:\, Underhill Field
 URL:https://admin.calbears.com/calendar.aspx?game_id=38716&sport_id=3
-DESCRIPTION:California Field Hockey vs #11 North Carolina\nStreaming Video:
-  https://www.espn.com/watch/player/_/id/dd51da06-65f0-4a51-b6f4-a57fc87686
- 37\n
+DESCRIPTION:[L] California Field Hockey vs North Carolina\nL 0-4\nStreaming
+  Video: https://www.espn.com/watch/player/_/id/dd51da06-65f0-4a51-b6f4-a57
+ fc8768637\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38756-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20260927T210000Z
 DTEND:20260927T230000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Fresno State
 LOCATION:Berkeley\, CA\, Edwards Stadium
 URL:https://admin.calbears.com/calendar.aspx?game_id=38756&sport_id=26
-DESCRIPTION:California Women's Soccer vs Fresno State\nStreaming Video: htt
- ps://www.espn.com/watch/player/_/id/03074aff-57e3-4371-847a-b9ca4dee13f9\n
+DESCRIPTION:[W] California Women's Soccer vs Fresno State\nW 2-0\nStreaming
+  Video: https://www.espn.com/watch/player/_/id/03074aff-57e3-4371-847a-b9c
+ a4dee13f9\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38596-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261010T000000Z
 DTEND:20261011T000000Z
 SUMMARY:Cal Bears: California Football vs Virginia Tech - Homecoming / Alum
@@ -389,29 +392,29 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38719-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261010T010000Z
 DTEND:20261010T040000Z
-SUMMARY:Cal Bears: California Field Hockey vs #4 Wake Forest
+SUMMARY:Cal Bears: California Field Hockey vs #3 Wake Forest
 LOCATION:\, Underhill Field
 URL:https://admin.calbears.com/calendar.aspx?game_id=38719&sport_id=3
-DESCRIPTION:California Field Hockey vs #4 Wake Forest\n
+DESCRIPTION:California Field Hockey vs #3 Wake Forest\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38720-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261011T190000Z
 DTEND:20261011T220000Z
-SUMMARY:Cal Bears: California Field Hockey vs #8 Duke - Senior Day
+SUMMARY:Cal Bears: California Field Hockey vs #5 Duke - Senior Day
 LOCATION:\, Underhill Field
 URL:https://admin.calbears.com/calendar.aspx?game_id=38720&sport_id=3
-DESCRIPTION:California Field Hockey vs #8 Duke - Senior Day\n
+DESCRIPTION:California Field Hockey vs #5 Duke - Senior Day\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38776-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261014T223000Z
 DTEND:20261015T003000Z
 SUMMARY:Cal Bears: California Men's Soccer vs Saint Mary's
@@ -421,8 +424,67 @@ DESCRIPTION:California Men's Soccer vs Saint Mary's\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
+UID:vcal_39064-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261016T000000Z
+DTEND:20261017T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs Stanford - DIVE 
+ ONLY
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39064&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs Stanford - DIVE ONLY\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39083-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261016T000000Z
+DTEND:20261017T000000Z
+SUMMARY:Cal Bears: California Men's Swimming & Diving vs Stanford - DIVE ON
+ LY
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39083&sport_id=67
+DESCRIPTION:California Men's Swimming & Diving vs Stanford - DIVE ONLY\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39065-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261016T000000Z
+DTEND:20261017T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs NC State - DIVE 
+ ONLY
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39065&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs NC State - DIVE ONLY\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39084-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261016T000000Z
+DTEND:20261017T000000Z
+SUMMARY:Cal Bears: California Men's Swimming & Diving vs NC State - DIVE ON
+ LY
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39084&sport_id=67
+DESCRIPTION:California Men's Swimming & Diving vs NC State - DIVE ONLY\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_38735-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261017T000000Z
+DTEND:20261018T000000Z
+SUMMARY:Cal Bears: California Men's Water Polo vs Stanford
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=38735&sport_id=17
+DESCRIPTION:California Men's Water Polo vs Stanford\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
 UID:vcal_38597-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261017T000000Z
 DTEND:20261018T000000Z
 SUMMARY:Cal Bears: California Football vs Wake Forest - Grateful Bears
@@ -438,19 +500,8 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
  ing St close 2h before. Expect severe parking pressure near campus.
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38735-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
-DTSTART:20261017T000000Z
-DTEND:20261018T000000Z
-SUMMARY:Cal Bears: California Men's Water Polo vs Stanford
-LOCATION:\, Spieker Aquatics Complex
-URL:https://admin.calbears.com/calendar.aspx?game_id=38735&sport_id=17
-DESCRIPTION:California Men's Water Polo vs Stanford\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38777-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261018T210000Z
 DTEND:20261018T230000Z
 SUMMARY:Cal Bears: California Men's Soccer vs NC State
@@ -461,7 +512,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38736-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261022T010000Z
 DTEND:20261022T023000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Princeton
@@ -472,7 +523,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38759-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261022T190000Z
 DTEND:20261022T210000Z
 SUMMARY:Cal Bears: California Women's Soccer vs SMU
@@ -483,7 +534,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38737-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261023T200000Z
 DTEND:20261023T213000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Pepperdine
@@ -493,8 +544,30 @@ DESCRIPTION:California Men's Water Polo vs Pepperdine\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
+UID:vcal_39066-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261024T000000Z
+DTEND:20261025T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs Saint Mary's
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39066&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs Saint Mary's\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39085-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261024T000000Z
+DTEND:20261025T000000Z
+SUMMARY:Cal Bears: California Men's Swimming & Diving vs Saint Mary's
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39085&sport_id=67
+DESCRIPTION:California Men's Swimming & Diving vs Saint Mary's\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
 UID:vcal_38778-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261024T220000Z
 DTEND:20261025T000000Z
 SUMMARY:Cal Bears: California Men's Soccer vs SMU
@@ -505,7 +578,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38760-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261029T220000Z
 DTEND:20261030T000000Z
 SUMMARY:Cal Bears: California Women's Soccer vs Notre Dame
@@ -516,7 +589,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38738-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261031T200000Z
 DTEND:20261031T213000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs UCLA
@@ -526,19 +599,8 @@ DESCRIPTION:California Men's Water Polo vs UCLA\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_38739-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
-DTSTART:20261101T210000Z
-DTEND:20261101T223000Z
-SUMMARY:Cal Bears: California Men's Water Polo vs USC
-LOCATION:\, Spieker Aquatics Complex
-URL:https://admin.calbears.com/calendar.aspx?game_id=38739&sport_id=17
-DESCRIPTION:California Men's Water Polo vs USC\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38761-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261101T210000Z
 DTEND:20261101T230000Z
 SUMMARY:Cal Bears: California Women's Soccer vs NC State
@@ -548,8 +610,19 @@ DESCRIPTION:California Women's Soccer vs NC State\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
+UID:vcal_38739-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20261101T210000Z
+DTEND:20261101T223000Z
+SUMMARY:Cal Bears: California Men's Water Polo vs USC
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=38739&sport_id=17
+DESCRIPTION:California Men's Water Polo vs USC\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
 UID:vcal_39036-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261107T000000Z
 DTEND:20261108T000000Z
 SUMMARY:Cal Bears: California Rugby vs Western Washington University
@@ -560,7 +633,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38740-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261107T030000Z
 DTEND:20261107T043000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Fordham
@@ -571,7 +644,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38601-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261121T000000Z
 DTEND:20261122T000000Z
 SUMMARY:Cal Bears: California Football vs Stanford - 129th Big Game
@@ -588,7 +661,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38602-admin.calbears.com@oskihub.parking
-DTSTAMP:20260923T080923Z
+DTSTAMP:20260928T130711Z
 DTSTART:20261128T000000Z
 DTEND:20261129T000000Z
 SUMMARY:Cal Bears: California Football vs Pittsburgh - Hometown Heroes
@@ -602,5 +675,116 @@ X-PARKING-SEVERITY:HIGH
 X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
  ay closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warr
  ing St close 2h before. Expect severe parking pressure near campus.
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39071-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270109T000000Z
+DTEND:20270110T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs UC Davis - DIVE 
+ ONLY
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39071&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs UC Davis - DIVE ONLY\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39072-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270114T000000Z
+DTEND:20270115T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs UCLA
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39072&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs UCLA\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39092-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270115T000000Z
+DTEND:20270116T000000Z
+SUMMARY:Cal Bears: California Men's Swimming & Diving vs USC
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39092&sport_id=67
+DESCRIPTION:California Men's Swimming & Diving vs USC\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39073-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270115T000000Z
+DTEND:20270116T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs USC
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39073&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs USC\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39093-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270116T000000Z
+DTEND:20270117T000000Z
+SUMMARY:Cal Bears: California Men's Swimming & Diving vs Cal Invite
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39093&sport_id=67
+DESCRIPTION:California Men's Swimming & Diving vs Cal Invite\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39074-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270116T000000Z
+DTEND:20270117T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs Cal Invite
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39074&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs Cal Invite\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39076-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270130T000000Z
+DTEND:20270131T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs Stanford
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39076&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs Stanford\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39095-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270130T000000Z
+DTEND:20270131T000000Z
+SUMMARY:Cal Bears: California Men's Swimming & Diving vs Stanford
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39095&sport_id=67
+DESCRIPTION:California Men's Swimming & Diving vs Stanford\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39077-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270216T000000Z
+DTEND:20270220T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs ACC Championship
+LOCATION:Greensboro\, NC\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39077&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs ACC Championship\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39096-admin.calbears.com@oskihub.parking
+DTSTAMP:20260928T130711Z
+DTSTART:20270216T000000Z
+DTEND:20270220T000000Z
+SUMMARY:Cal Bears: California Men's Swimming & Diving vs ACC Championship
+LOCATION:Greensboro\, NC\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39096&sport_id=67
+DESCRIPTION:California Men's Swimming & Diving vs ACC Championship\n
+X-PARKING-SEVERITY:LOW
 END:VEVENT
 END:VCALENDAR
