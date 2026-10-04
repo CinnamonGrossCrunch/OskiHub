@@ -307,15 +307,6 @@ DESCRIPTION:EW204.1A Operations (10 pts). Final reflection deliverable. Extended
 URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9093762
 END:VEVENT
 BEGIN:VEVENT
-UID:ew204-due-lab4@oski.app
-DTSTAMP:20260925T050000Z
-DTSTART:20261011T233000
-DTEND:20261012T000000
-SUMMARY:Operations — Ops Decision Lab #4 due
-DESCRIPTION:EW204.1A Operations. Releases Fri 10/2 per Sep 25 announcement. Due Sun 10/11\, 11:59PM.
-URL:https://bcourses.berkeley.edu/courses/1555698
-END:VEVENT
-BEGIN:VEVENT
 UID:ew204-event-review-final@oski.app
 DTSTAMP:20260925T050000Z
 DTSTART:20260927T150000
@@ -323,5 +314,14 @@ DTEND:20260927T170000
 SUMMARY:Operations — Final Review (GSIs, Zoom)
 DESCRIPTION:EW204.1A Operations. 2-hour final review by the GSIs via Zoom (recorded)\, Sun 9/27 3-5PM per Sep 25 announcement.
 URL:https://tinyurl.com/haasops26
+END:VEVENT
+BEGIN:VEVENT
+UID:ew204-due-lab4@oski.app
+DTSTAMP:20261003T205001Z
+DTSTART:20261011T233000
+DTEND:20261012T000000
+SUMMARY:Operations — Ops Lab #4 due
+DESCRIPTION:EW204.1A Operations (2 pts). Due Sun 10/11\, 11:59PM. Revisits two games from earlier: Part A City Manager Encore (~25 min\, 30 rounds) + Part B Boba Empire Encore (~20 min\, 24 rounds). Play parts in any order. Per Oct 3 announcement.
+URL:https://bcourses.berkeley.edu/courses/1555698/assignments/9156366
 END:VEVENT
 END:VCALENDAR
