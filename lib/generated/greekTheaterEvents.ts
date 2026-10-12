@@ -14,26 +14,6 @@ export interface GeneratedGreekEvent {
 
 export const GENERATED_GREEK_EVENTS: GeneratedGreekEvent[] = [
   {
-    year: 2026, month: 10, day: 6,
-    title: "Greek Theatre: JUNGLE \u2013 World Tour 2026",
-    artist: "JUNGLE \u2013 World Tour 2026",
-    url: "https://thegreekberkeley.com/events/jungle-261006",
-    showTime: "7:00 pm",
-    doorsTime: "5:30 pm",
-    severity: "high",
-    note: "Greek Theatre evening concert (HIGH impact): crowds fill nearby lots and add significant commute traffic around the venue.",
-  },
-  {
-    year: 2026, month: 10, day: 7,
-    title: "Greek Theatre: JUNGLE \u2013 World Tour 2026",
-    artist: "JUNGLE \u2013 World Tour 2026",
-    url: "https://thegreekberkeley.com/events/jungle-261007",
-    showTime: "7:00 pm",
-    doorsTime: "5:30 pm",
-    severity: "high",
-    note: "Greek Theatre evening concert (HIGH impact): crowds fill nearby lots and add significant commute traffic around the venue.",
-  },
-  {
     year: 2026, month: 10, day: 16,
     title: "Greek Theatre: Vulfpeck",
     artist: "Vulfpeck",
