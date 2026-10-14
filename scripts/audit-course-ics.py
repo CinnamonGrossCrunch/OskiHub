@@ -407,7 +407,7 @@ def print_report(r):
     counts = {}
     for e in r["events"]:
         counts[e["verdict"]] = counts.get(e["verdict"], 0) + 1
-        mark = {"OK": "✓", "MISMATCH": "!", "MENTIONED": "~", "GHOST": "✗"}.get(e["verdict"], "?")
+        mark = {"OK": "✓", "MISMATCH": "!", "MENTIONED": "~", "GHOST": "✗", "ACCEPTED": "="}.get(e["verdict"], "?")
         print(f"[{mark} {e['verdict']:9}] {e['summary']}")
         print(f"             {e['detail']}")
     print(f"\nDue events checked: {len(r['events'])} " +
@@ -447,6 +447,18 @@ def prune_ghosts(ics_path, report):
     return len(removed)
 
 
+def _accepted(accepted, course, verdict, text):
+    """True if a config accepted-rule covers this finding (deliberate, documented)."""
+    for rule in accepted:
+        if (
+            rule.get("course", "") in course
+            and rule.get("verdict") == verdict
+            and rule.get("match", "") in text
+        ):
+            return True
+    return False
+
+
 def main():
     args = sys.argv[1:]
     prune = "--prune" in args
@@ -466,6 +478,22 @@ def main():
         sys.exit(1)
 
     reports = [audit(ics, cid, name) for ics, cid, name in jobs]
+    accepted = []
+    if "--all" in args:
+        accepted = json.load(open(CONFIG)).get("accepted", [])
+    for r in reports:
+        if r["unverifiable"]:
+            continue
+        for e in r["events"]:
+            if e.get("verdict") in ("GHOST", "MISMATCH") and _accepted(
+                accepted, r["course"], e["verdict"], e["summary"]
+            ):
+                e["verdict"] = "ACCEPTED"
+        for c in r["claims"]:
+            if c.get("verdict") == "MISMATCH" and _accepted(
+                accepted, r["course"], c["verdict"], c.get("claim", "")
+            ):
+                c["verdict"] = "ACCEPTED"
     if as_json:
         print(json.dumps(reports, indent=2))
     else:
@@ -475,6 +503,17 @@ def main():
         for r in reports:
             if not r["unverifiable"]:
                 prune_ghosts(r["ics"], r)
+    # Gate: exit 2 if any verifiable course has GHOST events or MISMATCHes,
+    # so a pre-push hook can block shipping drifted calendars.
+    bad = 0
+    for r in reports:
+        if r["unverifiable"]:
+            continue
+        bad += sum(1 for e in r["events"] if e.get("verdict") in ("GHOST", "MISMATCH"))
+        bad += sum(1 for c in r["claims"] if c.get("verdict") == "MISMATCH")
+    if bad:
+        print(f"\nGATE: {bad} GHOST/MISMATCH finding(s) — fix or review before pushing.")
+        sys.exit(2)
 
 
 if __name__ == "__main__":

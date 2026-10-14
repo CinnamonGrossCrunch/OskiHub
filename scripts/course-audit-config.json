@@ -1,1 +1,56 @@
-{"courses":[{"canvas_id":1555698,"ics":"public/course_ICS_files/ewmba204_operations_fall2026.ics","name":"EW204 Operations (Fall 2026)"},{"canvas_id":1555570,"ics":"public/course_ICS_files/ewmba200c_leadershipcomm_fall2026.ics","name":"EW200C Leadership Communication (Fall 2026)"},{"canvas_id":null,"ics":"public/course_ICS_files/ewmba209_strategicleadership_fall2026.ics","name":"EW209 Strategic Leadership (Fall 2026)"}]}
+{
+ "courses": [
+  {
+   "canvas_id": 1555698,
+   "ics": "public/course_ICS_files/ewmba204_operations_fall2026.ics",
+   "name": "EW204 Operations (Fall 2026)"
+  },
+  {
+   "canvas_id": 1555570,
+   "ics": "public/course_ICS_files/ewmba200c_leadershipcomm_fall2026.ics",
+   "name": "EW200C Leadership Communication (Fall 2026)"
+  },
+  {
+   "canvas_id": 1557494,
+   "ics": "public/course_ICS_files/ewmba209_strategicleadership_fall2026.ics",
+   "name": "EW209 Strategic Leadership (Fall 2026)"
+  },
+  {
+   "canvas_id": 1557494,
+   "ics": "public/course_ICS_files/ewmba209_strategicleadership_gold_fall2026.ics",
+   "name": "EW209 Strategic Leadership Gold (Fall 2026)"
+  }
+ ],
+ "accepted": [
+  {
+   "course": "EW204 Operations",
+   "verdict": "GHOST",
+   "match": "Teamwork Agreement",
+   "reason": "Deliberate Sep 23 2026: real non-Canvas requirement, links to course page"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "GHOST",
+   "match": "Prepare Uber",
+   "reason": "Deliberate Sep 23 2026: real non-Canvas requirement"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "GHOST",
+   "match": "Concept Check #4",
+   "reason": "Deliberate Sep 23 2026: real non-Canvas requirement"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "GHOST",
+   "match": "Concept Check #5",
+   "reason": "Deliberate Sep 23 2026: real non-Canvas requirement"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Reflection due Sat",
+   "reason": "Historical: EW204 ended Sep 30 2026; week descriptions predate final Canvas due-date moves"
+  }
+ ]
+}

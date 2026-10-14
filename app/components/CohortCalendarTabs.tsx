@@ -10,6 +10,7 @@ import MonthGrid from './MonthGrid';
 import ParkingBanner from './ParkingBanner';
 import EventDetailModal, { MultiEventModal } from './EventDetailModal';
 import type { CalendarEvent, CohortEvents } from '@/lib/icsUtils';
+import { courseEntryForSource, coursePageUrl } from '@/lib/courseLinks';
 import type { UnifiedDashboardData } from '@/app/api/unified-dashboard/route';
 import { trackEvent } from '@/lib/analytics';
 import { getGreekTheaterEventsForDate } from '@/lib/greekTheater';
@@ -492,101 +493,53 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
 
   // ==========================================================================
   // HELPER: Generate Course-Specific Content for Events
-  // ==========================================================================
+  // ==========================================================================  // ==========================================================================
   /**
    * Generates fallback content for course events without original calendar matches.
-   * Creates bCourses URLs based on course start dates and week numbers.
+   * Resolves through lib/courseLinks.ts, the single source of truth:
+   * - Current-term courses get their REAL bCourses course home page.
+   * - Archive courses keep the legacy generated week-N links.
+   * - Unmatched sources get NO link (null), never another course's link.
    */
   const generateCourseContent = (cohortEvent: CalendarEvent): CalendarEvent | null => {
-    if (!cohortEvent.source) return null;
+    const entry = courseEntryForSource(cohortEvent.source);
+    if (!entry || !entry.canvasId) return null;
 
     const eventDate = new Date(cohortEvent.start);
-    const sourceLower = cohortEvent.source.toLowerCase();
-    
-    // Detect Spring 2026 courses by filename patterns
-    const isSpring2026 = sourceLower.includes('spring2026');
-    const isMacro = sourceLower.includes('201b') || sourceLower.includes('macro');
-    const isAccounting = sourceLower.includes('accounting') || (sourceLower.includes('202') && isSpring2026);
-    
-    // Fall 2025 courses
-    const isCourse201A = (sourceLower.includes('201a') || sourceLower.includes('201') || sourceLower.includes('micro')) && !isMacro;
-    const isLeadingPeople = sourceLower.includes('205') || sourceLower.includes('leadingpeople');
-    const isDataDecisions = sourceLower.includes('datadecisions') || (sourceLower.includes('202') && !isSpring2026 && !isAccounting);
-    const isMarketing = sourceLower.includes('marketing') || sourceLower.includes('208');
-    
-    // Check if this matches any known course
-    const isFall2025Course = isCourse201A || isLeadingPeople || isDataDecisions || isMarketing;
-    const isSpring2026Course = isMacro || isAccounting;
-    
-    if (!isFall2025Course && !isSpring2026Course) return null;
 
-    // Course start dates and bCourses IDs
-    const courseConfig = {
-      // Fall 2025 Courses
-      micro_blue: { start: new Date(2025, 6, 28), courseId: '1544880', urlPattern: 'pages/week-' }, // July 28, 2025
-      micro_gold: { start: new Date(2025, 6, 29), courseId: '1544880', urlPattern: 'pages/week-' }, // July 29, 2025
-      leading_blue: { start: new Date(2025, 7, 6), courseId: '1545386', urlPattern: 'pages/' }, // August 6, 2025
-      leading_gold: { start: new Date(2025, 7, 7), courseId: '1545386', urlPattern: 'pages/' }, // August 7, 2025
-      data_blue: { start: new Date(2025, 9, 14), courseId: '1545042', urlPattern: 'pages/week-' }, // October 14, 2025
-      data_gold: { start: new Date(2025, 9, 15), courseId: '1545042', urlPattern: 'pages/week-' }, // October 15, 2025
-      marketing_blue: { start: new Date(2025, 9, 14), courseId: '1545360', urlPattern: 'pages/session-' }, // October 14, 2025
-      marketing_gold: { start: new Date(2025, 9, 15), courseId: '1545360', urlPattern: 'pages/session-' }, // October 15, 2025
-      
-      // Spring 2026 Courses
-      macro_blue: { start: new Date(2026, 0, 7), courseId: '1549648', urlPattern: 'pages/week-' }, // January 7, 2026
-      macro_gold: { start: new Date(2026, 0, 8), courseId: '1549648', urlPattern: 'pages/week-' }, // January 8, 2026
-      accounting_blue: { start: new Date(2026, 0, 5), courseId: '1549713', urlPattern: 'pages/week-' }, // January 5, 2026
-      accounting_gold: { start: new Date(2026, 0, 6), courseId: '1549713', urlPattern: 'pages/week-' }, // January 6, 2026
-    };
-
-    let config: { start: Date; courseId: string; urlPattern: string };
-    let courseTitle: string;
-    
-    if (isMacro) {
-      config = selectedCohort === 'blue' ? courseConfig.macro_blue : courseConfig.macro_gold;
-      courseTitle = 'MacroEconomics';
-    } else if (isAccounting) {
-      config = selectedCohort === 'blue' ? courseConfig.accounting_blue : courseConfig.accounting_gold;
-      courseTitle = 'Financial Accounting';
-    } else if (isCourse201A) {
-      config = selectedCohort === 'blue' ? courseConfig.micro_blue : courseConfig.micro_gold;
-      courseTitle = 'MicroEconomics';
-    } else if (isDataDecisions) {
-      config = selectedCohort === 'blue' ? courseConfig.data_blue : courseConfig.data_gold;
-      courseTitle = 'Data & Decisions';
-    } else if (isMarketing) {
-      config = selectedCohort === 'blue' ? courseConfig.marketing_blue : courseConfig.marketing_gold;
-      courseTitle = 'Marketing';
-    } else {
-      config = selectedCohort === 'blue' ? courseConfig.leading_blue : courseConfig.leading_gold;
-      courseTitle = 'Leading People';
+    // Current-term course: link to the real course home page. Never fabricate
+    // a week-N page URL.
+    if (!entry.weekPagePattern) {
+      const url = coursePageUrl(entry);
+      if (!url) return null;
+      return {
+        ...cohortEvent,
+        url,
+        location: cohortEvent.location || 'Online (bCourses)',
+      };
     }
 
-    const baseUrl = `https://bcourses.berkeley.edu/courses/${config.courseId}/${config.urlPattern}`;
-
-    // Calculate week number
-    const weeksDiff = Math.floor((eventDate.getTime() - config.start.getTime()) / (7 * 24 * 60 * 60 * 1000));
+    // Archive course: legacy generated week-page link (unchanged behavior).
+    const startIso =
+      selectedCohort === 'blue' ? entry.startDates!.blue : entry.startDates!.gold;
+    const start = new Date(startIso);
+    const baseUrl = `https://bcourses.berkeley.edu/courses/${entry.canvasId}/${entry.weekPagePattern}`;
+    const weeksDiff = Math.floor(
+      (eventDate.getTime() - start.getTime()) / (7 * 24 * 60 * 60 * 1000)
+    );
     const weekNumber = Math.max(1, weeksDiff + 1); // Start from week 1
 
-    // Generate enhanced content
-    const enhancedTitle = isMacro 
-      ? `MacroEconomics Week ${weekNumber}`
-      : isAccounting
-        ? `Financial Accounting Week ${weekNumber}`
-        : isCourse201A 
-          ? `MicroEconomics Week ${weekNumber}`
-          : isDataDecisions
-            ? `Data & Decisions Week ${weekNumber}`
-            : isMarketing
-              ? `Marketing Session ${weekNumber}`
-              : `Leading People Week ${weekNumber}`;
-    
-    // Build course URL
-    const courseUrl = isLeadingPeople 
-      ? `${baseUrl}week-${weekNumber}`
-      : `${baseUrl}${weekNumber}`;
+    const enhancedTitle =
+      entry.key === 'marketing'
+        ? `Marketing Session ${weekNumber}`
+        : `${entry.label} Week ${weekNumber}`;
 
-    const enhancedDescription = `For course content for ${courseTitle}, Week ${weekNumber}, please click Event Link. `;
+    const courseUrl =
+      entry.key === 'leadingpeople'
+        ? `${baseUrl}week-${weekNumber}`
+        : `${baseUrl}${weekNumber}`;
+
+    const enhancedDescription = `For course content for ${entry.label}, Week ${weekNumber}, please click Event Link. `;
 
     return {
       ...cohortEvent,
@@ -596,7 +549,6 @@ export default function CohortCalendarTabs({ cohortEvents, externalSelectedCohor
       location: cohortEvent.location || 'Online (bCourses)',
     };
   };
-
   // ==========================================================================
   // HELPER: Find Matching Event from Original Calendar
   // ==========================================================================

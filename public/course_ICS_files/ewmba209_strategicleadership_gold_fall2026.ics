@@ -1,0 +1,161 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//EWMBA Fall 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EW209 Strategic Leadership Gold (Fall 2026)
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:ew209-2b-20261015@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261015T180000
+DTEND:20261015T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 1 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261022@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261022T180000
+DTEND:20261022T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 2 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261029@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261029T180000
+DTEND:20261029T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 3 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261105@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261105T180000
+DTEND:20261105T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 4 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261112@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261112T180000
+DTEND:20261112T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 5 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261119@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261119T180000
+DTEND:20261119T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 6 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261203@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261203T180000
+DTEND:20261203T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 7 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261210@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261210T180000
+DTEND:20261210T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 8 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-2b-20261217@oski.app
+DTSTAMP:20261012T000000Z
+DTSTART:20261217T180000
+DTEND:20261217T213000
+SUMMARY:Strategic Leadership (EW209.2B) — Session 9 of 9
+DESCRIPTION:Course: EW209.2B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Thursday session.
+LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9157439@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261014T173000
+SUMMARY:Strategic Leadership — Week 1: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 1: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157439
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158014@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261021T173000
+SUMMARY:Strategic Leadership — Assignment 1: Industry Structure and Market Expectation due
+DESCRIPTION:EW209 Strategic Leadership (15 pts). Due 5:30 PM.\nAssignment: Assignment 1: Industry Structure and Market Expectation
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158014
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9157442@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261021T173000
+SUMMARY:Strategic Leadership — Week 2: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 2: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157442
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9157443@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261028T173000
+SUMMARY:Strategic Leadership — Week 3: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 3: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157443
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158007@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261104T183000
+SUMMARY:Strategic Leadership — Week 4: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 6:30 PM.\nAssignment: Week 4: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158007
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158011@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261112T173000
+SUMMARY:Strategic Leadership — Week 5: Article Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 5: Article Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158011
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158008@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261118T173000
+SUMMARY:Strategic Leadership — Week 6: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 6: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158008
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158009@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261202T173000
+SUMMARY:Strategic Leadership — Week 8: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 8: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158009
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158012@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261209T173000
+SUMMARY:Strategic Leadership — Week 7: Article Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 7: Article Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158012
+END:VEVENT
+END:VCALENDAR

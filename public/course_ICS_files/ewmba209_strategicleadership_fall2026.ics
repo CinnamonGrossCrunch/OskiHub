@@ -10,7 +10,7 @@ UID:ew209-20261014@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261014T180000
 DTEND:20261014T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 1 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 1 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
 LOCATION:Chou Hall N470
 END:VEVENT
@@ -19,7 +19,7 @@ UID:ew209-20261021@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261021T180000
 DTEND:20261021T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 2 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 2 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
 LOCATION:Chou Hall N470
 END:VEVENT
@@ -28,7 +28,7 @@ UID:ew209-20261028@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261028T180000
 DTEND:20261028T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 3 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 3 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
 LOCATION:Chou Hall N470
 END:VEVENT
@@ -37,17 +37,8 @@ UID:ew209-20261104@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261104T180000
 DTEND:20261104T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 4 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 4 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
-LOCATION:Chou Hall N470
-END:VEVENT
-BEGIN:VEVENT
-UID:ew209-20261111@oski.app
-DTSTAMP:20260923T000000Z
-DTSTART:20261111T180000
-DTEND:20261111T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 5 of 10
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.\nNote: 2026-11-11 is Veterans Day — the published schedule does not flag a holiday exception\, confirm with the instructor/syllabus.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
@@ -55,17 +46,8 @@ UID:ew209-20261118@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261118T180000
 DTEND:20261118T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 6 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 5 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
-LOCATION:Chou Hall N470
-END:VEVENT
-BEGIN:VEVENT
-UID:ew209-20261125@oski.app
-DTSTAMP:20260923T000000Z
-DTSTART:20261125T180000
-DTEND:20261125T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 7 of 10
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.\nNote: 2026-11-25 is Thanksgiving week — the published schedule does not flag a holiday exception\, confirm with the instructor/syllabus.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
@@ -73,7 +55,7 @@ UID:ew209-20261202@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261202T180000
 DTEND:20261202T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 8 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 6 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
 LOCATION:Chou Hall N470
 END:VEVENT
@@ -82,7 +64,7 @@ UID:ew209-20261209@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261209T180000
 DTEND:20261209T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 9 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 7 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
 LOCATION:Chou Hall N470
 END:VEVENT
@@ -91,8 +73,80 @@ UID:ew209-20261216@oski.app
 DTSTAMP:20260923T000000Z
 DTSTART:20261216T180000
 DTEND:20261216T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 10 of 10
+SUMMARY:Strategic Leadership (EW209.1B) — Session 8 of 8
 DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session. Final session.
 LOCATION:Chou Hall N470
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9157439@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261014T173000
+SUMMARY:Strategic Leadership — Week 1: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 1: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157439
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158014@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261021T173000
+SUMMARY:Strategic Leadership — Assignment 1: Industry Structure and Market Expectation due
+DESCRIPTION:EW209 Strategic Leadership (15 pts). Due 5:30 PM.\nAssignment: Assignment 1: Industry Structure and Market Expectation
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158014
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9157442@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261021T173000
+SUMMARY:Strategic Leadership — Week 2: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 2: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157442
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9157443@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261028T173000
+SUMMARY:Strategic Leadership — Week 3: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 3: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157443
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158007@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261104T183000
+SUMMARY:Strategic Leadership — Week 4: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 6:30 PM.\nAssignment: Week 4: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158007
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158011@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261112T173000
+SUMMARY:Strategic Leadership — Week 5: Article Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 5: Article Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158011
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158008@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261118T173000
+SUMMARY:Strategic Leadership — Week 6: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 6: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158008
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158009@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261202T173000
+SUMMARY:Strategic Leadership — Week 8: Case Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 8: Case Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158009
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-due-9158012@oski.app
+DTSTAMP:20261014T233000Z
+DTSTART:20261209T173000
+SUMMARY:Strategic Leadership — Week 7: Article Question due
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 7: Article Question
+URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158012
 END:VEVENT
 END:VCALENDAR

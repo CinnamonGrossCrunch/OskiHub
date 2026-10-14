@@ -83,7 +83,8 @@ const COHORT_FILES = {
     // Fall 2026 courses (no cohort split published; shared across cohorts)
     'ewmba200c_leadershipcomm_fall2026.ics',
     'ewmba204_operations_fall2026.ics',
-    'ewmba209_strategicleadership_fall2026.ics',
+    // EW209 has a dedicated Gold (02B, Thursday) mirror; the base file is Blue-only (01B, Wednesday)
+    'ewmba209_strategicleadership_gold_fall2026.ics',
     // Spring 2026 courses (archive)
     'ewmba201b_macro_gold_spring2026.ics',
     'ewmba202_accounting_gold_spring2026.ics',
