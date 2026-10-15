@@ -34,7 +34,7 @@ import re
 import shutil
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 PT = ZoneInfo("America/Los_Angeles")
@@ -94,6 +94,39 @@ def event_day_pt(ev):
     if not m:
         return None
     return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+
+
+def event_dt_pt(ev):
+    """Exact DTSTART as 'YYYY-MM-DD HH:MM' in America/Los_Angeles.
+
+    Floating local times are PT; a trailing Z is converted from UTC.
+    Returns None for all-day (VALUE=DATE) or unparsable values.
+    """
+    raw = (ev["dtstart"] or "").strip()
+    m = re.match(r"^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})?(Z?)$", raw)
+    if not m:
+        return None
+    y, mo, d, h, mi = (int(m.group(i)) for i in range(1, 6))
+    if m.group(7) == "Z":
+        dt = datetime(y, mo, d, h, mi, tzinfo=ZoneInfo("UTC")).astimezone(PT)
+    else:
+        dt = datetime(y, mo, d, h, mi, tzinfo=PT)
+    return dt.strftime("%Y-%m-%d %H:%M")
+
+
+def canvas_dt_pt(due_at, shift_days=0):
+    """Canvas due_at as 'YYYY-MM-DD HH:MM' PT, plus an optional day shift.
+
+    The shift encodes syllabus rules that override the single Canvas due
+    date (e.g. 'due 5:30pm on your section's class day' for a Thursday
+    section when Canvas lists the Wednesday date).
+    """
+    if not due_at:
+        return None
+    dt = datetime.fromisoformat(due_at.replace("Z", "+00:00")).astimezone(PT)
+    if shift_days:
+        dt = dt + timedelta(days=shift_days)
+    return dt.strftime("%Y-%m-%d %H:%M")
 
 
 # ---------------------------------------------------------------- title matching
@@ -293,9 +326,19 @@ def loosely_covers(canvas_name, core):
 
 # ---------------------------------------------------------------- audit
 
-def audit(ics_path, course_id, course_name):
+def audit(ics_path, course_id, course_name, course_cfg=None):
     report = {"course": course_name, "ics": ics_path, "course_id": course_id,
-              "events": [], "missing": [], "claims": [], "unverifiable": None}
+              "events": [], "missing": [], "claims": [], "unverifiable": None,
+              "session_findings": []}
+    # Syllabus rules (optional per-course config): section-specific due-date
+    # shifts, expected class-session dates, and syllabus-sourced events that
+    # have no Canvas assignment backing them.
+    syll = (course_cfg or {}).get("syllabus", {})
+    shift_default = syll.get("due_shift_days", 0)
+    shift_exceptions = {str(k): v for k, v in
+                        syll.get("due_shift_exceptions", {}).items()}
+    syllabus_events = syll.get("syllabus_events", [])
+    expected_sessions = syll.get("sessions", [])
     if not course_id:
         report["unverifiable"] = "no Canvas course ID (unpublished?) — skipped"
         return report
@@ -331,9 +374,18 @@ def audit(ics_path, course_id, course_name):
             entry["assignment"] = best["name"]
             entry["assignment_id"] = best["id"]
             problems = []
-            cday = canvas_day_pt(best.get("due_at"))
-            if cday and entry["ics_day"] and cday != entry["ics_day"]:
-                problems.append(f"date differs: ICS {entry['ics_day']} vs Canvas {cday}")
+            # Exact datetime comparison (catches time-of-day errors like the
+            # EW209 Week 4 6:30pm-vs-5:30pm bug, including DST transitions).
+            shift = shift_exceptions.get(str(best["id"]), shift_default)
+            expected = canvas_dt_pt(best.get("due_at"), shift)
+            actual = event_dt_pt(ev)
+            if expected and actual and expected != actual:
+                src = "Canvas" if not shift else f"Canvas+{shift}d (syllabus rule)"
+                problems.append(
+                    f"datetime differs: ICS {actual} vs {src} {expected}")
+            elif expected and actual and shift:
+                entry["syllabus_shift"] = (
+                    f"ICS follows syllabus rule (+{shift}d over Canvas {expected})")
             cp = claimed_points(ev)
             ap = best.get("points_possible")
             if cp is not None and ap is not None and abs(cp - ap) > 0.001:
@@ -344,7 +396,27 @@ def audit(ics_path, course_id, course_name):
             else:
                 entry["verdict"] = "OK"
                 entry["detail"] = f"matches '{best['name']}'"
+                if entry.get("syllabus_shift"):
+                    entry["detail"] += f" [{entry['syllabus_shift']}]"
         else:
+            # Syllabus-sourced events (e.g. exam sign-up deadline) have no
+            # Canvas assignment; verify them against the encoded syllabus
+            # facts instead of calling them GHOSTs.
+            syl_match = next(
+                (s for s in syllabus_events
+                 if s.get("uid_contains", "") and s["uid_contains"] in ev["uid"]),
+                None)
+            if syl_match:
+                sday = syl_match.get("date")
+                if sday and entry["ics_day"] and sday != entry["ics_day"]:
+                    entry["verdict"] = "MISMATCH"
+                    entry["detail"] = (f"syllabus event date differs: ICS "
+                                       f"{entry['ics_day']} vs syllabus {sday}")
+                else:
+                    entry["verdict"] = "OK"
+                    entry["detail"] = (f"syllabus-sourced: {syl_match.get('note', '')}")
+                report["events"].append(entry)
+                continue
             kind, page = page_mention_kind(core, data["page_sources"])
             if kind == "requirement":
                 entry["verdict"] = "MENTIONED"
@@ -394,6 +466,33 @@ def audit(ics_path, course_id, course_name):
                     "name": claim["name"], "verdict": verdict, "detail": detail,
                 })
 
+    # Session-date verification: class-session events must land on the dates
+    # in the syllabus schedule (catches phantom sessions like a Dec 16 class
+    # the syllabus never scheduled), and every scheduled date must appear.
+    if expected_sessions:
+        expected_days = {s["date"] for s in expected_sessions}
+        seen_days = set()
+        for ev in events:
+            if is_due_like(ev) or "session" not in ev["summary"].lower():
+                continue
+            day = event_day_pt(ev)
+            seen_days.add(day)
+            if day not in expected_days:
+                report["session_findings"].append({
+                    "session": ev["summary"], "ics_day": day,
+                    "verdict": "MISMATCH",
+                    "detail": f"session on {day} is not in the syllabus schedule",
+                })
+        for s in expected_sessions:
+            if s["date"] not in seen_days:
+                report["session_findings"].append({
+                    "session": f"syllabus week {s.get('week')}",
+                    "ics_day": None,
+                    "verdict": "MISMATCH",
+                    "detail": f"syllabus schedules a session on {s['date']} "
+                              f"but no ICS session event exists",
+                })
+
     return report
 
 
@@ -423,6 +522,12 @@ def print_report(r):
             print(f"[{mark} {c['verdict']:10}] in '{c['session']}'")
             print(f"             claim: {c['claim']}")
             print(f"             {c['detail']}")
+    if r["session_findings"]:
+        print(f"\nSESSION SCHEDULE findings ({len(r['session_findings'])}):")
+        for s in r["session_findings"]:
+            mark = {"MISMATCH": "!"}.get(s["verdict"], "?")
+            print(f"[{mark} {s['verdict']:10}] {s['session']}")
+            print(f"             {s['detail']}")
 
 
 def prune_ghosts(ics_path, report):
@@ -477,7 +582,13 @@ def main():
         print(__doc__)
         sys.exit(1)
 
-    reports = [audit(ics, cid, name) for ics, cid, name in jobs]
+    cfg_by_ics = {}
+    if "--all" in args:
+        repo = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+        for c in json.load(open(CONFIG))["courses"]:
+            cfg_by_ics[os.path.join(repo, c["ics"])] = c
+    reports = [audit(ics, cid, name, cfg_by_ics.get(ics))
+               for ics, cid, name in jobs]
     accepted = []
     if "--all" in args:
         accepted = json.load(open(CONFIG)).get("accepted", [])
@@ -511,6 +622,8 @@ def main():
             continue
         bad += sum(1 for e in r["events"] if e.get("verdict") in ("GHOST", "MISMATCH"))
         bad += sum(1 for c in r["claims"] if c.get("verdict") == "MISMATCH")
+        bad += sum(1 for s in r.get("session_findings", [])
+                   if s.get("verdict") == "MISMATCH")
     if bad:
         print(f"\nGATE: {bad} GHOST/MISMATCH finding(s) — fix or review before pushing.")
         sys.exit(2)

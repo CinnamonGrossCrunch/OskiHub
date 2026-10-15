@@ -3,150 +3,148 @@ VERSION:2.0
 PRODID:-//OskiHub//EWMBA Fall 2026//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:EW209 Strategic Leadership (Fall 2026)
+X-WR-CALNAME:EW209 Strategic Leadership (Blue cohort, Fall 2026)
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
 UID:ew209-20261014@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261014T180000
 DTEND:20261014T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 1 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
+SUMMARY:Strategic Leadership (EW209.1B) — Session 1 of 7
+DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeek 1: Introduction to Strategy and Industry Analysis.\nCase: Cola Wars (via study.net).\nPre-class question due 5:30 PM via bCourses (on your section's class day).\nDinner break 7:30-8:15 PM.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-20261021@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261021T180000
 DTEND:20261021T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 2 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
+SUMMARY:Strategic Leadership (EW209.1B) — Session 2 of 7
+DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeek 2: Value Creation\, Capture and Irreplaceability.\nCase: Intel (via study.net).\nPre-class question due 5:30 PM via bCourses (on your section's class day).\nDinner break 7:30-8:15 PM.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-20261028@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261028T180000
 DTEND:20261028T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 3 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
+SUMMARY:Strategic Leadership (EW209.1B) — Session 3 of 7
+DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeek 3: Competitive Advantage and Positioning.\nCase: Tesla (via study.net).\nPre-class question due 5:30 PM via bCourses (on your section's class day).\nDinner break 7:30-8:15 PM.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-20261104@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261104T180000
 DTEND:20261104T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 4 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
+SUMMARY:Strategic Leadership (EW209.1B) — Session 4 of 7
+DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeek 4: Entry and Dynamics.\nCase: RyanAir (via study.net).\nPre-class question due 5:30 PM via bCourses (on your section's class day).\nDinner break 7:30-8:15 PM.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-20261118@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261118T180000
 DTEND:20261118T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 5 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
+SUMMARY:Strategic Leadership (EW209.1B) — Session 5 of 7
+DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeek 6: Strategic Interactions.\nCase: Bitter Competition (via study.net).\nPre-class question due 5:30 PM via bCourses (on your section's class day).\nDinner break 7:30-8:15 PM.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-20261202@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261202T180000
 DTEND:20261202T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 6 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
+SUMMARY:Strategic Leadership (EW209.1B) — Session 6 of 7
+DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeek 8: Boundaries of the Firm.\nCase: Disney (via study.net).\nPre-class question due 5:30 PM via bCourses (on your section's class day).\nDinner break 7:30-8:15 PM.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-20261209@oski.app
-DTSTAMP:20260923T000000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261209T180000
 DTEND:20261209T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 7 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session.
-LOCATION:Chou Hall N470
-END:VEVENT
-BEGIN:VEVENT
-UID:ew209-20261216@oski.app
-DTSTAMP:20260923T000000Z
-DTSTART:20261216T180000
-DTEND:20261216T213000
-SUMMARY:Strategic Leadership (EW209.1B) — Session 8 of 8
-DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeekly Wednesday session. Final session.
+SUMMARY:Strategic Leadership (EW209.1B) — Session 7 of 7
+DESCRIPTION:Course: EW209.1B Strategic Leadership (2 units)\nInstructor: Slattery\, C.\nWeek 9: Growth and Change.\nPre-class question due 5:30 PM via bCourses (on your section's class day).\nDinner break 7:30-8:15 PM.
 LOCATION:Chou Hall N470
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9157439@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261014T173000
 SUMMARY:Strategic Leadership — Week 1: Case Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 1: Case Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 1: Case Question
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157439
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9158014@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261021T173000
-SUMMARY:Strategic Leadership — Assignment 1: Industry Structure and Market Expectation due
-DESCRIPTION:EW209 Strategic Leadership (15 pts). Due 5:30 PM.\nAssignment: Assignment 1: Industry Structure and Market Expectation
+SUMMARY:Strategic Leadership — Assignment 1: Industry Structure and Market Expectations due
+DESCRIPTION:EW209 Strategic Leadership (15 pts). Due 5:30 PM Wednesday.\nAssignment: Assignment 1: Industry Structure and Market Expectations
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158014
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9157442@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261021T173000
 SUMMARY:Strategic Leadership — Week 2: Case Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 2: Case Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 2: Case Question
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157442
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9157443@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261028T173000
 SUMMARY:Strategic Leadership — Week 3: Case Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 3: Case Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 3: Case Question
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9157443
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9158007@oski.app
-DTSTAMP:20261014T233000Z
-DTSTART:20261104T183000
+DTSTAMP:20261014T233059Z
+DTSTART:20261104T173000
 SUMMARY:Strategic Leadership — Week 4: Case Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 6:30 PM.\nAssignment: Week 4: Case Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 4: Case Question
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158007
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9158011@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261112T173000
 SUMMARY:Strategic Leadership — Week 5: Article Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 5: Article Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 5: Article Question\nNo 01B class this week (Wed 11/11 is Veterans Day)\; Canvas due date Thu 11/12 5:30 p.m. applies to both sections.
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158011
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9158008@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261118T173000
 SUMMARY:Strategic Leadership — Week 6: Case Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 6: Case Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 6: Case Question
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158008
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9158009@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261202T173000
 SUMMARY:Strategic Leadership — Week 8: Case Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 8: Case Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 8: Case Question
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158009
 END:VEVENT
 BEGIN:VEVENT
 UID:ew209-due-9158012@oski.app
-DTSTAMP:20261014T233000Z
+DTSTAMP:20261014T233059Z
 DTSTART:20261209T173000
 SUMMARY:Strategic Leadership — Week 7: Article Question due
-DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM.\nAssignment: Week 7: Article Question
+DESCRIPTION:EW209 Strategic Leadership (1 pt). Due 5:30 PM Wednesday.\nAssignment: Week 7: Article Question
 URL:https://bcourses.berkeley.edu/courses/1557494/assignments/9158012
+END:VEVENT
+BEGIN:VEVENT
+UID:ew209-exam-signup-blue@oski.app
+DTSTAMP:20261014T233059Z
+DTSTART;VALUE=DATE:20261123
+SUMMARY:Strategic Leadership — Take-home exam slot sign-up
+DESCRIPTION:Per syllabus: sign up for a take-home exam slot by Monday\, November 23 (or you will be assigned a default slot). Week 7 has no class meeting; the exam is offered during predetermined windows decided as a class.
 END:VEVENT
 END:VCALENDAR

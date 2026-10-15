@@ -13,12 +13,47 @@
   {
    "canvas_id": 1557494,
    "ics": "public/course_ICS_files/ewmba209_strategicleadership_fall2026.ics",
-   "name": "EW209 Strategic Leadership (Fall 2026)"
+   "name": "EW209 Strategic Leadership (Fall 2026)",
+   "syllabus": {
+    "source": "EWMBA_209_Syllabus_Fall_2026.docx (bCourses file 95669979)",
+    "note": "01B meets Wednesdays. Pre-class questions due 5:30pm on the section's class day; Canvas lists the Wednesday date, so no shift for Blue.",
+    "due_shift_days": 0,
+    "due_shift_exceptions": {},
+    "sessions": [
+     {"date": "2026-10-14", "week": 1}, {"date": "2026-10-21", "week": 2},
+     {"date": "2026-10-28", "week": 3}, {"date": "2026-11-04", "week": 4},
+     {"date": "2026-11-18", "week": 6}, {"date": "2026-12-02", "week": 8},
+     {"date": "2026-12-09", "week": 9}
+    ],
+    "syllabus_events": [
+     {"uid_contains": "exam-signup", "date": "2026-11-23",
+      "note": "Take-home exam slot sign-up deadline (syllabus: by Mon Nov 23; Week 7 has no class meeting)"}
+    ]
+   }
   },
   {
    "canvas_id": 1557494,
    "ics": "public/course_ICS_files/ewmba209_strategicleadership_gold_fall2026.ics",
-   "name": "EW209 Strategic Leadership Gold (Fall 2026)"
+   "name": "EW209 Strategic Leadership Gold (Fall 2026)",
+   "syllabus": {
+    "source": "EWMBA_209_Syllabus_Fall_2026.docx (bCourses file 95669979)",
+    "note": "02B meets Thursdays. Syllabus: pre-class questions due 5:30pm on YOUR SECTION'S class day, so Gold due dates are Canvas date + 1 day. Assignment 1 explicitly Oct 22 for 02B.",
+    "due_shift_days": 1,
+    "due_shift_exceptions_note": "9158011 (Week 5 Article Question): Canvas already lists Thu 11/12 5:30pm (no Wed class that week, Veterans Day), which IS the 02B class day — no shift.",
+    "due_shift_exceptions": {
+     "9158011": 0
+    },
+    "sessions": [
+     {"date": "2026-10-15", "week": 1}, {"date": "2026-10-22", "week": 2},
+     {"date": "2026-10-29", "week": 3}, {"date": "2026-11-05", "week": 4},
+     {"date": "2026-11-12", "week": 5}, {"date": "2026-11-19", "week": 6},
+     {"date": "2026-12-03", "week": 8}, {"date": "2026-12-10", "week": 9}
+    ],
+    "syllabus_events": [
+     {"uid_contains": "exam-signup", "date": "2026-11-23",
+      "note": "Take-home exam slot sign-up deadline (syllabus: by Mon Nov 23; Week 7 has no class meeting)"}
+    ]
+   }
   }
  ],
  "accepted": [
@@ -51,6 +86,48 @@
    "verdict": "MISMATCH",
    "match": "Reflection due Sat",
    "reason": "Historical: EW204 ended Sep 30 2026; week descriptions predate final Canvas due-date moves"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Ops Lab #2 Phase 1 due",
+   "reason": "Historical (surfaced Oct 14 2026 by exact-datetime audit): ICS 23:30 vs Canvas 23:59 on Sep 8; past deadline, unknown whether Canvas moved or ICS was built wrong — leaving the published record as-is"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Ops Lab #2 Phase 2 due",
+   "reason": "Historical (surfaced Oct 14 2026 by exact-datetime audit): ICS 23:30 vs Canvas 23:59 on Sep 9; past deadline — leaving the published record as-is"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Simulation slides due",
+   "reason": "Historical (surfaced Oct 14 2026 by exact-datetime audit): ICS 23:30 vs Canvas 23:59 on Sep 14; past deadline — leaving the published record as-is"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Berkeley's Official Course Evaluation due",
+   "reason": "Historical (surfaced Oct 14 2026 by exact-datetime audit): ICS 17:30 vs Canvas 18:00 on Sep 30; past deadline — leaving the published record as-is"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Ops Lab #3 due",
+   "reason": "Historical (surfaced Oct 14 2026 by exact-datetime audit): ICS 23:30 vs Canvas 23:59 on Oct 11; past deadline — leaving the published record as-is"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Operations for My Job due",
+   "reason": "Historical (surfaced Oct 14 2026 by exact-datetime audit): ICS 23:30 vs Canvas 23:59 on Oct 11; past deadline — leaving the published record as-is"
+  },
+  {
+   "course": "EW204 Operations",
+   "verdict": "MISMATCH",
+   "match": "Ops Lab #4 due",
+   "reason": "Historical (surfaced Oct 14 2026 by exact-datetime audit): ICS 23:30 vs Canvas 23:59 on Oct 11; past deadline — leaving the published record as-is"
   }
  ]
 }
