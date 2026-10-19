@@ -14,17 +14,7 @@ export interface GeneratedGreekEvent {
 
 export const GENERATED_GREEK_EVENTS: GeneratedGreekEvent[] = [
   {
-    year: 2026, month: 10, day: 16,
-    title: "Greek Theatre: Vulfpeck",
-    artist: "Vulfpeck",
-    url: "https://thegreekberkeley.com/events/vulfpeck-261016",
-    showTime: "8:00 pm",
-    doorsTime: "6:30 pm",
-    severity: "high",
-    note: "Greek Theatre evening concert (HIGH impact): crowds fill nearby lots and add significant commute traffic around the venue.",
-  },
-  {
-    year: 2026, month: 10, day: 18,
+    year: 2026, month: 10, day: 19,
     title: "Greek Theatre: Role Model",
     artist: "Role Model",
     url: "https://thegreekberkeley.com/events/role-model-261018",

@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-10-12T16:07:25.988534+00:00",
+  "generated_at": "2026-10-19T13:07:14.802481+00:00",
   "generator": "scripts/event-parking/update_parking_events.py",
   "forced": true,
   "sources": {
     "calbears": {
       "status": "ok",
-      "events": 54,
+      "events": 50,
       "severity_counts": {
         "high": 6,
         "medium": 0,
-        "low": 48
+        "low": 44
       },
       "url": "https://calbears.com/calendar.ics"
     },
     "greek": {
       "status": "ok",
-      "events": 5,
+      "events": 4,
       "url": "https://thegreekberkeley.com/",
       "coverage": "concerts only; UC non-concert events are not listed by the Greek"
     },
