@@ -14,16 +14,6 @@ export interface GeneratedGreekEvent {
 
 export const GENERATED_GREEK_EVENTS: GeneratedGreekEvent[] = [
   {
-    year: 2026, month: 10, day: 19,
-    title: "Greek Theatre: Role Model",
-    artist: "Role Model",
-    url: "https://thegreekberkeley.com/events/role-model-261018",
-    showTime: "7:30 pm",
-    doorsTime: "6:00 pm",
-    severity: "high",
-    note: "Greek Theatre evening concert (HIGH impact): crowds fill nearby lots and add significant commute traffic around the venue.",
-  },
-  {
     year: 2026, month: 11, day: 4,
     title: "Greek Theatre: Ms. Lauryn Hill & Wyclef Jean: Celebrating 30 years of Fugees\u2019 The Score",
     artist: "Ms. Lauryn Hill & Wyclef Jean: Celebrating 30 years of Fugees\u2019 The Score",
@@ -48,6 +38,16 @@ export const GENERATED_GREEK_EVENTS: GeneratedGreekEvent[] = [
     title: "Greek Theatre: The Red Clay Strays",
     artist: "The Red Clay Strays",
     url: "https://thegreekberkeley.com/events/the-red-clay-strays-270812",
+    showTime: "7:00 pm",
+    doorsTime: "5:30 pm",
+    severity: "high",
+    note: "Greek Theatre evening concert (HIGH impact): crowds fill nearby lots and add significant commute traffic around the venue.",
+  },
+  {
+    year: 2027, month: 9, day: 7,
+    title: "Greek Theatre: Sienna Spiro",
+    artist: "Sienna Spiro",
+    url: "https://thegreekberkeley.com/events/sienna-spiro-270907",
     showTime: "7:00 pm",
     doorsTime: "5:30 pm",
     severity: "high",

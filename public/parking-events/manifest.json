@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-19T13:07:14.802481+00:00",
+  "generated_at": "2026-10-26T13:07:37.103142+00:00",
   "generator": "scripts/event-parking/update_parking_events.py",
   "forced": true,
   "sources": {
     "calbears": {
       "status": "ok",
-      "events": 50,
+      "events": 37,
       "severity_counts": {
-        "high": 6,
+        "high": 4,
         "medium": 0,
-        "low": 44
+        "low": 33
       },
       "url": "https://calbears.com/calendar.ics"
     },
