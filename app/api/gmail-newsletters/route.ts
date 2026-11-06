@@ -82,9 +82,14 @@ export async function GET() {
       });
     }
 
-    // Read all markdown files
+    // Read all markdown files. Exclude Google Apps Script failure
+    // notifications ("Summary of failures for Google Apps Script: ..."):
+    // those are error reports from the newsletter dispatchers themselves,
+    // not newsletters, but the Blue Crew dispatcher has committed them as
+    // newsletter files in the past. Never serve them.
     const files = fs.readdirSync(newslettersDir)
       .filter(file => file.endsWith('.md'))
+      .filter(file => !file.includes('summary-of-failures-for-google-apps-script'))
       .sort()
       .reverse(); // Most recent first
 
@@ -152,9 +157,15 @@ export async function GET() {
       };
     });
 
+    // Belt and braces: also drop failure notifications by title, in case one
+    // ever lands under a differently-shaped filename.
+    const visibleNewsletters = newsletters.filter(
+      (n) => !/summary of failures for google apps script/i.test(n.title)
+    );
+
     return NextResponse.json({
-      newsletters,
-      count: newsletters.length,
+      newsletters: visibleNewsletters,
+      count: visibleNewsletters.length,
     });
 
   } catch (error) {

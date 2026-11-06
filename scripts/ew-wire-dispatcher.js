@@ -176,6 +176,19 @@ function cleanEWWireHTML(rawHTML) {
 // ============================================================================
 function processNewsletter(msg) {
   const subject = msg.getSubject();
+
+  // Skip Google Apps Script failure notifications. When a script in this
+  // account errors, Google emails a "Summary of failures for Google Apps
+  // Script: ..." notice; the EW WIRE Fetcher's notices match the search
+  // query above ("EW WIRE" in the subject), so without this guard they get
+  // dispatched as if they were newsletters. The GitHub workflow also
+  // filters these, but don't rely on a downstream check. Leave the message
+  // unread so it still surfaces as an alert in Gmail.
+  if (/summary of failures for google apps script/i.test(subject)) {
+    console.log(`⏭️ Skipping Apps Script failure notification: ${subject}`);
+    return;
+  }
+
   const rawBody = msg.getBody();
   const body = cleanEWWireHTML(rawBody); // Use EW Wire-specific cleaning
   const date = Utilities.formatDate(msg.getDate(), 'GMT', 'yyyy-MM-dd');

@@ -186,6 +186,18 @@ function extractNewsletterInfo(subject) {
 // ============================================================================
 function processNewsletter(msg) {
   const subject = msg.getSubject();
+
+  // Skip Google Apps Script failure notifications. When THIS script errors,
+  // Google emails the account a "Summary of failures for Google Apps Script:
+  // Blue Crew Review Dispatcher" notice — whose subject matches the search
+  // query above, so without this guard the script publishes its own error
+  // reports as newsletters. Leave the message unread so it still surfaces
+  // as an alert in Gmail.
+  if (/summary of failures for google apps script/i.test(subject)) {
+    console.log(`⏭️ Skipping Apps Script failure notification: ${subject}`);
+    return;
+  }
+
   const rawBody = msg.getBody();
   const plainBody = msg.getPlainBody(); // Get plain text version too
   
