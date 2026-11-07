@@ -1,0 +1,90 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//Haas Academic Calendar Spring 2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Haas Academic Calendar Spring 2027
+X-WR-CALDESC:Spring 2027 Academic Calendar
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:haas-spring2027-first-day@oskihub
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:First Day of Spring A Classes
+DESCRIPTION:Spring 2027 semester begins. Spring A core classes start the week of Jan 4.
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-bizcomm@oskihub
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270118
+SUMMARY:BizComm Residency Weekend
+DESCRIPTION:EWMBA205D Business Communication residency weekend at Haas (Fri Jan 15 - Sun Jan 17).
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-mlk@oskihub
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Martin Luther King Jr. Day (No Classes)
+DESCRIPTION:Campus closed in observance of Martin Luther King Jr. Day. No classes scheduled.
+CATEGORIES:HOLIDAY
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-presidents-day@oskihub
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Presidents Day (No Classes)
+DESCRIPTION:Campus closed in observance of Presidents Day. No classes scheduled.
+CATEGORIES:HOLIDAY
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-springa-last-day@oskihub
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:Last Day of Spring A Classes
+DESCRIPTION:Final day of regular instruction for Spring A 2027.
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-springa-finals@oskihub
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270312
+SUMMARY:Finals Week (Spring A)
+DESCRIPTION:Spring A final examinations period (Mar 8-11). Check your course schedules for specific exam dates and times.
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-springb-first-day@oskihub
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:First Day of Spring B Classes
+DESCRIPTION:Spring B classes begin the week of Mar 15.
+CATEGORIES:ACADEMIC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-spring-break@oskihub
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270327
+SUMMARY:Spring Break
+DESCRIPTION:Spring Break - No classes. Enjoy your break!
+CATEGORIES:BREAK
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:haas-spring2027-springb-finals@oskihub
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270521
+SUMMARY:Finals Week (Spring B)
+DESCRIPTION:Spring B final examinations period (May 17-20). Check your course schedules for specific exam dates and times.
+CATEGORIES:ACADEMIC,FINALS
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

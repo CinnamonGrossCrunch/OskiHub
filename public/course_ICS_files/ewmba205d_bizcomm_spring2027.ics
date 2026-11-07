@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//EWMBA 205D BizComm//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EWMBA 205D BizComm 2027
+X-WR-CALDESC:Spring 2027 Residency Weekend - Jan 15-17, 2027
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:ewmba205d-20270115@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270115T080000
+DTEND;TZID=America/Los_Angeles:20270115T160000
+SUMMARY:BizComm - Day 1
+DESCRIPTION:EWMBA 205D.4 Business Communication in Diverse Work Environments\nInstructors: B. Pearce\, R. Portnoy\n1 unit\n\nResidency weekend at Haas. Overnight stay at the DoubleTree Berkeley Marina is required (Program Office covers room and tax). The scheduled program ends 2:30 PM Sunday\; the participation agreement runs to 4:00 PM Sunday. A required pre-session is held in December (date announced via bCourses).
+LOCATION:UC Berkeley Haas School of Business
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba205d-20270116@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270116T080000
+DTEND;TZID=America/Los_Angeles:20270116T160000
+SUMMARY:BizComm - Day 2
+DESCRIPTION:EWMBA 205D.4 Business Communication in Diverse Work Environments\nInstructors: B. Pearce\, R. Portnoy\n1 unit\n\nResidency weekend at Haas. Overnight stay at the DoubleTree Berkeley Marina is required (Program Office covers room and tax). The scheduled program ends 2:30 PM Sunday\; the participation agreement runs to 4:00 PM Sunday. A required pre-session is held in December (date announced via bCourses).
+LOCATION:UC Berkeley Haas School of Business
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba205d-20270117@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270117T080000
+DTEND;TZID=America/Los_Angeles:20270117T160000
+SUMMARY:BizComm - Day 3
+DESCRIPTION:EWMBA 205D.4 Business Communication in Diverse Work Environments\nInstructors: B. Pearce\, R. Portnoy\n1 unit\n\nResidency weekend at Haas. Overnight stay at the DoubleTree Berkeley Marina is required (Program Office covers room and tax). The scheduled program ends 2:30 PM Sunday\; the participation agreement runs to 4:00 PM Sunday. A required pre-session is held in December (date announced via bCourses).
+LOCATION:UC Berkeley Haas School of Business
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

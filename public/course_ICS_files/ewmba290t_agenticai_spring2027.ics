@@ -1,0 +1,159 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//EWMBA 290T Fundamentals of Agentic AI//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EWMBA 290T Fundamentals of Agentic AI
+X-WR-CALDESC:Spring 2027 Schedule - Tuesdays 6:00-9:00 PM, Chou Hall N100
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:ewmba290t-20270119@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270119T180000
+DTEND;TZID=America/Los_Angeles:20270119T210000
+SUMMARY:Agentic AI - Session 1
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270126@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270126T180000
+DTEND;TZID=America/Los_Angeles:20270126T210000
+SUMMARY:Agentic AI - Session 2
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270202@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270202T180000
+DTEND;TZID=America/Los_Angeles:20270202T210000
+SUMMARY:Agentic AI - Session 3
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270209@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270209T180000
+DTEND;TZID=America/Los_Angeles:20270209T210000
+SUMMARY:Agentic AI - Session 4
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270216@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270216T180000
+DTEND;TZID=America/Los_Angeles:20270216T210000
+SUMMARY:Agentic AI - Session 5
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270223@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270223T180000
+DTEND;TZID=America/Los_Angeles:20270223T210000
+SUMMARY:Agentic AI - Session 6
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270302@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270302T180000
+DTEND;TZID=America/Los_Angeles:20270302T210000
+SUMMARY:Agentic AI - Session 7
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270309@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270309T180000
+DTEND;TZID=America/Los_Angeles:20270309T210000
+SUMMARY:Agentic AI - Session 8
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270316@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270316T180000
+DTEND;TZID=America/Los_Angeles:20270316T210000
+SUMMARY:Agentic AI - Session 9
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270330@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270330T180000
+DTEND;TZID=America/Los_Angeles:20270330T210000
+SUMMARY:Agentic AI - Session 10
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270406@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270406T180000
+DTEND;TZID=America/Los_Angeles:20270406T210000
+SUMMARY:Agentic AI - Session 11
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270413@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270413T180000
+DTEND;TZID=America/Los_Angeles:20270413T210000
+SUMMARY:Agentic AI - Session 12
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270420@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270420T180000
+DTEND;TZID=America/Los_Angeles:20270420T210000
+SUMMARY:Agentic AI - Session 13
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270427@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270427T180000
+DTEND;TZID=America/Los_Angeles:20270427T210000
+SUMMARY:Agentic AI - Session 14
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba290t-20270504@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270504T180000
+DTEND;TZID=America/Los_Angeles:20270504T210000
+SUMMARY:Agentic AI - Session 15
+DESCRIPTION:EWMBA 290T.9 Fundamentals of Agentic AI\nInstructor: A. Mas\n3 units\n\nSession schedule from the OLR Spring 2027 Elective Schedule (Tuesdays\, Jan 19 - May 4\, 2027). No session Tue Mar 23 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

@@ -63,6 +63,9 @@ let icsMemo: { data: CohortEvents; params: string; timestamp: number } | null = 
 // File mappings for each cohort
 const COHORT_FILES = {
   blue: [
+    // Spring 2027 courses (shared across cohorts)
+    'ewmba290t_agenticai_spring2027.ics',
+    'ewmba205d_bizcomm_spring2027.ics',
     // Fall 2026 courses (no cohort split published; shared across cohorts)
     'ewmba200c_leadershipcomm_fall2026.ics',
     'ewmba204_operations_fall2026.ics',
@@ -80,6 +83,9 @@ const COHORT_FILES = {
     'teams@Haas.ics'
   ],
   gold: [
+    // Spring 2027 courses (shared across cohorts)
+    'ewmba290t_agenticai_spring2027.ics',
+    'ewmba205d_bizcomm_spring2027.ics',
     // Fall 2026 courses (no cohort split published; shared across cohorts)
     'ewmba200c_leadershipcomm_fall2026.ics',
     'ewmba204_operations_fall2026.ics',
@@ -749,15 +755,26 @@ async function fetchCampusGroupsEvents(): Promise<CalendarEvent[]> {
 async function fetchHaasAcademicCalendar(): Promise<CalendarEvent[]> {
   safeLog('Fetching Haas Academic Calendar events');
 
-  try {
-    const icsText = await fetchIcsData('haas_academic_calendar_spring2026.ics');
-    const events = parseIcsToEvents(icsText, 'blue', 'haas_academic_calendar_spring2026.ics');
-    safeLog(`Successfully parsed ${events.length} events from Haas Academic Calendar`);
-    return events;
-  } catch (error) {
-    safeError('Error fetching Haas Academic Calendar events:', error);
-    return [];
+  // Load every term's academic calendar file; each is independent so one
+  // missing file never takes down the others. Past terms' events are
+  // dropped later by the date-range filter.
+  const files = [
+    'haas_academic_calendar_spring2026.ics',
+    'haas_academic_calendar_fall2026.ics',
+    'haas_academic_calendar_spring2027.ics',
+  ];
+  const allEvents: CalendarEvent[] = [];
+  for (const file of files) {
+    try {
+      const icsText = await fetchIcsData(file);
+      const events = parseIcsToEvents(icsText, 'blue', file);
+      safeLog(`Successfully parsed ${events.length} events from Haas Academic Calendar (${file})`);
+      allEvents.push(...events);
+    } catch (error) {
+      safeError(`Error fetching Haas Academic Calendar events (${file}):`, error);
+    }
   }
+  return allEvents;
 }
 
 /**
