@@ -1,0 +1,139 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OskiHub//EWMBA 296.7 AI Entrepreneurship//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EWMBA 296.7 AI Entrepreneurship
+X-WR-CALDESC:Spring 2027 Schedule - Thursdays 6:00-9:30 PM, Chou Hall N100 
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:ewmba296-20270121@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270121T180000
+DTEND;TZID=America/Los_Angeles:20270121T213000
+SUMMARY:AI Entrepreneurship - Session 1
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270128@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270128T180000
+DTEND;TZID=America/Los_Angeles:20270128T213000
+SUMMARY:AI Entrepreneurship - Session 2
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270204@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270204T180000
+DTEND;TZID=America/Los_Angeles:20270204T213000
+SUMMARY:AI Entrepreneurship - Session 3
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270211@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270211T180000
+DTEND;TZID=America/Los_Angeles:20270211T213000
+SUMMARY:AI Entrepreneurship - Session 4
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270218@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270218T180000
+DTEND;TZID=America/Los_Angeles:20270218T213000
+SUMMARY:AI Entrepreneurship - Session 5
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270225@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270225T180000
+DTEND;TZID=America/Los_Angeles:20270225T213000
+SUMMARY:AI Entrepreneurship - Session 6
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270304@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270304T180000
+DTEND;TZID=America/Los_Angeles:20270304T213000
+SUMMARY:AI Entrepreneurship - Session 7
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270311@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270311T180000
+DTEND;TZID=America/Los_Angeles:20270311T213000
+SUMMARY:AI Entrepreneurship - Session 8
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270318@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270318T180000
+DTEND;TZID=America/Los_Angeles:20270318T213000
+SUMMARY:AI Entrepreneurship - Session 9
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270401@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270401T180000
+DTEND;TZID=America/Los_Angeles:20270401T213000
+SUMMARY:AI Entrepreneurship - Session 10
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270408@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270408T180000
+DTEND;TZID=America/Los_Angeles:20270408T213000
+SUMMARY:AI Entrepreneurship - Session 11
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270415@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270415T180000
+DTEND;TZID=America/Los_Angeles:20270415T213000
+SUMMARY:AI Entrepreneurship - Session 12
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ewmba296-20270422@oskihub
+DTSTAMP:20261107T000000Z
+DTSTART;TZID=America/Los_Angeles:20270422T180000
+DTEND;TZID=America/Los_Angeles:20270422T213000
+SUMMARY:AI Entrepreneurship - Session 13
+DESCRIPTION:EWMBA 296.7 AI Entrepreneurship\nInstructors: O. Even-Tov\, A. Zekoff\n3 units\n\nPROVISIONAL: OLR confirms Thursdays 6:00-9:30 PM in N100 but publishes no date range. Sessions assume Jan 21 - Apr 22\, 2027 (sighted in the OLR Elective Schedule Oct 22\, 2026\; not re-confirmed Nov 6). No session Thu Mar 25 (Spring Break).
+LOCATION:Chou Hall N100
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

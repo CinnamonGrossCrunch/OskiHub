@@ -65,6 +65,7 @@ const COHORT_FILES = {
   blue: [
     // Spring 2027 courses (shared across cohorts)
     'ewmba290t_agenticai_spring2027.ics',
+    'ewmba296_entrepreneurship_spring2027.ics',
     'ewmba205d_bizcomm_spring2027.ics',
     // Fall 2026 courses (no cohort split published; shared across cohorts)
     'ewmba200c_leadershipcomm_fall2026.ics',
@@ -85,6 +86,7 @@ const COHORT_FILES = {
   gold: [
     // Spring 2027 courses (shared across cohorts)
     'ewmba290t_agenticai_spring2027.ics',
+    'ewmba296_entrepreneurship_spring2027.ics',
     'ewmba205d_bizcomm_spring2027.ics',
     // Fall 2026 courses (no cohort split published; shared across cohorts)
     'ewmba200c_leadershipcomm_fall2026.ics',
