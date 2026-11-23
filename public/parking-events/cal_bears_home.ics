@@ -3,184 +3,8 @@ VERSION:2.0
 PRODID:-//OskiHub//Parking Events//EN
 X-WR-CALNAME:Cal Bears home events (parking impact)
 BEGIN:VEVENT
-UID:vcal_38716-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20260927T200000Z
-DTEND:20260927T230000Z
-SUMMARY:Cal Bears: California Field Hockey vs North Carolina
-LOCATION:\, Underhill Field
-URL:https://admin.calbears.com/calendar.aspx?game_id=38716&sport_id=3
-DESCRIPTION:[L] California Field Hockey vs North Carolina\nL 0-4\nStreaming
-  Video: https://www.espn.com/watch/player/_/id/dd51da06-65f0-4a51-b6f4-a57
- fc8768637\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38756-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20260927T210000Z
-DTEND:20260927T230000Z
-SUMMARY:Cal Bears: California Women's Soccer vs Fresno State
-LOCATION:Berkeley\, CA\, Edwards Stadium
-URL:https://admin.calbears.com/calendar.aspx?game_id=38756&sport_id=26
-DESCRIPTION:[W] California Women's Soccer vs Fresno State\nW 2-0\nStreaming
-  Video: https://www.espn.com/watch/player/_/id/03074aff-57e3-4371-847a-b9c
- a4dee13f9\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39110-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261003T180000Z
-DTEND:20261003T210000Z
-SUMMARY:Cal Bears: California Lacrosse vs vs. Dominican
-LOCATION:\, Maxwell Family Field
-URL:https://admin.calbears.com/calendar.aspx?game_id=39110&sport_id=25
-DESCRIPTION:California Lacrosse vs vs. Dominican\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38719-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261010T010000Z
-DTEND:20261010T040000Z
-SUMMARY:Cal Bears: California Field Hockey vs #8 Wake Forest
-LOCATION:\, Underhill Field
-URL:https://admin.calbears.com/calendar.aspx?game_id=38719&sport_id=3
-DESCRIPTION:[L] California Field Hockey vs #8 Wake Forest\nL 0-2\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38596-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261010T193000Z
-DTEND:20261010T223000Z
-SUMMARY:Cal Bears: California Football vs Virginia Tech - Homecoming / Alum
- ni & Parents Weekend
-LOCATION:Berkeley\, Calif.\, Databricks Field at California Memorial Stadiu
- m
-URL:https://admin.calbears.com/calendar.aspx?game_id=38596&sport_id=4
-DESCRIPTION:Cal football at Memorial Stadium (HIGH impact): Stadium Rimway 
- closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warring
-  St close 2h before. Expect severe parking pressure near campus.\n\n[W] Ca
- lifornia Football vs Virginia Tech - Homecoming / Alumni & Parents Weekend
- \nW 25-20\nRadio: KSFO 810 AM\nStreaming Audio: https://thevarsitynetwork.
- com/audioapplink/source/oas-1169/content/calberk:allaccess-Live-515
-X-PARKING-SEVERITY:HIGH
-X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
- ay closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warr
- ing St close 2h before. Expect severe parking pressure near campus.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39122-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261010T214000Z
-DTEND:20261011T004000Z
-SUMMARY:Cal Bears: California Rugby vs Cal Poly - Cal I
-LOCATION:Palo Alto\, CA\, Witter Rugby Field
-URL:https://admin.calbears.com/calendar.aspx?game_id=39122&sport_id=12
-DESCRIPTION:[W] California Rugby vs Cal Poly - Cal I\nW 36-21\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38720-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261011T190000Z
-DTEND:20261011T220000Z
-SUMMARY:Cal Bears: California Field Hockey vs #3 Duke - Senior Day
-LOCATION:\, Underhill Field
-URL:https://admin.calbears.com/calendar.aspx?game_id=38720&sport_id=3
-DESCRIPTION:[L] California Field Hockey vs #3 Duke - Senior Day\nL 2-3 SO\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38776-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261014T223000Z
-DTEND:20261015T003000Z
-SUMMARY:Cal Bears: California Men's Soccer vs Saint Mary's
-LOCATION:\, Edwards Stadium
-URL:https://admin.calbears.com/calendar.aspx?game_id=38776&sport_id=13
-DESCRIPTION:[W] California Men's Soccer vs Saint Mary's\nW 4-0\nStreaming V
- ideo: https://www.espn.com/watch/player/_/id/bfd925f0-69ca-4855-a063-ee6ee
- e2db712\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38735-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261017T200000Z
-DTEND:20261017T213000Z
-SUMMARY:Cal Bears: California Men's Water Polo vs Stanford
-LOCATION:\, Spieker Aquatics Complex
-URL:https://admin.calbears.com/calendar.aspx?game_id=38735&sport_id=17
-DESCRIPTION:[W] California Men's Water Polo vs Stanford\nW 12-8\nStreaming 
- Video: https://www.overnght.com/event/8c88eb41-5e6d-4d4c-a02c-d621b1eb2e38
- ?src=card\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38597-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261018T023000Z
-DTEND:20261018T053000Z
-SUMMARY:Cal Bears: California Football vs Wake Forest - Grateful Bears
-LOCATION:Berkeley\, Calif.\, Databricks Field at California Memorial Stadiu
- m
-URL:https://admin.calbears.com/calendar.aspx?game_id=38597&sport_id=4
-DESCRIPTION:Cal football at Memorial Stadium (HIGH impact): Stadium Rimway 
- closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warring
-  St close 2h before. Expect severe parking pressure near campus.\n\n[L] Ca
- lifornia Football vs Wake Forest - Grateful Bears\nL 7-41\nRadio: KSFO 810
-  AM\nStreaming Audio: https://thevarsitynetwork.com/audioapplink/source/oa
- s-1169/content/calberk:allaccess-Live-516
-X-PARKING-SEVERITY:HIGH
-X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
- ay closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warr
- ing St close 2h before. Expect severe parking pressure near campus.
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38777-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261018T210000Z
-DTEND:20261018T230000Z
-SUMMARY:Cal Bears: California Men's Soccer vs NC State
-LOCATION:\, Edwards Stadium
-URL:https://admin.calbears.com/calendar.aspx?game_id=38777&sport_id=13
-DESCRIPTION:[T] California Men's Soccer vs NC State\nT 2-2\nStreaming Video
- : https://www.espn.com/watch/player/_/id/c3d6bd38-4ce1-40b6-844d-083ba1cc2
- 029\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38736-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261022T010000Z
-DTEND:20261022T023000Z
-SUMMARY:Cal Bears: California Men's Water Polo vs Princeton
-LOCATION:\, Spieker Aquatics Complex
-URL:https://admin.calbears.com/calendar.aspx?game_id=38736&sport_id=17
-DESCRIPTION:[W] California Men's Water Polo vs Princeton\nW 19-4\nStreaming
-  Video: https://www.overnght.com/event/dc4845cf-adcd-4392-85b8-4d2cdfa7cc2
- 9?src=card\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_38759-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261022T190000Z
-DTEND:20261022T210000Z
-SUMMARY:Cal Bears: California Women's Soccer vs SMU
-LOCATION:Berkeley\, CA\, Edwards Stadium
-URL:https://admin.calbears.com/calendar.aspx?game_id=38759&sport_id=26
-DESCRIPTION:[L] California Women's Soccer vs SMU\nL 1-3\nStreaming Video: h
- ttps://www.espn.com/watch/player/_/id/62afa8c7-2822-4c8a-878a-4ecd4c320c6a
- \n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38737-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261023T200000Z
 DTEND:20261023T213000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Pepperdine
@@ -193,7 +17,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39066-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261024T190000Z
 DTEND:20261024T220000Z
 SUMMARY:Cal Bears: California Women's Swimming & Diving vs Saint Mary's
@@ -204,7 +28,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39085-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261024T190000Z
 DTEND:20261024T220000Z
 SUMMARY:Cal Bears: California Men's Swimming & Diving vs Saint Mary's
@@ -215,7 +39,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38778-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261024T220000Z
 DTEND:20261025T000000Z
 SUMMARY:Cal Bears: California Men's Soccer vs SMU
@@ -227,106 +51,96 @@ DESCRIPTION:[L] California Men's Soccer vs SMU\nL 0-2 \nStreaming Video: ht
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_39115-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261025T180000Z
-DTEND:20261025T210000Z
-SUMMARY:Cal Bears: California Lacrosse vs vs. UC Davis
-LOCATION:\, Maxwell Family Field
-URL:https://admin.calbears.com/calendar.aspx?game_id=39115&sport_id=25
-DESCRIPTION:California Lacrosse vs vs. UC Davis\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_38760-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261029T220000Z
 DTEND:20261030T000000Z
-SUMMARY:Cal Bears: California Women's Soccer vs Notre Dame
+SUMMARY:Cal Bears: California Women's Soccer vs #9 Notre Dame
 LOCATION:Berkeley\, CA\, Edwards Stadium
 URL:https://admin.calbears.com/calendar.aspx?game_id=38760&sport_id=26
-DESCRIPTION:California Women's Soccer vs Notre Dame\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39145-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261030T000000Z
-DTEND:20261101T000000Z
-SUMMARY:Cal Bears: California Women's Tennis vs St Mary's Invitational
-LOCATION:\, Hellman Tennis Complex
-URL:https://admin.calbears.com/calendar.aspx?game_id=39145&sport_id=28
-DESCRIPTION:California Women's Tennis vs St Mary's Invitational\n
+DESCRIPTION:[L] California Women's Soccer vs #9 Notre Dame\nL 1-2\nStreamin
+ g Video: https://www.espn.com/watch/player/_/id/d2fdc14e-c9c5-49a0-b83d-31
+ bb2965ef10\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38738-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261031T200000Z
 DTEND:20261031T213000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs UCLA
 LOCATION:\, Spieker Aquatics Complex
 URL:https://admin.calbears.com/calendar.aspx?game_id=38738&sport_id=17
-DESCRIPTION:California Men's Water Polo vs UCLA\n
+DESCRIPTION:[W] California Men's Water Polo vs UCLA\nW 14-12\nStreaming Vid
+ eo: https://www.overnght.com/event/89b23358-51b3-4a5f-8bd7-93d2726cd910?sr
+ c=card\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38739-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261101T210000Z
 DTEND:20261101T223000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs USC
 LOCATION:\, Spieker Aquatics Complex
 URL:https://admin.calbears.com/calendar.aspx?game_id=38739&sport_id=17
-DESCRIPTION:California Men's Water Polo vs USC\n
+DESCRIPTION:[W] California Men's Water Polo vs USC\nW 18-11\nStreaming Vide
+ o: https://www.overnght.com/event/24c62e64-5195-43a3-a029-7a47ac67e223?src
+ =card\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38761-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261101T210000Z
 DTEND:20261101T230000Z
 SUMMARY:Cal Bears: California Women's Soccer vs NC State
 LOCATION:Berkeley\, CA\, Edwards Stadium
 URL:https://admin.calbears.com/calendar.aspx?game_id=38761&sport_id=26
-DESCRIPTION:California Women's Soccer vs NC State\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
-UID:vcal_39036-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261107T000000Z
-DTEND:20261108T000000Z
-SUMMARY:Cal Bears: California Rugby vs Western Washington University
-LOCATION:Berkeley\, CA\, Witter Rugby Field
-URL:https://admin.calbears.com/calendar.aspx?game_id=39036&sport_id=12
-DESCRIPTION:California Rugby vs Western Washington University\n
+DESCRIPTION:[L] California Women's Soccer vs NC State\nL 1-2\nStreaming Vid
+ eo: https://www.espn.com/watch/player/_/id/57b50ae5-8062-43ba-9522-695f7f6
+ b255b\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38740-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20261107T030000Z
 DTEND:20261107T043000Z
 SUMMARY:Cal Bears: California Men's Water Polo vs Fordham
 LOCATION:\, Spieker Aquatics Complex
 URL:https://admin.calbears.com/calendar.aspx?game_id=38740&sport_id=17
-DESCRIPTION:California Men's Water Polo vs Fordham\n
+DESCRIPTION:[W] California Men's Water Polo vs Fordham\nW 20-19\nStreaming 
+ Video: https://www.overnght.com/\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39036-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20261107T210000Z
+DTEND:20261108T000000Z
+SUMMARY:Cal Bears: California Rugby vs Western Washington University
+LOCATION:Berkeley\, CA\, Witter Rugby Field
+URL:https://admin.calbears.com/calendar.aspx?game_id=39036&sport_id=12
+DESCRIPTION:[W] California Rugby vs Western Washington University\nW 103-5\
+ n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38601-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261121T000000Z
-DTEND:20261122T000000Z
+DTSTAMP:20261123T140822Z
+DTSTART:20261122T003000Z
+DTEND:20261122T033000Z
 SUMMARY:Cal Bears: California Football vs Stanford - 129th Big Game
 LOCATION:Berkeley\, Calif.\, Databricks Field at California Memorial Stadiu
  m
 URL:https://admin.calbears.com/calendar.aspx?game_id=38601&sport_id=4
 DESCRIPTION:Cal football at Memorial Stadium (HIGH impact): Stadium Rimway 
  closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warring
-  St close 2h before. Expect severe parking pressure near campus.\n\nCalifo
- rnia Football vs Stanford - 129th Big Game\nRadio: KNBR 104.5 FM / 680 AM
+  St close 2h before. Expect severe parking pressure near campus.\n\n[L] Ca
+ lifornia Football vs Stanford - 129th Big Game\nL 28-44\nRadio: KNBR 104.5
+  FM / 680 AM\nStreaming Audio: https://thevarsitynetwork.com/audioapplink/
+ source/oas-1169/content/calberk:allaccess-Live-520
 X-PARKING-SEVERITY:HIGH
 X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
  ay closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warr
@@ -334,9 +148,9 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_38602-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20261128T000000Z
-DTEND:20261129T000000Z
+DTSTAMP:20261123T140822Z
+DTSTART:20261129T003000Z
+DTEND:20261129T033000Z
 SUMMARY:Cal Bears: California Football vs Pittsburgh - Hometown Heroes
 LOCATION:Berkeley\, Calif.\, Databricks Field at California Memorial Stadiu
  m
@@ -344,7 +158,9 @@ URL:https://admin.calbears.com/calendar.aspx?game_id=38602&sport_id=4
 DESCRIPTION:Cal football at Memorial Stadium (HIGH impact): Stadium Rimway 
  closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warring
   St close 2h before. Expect severe parking pressure near campus.\n\nCalifo
- rnia Football vs Pittsburgh - Hometown Heroes\nRadio: KSFO 810 AM
+ rnia Football vs Pittsburgh - Hometown Heroes\nRadio: KSFO 810 AM\nStreami
+ ng Audio: https://thevarsitynetwork.com/audioapplink/source/oas-1169/conte
+ nt/calberk:allaccess-Live-521
 X-PARKING-SEVERITY:HIGH
 X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
  ay closes 4h before kickoff\; Piedmont Ave/Gayley Rd and Bancroft Ave/Warr
@@ -352,7 +168,7 @@ X-PARKING-NOTE:Cal football at Memorial Stadium (HIGH impact): Stadium Rimw
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39071-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270109T000000Z
 DTEND:20270110T000000Z
 SUMMARY:Cal Bears: California Women's Swimming & Diving vs UC Davis - DIVE 
@@ -364,7 +180,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39072-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270114T000000Z
 DTEND:20270115T000000Z
 SUMMARY:Cal Bears: California Women's Swimming & Diving vs UCLA
@@ -375,7 +191,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39073-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270115T000000Z
 DTEND:20270116T000000Z
 SUMMARY:Cal Bears: California Women's Swimming & Diving vs USC
@@ -386,7 +202,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39092-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270115T000000Z
 DTEND:20270116T000000Z
 SUMMARY:Cal Bears: California Men's Swimming & Diving vs USC
@@ -396,19 +212,8 @@ DESCRIPTION:California Men's Swimming & Diving vs USC\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
-UID:vcal_39074-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
-DTSTART:20270116T000000Z
-DTEND:20270117T000000Z
-SUMMARY:Cal Bears: California Women's Swimming & Diving vs Cal Invite
-LOCATION:\, Spieker Aquatics Complex
-URL:https://admin.calbears.com/calendar.aspx?game_id=39074&sport_id=27
-DESCRIPTION:California Women's Swimming & Diving vs Cal Invite\n
-X-PARKING-SEVERITY:LOW
-END:VEVENT
-BEGIN:VEVENT
 UID:vcal_39093-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270116T000000Z
 DTEND:20270117T000000Z
 SUMMARY:Cal Bears: California Men's Swimming & Diving vs Cal Invite
@@ -418,8 +223,19 @@ DESCRIPTION:California Men's Swimming & Diving vs Cal Invite\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
+UID:vcal_39074-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270116T000000Z
+DTEND:20270117T000000Z
+SUMMARY:Cal Bears: California Women's Swimming & Diving vs Cal Invite
+LOCATION:\, Spieker Aquatics Complex
+URL:https://admin.calbears.com/calendar.aspx?game_id=39074&sport_id=27
+DESCRIPTION:California Women's Swimming & Diving vs Cal Invite\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
 UID:vcal_39095-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270130T000000Z
 DTEND:20270131T000000Z
 SUMMARY:Cal Bears: California Men's Swimming & Diving vs Stanford
@@ -430,7 +246,7 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39076-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270130T000000Z
 DTEND:20270131T000000Z
 SUMMARY:Cal Bears: California Women's Swimming & Diving vs Stanford
@@ -440,8 +256,41 @@ DESCRIPTION:California Women's Swimming & Diving vs Stanford\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
+UID:vcal_39147-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270130T210000Z
+DTEND:20270131T000000Z
+SUMMARY:Cal Bears: California Rugby vs UCLA
+LOCATION:Berkeley\, CA\, Witter Rugby Field
+URL:https://admin.calbears.com/calendar.aspx?game_id=39147&sport_id=12
+DESCRIPTION:California Rugby vs UCLA\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39148-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270206T210000Z
+DTEND:20270207T000000Z
+SUMMARY:Cal Bears: California Rugby vs Grand Canyon University
+LOCATION:Berkeley\, CA\, Witter Rugby Field
+URL:https://admin.calbears.com/calendar.aspx?game_id=39148&sport_id=12
+DESCRIPTION:California Rugby vs Grand Canyon University\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39149-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270213T210000Z
+DTEND:20270214T000000Z
+SUMMARY:Cal Bears: California Rugby vs University of British Columbia
+LOCATION:Berkeley\, CA\, Witter Rugby Field
+URL:https://admin.calbears.com/calendar.aspx?game_id=39149&sport_id=12
+DESCRIPTION:California Rugby vs University of British Columbia\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
 UID:vcal_39077-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270216T000000Z
 DTEND:20270220T000000Z
 SUMMARY:Cal Bears: California Women's Swimming & Diving vs ACC Championship
@@ -452,13 +301,728 @@ X-PARKING-SEVERITY:LOW
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_39096-admin.calbears.com@oskihub.parking
-DTSTAMP:20261026T130739Z
+DTSTAMP:20261123T140822Z
 DTSTART:20270216T000000Z
 DTEND:20270220T000000Z
 SUMMARY:Cal Bears: California Men's Swimming & Diving vs ACC Championship
 LOCATION:Greensboro\, NC\, Spieker Aquatics Complex
 URL:https://admin.calbears.com/calendar.aspx?game_id=39096&sport_id=67
 DESCRIPTION:California Men's Swimming & Diving vs ACC Championship\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39220-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270220T013000Z
+DTEND:20270220T033000Z
+SUMMARY:Cal Bears: California Softball vs Ohio State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39220&sport_id=18
+DESCRIPTION:California Softball vs Ohio State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39161-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270220T020000Z
+DTEND:20270220T050000Z
+SUMMARY:Cal Bears: California Baseball vs UC Irvine
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39161&sport_id=1
+DESCRIPTION:California Baseball vs UC Irvine\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39150-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270220T210000Z
+DTEND:20270221T000000Z
+SUMMARY:Cal Bears: California Rugby vs University of Arizona
+LOCATION:Berkeley\, CA\, Witter Rugby Field
+URL:https://admin.calbears.com/calendar.aspx?game_id=39150&sport_id=12
+DESCRIPTION:California Rugby vs University of Arizona\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39162-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270220T220000Z
+DTEND:20270221T010000Z
+SUMMARY:Cal Bears: California Baseball vs UC Irvine
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39162&sport_id=1
+DESCRIPTION:California Baseball vs UC Irvine\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39221-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270221T010000Z
+DTEND:20270221T030000Z
+SUMMARY:Cal Bears: California Softball vs Ohio State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39221&sport_id=18
+DESCRIPTION:California Softball vs Ohio State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39222-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270221T033000Z
+DTEND:20270221T053000Z
+SUMMARY:Cal Bears: California Softball vs Arkansas
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39222&sport_id=18
+DESCRIPTION:California Softball vs Arkansas\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39163-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270221T210000Z
+DTEND:20270222T000000Z
+SUMMARY:Cal Bears: California Baseball vs UC Irvine
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39163&sport_id=1
+DESCRIPTION:California Baseball vs UC Irvine\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39223-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270221T210000Z
+DTEND:20270221T230000Z
+SUMMARY:Cal Bears: California Softball vs UCLA
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39223&sport_id=18
+DESCRIPTION:California Softball vs UCLA\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39164-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270222T210000Z
+DTEND:20270223T000000Z
+SUMMARY:Cal Bears: California Baseball vs UC Irvine
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39164&sport_id=1
+DESCRIPTION:California Baseball vs UC Irvine\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39224-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270225T023000Z
+DTEND:20270225T043000Z
+SUMMARY:Cal Bears: California Softball vs Arizona State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39224&sport_id=18
+DESCRIPTION:California Softball vs Arizona State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39225-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270226T020000Z
+DTEND:20270226T040000Z
+SUMMARY:Cal Bears: California Softball vs San José State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39225&sport_id=18
+DESCRIPTION:California Softball vs San José State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39165-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270227T020000Z
+DTEND:20270227T050000Z
+SUMMARY:Cal Bears: California Baseball vs Santa Clara
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39165&sport_id=1
+DESCRIPTION:California Baseball vs Santa Clara\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39226-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270227T033000Z
+DTEND:20270227T053000Z
+SUMMARY:Cal Bears: California Softball vs CSUN
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39226&sport_id=18
+DESCRIPTION:California Softball vs CSUN\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39166-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270227T230000Z
+DTEND:20270228T020000Z
+SUMMARY:Cal Bears: California Baseball vs Santa Clara
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39166&sport_id=1
+DESCRIPTION:California Baseball vs Santa Clara\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39227-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270228T010000Z
+DTEND:20270228T030000Z
+SUMMARY:Cal Bears: California Softball vs Boise State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39227&sport_id=18
+DESCRIPTION:California Softball vs Boise State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39228-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270228T033000Z
+DTEND:20270228T053000Z
+SUMMARY:Cal Bears: California Softball vs Cal State Bakersfield
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39228&sport_id=18
+DESCRIPTION:California Softball vs Cal State Bakersfield\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39229-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270228T203000Z
+DTEND:20270228T223000Z
+SUMMARY:Cal Bears: California Softball vs CSUN
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39229&sport_id=18
+DESCRIPTION:California Softball vs CSUN\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39230-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270228T230000Z
+DTEND:20270301T010000Z
+SUMMARY:Cal Bears: California Softball vs Cal State Bakersfield
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39230&sport_id=18
+DESCRIPTION:California Softball vs Cal State Bakersfield\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39231-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270306T020000Z
+DTEND:20270306T040000Z
+SUMMARY:Cal Bears: California Softball vs Syracuse
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39231&sport_id=18
+DESCRIPTION:California Softball vs Syracuse\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39181-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270306T020000Z
+DTEND:20270306T050000Z
+SUMMARY:Cal Bears: California Baseball vs North Dakota State
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39181&sport_id=1
+DESCRIPTION:California Baseball vs North Dakota State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39183-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270306T210000Z
+DTEND:20270307T000000Z
+SUMMARY:Cal Bears: California Baseball vs North Dakota State
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39183&sport_id=1
+DESCRIPTION:California Baseball vs North Dakota State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39233-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270307T200000Z
+DTEND:20270307T220000Z
+SUMMARY:Cal Bears: California Softball vs Syracuse
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39233&sport_id=18
+DESCRIPTION:California Softball vs Syracuse\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39182-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270307T210000Z
+DTEND:20270308T000000Z
+SUMMARY:Cal Bears: California Baseball vs North Dakota State
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39182&sport_id=1
+DESCRIPTION:California Baseball vs North Dakota State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39291-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270308T000000Z
+DTEND:20270309T000000Z
+SUMMARY:Cal Bears: California Baseball vs UC Davis
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39291&sport_id=1
+DESCRIPTION:California Baseball vs UC Davis\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39234-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270311T020000Z
+DTEND:20270311T040000Z
+SUMMARY:Cal Bears: California Softball vs Saint Mary's
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39234&sport_id=18
+DESCRIPTION:California Softball vs Saint Mary's\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39235-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270313T020000Z
+DTEND:20270313T040000Z
+SUMMARY:Cal Bears: California Softball vs Notre Dame
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39235&sport_id=18
+DESCRIPTION:California Softball vs Notre Dame\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39152-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270313T210000Z
+DTEND:20270314T000000Z
+SUMMARY:Cal Bears: California Rugby vs Army - Homecoming
+LOCATION:Berkeley\, CA\, Witter Rugby Field
+URL:https://admin.calbears.com/calendar.aspx?game_id=39152&sport_id=12
+DESCRIPTION:California Rugby vs Army - Homecoming\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39236-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270314T000000Z
+DTEND:20270314T020000Z
+SUMMARY:Cal Bears: California Softball vs Notre Dame
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39236&sport_id=18
+DESCRIPTION:California Softball vs Notre Dame\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39237-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270314T190000Z
+DTEND:20270314T210000Z
+SUMMARY:Cal Bears: California Softball vs Notre Dame
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39237&sport_id=18
+DESCRIPTION:California Softball vs Notre Dame\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39238-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270317T000000Z
+DTEND:20270317T020000Z
+SUMMARY:Cal Bears: California Softball vs Pacific
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39238&sport_id=18
+DESCRIPTION:California Softball vs Pacific\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39173-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270320T010000Z
+DTEND:20270320T040000Z
+SUMMARY:Cal Bears: California Baseball vs Miami
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39173&sport_id=1
+DESCRIPTION:California Baseball vs Miami\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39153-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270320T200000Z
+DTEND:20270320T230000Z
+SUMMARY:Cal Bears: California Rugby vs Saint Mary's
+LOCATION:Berkeley\, CA\, Witter Rugby Field
+URL:https://admin.calbears.com/calendar.aspx?game_id=39153&sport_id=12
+DESCRIPTION:California Rugby vs Saint Mary's\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39174-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270320T210000Z
+DTEND:20270321T000000Z
+SUMMARY:Cal Bears: California Baseball vs Miami
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39174&sport_id=1
+DESCRIPTION:California Baseball vs Miami\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39175-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270321T200000Z
+DTEND:20270321T230000Z
+SUMMARY:Cal Bears: California Baseball vs Miami
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39175&sport_id=1
+DESCRIPTION:California Baseball vs Miami\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39180-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270331T010000Z
+DTEND:20270331T040000Z
+SUMMARY:Cal Bears: California Baseball vs Sacramento State
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39180&sport_id=1
+DESCRIPTION:California Baseball vs Sacramento State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39246-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270331T010000Z
+DTEND:20270331T030000Z
+SUMMARY:Cal Bears: California Softball vs Santa Clara
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39246&sport_id=18
+DESCRIPTION:California Softball vs Santa Clara\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39247-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270403T010000Z
+DTEND:20270403T030000Z
+SUMMARY:Cal Bears: California Softball vs Florida State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39247&sport_id=18
+DESCRIPTION:California Softball vs Florida State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39184-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270403T010000Z
+DTEND:20270403T040000Z
+SUMMARY:Cal Bears: California Baseball vs Pitt
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39184&sport_id=1
+DESCRIPTION:California Baseball vs Pitt\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39185-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270403T210000Z
+DTEND:20270404T000000Z
+SUMMARY:Cal Bears: California Baseball vs Pitt
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39185&sport_id=1
+DESCRIPTION:California Baseball vs Pitt\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39248-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270404T010000Z
+DTEND:20270404T030000Z
+SUMMARY:Cal Bears: California Softball vs Florida State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39248&sport_id=18
+DESCRIPTION:California Softball vs Florida State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39249-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270404T190000Z
+DTEND:20270404T210000Z
+SUMMARY:Cal Bears: California Softball vs Florida State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39249&sport_id=18
+DESCRIPTION:California Softball vs Florida State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39186-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270404T200000Z
+DTEND:20270404T230000Z
+SUMMARY:Cal Bears: California Baseball vs Pitt
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39186&sport_id=1
+DESCRIPTION:California Baseball vs Pitt\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39187-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270405T000000Z
+DTEND:20270406T000000Z
+SUMMARY:Cal Bears: California Baseball vs Stanford
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39187&sport_id=1
+DESCRIPTION:California Baseball vs Stanford\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39188-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270410T010000Z
+DTEND:20270410T040000Z
+SUMMARY:Cal Bears: California Baseball vs Wake Forest
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39188&sport_id=1
+DESCRIPTION:California Baseball vs Wake Forest\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39251-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270410T013000Z
+DTEND:20270410T033000Z
+SUMMARY:Cal Bears: California Softball vs Sacramento State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39251&sport_id=18
+DESCRIPTION:California Softball vs Sacramento State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39189-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270410T210000Z
+DTEND:20270411T000000Z
+SUMMARY:Cal Bears: California Baseball vs Wake Forest
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39189&sport_id=1
+DESCRIPTION:California Baseball vs Wake Forest\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39252-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270410T220000Z
+DTEND:20270411T000000Z
+SUMMARY:Cal Bears: California Softball vs Sacramento State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39252&sport_id=18
+DESCRIPTION:California Softball vs Sacramento State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39190-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270411T200000Z
+DTEND:20270411T230000Z
+SUMMARY:Cal Bears: California Baseball vs Wake Forest
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39190&sport_id=1
+DESCRIPTION:California Baseball vs Wake Forest\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39191-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270412T000000Z
+DTEND:20270413T000000Z
+SUMMARY:Cal Bears: California Baseball vs San José State
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39191&sport_id=1
+DESCRIPTION:California Baseball vs San José State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39255-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270417T010000Z
+DTEND:20270417T030000Z
+SUMMARY:Cal Bears: California Softball vs Colorado State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39255&sport_id=18
+DESCRIPTION:California Softball vs Colorado State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39256-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270417T220000Z
+DTEND:20270418T000000Z
+SUMMARY:Cal Bears: California Softball vs Colorado State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39256&sport_id=18
+DESCRIPTION:California Softball vs Colorado State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39257-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270418T190000Z
+DTEND:20270418T210000Z
+SUMMARY:Cal Bears: California Softball vs Colorado State
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39257&sport_id=18
+DESCRIPTION:California Softball vs Colorado State\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39195-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270421T010000Z
+DTEND:20270421T040000Z
+SUMMARY:Cal Bears: California Baseball vs San Francisco
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39195&sport_id=1
+DESCRIPTION:California Baseball vs San Francisco\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39196-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270424T010000Z
+DTEND:20270424T040000Z
+SUMMARY:Cal Bears: California Baseball vs Notre Dame
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39196&sport_id=1
+DESCRIPTION:California Baseball vs Notre Dame\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39197-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270424T210000Z
+DTEND:20270425T000000Z
+SUMMARY:Cal Bears: California Baseball vs Notre Dame
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39197&sport_id=1
+DESCRIPTION:California Baseball vs Notre Dame\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39198-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270425T200000Z
+DTEND:20270425T230000Z
+SUMMARY:Cal Bears: California Baseball vs Notre Dame
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39198&sport_id=1
+DESCRIPTION:California Baseball vs Notre Dame\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39199-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270427T010000Z
+DTEND:20270427T040000Z
+SUMMARY:Cal Bears: California Baseball vs Saint Mary's
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39199&sport_id=1
+DESCRIPTION:California Baseball vs Saint Mary's\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39264-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270507T010000Z
+DTEND:20270507T030000Z
+SUMMARY:Cal Bears: California Softball vs Clemson
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39264&sport_id=18
+DESCRIPTION:California Softball vs Clemson\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39265-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270508T010000Z
+DTEND:20270508T030000Z
+SUMMARY:Cal Bears: California Softball vs Clemson University
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39265&sport_id=18
+DESCRIPTION:California Softball vs Clemson University\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39204-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270508T010000Z
+DTEND:20270508T040000Z
+SUMMARY:Cal Bears: California Baseball vs Duke
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39204&sport_id=1
+DESCRIPTION:California Baseball vs Duke\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39266-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270508T190000Z
+DTEND:20270508T210000Z
+SUMMARY:Cal Bears: California Softball vs Clemson
+LOCATION:Berkeley\, CA
+URL:https://admin.calbears.com/calendar.aspx?game_id=39266&sport_id=18
+DESCRIPTION:California Softball vs Clemson\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39205-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270508T210000Z
+DTEND:20270509T000000Z
+SUMMARY:Cal Bears: California Baseball vs Duke
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39205&sport_id=1
+DESCRIPTION:California Baseball vs Duke\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39206-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270509T200000Z
+DTEND:20270509T230000Z
+SUMMARY:Cal Bears: California Baseball vs Duke
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39206&sport_id=1
+DESCRIPTION:California Baseball vs Duke\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39207-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270515T010000Z
+DTEND:20270515T040000Z
+SUMMARY:Cal Bears: California Baseball vs Pacific
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39207&sport_id=1
+DESCRIPTION:California Baseball vs Pacific\n
+X-PARKING-SEVERITY:LOW
+END:VEVENT
+BEGIN:VEVENT
+UID:vcal_39209-admin.calbears.com@oskihub.parking
+DTSTAMP:20261123T140822Z
+DTSTART:20270516T200000Z
+DTEND:20270516T230000Z
+SUMMARY:Cal Bears: California Baseball vs Pacific
+LOCATION:Berkeley\, CA\, Stu Gordon Stadium
+URL:https://admin.calbears.com/calendar.aspx?game_id=39209&sport_id=1
+DESCRIPTION:California Baseball vs Pacific\n
 X-PARKING-SEVERITY:LOW
 END:VEVENT
 END:VCALENDAR
