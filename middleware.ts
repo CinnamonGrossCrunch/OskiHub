@@ -4,6 +4,9 @@ import { updateSession } from '@/lib/supabase/middleware';
 /**
  * Paths that stay public without a Berkeley sign-in:
  * - /login and /auth/* (the sign-in flow itself)
+ * - /privacy and /terms (Google requires these to be reachable
+ *   without sign-in for consent-screen verification, and the
+ *   sign-in page links to them)
  * - Static files served from public/ (course ICS files, academic
  *   calendar ICS files, parking ICS files, icons, images). These are
  *   fetched by calendar apps and other clients that cannot sign in,
@@ -14,7 +17,7 @@ import { updateSession } from '@/lib/supabase/middleware';
  * matcher below and stay public: the Vercel cron jobs and the
  * calendar/newsletter APIs must work without a browser session.
  */
-const PUBLIC_PATHS = ['/login', '/auth'];
+const PUBLIC_PATHS = ['/login', '/auth', '/privacy', '/terms'];
 const PUBLIC_PREFIXES = [
   '/course_ICS_files',
   '/parking-events',

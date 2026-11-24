@@ -216,13 +216,21 @@ and verified on the live pages:
 
 The Google OAuth consent screen is still in **Testing mode**:
 "Publish app" is disabled because Google requires a homepage URL and
-a privacy policy URL on the Branding page. Only the listed test user
-(matthewrgross01@gmail.com, cap 100) can sign in while it is in
-Testing. Other berkeley.edu accounts are blocked until either the
-app is published (needs a privacy policy page on the site, e.g.
-`https://www.oski.app/privacy`, plus the homepage URL) or each
-account is added as a test user. Publish before opening sign-in to
-other Haas students.
+a privacy policy URL on the Branding page. Only the listed test users
+(matt@gross.design and mattgross@berkeley.edu, cap 100) can sign in
+while it is in Testing. Other berkeley.edu accounts are blocked until
+either the app is published or each account is added as a test user.
+Publish before opening sign-in to other Haas students.
+
+The pages the consent screen needs already exist in the repo:
+`/privacy` and `/terms` (`app/privacy/page.tsx`,
+`app/terms/page.tsx`), linked from the sign-in page, and the consent
+screen logo is `public/oskihub-logo-120.png` (120x120, resized from
+the site's hub mark). They go live at `https://www.oski.app/privacy`
+and `https://www.oski.app/terms` once this branch merges to main;
+only then can the branding URLs be set and the brand submitted for
+Google verification, which is what makes the consent screen show
+"OskiHub" and the logo instead of the Supabase project domain.
 
 ## What this does not do (future work)
 

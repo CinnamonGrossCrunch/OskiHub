@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import SignInButton from './SignInButton'
 
 export const metadata = {
@@ -80,6 +81,16 @@ export default async function LoginPage({
         >
           OskiHub is for Berkeley Haas EWMBA students. Signing in with a
           berkeley.edu Google account routes through CalNet automatically.
+        </p>
+
+        <p className="mt-4 text-xs">
+          <Link href="/privacy" style={{ color: 'var(--berkeley-gold)' }}>
+            Privacy Policy
+          </Link>
+          {' · '}
+          <Link href="/terms" style={{ color: 'var(--berkeley-gold)' }}>
+            Terms of Service
+          </Link>
         </p>
       </div>
     </main>
