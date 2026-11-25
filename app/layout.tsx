@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Urbanist } from "next/font/google";
 import { PerformanceProvider } from "./components/PerformanceProvider";
 import ClarityScript from "./components/ClarityScript";
+import UserChip from "./components/UserChip";
 import "./globals.css";
 
 const urbanist = Urbanist({
@@ -120,6 +121,7 @@ export default function RootLayout({
         }}
       >
         <div className="w-full max-w-full overflow-x-hidden">
+          <UserChip />
           <PerformanceProvider>
             {children}
           </PerformanceProvider>
