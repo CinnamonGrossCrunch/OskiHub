@@ -29,7 +29,7 @@ would require a Service Request to UC Berkeley IST; it is not needed
 for this setup, and it would only matter if OskiHub ever became an
 official campus service.
 
-Domain enforcement has three layers:
+Domain enforcement has four layers:
 
 1. `hd: 'berkeley.edu'` in the Google OAuth request (`app/login/
    SignInButton.tsx`): Google only offers berkeley.edu accounts at
@@ -44,6 +44,14 @@ Domain enforcement has three layers:
      on every page request; a non-Berkeley session is sent to
      `/auth/signout`, which destroys it and redirects to
      `/login?error=domain`.
+4. Supabase "Before User Created" hook
+   (`app/api/auth/before-user-created/route.ts`): Supabase calls this
+   endpoint immediately before creating a user row (first sign-in),
+   and it rejects any email that is not @berkeley.edu. This is
+   defense-in-depth behind layer 3: even if the callback and
+   middleware checks were ever bypassed, a non-Berkeley account
+   cannot get a Supabase user row. See "Before User Created hook"
+   below for setup.
 
 Layer 3 is the actual enforcement. Layers 1 and 2 are UX guardrails:
 the scheduler this was modeled on did the domain check client-side
@@ -57,7 +65,19 @@ allowlist on top of this.
 
 ## What is gated, and what stays public
 
-Gated (middleware redirects to `/login?next=<path>` when signed out):
+The gate is controlled by the `AUTH_GATE_ENABLED` env flag
+(`middleware.ts`, `isGateEnabled`). Only the exact string `'true'`
+turns it on; anything else (including unset) leaves the site public
+as today. The flag exists because of the consent-screen lockout trap:
+the Google consent screen cannot be published until `/privacy` and
+`/terms` are live on www.oski.app, which only happens after the auth
+code merges. So the ship sequence is: merge with the gate OFF, publish
+the consent screen, then flip the flag ON (set the env var in Vercel
+and redeploy). The flag controls only whether pages require a sign-in;
+the @berkeley.edu domain check always runs, gate on or off.
+
+Gated when the flag is on (middleware redirects to
+`/login?next=<path>` when signed out):
 
 - `/` (dashboard), `/admin/*`, `/resources/*`, and any other page.
 
@@ -80,7 +100,8 @@ Public:
 | `lib/supabase/server.ts` | Server Supabase client (Server Components, Route Handlers). |
 | `lib/supabase/middleware.ts` | Session refresh + Berkeley check on every page request. |
 | `lib/auth.ts` | `isBerkeleyEmail`, `getSafeNextPath`, domain constant. |
-| `middleware.ts` | HTTPS redirect, security headers, session refresh, page gating. |
+| `middleware.ts` | HTTPS redirect, security headers, session refresh, page gating (flag-controlled). |
+| `app/api/auth/before-user-created/route.ts` | Supabase Before User Created hook: domain check at user creation + Standard Webhooks signature verification. |
 | `app/login/page.tsx` | Public sign-in page (+ `SignInButton.tsx`). |
 | `app/auth/callback/route.ts` | OAuth callback: code exchange + domain check. |
 | `app/auth/signout/route.ts` | Destroys the session, redirects. |
@@ -89,7 +110,7 @@ Public:
 ## Setup
 
 Do these once, in order. Steps 1-3 need Matt's accounts; step 4 is
-Vercel dashboard; step 5 is local only.
+Vercel dashboard; step 5 is the Supabase hook; step 6 is local only.
 
 ### 1. Create the Supabase project
 
@@ -140,21 +161,56 @@ In the Vercel project settings (Production, Preview, Development):
 - `NEXT_PUBLIC_SUPABASE_URL` = `https://<project-ref>.supabase.co`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY` = the anon/public key from
   Supabase Dashboard -> Settings -> API.
+- `AUTH_GATE_ENABLED` = `false` at merge time (gate off); set to
+  `true` and redeploy after the consent screen is published.
+- `SUPABASE_AUTH_HOOK_SECRET` = the hook secret Supabase issues
+  (see "Before User Created hook" below); set it after enabling the
+  hook, then redeploy.
 
 The anon key is public by design and is safe to ship in the browser.
 Never add the `service_role` key to the app or to Vercel env vars;
 it bypasses all access control.
 
-### 5. Local development
+### 5. Before User Created hook (defense-in-depth)
+
+1. Deploy the app with the hook endpoint live:
+   `https://www.oski.app/api/auth/before-user-created`.
+2. Supabase Dashboard -> Authentication -> Hooks -> Before User
+   Created -> Enable, HTTP hook, URL the endpoint above. Supabase
+   issues a secret (`v1,whsec_...`); copy it.
+3. Set `SUPABASE_AUTH_HOOK_SECRET` to that secret in Vercel (All
+   Environments) and redeploy. Until the secret is set, the endpoint
+   skips signature verification but still enforces the domain check,
+   so a missing secret can never lock signups out; once set, a bad
+   signature is a hard 401.
+4. Verify: the hook fires on first sign-in only (it runs before the
+   user row is created). A non-Berkeley Google account attempting
+   sign-in must be rejected with "Only @berkeley.edu accounts can
+   use OskiHub" and no user row created. If signups ever break
+   after enabling the hook, disable it in the dashboard first and
+   debug second: a failing hook blocks user creation.
+
+The endpoint verifies the Standard Webhooks HMAC-SHA256 signature
+(`webhook-id`, `webhook-timestamp`, `webhook-signature` headers,
+5-minute timestamp tolerance) using Node's `crypto`, no extra
+dependency. It returns `{}` (HTTP 200) to allow, or
+`{ error: { http_code, message } }` with a 4xx to reject.
+
+### 6. Local development
 
 Copy `.env.local.example` to `.env.local` and fill in the two
 Supabase values. Run `npm run dev` and visit
-`http://localhost:3000`: the middleware redirects to `/login`, and
-signing in with a berkeley.edu account returns to the dashboard.
+`http://localhost:3000`: with `AUTH_GATE_ENABLED=true` the middleware
+redirects to `/login`, and signing in with a berkeley.edu account
+returns to the dashboard. With the flag off (default), the site is
+public locally as in production before the flip.
 
 ## Testing checklist
 
-- [ ] Signed-out visit to `/` redirects to `/login?next=/`.
+- [ ] With `AUTH_GATE_ENABLED` unset or `false`, a signed-out visit
+      to `/` loads the dashboard (gate off, site public as today).
+- [ ] With `AUTH_GATE_ENABLED=true`, a signed-out visit to `/`
+      redirects to `/login?next=/`.
 - [ ] `/login` shows the Google button; clicking it shows the Google
       account chooser (berkeley.edu accounts only).
 - [ ] Signing in with a berkeley.edu account lands on the dashboard;

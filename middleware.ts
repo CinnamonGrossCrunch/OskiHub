@@ -13,9 +13,24 @@ import { updateSession } from '@/lib/supabase/middleware';
  *   so gating them would break existing subscriptions.
  * - Any path with a file extension (static assets).
  * Everything else (the dashboard, /admin/*, /resources/*) requires a
- * signed-in @berkeley.edu session. API routes are excluded by the
- * matcher below and stay public: the Vercel cron jobs and the
- * calendar/newsletter APIs must work without a browser session.
+ * signed-in @berkeley.edu session -- but only when the gate is on.
+ * API routes are excluded by the matcher below and stay public: the
+ * Vercel cron jobs and the calendar/newsletter APIs must work without
+ * a browser session.
+ *
+ * The gate is controlled by the AUTH_GATE_ENABLED env flag (see
+ * isGateEnabled below). It exists because of the consent-screen
+ * lockout trap: the Google consent screen cannot be published until
+ * /privacy and /terms are live on www.oski.app, which only happens
+ * after the auth code merges. So the merge ships with the gate OFF
+ * (the site stays public as today), the consent screen is published,
+ * and then the flag is flipped ON (set the env var in Vercel and
+ * redeploy). Default is OFF: any value other than exactly 'true'
+ * leaves the gate off.
+ *
+ * The flag controls only whether pages require a sign-in. The
+ * @berkeley.edu domain check in updateSession always runs: anyone
+ * who does sign in must still be berkeley.edu, gate on or off.
  */
 const PUBLIC_PATHS = ['/login', '/auth', '/privacy', '/terms'];
 const PUBLIC_PREFIXES = [
@@ -39,6 +54,16 @@ function isPublicPath(pathname: string): boolean {
     return true;
   }
   return false;
+}
+
+/**
+ * Whether the @berkeley.edu sign-in gate is on. Read per request from
+ * the AUTH_GATE_ENABLED env var; only the exact string 'true' turns
+ * the gate on. Changing the flag requires a redeploy (env vars are
+ * baked in at deploy time).
+ */
+function isGateEnabled(): boolean {
+  return process.env.AUTH_GATE_ENABLED === 'true';
 }
 
 function applySecurityHeaders(response: NextResponse): NextResponse {
@@ -95,9 +120,10 @@ export async function middleware(request: NextRequest) {
     return applySecurityHeaders(sessionResponse);
   }
 
-  // Gate pages: unauthenticated visitors go to /login, remembering
-  // where they were headed.
-  if (!user && !isPublicPath(request.nextUrl.pathname)) {
+  // Gate pages: when the flag is on, unauthenticated visitors go to
+  // /login, remembering where they were headed. When the flag is off,
+  // the site stays public as today (the merge ships this way).
+  if (isGateEnabled() && !user && !isPublicPath(request.nextUrl.pathname)) {
     const url = request.nextUrl.clone();
     url.pathname = '/login';
     url.searchParams.set('next', request.nextUrl.pathname);

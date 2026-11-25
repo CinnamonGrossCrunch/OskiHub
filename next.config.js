@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 // Force rebuild: v4 - Vercel CDN cache invalidation
+
+// Supabase origin for the Content-Security-Policy connect-src. The
+// browser-side Supabase client (sign-in, session refresh) calls this
+// origin, so it must be listed or the gate breaks in the browser.
+// Public URL, not a secret; falls back to the live project URL when
+// the env var is not set at build time.
+const supabaseUrl =
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  'https://egsvzmlwatueyhqwjyfm.supabase.co';
+
 const nextConfig = {
   // Configure the output file tracing root to prevent workspace warnings
   outputFileTracingRoot: __dirname,
@@ -61,7 +71,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://va.vercel-scripts.com https://vercel.live https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://vitals.vercel-insights.com https://va.vercel-scripts.com https://vercel.live https://*.clarity.ms; frame-src https://vercel.live;"
+            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://va.vercel-scripts.com https://vercel.live https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' " + supabaseUrl + " https://vitals.vercel-insights.com https://va.vercel-scripts.com https://vercel.live https://*.clarity.ms; frame-src https://vercel.live;"
           }
         ],
       },
