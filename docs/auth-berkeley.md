@@ -73,7 +73,9 @@ the Google consent screen cannot be published until `/privacy` and
 `/terms` are live on www.oski.app, which only happens after the auth
 code merges. So the ship sequence is: merge with the gate OFF, publish
 the consent screen, then flip the flag ON (set the env var in Vercel
-and redeploy). The flag controls only whether pages require a sign-in;
+and redeploy). Production was flipped ON on Nov 25, 2026, after the
+consent screen was published and the hook secret was set in Vercel.
+The flag controls only whether pages require a sign-in;
 the @berkeley.edu domain check always runs, gate on or off.
 
 Gated when the flag is on (middleware redirects to
