@@ -42,6 +42,13 @@ Shipped:
 Update log (newest first; every OskiHub update gets a timestamped entry
 here noting where it was committed, pushed, or deployed):
 
+- **POST-COMMIT REVIEW — Nov 28, 2026, 04:04 PT: Repair commit
+  `8e1b7ec` was committed locally and pushed to GitHub review branch
+  `codex/phase1-guard-and-dashboard`. The copied plan, emphasized changes,
+  test evidence, and run instructions are included in that commit.
+  Publication is for review; branch `v2` remains at `ba386e4`, and no
+  hosted migration or deployment promotion was performed.**
+
 - **POST-COMMIT REVIEW — Nov 28, 2026, 04:02 PT: Implemented the next
   foundation repair slice on review branch
   `codex/phase1-guard-and-dashboard`, based on `ba386e4`. Commit location:
