@@ -1,4 +1,20 @@
-import type { FoundationData, ResolvedEvent, UUID } from './types';
+import type { FoundationData, Observation, ResolutionRule, ResolvedEvent, UUID } from './types';
+
+function guardConflict(rule: ResolutionRule, observation: Observation): string | undefined {
+  const hasValue = rule.expectedValue !== undefined;
+  const hasRevision = rule.expectedRevision !== undefined;
+  if (!hasValue && !hasRevision) {
+    return 'Deadline rule has no reviewed input guard; cohort adjustment withheld for review.';
+  }
+  if ((hasValue && (typeof rule.expectedValue !== 'string' || !rule.expectedValue.trim() || !Number.isFinite(Date.parse(rule.expectedValue)))) ||
+      (hasRevision && (!Number.isSafeInteger(rule.expectedRevision) || rule.expectedRevision! < 1))) {
+    return 'Deadline rule has an invalid reviewed input guard; cohort adjustment withheld for review.';
+  }
+  if ((hasValue && rule.expectedValue !== observation.value) ||
+      (hasRevision && rule.expectedRevision !== observation.revision)) {
+    return 'Deadline changed from the reviewed rule input; cohort adjustment withheld for review.';
+  }
+}
 
 function shiftDays(iso: string, days: number): string {
   const date = new Date(iso);
@@ -38,19 +54,21 @@ export function resolveUserEvents(ownerUserId: UUID, data: FoundationData): Reso
       const assignment = data.assignments.find((a) => a.id === event.assignmentId && a.ownerUserId === ownerUserId);
       const offeringSectionIds = assignment ? sectionsByOffering.get(assignment.offeringId) : undefined;
       const visibleRules = data.rules.filter((r) => (!r.ownerUserId && !r.assignmentId) || r.ownerUserId === ownerUserId);
-      const guardMatches = (rule: typeof visibleRules[number]) => (!rule.expectedValue || rule.expectedValue === selected.value) && (!rule.expectedRevision || rule.expectedRevision === selected.revision);
       const exception = visibleRules.find((r) => r.operation === 'suppress_shift' && r.assignmentId === event.assignmentId);
-      const shift = visibleRules.find((r) => r.operation === 'shift_days' && r.sectionId && offeringSectionIds?.has(r.sectionId));
+      const shift = visibleRules.find((r) => r.operation === 'shift_days' &&
+        (!r.assignmentId || r.assignmentId === event.assignmentId) &&
+        r.sectionId && offeringSectionIds?.has(r.sectionId));
       let conflict: string | undefined;
 
-      if (exception && selected.basis && exception.acceptedBasis.includes(selected.basis) && guardMatches(exception)) {
-        appliedRuleIds.push(exception.id);
+      if (exception && selected.basis && exception.acceptedBasis.includes(selected.basis)) {
+        // A stale specific exception must not fall through to a general shift.
+        conflict = guardConflict(exception, selected);
+        if (!conflict) appliedRuleIds.push(exception.id);
       } else if (shift && selected.basis && shift.acceptedBasis.includes(selected.basis)) {
-        if (guardMatches(shift)) {
+        conflict = guardConflict(shift, selected);
+        if (!conflict) {
           value = shiftDays(value, shift.days ?? 0);
           appliedRuleIds.push(shift.id);
-        } else {
-          conflict = 'Deadline changed from the reviewed rule input; cohort adjustment withheld for review.';
         }
       }
 

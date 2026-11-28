@@ -43,6 +43,8 @@ export interface ResolutionRule {
   operation: 'shift_days' | 'suppress_shift';
   days?: number;
   acceptedBasis: DeadlineBasis[];
+  // At least one reviewed guard is required by SQL and checked again at resolution.
+  // Optional here so older/malformed inputs can be rejected with a visible conflict.
   expectedValue?: string;
   expectedRevision?: number;
   exceptionOf?: UUID;

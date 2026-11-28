@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
+    "test:foundation": "node scripts/run-foundation-acceptance.cjs && node scripts/foundation-dashboard-acceptance.cjs",
     "verify-build": "node scripts/verify-no-api-leakage.js",
     "pre-deploy": "node scripts/pre-deployment-check.js",
     "build:safe": "npm run build && npm run verify-build",
