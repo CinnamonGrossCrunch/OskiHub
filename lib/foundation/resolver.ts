@@ -8,7 +8,10 @@ function shiftDays(iso: string, days: number): string {
 
 export function resolveUserEvents(ownerUserId: UUID, data: FoundationData): ResolvedEvent[] {
   const enrollments = data.enrollments.filter((e) => e.ownerUserId === ownerUserId);
-  const sectionIds = new Set(enrollments.flatMap((e) => e.sectionIds));
+  const sectionsByOffering = new Map<UUID, Set<UUID>>();
+  for (const enrollment of enrollments) {
+    sectionsByOffering.set(enrollment.offeringId, new Set(enrollment.sectionIds));
+  }
 
   return data.events
     .filter((event) => event.ownerUserId === ownerUserId)
@@ -16,7 +19,7 @@ export function resolveUserEvents(ownerUserId: UUID, data: FoundationData): Reso
       const observations = data.observations
         .filter((o) => o.entityId === event.assignmentId && o.field === 'due_at')
         .filter((o) => !o.ownerUserId || o.ownerUserId === ownerUserId)
-        .sort((a, b) => b.revision - a.revision);
+        .sort((a, b) => b.sourceAuthority - a.sourceAuthority || b.revision - a.revision);
       const selected = observations[0];
       if (!selected) {
         return {
@@ -32,8 +35,10 @@ export function resolveUserEvents(ownerUserId: UUID, data: FoundationData): Reso
 
       let value = selected.value;
       const appliedRuleIds: UUID[] = [];
+      const assignment = data.assignments.find((a) => a.id === event.assignmentId && a.ownerUserId === ownerUserId);
+      const offeringSectionIds = assignment ? sectionsByOffering.get(assignment.offeringId) : undefined;
       const exception = data.rules.find((r) => r.operation === 'suppress_shift' && r.assignmentId === event.assignmentId);
-      const shift = data.rules.find((r) => r.operation === 'shift_days' && r.sectionId && sectionIds.has(r.sectionId));
+      const shift = data.rules.find((r) => r.operation === 'shift_days' && r.sectionId && offeringSectionIds?.has(r.sectionId));
 
       if (exception && selected.basis && exception.acceptedBasis.includes(selected.basis)) {
         appliedRuleIds.push(exception.id);

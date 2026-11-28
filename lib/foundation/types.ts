@@ -28,6 +28,7 @@ export interface Observation {
   value: string;
   basis?: DeadlineBasis;
   source: string;
+  sourceAuthority: number;
   fetchedAt: string;
   revision: number;
 }
