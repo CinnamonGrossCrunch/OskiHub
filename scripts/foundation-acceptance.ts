@@ -25,6 +25,7 @@ assert(getPrivateEvent(FIXTURE_USER_A, b[0].id, foundationFixtures) === null, 'C
 const updated = structuredClone(foundationFixtures);
 updated.observations.push({ id: '07777777-7777-4777-8777-777777777777', ownerUserId: FIXTURE_USER_B, entityId: 'b2222222-2222-4222-8222-222222222222', field: 'due_at', value: '2026-11-14T17:30:00-08:00', basis: 'verified_base', source: 'canvas', sourceAuthority: 100, fetchedAt: '2026-11-29T00:00:00Z', revision: 2 });
 const b2 = resolveUserEvents(FIXTURE_USER_B, updated);
-assert((byTitle(b2, 'Week 5 Article Question').time as any).at.startsWith('2026-11-16'), 'Newer Canvas revision should update the resolved deadline');
+assert((byTitle(b2, 'Week 5 Article Question').time as any).at.startsWith('2026-11-14'), 'Changed Canvas deadline should surface without the guarded cohort shift');
+assert(byTitle(b2, 'Week 5 Article Question').conflict, 'Guard mismatch should surface a conflict for review');
 assert(byTitle(b2, 'Week 5 Article Question').uid === byTitle(b, 'Week 5 Article Question').uid, 'Source update must preserve stable event UID');
 console.log('foundation acceptance: pass');

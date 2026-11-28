@@ -36,12 +36,15 @@ export interface Observation {
 export interface ResolutionRule {
   id: UUID;
   version: number;
+  ownerUserId?: UUID;
   field: 'due_at';
   sectionId?: UUID;
   assignmentId?: UUID;
   operation: 'shift_days' | 'suppress_shift';
   days?: number;
   acceptedBasis: DeadlineBasis[];
+  expectedValue?: string;
+  expectedRevision?: number;
   exceptionOf?: UUID;
   reason: string;
 }
@@ -70,6 +73,7 @@ export interface ResolvedEvent {
   title: string;
   eventKind: PersonalEvent['eventKind'];
   time: TimeShape;
+  conflict?: string;
   explanations: FieldExplanation[];
 }
 

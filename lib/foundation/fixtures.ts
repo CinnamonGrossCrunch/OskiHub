@@ -60,8 +60,8 @@ export const foundationFixtures: FoundationData = {
     { id: '06666666-6666-4666-8666-666666666666', ownerUserId: FIXTURE_USER_B, entityId: assignmentB, field: 'due_at', value: '2026-11-10T17:30:00-08:00', basis: 'verified_base', source: 'legacy-ics', sourceAuthority: 10, fetchedAt: '2026-11-28T00:00:00Z', revision: 99 },
   ],
   rules: [
-    { id: '11111111-2222-4333-8444-555555555555', version: 1, field: 'due_at', sectionId: goldSectionId, operation: 'shift_days', days: 1, acceptedBasis: ['verified_base'], reason: 'Gold section syllabus rule shifts verified base deadlines by one day.' },
-    { id: '22222222-3333-4444-8555-666666666666', version: 1, field: 'due_at', assignmentId: holidayAssignmentB, operation: 'suppress_shift', acceptedBasis: ['verified_base'], exceptionOf: '11111111-2222-4333-8444-555555555555', reason: 'Holiday exception suppresses the general Gold shift for this assignment.' },
+    { id: '11111111-2222-4333-8444-555555555555', version: 1, field: 'due_at', sectionId: goldSectionId, operation: 'shift_days', days: 1, acceptedBasis: ['verified_base'], expectedValue: '2026-11-11T17:30:00-08:00', expectedRevision: 1, reason: 'Gold section syllabus rule shifts the reviewed verified base deadline by one day.' },
+    { id: '22222222-3333-4444-8555-666666666666', version: 1, ownerUserId: FIXTURE_USER_B, field: 'due_at', assignmentId: holidayAssignmentB, operation: 'suppress_shift', acceptedBasis: ['verified_base'], expectedValue: '2026-11-12T17:30:00-08:00', expectedRevision: 1, exceptionOf: '11111111-2222-4333-8444-555555555555', reason: 'Holiday exception suppresses the general Gold shift for this assignment.' },
   ],
   overrides: [],
   profileByEmail: {},

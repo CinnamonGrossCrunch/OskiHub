@@ -37,14 +37,21 @@ export function resolveUserEvents(ownerUserId: UUID, data: FoundationData): Reso
       const appliedRuleIds: UUID[] = [];
       const assignment = data.assignments.find((a) => a.id === event.assignmentId && a.ownerUserId === ownerUserId);
       const offeringSectionIds = assignment ? sectionsByOffering.get(assignment.offeringId) : undefined;
-      const exception = data.rules.find((r) => r.operation === 'suppress_shift' && r.assignmentId === event.assignmentId);
-      const shift = data.rules.find((r) => r.operation === 'shift_days' && r.sectionId && offeringSectionIds?.has(r.sectionId));
+      const visibleRules = data.rules.filter((r) => (!r.ownerUserId && !r.assignmentId) || r.ownerUserId === ownerUserId);
+      const guardMatches = (rule: typeof visibleRules[number]) => (!rule.expectedValue || rule.expectedValue === selected.value) && (!rule.expectedRevision || rule.expectedRevision === selected.revision);
+      const exception = visibleRules.find((r) => r.operation === 'suppress_shift' && r.assignmentId === event.assignmentId);
+      const shift = visibleRules.find((r) => r.operation === 'shift_days' && r.sectionId && offeringSectionIds?.has(r.sectionId));
+      let conflict: string | undefined;
 
-      if (exception && selected.basis && exception.acceptedBasis.includes(selected.basis)) {
+      if (exception && selected.basis && exception.acceptedBasis.includes(selected.basis) && guardMatches(exception)) {
         appliedRuleIds.push(exception.id);
       } else if (shift && selected.basis && shift.acceptedBasis.includes(selected.basis)) {
-        value = shiftDays(value, shift.days ?? 0);
-        appliedRuleIds.push(shift.id);
+        if (guardMatches(shift)) {
+          value = shiftDays(value, shift.days ?? 0);
+          appliedRuleIds.push(shift.id);
+        } else {
+          conflict = 'Deadline changed from the reviewed rule input; cohort adjustment withheld for review.';
+        }
       }
 
       const override = data.overrides.find((o) => o.ownerUserId === ownerUserId && o.eventId === event.id && o.field === 'due_at');
@@ -57,12 +64,13 @@ export function resolveUserEvents(ownerUserId: UUID, data: FoundationData): Reso
         title: event.title,
         eventKind: event.eventKind,
         time: { kind: 'instant', at: value, timeZone: 'America/Los_Angeles' },
+        conflict,
         explanations: [{
           field: 'due_at',
           selectedObservationIds: [selected.id],
           appliedRuleIds,
           overrideId: override?.id,
-          reason: override ? override.reason : exception && appliedRuleIds.includes(exception.id) ? exception.reason : shift && appliedRuleIds.includes(shift.id) ? shift.reason : 'Selected the latest authorized source observation without transformation.',
+          reason: override ? override.reason : conflict ?? (exception && appliedRuleIds.includes(exception.id) ? exception.reason : shift && appliedRuleIds.includes(shift.id) ? shift.reason : 'Selected the latest authorized source observation without transformation.'),
         }],
       } satisfies ResolvedEvent;
     });

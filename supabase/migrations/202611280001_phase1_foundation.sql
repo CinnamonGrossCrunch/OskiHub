@@ -62,14 +62,18 @@ create table if not exists public.source_observations (
 create table if not exists public.resolution_rules (
   id uuid primary key,
   version integer not null,
+  owner_user_id uuid,
   field text not null,
   section_id uuid references public.course_sections(id),
   assignment_id uuid,
   operation text not null,
   days integer,
   accepted_basis text[] not null,
+  expected_value text,
+  expected_revision integer,
   exception_of uuid references public.resolution_rules(id),
-  reason text not null
+  reason text not null,
+  check (assignment_id is null or owner_user_id is not null)
 );
 create table if not exists public.user_overrides (
   id uuid primary key,
@@ -95,7 +99,7 @@ alter table public.user_overrides enable row level security;
 create policy "public reads courses" on public.courses for select using (true);
 create policy "public reads offerings" on public.course_offerings for select using (true);
 create policy "public reads sections" on public.course_sections for select using (true);
-create policy "public reads rules" on public.resolution_rules for select using (true);
+create policy "scoped reads rules" on public.resolution_rules for select using ((owner_user_id is null and assignment_id is null) or owner_user_id = auth.uid());
 create policy "owner reads enrollments" on public.user_enrollments for select using (owner_user_id = auth.uid());
 create policy "owner reads assignments" on public.assignments for select using (owner_user_id = auth.uid());
 create policy "owner reads events" on public.personal_events for select using (owner_user_id = auth.uid());
